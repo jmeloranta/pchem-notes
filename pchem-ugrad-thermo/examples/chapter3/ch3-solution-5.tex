@@ -1,0 +1,15 @@
+% Problem 5/3 solution
+\noindent
+\underline{Solution:}\\
+
+Here $^\circ$ refers to the standard state. For gases this is 1 bar pressure but note that this does not specify temperature. The overbar denotes that these are molar quantities (i.e. per mole). To calculate change in enthalpy, we integrate the heat capacity over temperature (see lecture notes):
+
+$$\Delta\bar{H}^\circ = \int\limits_{T_1}^{T_2}\bar{C}_P^\circ dT = \sijoitus{298.15\textnormal{ K}}{1000\textnormal{ K}}\left[ 26.648\times T + \left(\frac{42.262\times 10^{-3}}{2}\right)T^2 + \left(\frac{-142.40\times 10^{-7}}{3}\right)T^3\right]$$
+$$= 33.34\textnormal{ kJ mol}^{-1}$$
+
+Furthermore, at constant pressure we can apply equations: $dq = C_P dT$ and $dS = dq_{rev} / T = C_P / T dT$:
+
+$$\Delta\bar{S}^\circ = \int\limits_{T_1}^{T_2}\frac{\bar{C}_P^\circ}{T}dT = \sijoitus{298.15\textnormal{ K}}{1000\textnormal{ K}}\left[26.648\times\ln(T) + 42.262\times 10^{-3}T - \left(\frac{142.4\times 10^{-7}}{2}\right)T^2\right]$$
+$$ = 55.42\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\hrule\vspace{0.5cm}

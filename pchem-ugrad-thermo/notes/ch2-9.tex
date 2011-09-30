@@ -1,0 +1,87 @@
+\opage{
+\otitle{2.9 Joule-Thomson expansion}
+
+\vspace*{0.25cm}
+
+\begin{columns}
+
+\begin{column}{2cm}
+\ofig{joule-thompson}{0.3}{}\\
+\otext
+
+\vspace*{-0.4cm}
+{\tiny Adiabatic Joule-Thompson with $T_i \ne T_f$ and $P_i > P_f$.}\\
+
+\end{column}
+
+\begin{column}{9cm}
+
+\begin{columns}
+
+\hspace*{0.4cm}
+\begin{column}{7cm}
+
+\vspace*{-0.5cm}
+
+\otext
+
+Joule and Thomson (aka Lord Kelvin) observed a change in gas temperature when it was expanded through a throttle. To push one mole of gas through the throttle, two processes must be considered (temperatures remain constants on each side; they might, however, be different):\\
+
+\begin{enumerate}
+\item Compression of gas on the left
+\item Expansion of gas on the right
+\end{enumerate} 
+
+On \textit{compression}, the work is given by $w_c = P_i\Delta \bar{V} = P_i\left(\bar{V}_i - \bar{V}_f\right) = P_i\left(\bar{V}_i - 0\right) = P_i\bar{V}_i$ (positive because work is done on the system (gas)).
+
+\vspace*{0.15cm}
+
+On \textit{expansion}, the work is now $w_e = P_f\Delta V = P_f\left(V_i - V_f\right) = P_f\left(0 - V_f\right) = -P_fV_f$ (negative because work is done by the system (gas)).
+
+\end{column}
+
+\begin{column}{2cm}
+\operson{joule}{0.1}{James Prescott Joule, English physicist (1818 - 1889)}
+\end{column}
+
+\end{columns}
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.3cm}
+
+The total amount of work (for the gas) is then:
+
+\aeqn{2.73}{w = w_c + w_e = P_i\bar{V}_i - P_f\bar{V}_f}
+
+}
+
+\opage{
+
+\otext
+The system is thermally insulated, so that $q = 0$ (no heat exchange). Using Eq. (\ref{eq2.8}) we obtain:
+
+\aeqn{2.74}{\Delta\bar{U} = \bar{U}_f - \bar{U}_i = q + w = P_i\bar{V}_i - P_f\bar{V}_f}
+
+Rearrangement of this equation gives:
+
+\aeqn{2.75}{\umark{\bar{U}_f + P_f\bar{V}_f}{= H_f} = \umark{\bar{U}_i + P_i\bar{V}_i}{= H_i}}
+
+This states that the enthalpy is conserved in the process (\textit{isenthalpic process}). Based on the experimental observation, we define the Joule-Thomson coefficient:
+
+\aeqn{2.77}{\mu_{JT} = \lim\limits_{\Delta P\rightarrow 0}\frac{T_2 - T_1}{P_2 - P_1} = \left(\frac{\partial T}{\partial P}\right)_H}
+
+which gives the change in temperature when pressure changes. At high temperatures the coefficient is negative (J-T process results in heating) and at low temperatures it is positive (J-T process results in cooling). The temperature, where the coefficient is zero, is called the \textit{inversion temperature}. The inversion temperature for N$_2$ is 607 K and for H$_2$ 204 K.\\
+
+\vspace*{0.25cm}
+
+\underline{Notes:}\\
+
+\begin{itemize}
+\item The J-T coefficient is zero for ideal gases.
+\item The cooling effect can be understood by decrease in the van der Waals interaction due to lower pressure (i.e. increased potential energy) and decrease in the kinetic energy (i.e. lower temperature).
+\end{itemize}
+
+}

@@ -1,0 +1,33 @@
+% Problem 3/8 solution
+\noindent
+\underline{Solution:}
+
+First we need to write down the electrode reactions ($E^\circ$'s from table):
+
+Right electrode: $\textnormal{AgCl}(s) + e^- = \textnormal{Ag}(s) + \textnormal{Cl}^-$ ($E^\circ = 0.222$ V).\\
+Left electrode: $\frac{1}{2}\textnormal{Zn}^{2+} + e^- = \frac{1}{2}\textnormal{Zn}(s)$ ($E^\circ = -0.763$ V).\\
+
+The total reaction is then:
+
+$$\textnormal{AgCl}(s) + \frac{1}{2}\textnormal{Zn}(s) = \textnormal{Ag}(s) + \umark{\frac{1}{2}\textnormal{Zn}^{2+} + \textnormal{Cl}^-}{=\frac{1}{2}\textnormal{ZnCl}_2(aq)}$$
+
+From the half-reactions we get $E^\circ = 0.985$ V.To get the actual cell potential (EMF), we must use the Nernst equation (solids have activities of 1 below):
+
+$$E = E^\circ - \frac{RT}{\umark{\left|v_e\right|}{=1}F}\ln\left(a(\textnormal{ZnCl}_2)^{1/2}\right) = E^\circ - \frac{RT}{2F}\ln\left(a(\textnormal{ZnCl}_2)\right)$$
+
+The activity of ZnCl$_2$ can be calculated using the Debye-H\"uckel equation:
+
+$$I = \frac{1}{2}\left(m\times 2^2 + 2m\times 1^1\right) = \frac{6m}{2} = 0.06\textnormal{ mol kg}^{-1}$$
+$$A = \frac{1}{2.303}\left(\frac{2\pi(6.022\times 10^{23}\textnormal{ mol}^{-1})(997\textnormal{ kg})}{1.000\textnormal{ m}^3}\right)^{1/2}$$
+$$\times\left(\frac{(1.602\times 10^{-19}\textnormal{ C})^2(0.8988\times 10^{10}\textnormal{ N m}^2\textnormal{ C}^{-2}}{(78.54)(1.3807\times 10^{-23}\textnormal{ J K}^{-1})(298.15\textnormal{ K})}\right)^{3/2}$$
+$$ = 0.509\textnormal{ kg}^{1/2}\textnormal{ mol}^{-1/2}$$
+$$\gamma_\pm = 10^{Az_+z_-\sqrt{I}} = 0.563$$
+
+The activity of the electrolyte is then given by:
+
+$$a(\textnormal{ZnCl}_2) = (0.563)^{2+1}\left(m/m^\circ\right)^{2+1}\times 2^2\times 1^2 = 0.714\times m^3 = 5.71\times 10^{-6}$$
+where $m^\circ = 1$, $v_- = 2$, $v_+ = 1$. The Nernst equation then gives:
+
+$$E = (0.985\textnormal{ V}) - \frac{(8.314\textnormal{ J K}^{-1}\textnormal{ mol}^{-1})(298.15\textnormal{ K})}{2(96485\textnormal{ C mol}^{-1})}\ln\left(5.71\times 10^{-6}\right) = 1.140\textnormal{ V}$$
+
+\hrule\vspace{0.5cm}

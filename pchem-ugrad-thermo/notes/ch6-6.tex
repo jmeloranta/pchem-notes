@@ -1,0 +1,144 @@
+\opage{
+\otitle{6.6 Activity coefficients}
+
+\otext
+It is covenient to relate activity to liquid mole fraction:
+
+\aeqn{6.45}{a_i = \gamma_i x_i}
+
+where $\gamma_i$ is the activity coefficient for species $i$. With this notation, Eq. (\ref{eq6.21}) reads:
+
+\aeqn{6.44}{\mu_i(l) = \mu_i^\circ(l) + RT\ln\left(\gamma_i x_i\right)}
+
+Note that when $x_i \rightarrow 1$ then $\gamma_i \rightarrow 1$ because it approaches a pure liquid. For positive deviations from Raoult's law, $\gamma_i > 1$ and $\gamma_i < 1$ for negative deviations. Combining Eqs. (\ref{eq6.24}) and (\ref{eq6.45}) we have:
+
+\aeqn{6.47}{a_i = \gamma_ix_i = \frac{P_i}{P_i^*}}
+
+From this expression, we can calculate the activity coefficient by using experimental data:
+
+\aeqn{6.48}{\gamma_i = \frac{P_i}{x_iP^*_i}}
+
+For ideal gases we have $P_i = y_i P$ and the above euqtion can be written in this case:
+
+\aeqn{6.49}{\gamma_i = \frac{y_iP}{x_iP_i^*}}
+
+Above the activity coefficient is written with \textit{reference to Raoult's law}.
+
+}
+
+\opage{
+
+\otext
+Activity coefficients can also be expressed with reference to Henry's law. To see this, we first express the activity as a product of the activity coefficient (denoted by prime to differentiate it from the activity coefficient with Raoult's law reference):
+
+\aeqn{6.50}{\mu_i(l) = \mu_i^*(l) + RT\ln\left(\gamma_i'x_i\right)}
+
+By combining Eqs. (\ref{eq6.19}) and (\ref{eq6.20}) we get:
+
+\aeqn{6.50a}{\mu_i(l) = \mu_i^\circ(g) + RT\ln\left(\frac{P_i}{P^\circ}\right)}
+
+Next recall Eq. (\ref{eq6.43}): $\mu_i^*(l) = \mu_i^\circ(g) + RT\ln\left(\frac{K_i}{P^\circ}\right)$
+
+\vspace*{0.2cm}
+
+By substituting the above two expressions into Eq. (\ref{eq6.50}), the following modified form for Henry's law can be obtained:
+
+\aeqn{6.51}{P_i = \gamma_i'K_ix_i}
+
+This allows us to calculate the activity coefficient $\gamma_i'$:
+
+\aeqn{6.52}{\gamma_i' = \frac{P_i}{x_iK_i} \rightarrow 1\textnormal{ when }x_i\rightarrow 0}
+
+Since $P_i = y_i P$, this can also be written as:
+
+\aeqn{6.53}{\gamma_i' = \frac{y_iP}{x_iK_i}}
+
+}
+
+\opage{
+
+\otext
+What is the principal difference between $\gamma_i$ and $\gamma_i'$?
+
+\vspace*{0.2cm}
+
+$\gamma_i$ (\textit{Raoult's law reference}) has a reference state, which consists of an ideal solution. The chemical potential corresponding to this standard state is denoted by $\mu_i^\circ$.
+
+\vspace*{0.2cm}
+
+$\gamma_i'$ (\textit{Henry's law reference}) has a reference state, where each molecule of the solute has the same interactions that it experiences in very dilute solutions. The chemical potential corresponding to this standard state is denoted by $\mu_i^*$.
+
+\vspace*{0.2cm}
+
+Thus the only difference is that they have different references states.
+
+\hrulefill
+
+\textbf{Example.} Calculate the activity coefficients $\gamma_i$ for ether (component 1) and acetone (component 2) in 1:1 ether-acetone solutions at 30 \degree C. The experimental data are given in the table below.
+
+\vspace*{0.2cm}
+
+\textbf{Table.} Activity coefficients for acetone-ether solutions at 30 \degree C. 1 = ether, 2 = acetone. Pressure is given in kPa.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lllllllll}
+\multicolumn{7}{c}{Raoult's law reference} & \multicolumn{2}{c}{Henry's law reference}\\
+$x_2$ & $P_1$ & $x_1P_1^*$ & $\gamma_1$ & $P_2$ & $x_2P_2^*$ & $\gamma_2$ & $K_2x_2$ & $\gamma_2'$\\
+0 & 86.1 & 86.1 & 1.0 & 0 & 0 & -- & 0 & 1.00\\
+0.2 & 71.3 & 68.9 & 1.04 & 12.0 & 7.5 & 1.60 & 15.7 & 0.77\\
+0.4 & 58.7 & 51.7 & 1.14 & 19.7 & 15.1 & 1.31 & 31.4 & 0.63\\
+0.5 & 52.1 & 43.1 & 1.21 & 22.4 & 18.9 & 1.19 & 39.2 & 0.57\\
+0.6 & 44.3 & 34.4 & 1.28 & 25.3 & 22.7 & 1.12 & 47.0 & 0.54\\
+0.8 & 26.9 & 17.3 & 1.56 & 31.3 & 30.1 & 1.04 & 62.7 & 0.50\\
+1.0 & 0 & 0 & -- & 37.7 & 37.7 & 1.00 & 78.4 & 0.48\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} At 0.5 mole fraction, the activity coefficients of the two components are given by:
+
+$$\gamma_1 = \frac{P_1}{x_1P_1^*} = \frac{52.1\textnormal{ kPa}}{43.1\textnormal{ kPa}} = 1.21$$
+$$\gamma_2 = \frac{P_2}{x_2P_2^*} = \frac{22.4\textnormal{ kPa}}{18.9\textnormal{ kPa}} = 1.19$$
+
+\hrulefill
+
+Note that the Henry's law activity coefficient $\gamma_i'$ can be calculated from the data given in the previous table by extrapolating to $x_2 = 0$ when calculating $K_2 = P_2 / x_2$ (see Eq. (\ref{eq6.41})).
+
+\vspace*{0.3cm}
+
+What is the relation between $\gamma_i$ and $\gamma_i'$?
+
+\vspace*{0.2cm}
+
+According to Eq. (\ref{eq6.24}) the activity of a real solution is given by $a_i = P_i / P_i^*$. Substitution of Eq. (\ref{eq6.52}) there gives:
+
+\aeqn{6.57}{a_i = \frac{\gamma_i'K_ix_i}{P_i^*}}
+
+}
+
+\opage{
+
+\otext
+With $a_i = \gamma_i x_i$ this gives:
+
+\aeqn{6.58}{\gamma_i = \frac{\gamma_i'K_i}{P_i^*}\textnormal{ or }\gamma_i' = \frac{\gamma_iP_i^*}{K_i}}
+
+
+\vspace*{0.2cm}
+
+Notes:
+
+\begin{itemize}
+\item For dilute solutions, the solvent is usually treated on the basis of deviations from Raoult's law and the solute is usually treated on the basis of deviations from Henry's law.
+\item Three different concentration scales can be used, for example with Henry's law:\\
+$P_i = K_i m_i$ where $m_i$ is the molal concentration of $i$ (mol / kg of solvent),\\
+$P_i = K_i c_i$ where $c_i$ is the molar concentration of $i$ (mol / L of solution), or\\
+$P_i = K_i x_i$ where $x_i$ is the (liquid) molar fraction.
+\item Since we mostly calculate differences in a given thermodynamic variable, the reference (= standard) state usualy cancels out. However, both initial and final states must be expressed with respect to the same reference state.
+\end{itemize}
+
+}

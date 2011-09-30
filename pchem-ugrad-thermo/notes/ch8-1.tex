@@ -1,0 +1,277 @@
+\opage{
+\otitle{8.1 Introduction to statistical thermodynamics}
+
+\otext
+\underline{The statistical ensemble}
+
+\begin{itemize}
+\item Theory developed by Maxwell, Boltzmann, Gibbs and Einsten between 1860 - 1905.
+\item Offers microscopic view to thermodynamics.
+\item Provides a natural connection between thermodynamics and quantum mechanics. The latter has not yet been covered.
+\item Quantum mechanics provides a way to calculate energies of microsystems (electronic, translational, vibrational, rotational), which are denoted by $E_i$ below.
+\end{itemize}
+
+\otext
+\underline{Terminology:}
+
+\begin{tabular}{ll}
+System & = Macroscopic thermodynamic system.\\
+Particles & = Fundamental particles that compose the system.\\
+Macrostate & = Macroscopic parameters (e.g., $V, P, T$) specifying the system.\\
+Microstate & = Atom/molecular level specification of the system.\\
+           & \phantom{=} These would correspond to coordinates and velocities\\
+           & \phantom{=} of atoms/molecules, for example.\\
+\end{tabular}
+
+\otext
+\textit{Note:} For a given macrostate, many different microstates are possible. Usually only macrostates are observable.
+
+}
+
+\opage{
+
+\otext
+\underline{Ensemble}: A hypothetical collection of non-interacting systems, each of which is in the same \textit{macrostate} as the system of interest. Although the members of the ensemble are macroscopically identical, they may not be in the same \textit{microstate}.
+
+\otext
+\underline{Measurement}: A measurement of any macroscopic property consists of a time average over the measurement interval. Hence it involves an inherent time averaging process.
+
+\otext
+\textbf{Postulate:} The measured time average of any macroscopic property of the system is equal to the average value of that property in the ensemble. Note that this replaces the need to use time averages in the calculations.
+
+\otext
+An ensemble of systems that all have constant macroscopic parameters $T$ and $V$ is called \textit{canonical ensemble}.
+
+\otext
+The internal energy of a macroscopic system is given as an ensemble average:
+
+\aeqn{8.1}{U = \left<E_i\right> = \sum\limits_{i=1}^{\infty} p_iE_i}
+
+where $\left<\right>$ denotes the ensemble average, $E_i$ is the energy of system $i$ and $p_i$ is the statistical weight for state $i$ (i.e., probability of state $i$).
+
+}
+
+\opage{
+
+\otext
+We will show that the statistical weights $p_i$ are given by the Boltzmann probability:
+
+\aeqn{8.2}{p_i = \frac{e^{-\beta E_i}}{Z}}
+
+where $Z$ is the canonical partition function (do not confuse this with the compressibility factor which was also denoted by $Z$ earlier), which is defined as:
+
+\aeqn{8.3}{Z = \sum\limits_{i=1}^{\infty}e^{-\beta E_i}}
+
+\otext
+\textbf{Assumption}: For a thermodynamic system at fixed $V,\left\lbrace n_i\right\rbrace, T$, all microstates that have equal energy have equal probability of occurring. This implies that $p_i = f(E_i)$ (i.e. the statistical weights depend only on the microstate energy). Note that the above Boltzmann probability is consistent with this postulate.
+
+\otext
+In the following, we will derive the Boltzmann probabilities and expressions for $U,P$ and $S$. We will also show that $\beta$ is a function of temperature only and has the form $\beta = \frac{1}{kT}$ where $k$ is the Boltzmann constant.
+
+\otext
+\underline{Evaluation of $p_i$ (the Boltzmann probabilities):}\\
+
+}
+
+\opage{
+
+\otext
+We need to determine the unknown function $f$ in the above postulate. Consider two subsystems, which are labeled 1 and 2, in an ensemble. All ensemble members labeled 1 are macroscopically identical and all members of 2 are macroscopically identical. However, 1 and 2 are not necessarily identical as they can differ in volume $V$ and composition $\left\lbrace n_i\right\rbrace$. For 1 and 2 we then have:
+
+\aeqn{8.4}{p_{1,i} = f(E_{1,i})\textnormal{ and }p_{2,j} = g(E_{2,j})}
+
+where $p_{1,i}$ is the probability for system 1 to be in microstate $i$ (energy $E_{1,i}$) and $p_{2,j}$ for system 2 to be in microstate $j$ (energy $E_{2,j}$). Note that $f$ and $g$ are not necessarily the same functions. Systems 1 and 2 can also be considered as a combined single system with overall fixed volume, temperature and composition:
+
+\aeqn{8.5}{p_{1+2,k} = h(E_{1+2,k})}
+
+where $p_{1+2,k}$ is the probability that system 1+2 is in microstate $k$. Since systems 1 and 2 are independent of each other, we have:
+
+\aeqn{8.6}{E_{1+2,k} = E_{1,i} + E_{2,j}\textnormal{ with }k = (i,j)}
+
+Furthermore since the systems 1 and 2 are independent, their overall probability is given as a product:
+
+}
+
+\opage{
+
+\aeqn{8.7}{h(E_{1+2,k}) = h(E_{1,i} + E_{2,j}) = f(E_{1,i})g(E_{2,j})}
+
+With $x \equiv E_{1,i}$, $y \equiv E_{2,j}$ and $z \equiv x + y$ we can rewrite the above equation as:
+
+\aeqn{8.8}{h(z) = f(x)g(y)}
+
+Differentiation of this equation gives:
+
+\aeqn{8.9}{\left(\frac{\partial h(z)}{\partial x}\right)_y = \left(\frac{df(x)}{dx}\right)g(y)}
+
+By using the chain rule we get:
+
+\aeqn{8.10}{\left(\frac{\partial h(z)}{\partial x}\right)_y = \left(\frac{dh(z)}{dz}\right)\left(\frac{\partial z}{\partial x}\right)_y = \frac{dh(z)}{dz}}
+
+Combining Eqs. (\ref{eq8.9}) and (\ref{eq8.10}) gives:
+
+\aeqn{8.11}{\frac{dh(z)}{dz} = \frac{df(x)}{dx}g(y)}
+
+In similar way, differentiation with respect to $y$ gives:
+
+\aeqn{8.12}{\frac{dh(z)}{dz} = f(x)\frac{dg(y)}{dy}}
+
+}
+
+\opage{
+
+\otext
+By combining Eqs. (\ref{eq8.11}) and (\ref{eq8.12}) we get:
+
+\aeqn{8.13}{\frac{g'(y)}{g(y)} = \frac{f'(x)}{f(x)} \equiv -\beta\textnormal{ (constant)}}
+
+For $f$ this gives the following differential equation:
+
+\beqn{8.14}{f'(x) = -\beta f(x) \Rightarrow f(x) = Ce^{-\beta x}}
+{\Rightarrow f(x) = Ce^{-\beta E_{1,i}}}
+
+where $C$ is a constant of integration and $\beta$ is a universal constant that is the same for both systems 1 and 2. Note that $\beta$ may depend on temperature. The normalization constant $C$ has to be chosen such that the sum over probabilities gives unity:
+
+\aeqn{8.15}{\sum\limits_{i=1}^{\infty}Ce^{-\beta E_{1,i}} = 1\Rightarrow C = \frac{1}{\sum\limits_{i=1}^{\infty}e^{-\beta E_{1,i}}} \equiv \frac{1}{Z}}
+
+Thus the probabilities are given by:
+
+\aeqn{8.16}{p_i = \frac{e^{-\beta E_i}}{\sum\limits_{j=1}^{\infty}e^{-\beta E_j}} = \frac{e^{-\beta E_i}}{Z}}
+
+We will later derive the exact form for $\beta$.
+
+}
+
+\opage{
+
+\otext
+\underline{Evaluation of $U$ and $P$:}
+
+\aeqn{8.17}{U = \sum\limits_{i=1}^{\infty} p_i E_i = \frac{\sum\limits_{i=1}^{\infty}E_ie^{-\beta E_i}}{Z}}
+
+where $Z = Z(\beta(T), V, \left\lbrace n_i\right\rbrace)$. Differentiation of $Z$ with respect to $\beta$ gives:
+
+\aeqn{8.18}{\left(\frac{\partial Z}{\partial\beta}\right)_{V,\left\lbrace n_i\right\rbrace} = \left(\frac{\partial}{\partial\beta}\right)_{V,\left\lbrace n_i\right\rbrace}\sum\limits_{j=1}^{\infty}e^{-\beta E_j} = -\sum\limits_{j=1}^{\infty}E_je^{-\beta E_j}}
+
+Now Eq. (\ref{eq8.17}) can finally be written as:
+
+\aeqn{8.19}{U = -\frac{1}{Z}\left(\frac{\partial Z}{\partial\beta}\right)_{V,\left\lbrace n_i\right\rbrace} = -\left(\frac{\partial\ln(Z)}{\partial\beta}\right)_{V,\left\lbrace n_i\right\rbrace}}
+
+Consider next the measurement of pressure $P$:
+
+\aeqn{8.20}{P = \sum\limits_{i=1}^{\infty}p_iP_i}
+
+where $P_i$ is the pressure in the $i$th member of the ensemble. If we have non-interacting and adiabatic systems, we can write the internal energy differential in two ways (for each member of the ensemble):
+
+}
+
+\opage{
+
+\ceqn{8.21}{dU = dw_{rev} = -P_idV}{dU = \left(\frac{\partial E_i}{\partial V}\right)dV\textnormal{ (total differential)}}{\Rightarrow P_i = -\left(\frac{\partial E_i}{\partial V}\right)}
+
+where $E_i$ is the energy of ensemble member $i$. This gives an expression for the measured pressure:
+
+\aeqn{8.22}{P = -\frac{1}{Z}\sum\limits_{i=1}^{\infty}e^{-\beta E_i}\left(\frac{\partial E_i}{\partial V}\right)_{\left\lbrace n_i\right\rbrace}}
+
+Partial differentiation of $Z$ with respect to $V$ gives:
+
+\beqn{8.23}{\left(\frac{\partial Z}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace} = \sum\limits_{i=1}^{\infty}\left(\frac{\partial\left(e^{-\beta E_i}\right)}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace}}{ = \sum\limits_{i=1}^{\infty}\frac{\partial\left(e^{-\beta E_i}\right)}{\partial E_i}\times\frac{\partial E_i}{\partial V} = -\sum\limits_{i=1}^{\infty}\beta e^{-\beta E_i}\left(\frac{\partial E_i}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace}}
+
+}
+
+\opage{
+
+\otext
+Hence we can finally write $P$ as:
+
+\aeqn{8.24}{P = \frac{1}{\beta Z}\left(\frac{\partial Z}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace} = \frac{1}{\beta}\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace}}
+
+\otext
+\underline{Evaluation of $\beta$:}
+
+\otext
+First we differentiate Eq. (\ref{eq8.19}) with respect to $V$:
+
+\ceqn{8.25}{\left(\frac{\partial U}{\partial V}\right)_T = -\left[\frac{\partial}{\partial V}\left(\frac{\partial\ln(Z)}{\partial\beta}\right)_V\right]_T}
+{= -\left[\frac{\partial}{\partial\beta}\left(\frac{\partial\ln(Z)}{\partial V}\right)_T\right]_V \omark{=}{(\ref{eq8.24})} -\left[\frac{\partial}{\partial\beta}\left(\beta P\right)\right]_V}
+{= -P - \beta\left(\frac{\partial P}{\partial\beta}\right)_V}
+
+Next we will recall Eq. (\ref{eq4.111}):
+
+\aeqn{8.26}{\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{\partial P}{\partial T}\right)_V - P = -\frac{1}{T}\left[\frac{\partial P}{\partial(1 / T)}\right]_V - P}
+
+where we have used the chain rule:
+
+}
+
+\opage{
+
+$$\partial P / \partial T = \left[\partial P / \partial(1/T)\right]\left[\partial(1/T) / \partial T\right] = -\left[\partial P/\partial(1/T)\right] / T^2$$
+
+Now we can combine Eqs. (\ref{eq8.25}) and (\ref{eq8.26}):
+
+\aeqn{8.27}{-\beta\left(\frac{\partial P}{\partial\beta}\right)_V = -\frac{1}{T}\left(\frac{\partial P}{\partial(1/T)}\right)_V}
+
+Denote $Y \equiv \frac{1}{T}$. Then $\beta\left(\partial P / \partial\beta\right)_V = Y\left(\partial P / \partial Y\right)_V$ and hence:
+
+\aeqn{8.28}{\frac{\beta}{Y} = \left(\frac{\partial P}{\partial Y}\right)_V\left(\frac{\partial\beta}{\partial P}\right)_V = \left(\frac{\partial\beta}{\partial Y}\right)_V = \frac{d\beta}{dY}}
+
+In the last step we have noted that $\beta = \beta(T)$ only. The above differential equation can be integrated:
+
+\beqn{8.29}{\frac{d\beta}{\beta} = \frac{dY}{Y} \Rightarrow \ln(Y) = \ln(\beta) + C}
+{\Rightarrow \omark{Y}{= 1/T} = \omark{C'}{= k} \times \beta \Rightarrow \beta = \frac{1}{kT}}
+
+where $k$ is the Boltzmann constant.
+
+}
+
+\opage{
+
+\otext
+Now we can write complete expressions for Eqs. (\ref{eq8.19}) and (\ref{eq8.24}):
+
+\beqn{8.30}{U = -\left(\frac{\partial\ln(Z)}{\partial\beta}\right)_{V,\left\lbrace n_i\right\rbrace} = -\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace}\frac{dT}{d\beta}}{ = -\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace}\left(-\frac{1}{k\beta^2}\right) = kT^2\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace}}
+
+\aeqn{8.31}{P = kT\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace}}
+
+The complete form for Eq. (\ref{eq8.16}) is:
+
+\aeqn{8.32}{p_i = \frac{e^{-E_i/(kT)}}{\sum\limits_{j=1}^{\infty}e^{-E_j / (kT)}} = \frac{e^{-E_i/(kT)}}{Z}}
+
+Note that if the system contains degenerate (i.e., have the same energy) states, each of them must be included in Eq. (\ref{eq8.32}) separately.
+
+\otext
+\underline{Evaluation of entropy $S$:}
+
+\otext
+Consider a reversible process where only $PV$-work occurs. The 1st and 2nd laws of thermodynamics can be combined: $dU = TdS - PdV$. This gives:
+
+}
+
+\opage{
+
+\aeqn{8.33}{dS = T^{-1}dU + PT^{-1}dV = d\left(T^{-1}U\right) + T^{-2}UdT + PT^{-1}dV}
+
+where we used $d(T^{-1}U) = -T^{-2}UdT + T^{-1}dU$. Substitution of Eqs. (\ref{eq8.30}) and (\ref{eq8.31}) for $U$ and $P$ gives:
+
+\aeqn{8.34}{dS = d(T^{-1}U) + k\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace}dT + k\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace}dV}
+
+When $\left\lbrace n_i\right\rbrace$ are constant, the total differential is:
+
+\aeqn{8.35}{d\ln(Z) = \left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace}dT + \left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,\left\lbrace n_i\right\rbrace} dV}
+
+This allows us to rewrite Eq. (\ref{eq8.34}) as:
+
+\aeqn{8.36}{dS = d(T^{-1}U) + kd(\ln(Z)) = d(T^{-1}U + k\ln(Z))}
+
+Integration of this equation gives:
+
+\aeqn{8.37}{S = T^{-1}U + k\ln(Z) + C}
+
+It can be shown that $C = 0$ for most systems but we skip this lengthy consideration here. Thus:
+
+\aeqn{8.38}{S = \frac{U}{T} + k\ln(Z) = kT\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace} + k\ln(Z)}
+
+Note that other thermodynamic potentials such as $G$ can be obtained by $G = U + PV - TS$.
+
+}

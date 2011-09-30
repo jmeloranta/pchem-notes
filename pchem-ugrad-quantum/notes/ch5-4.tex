@@ -1,0 +1,36 @@
+\opage{
+\otitle{5.4 Schr\"odinger equation for nuclear motion}
+
+\otext
+The Born-Oppenheimer equation (see Eq. (\ref{eq11.3})) allows us to separate the nuclear and electronic degrees of freedom. The nuclear hamiltonian for $N$ nuclei can be now written in such a way that the electronic part appears as a potential term:
+
+\aeqn{n5.26}{\hat{H} = \sum\limits_{i=1}^{N} -\frac{\hbar^2}{2m_i}\nabla_{R_i}^2 + E(R_1, R_2, ..., R_N)} 
+
+In the absence of external electric or magnetic fields, the potential term $E$ depends only on the relative positions of the nuclei, as shown above, and not on the overall position of the molecule or its orientation in space. The above hamiltonian $H$ can often be approximately written as a sum of the following terms:
+
+\aeqn{n5.27}{\hat{H} = \hat{H}_{tr} + \hat{H}_{rot} + \hat{H}_{vib}}
+
+where $H_{tr}$ is the translational, $H_{rot}$ the rotational, and $H_{vib}$ the vibrational hamiltonian. The translational and rotational terms have no potential part but the vibrational part contains the potential $E$, which depends on the distances between the nuclei. In some cases the terms in Eq. (\ref{eqn5.27}) become coupled and one cannot use the following separation technique. Separation of $H$ means that we can write the wavefunction as a product:
+
+\aeqn{n5.28}{\psi = \psi_{tr}\psi_{rot}\psi_{vib}}
+
+}
+
+\opage{
+
+\otext
+The resulting three Schr\"odinger equations are then:
+
+\aeqn{n5.29}{\hat{H}_{tr}\psi_{tr} = E_{tr}\psi_{tr}}
+
+\aeqn{n5.30}{\hat{H}_{rot}\psi_{rot} = E_{rot}\psi_{rot}}
+
+\aeqn{n5.31}{\hat{H}_{vib}\psi_{vib} = E_{vib}\psi_{vib}}
+
+The translational part is not interesting since there is no external potential or boundary conditions that could lead to quantitization (i.e. it produces a continuous spectrum). On the other hand, the rotational part is subject to cyclic boundary condition and the vibrational part to potential $E$, hence we expect these to produce quantitization, which can be probed by spectroscopic methods.
+
+\vspace*{0.2cm}
+
+The original number of variables in the hamiltonian is given by $3\times N$ (i.e. the $x,y,z$ coordinates for each nuclei). We can neglect the translational motion and we are left with $3N - 3$ coordinates. To account for molecular rotation, three variables are required or if we have a linear molecule, only two variables. Therefore the vibration part must have either $3N - 6$ variables for a non-linear molecule or $3N - 5$ variables for a linear molecule. These are referred to as \textit{vibrational degrees of freedom} or \textit{internal coordinates}.
+
+}

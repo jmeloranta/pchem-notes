@@ -1,0 +1,149 @@
+\opage{
+\otitle{2.5 Various kinds of work}
+
+\otext
+The following are most often encountered types of work:
+
+\vspace*{0.3cm}
+
+\begin{tabular}{llll}
+Type of work & Differential & Comments & Conjugate pairs\\
+\cline{1-4}\\
+Expansion,   & $-P_{ext} dV$   & ``$PV$-work'' & Pressure $P$, Volume $V$\\
+Hydrostatic  &              &               &\\
+& & & \\
+Surface expansion & $\gamma dA_s$ & $\gamma$ is surface tension & $\gamma$ and $A_s$\\
+                  &               & and $A_s$ is surface area & \\
+& & & \\
+Extension,    & $FdL$ & Change in length & Force $F$, Length $l$\\
+elongation\\
+& & & \\
+Electrical   & $\phi dQ$ & Transport of electrons & Potential difference $\phi$,\\
+             &            &                        & Electric charge $Q$\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+\underline{Surface tension ($\gamma$):} ``Force / distance'' (unit N m$^{-1}$):\\
+
+\aeqn{2.38a}{\gamma = \frac{F}{L}}
+
+\vspace*{-1cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{water-bug}{0.1}{Surface tension of water.}
+\end{column}
+
+\begin{column}{4cm}
+\ofig{soap-film}{0.3}{Idealized experiment to determine\\\hspace*{0.12cm}surface tension.}
+\end{column}
+
+\end{columns}
+
+\otext
+For a film with two sides, the force $F$ acting on the bar ($L$ is the width) is given by:
+
+\aeqn{2.38}{F = 2\gamma L}
+
+Work corresponding to moving the bar by $\Delta x$ is given by (``force $\times$ distance''):
+
+\aeqn{2.38b}{w = F\Delta x}
+
+By combining these two equations we get:
+
+\aeqn{2.39}{w = F\Delta x = \gamma\umark{2L\Delta x}{= \Delta A_s} = \gamma\Delta A_s}
+
+\vspace*{-0.5cm}
+
+The differential form of Eq. (\ref{eq2.39}) is:
+
+\aeqn{2.40}{\inex{dw} = \gamma dA_s} 
+
+In other words, to get work $w$, multiply the surface area (m$^2$) by surface tension (J m$^{-2}$). Note that units N m$^{-1}$ and J m$^{-2}$ are equivalent.
+
+}
+
+\opage{
+
+\otext
+\underline{What is the microscopic origin of surface tension?} Consider water surface, for example:
+
+\ofig{surface-tension}{0.5}{}
+
+Molecules residing on the curved surface are missing neighboring atoms which they could hydrogen bond with. Surface tension depends clearly on the molecule -- molecule (or atom -- atom) interaction strength. For example, surface tension of water (hydrogen bonding) is much larger than for liquid argon (van der Waals binding).
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the amount of work that a spherical bubble in superfluid $^4$He does when its radius changes from 10 \AA{} to 20 \AA{}. Surface tension of L-He $\gamma$ is 0.18 cm$^{-1}$ \AA$^{-2}$.
+
+\ofig{electron-bubble}{0.4}{Expansion of electron bubble.}
+
+\vspace*{0.2cm}
+
+The differential surface area of the bubble is given by:
+
+$$dA_s = 4\pi\left( r + dr\right)^2 = \umark{4\pi r^2}{\textnormal{constant}} + 8\pi rdr + \umark{4\pi\left(dr\right)^2}{\textnormal{2nd order}} \rightarrow 8\pi rdr$$
+
+Eq. (\ref{eq2.40}) now gives: $\inex{dw} = \gamma dA_s = 8\pi r\gamma dr$
+
+\vspace*{0.25cm}
+
+Integration from the initial radius $r_i$ to the final radius $r_f$ gives:
+
+$$w = \int\limits_{r_i}^{r_f}\inex{dw} = 8\pi\gamma\int\limits_{r_i}^{r_f} rdr = 4\pi\gamma\left(r_f^2 - r_i^2\right)$$
+
+}
+
+\opage{
+
+\otext
+We could proceed by changing everything to SI units, but here the expression is quite simple and we just make sure to use compatible units:
+
+$$w = 4\pi\times\left(0.18\textnormal{ cm}^{-1}\textnormal{ \AA}^{-2}\right)\times\left[\left(20\textnormal{ \AA}\right)^2 - \left(10\textnormal{ \AA}\right)^2\right] = 680\textnormal{ cm}^{-1} = 1.4\times 10^{-20}\textnormal{ J}$$
+
+Surface tension work can also be understood in terms of surface energy.
+
+\vspace*{0.25cm}
+
+\underline{Notes:}
+\begin{itemize}
+\item The work in above example is positive, which means that work was done on the bubble interface (i.e., interface area becomes larger).
+\item Recall that we don't usually use notation $\Delta w$ to indicate change in work because work is a relative quantity. The same applies for $q$. Instead of $\Delta w$, we just use $w$.
+\end{itemize}
+
+\hrulefill
+
+\underline{Extension/elongation work:}
+
+\aeqn{2.40a}{\inex{dw} = FdL}
+
+where $F$ is the extension force and $dL$ is the displacement. For example: elongation of a rubber band.
+
+}
+
+\opage{
+
+\otext
+\underline{Electrical work:}
+
+\aeqn{2.40b}{\inex{dw} = \phi dQ}
+
+where $\phi$ is the electric potential difference and $dQ$ is the differential change in charge. For example: electron transport in electrolytic cell.
+
+\hrulefill
+
+A more complete form of the first law is (``heat $dq$ + work $dw$''):
+
+\aeqn{2.40c}{dU = dq - P_{ext}dV + \gamma dA_s + FdL + \phi dQ}
+
+\vfill
+
+}

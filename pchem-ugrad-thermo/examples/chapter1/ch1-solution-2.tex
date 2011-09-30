@@ -1,0 +1,29 @@
+% Problem 2/1 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{itemize}
+
+\item[a)] $$\bar{V} = \frac{RT}{P} = \frac{(0.08314\textnormal{ L bar K}^{-1}\textnormal{mol}^{-1})(660\textnormal{ K})}{91\textnormal{ bar}} = 0.603\textnormal{L mol}^{-1}$$
+
+\item[b)] $$a = \frac{27R^2T_c^2}{64P_c} = \frac{27(0.08314\textnormal{ L bar K}^{-1}\textnormal{mol}^{-1})^2(507.7\textnormal{ K})^2}{64(30.3\textnormal{ bar})} = 24.81\textnormal{ L}^2\textnormal{ bar mol}^{-2}$$
+$$b = \frac{RT_c}{8P_c} = \frac{(0.08314\textnormal{ L bar K}^{-1}\textnormal{mol}^{-1})(507.7\textnormal{ K})}{30.3\textnormal{ bar}} = 0.174\textnormal{ L mol}^{-1}$$
+$$P = \frac{RT}{\bar{V} - b} - \frac{a}{\bar{V}^2}$$
+
+Test values for $V$ and see when you get 91 bars: $V = 0.39$ L mol$^{-1}$. This equation can also be solved by Maxima:
+
+\begin{verbatim}
+a : 24.81;
+b : 0.174;
+R : 0.08314;
+T : 660;
+P : 91;
+r : solve(P = R*T/(V - b) - a/(V*V), V);
+float(r);
+\end{verbatim}
+
+This shows three roots of which only one is real (two are complex). The last line converts the complicated algebraic form to numerical values.
+
+\end{itemize}
+
+\hrule\vspace{0.5cm}

@@ -1,0 +1,172 @@
+\opage{
+
+\otitle{9.7 Consecutive elementary reactions}
+
+\otext
+A \textit{reaction mechanism} consists of a certain number of elementary steps. This can be a series of first and second order reactions, which occur sequentially or in parallel. The simplest consequtive elementary reaction can be written as:
+
+$$A\mathop\rightarrow\limits^{k_1} I \mathop\rightarrow\limits^{k_2} P$$
+
+Next we derive the expressions for $\left[A\right]$, $\left[I\right]$, and $\left[P\right]$. The rate of unimolecular decomposition of $A$ into $I$ is:
+
+\aeqn{9.42}{\frac{d\left[A\right]}{dt} = -k_1\left[A\right]}
+
+The intermediate $I$ formed from $A$ according to:
+
+\aeqn{9.43}{\frac{d\left[I\right]}{dt} = k_1\left[A\right] - k_2\left[I\right]}
+
+and the product $P$:
+
+\aeqn{9.44}{\frac{d\left[P\right]}{dt} = k_2\left[I\right]}
+
+Eq. (\ref{eq9.42}) is just a first-order decay:
+
+\aeqn{9.45}{\left[A\right] = \left[A\right]_0e^{-k_1t}}
+
+}
+
+\opage{
+
+\otext
+When the above result is substituted into Eq. (\ref{eq9.43}) and we solve the resulting differential equation, we get ($\left[I\right]_0$):
+
+\aeqn{9.46}{\left[I\right] = \frac{k_1}{k_2 - k_1}\left(e^{-k_1t} - e^{-k_2t}\right)\left[A\right]_0}
+
+Since we must have at all times $\left[A\right] + \left[I\right] + \left[P\right] = \left[A\right]_0$, we can solve for the concentration of $P$:
+
+\aeqn{9.47}{\left[P\right] = \left(1 + \frac{k_1e^{-k_2t} - k_2e^{-k_1t}}{k_2 - k_1}\right)\left[A\right]_0}
+
+\vspace*{-0.6cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{kinetics5}{0.33}{}
+\end{column}
+
+\begin{column}{5cm}
+
+\otext
+The concentrations of $A$, $I$, and $P$ are plotted on the left with $k_1 = 2k_2 = 1$ and $\left[A\right]_0 = 1$. $A$ experiences an exponential decay, $I$ starts building up and then decreases as it finally starts producing $P$.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+If one of the consequtive steps is much slower than the other(s), it is said to be the \textit{rate determining step}. For example, when $k_2 >> k_1$ all $I$ that is formed will rapidly convert into $P$. This can be seen by first noting that now: $e^{-k_2t} << e^{-k_1t}$ and $k_2 - k_1 \approx k_2$. Eq. (\ref{eq9.47}) then reduces to:
+
+\aeqn{9.48}{\left[P\right] \approx \left(1 - e^{-k_1t}\right)\left[A\right]_0}
+
+This shows that the formation rate of $P$ depends only on the smaller of the rate constants ($k_1$ above). In general the elementary reaction with the smallest rate constant in a given reaction scheme is the rate determining step.
+
+\vspace*{0.3cm}
+
+\underline{Steady-state approximation.} If we assume that the intermediate concentration is independent of time, we set its time derivative to zero:
+
+\aeqn{9.49}{\frac{d\left[I\right]}{dt} \approx 0}
+
+This is called the \textit{steady-state approximation}. If the original differential equation(s) are difficult to solve, one can use this approximation to simplify the calculation. When this is applied to $\left[I\right]$ in Eqs. (\ref{eq9.45}), (\ref{eq9.46}), and (\ref{eq9.47}), we obtain:
+
+\aeqn{9.50}{\left[I\right] \approx \frac{k_1}{k_2}\left[A\right]}
+
+}
+
+\opage{
+
+\otext
+Substitution into Eq. (\ref{eq9.44}) gives then:
+
+\aeqn{9.51}{\frac{d\left[P\right]}{dt} = k_2\left[I\right] \approx k_1\left[A\right]}
+
+This shows that $P$ in this case would be formed through the first-order decay of $A$ with rate constant $k_1$ (corresponding to the rate determining step). Integration of this equation gives directly:
+
+\aeqn{9.52}{\left[P\right] = \left(1 - e^{-k_1t}\right)\left[A\right]_0}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider the following reaction:
+
+$$\textnormal{CH}_2\left(\textnormal{CN}\right)_2 + \textnormal{Br}_2 \rightarrow \textnormal{BrCH}\left(\textnormal{CN}\right)_2 + \textnormal{H}^+ + \textnormal{Br}^-$$
+
+The reaction mechanism has been determined as follows:
+
+$$\omark{\textnormal{CH}_2\left(\textnormal{CN}\right)_2}{\textnormal{SH}} \mathop\rightleftharpoons\limits_{k_-}^{k_+} \omark{\textnormal{CH}\left(\textnormal{CN}\right)_2^-}{\textnormal{S}^-} + \textnormal{H}^+$$
+$$\omark{\textnormal{CH}\left(\textnormal{CN}\right)_2^-}{\textnormal{S}^-} + \textnormal{Br}_2 \mathop\rightarrow\limits^{k} \omark{\textnormal{BrCH}\left(\textnormal{CN}\right)_2}{\textnormal{SBr}} + \textnormal{Br}^-$$
+
+}
+
+\opage{
+
+\otext
+Write down the kinetic differential equations for SH, S$^-$, and SBr. Apply the steady-state approximation for $\left[\textnormal{S}^-\right]$ and use this result to eliminate $\left[\textnormal{S}^-\right]$ from the kinetic expressions for SH and SBr.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} The reactions that appear in the reaction mechanism must be elementary reactions. Therefore we can write the kinetic differential equations as:
+
+$$\frac{d\left[\textnormal{SH}\right]}{dt} = -k_+\left[\textnormal{SH}\right] + k_-\left[\textnormal{S}^-\right]\left[\textnormal{H}^+\right]$$
+$$\frac{d\left[\textnormal{S}^-\right]}{dt} = k_+\left[\textnormal{SH}\right] - k_-\left[\textnormal{S}^-\right]\left[\textnormal{H}^+\right] - k\left[\textnormal{S}^-\right]\left[\textnormal{Br}_2\right]$$
+$$\frac{d\left[\textnormal{SBr}\right]}{dt} = k\left[\textnormal{S}^-\right]\left[\textnormal{Br}_2\right]$$
+
+The steady-state approximation for S$^-$ can be obtained by setting $d\left[\textnormal{S}^-\right]/dt = 0$. The second equation above then gives:
+
+$$\left[\textnormal{S}^-\right] = \frac{k_+\left[\textnormal{SH}\right]}{k_-\left[\textnormal{H}^+\right] + k\left[\textnormal{Br}_2\right]}$$
+
+This can be used to eliminate $\left[\textnormal{S}^-\right]$ from the other kinetic equations:
+
+$$-\frac{d\left[\textnormal{SH}\right]}{dt} = \frac{d\left[\textnormal{SBr}\right]}{dt} = \frac{k_+k\left[\textnormal{SH}\right]\left[\textnormal{Br}_2\right]}{k_-\left[\textnormal{H}^+\right] + k\left[\textnormal{Br}_2\right]}$$
+
+}
+
+\opage{
+
+\otext
+\underline{Pre-equilibrium conditions.} If one of the consequtive steps involve both forward and backward reactions, we have to account for this in the kinetic differential equations. Consider the following reaction:
+
+$$A + B \mathop\rightleftharpoons\limits^{k_+}_{k_-} I \mathop\rightarrow\limits^k P$$
+
+Note that it is possible to establish equilibrium in this reaction only if $k_- >> k$. If this is the case then we can write an approximate equilibrium condition between $A+B$ and $I$ as:
+
+\aeqn{9.53}{K = \frac{\left[I\right]}{\left[A\right]\left[B\right]}\textnormal{ with }K = \frac{k_+}{k_-}}
+
+The formation rate of $P$ can now be written:
+
+\aeqn{9.54}{\frac{d\left[P\right]}{dt} = k\left[I\right] = kK\left[A\right]\left[B\right]}
+
+Thus this is effectively a second-order rate law with an effective rate constant:
+
+\aeqn{9.55}{\frac{d\left[P\right]}{dt} = k'\left[A\right]\left[B\right]\textnormal{ with }k' = kK = \frac{k_+k}{k_-}}
+
+\textbf{Note:} The above calculation can also be carried out without the assumption $k_- >> k$ by using the steady-state approximation for the intermediate. In this case the effective rate constant can be obtained as:
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.56}{k' = \frac{k_+k}{k_- + k}}
+
+The corresponding steady-state concentration for $I$ is given by
+
+\aeqn{9.57}{\left[I\right]\approx \frac{k_+\left[A\right]\left[B\right]}{k_- + k}}
+
+This type of reactions are found, for example, in enzyme catalysis (the Michaelis-Menten mechanism).
+
+\vspace*{0.2cm}
+
+\textbf{Excercise.} Derive Eqs. (\ref{eq9.56}) and (\ref{eq9.57}) by using the steady-state approximation for $I$.
+
+\vspace*{0.2cm}
+
+\textbf{Notes:}
+\begin{itemize}
+\item There are may topics in chemical kinetics that are not covered by the above discussion. These include complex reactions such as chain reactions (including polymerization), explosions, photochemical reactions, catalytic reactions, and oscillating reactions. 
+\item A given reaction mechanism may contain many reactions that are consequtive/parallel etc. and it often becomes impossible to find analytical solutions to the corresponding differential equations.
+\item A comprehensive kinetics database has been compiled by NIST and is available online at: \url{http://kinetics.nist.gov/kinetics/}.
+\end{itemize}
+
+}

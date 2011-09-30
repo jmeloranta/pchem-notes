@@ -1,0 +1,86 @@
+\opage{
+\otitle{7.2 Energy level structure}
+
+\otext
+A magnetic dipole interacts with an external magnetic field (see Eq. (\ref{eq10.40})):
+
+\aeqn{7.8}{\hat{H} = -\vec{\hat{\mu}}\cdot\vec{B} = -\hat{\mu}_zB_z}
+
+where the magnetic field is along the $z$-axis $\vec{B} = (0, 0, B_z)$ and $\vec{\mu}$ is the magnetic moment of the dipole. For an electron spin (see Eq. (\ref{eq7.4})) this gives:
+
+\aeqn{7.9}{\hat{H} = -\hat{\mu}_{S,z}B_z = \frac{g_e\mu_B}{\hbar}\hat{S}_zB_z}
+
+and for a nuclear spin:
+
+\aeqn{7.10}{\hat{H} = -\hat{\mu}_{I,z}B_z = -\frac{g_N\mu_N}{\hbar}\hat{I}_zB_z}
+
+By using Eq. (\ref{eq7.1}) we get the energies of the spin levels:
+
+\beqn{7.11}{E_S = g_e\mu_Bm_SB_z\textnormal{ with }m_S = +S,...,0,...,-S}
+{E_I = -g_N\mu_Nm_IB_z\textnormal{ with }m_I=+I,...,0,...-I}
+
+For a spin 1/2 particle, the energy difference between the levels is ($g$ = $g_e$ or $g_N$ and $\mu$ = $\mu_B$ or $\mu_N$):
+
+\aeqn{7.12}{\Delta E(B_z) = \left|E\left(m=+\frac{1}{2}\right) - E\left(m=-\frac{1}{2}\right)\right| = g\mu B_z}
+
+}
+
+\opage{
+
+\otext
+For electron spin the splitting of the levels is called the \textit{electron Zeeman effect} and for nuclear spins the \textit{nuclear Zeeman effect}. Energy as a function of the external magnetic field are shown below.
+
+\ofig{zeeman2}{0.35}{}
+
+The resonance frequency can now be identified as:
+
+\aeqn{7.13}{\nu = \frac{\Delta E}{h} = \frac{g\mu B_z}{h} = \frac{\gamma B_z}{2\pi}}
+
+where $\gamma$ is either $\gamma_e$ or $\gamma_N$. $\nu$ is called the \textit{Larmor frequency}. Sometimes Larmor frequency is expressed in terms of angular frequency $\omega = \gamma B_z$.
+
+}
+
+\opage{
+
+\otext
+Both \textit{nuclear magnetic resonance} (NMR) and \textit{electron paramagnetic resonance} (EPR; also called \textit{electron spin resonance}; ESR) classify as magnetic resonance spectroscopy. They employ the oscillating magnetic field component of the electromagnetic field to induce transitions. In NMR the electromagnetic radiation lies in the radio frequency range (RF; 50 - 800 MHz) whereas in EPR it is typically in the microwave region (MW; 9 GHz, X-band). The transitions occur between the $m_S$ or $m_I$ levels, for which the energies are given by Eq. (\ref{eq7.13}). The general selection rule for NMR is $\Delta I = 0$ and $\Delta m_I = \pm 1$, and for EPR $\Delta S = 0$ and $\Delta m_S = 0$.
+
+\otext
+As discussed in the context of the Einstein model for stimulated absorption (see Sec. 5.3), it is necessary to have a population difference between the spin levels for absorption to occur. In magnetic resonance spectroscopy the energy levels are typically so close to each other that they have significant thermal populations. The Boltzmann distribution between two such levels gives:
+
+\aeqn{7.14}{\frac{P_2}{P_1} = e^{-\Delta E/(kT)}}
+
+where $P_1$ and $P_2$ are the populations of the lower and upper spin levels, respectively. For an electron spin this gives:
+
+\aeqn{7.15}{\frac{P_2}{P_1} = e^{-g_e\mu_BB_z / (kT)} \approx 1 - \frac{g_e\mu_BB_z}{kT}}
+
+For a nuclear spin the population difference is:
+
+\aeqn{7.16}{\frac{P_2}{P_1} = e^{-g_N\mu_NB_z/(kT)} \approx 1 - \frac{g_N\mu_NB_z}{kT}}
+
+}
+
+\opage{
+
+\otext
+For absorption to occur, we must have $P_2/P_1 < 1$. If $P_1 \approx P_2$ the sample is said to be \textit{saturated} and no absorption occurs. 
+
+\otext
+\textbf{Example.} What is the resonance frequency for $^{19}$F nucleus in 1 T magnetic field? For $^{19}$F nucleus $g_N = 5.256$.
+
+\otext
+\textbf{Solution.} Eq. (\ref{eq7.12}) gives:
+$$\Delta E = g_N\mu_NB_z = (5.256)\times(5.051\times 10^{-27}\textnormal{ J T}^{-1})\times(1\textnormal{ T}) = 2.655\times 10^{-26}\textnormal{ J}$$
+
+The resonance frequency can be then obtained from Eq. (\ref{eq7.13}):
+$$\nu = \frac{\Delta E}{h} = \frac{2.655\times 10^{-26}\textnormal{ J}}{6.626\times 10^{-34}\textnormal{ J s}} = 40.07\times 10^6\textnormal{ s}^{-1} = 40.07\textnormal{ MHz}$$
+
+\otext
+\textbf{Example.} What magnetic field strength is required to generate a 220 MHz Larmor frequency for a proton, which has $g_N = 5.585$?
+
+\otext
+\textbf{Solution.} Combining both Eqs. (\ref{eq7.12}) and (\ref{eq7.13}) we get:
+
+$$B_z = \frac{h\nu}{g_N\mu_N} = \frac{(6.626\times 10^{-34}\textnormal{ J s})\times(220\times 10^6\textnormal{ s}^{-1})}{(5.585)(5.051\times 10^{-27}\textnormal{ J T}^{-1})} = 5.167\textnormal{ T}$$
+
+}

@@ -1,0 +1,190 @@
+\opage{
+
+\begin{columns}
+
+\begin{column}{8cm}
+\otitle{3.8 Third law of thermodynamics}
+
+\otext
+The third law, for all molecules:
+
+\aeqn{3.49a}{\lim\limits_{T\rightarrow 0} \Delta_r S = 0}
+
+Planck's contribution, for any pure substance:
+
+\aeqn{3.49b}{\lim\limits_{T\rightarrow 0} S = 0}
+
+Consider a simple phase change in Eq. (\ref{eq3.49a}):
+
+\begin{center}
+Sulfur(rhombic crystal) $\leftrightarrow$ Sulfur(monoclinic crystal)
+\end{center}
+\end{column}
+
+\hspace*{-0.8cm}
+\begin{column}{4cm}
+\ofig{3rd-law-guys}{0.35}{}
+\end{column}
+
+\end{columns}
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\vspace*{-0.5cm}
+
+\otext
+
+Experimental determination of heat capacities and Eq. (\ref{eq3.49}) show that:
+
+$$\Delta_r S \rightarrow 0$$
+
+On the right: experimentally determined entropies for the two crystal forms of sulfur are shown.
+
+\end{column}
+
+\begin{column}{4cm}
+% Data: E. D. Eastman and W. C. McGavock, J. Am. Chem. Soc.; 1937; 59(1) pp 145 - 151. + integrated with entropy.c
+\vspace*{-0.5cm}
+\ofig{entropy4}{0.24}{}
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Experimental details for the phase change in solid sulfur:
+
+\begin{itemize}
+\item Rhombic form of sulfur is the stable form below the phase transition temperature (368.5 K).
+\item Monoclinic sulfur can exist below this temperature when supercooled.
+\end{itemize}
+
+\vspace*{0.3cm}
+\textbf{Experimental methods for determining $\Delta_r S$:}\\
+
+\vspace*{0.2cm}
+\underline{Method 1:} Determine constant-pressure heat capacities ($C_P(T)$) for both forms of the crystal structures. Use Eq. (\ref{eq3.49}):
+
+\beqn{3.51}{\bar{S}_{368.5\textnormal{ K}}^\textnormal{rho} - \bar{S}_{\textnormal{0 K}}^\textnormal{rho} = \int\limits_{0\textnormal{ K}}^\textnormal{368.5 K}\frac{\bar{C}_P^\textnormal{rho}}{T}dT}
+{\bar{S}_{368.5\textnormal{ K}}^\textnormal{mon} - \bar{S}_{\textnormal{0 K}}^\textnormal{mon} = \int\limits_{0\textnormal{ K}}^\textnormal{368.5 K}\frac{\bar{C}_P^\textnormal{mon}}{T}dT}
+
+If we assume that both rhombic and monoclinic forms have the same S$_\textnormal{0 K}$ then subtraction of the equations from each other gives the entropy difference between the two forms at 368.5 K. The result from such calculation gives $\Delta S(\textnormal{rho, mon})$ at 368.5 K, which is 1.09 J K$^{-1}$ mol$^{-1}$.
+
+}
+
+\opage{
+
+\otext
+\underline{Method 2:} Determine heats of combustion for both crystal forms at 368.5 K and calculate the enthalpy difference between the two forms
+by subtracting the two values from each other. Then use Eq. (\ref{eq3.30}):
+
+\aeqn{3.51a}{\Delta S(\textnormal{rho,mon)} = \frac{\Delta H}{T} = \frac{401\textnormal{ J mol}^{-1}}{368.5\textnormal{ K}} = 1.09\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}}
+
+Both methods give consistent results. Note that we used the fact that both species had identical entropies at 0 K. Statistical thermodynamics says that this value should be zero.
+
+\vspace*{0.2cm}
+
+\underline{Notes:}
+
+\begin{enumerate}
+\item Entropies for chemical reactions cannot be determined calorimetrically because they are not reversible.
+\item What is supercooling? A liquid below its melting point will crystallize in presence of a seed crystal or nucleus around which a crystal structure can form. However, lacking any such nucleus, the liquid phase can be maintained all the way down to the temperature at which crystal homogeneous nucleation occurs. For example, pure water can be cooled to almost 231 K (melting point 273 K) when cooled very fast, about at rate 1 million K / second. Rain contains sometimes supercooled water, which freezes immediately upon touching a surface.
+\item $C_P$ goes to zero when temperature approaches 0 K.
+\item According to the third law of thermodynamics, it is impossible to reach 0 K.
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+Other methods for determining entropy:
+
+\vspace*{0.2cm}
+
+\begin{itemize}
+\item Measurement of equilibrium constant for a chemical reaction over a range of temperatures yields both $\Delta H^\circ$ and $\Delta S^\circ$.
+\item Spectrophotometric measurements
+\end{itemize}
+
+\vspace*{0.3cm}
+
+\underline{Violations of the third law?}\\
+
+\vspace*{0.2cm}
+
+In most cases theory and experiment agree (298.15 K and 1 bar; gas):
+
+\vspace*{0.2cm}
+
+% for concept, see for example, j. chem. ed. 84, 493 (2007).
+% numbers from various books
+\begin{tabular}{lll}
+Gas & $S^\circ$ (Calc.) / J K$^{-1}$ mol$^{-1}$ & $S^\circ$ (Exp.) / J K$^{-1}$ mol$^{-1}$\\
+\cline{1-3}
+CO$_2$ & 213.8 & 213.7\\
+NH$_3$ & 192.8 & 192.6\\
+NO$_2$ & 240.1 & 240.2\\
+CH$_4$ & 186.3 & 186.3\\
+C$_2$H$_2$ & 200.9 & 200.9\\
+C$_2$H$_4$ & 219.6 & 219.6\\
+C$_2$H$_6$ & 229.6 & 229.6\\
+\cline{1-3}
+N$_2$O & 215.1 & 219.9 ($\Delta = 4.8$)\\
+CO & 193.5 & 197.7 ($\Delta = 4.2$)\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+This suggests that there is some kind of residual entropy in the system? When comparing values obtained using heat capacities
+and spectroscopic data, similar discrepancies can be noticed.
+
+}
+
+\opage{
+
+\otext
+For both CO and N$_2$O, the residual entropy can be explained by imperfect crystal structures at 0 K, which results in approximately a constant offset at elevated temperatures as well (see previous table). Crystal imperfections contribute to the total entropy and hence it does not appraoch zero even at 0 K. Consider the following molecular arrangements in solid N$_2$O:
+
+\vspace*{0.2cm}
+
+$$...\textnormal{ NNO}\cdot\cdot\cdot\textnormal{ONN}\cdot\cdot\cdot\textnormal{NNO}\cdot\cdot\cdot\textnormal{NNO}\cdot\cdot\cdot\textnormal{ONN }...$$
+
+In other words, the molecule can orient in many different ways in the crystal (O $\cdot\cdot\cdot$ O, O $\cdot\cdot\cdot$ N, N $\cdot\cdot\cdot$ N). If we consider that N$_2$O gas would consist of two different species NNO and ONN with equal amounts and calculate the entropy of mixing these two species, we get (Eq. (\ref{eq3.43}) for per mole quantity, $y_1 = 1/2, y_2 = 1/2$):
+
+\beqn{3.53}{\Delta_{mix}\bar{S} = -n_1R\ln\left(y_1\right) - n_2R\ln\left(y_2\right) = -\frac{1}{2}R\ln\left(\frac{1}{2}\right) - \frac{1}{2}R\ln\left(\frac{1}{2}\right)}{= 5.8\textnormal{ J K}^{-1}\textnormal{mol}^{-1}}
+
+This is approximately the difference between the experimental and calculated results. If we could prepare a ``perfect'' crystal somehow, this correction would not be needed. For CO, one needs to consider two ``different'' molecules CO and OC.
+
+}
+
+\opage{
+
+\otext
+The following two sources of randomness in crystals at 0 K are not considered in calculating the entropies for chemical purposes:
+
+\vspace*{0.2cm}
+
+\begin{enumerate}
+\item Possible isotopic mixtures of species. This is ignored because both the reactants and the products contain the same mixture isotopes.
+\item Spin degeneracy at 0 K is ignored. Again the same degeneracy exists in both the reactants and the products. Spin is conserved in chemical reactions.
+\end{enumerate}
+
+\vspace*{0.3cm}
+
+\underline{Notes:}
+
+\begin{enumerate}
+\item The entropy of H$^+$ (at chemical equilibrium) in water has been arbitrarily assigned the value of zero.
+\item When comparing standard entropy values from various sources, it is important to be aware of the standard pressure used.
+\item In order to see why NNO vs. ONN (or CO vs. OC) configurations result in residual entropy, one should draw the crystal structure
+and look at the possible orientations there.
+\item H$_2$O is another system that has significant amount of residual entropy.
+\end{enumerate}
+
+}

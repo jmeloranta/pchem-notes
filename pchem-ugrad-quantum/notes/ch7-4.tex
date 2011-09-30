@@ -1,0 +1,33 @@
+\opage{
+\otitle{7.4 Pulse sequences and the measurement of $T_1$ and $T_2$}
+
+\otext
+\underline{Measurement of $T_1$:}
+
+\vspace*{-0.3cm}
+
+\ofig{pulse-t1}{0.35}{}
+
+}
+
+\opage{
+
+\otext
+The first $\pi$ pulse rotates the magnetization from $+z$ to $-z$. After this the magnetization begins to relax back towards the initial value (along $+z$) due to the spin-lattice relaxation. This can be viewed as individual spins falling back from the higher spin energy level back to the lower level. At the point where there is equal population of spin up and down, the magnetization along the $z$-axis is zero. The magnetization along $z$ after time $\tau$ can be probed by a $\pi/2$ pulse, which takes the remaining $M_z$ to the $xy$-plane where the spectrum can be recorded by the coils. The overall intensity of the spectrum is proportional to $M_z(\tau)$. $T_1$ can be determined by fitting Eq. (\ref{eq7.17}) to the intensity vs. delay time ($\tau$) data.
+
+\otext
+\underline{Measurement of $T_2$:}
+
+\vspace*{-0.3cm}
+
+\ofig{pulse-t2}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+The first $\pi/2$ pulse rotates the magnetization from $z$ to $y$. Because the spins are in different environments, they will have slightly different Larmor frequencies. In the rotating frame coordinate system, this corresponds to the slow spins rotating counter clockwise and the fast spins clockwise. After the spins have fanned out (delay time $\tau$), a $\pi$ pulse is applied to flip the spins about the $x$-axis. This will flip the spins to the other side while preserving their direction of rotation. After time $\tau$, they will now refocus on the $y$-axis producing the \textit{spin echo} signal. Note that the magnetization is in the $xy$-plane can then be picked up by the coils. By recording the spin echo amplitude as a function of $\tau$, one can fit a decaying exponential, $\exp(-2\tau/T_2^*$, to this data and obtain $T_2^*$. Note that $T_2^*$ is equal to $T_2$ only if there is no inhomogeneous broadening.
+
+}
+

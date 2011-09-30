@@ -1,0 +1,23 @@
+% Problem 1/3 solution
+\noindent
+\underline{Solution:}\\
+
+The lecture notes give: $C_V = \left(\frac{\partial U}{\partial T}\right)_V$. Differentiate this equation with respect to volume:
+
+$$\left(\frac{\partial C_V}{\partial V}\right)_T = \left(\frac{\partial}{\partial V}\left(\frac{\partial U}{\partial T}\right)_V\right)_T = \left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V$$
+
+By using the relation given in the problem, we can write this as:
+
+$$\left(\frac{\partial C_V}{\partial V}\right)_T = \left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V = \left(\frac{\partial\left(-P + T\left(\partial P / \partial T\right)_V\right)}{\partial T}\right)_V = T\left(\frac{\partial^2 P}{\partial T^2}\right)_V$$
+
+Next we consider the various equations of state:
+
+\begin{itemize}
+\item[a)] Ideal gas. $P = nRT / V$ from which the second derivative of pressure (see above) is zero and therefore $\left(\frac{\partial C_V}{\partial V}\right)_T = 0$.
+
+\item[b)] For a van der Waals gas we have: $P = \frac{nRT}{V - nb} - \frac{n^2a}{V^2}$. Differentiation of $P$ with respect to $T$ once just gives $nR / (V - nb)$. This does not depend on $T$ and hence $\left(\frac{\partial C_V}{\partial V}\right)_T = 0$.
+
+\item[c)] Differentiation of $P$ twice with respect to $T$ again gives zero and hence $\left(\frac{\partial C_V}{\partial V}\right)_T = 0$.
+\end{itemize}
+
+\hrule\vspace{0.5cm}

@@ -1,0 +1,43 @@
+% Problem 9/3 solution
+\noindent
+\underline{Solution:}\\
+
+Note that the pressures of the two gases are different and thus the results in the lecture notes cannot be directly applied.
+
+\begin{enumerate}
+
+\item[I] The initial (i.e. before mixing) entropies for the gases are:
+
+$$S_A = S_A^\circ - nR\ln\left(\frac{P_A^{ini}}{P_A^\circ}\right) = S_A^\circ - nR\ln\left(\frac{1\textnormal{ bar}}{1\textnormal{ bar}}\right) = S_A^\circ$$
+$$S_B = S_B^\circ - nR\ln\left(\frac{P_B^{ini}}{P_B^\circ}\right) = S_B^\circ - nR\ln\left(2\right)$$
+
+\item[II] Let both gases expand from their initial pressures to the final pressure at constant temperature. This changes entropy of both gases according to:
+
+$$S_A = S_A^\circ - nR\ln\left(\frac{P_{total}}{P_A^\circ}\right)\textnormal{ and }S_B = S_B^\circ - nR\ln\left(\frac{P_{total}}{P_B^\circ}\right)$$
+
+where $P_{total}$ is the final pressure after mixing. The final volume after mixing is:
+
+$$V_{total} = V_A + V_B = \frac{nRT}{P_A} + \frac{nRT}{P_B} = \frac{nRT}{P_A} + \frac{nRT}{2P_A} = \frac{3nRT}{2P_A}$$
+
+The total pressure after mixing is then:
+
+$$P_{total} = \frac{2nRT}{V_{total}} = \frac{4}{3}P_A = \frac{4}{3}\textnormal{ bar}$$
+
+The entropy change due to expansion for both gases is:
+
+$$S_A = S_A^\circ - nR\ln\left(\frac{4}{3}\right)\textnormal{ and } S_B = S_B^\circ - nR\ln\left(\frac{4}{3}\right)$$
+
+Combining 1 and 2, we have: $\Delta S_A = -n_AR\ln\left(\frac{4}{3}\right)$ and $\Delta S_B = -n_BR\left(\ln\left(\frac{4}{3}\right) - \ln(2)\right)$.
+
+\item[III] Finally we must include the entropy change due to mixing ($n = 1$):
+
+$$\Delta_{mix} S = -R\ln\left(\frac{1\textnormal{ mol}}{2\textnormal{ mol}}\right) - R\ln\left(\frac{1\textnormal{ mol}}{2\textnormal{ mol}}\right) = -2R\ln\left(\frac{1}{2}\right)$$
+
+The total entropy change is then (``1 + 2 + 3''):
+
+$$\Delta S_{total} = \Delta S_A + \Delta S_B + \Delta S_{mix} = -2R\ln\left(\frac{4}{3}\right) + R\ln(2) - 2R\ln\left(\frac{1}{2}\right)$$
+$$ = 12.51\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

@@ -1,0 +1,144 @@
+\opage{
+\otitle{6.5 Vapor pressure of nonideal mixtures}
+
+\otext
+In the previous section we assumed that Raoult's law holds (Eq. (\ref{eq6.26})). However, in many cases significant deviations from this law are found:
+
+\vspace*{-0.4cm}
+
+\ofig{deviation-raoult}{0.55}{}
+
+\vspace*{-0.5cm}
+\begin{columns}
+
+\begin{column}{5cm}
+
+\otext
+
+Liquid mixture with a negative azeotrope. (1) chloroform and (2) acetone at 35.17 \degree C. Note that the bubble point and the dew point lines overlap. The dashed line shows the results from Raoult's law.
+\end{column}
+
+\begin{column}{5cm}
+
+\otext
+
+\vspace*{-1cm}
+Liquid mixture with a positive azeotrope. (1) carbon disulfide and (2) acetone at 35.17 \degree C.
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.3cm}
+The points where the bubble point and dew point lines cross, are called \textit{azeotropic points}. In this case distillation can not separate the components!
+
+}
+
+\opage{
+
+\otext
+What is the origin of the deviation from the Raoult's law?
+
+\ofig{hydrogen-bonding-raoults-law}{0.4}{}
+
+This extra binding interaction lowers the vapor pressure from that predicted by the Raoult's law. The maximum effect is seen when there are equal amounts of the components (i.e. the middle of the bubble point line on previous slide).
+
+\vspace*{0.2cm}
+
+A positive trend (i.e. the bubble point line is above the Raoult's law prediction) is observed when A -- A and B -- B interactions are stronger than A -- B. Here A and B are the components forming the binary mixture. If these deviations are large enough, the system separates into two phases A and B.
+
+\vspace*{0.2cm}
+
+Henry's law attempts to fix the deficiency of the Raoult's at small mole fractions, which are close to zero or one (i.e. nearly one component solutions). It consists of the following linear approximation:
+
+\aeqn{6.41}{P_i = K_i x_i}
+
+where $K_i$ is Henry's law constant for component $i$. Its value can be obtained from plotting the ratio $P_i / x_i$ when $x_i$ approaches zero.
+
+}
+
+\opage{
+
+\otext
+Behavior of the partial pressures as a function of $x_i$ (the liquid phase mole fraction) is shown below for Henry's law, Raoult's law and the experimental data (continuous line):
+
+\vspace*{-0.5cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{henrys-law}{0.5}{}
+\end{column}
+
+\begin{column}{6cm}
+Henry's law constants given in Pascals.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lll}
+Gas & Water & Benzene\\
+H$_2$ & 7.12 $\times$ 10$^9$ & 0.367 $\times$ 10$^9$\\
+N$_2$ & 8.68 $\times$ 10$^9$ & 0.239 $\times$ 10$^9$\\
+O$_2$ & 4.40 $\times$ 10$^9$ & --\\
+CO & 5.79 $\times$ 10$^9$ & 0.163 $\times$ 10$^9$\\
+CO$_2$ & 0.167 $\times$ 10$^9$ & 0.0114 $\times$ 10$^9$\\
+CH$_4$ & 4.19 $\times$ 10$^9$ & 0.0569 $\times$ 10$^9$\\
+C$_2$H$_2$ & 0.135 $\times$ 10$^9$ & --\\
+C$_2$H$_4$ & 1.16 $\times$ 10$^9$ & --\\
+C$_2$H$_6$ & 3.07 $\times$ 10$^9$ & --\\
+\end{tabular}
+\end{column}
+
+\end{columns}
+
+The most common application of Henry's law is to calculate solubilities of gases in liquids. In this case the amounts of dissolved gas is very small, which means that its molar fraction in the liquid is small.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Use the Henry's law constant, calculate the solubility of carbon dioxide in water at 25 \degree C in moles per liter at a partial pressure of CO$_2$ over the solution of 1 bar. Assume that 1 L of solution contains approximately 1000 g of water.
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} We apply Henry's law (Eq. (\ref{eq6.41})). Denote water by component 1 and CO$_2$ by component 2. The partial pressure of CO$_2$ in the gas phase was given as: $P_2 = 10^5$ Pa. Now Eq. (\ref{eq6.41}) gives:
+
+$$x_2 = \frac{P_2}{K_2} = \frac{10^5\textnormal{ Pa}}{0.167\times 10^9\textnormal{ Pa}} = 6.0\times 10^{-4}$$ 
+
+By the definition of mole fraction, we have:
+
+$$x_2 = \frac{\left[\textnormal{CO}_2\right]}{\left[\textnormal{CO}_2\right] + \left[\textnormal{H}_2\textnormal{O}\right]}\approx \frac{\left[\textnormal{CO}_2\right]}{\left[\textnormal{H}_2\textnormal{O}\right]}$$
+$$\Rightarrow \left[\textnormal{CO}_2\right] = x_2\left[\textnormal{H}_2\textnormal{O}\right] = \left(6.0\times 10^{-4}\right)\times\left(55.5\textnormal{ mol L}^{-1}\right) = 3.3\times 10^{-2}\textnormal{ mol L}^{-1}$$
+
+\hrulefill
+
+Notes:
+
+\begin{itemize}
+\item The solubility of a gas in liquids usually decreases with increasing temperature because heat is generally evolved in the solvation process.
+\item There are exceptions to this - especially with solvents like liquid ammonia, molten silver and some organic liquids.
+\item Solubility of an unreactive gas in a liquid is due to intermolecular attractive forces (van der Waals forces) between gas molecules and solvent molecules.
+\item Addition of electrolytes (i.e. ionic species) usually decreases solubility of gases in liquids (``salting out'').
+\end{itemize}
+
+}
+
+\opage{
+
+\otext
+If the vapor pressure of a solute follows Henry's law, then we can insert Eq. (\ref{eq6.41}) into Eq. (\ref{eq6.20}):
+
+\aeqn{6.42a}{\mu_i(g) = \mu_i^\circ(g) + RT\ln\left(\frac{K_ix_i}{P^\circ}\right)}
+
+At equilibrium $\mu_i(g) = \mu_i(l)$ (see Eq. (\ref{eq6.19})) and expanding the logarithm gives:
+
+\aeqn{6.42}{\mu_i(l) = \umark{\mu_i^\circ(g) + RT\ln\left(\frac{K_i}{P^\circ}\right)}{= \mu_i^*(l)} + RT\ln\left(x_i\right) = \mu_i^*(l) + RT\ln\left(x_i\right)}
+
+where we introduced the standard chemical potential for species $i$ in the liquid:
+
+\aeqn{6.43}{\mu_i^*(l) = \mu_i^\circ(g) + RT\ln\left(\frac{K_i}{P^\circ}\right)}
+
+Note that the above standard state is hypothetical because it corresponds to $x_i = 1$ for the solute but it is still taken to be dilute solution. Even as such, this state is useful as a reference. For this reason, dilute solutions are not the same as ideal solutions.
+
+}

@@ -1,0 +1,90 @@
+\opage{
+
+\otitle{9.5 The temperature dependence of reaction rates}
+
+\otext
+The rate constants for most chemical reactions increase as temperature is increased. At low temperatures it is possible that some reactions, which are based on the quantum mechanical tunneling, have rates that do not depend on temperature. The relationship between rate constants, temperature, and the activation energies is often found to follow the \textit{Arrhenius law} (Svante Arrhenius, Swedish chemist, 1859 -- 1927):
+
+\aeqn{9.30}{k = Ae^{-E_a/(RT)}}
+
+where $k$ is the rate constant, $A$ is the \textit{pre-exponential factor} or the \textit{frequency factor}, $E_a$ is the activation energy for the reaction, $R$ is the gas constant, and $T$ is the temperature. An alternative form for this equation is:
+
+\aeqn{9.31}{\ln(k) = \ln(A) - \frac{E_a}{RT}}
+
+The parameter $E_a$ can be obtained from the slope when plotting $\ln(k)$ as a function of $1/T$ and $A$ from the intercept. These parameters are called \textit{Arrhenius parameters}. Eq. (\ref{eq9.31}) can be also written at two different temperatures as:
+
+\aeqn{9.32}{\ln\left(\frac{k_1}{k_2}\right) = -\frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)}
+
+where the indices $k_1$ and $k_2$ refer to rate constants at $T_1$ and $T_2$, respectively.
+
+}
+
+\opage{
+
+\otext
+\underline{Derivation of the Arrhenius law.} Consider reaction $A\rightarrow B$, which proceeds through a \textit{transition state} denoted by $A^*$. Transition state is a molecular configuration along the reaction path where the energy has the maximum value. The reaction can then be written as:
+
+\aeqn{9.33}{A \mathop\rightleftharpoons\limits^{k_+}_{k_-} A^* \mathop\rightarrow\limits^{k}B}
+
+The equilibrium constant for the first part of the reaction can be written as:
+
+\aeqn{9.34}{K = \frac{k_+}{k_-} = \frac{\left[A^*\right]}{\left[A\right]}}
+
+It is plausible to assume that $\left[A^*\right] << \left[A\right]$ since the intermediate $A^*$ should be transient in nature. The concentration of the product $A$ follows the first-order kinetics:
+
+\aeqn{9.35}{\frac{d\left[B\right]}{dt} = k\left[A^*\right] = \umark{kK}{\equiv k'}\left[A\right] = k'\left[A\right]}
+
+where we used Eq. (\ref{eq9.34}) in the last step and we introduced rate constant $k'$ for the formation of $B$ from $A$. Note that the rate constant $k'$ applies for the whole reaction $A\rightarrow B$. Next we apply the van't Hoff equation (Eq. (\ref{eq5.39})):
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.36}{\frac{\partial\left(\ln(K)\right)}{\partial T} = \frac{\Delta_rH^{\circ *}}{RT^2} \approx \frac{E_a}{RT^2}}
+
+where $K$ is the equilibrium constant between the initial and the transition states and $\Delta_rH^{\circ *}$ is the reaction enthalpy between these states. In the last step we have approximated $\Delta_rH^{\circ *} \approx E_a$. Since $K = k'/k$, Eq. (\ref{eq9.36}) becomes:
+
+\aeqn{9.37}{\frac{\partial\left(\ln(k')\right)}{\partial T} - \frac{\partial\left(\ln(k)\right)}{\partial T} = \frac{E_a}{RT^2}}
+
+Arrhenius assumed that the formation of the product $A$ from the transition state is independent of temperature and hence the second term on the left is zero:
+
+\aeqn{9.38}{\frac{\partial\left(\ln(k')\right)}{\partial T} = \frac{E_a}{RT^2}}
+
+Solution to this differential equation is given by:
+
+\aeqn{9.39}{k' = Ae^{-E_a/(RT)}}
+
+where the constant $A$ arises from integration of Eq. (\ref{eq9.38}). 
+
+\vspace*{0.2cm}
+
+Caution should be excercised when interpreting $E_a$ and $A$. The assumptions made in the derivation may not be always valid causing the model to fail. $E_a$ is the minimum kinetic energy that reactants must have in order to form products. Not all encounters of the reactants lead to the formation of products. The pre-exponential factor is often related to the frequency of such collisions with the exponential part giving the success rate.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Rasemization of pinene is a first-order reaction. The following rate constants were determined in the gas phase: $k_{457.7\textnormal{ K}} = 3.7\times 10^{-7}$ s$^{-1}$ and $k_{510.1\textnormal{ K}} = 5.1\times 10^{-5}\textnormal{ s}^{-1}$. Use the Arrhenius law to obtain $E_a$ and calculate the rate constant $k_{480\textnormal{ K}}$.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We use Eq. (\ref{eq9.32}) at the two given temperatures:
+
+$$\ln\left(\frac{5.1\times 10^{-5}\textnormal{ s}^{-1}}{3.7\times 10^{-7}\textnormal{ s}^{-1}}\right) = -\frac{E_a}{8.315\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}}\left(\frac{1}{510.1\textnormal{ K}} - \frac{1}{457.6\textnormal{ K}}\right)$$
+
+Solving for $E_a$ gives $E_a = 182\textnormal{ kJ mol}^{-1}$. The same equation can be used to obtain the rate constant at 480 K:
+
+$$\ln\left(\frac{5.1\times 10^{-5}\textnormal{ s}^{-1}}{k_{480\textnormal{ K}}}\right) = -\frac{182\textnormal{ kJ mol}^{-1}}{8.315\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}}\left(\frac{1}{510.1\textnormal{ K}} - \frac{1}{480\textnormal{ K}}\right)$$
+
+Solving for $k_{\textnormal{480 K}}$ gives $3.5\times 10^{-6}$ s$^{-1}$. 
+
+\vspace*{0.2cm}
+
+\textbf{Note:} When the Arrhenius equation fails, it is often observed that the following modified equation works well in practice ($n$ is an empirical constant):
+
+$$k = A'T^ne^{-E_a/(RT)}$$
+
+}
+

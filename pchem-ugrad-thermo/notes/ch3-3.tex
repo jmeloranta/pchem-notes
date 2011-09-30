@@ -1,0 +1,266 @@
+\opage{
+\otitle{3.3 Entropy changes in reversible processes}
+
+\otext
+Consider a constant temperature ($T$) and pressure ($P$) process. Now we can apply both Eqs. (\ref{eq2.57})) and (\ref{eq3.27}), respectively:
+
+\vspace*{-0.2cm}
+
+\beqn{3.30}{\Delta H = q_{rev}\textnormal{ and }\Delta S = \frac{q_{rev}}{T}}
+{\Rightarrow \Delta S = \frac{\Delta H}{T}}
+
+Examples of constant $T$ and $P$ processes are: vaporization of pure liquid into its vapor at the equilibrium vapor pressure ($P$), sublimation, and structural transitions in solids.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the change in molar entropy of $n$-hexane when it is vaporized at its boiling point (68.7 \degree C) under atmospheric pressure (1.01325 bar)? The molar enthalpy of vaporization is 28850 J mol$^{-1}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} If $n$-hexane is vaporized into the saturated vapor at the given temperature, the process is reversible and the molar entropy change is given by Eq. (\ref{eq3.30}):
+
+\vspace*{-0.2cm}
+
+$$\Delta \bar{S} = \frac{\Delta\bar{H}}{T} = \frac{28850\textnormal{ J mol}^{-1}}{341.8\textnormal{ K}} = 84.41\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\underline{Other useful special cases:}
+
+\vspace*{0.2cm}
+
+\textit{Constant $V$:} Using Eq. (\ref{eq2.47}) we have:
+
+}
+
+\opage{
+
+\aeqn{3.32}{dS = \frac{\inex{dq}_{rev}}{T} = \frac{C_VdT}{T}}
+
+Integration of $dS$ gives:
+
+\aeqn{3.33}{\Delta S = \int\limits_{T_1}^{T_2}\frac{C_V}{T}dT \approx C_V\ln\left(\frac{T_2}{T_1}\right)}
+
+\textit{Constant $P$:} Using Eq. (\ref{eq2.61}) we get:
+
+\aeqn{3.32a}{dS = \frac{\inex{dq}_{rev}}{T} = \frac{C_PdT}{T}}
+
+\aeqn{3.33a}{\Delta S = \int\limits_{T_1}^{T_2}\frac{C_P}{T}dT \approx C_P\ln\left(\frac{T_2}{T_1}\right)}
+
+\vspace*{0.2cm}
+
+\textit{Constant $T$ and ideal gas:} Following our previous ideal gas calculation, we have:
+
+\beqn{3.35}{dS = \frac{\inex{dq}_{rev}}{T} = - \frac{dw_{rev}}{T} = \frac{PdV}{T}}
+{\Delta S = \int\limits_{V_1}^{V_2}\frac{P}{T}dV = nR\int\limits_{V_1}^{V_2}\frac{dV}{V} = nR\ln\left(\frac{V_2}{V_1}\right) = -nR\ln\left(\frac{P_2}{P_1}\right)}
+
+}
+
+\opage{
+
+\otext
+In terms of standard pressure and entropy (also molar quantities), the previous expression can be written as:
+
+\aeqn{3.36}{\bar{S} = \bar{S}^\circ - R\ln\left(\frac{P}{P^\circ}\right)\textnormal{ (}^\circ\textnormal{ = 1 bar standard pressure)}}
+
+\textbf{Example.} Calculate the entropy change when argon gas at 25 \degree C and 1.00 atm in container of volume 500 cm$^3$ is allowed to expand to 1000 cm$^3$ and is simultaneously heated to 100 \degree C. Assume that argon behaves according to the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The first part of the process was already considered in a previous example. The entropy change ($\Delta S$) due to volume change was 0.118 J K$^{-1}$. In the second step the gas is heated from 298 K to 373 K at constant volume (Eq. (\ref{eq3.33})):
+
+$$\Delta S = n\bar{C}_V\ln\left(\frac{T_2}{T_1}\right) = \left(0.0204\textnormal{ mol}\right)\times\left(12.48\textnormal{ }\frac{\textnormal{J}}{\textnormal{K mol}}\right)\times\ln\left(\frac{373\textnormal{ K}}{298\textnormal{ K}}\right) = 0.057\textnormal{ J K}^{-1}$$
+
+where $C_V$ was calculated from the relation $C_P - C_V = R$. The value of $C_P$ can be found from the NIST chemistry webbook. Note the handling of the process in two steps. The total change in entropy is the sum of the two: $\Delta S = 0.175$ J K$^{-1}$.
+
+\vspace*{0.2cm}
+
+\underline{Note:} Because $S$ is a state function ($dS$ exact), we can choose any convenient path for integration. In this case it was chosen as: (1) volume change and then (2) temperature change.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Half a mole of an ideal gas expands isothermally and reversibly at 298.15 K from a volume of 10 L to a volume of 20 L. (a) What is the change in the entropy of the gas? (b) How much work is done on the gas? (c) How much heat is transferred to the surroundings ($q_{surr}$)? (d) What is the change in the entropy of the surroundings? (e) What is the change in the total entropy (system + surroundings)?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} (a) Use Eq. (\ref{eq3.35}):
+
+\vspace*{-0.2cm}
+
+$$\Delta S = nR\ln\left(\frac{V_2}{V_1}\right) = \left(0.5\textnormal{ mol}\right)\times\left(8.3145\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right)\ln\left(2\right) = 2.88\textnormal{ JK}^{-1}$$
+
+In part (b) we use Eq. (\ref{eq2.8}) and note that $T$ is constant:
+
+$$\Delta U = w_{rev} + q_{rev} = 0 \Rightarrow w_{rev} = -q_{rev}$$
+
+Now Eq. (\ref{eq3.9}) gives:
+
+\vspace*{-0.2cm}
+
+$$\Delta S = \frac{q_{rev}}{T} \Rightarrow q_{rev} = T\Delta S$$
+
+and further:
+
+\vspace*{-0.4cm}
+
+$$w_{rev} = -T\Delta S = -nRT\ln\left(\frac{V_2}{V_1}\right) = -\left(2.88\textnormal{ JK}^{-1}\right)\times\left(298.15\textnormal{ K}\right) = -859\textnormal{ J}$$
+
+}
+
+\opage{
+
+\otext
+To solve (c), we need $q_{syst} = 859$ J as calculated above. The total entropy is conserved ($\Delta S_{tot} = 0$) in a reversible process and thus we have $\Delta S_{syst} = -\Delta S_{surr}$ and $T\Delta S_{sys} = -T\Delta S_{surr}$. Using Eq. (\ref{eq3.9}) we have $q_{syst} = -q_{surr}$ and hence $q_{surr} = -859$ J.
+
+\vspace{0.2cm}
+
+In (d), juse like in (c), the total entropy is conserved and hence $\Delta S_{surr} = -\Delta S_{syst} = -2.88$ J K$^{-1}$.
+
+\vspace*{0.2cm}
+
+In (e), the total entropy is conserved: $\Delta S_{tot} = 0$. The system and its environment together can be considered as an isolated system. Also note that the process is \textit{reversible}.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider that the expansion in the preceding example occurs irreversibly by simply opening a stopcock and allowing the gas to rush into an evacuated bulb of 10 L volume. (a) What is the change in the entropy of the gas? (b) How much work is done on the gas? (c) What is $q_{surr}$?
+(d) What is the change in the entropy of the surroundings? (e) What is the change in the entropy of the system plus the surroundings?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} (a) The change in entropy is the same as in the previous example. Entropy is a state function ($dS$ exact) and hence its value does not depend on path.
+
+(b) Expansion into vacuum does not involve $PV$-work.
+
+(c) Since no work is involved, no changes in heat are involved (the first law).
+
+(d) No heat exchange with the surroundings, thus the entropy of the surroundings does not change.
+
+(e) $\Delta S_{tot} = \Delta S_{syst} + \Delta S_{surr} = 2.88$ J K$^{-1}$ + 0 J K$^{-1}$ = 2.88 J K$^{-1}$. Since the process is irreversible, we expect that the total entropy would increase (Eq. (\ref{eq3.21})).
+
+}
+
+\opage{
+
+\otext
+\textbf{Summary: Calculation of $\Delta S$ for various changes in state}
+
+\vspace*{0.2cm}
+
+In general, we have to find a reversible path in order to apply Eq. (\ref{eq3.9}):
+
+$$\Delta S = \int\frac{dq_{rev}}{T}$$
+
+Because $S$ is a state function, the entropy change would then apply for all paths (also for irreversible paths) that have the same initial and final states. Note that $dq_{rev}$ is only defined for reversible paths.
+
+\vspace*{0.2cm}
+
+\underline{Specific cases for one mole of substance:}
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+\textit{Constant $V$:} & substance($T_1$, $V$) $\leftrightarrow$ substance($T_2$, $V$)\\
+                       & $\Delta S = \int\limits_{T_1}^{T_2}\frac{C_V}{T}dT$ (Eq. (\ref{eq3.33}))\\
+                       & If the constant-volume heat capacity $C_V$ is independent of $T$:\\
+                       & $\Delta S = C_V\ln\left(\frac{T_2}{T_1}\right)$\\
+\textit{Constant $P$:} & substance($T_1$, $P$) $\leftrightarrow$ substance($T_2$, $P$)\\
+                       & $\Delta S = \int\limits_{T_1}^{T_2}\frac{C_P}{T}dT$ (Eq. (\ref{eq3.33a}))\\
+                       & If the constant-pressure heat capacity $C_P$ is independent of $T$:\\
+                       & $\Delta S = C_P\ln\left(\frac{T_2}{T_1}\right)$
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+\begin{tabular}{ll}
+\textit{Phase change at constant $T$ and $P$:} & solid($T$, $P$) $\leftrightarrow$ liquid($T$, $P$)\\
+                                               & liquid($T$, $P$) $\leftrightarrow$ gas($T$, $P$)\\
+                                               & solid($T$, $P$) $\leftrightarrow$ gas($T$, $P$)\\
+                                               & $\Delta S = \frac{\Delta H}{T}$ (Eq. (\ref{eq3.30}))\\
+                                               & where $\Delta H$ is the heat of vaporization,\\
+                                               & sublimation or fusion (crystallization).\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\textit{Ideal gas at constant $T$:} ideal gas($P_1$, $V_1$, $T$) $\leftrightarrow$ ideal gas($P_2$, $V_2$, $T$)
+
+$$\Delta S = R\ln\left(\frac{V_2}{V_1}\right) = -R\ln\left(\frac{P_2}{P_1}\right)\textnormal{ (Eq. (\ref{eq3.35}))}$$
+
+Remember the correct sign for $\Delta S$: $\Delta S > 0$ when the volume increases.
+
+\vspace*{0.2cm}
+
+\textit{Mixing of two ideal gas systems at constant $T$ and $P$:}
+
+\begin{center}
+$n_A$ A($T$, $P$) + $n_B$ B($T$, $P$) = $n$ mixture($T$, $P$)
+\end{center}
+
+Here $n = n_A + n_B$. The entropy change due to mixing is given by:
+
+\vspace*{-0.2cm}
+
+$$\Delta S = -nR\left(y_A\ln\left(y_A\right) + y_B\ln\left(y_B\right)\right)\textnormal{ where }y_A = \frac{n_A}{n_A + n_B}, y_B = \frac{n_B}{n_A + n_B}$$
+
+Note that the entropy change is always positive (see Eq. (\ref{eq3.43})).
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the change in entropy of an ideal monatomic gas B in changing from $(P_1, T_1)$ to $(P_2, T_2)$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we have to define a reversible path, for which we know how to calculate the entropy change (each segment carried out reversibly):
+
+\begin{center}
+B($T_1$, $P_1$) $\rightarrow$ B($T_2$, $P_1$) $\rightarrow$ B($T_2$, $P_2$)
+\end{center}
+
+This path has two segments (one where temperature changes and another where pressure changes). For the first step we have:
+
+$$\Delta S = C_P\int\limits_{T_1}^{T_2}\frac{dT}{T} = C_P\ln\left(\frac{T_2}{T_1}\right) = n\bar{C}_P\ln\left(\frac{T_2}{T_1}\right)$$
+
+For the second step:
+
+$$\Delta S = -nR\ln\left(\frac{P_2}{P_1}\right)$$
+
+By combining the two:
+
+$$\Delta S = nR\left\lbrace\ln\left[\left(\frac{T_2}{T_1}\right)^{5/2}\right] - \ln\left(\frac{P_2}{P_1}\right)\right\rbrace\textnormal{ (note that }\bar{C}_P = \frac{5}{2}R\textnormal{)}$$
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Use the result of the previous example to calculate the molar entropy change in the following process:
+
+\begin{center}
+He (298 K, 1 bar) $\rightarrow$ He (100 K, 10 bar)
+\end{center}
+
+\textbf{Solution.} Substitute the values to the equation in the previous examples:
+
+$$\Delta\bar{S} = \frac{5}{2}\ln\left(\frac{T_2}{T_1}\right) - R\ln\left(\frac{P_2}{P_1}\right) = \frac{5}{2}\ln\left(\frac{100\textnormal{ K}}{298\textnormal{ K}}\right) - R\ln\left(\frac{10\textnormal{ bar}}{1\textnormal{ bar}}\right) = -41.84\textnormal{ }\frac{\textnormal{J}}{\textnormal{K mol}}$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} The molar constant-pressure heat capacity of a certain solid at 10 K is 0.43 J K$^{-1}$ mol$^{-1}$. What is the molar entropy at that temperature? Assume that the constant-pressure heat capacity varies as $aT^3$ where $a$ is a constant.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Calculate the entropy difference between 0 K and temperature $T$:
+
+\vspace*{-0.4cm}
+
+$$\Delta\bar{S} = \bar{S}(T) - \bar{S}(0) = \int\limits_{0}^{T}\frac{\bar{C}_P}{T}dT = \int\limits_{0}^{T}\frac{aT^3}{T}dT = a\int\limits_{0}^{T}T^2dT = \frac{a}{3}T^3 = \frac{\bar{C}_P}{3}\textnormal{ }(\bar{C}_P = aT^3)$$
+$$\Rightarrow \bar{S}(T) = \bar{S}(0) + \frac{\bar{C}_P}{3} \Rightarrow \bar{S}(T) = \bar{S}(0) + 0.14\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+}

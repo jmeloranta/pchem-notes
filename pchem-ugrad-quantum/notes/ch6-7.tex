@@ -1,0 +1,127 @@
+\opage{
+\otitle{6.7 Lasers}
+
+\otext
+The Einstein model identified three processes: stimulated absorption, spontaneous emission and stimulated emission. If an active medium can be produced where more than half of the molecules are in the excited states (i.e., \textit{population inversion}), a single seed photon can cause an avalanche (stimulated emission) such that all the molecules emit at the same time with the same photon characteristics. However, accodring to the Einstein model this is not possible for a two-level system. With three or more levels this is possible and this constitutes the basic idea behind lasers (\textit{light amplification by stimulated emission of radiation}).
+
+\ofig{laser}{0.5}{}
+
+}
+
+\opage{
+
+\otext
+To see that the population inversion leads to light amplification, consider the Einstein model for the excited state:
+
+\vspace*{-0.3cm}
+
+\beqn{6.11}{\frac{dN_2}{dt} = BN_1\rho_\nu(\nu_{12}) - A_{21}N_2 - BN_2\rho_\nu(\nu_{12})}
+{ = B\rho_\nu(\nu_{12})\left(N_1 - N_2\right) - A_{21}N_2 \approx B\rho_\nu(\nu_{12})\left(N_1 - N_2\right)}
+
+where $A_{21}$ was assumed to be negligible. Consider three different cases:
+
+\begin{enumerate}
+\item $N_1 > N_2$: Irradiation of the sample with light leads to absorption.
+\item $N_1 = N_2$: Light not absorbed or emitted (saturation).
+\item $N_1 < N_2$: Irradiation of the sample with light leads to emission (i.e., light amplification). 
+\end{enumerate}
+
+The third case corresponds to population inversion that is responsible for lasing. Under the condition of population inversion, one photon entering the sample can cause an avalanche of photons to be generated. 
+
+\ofig{laser2}{0.4}{}
+
+}
+
+\opage{
+
+A laser consists of an active medium that is placed between two mirrors:
+
+\ofig{laser-diag}{0.4}{}
+
+\vspace*{-0.4cm}
+
+\otext
+The active medium must have the three or four -level structure. The active medium must be excited to generate the population inversion. Typically a flash lamp or electrical discharge is used for this purpose. The \textit{gain} of the laser cavity is defined as amplification per round trip in the laser cavity. The gain must be high enough to overcome the losses within the cavity (e.g., light scattering). The distance between the two mirrors must be fixed such that (\textit{resonant modes}):
+
+\aeqn{6.12}{\lambda = \frac{2d}{n}\textnormal{ or }\nu = \frac{nc}{2d}}
+
+where the frequency $\nu = c/\lambda$, $\lambda$ is the wavelength of the laser light and $n = 1, 2, 3, ...$ This condition is needed to obtain constructive interference within the cavity.
+
+}
+
+\opage{
+
+\otext
+Laser radiation is \textit{coherent} in the sense that all photons are identical. \textit{Spatial coherence} is defined as the coherence across the cross-section of the laser beam and \textit{temporal coherence} as the coherence as a function of time. The spatial coherence is usually defined in terms of \textit{coherence length} ($d_C$), which is related to the range of wavelengths ($\Delta\lambda$) present in the beam:
+
+\aeqn{6.13}{d_C = \frac{\lambda^2}{2\Delta\lambda}}
+
+For a light bulb the coherence length is about 400 nm whereas for a He-Ne laser this is typically about 2 pm.
+
+\otext
+In general, there are two types of lasers: continuous wave (CW) and pulsed lasers. Excitation of the active medium in CW lasers must occur continuously. Disadvantages of CW excitation can be the generation of excessive amount of heat and hence the low overall intensity. A laser can generate output for as long as the population inversion is maintained. Sometimes it is advantageous to use pulsed lasers to carry out fast kinetic measurements.
+
+\otext
+\underline{$Q$-switching:} For producing nanosecond  ($\approx 10$ ns) width laser pulses, the $Q$-switching technique can be applied. The idea is to produce an enhanced population inverse in the absence of resonant laser cavity (low $Q$ factor). Once the enhanced population inversion is achieved, the $Q$-switch can be activated such that the resonant condition of the cavity is restored (high $Q$ factor) and the laser pulse can emerge. Example implementations of $Q$-switching are \textit{saturable dyes} (a dye which becomes transparent after sufficient excitation) and \textit{Pockels cell} (switching of light polarization). 
+
+}
+
+\opage{
+
+\otext
+\underline{Mode locking:} This technique can be used to produce pulses with temporal widths of picoseconds and even femtoseconds. As predicted by Eq. (\ref{eq6.12}), a laser cavity may be able to support multiple modes, which differ in frequency by multiples of $\frac{c}{2d}$. These modes have normally random phases relative to each other. The mode locking process involves synchronizing the relative phases to each other. If there are sufficiently many modes sustained in the cavity, the constructive/destructive interference will occur such that a train of pulses will form. The more modes the cavity can support, the narrower the temporal width of the pulse will be. Note that the repetition frequency of the system is defined by the cavity characteristics. Mode locking is achieved by varying the $Q$ factor of the cavity periodically at the frequency $\frac{c}{2L}$. The two main techniques are \textit{passive mode locking} (e.g., saturable absorber) and \textit{active mode locking} (e.g., acousto-optic modulator).
+
+\otext
+\textbf{Examples of lasers:}
+
+\vspace*{-0.25cm}
+
+\begin{itemize}
+\otext
+\item \textit{Solid state lasers.} The active medium consists of a single crystal or glass. The first laser was the Ruby laser (Al$_2$O$_3$ with a small amount of Cr$^{3+}$ ions) at 694 nm. Rb lasers are typically pulsed lasers. Another popular laser in this class is the Nd-YAG laser (a small amount of Nd$^{3+}$ ions in yttrium aluminum garnet) at 1064 nm. 
+
+\end{itemize}
+
+}
+
+\opage{
+
+\begin{itemize}
+
+\otext
+\item \textit{Gas lasers.} Since the active medium (gas) can be cooled down by a rapid flow of gas through the cavity, these lasers can be used to generate high powers. The pumping is achieved through a gas that is different from the gas reponsible for lasing. For example, in He-Ne laser the initial step of excitation by high voltage discharge is to generate excited state He atoms ($1s^12s^1$), which then transfer energy through collisions to Ne atoms. The excited state Ne atoms are then responsible for the laser emission at 633 nm. Exceptions to this arrangement are, for example, the Argon ion (488 nm and 512 nm), CO$_2$ (main line at 10.6 $\mu$m), and N$_2$ laser (337 nm).
+
+\item \textit{Chemical lasers.} Chemical reactions may also be used to generate population inversion condition. For example, photolysis of Cl$_2$ leads to the formation of excited state Cl atoms, which may further react with H$_2$ to produce HCl and H. The hydrogen atom can then react with Cl$_2$ to produce vibrationally excited HCl molecules. The system may lase when returning to the ground vibrational ground state. Another class of chemical lasers are \textit{excimer} (or \textit{exciplex}) lasers. For example, consider a mixture of Xe and Cl$_2$ subject to high-voltage discharge ($\approx$ 20 kV; buffer gas, neon for example). The discharge process produceses excited state Cl$^*$ atoms, which may form a bound exciplex Cl$^*$-Xe with a radiative lifetime of about 10 ns. This is sufficiently stable to produce population inversion and the lasing occurs between the bound Cl$^*$-Xe and repulsive Cl-Xe ground state (308 nm in UV). Other common excimer lasers are Ar-F (193 nm), Kr-F (248 nm) and F$_2$ (157 nm).
+
+\end{itemize}
+
+}
+
+\opage{
+
+\begin{itemize}
+\otext
+\item \textit{Dye lasers.} Most lasers can only operate at fixed wavelengths (i.e., the wavelength cannot be scanned continuously). In a dye laser a dye (e.g., rhodamine 6G) mixed in a solvent (e.g., methanol) is placed inside the laser cavity. The dye solution has a broad absorption and emission spectra, which means that an excitation in the absorption band will yield a broad fluorescence spectrum. By placing a grating (i.e., selects a given wavelength) inside the laser cavity, any wavelength can be selected from the fluorescence band and the cavity can be made to lase at this wavelength. As long as the selected wavelength is within the dye emission band, laser output is obtained. Scanning the grating will change the output wavelength. Dye lasers are very useful for high-resolution spectroscopy where narrow linewidth is required. Additional reduction in the linewidth can be obtained by using an intracavity etalon.
+
+\item \textit{Diode lasers.}  Semiconductors often have suitable bands that can be made to lase. An electronic current can be applied to drive the electrons to excited levels, which can emit laser light when used as an active medium. An example is of this phenomenom is a light emitting diode (which just by itself does not lase). For example, most laser pointers employ this principle.
+
+\end{itemize}
+
+\vspace{-0.25cm}
+
+\otext
+\textbf{Note:} Non-linear crystals can be used to combine multiple photons to produce one photon with a higher energy. A common application is to mix two photons of the same wavelength to produce one photon at half of the initial wavelength (\textit{Frequency doubling} or \textit{second harmonic generation}; twice the initial photon energy). Such crystals must be oriented appropriately with respect to the incident laser beam (\textit{phase matching}).
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} An Nd-YAG pumped dye laser system that can produce laser light between 200 - 250 nm wavelength range. Note that the wavelength can be scanned continuously.
+
+\ofig{dye-laser}{0.3}{}
+
+SHG denotes second harmonic generation, THG third harmonic generator, $\lambda$ separation removes unwanted wavelenghts and $\lambda/2$ waveplate rotates the light polarization such that it is suitable for the dye laser. Note that high peak powers (i.e., lasers) are needed for the non-linear SHG and THG processes.
+
+}
+

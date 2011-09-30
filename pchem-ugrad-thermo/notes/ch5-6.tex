@@ -1,0 +1,103 @@
+\opage{
+\otitle{5.6 Effect of pressure, initial composition, and inert gases on the equilibrium composition}
+
+\otext
+\underline{The effect of pressure}
+
+\vspace*{0.2cm}
+
+Consider a mixture of ideal gases where the partial pressure of is gas component $i$ can be written in terms of the molar fraction $y_i$ and the total pressure $P$: $P_i = y_i P$. Inserting this into Eq. (\ref{eq5.20}) we get:
+
+\beqn{5.50}{K = \prod\limits_{i=1}^{N_s}\left(\frac{P_i}{P^\circ}\right)^{v_i} = \prod\limits_{i=1}^{N_s}\left(\frac{y_iP}{P^\circ}\right)^{v_i} = \prod\limits_{i=1}^{N_s}\left(\frac{P}{P^\circ}\right)^{v_i}\prod\limits_{i=1}^{N_s}y_i^{v_i}}
+{= \left(\frac{P}{P^\circ}\right)^vK_y\textnormal{ where }v=\sum\limits_{i=1}^{N_s}v_i\textnormal{ and } K_y = \prod\limits_{i=1}^{N_s} y_i^{v_i}}
+
+Note that $K_y$ depends on the molar fractions of the gas components and changes in it imply changes in the molar fractions of the different components. Now consider changes in the total pressure $P$ at constant temperature and rewrite the previous equation as:
+
+\aeqn{5.51}{K_y = \left(\frac{P}{P^\circ}\right)^{-v}K}
+
+}
+
+\opage{
+
+\otext
+Consider the following three cases:
+
+\begin{enumerate}
+\item $v < 0$: The total amount of moles of gas decreases in the reaction. According to Eq. (\ref{eq5.51}) $K_y$ should increase as pressure increases. This means that the products are favored over the reactants (i.e. balance shifts forward).
+\item $v > 0$: The total amount of moles of gas increases in the reaction. According to Eq. (\ref{eq5.51}) $K_y$ should decrease as pressure increases.
+This means that the reactants are favored over the products (i.e. balance shifts backward).
+\item $v = 0$: The total amount of moles of gas remains independent of pressure. Thus changes in pressure do not change the molar fractions of the gases.
+\end{enumerate}
+
+\vspace*{0.2cm}
+
+\underline{Notes:}
+
+\begin{enumerate}
+\item This result reflects the Le Chatelier's principle.
+\item If the reactants and products are solids or liquids, the effect of pressure on the equilibrium is small.
+\end{enumerate}
+
+\vspace*{0.2cm}
+
+\underline{The effect of initial composition on equilibrium}
+
+\vspace*{0.2cm}
+
+First we write the molar fraction $y_i$ in terms of the extent of reaction $\xi$. The amount of species $i$ and the total amount of gas for a given $\xi$ are given by:
+
+$$n_i(\xi) = n_{i,0} + v_i\xi\textnormal{ and }n_{tot}(\xi) = n_{tot,0} + v\xi$$
+
+}
+
+\opage{
+
+\otext
+From these quantities $y_i$ can be calculated: $y_i(\xi) = \frac{n_i(\xi)}{n_{tot}(\xi)} = \frac{n_{i,0} + v\xi}{n_{tot,0} + v\xi}$
+
+\vspace*{0.2cm}
+
+Inserting this into definition of $K_y$ we get the following relation between $K_y$ and $\xi$:
+
+\aeqn{5.52}{K_y = \prod\limits_{i=1}^{N_s}y_i^{v_i} = \prod\limits_{i=1}^{N_s}\left(\frac{n_{i,0} + v_i\xi}{n_{tot,0} + v\xi}\right)^{v_i} = \left(\frac{1}{n_{tot,0} + v\xi}\right)^v\times\prod\limits_{i=1}^{N_s}\left(n_{i,0} + v_i\xi\right)^{v_i}}
+
+By combining Eqs. (\ref{eq5.50}) and (\ref{eq5.52}), the equilibrium constant can be written as:
+
+\aeqn{5.52a}{K = \left(\frac{P / P^\circ}{n_{tot,0} + v\xi}\right)^v\times\prod\limits_{i=1}^{N_s}\left(n_{i,0} + v_i\xi\right)^{v_i}}
+
+1. Consider addition of inert gas (i.e. one that does not take part in chemical reaction) with temperature and volume constant. Remember that since the amount of substance is not constant, we have four variables ($P$, $V$, $T$, and $n$) to consider. The amount of inert gas added is denoted by $n_{inert}$. The total amount of gas is now given by $n_{tot,0} + v\xi + n_{inert}$ and note that the inert component cancels out from the product on the right in the equation above because it remains identical on both sides of the chemical equation. The above equation now takes the following form:
+
+}
+
+\opage{
+
+\otext
+\aeqn{5.54}{K = \left(\frac{P / P^\circ}{n_{tot,0} + v\xi + n_{inert}}\right)^v\prod\limits_{i=1}^{N_s}\left(n_{i,0} + v_i\xi\right)^{v_i}}
+
+As temperature and volume are constants, it is instructive to rewrite Eq. (\ref{eq5.54}) in terms of these variables by using the ideal gas law:
+
+\beqn{5.54a}{K = \left(\frac{\left(\left(n_{tot,0} + v\xi + n_{inert}\right)\frac{RT}{V}\right) / P^\circ}{n_{tot,0} + v\xi + n_{inert}}\right)^v \prod\limits_{i=1}^{N_s}\left(n_{i,0} + v_i\xi\right)^{v_i}}
+{= \left(\frac{RT}{VP^\circ}\right)^v\prod\limits_{i=1}^{N_s}\left(n_{i,0} + v_i\xi\right)^{v_i}}
+
+Note that we had assumed that both $T$ and $V$ were constants, which means that the right hand side above is independent of $n_{inert}$. Therefore addition of inert gas component to the reactive gas mixture does not change equilibrium if $T$ and $V$ are kept constant during the addition (i.e. only the total pressure changes).
+
+}
+
+\opage{
+
+\otext
+2. Next consider addition of inert gas with temperature and pressure constant. If $n_{inert}$ changes (note that would $V$ change as well), the product term containing the amounts of substances $i$ in Eq. (\ref{eq5.54}) would have to accommodate this change. Recall that earlier we concluded that for ideal gases $K = K(T)$ only and therefore addition the inert component can not change $K$. The amounts of reacting components is the only thing that can change and hence under these conditions addition of the inert gas affects the chemical reaction.
+
+\vspace*{0.2cm}
+
+\underline{Summary:} 
+
+\vspace*{0.2cm}
+
+$v < 0$: addition of inert gas shifts the balance in chemical equation to the left.\\
+$v = 0$: addition of inert gas does not change the composition of the gas.\\
+$v > 0$: addition of inert gas shifts the balance in chemical equation to the right.\\
+
+\vspace*{0.2cm}
+
+}

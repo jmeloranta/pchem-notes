@@ -1,0 +1,6 @@
+load(orthopoly);
+hermite(0, sqrt(alpha)*x);
+hermite(1, sqrt(alpha)*x);
+hermite(2, sqrt(alpha)*x);
+hermite(3, sqrt(alpha)*x);
+/* etc. */

@@ -1,0 +1,147 @@
+\opage{
+
+\otitle{1.11 The rigid rotor}
+
+\otext
+A particle rotating around a \textit{fixed point}, as shown below, has angular momentum and \href{http://en.wikipedia.org/wiki/Rotational_energy}{\uline{rotational kinetic energy}} (``\href{http://en.wikipedia.org/wiki/Rigid_rotor}{\uline{rigid rotor}}'').
+
+\begin{columns}
+
+\begin{column}{3.5cm}
+
+\ofig{angmom}{0.6}{Rotation about a fixed point}
+
+\ofig{angmom2}{0.6}{Rotation of diatomic molecule around the center of mass}
+
+\end{column}
+
+\begin{column}{6cm}
+The classical kinetic energy is given by $T = p^2 / (2m) = (1/2) mv^2$. If the particle is rotating about a fixed point at radius $r$ with a
+frequency $\nu$ (s$^{-1}$ or Hz), the velocity of the particle is given by:
+
+\aeqn{9.127}{v = 2\pi r\nu = r\omega}
+
+where $\omega$ is the angular frequency (rad s$^{-1}$ or rad Hz). The rotational kinetic energy can be now expressed as:
+
+\beqn{9.128}{T = \frac{1}{2}mv^2 = \frac{1}{2}mr^2\omega^2 = \frac{1}{2}I\omega^2}{\textnormal{with }I = mr^2\textnormal{ (the moment of inertia)}}
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+As $I$ appears to play the role of mass and $\omega$ the role of linear velocity, the angular momentum can be defined as ($I = mr^2, \omega = v/r$):
+
+\aeqn{9.130}{L = \textnormal{``mass''}\times\textnormal{``velocity''} = I\omega = mvr = pr}
+
+Thus the rotational kinetic energy can be expressed in terms of $L$ and $\omega$:
+
+\aeqn{9.131}{T = \frac{1}{2}I\omega^2 = \frac{L^2}{2I}}
+
+\hrulefill
+
+\vspace*{0.5cm}
+
+Consider a classical rigid rotor corresponding to a diatomic molecule. Here we consider only \textit{rotation restricted to a 2-D plane} where the two masses (i.e., the nuclei) rotate about their \href{http://en.wikipedia.org/wiki/Center_of_mass}{\uline{center of mass}}. First we set the origin at the center of mass and specify distances for masses 1 and 2 from it ($R$ = distance between the nuclei, which is constant; ``mass weighted coordinates''):
+
+\aeqn{9.133}{r_1 = \frac{m_2}{m_1 + m_2}R\textnormal{ and }r_2 = \frac{m_1}{m_1 + m_2}R}
+
+Note that adding $r_1 + r_2$ gives $R$ as it should. Also the \href{http://en.wikipedia.org/wiki/Moment_of_inertia}{\uline{moment of inertia}} for each nucleus is given by $I_i = m_i r_i^2$. The rotational kinetic energy is now a sum for masses 1 and 2 with the same angular frequencies (``both move simultaneously around the center of mass''):
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.134}{T = \frac{1}{2}I_1\omega^2 + \frac{1}{2}I_2\omega^2 = \frac{1}{2}\left(I_1 + I_2\right)\omega^2 = \frac{1}{2}I\omega^2}
+
+\aeqn{9.136}{\textnormal{with }I = I_1 + I_2 = m_1r_1^2 + m_2r_2^2 = \overbrace{\frac{m_1m_2}{m_1 + m_2}R^2}^\textnormal{(\ref{eq9.133})} = \overbrace{\mu R^2}^\textnormal{(\ref{eqX.25})}} 
+
+The rotational kinetic energy for a diatomic molecule can also be written in terms of angular momentum $L = L_1 + L_2$ (sometimes denoted by $L_z$ where $z$ signifies the axis of rotation):
+
+\aeqn{9.138}{T = \frac{1}{2}I\omega^2 = \overbrace{\frac{L^2}{2I}}^\textnormal{(\ref{eq9.130})} = \overbrace{\frac{L^2}{2\mu R^2}}^\textnormal{(\ref{eq9.136})}}
+
+Note that there is no potential energy involved in free rotation. In three dimensions we have to include rotation about each axis $x, y$ and $z$ in the kinetic energy (here vector $r = (R, \theta, \phi)$ with $R$ fixed to the ``bond length''):
+
+\aeqn{X.27}{T = T_x + T_y + T_z = \frac{L_x^2}{2\mu R^2} + \frac{L_y^2}{2\mu R^2} + \frac{L_z^2}{2\mu R^2} = \frac{\vec{L}^2}{2\mu R^2}}
+
+Transition from the above classical expression to quantum mechanics can be carried out by replacing the total angular momentum by the corresponding operator (Eq. (\ref{eq9.160})) and by noting that the external potential is zero (i.e., $V = 0$):
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{9.141}{\hat{H} = \frac{\vec{\hat{L}}^2}{2I}\equiv -\frac{\hbar^2}{2I}\Lambda^2}
+
+where $I = mr^2$. Note that for an asymmetric molecule, the moments of inertia may be different along each axis:
+
+\aeqn{X.28}{\hat{H} = \frac{\hat{L}_x^2}{2I_x} + \frac{\hat{L}_y^2}{2I_y} + \frac{\hat{L}_z^2}{2I_z}}
+
+The eigenvalues and eigenfunctions of $\hat{L}^2$ are given in Eq. (\ref{eq9.161}). The solutions to the rigid rotor problem ($\hat{H}\psi = E\psi$) are then:
+
+\aeqn{9.144}{E_{l,m} = \frac{l(l+1)\hbar^2}{2I}\textnormal{ where }l = 0,1,2,3,...\textnormal{ and }\left|m\right| = 0, 1, 2, 3,...,l}
+
+\aeqn{9.143}{\psi_{l,m}(\theta,\phi) = Y_l^m(\theta,\phi)}
+
+In considering the rotational energy levels of linear molecules, the rotational quantum number $l$ is usually denoted by $J$ and $m$ by $m_J$ so that (each level is $(2J + 1)$ fold degenerate):
+
+\aeqn{9.165}{E = \frac{\hbar^2}{2I}J(J+1)}
+
+and the total angular momentum ($L^2$) is given by:
+
+\vspace*{-0.4cm}
+
+\beqn{9.166}{L^2 = J(J+1)\hbar^2\textnormal{ where }J = 0, 1, 2, ...}{\textnormal{OR } L = \sqrt{J(J+1)}\hbar}
+
+}
+
+\opage{
+
+\otext
+\underline{Notes:}
+\begin{itemize}
+\item Quantization in this equation arises from the cyclic boundary condition rather than the potential energy, which is identically zero.
+\item There is no rotational zero-point energy ($J = 0$ is allowed). The ground state rotational wavefunction has equal probability amplitudes for each orientation.
+\item The energies are independent of $m_J$. $m_J$ introduces the degeneracy of a given $J$ level.
+\item For non-linear molecules Eq. (\ref{eq9.165}) becomes more complicated.
+\end{itemize}
+
+\otext
+\textbf{Example.} What are the reduced mass and moment of inertia of H$^{35}$Cl? The equilibrium internuclear distance $R_e$ is 127.5 pm (1.275 \AA). What are the values of $L, L_z$ and $E$ for the state with $J = 1$? The atomic masses are: $m_\textnormal{H} = 1.673470 \times 10^{-27}$ kg and $m_\textnormal{Cl} = 5.806496 \times 10^{-26}$ kg.\\
+
+\vspace*{0.2cm}
+\textbf{Solution.} First we calculate the reduced mass (Eq. (\ref{eqX.25})):
+
+$$\mu = \frac{m_\textnormal{H}m_{^{35}\textnormal{Cl}}}{m_\textnormal{H} + m_{^{35}\textnormal{Cl}}} = \frac{(1.673470\times 10^{-27}\textnormal{ kg})(5.806496\times 10^{-26}\textnormal{ kg})}{(1.673470\times 10^{-27}\textnormal{ kg}) + (5.806496\times 10^{-26}\textnormal{ kg})}$$
+$$= 1.62665\times 10^{-27}\textnormal{ kg}$$
+
+}
+
+\opage{
+
+\otext
+Next, Eq. (\ref{eq9.136}) gives the moment of inertia:
+
+$$I = \mu R_e^2 = (1.626\times 10^{-27}\textnormal{ kg})(127.5\times 10^{-12}\textnormal{ m})^2 = 2.644\times 10^{-47}\textnormal{ kg m}^2$$
+
+$L$ is given by Eq. (\ref{eq9.166}):
+
+$$L = \sqrt{J(J+1)}\hbar = \sqrt{2}\left(1.054\times 10^{-34}\textnormal{ Js}\right) = 1.491\times 10^{-34}\textnormal{ Js}$$
+
+$L_z$ is given by Eq. (\ref{eq9.163}):
+
+$$L_z = -\hbar,0,\hbar\textnormal{ (three possible values)}$$
+
+Energy of the $J = 1$ level is given by Eq. (\ref{eq9.165}):
+
+$$E = \frac{\hbar^2}{2I}J(J+1) = \frac{\hbar^2}{I} = 4.206\times 10^{-22}\textnormal{ J} = 21\textnormal{ cm}^{-1}$$
+
+This rotational spacing can be, for example, observed in gas phase infrared spectrum of HCl.
+
+}

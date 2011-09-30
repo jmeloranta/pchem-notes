@@ -1,0 +1,76 @@
+\opage{
+\otitle{1.6 Critical phenomena}
+
+\otext
+Definitions:\\
+$P_c$ = Critical pressure (the highest pressure where liquid can boil)\\
+$T_c$ = Critical temperature (the highest temperature where gas can condense)\\
+$V_c$ = Critical volume (molar volume at the critical point)\\
+Isotherm = $P\bar{V}$ curve that is obtained when temperature is held constant\\
+
+\vspace{0.2cm}
+
+Formally $P_c$, $T_c$ and $V_c$ define a region on the $P$-$V$-$T$ surface where liquid and gas phase can
+coexist as two separate phases. Outside this region the phases cannot be separated.
+
+\vspace*{-1cm}
+
+\begin{columns}
+\begin{column}{4cm}
+\ofig{isotherm-co2}{0.25}{Isotherms (Eq. (\ref{eq1.13b}) for CO$_2$).}
+\end{column}
+\begin{column}{4cm}
+\ofig{isotherm-co2-2}{0.22}{Unphysical ``loops'' removed.}
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{Note:} The ends of tie lines indicate pure liquid ($V_L$) and pure gas phase ($V_G$) limits. When the tie line vanishes, $V_G$ and $V_L$ become identical and the phases cannot be distinguished from each other. Remember to stay on the isotherms when reading the above figures - states outside the isotherms are forbidden by the equation of state. In the last figure, the minima below the critical point have been replaced with a horizontal tie line.
+
+\vspace*{0.2cm}
+
+Gas may become supercritical above its critical point. In practice, a supercritical fluid has properties both of dense gas and low viscosity liquid. It can diffuse through materials like gas but it can dissolve materials like a liquid. Supercritical fluids are often used as substitutes for organic solvents (supercritical fluid extraction).
+
+\vspace*{0.2cm}
+
+At the critical temperature the following conditions hold (inflection point):
+
+\aeqn{1.20}{\left(\frac{\partial P}{\partial V}\right)_{T = T_c} = 0}
+
+\aeqn{1.21}{\left(\frac{\partial^2 P}{\partial V^2}\right)_{T = T_c} = 0}
+
+Isothermal compressibility is defined as (infinity at critical point):
+
+\aeqn{1.21a}{\kappa = -\frac{1}{\bar{V}}\times \left(\frac{\partial\bar{V}}{\partial P}\right)_T}
+
+\begin{columns}
+\begin{column}{2cm}
+\underline{Terminology:}
+\end{column}
+\begin{column}{8cm}
+\textit{isothermal} = Temperature does not change in the process.\\
+\textit{adiabatic} = No heat transfer in the process.\\
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+In addition to critical temperature, critical pressure ($P_c$) and critical volume ($V_c$) can also be defined by exchanging the roles of variables in Eqs. (\ref{eq1.20}) and (\ref{eq1.21}). Expressions for these quantities can be derived for various equations of state. For the van der Waals equation of state, we have:
+
+\ceqn{1.21b}{P_c = \frac{a}{27b^2}}{V_c = 3b}{T_c = \frac{8a}{27bR}}
+
+\vspace*{0.25cm}
+
+\textbf{Exercise.} Verify that the above expressions are correct. Use the van der Waals equation of state and Eqs. (\ref{eq1.20}) and (\ref{eq1.21}).
+Show that the following results hold for the Berthelot equation of state:
+
+\ceqn{1.21c}{P_c = \frac{1}{12}\left(\frac{2aR}{3b^2}\right)^{1/2}}{V_c = 3b}{T_c = \frac{2}{3}\left(\frac{2a}{3bR}\right)^{1/2}}
+
+}

@@ -1,0 +1,86 @@
+\opage{
+\otitle{2.8 Heat capacities}
+
+\otext
+Values for molar heat capacities can be found, for example, from the National Institute of Standards and Technology (NIST) database (\href{http://webbook.nist.gov/chemistry/}{http://webbook.nist.gov/chemistry/}). It has been observed experimentally that molar heat capacities at constant pressure depend on temperature.
+
+\begin{columns}
+
+\hspace*{-1cm}
+\begin{column}{3.5cm}
+\ofig{heat-capacity}{0.4}{}
+\end{column}
+
+\begin{column}{6cm}
+Empirical power series expansion:
+
+\aeqn{2.63}{\bar{C}_P \approx \alpha + \beta T + \gamma T^2}
+
+Inserting this form into Eq. (\ref{eq2.62}) gives:
+
+\aeqn{2.65}{\Delta H = \alpha\left(T_2 - T_1\right) + \frac{\beta}{2}\left(T_2^2 - T_1^2\right) + \frac{\gamma}{3}\left(T_2^3 - T_1^3\right)}
+
+\end{column}
+
+\end{columns}
+
+Values for $\alpha$, $\beta$ and $\gamma$ are given in the above database. Note that the temperature range for these polynomial fits must be observed. In above, 1 refers to the initial and 2 to the final state
+
+}
+
+\opage{
+
+\otext
+\underline{The relation between $C_P$ and $C_V$:}\\
+
+\vspace*{0.2cm}
+
+Consider Eq. (\ref{eq2.45}) at constant volume and pressure (with pressure $P = P_{ext}$):
+
+\ceqn{2.67}{\hspace*{-1.4cm}\inex{dq}_P = \left(\frac{\partial U}{\partial T}\right)_VdT + \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]dV = C_VdT + \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]dV\hspace*{0.2cm}}
+{\textnormal{division by }dT \Rightarrow \umark{\frac{\inex{dq}_P}{dT}}{=C_P} = C_V + \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]\left(\frac{\partial V}{\partial T}\right)_P}
+{\Rightarrow C_P - C_V = \left[P_{ext} + \umark{\left(\frac{\partial U}{\partial V}\right)_T}{\textnormal{\tiny (term 1)}}\right]\times\umark{\left(\frac{\partial V}{\partial T}\right)_P}{\textnormal{\tiny (term 2)}} > 0}
+
+where ``term 1'' is greater than zero (consider, for example, a van der Waals gas where this term is equal to $a / \bar{V}$) and ``term 2'' is also greater than zero because, at constant pressure, increase in temperature will result in increased volume. Thus we conclude that heat capacity at constant pressure is always greater than the heat capacity at constant volume. This is not surprising because the former also
+includes the $PV$-work and the work required to pull molecules apart.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate $C_P - C_V$ for an ideal gas. Note that in ideal gas, the gas molecules do not interact with each other.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} To calculate the difference in heat capacities, we use Eq. (\ref{eq2.67}). Because molecules do not interact with each other, the internal energy does not depend on volume. Hence $\left(\partial U / \partial V\right)_T = 0$. For an ideal gas, we have $PV = nRT$, from which we can evaluate the partial derivative $\left(\partial V / \partial T\right)_P = nR / P$. Inserting the partial derivatives into Eq. (\ref{eq2.67}) gives $C_P - C_V = nR$. This is the $PV$-work required when temperature changes by 1 K.
+
+\vspace*{0.3cm}
+
+\underline{Notes:}\\
+\begin{itemize}
+\item Classical thermodynamics does not deal with molecular level information. It knows nothing about atoms and molecules. In fact, when classical thermodynamics was first developed, scientists did not know about atoms and molecules at all.
+\item For liquids and solids, $C_P \approx C_V$ because they have small thermal expansivities.
+\end{itemize}
+
+\vspace*{0.2cm}
+
+\underline{Results from the kinetic gas theory results for monoatomic ideal gas:}\\
+
+\vspace*{0.15cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\aeqn{2.69}{\bar{U} = \frac{3}{2}RT} \aeqn{2.70}{\bar{H} = \frac{5}{2}RT}
+\end{column}
+
+\begin{column}{4cm}
+
+\aeqn{2.71}{\bar{C}_V = \frac{3}{2}R} \aeqn{2.72}{\bar{C}_P = \frac{5}{2}R}
+
+\end{column}
+
+\end{columns}
+
+}

@@ -1,0 +1,163 @@
+\opage{
+\otitle{3.2 The second law of thermodynamics}
+
+\begin{columns}
+
+\begin{column}{7cm}
+\otext
+Definition of entropy ($S$): 
+
+\aeqn{3.8}{dS = \frac{\inex{dq}_{rev}}{T}}
+
+\aeqn{3.9}{\Delta S = \int\frac{\inex{dq}_{rev}}{T}}
+
+Integration of entropy over closed loops yield zero because $dS$ is an exact differential ($S$ is a state function):
+\end{column}
+
+\begin{column}{3cm}
+\operson{clausius}{0.17}{Rudolph Clausius, German physicist and mathematician (1822 - 1888)}
+\end{column}
+\end{columns}
+
+\aeqn{3.11}{\oint\frac{\inex{dq}_{rev}}{T} = \oint dS = 0}
+
+In general, we have the following inequality (i.e. $\inex{dq}$ reversible or irreversible):
+
+\aeqn{3.14}{0 = \oint dS = \oint \frac{\inex{dq}_{rev}}{T} \ge \oint\frac{\inex{dq}}{T}}
+
+The inequality can also be written in differential form:
+
+\aeqn{3.15}{dS \ge \frac{\inex{dq}}{T}}
+
+For an isolated system, the inequality simplifies to:
+
+\aeqn{3.15a}{dS \ge 0}
+
+}
+
+\opage{
+
+\otext
+The idea behind Clausius inequality (\ref{eq3.15a}) can be understood by considering the following example:
+
+\ofig{entropy}{0.5}{}
+
+\aeqn{3.25}{dS = dS_c + dS_h = \inex{dq}\times\left(\frac{1}{T_c} - \frac{1}{T_h}\right) \ge 0}
+
+Thus we conclude that in presence of spontaneous (irreversible) processes we have $dS > 0$. At thermal equilibrium we would have $T_h = T_c$ and $dS = 0$. We will return to justification of Eq. (\ref{eq3.15}) later (non-isolated system).
+
+}
+
+\opage{
+
+\otext
+The second law of thermodynamics consists of two statements:
+
+\begin{enumerate}
+\item There is a state function called the entropy $S$ that can be calculated from $dS = dq_{rev} / T$.
+\item The change in entropy in any process is given by $dS \ge \inex{dq} / T$, where the '$>$' sign applies to a spontaneous (irreversible; $\inex{dq}_{irrev}$) process and the equality for a reversible process ($\inex{dq}_{rev}$). In order to calculate $\Delta S$, one must use a reversible process.
+\end{enumerate}
+
+\underline{Justification for the Clausis inequality $dS \ge \frac{\inex{dq}}{T}$ (Eq. (\ref{eq3.15})):}
+
+\begin{enumerate}
+
+\item If the process is reversible then by definition $dS = \frac{\inex{dq}_{rev}}{T}$.
+
+\item If the process is irreversible, we need to show that $dS > \frac{\inex{dq}_{irrev}}{T}$. Consider only $PV$-work and then the 1st law is $dU = \inex{dq} - P_{ext}dV$. For a reversible process this gives: $dU = \inex{dq}_{rev} - PdV$ and for an irreversible process: $dU = \inex{dq}_{irrev} - P_{ext}dV$. Since $dU$ is exact, the previous $dU$'s must be equal (consider integration over short paths): $\inex{dq}_{rev} - PdV = \inex{dq}_{irrev} - P_{ext}dV$. Rearranging gives: $\inex{dq}_{rev} - \inex{dq}_{irrev} = (P - P_{ext})dV$. If $P - P_{ext} > 0$ the system will expand spontaneously and $dV > 0$.  If $P - P_{ext} < 0$ the system will contract spontaneously and $dV < 0$. In both cases  $\inex{dq}_{rev} - \inex{dq}_{irrev} > 0$. Dividing boths sides by $T$ gives $\frac{\inex{dq}_{rev}}{T} - \frac{\inex{dq}_{irrev}}{T} > 0$. By using the definition of entropy (Eq. (\ref{eq3.8})) we get: $dS > \frac{\inex{dq}_{irrev}}{T}$.
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+Another way to state the 2nd law of thermodynamics: ``The entropy increases in a spontaneous process in an isolated system''. The entropy increases as long as spontaneous processes proceed. When the system does not change any more, the entropy will have its maximum value and we have $dS = 0$. \textit{The entropy change tells us whether a process or chemical reaction can occur spontaneously in an isolated system.} Consider an isolated system (consisting of system and surroundings):
+
+\vspace*{-0.4cm}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\otext
+
+System (at $T_{syst}$) and surroundings (at $T_{surr}$):
+
+$$dS_{total} = dS_{syst} + dS_{surr}$$
+$$dq_{total} = dq_{syst} + dq_{surr} = 0 \Rightarrow dq_{syst} = -dq_{surr}$$
+
+\end{column}
+
+\begin{column}{3cm}
+\ofig{entropy2}{0.4}{}
+\end{column}
+\end{columns}
+
+The total entropy cannot decrease: $dS_{total} = dS_{syst} + dS_{surr} \ge 0$ (Eq. (\ref{eq3.15a})). For the system we have: $dS_{syst} = dq / T_{syst}$ and for the surroundings: $dS_{surr} = -dq / T_{surr}$. Therefore we have:
+
+\aeqn{3.21}{dS_{syst} \ge \frac{dq}{T_{surr}}}
+
+\underline{Note:} The equal sign case only applies for reversible processes in Eq. (\ref{eq3.21}). The equal sign would also then apply in $dS_{total} = dS_{syst} + dS_{surr} = 0$ (reversible process).
+
+}
+
+\opage{
+
+\otext
+Based on changes in entropy, we can identify three different cases:
+
+\ceqn{3.23}{(1)\textnormal{ }dS > \inex{dq} / T\textnormal{ spontaneous (irreversible) process}}
+{(2)\textnormal{ }dS = \inex{dq}/T\textnormal{ reversible process (``nearly equlibrium'')}}
+{(3)\textnormal{ }dS < \inex{dq} / T\textnormal{ impossible process (``forced process'')}}
+
+For an isolated system ($dq = 0$), we have:
+
+\ceqn{3.24}{(1)\textnormal{ }dS > 0\textnormal{ spontaneous (irreversible) process}}
+{(2)\textnormal{ }dS = 0\textnormal{ reversible process (``nearly equilibrium'')}}
+{(3)\textnormal{ }dS < 0\textnormal{ impossible process (``forced process'')}}
+
+Because $S$ is a state function, it can be integrated between any two states of the system:
+
+\aeqn{3.27}{\int\limits_{S_1}^{S_2}dS = \int\limits_{q_1}^{q_2}\frac{\inex{dq}_{rev}}{T} = S_2 - S_1 = \Delta S}
+
+The integration path in Eq. (\ref{eq3.27}) must be reversible. This equation can be applied to irreversible processes only if a path consisting of reversible segments, can be constructed. Note that there is no entropy change for a reversible adiabatic process.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Is the expansion of an ideal gas into a larger volume thermodynamically spontaneous? More specifically, consider reversible and isothermal expansion of an isolated ideal gas ($n = 1$ mol) initially at 298 K into a volume that is twice as large as its initial volume.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Recall from Eq. (\ref{eq2.35}) that the reversible work done is ($n = 1$ mol):
+
+$$w_{rev} = -\int\limits_{V_1}^{V_2}P_{ext}dV = -\int\limits_{V_1}^{V_2}PdV = -\int\limits_{V_1}^{V_2}\frac{nRT}{V}dV = -nRT\ln\left(\frac{V_2}{V_1}\right) = -RT\ln(2)$$
+
+The internal energy of an ideal gas does not depend on volume (Eq. (\ref{eq2.69})). Thus we have $\Delta U = q_{rev} + w_{rev} = 0$ and further $q_{rev} = -w_{rev} = RT\ln(2)$. Eq. (\ref{eq3.9}) with constant $T$ states that $\Delta S = \frac{q_{rev}}{T} = R\ln(2) > 0$ where we used the fact that $V_2 = 2 \times V_1$. Because the entropy change is positive, the change is spontaneous (as we already knew in practice). For the reverse process we would have $\Delta S < 0$, which means that it does not happen (unless forced).
+
+}
+
+\opage{
+
+\otext
+
+\underline{Note:} The previous problem has nothing to do with minimizing the energy, which is constant during the process. The process is purely entropy driven and is related to decrease in ``order'' at larger volume. By order we mean the arrangement of atoms or molecules. For example, $S_{gas} > S_{liquid} > S_{solid}$.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the entropy change when argon at 25 \degree C and 1.00 atm in a container of volume 500 cm$^3$ is allowed to expand to 1000 cm$^3$. Assume that argon behaves according to the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} From the ideal gas law we can calculate the amount of substance:
+
+$$n = \frac{PV}{RT} = 0.0204\textnormal{ mol}$$
+
+In previous example we had $n = 1$. If the same calculation is carried out with $n$ in place, we have:
+
+$$\Delta S = nR\ln\left(\frac{V_2}{V_1}\right) = nR\ln(2) = 0.118\textnormal{ J K}^{-1}$$
+
+}

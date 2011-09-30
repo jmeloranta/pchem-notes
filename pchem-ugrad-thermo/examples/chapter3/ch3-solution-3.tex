@@ -1,0 +1,27 @@
+% Problem 3/3 solution
+\noindent
+\underline{Solution:}\\
+
+\textbf{Path 1}: First we recall that for an ideal gas $U = \frac{3}{2} nRT$ (see lecture notes). The temperature is constant along this path and thus change in internal energy must be zero. The first law of thermodynamics now states that $\Delta UU = q_{rev} + w_{rev}$ and hence $q_{rev} = -w_{rev}$. Recall the following equation from the lecture notes:
+
+$$w_{rev} = -nRT_1\ln\left(\frac{V_2}{V_1}\right) \Rightarrow q_{rev} = nRT_1\ln\left(\frac{V_2}{V_1}\right)$$
+
+Using the definition of entropy gives:
+
+$$\Delta S = \frac{q_{rev}}{T_1} = nR\ln\left(\frac{V_2}{V_1}\right)$$
+
+\textbf{Path 2}: First consider the first segment from ($P_1$, $V_1$, $T_1$) to ($P_3$, $V_2$, $T_2$). The expansion is adiabatic (i.e. no heat exchange with the surroundings) and hence $q_{rev} = 0$. For this reason the change in entropy is also zero ($\Delta S = q_{rev} / T = 0$). The final temperature in an adiabatic expansion is determined by integrating $C_V\frac{dT}{T} = -nR\frac{dV}{V}$ (see lecture notes):
+
+$$\int\limits_{T_1}^{T_2}\frac{C_V}{T}dT = -nR\int\limits_{V_1}^{V_2}\frac{dV}{V} = -nR\ln\left(\frac{V_2}{V_1}\right)$$
+
+Along the second segment ($P_3$, $V_2$, $T_2$) to ($P_2$, $V_2$, $T_1$), we have a constant volume process. The lecture notes now give $dq_{rev} = C_VdT$. The definition of entropy is $dS = \frac{dq_{ref}}{T}$ and thus:
+
+$$dS = \frac{C_VdT}{T} \Rightarrow \Delta S = \int\limits_{T_2}^{T_1}\frac{C_VdT}{T} = -\int\limits_{T_1}^{T_2}\frac{C_VdT}{T}$$
+
+Comparison of this with the expression determining $T_2$ along the first segment, gives the final result:
+
+$$\Delta S = nR\ln\left(\frac{V_2}{V_1}\right)$$
+
+This is the same result that was obtained along path 1. For a complete proof of exactness, one would have to use the exactness test or consider infinitely many paths (or rather, the exactness test).
+
+\hrule\vspace{0.5cm}

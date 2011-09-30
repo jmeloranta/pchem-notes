@@ -1,0 +1,62 @@
+\opage{
+\otitle{7.8 Determination of pH}
+
+\otext
+The concentrations of hydrogen ions (H$^+$) in aqueous solutions (in form of H$_3$O$^+$) range from about 1 mol L$^{-1}$ (1 M HCl) to about 10$^{-14}$ mol L$^{-1}$ (1 M NaOH). Because of the wide range of concentrations an exponential scale is used (S\"oren S\"orensen, Danish biochemist, 1868 -- 1939). The exponential scale is defined ($pH$ scale):
+
+\vspace*{-0.2cm}
+
+\aeqn{7.97}{pH = -\log\left(a_{\textnormal{H}^+}\right)}
+
+Strictly speaking, the activity of a single ion cannot be determined, but pH meters are calibrated with buffers for which the $pH$ has been calculated using the extended Debye-H\"uckel equation (Eq. (\ref{eq7.65})).
+
+\vspace*{0.2cm}
+
+$pH$ may be measured with a hydrogen electrode connected with a calomel electrode through a salt bridge:
+
+\vspace*{-0.2cm}
+
+$$\textnormal{Pt} | \textnormal{H}_2(g) | \textnormal{H}^+(aq) :: \textnormal{Cl}^-(aq) | \textnormal{Hg}_2\textnormal{Cl}_2(s) | \textnormal{Hg}$$
+
+Often the contribution of the liquid junction is negligible to the cell EMF and we can calculate $E^\circ$ for the cell (0.2802 V at 25 \degree C) and use the Nernst equation (Eq. (\ref{eq7.42}) and assuming that H$_2$ is an ideal gas):
+
+\vspace*{-0.3cm}
+
+\beqn{7.98}{\hspace*{-0.5cm}E = E^\circ - \frac{RT}{\left|v_e\right|F}\ln\left(\frac{a\left(\textnormal{H}^+\right)}{a\left(\textnormal{H}_2(g)\right)}\right) = E^\circ - 2.303\times\frac{0.02569\textnormal{ V}}{\umark{\left|v_e\right|}{=1}F}\log\left(\frac{a\left(\textnormal{H}^+\right)}{a\left(\textnormal{H}_2(g)\right)}\right)\hspace*{0.5cm}}
+{= E^\circ - \left(0.0591\textnormal{ V}\right)\log\left(\frac{a\left(\textnormal{H}^+\right)}{P\left(\textnormal{H}_2\right)/P^\circ}\right) = E^\circ - \left(0.0591\textnormal{ V}\right)\log\left(a\left(\textnormal{H}^+\right)\right)}
+}
+
+\opage{
+
+\otext
+Combining this with Eq. (\ref{eq7.97}), we get:
+
+\aeqn{7.100}{E - 0.2802\textnormal{ V} = \left(0.0591\textnormal{ V}\right)\times pH}
+
+or in terms of $pH$:
+
+\aeqn{7.101}{pH = \frac{E - \left(0.2802\textnormal{ V}\right)}{0.0591\textnormal{ V}}}
+
+\vspace*{-0.4cm}
+
+\begin{columns}
+
+\begin{column}{3.5cm}
+\ofig{ph-meter}{0.2}{}
+\end{column}
+
+\begin{column}{8cm}
+In practice, $pH$ sensors do not use H$_2$ electrode but, instead, a glass electrode is used:
+
+\vspace*{0.2cm}
+
+{\tiny Ag $|$ AgCl $|$ Cl$^-$, H$^+$ $|$ glass membrane $|$ solution :: calomel electrode}
+
+\vspace*{0.2cm}
+
+A schematic of this electrode arrangement is shown on the left. The calomel electrode acts as a reference.
+
+\end{column}
+
+\end{columns}
+}

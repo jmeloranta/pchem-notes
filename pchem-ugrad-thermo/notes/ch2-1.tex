@@ -1,0 +1,164 @@
+\opage{
+\otitle{2.1 Work and heat}
+
+\otext
+\underline{Force} ($\vec{F}$) acting on a particle is a vector quantity as it has a direction and magnitude. Newton's law of acceleration:
+
+\aeqn{2.0}{\vec{F} = m\vec{a}}
+
+where $\vec{F}$ is the force (Newton, N), $m$ the mass (kg) and $\vec{a}$ the acceleration (m s$^{-2}$).
+
+\vspace*{0.2cm}
+
+\underline{Work} is a scalar quantity (in units of Joule):
+
+\aeqn{2.0a}{w = \vec{F}\cdot \vec{L} = F_xL_x + F_yL_y + F_zL_z = \left|\vec{F}\right|\left|\vec{L}\right|\cos(\theta)}
+
+where $\vec{L}$ is the vector defining the path (direction and length) along which the work is being done. Subscripts refer to the Cartesian components of the corresponding vectors.
+
+\vspace*{0.2cm}
+
+\underline{Pressure} $P$ (Pa) is a scalar quantity:
+
+\aeqn{2.0b}{P = \frac{F_\bot}{A}}
+
+where $F_\bot$ denotes the force component (N) that is perpendicular to the surface with area $A$ (m$^2$).
+
+\vspace*{0.4cm}
+
+\textbf{Example.} What is the work done on/by a moving piston inside a cylinder?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We assume \textit{quasistatic} system: $P = P_{ext}$ at all times. This corresponds to slow movement of the piston.
+
+}
+
+\opage{
+
+\otext
+\begin{columns}
+
+\begin{column}{8cm}
+\otext
+
+The system consists of the piston and the cylinder and surroundings to outside of the cylinder. The work done on/by the the system (piston) is:
+
+$$w = -F_\bot\Delta L = -P\umark{A\Delta L}{\Delta V} = -P\Delta V$$
+
+\end{column}
+
+\begin{column}{1.9cm}
+\ofig{piston}{0.4}{}
+\end{column}
+
+\end{columns}
+
+where the piston moved by $\Delta L$ and $\Delta V$ is the change in the cylinder volume. Note that $\Delta L$ and $\Delta V$ change sign depending on the process (i.e. compress or expand).
+\underline{Note the sign convention:} ``+'' means that the surroundings did work on the system and ``$-$'' means that the system did work on the surroundings. The previous expressions can also be written using differentials. For example in this quasistatic case we have:
+
+\aeqn{2.3}{\inex{dw} = -P_{ext}dV = -PdV}
+
+\textbf{Example.} What is the work done by a system \textit{slowly} lifting an object weighting 1 kg by 0.1 m? The opposing force is the gravitational force.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The work is given by (note slow corresponds to a quasistatic system):
+
+$$w = F\times h = -mgh = -(1\textnormal{ kg})\times (9.807\textnormal{ m s}^{-2})\times (0.1\textnormal{ m}) = -0.9807\textnormal{ J}$$
+
+}
+
+\opage{
+
+\otext
+Integration of Eq. (\ref{eq2.3}) yields an expression for work when $P = P(V, T)$:
+
+\aeqn{2.4}{w = -\int\limits_{\textnormal{point 1}}^{\textnormal{point 2}} P_{ext}(V,T) dV = -\int\limits_{\textnormal{point 1}}^{\textnormal{point 2}} P(V,T) dV}
+
+where the end points of the line integrals are located on the $(P, V)$ plane.
+
+\vspace*{0.1cm}
+
+\textbf{Example.} The state of a mole of gas can be changed from ($2P_0$, $V_0$) to ($P_0$, $2V_0$) by infinitely many different quasistatic paths (two different choices are shown below):
+
+\begin{columns}
+
+\begin{column}{3cm}
+
+\vspace*{-0.4cm}
+
+\ofig{two-paths}{0.4}{Paths on the $PV$ plane.}
+
+\otext
+
+\textit{The total amount of work depends on the path!}
+
+\end{column}
+
+\begin{column}{7cm}
+\otext
+
+\vspace*{-0.2cm}
+
+\underline{Path 1:}\\
+\begin{enumerate}
+\item Pressure is constant ($2P_0$), expansion from $V_0$ to $2V_0$ (heat flows in).
+\item Volume is constant ($2V_0$), drop in pressure from $2P_0$ to $P_0$ (heat flows out). Total amount of work ($w$) = $-2P_0V_0$ (contribution from the first segment only).
+\end{enumerate}
+
+\vspace*{-0.1cm}
+
+\underline{Path 2:}\\
+\begin{enumerate}
+\item Volume is constant ($V_0$), drop in pressure from $2P_0$ to $P_0$ (heat flows out).
+\item Pressure is constant ($P_0$), expansion from $V_0$ to $2V_0$ (heat flows in). Total amount of work ($w$) = $-P_0V_0$ (contribution from the second segment only).
+\end{enumerate}
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{Adiabatic process:} The system is thermally insulated and it cannot exchange heat with its surroundings. The two paths in the previous example involved heat exchange and therefore they were not adiabatic processes.
+
+\vspace*{0.2cm}
+
+For an adiabatic process in a closed system, the change in system's internal energy ($U$) is directly related to work:
+
+\aeqn{2.6}{\Delta U = w}
+
+Note that $\Delta U$ follows the same sign convention that $w$ does. Molar internal energy is expressed with a symbol $\bar{U}$ (J mol$^{-1}$).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} A thermally insulated water tank with a stirrer.
+
+\ofig{work-example}{0.5}{}
+
+}
+
+\opage{
+
+\otext
+Let’s consider a water tank that is in thermal contact and has no stirrer (i.e. no source of work):
+
+\vspace*{-0.4cm}
+
+\ofig{hot-plate}{0.4}{}
+
+If the hot plate is warmer than the water, the water temperature increases (heat transfer). In previous example increase in system temperature was achieved by doing work on the system. Thus increase in the internal energy of the system can be achieved either by \textit{doing work on it} or by \textit{transferring heat into it}.
+
+\vspace*{0.2cm}
+
+Both work and heat are forms of energy crossing the boundary between the system and the surroundings. When no work is done on the system, the change in its internal energy can be expressed as:
+
+\aeqn{2.7}{\Delta U = q\textnormal{ (no work done)}}
+
+Both work and heat have the same SI unit (J).
+
+}

@@ -1,0 +1,331 @@
+
+\begin{frame}
+\begin{center}
+{\bf Appendix I: Symbolic algebra (Maxima)}\\
+\vspace*{1cm}
+Free download: \href{http://maxima.sourceforge.net/}{\underline{Maxima}}, \href{http://wxmaxima.sourceforge.net/}{\underline{wxMaxima}}\\
+\end{center}
+
+\end{frame}
+
+\scriptsize
+
+\opage{
+
+\otext
+Maxima is a free \href{http://en.wikipedia.org/wiki/Computer_algebra_system}{\underline{computer algebra system}} (CAS; e.g. symbolic differentiation and integration, set of linear equations, etc.). The program works on Linux, Windows and Macintosh computers. Most Linux distributions include Maxima with the system. On Fedora Linux, use the ``Applications $\rightarrow$ Add/Remove Software'' menu selection. It can also be downloaded and installed manually from the \href{http://maxima.sourceforge.net/download.shtml}{\underline{download page}}.
+To run the basic version of Maxima, you must start it from the command line (e.g. open a terminal window by ``Applications $\rightarrow$ System Tools $\rightarrow$ Terminal'') by typing: maxima . To exit the program, type ``quit();''
+
+\otext
+Maxima is strictly a command line based program, however, there is a graphical frontend available for it: \href{http://wxmaxima.sourceforge.net/}{\underline{wxMaxima}}. This program is also included in Fedora Linux and can be installed the same way as Maxima. For windows, the program must be installed manually (see the Download section on \href{http://wxmaxima.sourceforge.net/}{\underline{wxMaxima web page}}). To start the program on Fedora Linux, choose ``Applications $\rightarrow$ Programming $\rightarrow$ wxMaxima''. This program should be used analyzing the data in this course.
+
+\otext
+\textbf{Basic usage:} There is extensive \href{http://maxima.sourceforge.net/docs.shtml}{\underline{documentation}} available for Maxima on the web, which includes both reference manual and tutorial. In the following few examples of using Maxima are demonstrated.
+
+}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Using Maxima as a calculator:} A sample Maxima session is shown below:
+
+\vspace*{-0.2cm}
+
+\begin{verbatim}
+(%i1) 1+1;
+(%o1)                                  2
+\end{verbatim}
+
+\vspace*{-0.2cm}
+
+or a more complicated example:
+
+\vspace*{-0.2cm}
+
+\begin{verbatim}
+(%i1) exp(-10/2.5);
+(%o1)                         .01831563888873418
+\end{verbatim}
+
+\vspace*{-0.2cm}
+
+Note in above that each line must end with a semicolon (;) and by pressing return/enter. In some cases, float() command is needed to get an approximation of the result. For example, float(3/4) will display 0.75 instead of 3/4. To request arithmetic at requested precision, use the bfloat command (to accuracy of 60 digits):
+
+\vspace*{-0.2cm}
+
+\begin{verbatim}
+(%i1) fpprec:60;
+(%o1)                          60
+(%i2) bfloat(sqrt(2));
+(%o2)   1.41421356237309504880168872420969807856967187537694807317668b0
+\end{verbatim}
+
+\vspace*{-0.2cm}
+
+where b\textit{n} denotes the exponent (e.g. $\times 10^n$). In addition to numbers, common constants have been predefined as: \%e (Euler's number), \%pi ($\pi$), \%i (the imaginary unit), inf ($\infty$) and minf ($-\infty$). For example, sin(\%pi) will give zero. Here are some commonly used predefined functions in Maxima: sin (sine function), asin (arcus sine function), cos (cosine), acos (arcus cosine), tan (tangent), atan (arcus tangent), cot (cotangent), sqrt (square root), log ($e$ based logarithm) and exp (exponentiation $e^x$). To calculate powers, use the \^{} character; for example, 2\^{}3 will give 8.
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Symbolic calculations:} A few examples are given to demonstrate how symbolic calculations are done. First, to factor polynomials use:
+
+\begin{verbatim}
+(%i1) factor(x^2 + x - 6);
+(%o1)                           (x - 2) (x + 3)
+\end{verbatim}
+
+or to expand a polynomial:
+
+\begin{verbatim}
+(%i1) expand((x+3)^4);
+                         4       3       2
+(%o1)                   x  + 12 x  + 54 x  + 108 x + 81
+\end{verbatim}
+
+Rational expressions can be simplified with the ratsimp function:
+
+\begin{verbatim}
+(%i1) ratsimp((x^2-1)/(x+1));
+(%o1)                                x - 1
+\end{verbatim}
+
+and to simplify a trigonometric expression:
+
+\begin{verbatim}
+(%i1) trigsimp(2*cos(x)^2 + sin(x)^2);
+                                     2
+(%o1)                             cos (x) + 1
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+Trigonometric expressions can also be expanded:
+
+\begin{verbatim}
+(%i1) trigexpand(sin(2*x) + cos(2*x));
+                          2                           2
+(%o1)                - sin (x) + 2 cos(x) sin(x) + cos (x)
+\end{verbatim}
+
+\noindent
+Expressions can be outputted in \TeX{} format with the tex command:
+
+\begin{verbatim}
+(%i1) x^3+x^2+1;
+                                   3    2
+(%o1)                             x  + x  + 1
+(%i2) tex(%);
+$$x^3+x^2+1$$
+(%o2)                                false
+\end{verbatim}
+
+Here \% refers to the previous expression. The string starting with \$\$ is the \TeX{} format expression. Sometimes it is useful to define functions, which simplify the notation. Functions can be defined as follows:
+
+\begin{verbatim}
+(%i1) f(x,y) := sin(x) + cos(x);
+(%o1)                     f(x, y) := sin(x) + cos(x)
+\end{verbatim}
+
+\noindent
+This defines a function f that depends on variables x and y.
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Solving equations:} To solve an equation for specified unknown variable, use:
+
+\begin{verbatim}
+(%i1) solve(x^2 - 4 = 0,x);
+(%o1)                          [x = - 2, x = 2]
+\end{verbatim}
+
+So the answer is $\pm 2$. A more complicated example is given by:
+
+\begin{verbatim}
+(%i1) solve(x^3=1,x);
+                    sqrt(3) %i - 1        sqrt(3) %i + 1
+(%o1)          [x = --------------, x = - --------------, x = 1]
+                          2                     2
+\end{verbatim}
+
+which shows that there are three roots, one real and two imaginary. It is also possible to specify multiple equations and variables:
+
+\begin{verbatim}
+(%i1) solve([y = y^2 + x, x = y^2 + y],[x,y]);
+(%o1)                          [[x = 0, y = 0]]
+\end{verbatim}
+
+However, it should be remembered that the program may not find all solutions to non-linear problems.
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Creating 2D and 3D graphs:} For example, the following command will plot function $f(x) = x^2$ from -10 to 10: plot2d(x\^{}2,$\left[\textnormal{x},-10,10\right]$). To plot multiple functions in the same graph, use for example: plot2d($\left[\right.$x\^{}2, x\^{}4$\left.\right]$,$\left[\textnormal{x}, -10, 10\right]$). 3D plots can be produced with plot3d command, for example: plot3d(sin(x) + cos(y), $\left[\right.$x, -5, 5$\left.\right]$, $\left[\right.$y, -5, 5$\left.\right]$). Note that if you use wxMaxima, you may want to use wxplot2d and wxplot3d commands.
+
+\otext
+\textbf{Taking limits:} To evaluate limits, use the limit command. For example:
+
+\begin{verbatim}
+(%i1) limit((1 + 1/x)^x, x, inf);
+(%o1)                                 %e
+\end{verbatim}
+
+This states that $\lim\limits_{x\rightarrow\infty} \left(1 + \frac{1}{x}\right)^x = e$. To calculate $\lim\limits_{x\rightarrow0+} \log(x)$, use (note that plus signifies that $x$ approaces zero from the positive side):
+
+\begin{verbatim}
+(%i1) limit(log(x), x, 0, plus);
+(%o1)                                minf
+\end{verbatim}
+
+Maxima replies that the result is $-\infty$. To approach from the negative side, replace ``plus'' with ``minus'' above.
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Symbolic differentiation:} Expressions can be differentiated with diff, for example:
+
+\begin{verbatim}
+(%i1) diff(sin(x),x);
+(%o1)                               cos(x)
+\end{verbatim}
+
+which states that $\frac{d}{dx}\sin(x) = \cos(x)$. Or a slightly more complicated example:
+
+\begin{verbatim}
+(%i1) diff(x^x,x);
+                                 x
+(%o1)                           x  (log(x) + 1)
+\end{verbatim}
+
+Higher order derivatieves can be calculated by adding the requested degree as a paramter:
+
+\begin{verbatim}
+(%i1) diff(x^3,x,3);
+(%o1)                                  6
+\end{verbatim}
+
+which differentiates $x^3$ three times with respect to $x$. To differentiate an expression first with respect to x and then with respect to y, use:
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{verbatim}
+(%i1) diff(diff(x^2 + y, x),y);
+(%o1)                                  0
+\end{verbatim}
+
+\textbf{Symbolic integration:} To solve indefinite integrals (e.g. without limits) with Maxima, use the integrate command as follows:
+
+\begin{verbatim}
+(%i1) integrate(1/x,x);
+(%o1)                               log(x)
+\end{verbatim}
+
+Definite integrals (e.g. with limits) can be also solved with the integrate command but now the limits have to be specified (lower limit 0 and upper limit 1 below):
+
+\begin{verbatim}
+(%i1) integrate(x + 2/(x - 3), x, 0, 1);
+                                                   1
+(%o1)                      - 2 log(3) + 2 log(2) + -
+                                                   2
+(%i2) float(%);
+(%o2)                         - 0.310930216216329
+\end{verbatim}
+
+\otext
+In the last step, a numerical approximation was requested with the float command. If Maxima cannot integrate your function analytically, you can try to integrate it numerically (below the lower limit is 0 and the upper limit is 1):
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{verbatim}
+(%i1) romberg(cos(sin(x + 1)), x, 0, 1);
+(%o1)                          .5759175005968216
+\end{verbatim}
+
+\otext
+\textbf{Sums and products:} The following examples demonstrate evaluation of finite and infinite sums. A sum can be defined as follows:
+
+\begin{verbatim}
+(%i1) sum(k, k, 1, n);
+                                     n
+                                    ====
+                                    \
+(%o1)                                >    k
+                                    /
+                                    ====
+                                    k = 1
+\end{verbatim}
+
+and it can be simplified by adding simpsum after its definition:
+
+\begin{verbatim}
+(%i1) sum(k, k, 1, n), simpsum;
+                                     2
+                                    n  + n
+(%o1)                               ------
+                                      2
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+To specify an infinite series, use:
+
+\begin{verbatim}
+(%i1) sum(1/k^4, k, 1, inf), simpsum;
+                                        4
+                                     %pi
+(%o1)                                ----
+                                      90
+\end{verbatim}
+
+which says that $\sum\limits_{k = 1}^{\infty}\frac{1}{k^4} = \frac{\pi^4}{90}$.
+
+\otext
+\textbf{Series expansions:} To obtain Taylor series of a given function, use:
+
+\begin{verbatim}
+(%i1) taylor(%e^x, x, 0, 5);
+                               2    3    4    5
+                              x    x    x    x
+(%o1)/T/              1 + x + -- + -- + -- + --- + . . .
+                              2    6    24   120
+\end{verbatim}
+
+where x is the variable for expansion, zero specifies the point around which the expansion is performed and the last argument (five) specifies that terms up to fifth power should be included in the expansion.
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\otext
+Note that Maxima denotes natural logarithm by log(). You may want to define the ten base logarithm by:
+
+\begin{verbatim}
+(%i1) log10(x) := log(x) / log(10);
+\end{verbatim} 
+
+\otext
+Finally, to exit the program, you can type use the quit command as follows:
+
+\begin{verbatim}
+(%i1) quit();
+\end{verbatim}
+
+
+\end{frame}

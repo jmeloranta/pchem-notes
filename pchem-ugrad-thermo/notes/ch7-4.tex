@@ -1,0 +1,109 @@
+\opage{
+\otitle{7.4 Activity of electrolytes}
+
+\otext
+Electrolytes have to be treated in a different way from nonelectrolytes because they dissociate. However, the ions cannot be studied separately because the condition of electric neutrality applies.
+
+\vspace*{0.2cm}
+
+For electrolyte solutions, it is customary to use the molal scale (instead of molar). The unit of molality is mol kg$^{-1}$ (for molarity mol L$^{-1}$). Conversion between the systems can be carried out by multiplication / division by the solvent density (kg L$^{-1}$). Note that molality does not change as a function of temperature whereas molarity usually does.
+
+\vspace*{0.2cm}
+
+On the molality scale, the activity of a solute is given by (compare with Eq. (\ref{eq6.45})):
+
+\aeqn{7.45}{a_i = \frac{\gamma_im_i}{m^\circ}}
+
+where $a_i$ denotes activity, $\gamma_i$ activity coefficient, $m_i$ molality and $m^\circ$ standard molality (1 mol / kg of solvent). For dilute solutions we have:
+
+\aeqn{7.46}{\lim\limits_{m_i\rightarrow 0}\gamma_i = 1}
+
+Addition of an infinitely small amount of an electrolyte to one kg of solvent, yields a small change in the Gibbs energy:
+
+}
+
+\opage{
+
+\otext
+\aeqn{7.47}{dG = \mu_+dm_+ + \mu_-dm_-}
+
+Note that we cannot add cations or anions separately, we always get both when an electrolyte is added to the solvent.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+\textit{Electrolyte} & Substance that dissolves to give an ionically conducting solution.\\
+\textit{Non-electrolyte} & Substance that dissolves to give a solution that does not conduct\\
+                & electricity.\\
+\textit{Strong electrolyte} & Substance that dissolves completely, or almost completely to\\
+                & given an ionically conducting solution.\\
+\textit{Weak electrolyte} & Substrance that dissolves only to a small degree.\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+Consider a strong electrolyte A$_{v_+}$B$_{v_-}$ where $v_+$ is the number of cations and $v_-$ is the number of anions. The overall electroneutrality condition for the solution gives:
+
+\aeqn{7.48}{m = \frac{m_+}{v_+} = \frac{m_-}{v_-}}
+
+Inserting this into Eq. (\ref{eq7.47}) gives:
+
+\beqn{7.49}{dG = \left(v_+\mu_+ + v_-\mu_-\right)dm = \mu dm}{\textnormal{where }\mu = v_+\mu_+ + v_-\mu_-}
+
+Here $\mu$ is the chemical potential for the electrolyte, which can be determined experimentally.
+
+}
+
+\opage{
+
+\otext
+\textbf{Note:} In the following we will omit the standard state value $m^\circ$ from expressions. This results in simplified expressions but it will give inconsistent units! For example, $m_i / m^\circ$ becomes now just $m_i$.
+
+\vspace*{0.2cm}
+
+The chemical potentials for cation and anion are given by:
+
+\vspace*{-0.2cm}
+
+\aeqn{7.51}{\mu_+ = \mu_+^\circ + RT\ln\left(\gamma_+m_+\right)\textnormal{ (}\mu_+^\circ\textnormal{ std state chemical potential for cation)}}
+\vspace*{-0.3cm}
+\aeqn{7.52}{\mu_- = \mu_-^\circ + RT\ln\left(\gamma_-m_-\right)\textnormal{ (}\mu_-^\circ\textnormal{ std state chemical potential for anion)}}
+
+Combining Eqs. (\ref{eq7.51}) and (\ref{eq7.52}) gives:
+
+\aeqn{7.53}{\mu = \left(v_+\mu_+^\circ + v_-\mu_-^\circ\right) + RT\ln\left(\gamma_+^{v_+}\gamma_-^{v_-}m_+^{v_+}m_-^{v_-}\right)}
+
+To make the logarithm argument proportional to $m$, we define the mean ionic molality $m_\pm$ and the mean ionic activity coefficient $\gamma_\pm$ (with help of Eq. (\ref{eq7.48})):
+
+\aeqn{7.54}{m_\pm = \left(m_+^{v_+}m_-^{v_-}\right)^{1/v_\pm} = m\left(v_+^{v_+}v_-^{v_-}\right)^{1/v_\pm}}
+\aeqn{7.55}{\gamma_\pm = \left(\gamma_+^{v_+}\gamma_-^{v_-}\right)^{1/v_\pm}}
+\aeqn{7.56}{v_\pm = v_+ + v_-}
+
+Using these definitions we can rewrite Eq. (\ref{eq7.53}) as:
+
+}
+
+\opage{
+
+\otext
+\beqn{7.57}{\mu = \mu^\circ + v_\pm RT\ln\left(\gamma_\pm m_\pm\right)}{\textnormal{with }a_{\textnormal{A}_{v_+}\textnormal{B}_{v_-}} = \left(\gamma_\pm m_\pm\right)^{v_\pm} = \gamma_\pm^{v_\pm}m^{v_\pm}\left(v_+^{v_+}v_-^{v_-}\right)}
+
+where $\textnormal{A}_{v_+}\textnormal{B}_{v_-}$ is the electrolyte activity. The standard chemical potential $\mu^\circ$ of the electrolyte is the chemical potential in a solution of unit activity on the molality scale.
+
+\vspace*{0.2cm}
+
+\textbf{Examples.} What are the mean ionic molalities $m_\pm$ of NaCl, CaCl$_2$, CuSO$_4$ and LaCl$_3$?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} NaCl: 1 - 1 electrolyte and hence Eq. (\ref{eq7.54}) gives $m_\pm = m$. Here $m$ is the molality of the electrolyte.
+
+\vspace*{0.2cm}
+
+CaCl$_2$: 1 -- 2 electrolyte and hence Eq. (\ref{eq7.54}) gives $m_\pm = 4^{1/3}m$.
+
+CuSO$_4$: 1 -- 1 electrolyte and hence Eq. (\ref{eq7.54}) gives $m_\pm = m$.
+
+LaCl$_3$: 1 -- 3 electrolyte and hence Eq. (\ref{eq7.54}) gives $m_\pm = 27^{1/4}m$.
+
+}

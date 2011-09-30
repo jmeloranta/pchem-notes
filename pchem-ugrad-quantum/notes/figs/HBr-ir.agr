@@ -1,0 +1,4270 @@
+# Grace project file
+#
+@version 50122
+@page size 488, 500
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 17 to "Nimbus-Sans-L-Regular-Condensed", "Nimbus-Sans-L-Regular-Condensed"
+@map font 18 to "Nimbus-Sans-L-Bold-Condensed", "Nimbus-Sans-L-Bold-Condensed"
+@map font 19 to "Nimbus-Sans-L-Regular-Condensed-Italic", "Nimbus-Sans-L-Regular-Condensed-Italic"
+@map font 20 to "Nimbus-Sans-L-Bold-Condensed-Italic", "Nimbus-Sans-L-Bold-Condensed-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 29 to "URW-Palladio-L-Roman", "URW-Palladio-L-Roman"
+@map font 30 to "URW-Palladio-L-Bold", "URW-Palladio-L-Bold"
+@map font 31 to "URW-Palladio-L-Italic", "URW-Palladio-L-Italic"
+@map font 32 to "URW-Palladio-L-Bold-Italic", "URW-Palladio-L-Bold-Italic"
+@map font 12 to "Symbol", "Symbol"
+@map font 34 to "URW-Chancery-L-Medium-Italic", "URW-Chancery-L-Medium-Italic"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Mon Apr 27 08:46:40 2009"
+@with string
+@    string on
+@    string loctype view
+@    string 0.208196721311, 0.760655737705
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "R branch"
+@with string
+@    string on
+@    string loctype view
+@    string 0.637704918033, 0.760655737704
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "P branch"
+@with string
+@    string on
+@    string loctype view
+@    string 0.422950819672, 0.655737704918
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "0 - 1"
+@with string
+@    string on
+@    string loctype view
+@    string 0.395081967213, 0.875409836065
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "1 - 2"
+@with string
+@    string on
+@    string loctype view
+@    string 0.375409836065, 0.732786885245
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "1 - 2"
+@with string
+@    string on
+@    string loctype view
+@    string 0.375409836065, 0.732786885245
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "2 - 3"
+@with string
+@    string on
+@    string loctype view
+@    string 0.354098360655, 0.808196721311
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "3 - 4"
+@with string
+@    string on
+@    string loctype view
+@    string 0.327868852458, 0.785245901639
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "4 - 5"
+@with string
+@    string on
+@    string loctype view
+@    string 0.306557377048, 0.688524590164
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "5 - 6"
+@with string
+@    string on
+@    string loctype view
+@    string 0.2868852459, 0.6
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "6 - 7"
+@with string
+@    string on
+@    string loctype view
+@    string 0.267213114753, 0.46393442623
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "7 - 8"
+@with string
+@    string on
+@    string loctype view
+@    string 0.227868852458, 0.454098360656
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "8 - 9"
+@with string
+@    string on
+@    string loctype view
+@    string 0.213114754098, 0.322950819672
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "9 - 10"
+@with string
+@    string on
+@    string loctype view
+@    string 0.467213114754, 0.668852459016
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "1 - 0"
+@with string
+@    string on
+@    string loctype view
+@    string 0.490163934426, 0.719672131147
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "2 - 1"
+@with string
+@    string on
+@    string loctype view
+@    string 0.503278688524, 0.785245901639
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "3 - 2"
+@with string
+@    string on
+@    string loctype view
+@    string 0.547540983606, 0.786885245901
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "4 - 3"
+@with string
+@    string on
+@    string loctype view
+@    string 0.57868852459, 0.765573770491
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "5 - 4"
+@with string
+@    string on
+@    string loctype view
+@    string 0.598360655738, 0.673770491802
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "6 - 5"
+@with string
+@    string on
+@    string loctype view
+@    string 0.632786885246, 0.624590163933
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "7 - 6"
+@with string
+@    string on
+@    string loctype view
+@    string 0.660655737705, 0.532786885244
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "8 - 7"
+@with string
+@    string on
+@    string loctype view
+@    string 0.688524590164, 0.44426229508
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "9 - 8"
+@with string
+@    string on
+@    string loctype view
+@    string 0.713114754098, 0.324590163932
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "10 - 9"
+@with string
+@    string on
+@    string loctype view
+@    string 0.742622950819, 0.232786885243
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.750000
+@    string def "11 - 10"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 2274.38802, 0.0215477506, 2795.25027, 0.643208366
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.115909, 0.153689, 0.888636, 0.870902
+@    title ""
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert on
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 2.0
+@    xaxis  label "Wavenumber (cm\S-1\N)"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 100
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 2.0
+@    yaxis  label "Absorbance"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 0.1
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.656818181816, 0.819672131148
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 2.0
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 1
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "/tmp/ooo"
+@    s0 legend  ""
+@    s1 hidden true
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 0
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 1.0
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 2
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "/tmp/ooo"
+@    s1 legend  ""
+@    s2 hidden true
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 0
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 1.0
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 3
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "/tmp/ooo"
+@    s2 legend  ""
+@    s3 hidden true
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/tmp/ooo"
+@    s3 legend  ""
+@    s4 hidden true
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 5
+@    s4 symbol pattern 1
+@    s4 symbol fill color 5
+@    s4 symbol fill pattern 0
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 0
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 1.0
+@    s4 line color 5
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 1
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 0
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 5
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "/tmp/ooo"
+@    s4 legend  ""
+@target G0.S0
+@type xy
+454.206 0.051
+458.8789 0.051
+463.55181 0.054
+468.22471 0.056
+472.89761 0.057
+477.57052 0.06
+482.24342 0.061
+486.91633 0.061
+491.58923 0.061
+496.26213 0.064
+500.93504 0.064
+505.60794 0.069
+510.28085 0.067
+514.95375 0.066
+519.62665 0.066
+524.29956 0.066
+528.97246 0.066
+533.64536 0.064
+538.31827 0.063
+542.99117 0.061
+547.66408 0.064
+552.33698 0.063
+557.00988 0.058
+561.68279 0.058
+566.35569 0.056
+571.02859 0.057
+575.7015 0.056
+580.3744 0.053
+585.04731 0.056
+589.72021 0.051
+594.39311 0.051
+599.06602 0.053
+603.73892 0.044
+608.41183 0.048
+613.08473 0.048
+617.75763 0.048
+622.43054 0.048
+627.10344 0.047
+631.77634 0.044
+636.44925 0.043
+641.12215 0.043
+645.79506 0.043
+650.46796 0.043
+655.14086 0.043
+659.81377 0.043
+664.48667 0.043
+669.15958 0.041
+673.83248 0.041
+678.50538 0.04
+683.17829 0.041
+687.85119 0.04
+692.52409 0.041
+697.197 0.041
+701.8699 0.04
+706.54281 0.037
+711.21571 0.043
+715.88861 0.041
+720.56152 0.041
+725.23442 0.044
+729.90733 0.043
+734.58023 0.041
+739.25313 0.043
+743.92604 0.035
+748.59894 0.037
+753.27184 0.041
+757.94475 0.034
+762.61765 0.037
+767.29055 0.034
+771.96346 0.027
+776.63636 0.035
+781.30927 0.035
+785.98217 0.034
+790.65507 0.031
+795.32798 0.034
+800.00088 0.037
+804.67379 0.038
+809.34669 0.038
+814.01959 0.04
+818.6925 0.041
+823.3654 0.04
+828.0383 0.04
+832.71121 0.041
+837.38411 0.041
+842.05702 0.04
+846.72992 0.043
+851.40282 0.041
+856.07573 0.038
+860.74863 0.04
+865.42153 0.04
+870.09444 0.04
+874.76734 0.041
+879.44025 0.041
+884.11315 0.041
+888.78605 0.041
+893.45896 0.041
+898.13186 0.041
+902.80476 0.037
+907.47767 0.043
+912.15057 0.043
+916.82348 0.041
+921.49638 0.041
+926.16928 0.04
+930.84219 0.038
+935.51509 0.037
+940.188 0.041
+944.8609 0.041
+949.5338 0.041
+954.20671 0.04
+958.87961 0.038
+963.55251 0.037
+968.22542 0.035
+972.89832 0.038
+977.57123 0.035
+982.24413 0.037
+986.91703 0.035
+991.58994 0.034
+996.26284 0.034
+1000.9357 0.034
+1005.6086 0.035
+1010.2816 0.038
+1014.9545 0.04
+1019.6274 0.037
+1024.3003 0.035
+1028.9732 0.038
+1033.6461 0.037
+1038.319 0.035
+1042.9919 0.029
+1047.6648 0.034
+1052.3377 0.032
+1057.0106 0.031
+1061.6835 0.029
+1066.3564 0.032
+1071.0293 0.035
+1075.7022 0.041
+1080.3751 0.043
+1085.048 0.041
+1089.7209 0.041
+1094.3938 0.041
+1099.0667 0.04
+1103.7396 0.037
+1108.4125 0.034
+1113.0854 0.031
+1117.7583 0.028
+1122.4312 0.025
+1127.1041 0.022
+1131.7771 0.024
+1136.45 0.027
+1141.1229 0.029
+1145.7958 0.029
+1150.4687 0.029
+1155.1416 0.025
+1159.8145 0.022
+1164.4874 0.022
+1169.1603 0.025
+1173.8332 0.027
+1178.5061 0.034
+1183.179 0.031
+1187.8519 0.025
+1192.5248 0.024
+1197.1977 0.025
+1201.8706 0.027
+1206.5435 0.025
+1211.2164 0.025
+1215.8893 0.025
+1220.5622 0.024
+1225.2351 0.024
+1229.908 0.025
+1234.5809 0.028
+1239.2538 0.035
+1243.9267 0.037
+1248.5996 0.038
+1253.2726 0.041
+1257.9455 0.044
+1262.6184 0.045
+1267.2913 0.045
+1271.9642 0.045
+1276.6371 0.044
+1281.31 0.045
+1285.9829 0.048
+1290.6558 0.048
+1295.3287 0.048
+1300.0016 0.05
+1304.6745 0.05
+1309.3474 0.048
+1314.0203 0.045
+1318.6932 0.045
+1323.3661 0.048
+1328.039 0.047
+1332.7119 0.048
+1337.3848 0.045
+1342.0577 0.058
+1346.7306 0.043
+1351.4035 0.041
+1356.0764 0.025
+1360.7493 0.024
+1365.4222 0.022
+1370.0951 0.04
+1374.768 0.041
+1379.441 0.05
+1384.1139 0.044
+1388.7868 0.047
+1393.4597 0.044
+1398.1326 0.047
+1402.8055 0.044
+1407.4784 0.045
+1412.1513 0.053
+1416.8242 0.047
+1421.4971 0.041
+1426.17 0.045
+1430.8429 0.05
+1435.5158 0.045
+1440.1887 0.044
+1444.8616 0.048
+1449.5345 0.047
+1454.2074 0.051
+1458.8803 0.038
+1463.5532 0.054
+1468.2261 0.05
+1472.899 0.041
+1477.5719 0.045
+1482.2448 0.053
+1486.9177 0.05
+1491.5906 0.041
+1496.2635 0.051
+1500.9365 0.044
+1505.6094 0.037
+1510.2823 0.022
+1514.9552 0.047
+1519.6281 0.038
+1524.301 0.031
+1528.9739 0.044
+1533.6468 0.05
+1538.3197 0.054
+1542.9926 0.021
+1547.6655 0.045
+1552.3384 0.048
+1557.0113 0.032
+1561.6842 -0.001
+1566.3571 0.048
+1571.03 0.035
+1575.7029 0.032
+1580.3758 0.045
+1585.0487 0.048
+1589.7216 0.048
+1594.3945 0.048
+1599.0674 0.048
+1603.7403 0.048
+1608.4132 0.05
+1613.0861 0.05
+1617.759 0.041
+1622.432 0.05
+1627.1049 0.047
+1631.7778 0.054
+1636.4507 0.038
+1641.1236 0.056
+1645.7965 0.041
+1650.4694 0.057
+1655.1423 0.04
+1659.8152 0.057
+1664.4881 0.056
+1669.161 0.05
+1673.8339 0.048
+1678.5068 0.06
+1683.1797 0.044
+1687.8526 0.064
+1692.5255 0.066
+1697.1984 0.05
+1701.8713 0.05
+1706.5442 0.06
+1711.2171 0.061
+1715.89 0.044
+1720.5629 0.053
+1725.2358 0.056
+1729.9087 0.053
+1734.5816 0.051
+1739.2545 0.051
+1743.9275 0.053
+1748.6004 0.044
+1753.2733 0.051
+1757.9462 0.053
+1762.6191 0.053
+1767.292 0.05
+1771.9649 0.037
+1776.6378 0.054
+1781.3107 0.053
+1785.9836 0.056
+1790.6565 0.044
+1795.3294 0.051
+1800.0023 0.053
+1804.6752 0.053
+1809.3481 0.053
+1814.021 0.053
+1818.6939 0.056
+1823.3668 0.05
+1828.0397 0.048
+1832.7126 0.053
+1837.3855 0.053
+1842.0584 0.043
+1846.7313 0.051
+1851.4042 0.053
+1856.0771 0.051
+1860.75 0.047
+1865.4229 0.044
+1870.0959 0.047
+1874.7688 0.051
+1879.4417 0.051
+1884.1146 0.05
+1888.7875 0.05
+1893.4604 0.048
+1898.1333 0.05
+1902.8062 0.051
+1907.4791 0.05
+1912.152 0.05
+1916.8249 0.047
+1921.4978 0.048
+1926.1707 0.051
+1930.8436 0.051
+1935.5165 0.051
+1940.1894 0.05
+1944.8623 0.048
+1949.5352 0.051
+1954.2081 0.05
+1958.881 0.045
+1963.5539 0.045
+1968.2268 0.051
+1972.8997 0.051
+1977.5726 0.05
+1982.2455 0.05
+1986.9184 0.05
+1991.5914 0.05
+1996.2643 0.05
+2000.9372 0.05
+2005.6101 0.05
+2010.283 0.05
+2014.9559 0.048
+2019.6288 0.047
+2024.3017 0.047
+2028.9746 0.047
+2033.6475 0.048
+2038.3204 0.05
+2042.9933 0.05
+2047.6662 0.048
+2052.3391 0.048
+2057.012 0.048
+2061.6849 0.048
+2066.3578 0.048
+2071.0307 0.048
+2075.7036 0.047
+2080.3765 0.047
+2085.0494 0.047
+2089.7223 0.047
+2094.3952 0.047
+2099.0681 0.047
+2103.741 0.045
+2108.4139 0.045
+2113.0869 0.045
+2117.7598 0.045
+2122.4327 0.045
+2127.1056 0.045
+2131.7785 0.045
+2136.4514 0.045
+2141.1243 0.045
+2145.7972 0.045
+2150.4701 0.045
+2155.143 0.045
+2159.8159 0.045
+2164.4888 0.045
+2169.1617 0.045
+2173.8346 0.045
+2178.5075 0.045
+2183.1804 0.045
+2187.8533 0.045
+2192.5262 0.045
+2197.1991 0.045
+2201.872 0.045
+2206.5449 0.045
+2211.2178 0.045
+2215.8907 0.045
+2220.5636 0.045
+2225.2365 0.045
+2229.9094 0.045
+2234.5823 0.045
+2239.2553 0.045
+2243.9282 0.045
+2248.6011 0.045
+2253.274 0.045
+2257.9469 0.045
+2262.6198 0.045
+2267.2927 0.045
+2271.9656 0.045
+2276.6385 0.0443
+2281.3114 0.0442
+2285.9843 0.0443
+2290.6572 0.044
+2295.3301 0.0437
+2300.003 0.0438
+2304.6759 0.0437
+2309.3488 0.044
+2314.0217 0.0434
+2318.6946 0.0349
+2323.3675 0.0297
+2328.0404 0.0267
+2332.7133 0.024
+2337.3862 0.022
+2342.0591 0.0214
+2346.732 0.021
+2351.4049 0.019
+2356.0778 0.086
+2360.7508 0.0196
+2365.4237 0.0151
+2370.0966 0.0203
+2374.7695 0.0384
+2379.4424 0.164
+2384.1153 0.0438
+2388.7882 0.0389
+2393.4611 0.035
+2398.134 0.269
+2402.8069 0.0382
+2407.4798 0.0435
+2412.1527 0.0523
+2416.8256 0.344
+2421.4985 0.1004
+2426.1714 0.0435
+2430.8443 0.047
+2435.5172 0.424
+2440.1901 0.051
+2444.863 0.049
+2449.5359 0.05
+2454.2088 0.4674
+2458.8817 0.2199
+2463.5546 0.0535
+2468.2275 0.056
+2472.9004 0.548
+2477.5733 0.0644
+2482.2463 0.0565
+2486.9192 0.06
+2491.5921 0.564
+2496.265 0.0748
+2500.9379 0.0606
+2505.6108 0.057
+2510.2837 0.567
+2514.9566 0.082
+2519.6295 0.058
+2524.3024 0.1198
+2528.9753 0.5058
+2533.6482 0.0825
+2538.3211 0.0574
+2542.994 0.0654
+2547.6669 0.4645
+2552.3398 0.0661
+2557.0127 0.0593
+2561.6856 0.0561
+2566.3585 0.057
+2571.0314 0.0561
+2575.7043 0.1513
+2580.3772 0.443
+2585.0501 0.0603
+2589.723 0.0635
+2594.3959 0.628
+2599.0688 0.1105
+2603.7418 0.063
+2608.4147 0.5149
+2613.0876 0.3101
+2617.7605 0.064
+2622.4334 0.5836
+2627.1063 0.3508
+2631.7792 0.0732
+2636.4521 0.563
+2641.125 0.2095
+2645.7979 0.063
+2650.4708 0.48
+2655.1437 0.3312
+2659.8166 0.1082
+2664.4895 0.4036
+2669.1624 0.0682
+2673.8353 0.1208
+2678.5082 0.285
+2683.1811 0.0804
+2687.854 0.1789
+2692.5269 0.282
+2697.1998 0.0709
+2701.8727 0.1203
+2706.5456 0.1575
+2711.2185 0.0887
+2715.8914 0.0752
+2720.5643 0.0693
+2725.2372 0.066
+2729.9102 0.064
+2734.5831 0.064
+2739.256 0.0633
+2743.9289 0.063
+2748.6018 0.063
+2753.2747 0.063
+2757.9476 0.063
+2762.6205 0.063
+2767.2934 0.063
+2771.9663 0.063
+2776.6392 0.063
+2781.3121 0.063
+2785.985 0.063
+2790.6579 0.063
+2795.3308 0.063
+2800.0037 0.063
+2804.6766 0.063
+2809.3495 0.063
+2814.0224 0.063
+2818.6953 0.064
+2823.3682 0.064
+2828.0411 0.064
+2832.714 0.064
+2837.3869 0.064
+2842.0598 0.0634
+2846.7327 0.0629
+2851.4057 0.061
+2856.0786 0.061
+2860.7515 0.061
+2865.4244 0.063
+2870.0973 0.063
+2874.7702 0.063
+2879.4431 0.063
+2884.116 0.063
+2888.7889 0.063
+2893.4618 0.063
+2898.1347 0.062
+2902.8076 0.061
+2907.4805 0.06
+2912.1534 0.06
+2916.8263 0.058
+2921.4992 0.058
+2926.1721 0.058
+2930.845 0.06
+2935.5179 0.0605
+2940.1908 0.061
+2944.8637 0.063
+2949.5366 0.0639
+2954.2095 0.064
+2958.8824 0.066
+2963.5553 0.066
+2968.2282 0.066
+2972.9012 0.0664
+2977.5741 0.067
+2982.247 0.069
+2986.9199 0.069
+2991.5928 0.07
+2996.2657 0.07
+3000.9386 0.07
+3005.6115 0.07
+3010.2844 0.07
+3014.9573 0.07
+3019.6302 0.072
+3024.3031 0.072
+3028.976 0.072
+3033.6489 0.072
+3038.3218 0.072
+3042.9947 0.072
+3047.6676 0.072
+3052.3405 0.073
+3057.0134 0.073
+3061.6863 0.073
+3066.3592 0.073
+3071.0321 0.073
+3075.705 0.073
+3080.3779 0.073
+3085.0508 0.073
+3089.7237 0.0722
+3094.3967 0.072
+3099.0696 0.072
+3103.7425 0.072
+3108.4154 0.072
+3113.0883 0.072
+3117.7612 0.0728
+3122.4341 0.073
+3127.107 0.073
+3131.7799 0.073
+3136.4528 0.073
+3141.1257 0.073
+3145.7986 0.0727
+3150.4715 0.073
+3155.1444 0.073
+3159.8173 0.073
+3164.4902 0.073
+3169.1631 0.073
+3173.836 0.073
+3178.5089 0.073
+3183.1818 0.073
+3187.8547 0.073
+3192.5276 0.073
+3197.2005 0.0728
+3201.8734 0.072
+3206.5463 0.072
+3211.2192 0.072
+3215.8921 0.07
+3220.5651 0.07
+3225.238 0.07
+3229.9109 0.069
+3234.5838 0.069
+3239.2567 0.069
+3243.9296 0.069
+3248.6025 0.069
+3253.2754 0.069
+3257.9483 0.069
+3262.6212 0.069
+3267.2941 0.0678
+3271.967 0.067
+3276.6399 0.067
+3281.3128 0.0669
+3285.9857 0.066
+3290.6586 0.066
+3295.3315 0.066
+3300.0044 0.064
+3304.6773 0.064
+3309.3502 0.064
+3314.0231 0.063
+3318.696 0.061
+3323.3689 0.061
+3328.0418 0.061
+3332.7147 0.058
+3337.3876 0.057
+3342.0606 0.057
+3346.7335 0.056
+3351.4064 0.056
+3356.0793 0.054
+3360.7522 0.054
+3365.4251 0.053
+3370.098 0.053
+3374.7709 0.051
+3379.4438 0.051
+3384.1167 0.05
+3388.7896 0.0491
+3393.4625 0.048
+3398.1354 0.0476
+3402.8083 0.047
+3407.4812 0.0461
+3412.1541 0.045
+3416.827 0.0446
+3421.4999 0.044
+3426.1728 0.044
+3430.8457 0.043
+3435.5186 0.043
+3440.1915 0.0412
+3444.8644 0.041
+3449.5373 0.041
+3454.2102 0.04
+3458.8831 0.04
+3463.5561 0.04
+3468.229 0.04
+3472.9019 0.0393
+3477.5748 0.038
+3482.2477 0.038
+3486.9206 0.038
+3491.5935 0.038
+3496.2664 0.037
+3500.9393 0.035
+3505.6122 0.035
+3510.2851 0.0343
+3514.958 0.035
+3519.6309 0.035
+3524.3038 0.035
+3528.9767 0.0347
+3533.6496 0.034
+3538.3225 0.0343
+3542.9954 0.037
+3547.6683 0.0334
+3552.3412 0.0295
+3557.0141 0.0295
+3561.687 0.0318
+3566.3599 0.032
+3571.0328 0.0313
+3575.7057 0.031
+3580.3786 0.032
+3585.0516 0.0342
+3589.7245 0.0328
+3594.3974 0.032
+3599.0703 0.0317
+3603.7432 0.034
+3608.4161 0.0326
+3613.089 0.031
+3617.7619 0.0347
+3622.4348 0.035
+3627.1077 0.034
+3631.7806 0.029
+3636.4535 0.034
+3641.1264 0.0372
+3645.7993 0.0373
+3650.4722 0.0273
+3655.1451 0.0247
+3659.818 0.0295
+3664.4909 0.0333
+3669.1638 0.0353
+3673.8367 0.0393
+3678.5096 0.043
+3683.1825 0.0411
+3687.8554 0.0367
+3692.5283 0.0328
+3697.2012 0.032
+3701.8741 0.031
+3706.547 0.029
+3711.22 0.029
+3715.8929 0.028
+3720.5658 0.027
+3725.2387 0.025
+3729.9116 0.0262
+3734.5845 0.029
+&
+@target G0.S1
+@type xy
+454.206 0.949
+458.8789 0.949
+463.55181 0.946
+468.22471 0.944
+472.89761 0.943
+477.57052 0.94
+482.24342 0.939
+486.91633 0.939
+491.58923 0.937
+496.26213 0.936
+500.93504 0.934
+505.60794 0.931
+510.28085 0.933
+514.95375 0.934
+519.62665 0.934
+524.29956 0.934
+528.97246 0.934
+533.64536 0.936
+538.31827 0.937
+542.99117 0.937
+547.66408 0.936
+552.33698 0.94
+557.00988 0.942
+561.68279 0.943
+566.35569 0.944
+571.02859 0.943
+575.7015 0.946
+580.3744 0.947
+585.04731 0.944
+589.72021 0.949
+594.39311 0.949
+599.06602 0.947
+603.73892 0.956
+608.41183 0.952
+613.08473 0.953
+617.75763 0.952
+622.43054 0.952
+627.10344 0.956
+631.77634 0.957
+636.44925 0.957
+641.12215 0.957
+645.79506 0.957
+650.46796 0.957
+655.14086 0.957
+659.81377 0.957
+664.48667 0.957
+669.15958 0.959
+673.83248 0.96
+678.50538 0.96
+683.17829 0.959
+687.85119 0.96
+692.52409 0.959
+697.197 0.959
+701.8699 0.962
+706.54281 0.962
+711.21571 0.959
+715.88861 0.959
+720.56152 0.959
+725.23442 0.957
+729.90733 0.957
+734.58023 0.959
+739.25313 0.957
+743.92604 0.963
+748.59894 0.963
+753.27184 0.962
+757.94475 0.965
+762.61765 0.965
+767.29055 0.966
+771.96346 0.972
+776.63636 0.965
+781.30927 0.965
+785.98217 0.968
+790.65507 0.969
+795.32798 0.966
+800.00088 0.962
+804.67379 0.962
+809.34669 0.962
+814.01959 0.959
+818.6925 0.959
+823.3654 0.96
+828.0383 0.96
+832.71121 0.959
+837.38411 0.959
+842.05702 0.957
+846.72992 0.959
+851.40282 0.957
+856.07573 0.962
+860.74863 0.96
+865.42153 0.96
+870.09444 0.96
+874.76734 0.959
+879.44025 0.959
+884.11315 0.959
+888.78605 0.959
+893.45896 0.959
+898.13186 0.959
+902.80476 0.963
+907.47767 0.957
+912.15057 0.957
+916.82348 0.959
+921.49638 0.96
+926.16928 0.96
+930.84219 0.963
+935.51509 0.962
+940.188 0.959
+944.8609 0.959
+949.5338 0.959
+954.20671 0.96
+958.87961 0.962
+963.55251 0.965
+968.22542 0.965
+972.89832 0.96
+977.57123 0.965
+982.24413 0.963
+986.91703 0.965
+991.58994 0.966
+996.26284 0.966
+1000.9357 0.966
+1005.6086 0.965
+1010.2816 0.96
+1014.9545 0.962
+1019.6274 0.965
+1024.3003 0.965
+1028.9732 0.962
+1033.6461 0.963
+1038.319 0.966
+1042.9919 0.969
+1047.6648 0.969
+1052.3377 0.968
+1057.0106 0.969
+1061.6835 0.971
+1066.3564 0.966
+1071.0293 0.963
+1075.7022 0.959
+1080.3751 0.959
+1085.048 0.959
+1089.7209 0.959
+1094.3938 0.959
+1099.0667 0.96
+1103.7396 0.963
+1108.4125 0.968
+1113.0854 0.969
+1117.7583 0.972
+1122.4312 0.976
+1127.1041 0.978
+1131.7771 0.975
+1136.45 0.972
+1141.1229 0.971
+1145.7958 0.971
+1150.4687 0.971
+1155.1416 0.975
+1159.8145 0.978
+1164.4874 0.978
+1169.1603 0.975
+1173.8332 0.971
+1178.5061 0.963
+1183.179 0.972
+1187.8519 0.975
+1192.5248 0.975
+1197.1977 0.975
+1201.8706 0.973
+1206.5435 0.975
+1211.2164 0.975
+1215.8893 0.975
+1220.5622 0.976
+1225.2351 0.976
+1229.908 0.973
+1234.5809 0.972
+1239.2538 0.965
+1243.9267 0.963
+1248.5996 0.962
+1253.2726 0.957
+1257.9455 0.955
+1262.6184 0.955
+1267.2913 0.955
+1271.9642 0.955
+1276.6371 0.956
+1281.31 0.953
+1285.9829 0.952
+1290.6558 0.952
+1295.3287 0.952
+1300.0016 0.95
+1304.6745 0.95
+1309.3474 0.953
+1314.0203 0.955
+1318.6932 0.955
+1323.3661 0.952
+1328.039 0.953
+1332.7119 0.952
+1337.3848 0.956
+1342.0577 0.953
+1346.7306 0.957
+1351.4035 0.959
+1356.0764 0.976
+1360.7493 0.976
+1365.4222 0.976
+1370.0951 0.957
+1374.768 0.957
+1379.441 0.95
+1384.1139 0.953
+1388.7868 0.953
+1393.4597 0.956
+1398.1326 0.953
+1402.8055 0.957
+1407.4784 0.953
+1412.1513 0.95
+1416.8242 0.955
+1421.4971 0.959
+1426.17 0.955
+1430.8429 0.949
+1435.5158 0.956
+1440.1887 0.956
+1444.8616 0.95
+1449.5345 0.952
+1454.2074 0.95
+1458.8803 0.959
+1463.5532 0.947
+1468.2261 0.95
+1472.899 0.963
+1477.5719 0.952
+1482.2448 0.947
+1486.9177 0.953
+1491.5906 0.959
+1496.2635 0.959
+1500.9365 0.955
+1505.6094 0.966
+1510.2823 0.963
+1514.9552 0.953
+1519.6281 0.963
+1524.301 0.96
+1528.9739 0.953
+1533.6468 0.96
+1538.3197 0.946
+1542.9926 0.972
+1547.6655 0.953
+1552.3384 0.952
+1557.0113 0.976
+1561.6842 0.966
+1566.3571 0.953
+1571.03 0.965
+1575.7029 0.968
+1580.3758 0.955
+1585.0487 0.952
+1589.7216 0.952
+1594.3945 0.952
+1599.0674 0.953
+1603.7403 0.952
+1608.4132 0.95
+1613.0861 0.955
+1617.759 0.955
+1622.432 0.957
+1627.1049 0.953
+1631.7778 0.947
+1636.4507 0.956
+1641.1236 0.946
+1645.7965 0.959
+1650.4694 0.943
+1655.1423 0.955
+1659.8152 0.944
+1664.4881 0.943
+1669.161 0.952
+1673.8339 0.95
+1678.5068 0.942
+1683.1797 0.956
+1687.8526 0.936
+1692.5255 0.939
+1697.1984 0.953
+1701.8713 0.947
+1706.5442 0.94
+1711.2171 0.942
+1715.89 0.957
+1720.5629 0.946
+1725.2358 0.944
+1729.9087 0.956
+1734.5816 0.947
+1739.2545 0.949
+1743.9275 0.949
+1748.6004 0.956
+1753.2733 0.946
+1757.9462 0.95
+1762.6191 0.946
+1767.292 0.955
+1771.9649 0.956
+1776.6378 0.946
+1781.3107 0.949
+1785.9836 0.944
+1790.6565 0.957
+1795.3294 0.949
+1800.0023 0.947
+1804.6752 0.947
+1809.3481 0.947
+1814.021 0.946
+1818.6939 0.946
+1823.3668 0.95
+1828.0397 0.95
+1832.7126 0.949
+1837.3855 0.947
+1842.0584 0.959
+1846.7313 0.949
+1851.4042 0.947
+1856.0771 0.949
+1860.75 0.955
+1865.4229 0.956
+1870.0959 0.952
+1874.7688 0.949
+1879.4417 0.949
+1884.1146 0.95
+1888.7875 0.95
+1893.4604 0.95
+1898.1333 0.95
+1902.8062 0.949
+1907.4791 0.95
+1912.152 0.952
+1916.8249 0.953
+1921.4978 0.95
+1926.1707 0.949
+1930.8436 0.949
+1935.5165 0.95
+1940.1894 0.95
+1944.8623 0.95
+1949.5352 0.949
+1954.2081 0.95
+1958.881 0.955
+1963.5539 0.95
+1968.2268 0.949
+1972.8997 0.95
+1977.5726 0.95
+1982.2455 0.95
+1986.9184 0.95
+1991.5914 0.95
+1996.2643 0.95
+2000.9372 0.95
+2005.6101 0.95
+2010.283 0.95
+2014.9559 0.952
+2019.6288 0.953
+2024.3017 0.953
+2028.9746 0.953
+2033.6475 0.952
+2038.3204 0.95
+2042.9933 0.9509
+2047.6662 0.952
+2052.3391 0.952
+2057.012 0.952
+2061.6849 0.952
+2066.3578 0.952
+2071.0307 0.952
+2075.7036 0.953
+2080.3765 0.953
+2085.0494 0.953
+2089.7223 0.953
+2094.3952 0.953
+2099.0681 0.953
+2103.741 0.955
+2108.4139 0.955
+2113.0869 0.955
+2117.7598 0.955
+2122.4327 0.955
+2127.1056 0.955
+2131.7785 0.955
+2136.4514 0.955
+2141.1243 0.955
+2145.7972 0.955
+2150.4701 0.955
+2155.143 0.955
+2159.8159 0.955
+2164.4888 0.955
+2169.1617 0.955
+2173.8346 0.955
+2178.5075 0.955
+2183.1804 0.955
+2187.8533 0.955
+2192.5262 0.955
+2197.1991 0.955
+2201.872 0.955
+2206.5449 0.955
+2211.2178 0.955
+2215.8907 0.955
+2220.5636 0.955
+2225.2365 0.955
+2229.9094 0.955
+2234.5823 0.955
+2239.2553 0.955
+2243.9282 0.955
+2248.6011 0.955
+2253.274 0.955
+2257.9469 0.955
+2262.6198 0.955
+2267.2927 0.955
+2271.9656 0.955
+2276.6385 0.956
+2281.3114 0.9553
+2285.9843 0.956
+2290.6572 0.956
+2295.3301 0.956
+2300.003 0.9567
+2304.6759 0.956
+2309.3488 0.956
+2314.0217 0.9577
+2318.6946 0.9656
+2323.3675 0.9711
+2328.0404 0.9743
+2332.7133 0.976
+2337.3862 0.978
+2342.0591 0.979
+2346.732 0.979
+2351.4049 0.9811
+2356.0778 0.914
+2360.7508 0.9841
+2365.4237 0.9844
+2370.0966 0.9775
+2374.7695 0.9537
+2379.4424 0.845
+2384.1153 0.9577
+2388.7882 0.962
+2393.4611 0.965
+2398.134 0.743
+2402.8069 0.9593
+2407.4798 0.956
+2412.1527 0.8645
+2416.8256 0.6602
+2421.4985 0.929
+2426.1714 0.956
+2430.8443 0.9101
+2435.5172 0.5811
+2440.1901 0.9495
+2444.863 0.952
+2449.5359 0.948
+2454.2088 0.5685
+2458.8817 0.8504
+2463.5546 0.946
+2468.2275 0.9435
+2472.9004 0.452
+2477.5733 0.9449
+2482.2463 0.943
+2486.9192 0.9386
+2491.5921 0.436
+2496.265 0.9394
+2500.9379 0.9399
+2505.6108 0.9426
+2510.2837 0.433
+2514.9566 0.9366
+2519.6295 0.942
+2524.3024 0.695
+2528.9753 0.555
+2533.6482 0.9424
+2538.3211 0.9421
+2542.994 0.7374
+2547.6669 0.6586
+2552.3398 0.9351
+2557.0127 0.9417
+2561.6856 0.944
+2566.3585 0.943
+2571.0314 0.944
+2575.7043 0.7201
+2580.3772 0.615
+2585.0501 0.9392
+2589.723 0.935
+2594.3959 0.372
+2599.0688 0.9363
+2603.7418 0.937
+2608.4147 0.407
+2613.0876 0.7966
+2617.7605 0.8964
+2622.4334 0.4154
+2627.1063 0.7511
+2631.7792 0.9248
+2636.4521 0.4684
+2641.125 0.8852
+2645.7979 0.9001
+2650.4708 0.52
+2655.1437 0.7529
+2659.8166 0.8186
+2664.4895 0.571
+2669.1624 0.9332
+2673.8353 0.8502
+2678.5082 0.715
+2683.1811 0.9057
+2687.854 0.7932
+2692.5269 0.7677
+2697.1998 0.9271
+2701.8727 0.8566
+2706.5456 0.8819
+2711.2185 0.9141
+2715.8914 0.9268
+2720.5643 0.9316
+2725.2372 0.934
+2729.9102 0.936
+2734.5831 0.936
+2739.256 0.937
+2743.9289 0.937
+2748.6018 0.937
+2753.2747 0.937
+2757.9476 0.937
+2762.6205 0.937
+2767.2934 0.937
+2771.9663 0.937
+2776.6392 0.937
+2781.3121 0.937
+2785.985 0.937
+2790.6579 0.937
+2795.3308 0.937
+2800.0037 0.937
+2804.6766 0.937
+2809.3495 0.937
+2814.0224 0.937
+2818.6953 0.936
+2823.3682 0.936
+2828.0411 0.936
+2832.714 0.936
+2837.3869 0.936
+2842.0598 0.937
+2846.7327 0.9381
+2851.4057 0.939
+2856.0786 0.939
+2860.7515 0.939
+2865.4244 0.937
+2870.0973 0.937
+2874.7702 0.937
+2879.4431 0.937
+2884.116 0.937
+2888.7889 0.937
+2893.4618 0.937
+2898.1347 0.939
+2902.8076 0.939
+2907.4805 0.94
+2912.1534 0.941
+2916.8263 0.942
+2921.4992 0.942
+2926.1721 0.942
+2930.845 0.94
+2935.5179 0.939
+2940.1908 0.9381
+2944.8637 0.937
+2949.5366 0.936
+2954.2095 0.936
+2958.8824 0.934
+2963.5553 0.934
+2968.2282 0.934
+2972.9012 0.9331
+2977.5741 0.933
+2982.247 0.931
+2986.9199 0.9306
+2991.5928 0.93
+2996.2657 0.93
+3000.9386 0.93
+3005.6115 0.93
+3010.2844 0.93
+3014.9573 0.93
+3019.6302 0.928
+3024.3031 0.928
+3028.976 0.928
+3033.6489 0.928
+3038.3218 0.928
+3042.9947 0.928
+3047.6676 0.928
+3052.3405 0.927
+3057.0134 0.927
+3061.6863 0.927
+3066.3592 0.927
+3071.0321 0.927
+3075.705 0.927
+3080.3779 0.927
+3085.0508 0.927
+3089.7237 0.928
+3094.3967 0.928
+3099.0696 0.928
+3103.7425 0.928
+3108.4154 0.928
+3113.0883 0.928
+3117.7612 0.927
+3122.4341 0.927
+3127.107 0.927
+3131.7799 0.927
+3136.4528 0.927
+3141.1257 0.927
+3145.7986 0.927
+3150.4715 0.927
+3155.1444 0.927
+3159.8173 0.927
+3164.4902 0.927
+3169.1631 0.927
+3173.836 0.927
+3178.5089 0.927
+3183.1818 0.927
+3187.8547 0.927
+3192.5276 0.927
+3197.2005 0.9277
+3201.8734 0.928
+3206.5463 0.928
+3211.2192 0.9283
+3215.8921 0.93
+3220.5651 0.93
+3225.238 0.93
+3229.9109 0.931
+3234.5838 0.931
+3239.2567 0.931
+3243.9296 0.931
+3248.6025 0.931
+3253.2754 0.931
+3257.9483 0.931
+3262.6212 0.931
+3267.2941 0.933
+3271.967 0.933
+3276.6399 0.933
+3281.3128 0.9336
+3285.9857 0.934
+3290.6586 0.934
+3295.3315 0.9341
+3300.0044 0.936
+3304.6773 0.936
+3309.3502 0.936
+3314.0231 0.937
+3318.696 0.939
+3323.3689 0.939
+3328.0418 0.9395
+3332.7147 0.942
+3337.3876 0.943
+3342.0606 0.943
+3346.7335 0.944
+3351.4064 0.944
+3356.0793 0.946
+3360.7522 0.946
+3365.4251 0.947
+3370.098 0.947
+3374.7709 0.949
+3379.4438 0.949
+3384.1167 0.95
+3388.7896 0.9519
+3393.4625 0.952
+3398.1354 0.9529
+3402.8083 0.953
+3407.4812 0.9549
+3412.1541 0.955
+3416.827 0.9559
+3421.4999 0.956
+3426.1728 0.956
+3430.8457 0.957
+3435.5186 0.957
+3440.1915 0.959
+3444.8644 0.959
+3449.5373 0.9594
+3454.2102 0.96
+3458.8831 0.96
+3463.5561 0.96
+3468.229 0.96
+3472.9019 0.9617
+3477.5748 0.962
+3482.2477 0.962
+3486.9206 0.962
+3491.5935 0.962
+3496.2664 0.9637
+3500.9393 0.965
+3505.6122 0.965
+3510.2851 0.9652
+3514.958 0.965
+3519.6309 0.965
+3524.3038 0.965
+3528.9767 0.9658
+3533.6496 0.966
+3538.3225 0.9652
+3542.9954 0.9636
+3547.6683 0.9675
+3552.3412 0.971
+3557.0141 0.9695
+3561.687 0.968
+3566.3599 0.968
+3571.0328 0.969
+3575.7057 0.969
+3580.3786 0.9675
+3585.0516 0.9653
+3589.7245 0.968
+3594.3974 0.968
+3599.0703 0.9676
+3603.7432 0.966
+3608.4161 0.9682
+3613.089 0.969
+3617.7619 0.965
+3622.4348 0.965
+3627.1077 0.9664
+3631.7806 0.971
+3636.4535 0.965
+3641.1264 0.9623
+3645.7993 0.9635
+3650.4722 0.9747
+3655.1451 0.9745
+3659.818 0.969
+3664.4909 0.966
+3669.1638 0.9637
+3673.8367 0.9599
+3678.5096 0.957
+3683.1825 0.9602
+3687.8554 0.9642
+3692.5283 0.968
+3697.2012 0.968
+3701.8741 0.969
+3706.547 0.971
+3711.22 0.9711
+3715.8929 0.972
+3720.5658 0.973
+3725.2387 0.975
+3729.9116 0.9729
+3734.5845 0.971
+&
+@target G0.S2
+@type xy
+454.206 0.949
+458.8789 0.949
+463.55181 0.946
+468.22471 0.944
+472.89761 0.943
+477.57052 0.94
+482.24342 0.939
+486.91633 0.939
+491.58923 0.937
+496.26213 0.936
+500.93504 0.934
+505.60794 0.931
+510.28085 0.936
+514.95375 0.934
+519.62665 0.934
+524.29956 0.934
+528.97246 0.934
+533.64536 0.936
+538.31827 0.937
+542.99117 0.937
+547.66408 0.934
+552.33698 0.942
+557.00988 0.943
+561.68279 0.943
+566.35569 0.944
+571.02859 0.943
+575.7015 0.946
+580.3744 0.947
+585.04731 0.946
+589.72021 0.949
+594.39311 0.949
+599.06602 0.949
+603.73892 0.953
+608.41183 0.952
+613.08473 0.953
+617.75763 0.952
+622.43054 0.952
+627.10344 0.956
+631.77634 0.957
+636.44925 0.957
+641.12215 0.957
+645.79506 0.957
+650.46796 0.957
+655.14086 0.957
+659.81377 0.957
+664.48667 0.957
+669.15958 0.959
+673.83248 0.96
+678.50538 0.96
+683.17829 0.959
+687.85119 0.959
+692.52409 0.959
+697.197 0.959
+701.8699 0.963
+706.54281 0.959
+711.21571 0.96
+715.88861 0.959
+720.56152 0.959
+725.23442 0.957
+729.90733 0.957
+734.58023 0.959
+739.25313 0.959
+743.92604 0.963
+748.59894 0.96
+753.27184 0.965
+757.94475 0.965
+762.61765 0.966
+767.29055 0.969
+771.96346 0.968
+776.63636 0.965
+781.30927 0.965
+785.98217 0.969
+790.65507 0.969
+795.32798 0.966
+800.00088 0.962
+804.67379 0.962
+809.34669 0.962
+814.01959 0.959
+818.6925 0.959
+823.3654 0.96
+828.0383 0.96
+832.71121 0.959
+837.38411 0.959
+842.05702 0.957
+846.72992 0.96
+851.40282 0.957
+856.07573 0.962
+860.74863 0.96
+865.42153 0.959
+870.09444 0.96
+874.76734 0.959
+879.44025 0.96
+884.11315 0.959
+888.78605 0.959
+893.45896 0.959
+898.13186 0.959
+902.80476 0.962
+907.47767 0.957
+912.15057 0.957
+916.82348 0.959
+921.49638 0.96
+926.16928 0.96
+930.84219 0.963
+935.51509 0.96
+940.188 0.959
+944.8609 0.959
+949.5338 0.959
+954.20671 0.96
+958.87961 0.962
+963.55251 0.966
+968.22542 0.963
+972.89832 0.96
+977.57123 0.963
+982.24413 0.96
+986.91703 0.965
+991.58994 0.966
+996.26284 0.966
+1000.9357 0.965
+1005.6086 0.965
+1010.2816 0.96
+1014.9545 0.963
+1019.6274 0.966
+1024.3003 0.963
+1028.9732 0.962
+1033.6461 0.963
+1038.319 0.968
+1042.9919 0.969
+1047.6648 0.969
+1052.3377 0.968
+1057.0106 0.969
+1061.6835 0.972
+1066.3564 0.966
+1071.0293 0.962
+1075.7022 0.959
+1080.3751 0.959
+1085.048 0.959
+1089.7209 0.959
+1094.3938 0.959
+1099.0667 0.962
+1103.7396 0.963
+1108.4125 0.968
+1113.0854 0.969
+1117.7583 0.973
+1122.4312 0.978
+1127.1041 0.978
+1131.7771 0.975
+1136.45 0.972
+1141.1229 0.971
+1145.7958 0.971
+1150.4687 0.972
+1155.1416 0.976
+1159.8145 0.978
+1164.4874 0.976
+1169.1603 0.975
+1173.8332 0.969
+1178.5061 0.963
+1183.179 0.973
+1187.8519 0.976
+1192.5248 0.975
+1197.1977 0.975
+1201.8706 0.973
+1206.5435 0.975
+1211.2164 0.975
+1215.8893 0.975
+1220.5622 0.976
+1225.2351 0.976
+1229.908 0.973
+1234.5809 0.971
+1239.2538 0.965
+1243.9267 0.962
+1248.5996 0.962
+1253.2726 0.957
+1257.9455 0.955
+1262.6184 0.955
+1267.2913 0.955
+1271.9642 0.956
+1276.6371 0.955
+1281.31 0.953
+1285.9829 0.952
+1290.6558 0.952
+1295.3287 0.952
+1300.0016 0.95
+1304.6745 0.952
+1309.3474 0.953
+1314.0203 0.955
+1318.6932 0.955
+1323.3661 0.953
+1328.039 0.953
+1332.7119 0.952
+1337.3848 0.947
+1342.0577 0.956
+1346.7306 0.957
+1351.4035 0.96
+1356.0764 0.975
+1360.7493 0.978
+1365.4222 0.971
+1370.0951 0.959
+1374.768 0.956
+1379.441 0.95
+1384.1139 0.953
+1388.7868 0.953
+1393.4597 0.952
+1398.1326 0.953
+1402.8055 0.957
+1407.4784 0.95
+1412.1513 0.953
+1416.8242 0.956
+1421.4971 0.96
+1426.17 0.955
+1430.8429 0.949
+1435.5158 0.956
+1440.1887 0.956
+1444.8616 0.95
+1449.5345 0.95
+1454.2074 0.952
+1458.8803 0.953
+1463.5532 0.949
+1468.2261 0.95
+1472.899 0.963
+1477.5719 0.955
+1482.2448 0.947
+1486.9177 0.956
+1491.5906 0.959
+1496.2635 0.96
+1500.9365 0.952
+1505.6094 0.979
+1510.2823 0.962
+1514.9552 0.955
+1519.6281 0.965
+1524.301 0.956
+1528.9739 0.952
+1533.6468 0.965
+1538.3197 0.953
+1542.9926 0.965
+1547.6655 0.953
+1552.3384 0.952
+1557.0113 0.985
+1561.6842 0.955
+1566.3571 0.955
+1571.03 0.95
+1575.7029 0.963
+1580.3758 0.953
+1585.0487 0.952
+1589.7216 0.952
+1594.3945 0.952
+1599.0674 0.953
+1603.7403 0.95
+1608.4132 0.953
+1613.0861 0.959
+1617.759 0.952
+1622.432 0.957
+1627.1049 0.949
+1631.7778 0.952
+1636.4507 0.952
+1641.1236 0.946
+1645.7965 0.953
+1650.4694 0.968
+1655.1423 0.946
+1659.8152 0.946
+1664.4881 0.944
+1669.161 0.955
+1673.8339 0.95
+1678.5068 0.942
+1683.1797 0.955
+1687.8526 0.934
+1692.5255 0.944
+1697.1984 0.955
+1701.8713 0.946
+1706.5442 0.94
+1711.2171 0.946
+1715.89 0.957
+1720.5629 0.944
+1725.2358 0.944
+1729.9087 0.959
+1734.5816 0.949
+1739.2545 0.949
+1743.9275 0.952
+1748.6004 0.955
+1753.2733 0.946
+1757.9462 0.95
+1762.6191 0.946
+1767.292 0.956
+1771.9649 0.947
+1776.6378 0.947
+1781.3107 0.949
+1785.9836 0.944
+1790.6565 0.95
+1795.3294 0.949
+1800.0023 0.947
+1804.6752 0.947
+1809.3481 0.947
+1814.021 0.946
+1818.6939 0.946
+1823.3668 0.95
+1828.0397 0.95
+1832.7126 0.949
+1837.3855 0.947
+1842.0584 0.957
+1846.7313 0.949
+1851.4042 0.947
+1856.0771 0.949
+1860.75 0.955
+1865.4229 0.955
+1870.0959 0.95
+1874.7688 0.949
+1879.4417 0.949
+1884.1146 0.95
+1888.7875 0.95
+1893.4604 0.95
+1898.1333 0.95
+1902.8062 0.949
+1907.4791 0.95
+1912.152 0.952
+1916.8249 0.953
+1921.4978 0.95
+1926.1707 0.949
+1930.8436 0.949
+1935.5165 0.952
+1940.1894 0.95
+1944.8623 0.949
+1949.5352 0.949
+1954.2081 0.95
+1958.881 0.955
+1963.5539 0.949
+1968.2268 0.949
+1972.8997 0.95
+1977.5726 0.95
+1982.2455 0.95
+1986.9184 0.95
+1991.5914 0.95
+1996.2643 0.95
+2000.9372 0.95
+2005.6101 0.95
+2010.283 0.951
+2014.9559 0.952
+2019.6288 0.953
+2024.3017 0.953
+2028.9746 0.9525
+2033.6475 0.952
+2038.3204 0.95
+2042.9933 0.9519
+2047.6662 0.952
+2052.3391 0.952
+2057.012 0.952
+2061.6849 0.952
+2066.3578 0.952
+2071.0307 0.952
+2075.7036 0.953
+2080.3765 0.953
+2085.0494 0.953
+2089.7223 0.953
+2094.3952 0.953
+2099.0681 0.953
+2103.741 0.955
+2108.4139 0.955
+2113.0869 0.955
+2117.7598 0.955
+2122.4327 0.955
+2127.1056 0.955
+2131.7785 0.955
+2136.4514 0.955
+2141.1243 0.955
+2145.7972 0.955
+2150.4701 0.955
+2155.143 0.955
+2159.8159 0.955
+2164.4888 0.955
+2169.1617 0.955
+2173.8346 0.955
+2178.5075 0.955
+2183.1804 0.955
+2187.8533 0.955
+2192.5262 0.955
+2197.1991 0.955
+2201.872 0.955
+2206.5449 0.955
+2211.2178 0.955
+2215.8907 0.955
+2220.5636 0.955
+2225.2365 0.955
+2229.9094 0.955
+2234.5823 0.955
+2239.2553 0.955
+2243.9282 0.955
+2248.6011 0.955
+2253.274 0.955
+2257.9469 0.955
+2262.6198 0.955
+2267.2927 0.955
+2271.9656 0.955
+2276.6385 0.956
+2281.3114 0.955
+2285.9843 0.956
+2290.6572 0.9562
+2295.3301 0.956
+2300.003 0.957
+2304.6759 0.956
+2309.3488 0.956
+2314.0217 0.9602
+2318.6946 0.9664
+2323.3675 0.9716
+2328.0404 0.9751
+2332.7133 0.976
+2337.3862 0.978
+2342.0591 0.979
+2346.732 0.9792
+2351.4049 0.9816
+2356.0778 0.9203
+2360.7508 0.9846
+2365.4237 0.9838
+2370.0966 0.9745
+2374.7695 0.9379
+2379.4424 0.9043
+2384.1153 0.9591
+2388.7882 0.962
+2393.4611 0.9506
+2398.134 0.8517
+2402.8069 0.957
+2407.4798 0.9555
+2412.1527 0.7827
+2416.8256 0.7215
+2421.4985 0.957
+2426.1714 0.956
+2430.8443 0.8632
+2435.5172 0.7675
+2440.1901 0.95
+2444.863 0.952
+2449.5359 0.946
+2454.2088 0.6039
+2458.8817 0.9206
+2463.5546 0.945
+2468.2275 0.943
+2472.9004 0.5678
+2477.5733 0.9459
+2482.2463 0.9416
+2486.9192 0.9371
+2491.5921 0.5493
+2496.265 0.9399
+2500.9379 0.9413
+2505.6108 0.9421
+2510.2837 0.5411
+2514.9566 0.9361
+2519.6295 0.9408
+2524.3024 0.4802
+2528.9753 0.6158
+2533.6482 0.9429
+2538.3211 0.9412
+2542.994 0.4907
+2547.6669 0.7818
+2552.3398 0.9366
+2557.0127 0.9424
+2561.6856 0.944
+2566.3585 0.943
+2571.0314 0.944
+2575.7043 0.6381
+2580.3772 0.6962
+2585.0501 0.939
+2589.723 0.9335
+2594.3959 0.4655
+2599.0688 0.9368
+2603.7418 0.9061
+2608.4147 0.407
+2613.0876 0.8676
+2617.7605 0.8336
+2622.4334 0.4549
+2627.1063 0.8782
+2631.7792 0.7833
+2636.4521 0.5217
+2641.125 0.9291
+2645.7979 0.8338
+2650.4708 0.5425
+2655.1437 0.8715
+2659.8166 0.7556
+2664.4895 0.571
+2669.1624 0.9333
+2673.8353 0.8267
+2678.5082 0.7656
+2683.1811 0.8798
+2687.854 0.7644
+2692.5269 0.8749
+2697.1998 0.924
+2701.8727 0.8372
+2706.5456 0.9054
+2711.2185 0.9165
+2715.8914 0.9284
+2720.5643 0.9331
+2725.2372 0.9344
+2729.9102 0.936
+2734.5831 0.936
+2739.256 0.937
+2743.9289 0.937
+2748.6018 0.937
+2753.2747 0.937
+2757.9476 0.937
+2762.6205 0.937
+2767.2934 0.937
+2771.9663 0.937
+2776.6392 0.937
+2781.3121 0.937
+2785.985 0.937
+2790.6579 0.937
+2795.3308 0.937
+2800.0037 0.937
+2804.6766 0.937
+2809.3495 0.937
+2814.0224 0.937
+2818.6953 0.936
+2823.3682 0.936
+2828.0411 0.936
+2832.714 0.936
+2837.3869 0.936
+2842.0598 0.937
+2846.7327 0.939
+2851.4057 0.939
+2856.0786 0.939
+2860.7515 0.939
+2865.4244 0.937
+2870.0973 0.937
+2874.7702 0.937
+2879.4431 0.937
+2884.116 0.937
+2888.7889 0.937
+2893.4618 0.937
+2898.1347 0.939
+2902.8076 0.939
+2907.4805 0.94
+2912.1534 0.942
+2916.8263 0.942
+2921.4992 0.942
+2926.1721 0.9411
+2930.845 0.94
+2935.5179 0.939
+2940.1908 0.9371
+2944.8637 0.937
+2949.5366 0.936
+2954.2095 0.9351
+2958.8824 0.934
+2963.5553 0.934
+2968.2282 0.934
+2972.9012 0.933
+2977.5741 0.933
+2982.247 0.931
+2986.9199 0.9301
+2991.5928 0.93
+2996.2657 0.93
+3000.9386 0.93
+3005.6115 0.93
+3010.2844 0.93
+3014.9573 0.93
+3019.6302 0.928
+3024.3031 0.928
+3028.976 0.928
+3033.6489 0.928
+3038.3218 0.928
+3042.9947 0.928
+3047.6676 0.9277
+3052.3405 0.927
+3057.0134 0.927
+3061.6863 0.927
+3066.3592 0.927
+3071.0321 0.927
+3075.705 0.927
+3080.3779 0.927
+3085.0508 0.927
+3089.7237 0.928
+3094.3967 0.928
+3099.0696 0.928
+3103.7425 0.928
+3108.4154 0.928
+3113.0883 0.928
+3117.7612 0.927
+3122.4341 0.927
+3127.107 0.927
+3131.7799 0.927
+3136.4528 0.927
+3141.1257 0.9272
+3145.7986 0.927
+3150.4715 0.927
+3155.1444 0.927
+3159.8173 0.927
+3164.4902 0.927
+3169.1631 0.927
+3173.836 0.927
+3178.5089 0.927
+3183.1818 0.927
+3187.8547 0.927
+3192.5276 0.927
+3197.2005 0.928
+3201.8734 0.928
+3206.5463 0.928
+3211.2192 0.9293
+3215.8921 0.93
+3220.5651 0.93
+3225.238 0.9301
+3229.9109 0.931
+3234.5838 0.931
+3239.2567 0.931
+3243.9296 0.931
+3248.6025 0.931
+3253.2754 0.931
+3257.9483 0.931
+3262.6212 0.931
+3267.2941 0.933
+3271.967 0.933
+3276.6399 0.933
+3281.3128 0.934
+3285.9857 0.934
+3290.6586 0.934
+3295.3315 0.9351
+3300.0044 0.936
+3304.6773 0.936
+3309.3502 0.936
+3314.0231 0.937
+3318.696 0.939
+3323.3689 0.939
+3328.0418 0.94
+3332.7147 0.942
+3337.3876 0.943
+3342.0606 0.943
+3346.7335 0.944
+3351.4064 0.944
+3356.0793 0.946
+3360.7522 0.946
+3365.4251 0.947
+3370.098 0.948
+3374.7709 0.949
+3379.4438 0.9495
+3384.1167 0.95
+3388.7896 0.952
+3393.4625 0.952
+3398.1354 0.953
+3402.8083 0.953
+3407.4812 0.955
+3412.1541 0.955
+3416.827 0.956
+3421.4999 0.956
+3426.1728 0.9564
+3430.8457 0.957
+3435.5186 0.957
+3440.1915 0.959
+3444.8644 0.959
+3449.5373 0.9599
+3454.2102 0.96
+3458.8831 0.96
+3463.5561 0.96
+3468.229 0.96
+3472.9019 0.962
+3477.5748 0.962
+3482.2477 0.962
+3486.9206 0.962
+3491.5935 0.9623
+3496.2664 0.9647
+3500.9393 0.965
+3505.6122 0.965
+3510.2851 0.965
+3514.958 0.965
+3519.6309 0.965
+3524.3038 0.965
+3528.9767 0.966
+3533.6496 0.966
+3538.3225 0.9644
+3542.9954 0.9646
+3547.6683 0.9683
+3552.3412 0.971
+3557.0141 0.969
+3561.687 0.968
+3566.3599 0.968
+3571.0328 0.969
+3575.7057 0.9688
+3580.3786 0.9665
+3585.0516 0.965
+3589.7245 0.968
+3594.3974 0.9682
+3599.0703 0.9666
+3603.7432 0.966
+3608.4161 0.9687
+3613.089 0.9684
+3617.7619 0.965
+3622.4348 0.9652
+3627.1077 0.9674
+3631.7806 0.9704
+3636.4535 0.965
+3641.1264 0.962
+3645.7993 0.965
+3650.4722 0.976
+3655.1451 0.973
+3659.818 0.968
+3664.4909 0.966
+3669.1638 0.9629
+3673.8367 0.9594
+3678.5096 0.957
+3683.1825 0.9613
+3687.8554 0.9651
+3692.5283 0.968
+3697.2012 0.9681
+3701.8741 0.969
+3706.547 0.971
+3711.22 0.9716
+3715.8929 0.9721
+3720.5658 0.973
+3725.2387 0.975
+3729.9116 0.9724
+3734.5845 0.9709
+&
+@target G0.S3
+@type xy
+454.206 0.949
+458.8789 0.949
+463.55181 0.944
+468.22471 0.944
+472.89761 0.943
+477.57052 0.939
+482.24342 0.939
+486.91633 0.939
+491.58923 0.937
+496.26213 0.937
+500.93504 0.933
+505.60794 0.933
+510.28085 0.936
+514.95375 0.934
+519.62665 0.934
+524.29956 0.934
+528.97246 0.933
+533.64536 0.937
+538.31827 0.937
+542.99117 0.937
+547.66408 0.933
+552.33698 0.942
+557.00988 0.943
+561.68279 0.943
+566.35569 0.944
+571.02859 0.943
+575.7015 0.947
+580.3744 0.947
+585.04731 0.947
+589.72021 0.949
+594.39311 0.949
+599.06602 0.95
+603.73892 0.952
+608.41183 0.952
+613.08473 0.952
+617.75763 0.952
+622.43054 0.953
+627.10344 0.956
+631.77634 0.957
+636.44925 0.957
+641.12215 0.957
+645.79506 0.957
+650.46796 0.957
+655.14086 0.957
+659.81377 0.957
+664.48667 0.959
+669.15958 0.959
+673.83248 0.96
+678.50538 0.96
+683.17829 0.959
+687.85119 0.959
+692.52409 0.959
+697.197 0.959
+701.8699 0.965
+706.54281 0.957
+711.21571 0.962
+715.88861 0.959
+720.56152 0.959
+725.23442 0.957
+729.90733 0.957
+734.58023 0.959
+739.25313 0.96
+743.92604 0.963
+748.59894 0.96
+753.27184 0.965
+757.94475 0.96
+762.61765 0.966
+767.29055 0.972
+771.96346 0.966
+776.63636 0.965
+781.30927 0.966
+785.98217 0.969
+790.65507 0.968
+795.32798 0.965
+800.00088 0.962
+804.67379 0.962
+809.34669 0.962
+814.01959 0.959
+818.6925 0.96
+823.3654 0.96
+828.0383 0.96
+832.71121 0.959
+837.38411 0.959
+842.05702 0.956
+846.72992 0.959
+851.40282 0.962
+856.07573 0.96
+860.74863 0.962
+865.42153 0.959
+870.09444 0.962
+874.76734 0.959
+879.44025 0.96
+884.11315 0.959
+888.78605 0.959
+893.45896 0.957
+898.13186 0.96
+902.80476 0.962
+907.47767 0.957
+912.15057 0.957
+916.82348 0.959
+921.49638 0.96
+926.16928 0.962
+930.84219 0.963
+935.51509 0.96
+940.188 0.959
+944.8609 0.959
+949.5338 0.96
+954.20671 0.96
+958.87961 0.962
+963.55251 0.966
+968.22542 0.963
+972.89832 0.962
+977.57123 0.963
+982.24413 0.965
+986.91703 0.965
+991.58994 0.968
+996.26284 0.966
+1000.9357 0.965
+1005.6086 0.963
+1010.2816 0.96
+1014.9545 0.963
+1019.6274 0.968
+1024.3003 0.962
+1028.9732 0.963
+1033.6461 0.963
+1038.319 0.969
+1042.9919 0.968
+1047.6648 0.968
+1052.3377 0.968
+1057.0106 0.969
+1061.6835 0.971
+1066.3564 0.965
+1071.0293 0.96
+1075.7022 0.957
+1080.3751 0.959
+1085.048 0.959
+1089.7209 0.959
+1094.3938 0.959
+1099.0667 0.962
+1103.7396 0.965
+1108.4125 0.968
+1113.0854 0.971
+1117.7583 0.973
+1122.4312 0.978
+1127.1041 0.978
+1131.7771 0.975
+1136.45 0.972
+1141.1229 0.971
+1145.7958 0.972
+1150.4687 0.972
+1155.1416 0.976
+1159.8145 0.978
+1164.4874 0.976
+1169.1603 0.973
+1173.8332 0.968
+1178.5061 0.965
+1183.179 0.973
+1187.8519 0.976
+1192.5248 0.975
+1197.1977 0.975
+1201.8706 0.973
+1206.5435 0.975
+1211.2164 0.975
+1215.8893 0.976
+1220.5622 0.976
+1225.2351 0.975
+1229.908 0.973
+1234.5809 0.969
+1239.2538 0.965
+1243.9267 0.962
+1248.5996 0.96
+1253.2726 0.956
+1257.9455 0.955
+1262.6184 0.955
+1267.2913 0.955
+1271.9642 0.956
+1276.6371 0.955
+1281.31 0.953
+1285.9829 0.952
+1290.6558 0.952
+1295.3287 0.95
+1300.0016 0.95
+1304.6745 0.95
+1309.3474 0.953
+1314.0203 0.955
+1318.6932 0.955
+1323.3661 0.953
+1328.039 0.952
+1332.7119 0.955
+1337.3848 0.942
+1342.0577 0.956
+1346.7306 0.957
+1351.4035 0.968
+1356.0764 0.976
+1360.7493 0.978
+1365.4222 0.966
+1370.0951 0.96
+1374.768 0.956
+1379.441 0.952
+1384.1139 0.953
+1388.7868 0.95
+1393.4597 0.953
+1398.1326 0.953
+1402.8055 0.956
+1407.4784 0.949
+1412.1513 0.953
+1416.8242 0.957
+1421.4971 0.96
+1426.17 0.952
+1430.8429 0.947
+1435.5158 0.956
+1440.1887 0.957
+1444.8616 0.953
+1449.5345 0.949
+1454.2074 0.957
+1458.8803 0.95
+1463.5532 0.95
+1468.2261 0.95
+1472.899 0.96
+1477.5719 0.949
+1482.2448 0.949
+1486.9177 0.956
+1491.5906 0.952
+1496.2635 0.96
+1500.9365 0.952
+1505.6094 0.982
+1510.2823 0.96
+1514.9552 0.957
+1519.6281 0.973
+1524.301 0.959
+1528.9739 0.949
+1533.6468 0.963
+1538.3197 0.978
+1542.9926 0.96
+1547.6655 0.956
+1552.3384 0.949
+1557.0113 0.994
+1561.6842 0.953
+1566.3571 0.959
+1571.03 0.95
+1575.7029 0.959
+1580.3758 0.952
+1585.0487 0.952
+1589.7216 0.952
+1594.3945 0.952
+1599.0674 0.953
+1603.7403 0.95
+1608.4132 0.949
+1613.0861 0.959
+1617.759 0.95
+1622.432 0.955
+1627.1049 0.947
+1631.7778 0.96
+1636.4507 0.947
+1641.1236 0.953
+1645.7965 0.953
+1650.4694 0.972
+1655.1423 0.944
+1659.8152 0.947
+1664.4881 0.946
+1669.161 0.955
+1673.8339 0.947
+1678.5068 0.943
+1683.1797 0.939
+1687.8526 0.934
+1692.5255 0.947
+1697.1984 0.953
+1701.8713 0.943
+1706.5442 0.94
+1711.2171 0.949
+1715.89 0.956
+1720.5629 0.946
+1725.2358 0.946
+1729.9087 0.962
+1734.5816 0.949
+1739.2545 0.947
+1743.9275 0.955
+1748.6004 0.953
+1753.2733 0.947
+1757.9462 0.955
+1762.6191 0.947
+1767.292 0.96
+1771.9649 0.946
+1776.6378 0.947
+1781.3107 0.946
+1785.9836 0.947
+1790.6565 0.947
+1795.3294 0.949
+1800.0023 0.947
+1804.6752 0.947
+1809.3481 0.949
+1814.021 0.944
+1818.6939 0.947
+1823.3668 0.95
+1828.0397 0.949
+1832.7126 0.947
+1837.3855 0.949
+1842.0584 0.956
+1846.7313 0.949
+1851.4042 0.947
+1856.0771 0.95
+1860.75 0.956
+1865.4229 0.955
+1870.0959 0.949
+1874.7688 0.949
+1879.4417 0.95
+1884.1146 0.95
+1888.7875 0.95
+1893.4604 0.949
+1898.1333 0.949
+1902.8062 0.949
+1907.4791 0.949
+1912.152 0.952
+1916.8249 0.953
+1921.4978 0.95
+1926.1707 0.949
+1930.8436 0.949
+1935.5165 0.95
+1940.1894 0.95
+1944.8623 0.949
+1949.5352 0.949
+1954.2081 0.95
+1958.881 0.956
+1963.5539 0.949
+1968.2268 0.949
+1972.8997 0.95
+1977.5726 0.95
+1982.2455 0.95
+1986.9184 0.95
+1991.5914 0.95
+1996.2643 0.95
+2000.9372 0.95
+2005.6101 0.95
+2010.283 0.952
+2014.9559 0.9525
+2019.6288 0.953
+2024.3017 0.953
+2028.9746 0.952
+2033.6475 0.9511
+2038.3204 0.95
+2042.9933 0.952
+2047.6662 0.952
+2052.3391 0.952
+2057.012 0.952
+2061.6849 0.952
+2066.3578 0.952
+2071.0307 0.9524
+2075.7036 0.953
+2080.3765 0.953
+2085.0494 0.953
+2089.7223 0.953
+2094.3952 0.953
+2099.0681 0.9538
+2103.741 0.955
+2108.4139 0.955
+2113.0869 0.955
+2117.7598 0.955
+2122.4327 0.955
+2127.1056 0.955
+2131.7785 0.955
+2136.4514 0.955
+2141.1243 0.955
+2145.7972 0.955
+2150.4701 0.955
+2155.143 0.955
+2159.8159 0.955
+2164.4888 0.955
+2169.1617 0.955
+2173.8346 0.955
+2178.5075 0.955
+2183.1804 0.955
+2187.8533 0.955
+2192.5262 0.955
+2197.1991 0.955
+2201.872 0.955
+2206.5449 0.955
+2211.2178 0.955
+2215.8907 0.955
+2220.5636 0.955
+2225.2365 0.955
+2229.9094 0.955
+2234.5823 0.955
+2239.2553 0.955
+2243.9282 0.955
+2248.6011 0.955
+2253.274 0.955
+2257.9469 0.955
+2262.6198 0.955
+2267.2927 0.955
+2271.9656 0.955
+2276.6385 0.956
+2281.3114 0.955
+2285.9843 0.956
+2290.6572 0.9567
+2295.3301 0.956
+2300.003 0.957
+2304.6759 0.956
+2309.3488 0.956
+2314.0217 0.9624
+2318.6946 0.9679
+2323.3675 0.9721
+2328.0404 0.9756
+2332.7133 0.9762
+2337.3862 0.978
+2342.0591 0.979
+2346.732 0.9802
+2351.4049 0.9752
+2356.0778 0.9507
+2360.7508 0.985
+2365.4237 0.9828
+2370.0966 0.9713
+2374.7695 0.8826
+2379.4424 0.9551
+2384.1153 0.9596
+2388.7882 0.9622
+2393.4611 0.834
+2398.134 0.9497
+2402.8069 0.957
+2407.4798 0.955
+2412.1527 0.7169
+2416.8256 0.7827
+2421.4985 0.957
+2426.1714 0.956
+2430.8443 0.7171
+2435.5172 0.95
+2440.1901 0.95
+2444.863 0.952
+2449.5359 0.7227
+2454.2088 0.6393
+2458.8817 0.9346
+2463.5546 0.9441
+2468.2275 0.7088
+2472.9004 0.6904
+2477.5733 0.9451
+2482.2463 0.9401
+2486.9192 0.7086
+2491.5921 0.6749
+2496.265 0.9396
+2500.9379 0.9428
+2505.6108 0.7204
+2510.2837 0.6667
+2514.9566 0.9385
+2519.6295 0.9393
+2524.3024 0.444
+2528.9753 0.6766
+2533.6482 0.943
+2538.3211 0.9402
+2542.994 0.439
+2547.6669 0.9049
+2552.3398 0.9381
+2557.0127 0.9429
+2561.6856 0.9436
+2566.3585 0.943
+2571.0314 0.9426
+2575.7043 0.5758
+2580.3772 0.7975
+2585.0501 0.939
+2589.723 0.7441
+2594.3959 0.6066
+2599.0688 0.937
+2603.7418 0.8588
+2608.4147 0.4752
+2613.0876 0.917
+2617.7605 0.6878
+2622.4334 0.5202
+2627.1063 0.9294
+2631.7792 0.5405
+2636.4521 0.5997
+2641.125 0.9346
+2645.7979 0.7261
+2650.4708 0.5844
+2655.1437 0.9273
+2659.8166 0.7017
+2664.4895 0.6624
+2669.1624 0.9318
+2673.8353 0.7901
+2678.5082 0.8698
+2683.1811 0.8586
+2687.854 0.7345
+2692.5269 0.9323
+2697.1998 0.9195
+2701.8727 0.826
+2706.5456 0.9064
+2711.2185 0.9192
+2715.8914 0.9294
+2720.5643 0.934
+2725.2372 0.9354
+2729.9102 0.936
+2734.5831 0.936
+2739.256 0.937
+2743.9289 0.937
+2748.6018 0.937
+2753.2747 0.937
+2757.9476 0.937
+2762.6205 0.937
+2767.2934 0.937
+2771.9663 0.937
+2776.6392 0.937
+2781.3121 0.937
+2785.985 0.937
+2790.6579 0.937
+2795.3308 0.937
+2800.0037 0.937
+2804.6766 0.937
+2809.3495 0.937
+2814.0224 0.9369
+2818.6953 0.936
+2823.3682 0.936
+2828.0411 0.936
+2832.714 0.936
+2837.3869 0.936
+2842.0598 0.937
+2846.7327 0.939
+2851.4057 0.939
+2856.0786 0.939
+2860.7515 0.9389
+2865.4244 0.937
+2870.0973 0.937
+2874.7702 0.937
+2879.4431 0.937
+2884.116 0.937
+2888.7889 0.937
+2893.4618 0.937
+2898.1347 0.939
+2902.8076 0.9395
+2907.4805 0.94
+2912.1534 0.942
+2916.8263 0.942
+2921.4992 0.942
+2926.1721 0.9401
+2930.845 0.94
+2935.5179 0.939
+2940.1908 0.937
+2944.8637 0.937
+2949.5366 0.936
+2954.2095 0.9341
+2958.8824 0.934
+2963.5553 0.934
+2968.2282 0.934
+2972.9012 0.933
+2977.5741 0.9322
+2982.247 0.931
+2986.9199 0.93
+2991.5928 0.93
+2996.2657 0.93
+3000.9386 0.93
+3005.6115 0.93
+3010.2844 0.93
+3014.9573 0.9293
+3019.6302 0.928
+3024.3031 0.928
+3028.976 0.928
+3033.6489 0.928
+3038.3218 0.928
+3042.9947 0.928
+3047.6676 0.9272
+3052.3405 0.927
+3057.0134 0.927
+3061.6863 0.927
+3066.3592 0.927
+3071.0321 0.927
+3075.705 0.927
+3080.3779 0.927
+3085.0508 0.927
+3089.7237 0.928
+3094.3967 0.928
+3099.0696 0.928
+3103.7425 0.928
+3108.4154 0.928
+3113.0883 0.928
+3117.7612 0.927
+3122.4341 0.927
+3127.107 0.927
+3131.7799 0.927
+3136.4528 0.927
+3141.1257 0.9277
+3145.7986 0.927
+3150.4715 0.927
+3155.1444 0.927
+3159.8173 0.927
+3164.4902 0.927
+3169.1631 0.927
+3173.836 0.927
+3178.5089 0.927
+3183.1818 0.927
+3187.8547 0.927
+3192.5276 0.927
+3197.2005 0.928
+3201.8734 0.928
+3206.5463 0.928
+3211.2192 0.93
+3215.8921 0.93
+3220.5651 0.93
+3225.238 0.9306
+3229.9109 0.931
+3234.5838 0.931
+3239.2567 0.931
+3243.9296 0.931
+3248.6025 0.931
+3253.2754 0.931
+3257.9483 0.931
+3262.6212 0.931
+3267.2941 0.933
+3271.967 0.933
+3276.6399 0.933
+3281.3128 0.934
+3285.9857 0.934
+3290.6586 0.934
+3295.3315 0.936
+3300.0044 0.936
+3304.6773 0.936
+3309.3502 0.9365
+3314.0231 0.9371
+3318.696 0.939
+3323.3689 0.939
+3328.0418 0.941
+3332.7147 0.942
+3337.3876 0.943
+3342.0606 0.943
+3346.7335 0.944
+3351.4064 0.944
+3356.0793 0.946
+3360.7522 0.946
+3365.4251 0.947
+3370.098 0.9489
+3374.7709 0.949
+3379.4438 0.95
+3384.1167 0.95
+3388.7896 0.952
+3393.4625 0.952
+3398.1354 0.953
+3402.8083 0.953
+3407.4812 0.955
+3412.1541 0.955
+3416.827 0.956
+3421.4999 0.956
+3426.1728 0.9569
+3430.8457 0.957
+3435.5186 0.957
+3440.1915 0.959
+3444.8644 0.959
+3449.5373 0.96
+3454.2102 0.96
+3458.8831 0.96
+3463.5561 0.96
+3468.229 0.96
+3472.9019 0.962
+3477.5748 0.962
+3482.2477 0.962
+3486.9206 0.962
+3491.5935 0.9628
+3496.2664 0.965
+3500.9393 0.965
+3505.6122 0.9653
+3510.2851 0.965
+3514.958 0.965
+3519.6309 0.965
+3524.3038 0.965
+3528.9767 0.966
+3533.6496 0.966
+3538.3225 0.9634
+3542.9954 0.9653
+3547.6683 0.9688
+3552.3412 0.971
+3557.0141 0.969
+3561.687 0.968
+3566.3599 0.968
+3571.0328 0.969
+3575.7057 0.9683
+3580.3786 0.966
+3585.0516 0.965
+3589.7245 0.968
+3594.3974 0.9687
+3599.0703 0.966
+3603.7432 0.966
+3608.4161 0.969
+3613.089 0.9669
+3617.7619 0.965
+3622.4348 0.9657
+3627.1077 0.9686
+3631.7806 0.9689
+3636.4535 0.9646
+3641.1264 0.962
+3645.7993 0.967
+3650.4722 0.976
+3655.1451 0.9718
+3659.818 0.968
+3664.4909 0.9659
+3669.1638 0.9624
+3673.8367 0.9587
+3678.5096 0.957
+3683.1825 0.9621
+3687.8554 0.9656
+3692.5283 0.968
+3697.2012 0.9686
+3701.8741 0.9692
+3706.547 0.971
+3711.22 0.972
+3715.8929 0.9726
+3720.5658 0.9732
+3725.2387 0.975
+3729.9116 0.9719
+3734.5845 0.9699
+&
+@target G0.S4
+@type xy
+454.206 0.949
+458.8789 0.947
+463.55181 0.944
+468.22471 0.944
+472.89761 0.94
+477.57052 0.939
+482.24342 0.939
+486.91633 0.939
+491.58923 0.937
+496.26213 0.936
+500.93504 0.931
+505.60794 0.933
+510.28085 0.934
+514.95375 0.934
+519.62665 0.934
+524.29956 0.936
+528.97246 0.934
+533.64536 0.937
+538.31827 0.939
+542.99117 0.937
+547.66408 0.934
+552.33698 0.942
+557.00988 0.942
+561.68279 0.943
+566.35569 0.944
+571.02859 0.944
+575.7015 0.947
+580.3744 0.946
+585.04731 0.947
+589.72021 0.949
+594.39311 0.947
+599.06602 0.953
+603.73892 0.952
+608.41183 0.952
+613.08473 0.952
+617.75763 0.952
+622.43054 0.953
+627.10344 0.956
+631.77634 0.957
+636.44925 0.957
+641.12215 0.957
+645.79506 0.957
+650.46796 0.957
+655.14086 0.957
+659.81377 0.957
+664.48667 0.959
+669.15958 0.959
+673.83248 0.96
+678.50538 0.959
+683.17829 0.959
+687.85119 0.959
+692.52409 0.959
+697.197 0.959
+701.8699 0.965
+706.54281 0.956
+711.21571 0.96
+715.88861 0.959
+720.56152 0.957
+725.23442 0.957
+729.90733 0.959
+734.58023 0.957
+739.25313 0.965
+743.92604 0.963
+748.59894 0.959
+753.27184 0.965
+757.94475 0.96
+762.61765 0.966
+767.29055 0.973
+771.96346 0.965
+776.63636 0.965
+781.30927 0.966
+785.98217 0.969
+790.65507 0.968
+795.32798 0.963
+800.00088 0.962
+804.67379 0.962
+809.34669 0.962
+814.01959 0.959
+818.6925 0.96
+823.3654 0.96
+828.0383 0.96
+832.71121 0.959
+837.38411 0.959
+842.05702 0.956
+846.72992 0.959
+851.40282 0.962
+856.07573 0.96
+860.74863 0.962
+865.42153 0.959
+870.09444 0.962
+874.76734 0.959
+879.44025 0.96
+884.11315 0.959
+888.78605 0.959
+893.45896 0.959
+898.13186 0.962
+902.80476 0.96
+907.47767 0.957
+912.15057 0.959
+916.82348 0.959
+921.49638 0.959
+926.16928 0.962
+930.84219 0.962
+935.51509 0.96
+940.188 0.959
+944.8609 0.959
+949.5338 0.96
+954.20671 0.962
+958.87961 0.962
+963.55251 0.966
+968.22542 0.962
+972.89832 0.963
+977.57123 0.963
+982.24413 0.965
+986.91703 0.966
+991.58994 0.966
+996.26284 0.966
+1000.9357 0.965
+1005.6086 0.962
+1010.2816 0.96
+1014.9545 0.963
+1019.6274 0.968
+1024.3003 0.962
+1028.9732 0.963
+1033.6461 0.965
+1038.319 0.971
+1042.9919 0.966
+1047.6648 0.968
+1052.3377 0.968
+1057.0106 0.971
+1061.6835 0.969
+1066.3564 0.965
+1071.0293 0.959
+1075.7022 0.957
+1080.3751 0.959
+1085.048 0.959
+1089.7209 0.959
+1094.3938 0.959
+1099.0667 0.962
+1103.7396 0.966
+1108.4125 0.968
+1113.0854 0.971
+1117.7583 0.973
+1122.4312 0.978
+1127.1041 0.976
+1131.7771 0.973
+1136.45 0.971
+1141.1229 0.971
+1145.7958 0.971
+1150.4687 0.973
+1155.1416 0.976
+1159.8145 0.978
+1164.4874 0.976
+1169.1603 0.973
+1173.8332 0.966
+1178.5061 0.966
+1183.179 0.975
+1187.8519 0.976
+1192.5248 0.975
+1197.1977 0.973
+1201.8706 0.973
+1206.5435 0.975
+1211.2164 0.975
+1215.8893 0.976
+1220.5622 0.976
+1225.2351 0.975
+1229.908 0.972
+1234.5809 0.966
+1239.2538 0.965
+1243.9267 0.962
+1248.5996 0.96
+1253.2726 0.955
+1257.9455 0.955
+1262.6184 0.955
+1267.2913 0.955
+1271.9642 0.956
+1276.6371 0.955
+1281.31 0.953
+1285.9829 0.952
+1290.6558 0.952
+1295.3287 0.95
+1300.0016 0.95
+1304.6745 0.95
+1309.3474 0.955
+1314.0203 0.955
+1318.6932 0.955
+1323.3661 0.953
+1328.039 0.952
+1332.7119 0.956
+1337.3848 0.934
+1342.0577 0.957
+1346.7306 0.959
+1351.4035 0.972
+1356.0764 0.976
+1360.7493 0.978
+1365.4222 0.962
+1370.0951 0.96
+1374.768 0.953
+1379.441 0.955
+1384.1139 0.953
+1388.7868 0.95
+1393.4597 0.953
+1398.1326 0.952
+1402.8055 0.956
+1407.4784 0.947
+1412.1513 0.955
+1416.8242 0.957
+1421.4971 0.956
+1426.17 0.955
+1430.8429 0.95
+1435.5158 0.956
+1440.1887 0.957
+1444.8616 0.953
+1449.5345 0.949
+1454.2074 0.962
+1458.8803 0.946
+1463.5532 0.95
+1468.2261 0.95
+1472.899 0.957
+1477.5719 0.947
+1482.2448 0.949
+1486.9177 0.957
+1491.5906 0.949
+1496.2635 0.956
+1500.9365 0.953
+1505.6094 0.982
+1510.2823 0.955
+1514.9552 0.962
+1519.6281 0.973
+1524.301 0.957
+1528.9739 0.949
+1533.6468 0.95
+1538.3197 0.979
+1542.9926 0.957
+1547.6655 0.956
+1552.3384 0.95
+1557.0113 0.998
+1561.6842 0.952
+1566.3571 0.963
+1571.03 0.9659
+1575.7029 0.956
+1580.3758 0.952
+1585.0487 0.952
+1589.7216 0.952
+1594.3945 0.952
+1599.0674 0.953
+1603.7403 0.95
+1608.4132 0.949
+1613.0861 0.96
+1617.759 0.95
+1622.432 0.955
+1627.1049 0.946
+1631.7778 0.965
+1636.4507 0.946
+1641.1236 0.959
+1645.7965 0.947
+1650.4694 0.971
+1655.1423 0.943
+1659.8152 0.949
+1664.4881 0.947
+1669.161 0.955
+1673.8339 0.942
+1678.5068 0.946
+1683.1797 0.934
+1687.8526 0.933
+1692.5255 0.95
+1697.1984 0.952
+1701.8713 0.942
+1706.5442 0.939
+1711.2171 0.956
+1715.89 0.949
+1720.5629 0.946
+1725.2358 0.947
+1729.9087 0.962
+1734.5816 0.949
+1739.2545 0.947
+1743.9275 0.956
+1748.6004 0.953
+1753.2733 0.947
+1757.9462 0.955
+1762.6191 0.949
+1767.292 0.963
+1771.9649 0.946
+1776.6378 0.947
+1781.3107 0.944
+1785.9836 0.956
+1790.6565 0.947
+1795.3294 0.949
+1800.0023 0.947
+1804.6752 0.947
+1809.3481 0.949
+1814.021 0.944
+1818.6939 0.949
+1823.3668 0.952
+1828.0397 0.947
+1832.7126 0.947
+1837.3855 0.953
+1842.0584 0.95
+1846.7313 0.949
+1851.4042 0.947
+1856.0771 0.952
+1860.75 0.956
+1865.4229 0.953
+1870.0959 0.949
+1874.7688 0.949
+1879.4417 0.95
+1884.1146 0.95
+1888.7875 0.952
+1893.4604 0.949
+1898.1333 0.949
+1902.8062 0.949
+1907.4791 0.95
+1912.152 0.953
+1916.8249 0.952
+1921.4978 0.949
+1926.1707 0.949
+1930.8436 0.949
+1935.5165 0.95
+1940.1894 0.95
+1944.8623 0.949
+1949.5352 0.949
+1954.2081 0.955
+1958.881 0.956
+1963.5539 0.949
+1968.2268 0.949
+1972.8997 0.95
+1977.5726 0.95
+1982.2455 0.95
+1986.9184 0.95
+1991.5914 0.95
+1996.2643 0.95
+2000.9372 0.95
+2005.6101 0.95
+2010.283 0.952
+2014.9559 0.953
+2019.6288 0.953
+2024.3017 0.953
+2028.9746 0.952
+2033.6475 0.9501
+2038.3204 0.95
+2042.9933 0.952
+2047.6662 0.952
+2052.3391 0.952
+2057.012 0.952
+2061.6849 0.952
+2066.3578 0.952
+2071.0307 0.9529
+2075.7036 0.953
+2080.3765 0.953
+2085.0494 0.953
+2089.7223 0.953
+2094.3952 0.953
+2099.0681 0.9548
+2103.741 0.955
+2108.4139 0.955
+2113.0869 0.955
+2117.7598 0.955
+2122.4327 0.955
+2127.1056 0.955
+2131.7785 0.955
+2136.4514 0.955
+2141.1243 0.955
+2145.7972 0.955
+2150.4701 0.955
+2155.143 0.955
+2159.8159 0.955
+2164.4888 0.955
+2169.1617 0.955
+2173.8346 0.955
+2178.5075 0.955
+2183.1804 0.955
+2187.8533 0.955
+2192.5262 0.955
+2197.1991 0.955
+2201.872 0.955
+2206.5449 0.955
+2211.2178 0.955
+2215.8907 0.955
+2220.5636 0.955
+2225.2365 0.955
+2229.9094 0.955
+2234.5823 0.955
+2239.2553 0.955
+2243.9282 0.955
+2248.6011 0.955
+2253.274 0.955
+2257.9469 0.955
+2262.6198 0.955
+2267.2927 0.955
+2271.9656 0.9552
+2276.6385 0.956
+2281.3114 0.9552
+2285.9843 0.956
+2290.6572 0.9568
+2295.3301 0.956
+2300.003 0.9568
+2304.6759 0.956
+2309.3488 0.9561
+2314.0217 0.9639
+2318.6946 0.9693
+2323.3675 0.9726
+2328.0404 0.976
+2332.7133 0.9772
+2337.3862 0.9781
+2342.0591 0.979
+2346.732 0.981
+2351.4049 0.941
+2356.0778 0.9759
+2360.7508 0.985
+2365.4237 0.9817
+2370.0966 0.9668
+2374.7695 0.836
+2379.4424 0.9556
+2384.1153 0.9601
+2388.7882 0.9637
+2393.4611 0.731
+2398.134 0.9562
+2402.8069 0.957
+2407.4798 0.955
+2412.1527 0.656
+2416.8256 0.842
+2421.4985 0.957
+2426.1714 0.9555
+2430.8443 0.576
+2435.5172 0.9495
+2440.1901 0.95
+2444.863 0.951
+2449.5359 0.4989
+2454.2088 0.7093
+2458.8817 0.9465
+2463.5546 0.944
+2468.2275 0.4641
+2472.9004 0.813
+2477.5733 0.9441
+2482.2463 0.94
+2486.9192 0.4589
+2491.5921 0.8001
+2496.265 0.9391
+2500.9379 0.943
+2505.6108 0.4667
+2510.2837 0.7923
+2514.9566 0.9415
+2519.6295 0.9125
+2524.3024 0.444
+2528.9753 0.7909
+2533.6482 0.943
+2538.3211 0.9376
+2542.994 0.439
+2547.6669 0.9334
+2552.3398 0.9396
+2557.0127 0.9434
+2561.6856 0.9431
+2566.3585 0.9434
+2571.0314 0.9406
+2575.7043 0.557
+2580.3772 0.9072
+2585.0501 0.938
+2589.723 0.4645
+2594.3959 0.7479
+2599.0688 0.937
+2603.7418 0.7019
+2608.4147 0.5829
+2613.0876 0.936
+2617.7605 0.4919
+2622.4334 0.5849
+2627.1063 0.9284
+2631.7792 0.437
+2636.4521 0.6954
+2641.125 0.937
+2645.7979 0.5846
+2650.4708 0.6265
+2655.1437 0.9298
+2659.8166 0.6487
+2664.4895 0.8418
+2669.1624 0.914
+2673.8353 0.7403
+2678.5082 0.9226
+2683.1811 0.8426
+2687.854 0.718
+2692.5269 0.9308
+2697.1998 0.9056
+2701.8727 0.826
+2706.5456 0.9082
+2711.2185 0.9222
+2715.8914 0.9302
+2720.5643 0.934
+2725.2372 0.936
+2729.9102 0.936
+2734.5831 0.9362
+2739.256 0.937
+2743.9289 0.937
+2748.6018 0.937
+2753.2747 0.937
+2757.9476 0.937
+2762.6205 0.937
+2767.2934 0.937
+2771.9663 0.937
+2776.6392 0.937
+2781.3121 0.937
+2785.985 0.937
+2790.6579 0.937
+2795.3308 0.937
+2800.0037 0.937
+2804.6766 0.937
+2809.3495 0.937
+2814.0224 0.9364
+2818.6953 0.936
+2823.3682 0.936
+2828.0411 0.936
+2832.714 0.936
+2837.3869 0.9361
+2842.0598 0.937
+2846.7327 0.939
+2851.4057 0.939
+2856.0786 0.939
+2860.7515 0.9379
+2865.4244 0.937
+2870.0973 0.937
+2874.7702 0.937
+2879.4431 0.937
+2884.116 0.937
+2888.7889 0.937
+2893.4618 0.937
+2898.1347 0.939
+2902.8076 0.94
+2907.4805 0.94
+2912.1534 0.942
+2916.8263 0.942
+2921.4992 0.942
+2926.1721 0.94
+2930.845 0.94
+2935.5179 0.939
+2940.1908 0.937
+2944.8637 0.9366
+2949.5366 0.936
+2954.2095 0.934
+2958.8824 0.934
+2963.5553 0.934
+2968.2282 0.934
+2972.9012 0.933
+2977.5741 0.9312
+2982.247 0.931
+2986.9199 0.93
+2991.5928 0.93
+2996.2657 0.93
+3000.9386 0.93
+3005.6115 0.93
+3010.2844 0.93
+3014.9573 0.9283
+3019.6302 0.928
+3024.3031 0.928
+3028.976 0.928
+3033.6489 0.928
+3038.3218 0.928
+3042.9947 0.928
+3047.6676 0.927
+3052.3405 0.927
+3057.0134 0.927
+3061.6863 0.927
+3066.3592 0.927
+3071.0321 0.927
+3075.705 0.927
+3080.3779 0.927
+3085.0508 0.9273
+3089.7237 0.928
+3094.3967 0.928
+3099.0696 0.928
+3103.7425 0.928
+3108.4154 0.928
+3113.0883 0.9277
+3117.7612 0.927
+3122.4341 0.927
+3127.107 0.927
+3131.7799 0.927
+3136.4528 0.927
+3141.1257 0.9278
+3145.7986 0.927
+3150.4715 0.927
+3155.1444 0.927
+3159.8173 0.927
+3164.4902 0.927
+3169.1631 0.927
+3173.836 0.927
+3178.5089 0.927
+3183.1818 0.927
+3187.8547 0.927
+3192.5276 0.927
+3197.2005 0.928
+3201.8734 0.928
+3206.5463 0.928
+3211.2192 0.93
+3215.8921 0.93
+3220.5651 0.93
+3225.238 0.931
+3229.9109 0.931
+3234.5838 0.931
+3239.2567 0.931
+3243.9296 0.931
+3248.6025 0.931
+3253.2754 0.931
+3257.9483 0.931
+3262.6212 0.9312
+3267.2941 0.933
+3271.967 0.933
+3276.6399 0.933
+3281.3128 0.934
+3285.9857 0.934
+3290.6586 0.934
+3295.3315 0.936
+3300.0044 0.936
+3304.6773 0.936
+3309.3502 0.937
+3314.0231 0.9381
+3318.696 0.939
+3323.3689 0.939
+3328.0418 0.942
+3332.7147 0.9425
+3337.3876 0.943
+3342.0606 0.9435
+3346.7335 0.944
+3351.4064 0.945
+3356.0793 0.946
+3360.7522 0.9465
+3365.4251 0.947
+3370.098 0.949
+3374.7709 0.949
+3379.4438 0.95
+3384.1167 0.95
+3388.7896 0.952
+3393.4625 0.952
+3398.1354 0.953
+3402.8083 0.953
+3407.4812 0.955
+3412.1541 0.955
+3416.827 0.956
+3421.4999 0.956
+3426.1728 0.957
+3430.8457 0.957
+3435.5186 0.9578
+3440.1915 0.959
+3444.8644 0.959
+3449.5373 0.96
+3454.2102 0.96
+3458.8831 0.96
+3463.5561 0.96
+3468.229 0.96
+3472.9019 0.962
+3477.5748 0.962
+3482.2477 0.962
+3486.9206 0.962
+3491.5935 0.963
+3496.2664 0.965
+3500.9393 0.965
+3505.6122 0.9658
+3510.2851 0.965
+3514.958 0.965
+3519.6309 0.965
+3524.3038 0.965
+3528.9767 0.966
+3533.6496 0.966
+3538.3225 0.963
+3542.9954 0.9658
+3547.6683 0.9695
+3552.3412 0.971
+3557.0141 0.9687
+3561.687 0.968
+3566.3599 0.9682
+3571.0328 0.969
+3575.7057 0.968
+3580.3786 0.966
+3585.0516 0.9657
+3589.7245 0.968
+3594.3974 0.9688
+3599.0703 0.966
+3603.7432 0.9664
+3608.4161 0.969
+3613.089 0.9658
+3617.7619 0.965
+3622.4348 0.966
+3627.1077 0.9701
+3631.7806 0.9675
+3636.4535 0.9637
+3641.1264 0.9622
+3645.7993 0.97
+3650.4722 0.9758
+3655.1451 0.9713
+3659.818 0.9677
+3664.4909 0.9654
+3669.1638 0.9617
+3673.8367 0.9577
+3678.5096 0.9574
+3683.1825 0.9626
+3687.8554 0.9662
+3692.5283 0.968
+3697.2012 0.969
+3701.8741 0.9702
+3706.547 0.971
+3711.22 0.972
+3715.8929 0.973
+3720.5658 0.9742
+3725.2387 0.9748
+3729.9116 0.9714
+3734.5845 0.9689
+&

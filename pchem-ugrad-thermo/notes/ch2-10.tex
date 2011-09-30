@@ -1,0 +1,102 @@
+\opage{
+\otitle{2.10 Adiabatic processes with gases}
+
+\otext
+In an adiabatic process no heat is exchanged with the surroundings ($dq = 0$). If only $PV$-work is involved, then the first law (Eq. (\ref{eq2.9})) states that:
+
+\vspace*{0.15cm}
+
+\aeqn{2.79a}{dU = dq + dw = dw = -P_{ext}dV}
+
+If work is done against external pressure, the temperature of the system drops (note: adiabatic process; no thermal contact). If the system was in thermal contact, the system would exchange heat with its surroundings and the temperature would remain constant.
+
+\vspace*{0.3cm}
+
+Consider an ideal gas. The change in internal energy ($\Delta U$) depends only on temperature (Eqs. (\ref{eq2.44a}) and (\ref{eq2.69})):
+
+\vspace*{0.15cm}
+
+\aeqn{2.79}{dU = C_VdT\textnormal{, if }C_V\textnormal{ is independent of }T\textnormal{, we have: }\Delta U = C_V\Delta T}
+
+\vspace*{0.15cm}
+
+On the other hand, we know that $\Delta U = w$ and therefore $w = C_V\Delta T$. Furthermore, we know that $w = -P_{ext}\Delta V$, which means that $-P_{ext}\Delta V = C_V\Delta T$. This predicts that upon increase in volume, the temperature decreases, for example.
+
+}
+
+\opage{
+
+\otext
+When adiabatic expansion is carried out reversibly, the equilibrium pressure can be substituted for the external pressure ($P_{ext} = P$). For an ideal gas we have:
+
+\aeqn{2.81}{\bar{C}_VdT = -Pd\bar{V} = -\frac{RT}{\bar{V}}d\bar{V} \Rightarrow \bar{C}_V\frac{dT}{T} = -R\frac{d\bar{V}}{\bar{V}}}
+
+If we assume that the heat capacity is independent of temperature and integrate both sides, we get:
+
+\aeqn{2.82}{\bar{C}_V\int\limits_{T_1}^{T_2}\frac{dT}{T} = -R\int\limits_{\bar{V}_1}^{\bar{V}_2}\frac{d\bar{V}}{\bar{V}} \Rightarrow \bar{C}_V\ln\left(\frac{T_2}{T_1}\right) = R\ln\left(\frac{\bar{V}_1}{\bar{V}_2}\right)}
+
+For an ideal gas we have $\bar{C}_P - \bar{C}_V = R$ and thus we can rewrite Eq. (\ref{eq2.82}) as:
+
+\aeqn{2.83}{\frac{T_2}{T_1} = \left(\frac{\bar{V}_1}{\bar{V}_2}\right)^{\gamma - 1}\textnormal{ where }\gamma = \frac{\bar{C}_P}{\bar{C}_V}}
+
+The same result can be written in alternative forms:
+
+\aeqn{2.84}{\frac{T_2}{T_1} = \left(\frac{P_2}{P_1}\right)^{(\gamma - 1) / \gamma}}
+
+\aeqn{2.85}{P_1\bar{V}_1^{\gamma} = P_2\bar{V}_2^{\gamma}}
+
+}
+
+\opage{
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\ofig{expansion}{0.25}{}\\
+
+\vspace*{-0.4cm}
+
+\otext
+
+Isothermal and reversible adiabatic expansions of one mole of an ideal monoatomic gas. The isothermal case results in higher pressure in the end because there is heat transfer to the system from the surroundings (to keep the temperature constant). In the adiabatic case the \underline{temperature decreases} during expansion.
+
+
+\end{column}\hspace*{-1.5cm}\vline\hspace*{0.25cm}
+
+\begin{column}{5cm}
+\otext
+
+\textbf{Example.} Consider an adiabatic, reversible expansion of 0.020 mol Ar (ideal gas), initially at 25 \degree C, from 0.50 L to 1.00 L. The molar heat capacity of argon at constant volume is 12.48 J K$^{-1}$ mol$^{-1}$. What is the final temperature and how much work is done?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we modify Eq. (\ref{eq2.83}):
+
+$$T_2 = T_1\left(\frac{\bar{V}_1}{\bar{V}_2}\right)^{\gamma - 1}$$
+
+Substituting the values, we get the final $T_2$ (see Eqs. (\ref{eq2.70}) and (\ref{eq2.72})):
+
+\vspace*{-0.5cm}
+
+$$T_2 = \left(298\textnormal{ K}\right)\times\left(\frac{0.50\textnormal{ L}}{1.00\textnormal{ L}}\right)^{0.666} = 188\textnormal{ K}$$
+
+\vspace*{-0.2cm}
+
+From the temperature difference we can calculate the work:
+
+\vspace*{-0.2cm}
+
+$$w_{rev} = n\bar{C}_V\Delta T$$
+$$= \left(0.020\textnormal{ mol}\right)\times\left(12.48\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)$$
+$$\times\left(-110\textnormal{ K}\right) = -27\textnormal{ J}$$
+
+\vspace*{-0.2cm}
+
+Note the sign: the gas does work.
+
+\end{column}
+
+\end{columns}
+
+}

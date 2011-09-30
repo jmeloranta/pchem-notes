@@ -1,0 +1,23 @@
+% Problem 6/4 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{itemize}
+\item[a)] Integrate both sides of the Gibbs-Helmholtz equation (see lecture notes):
+
+$$-\frac{\Delta H}{T^2} = \frac{\partial (\Delta G / T)}{\partial T} \Rightarrow -\int\limits_{T_1}^{T_2}\frac{\Delta H}{T^2}dT = \int\limits_{\Delta G_1 / T_1}^{\Delta G_2 / T_2}d\left(\Delta G / T\right)$$
+
+$$\Rightarrow \Delta H\left(\frac{1}{T_2} - \frac{1}{T_1}\right) = \Delta G_2 / T_2 - \Delta G_1 / T_1$$
+$$\Rightarrow \Delta G_2 = \Delta H\left(\frac{T_2}{T_2} - \frac{T_2}{T_1}\right) + \Delta G_1T_2 / T_1$$
+
+\item[b)] Assume temperature dependency for $\Delta H(T) = \Delta H_1 + \left(T - T_1\right)\Delta C_P$:
+
+$$\int\limits_{\Delta G_1 / T_1}^{\Delta G_2 / T_2}d\left(\Delta G / T\right) = -\int\limits_{T_1}^{T_2}\frac{\Delta H_1}{T^2}dT - \Delta C_P\int\limits_{T_1}^{T_2}\frac{T - T_1}{T^2}dT$$
+
+$$\Rightarrow \frac{\Delta G_2}{T_2} - \frac{\Delta G_1}{T_1} = \Delta H_1\left(\frac{1}{T_2} - \frac{1}{T_1}\right) - \Delta C_P\ln\left(\frac{T_2}{T_1}\right) - \Delta C_PT_1\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+
+$$\Rightarrow \Delta G_2 = \frac{\Delta G_1 T_2}{T_1} + \Delta H_1\left(1 - \frac{T_2}{T_1}\right) - \Delta C_P\left(T_2\ln\left(\frac{T_2}{T_1}\right) + T_1 - T_2\right)$$
+
+\end{itemize}
+
+\hrule\vspace{0.5cm}

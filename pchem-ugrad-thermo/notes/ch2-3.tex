@@ -1,0 +1,205 @@
+\opage{
+\otitle{2.3 Exact and inexact differentials}
+
+\otext
+A differential with two independent degrees of freedom, can be expressed as (``Pfaffian form''):
+
+\aeqn{2.18}{du = M (x,y)dx + N(x,y)dy}
+
+For \textit{exact differential} $du$ functions $M$ and $N$ must correspond to some derivatives of $u$. However, in general, there are differentials for which this does not hold. Such differentials
+are called \textit{inexact differentials}.
+
+\vspace*{0.2cm}
+
+\underline{Test for exact differentials.} Differential $du$ is exact if and only if:
+
+\aeqn{2.22}{\left(\frac{\partial N(x,y)}{\partial x}\right)_y = \left(\frac{\partial M(x,y)}{\partial y}\right)_x}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Show that the following differential is exact:
+
+$$du = \umark{\left(2xy + \frac{9x^2}{y}\right)}{= M}dx + \umark{\left(x^2 - \frac{3x^3}{y^2}\right)}{= N}dy$$
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} To show this, we verify that Eq. (\ref{eq2.22}) holds:
+
+}
+
+\opage{
+
+\otext
+$$\left(\frac{\partial M}{\partial y}\right)_x = \left[\frac{\partial }{\partial y}\left(2xy + \frac{9x^2}{y}\right)\right]_x = 2x - \frac{9x^2}{y^2}$$
+
+$$\left(\frac{\partial N}{\partial x}\right)_y =\left[\frac{\partial}{\partial x}\left(x^2 - \frac{3x^3}{y^2}\right)\right]_y = 2x - \frac{9x^2}{y^2}$$
+
+Because both partial derivatives are equal, differential $du$ is exact.
+
+\vspace*{0.2cm}
+
+For functions with three independent variables, the Pfaffian form is:
+
+\aeqn{2.22a}{du = M(x, y, z)dx + N(x, y, z)dy + P(x, y, z)dz}
+
+and the corresponding condition for exactness is now:
+
+\ceqn{2.22b}{\left(\frac{\partial M}{\partial y}\right)_{x,z} = \left(\frac{\partial N}{\partial x}\right)_{y,z}}
+{\left(\frac{\partial N}{\partial z}\right)_{x,y} = \left(\frac{\partial P}{\partial y}\right)_{x,z}}
+{\left(\frac{\partial M}{\partial z}\right)_{x,y} = \left(\frac{\partial P}{\partial x}\right)_{y,z}}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Show that the following differential is not exact but it can be transformed into an exact differential by dividing both sides by $x$.
+
+$$du = \umark{\left( 2ax^2 + bxy\right)}{= M}dx + \umark{\left( bx^2 + 2cxy\right)}{= N}dy$$
+
+\textbf{Solution.} Calculate the required partial derivatives and use Eq. (\ref{eq2.22}):
+
+$$\left(\frac{\partial M}{\partial y}\right)_x = \left[\frac{\partial}{\partial y}\left(2ax^2 + bxy\right)\right]_x = bx$$
+
+$$\left(\frac{\partial N}{\partial x}\right)_y = \left[\frac{\partial}{\partial x}\left(bx^2 + 2cxy\right)\right]_y = 2bx + 2cy \ne bx$$
+
+Thus the original differential is not exact. After dividing $du$ by $x$, however:
+
+$$\left(\frac{\partial M'}{\partial y}\right)_x = \left[\frac{\partial}{\partial y}\left(2ax + by\right)\right]_x = b$$
+
+$$\left(\frac{\partial N'}{\partial x}\right)_y = \left[\frac{\partial}{\partial x}\left(bx + 2cy\right)\right]_x = b$$
+
+This procedure of transforming an inexact differential into an exact one is called the \textit{method of integrating factors}.
+
+}
+
+\opage{
+
+\otext
+\textbf{Line integrals} are evaluated over a specified path in the $x$-$y$ (or in higher dimensional spaces):
+
+\aeqn{2.22c}{\int\limits_{(x_0,y_0)}^{(x_1,y_1)}du = \int\limits_{(x_0,y_0)}^{(x_1,y_1)}\left[M(x,y)dx + N(x,y)dy\right]}
+
+However, this is not yet well defined because there are infinitely many paths that connect points $(x_0, y_0)$ and $(x_1, y_1)$ in the $x$-$y$ plane. One such path is shown below:
+
+\vspace*{-0.4cm}
+
+\ofig{line-integral}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+An integration path ($C$) must be specified for line integrals:
+
+\aeqn{2.22d}{\int\limits_{C} du = \int\limits_{C}\left[M(x,y)dx + N(x,y)dy\right]}
+
+Note that line integrals are sometimes also called path integrals.
+
+\vspace*{0.2cm}
+
+When the integration path is defined by functions $y = y(x)$ and $x = x(y)$, the line integral along this path can be calculated as:
+
+\aeqn{2.22e}{\int\limits_{C}du = \int\limits_{x_0}^{x_1} M(x,y(x))dx + \int\limits_{y_0}^{y_1}N(x(y),y)dy}
+
+\textbf{Example.} Find the value of the following line integral:
+
+$$\int\limits_{C}du = \int\limits_{C}\left[(2x + 3y)dx + (3x + 4y)dy\right]$$
+
+where path $C$ is the straight-line segment given by $y = 2x + 3$ from $(0,3)$ to $(2,7)$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} In the first term, $y$ must be replaced by $2x + 3$, and in the second term $x$ must be replaced by $(1/2)(y - 3)$,
+
+}
+
+\opage{
+
+\otext
+$$\int\limits_{C}du = \int\limits_0^2\left[2x + 3(2x + 3)\right]dx + \int\limits_3^7\left[\frac{3}{2}(y - 3) + 4y\right]dy$$
+
+$$= \left.\left(\frac{8x^2}{2} + 9x\right)\right|_0^2 + \left.\left(\frac{11y^2/2}{2} - \frac{9}{2}y\right)\right|_3^7 = 126$$
+
+\vspace*{0.3cm}
+
+If differential $du$ is exact, then \textit{the line integral does not depend on path} but only on the end points:
+
+\aeqn{2.22f}{\int\limits_C du = \int\limits_C \left[\left(\frac{\partial u}{\partial x}\right)dx + \left(\frac{\partial u}{\partial y}\right)dy\right] = u(x_1,y_1) - u(x_0, y_0)}
+
+For closed paths, this always yields zero (\textit{this does not hold for ineact differentials}):
+
+\aeqn{2.22g}{\oint du = 0\textnormal{ (over a closed loop)}}
+
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Show that the line integral of the previous example has the same value as the line integral of the same differential on the rectangular path from $(0, 3)$ to $(2, 3)$ and then to $(2, 7)$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} The integration path is not a single curve but two line segments. So we must carry out the integration separately for each segment. On the first segment, $y$ is constant, so $dy = 0$ and the integral containing $dy$ vanishes. On the second line segment, $x$ is constant, so $dx = 0$ and the integral containing $dx$ vanishes:
+
+$$\int\limits_C u = \int\limits_0^2 (2x + 9)dx + \int\limits_3^7 (6 + 4y)dy = \left.\left(\frac{2x^2}{2} + 9x\right)\right|_0^2 + \left.\left(6y + \frac{4y^2}{2}\right)\right|_3^7 = 126$$
+
+Note that this is the same result as obtained in the previous example.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Show that differential $du = dx + xdy$ is inexact and carry out line integration using two different paths between points $(0,0)$ and $(2,2)$. Path 1 is defined as: straight line from $(0, 0)$ to $(2, 2)$ and path 2 as: rectangular path $(0, 0)$ to $(2, 0)$ to $(2, 2)$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we show that the differential is inexact:
+
+$$\left[\frac{\partial}{\partial y}(1)\right]_x = 0\textnormal{ and }\left[\frac{\partial}{\partial x}(x)\right]_y = 1\ne 0$$
+
+$$\Rightarrow\textnormal{ }du\textnormal{ is inexact differential.}$$
+
+}
+
+\opage{
+
+\otext
+Integration along path 1 (denoted by $C_1$, a straight line $y = x$):
+
+$$\int\limits_{C_1} du = \int\limits_{C_1}dx + \int\limits_{C_1}xdy = \int\limits_0^2 dx + \int\limits_0^2 ydy = \left.x\right|_0^2 + \left.\frac{y^2}{2}\right|_0^2 = 4$$
+
+Integration along path 2 (denoted by $C_2$):
+
+$$\int\limits_{C_2} du = \int\limits_{C_2}dx + \int\limits_{C_2}xdy = \int\limits_0^2dx + \int\limits_0^22dy = \left.x\right|_0^2 + \left.2y\right|_0^2 = 2 + 4 = 6$$
+
+Thus the value of the line integral depends on path. This is because $du$ is inexact.
+
+\vspace*{0.3cm}
+
+For three independent variables, line integral is defined as:
+
+\aeqn{2.22h}{\int\limits_C du = \int\limits_{C} \left[M(x,y,z)dx + N(x,y,z)dy + P(x,y,z)dz\right]}
+
+Furthermore, the integral can be evaluated using:
+
+\vspace*{-0.2cm}
+
+\aeqn{2.22i}{\int\limits_C du = \int\limits_{x_0}^{x_1} M(x,y(x),z(x))dx + \int\limits_{y_0}^{y_1} N(x(y),y,z(y))dy + \int\limits_{z_0}^{z_1}P(x(z),y(z),z)dz}
+
+}
+
+\opage{
+
+\otext
+If $du$ is exact differential, the value of the line integral depends \textit{only} on the endpoints:
+
+\aeqn{2.22j}{\int\limits_C du = u(x_1,y_1,z_1) - u(x_0,y_0,z_0)}
+
+In general, for cyclic processes:
+
+\aeqn{2.22k}{\oint du = 0\textnormal{ (only if }du\textnormal{ is exact)}}
+
+\vfill
+
+}

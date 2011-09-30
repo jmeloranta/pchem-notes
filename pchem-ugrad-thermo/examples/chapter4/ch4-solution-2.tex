@@ -1,0 +1,32 @@
+% Problem 2/4 solution
+\noindent
+\underline{Solution:}\\
+
+Based on the lecture notes we have:
+
+$$\bar{C}_P - \bar{C}_V = \frac{T\bar{V}\alpha^2}{\kappa}\textnormal{ with }\alpha = \frac{1}{\bar{V}}\left(\frac{\partial\bar{V}}{\partial T}\right)_P\textnormal{ and }\kappa = -\frac{1}{\bar{V}}\left(\frac{\partial\bar{V}}{\partial P}\right)_T$$
+
+And the van der Waals equation can be written in the following forms:
+
+$$P = \frac{RT}{\bar{V} - b} - \frac{a}{\bar{V}^2}\textnormal{ or }T = \frac{1}{R}\left(P\bar{V} - Pb + \frac{a}{\bar{V}} - \frac{ab}{\bar{V}^2}\right)$$
+
+Next $\alpha$ and $\kappa$ must be calculated. Since the van der Waals equation of state cannot be written for the molar volume easily, one must use the reciprocal identity:
+
+$$\left(\frac{\bar{V}}{\partial T}\right)_P = \frac{1}{\left(\partial T / \partial\bar{V}\right)_P}$$
+
+$$\alpha^{-1} = \bar{V}\left(\frac{\partial T}{\partial\bar{V}}\right)_P = \bar{V}\left(\frac{P}{R} - \frac{a}{R\bar{V}^2} + \frac{2ab}{R\bar{V}^3}\right) = \left(\frac{P\bar{V}}{R} - \frac{a}{R\bar{V}} + \frac{2ab}{R\bar{V}^2}\right)$$
+
+It is convenient to eliminate pressure $P$ from this equation by using the van der Waals equation:
+
+$$\alpha^{-1} = \frac{\bar{V}T}{\bar{V} - b} - \frac{2a}{R\bar{V}} + \frac{2ab}{R\bar{V}^2} = \frac{\bar{V}T}{\bar{V} - b} - \frac{2a}{R\bar{V}^2}\left(\bar{V} - b\right)$$
+$$\Rightarrow \alpha = \frac{1}{\frac{\bar{V}T}{\bar{V} - b} - \frac{2a}{R\bar{V}^2}\left(\bar{V} - b\right)}$$
+
+Next we calculate $\kappa$:
+
+$$\kappa^{-1} = -\bar{V}\left(\frac{\partial P}{\partial\bar{V}}\right)_T = \frac{\bar{V}RT}{\left(\bar{V} - b\right)^2} - \frac{2a}{\bar{V}^2}$$
+
+Plugging both $\alpha$ and $\kappa$ into the expression for $\bar{C}_P - \bar{C}_V$ and simplifying, we get:
+
+$$\bar{C}_P - \bar{C}_V = \frac{R}{1 - \frac{2a}{RT}\frac{\left(\bar{V} - b\right)^2}{\bar{V}^3}}$$
+
+\hrule\vspace{0.5cm}

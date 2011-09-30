@@ -1,0 +1,95 @@
+\opage{
+\otitle{1.10 Partial molar properties (gas mixtures)}
+
+\vspace*{0.2cm}
+
+\otext
+A function is said to be \underline{homogenous of degree $k$} if:
+
+\aeqn{1.34}{f(\lambda x_1, \lambda x_2, ..., \lambda x_N) = \lambda^k f(x_1, x_2, ..., x_N)}
+
+All \textit{extensive variables} are homogeneous of degree $k = 1$:
+
+\aeqn{1.35}{V(\lambda n_1, \lambda n_2, ..., \lambda n_N) = \lambda^1V(n_1, n_2, ..., n_N) = \lambda V(n_1, n_2, ..., n_N)}
+
+where $V$ is, for example, volume and $n_i$'s are amounts of gases. 
+
+\vspace*{0.3cm}
+
+All \textit{intensive variables} are homogeneous of degree zero ($k = 0$):
+
+\aeqn{1.36}{T(\lambda n_1, \lambda n_2, ..., \lambda n_N) = \lambda^0 T(n_1, n_2, ..., n_N) = T(n_1, n_2, ..., n_N)}
+
+\vspace*{0.4cm}
+
+\textbf{Euler's theorem.} If function $f$ is homogeneous of degree $k$ then the following holds:
+
+\aeqn{1.37}{kf(x_1,x_2,...,x_N) = \sum\limits_{i=1}^{N}x_i\left(\frac{\partial f(x_1,x_2,...,x_N)}{\partial x_i}\right)}
+
+\otext
+\textbf{Proof.} Function $f$ is homogenous with degree $k$:
+
+$$f(\lambda x_1, \lambda x_2, ..., \lambda x_N) = \lambda^k f(x_1, x_2, ..., x_N)$$
+}
+
+\opage{
+
+\otext
+Differentiate both sides with respect to $\lambda$ and apply the chain rule:
+
+$$\sum\limits_{i=1}^{N}\left\lbrace\frac{\partial f(\lambda x_1, \lambda x_2, ..., \lambda x_N)}{\partial (\lambda x_i)}\times\umark{\frac{\partial(\lambda x_i)}{\partial\lambda}}{=x_i}\right\rbrace = k\lambda^{k-1}f(x_1,x_2,...,x_N)$$
+
+This holds for all values of $\lambda$ and therefore we can choose $\lambda = 1$:
+
+$$\sum\limits_{i=1}^{N}\frac{\partial f(x_1,x_2,...,x_N)}{\partial x_i}\times x_i = kf(x_1,x_2,...,x_N)$$
+
+This completes the proof. If we apply this to volume $V$ ($k = 1$), we have:
+
+\vspace*{-0.2cm}
+
+\beqn{1.38}{V = \left(\frac{\partial V(n_1, n_2, ..., n_N)}{\partial n_1}\right)_{T,P,\lbrace n_j\rbrace_{j\ne 1}}\times n_1 +  ...}
+{+ \left(\frac{\partial V(n_1, n_2, ..., n_N)}{\partial n_N}\right)_{T,P,\lbrace n_j\rbrace_{j\ne N}}\times n_N = \bar{V}_1n_1 + \bar{V}_2n_2 + ... + \bar{V}_Nn_N}
+
+where $V_i$ are referred to as partial molar volumes (m$^3$ / mol):
+
+\aeqn{1.39}{\bar{V}_i = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}}}
+
+}
+
+\opage{
+
+\otext
+Partial molar volume tells us in practice how much the volume changes when a small amount of gas component $i$ is added to the gas mixture ($P$, $T$ and the amounts of other components remain constant). In terms of differentials:
+
+\aeqn{1.39a}{dV = \bar{V}_idn_i}
+
+\vspace*{-0.2cm}
+
+where $dn_i$ is an infinitesimal change in the amount of component $i$ and $dV$ is the change in total volume occupied by the gas mixture. The total differential combining all the components is:
+
+\vspace*{-0.2cm}
+
+\aeqn{1.40}{dV = \bar{V}_1dn_1 + \bar{V}_2dn_2 + ... + \bar{V}_ndn_N}
+
+The non-differential form is convenient to write in terms of mole fractions ($x_i$):
+
+\aeqn{1.41}{V = V_1 x_1 + V_2 x_2 + ... + V_N x_N}
+
+This result can be obtained by dividing both sides of Eq. (\ref{eq1.38}) by $n$.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the partial molar volume of a gas in an ideal gas mixture.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The volume of an ideal gas mixture is: $V = \frac{RT}{P}\left(n_1 + n_2 + ... + n_N\right)$.
+The partial molar volumes can be calculated by using Eq. (\ref{eq1.39}):
+
+$$\bar{V}_i = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \frac{RT}{P}$$
+
+\vspace*{-0.2cm}
+
+All of the gases in the mixture have identical partial molar volumes. This is not true for nonideal gases or liquids.
+
+}

@@ -1,0 +1,138 @@
+\opage{
+\otitle{2.5 Electron spin}
+
+\begin{columns}
+\hspace*{-2cm}
+\begin{column}{5cm}
+\begin{columns}
+\begin{column}{2cm}
+\operson{walter_gerlach}{0.15}{Walter Gerlach (1889 - 1979)}
+\end{column}
+\hspace*{-0.5cm}
+\begin{column}{3cm}
+\operson{otto_stern}{0.265}{Otto Stern (1889 - 1979), Nobel price 1943}
+\end{column}
+\end{columns}
+\operson{ukg}{0.15}{\vspace*{0.1cm}
+L: George Uhlenbeck (1900 - 1988),\\
+M: Hendrik Kramers (1894 - 1952),\\
+\vspace*{-0.1cm}
+R: Samuel Goudsmit (1902 - 1978).}
+\end{column}\hspace*{-1.5cm}\vline
+\hspace*{0.5cm}
+\begin{column}{4cm}
+
+\otext
+\underline{Stern-Gerlach experiment:}\\
+
+\ofig{stern-gerlach-exp}{0.3}{}
+
+\otext
+Note that silver atoms have one unpaired electron.\\
+
+\vspace*{0.3cm}
+ 
+The electron appears to have an intrinsic magnetic moment, which originates from electron spin.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+The Schr\"odinger equation does not account for electron spin. The concept of electron spin
+originates from Dirac's relativistic equation. However, it can be included in the Schr\"odinger
+equation as an extra quantum number ($s$). Furthermore, it appears to follow the general laws of angular momentum.
+
+\otext
+The spin angular momentum vector $\vec{S}$ has a magnitude: $|\vec{S}| = S = \sqrt{s(s+1)}\hbar$
+where $s$ is the spin quantum number ($\frac{1}{2}$). A crude way of thinking about the origin of the spin
+angular momentum is to consider the magnetic moment to arise from the internal spinning
+motion of the electron about its own axis. However, this is not exactly true because electrons
+have internal structure that we have ignored here.
+
+\otext
+To summarize the behavior of electron spin angular momentum:
+
+\aeqn{10.44}{S^2 = s(s+1)\hbar^2 = \frac{3}{4}\hbar^2\textnormal{ (since }s = \frac{1}{2}\textnormal{)}}
+
+\aeqn{10.45}{S_z = m_s\hbar\textnormal{ with }m_s = \pm\frac{1}{2}\textnormal{ (}+\frac{1}{2} = \textnormal{``spin up''; }-\frac{1}{2}
+= \textnormal{``spin down'')}}
+
+The corresponding operators are denoted by $\hat{S}_z$ and $\hat{S}^2$. How about the eigenfunctions?
+
+\otext
+The eigenfunctions are denoted by $\alpha$ and $\beta$ and we don't write down their specific forms.
+The following relations apply for these eigenfunctions:
+
+}
+
+\opage{
+
+\otext
+\aeqn{10.46}{\hat{S}^2\alpha\equiv \hat{S}^2|\alpha\rangle = \frac{1}{2}\left(\frac{1}{2} + 1\right)\hbar^2\alpha = \frac{3}{4}\hbar^2\alpha\equiv\frac{3}{4}\hbar^2|\alpha\rangle}
+
+\aeqn{10.47}{\hat{S}^2\beta\equiv \hat{S}^2|\beta\rangle = \frac{1}{2}\left(\frac{1}{2} + 1\right)\hbar^2\beta = \frac{3}{4}\hbar^2\beta\equiv\frac{3}{4}\hbar^2|\beta\rangle}
+
+\aeqn{10.48}{\hat{S}_z\alpha\equiv \hat{S}_z|\alpha\rangle = +\frac{1}{2}\hbar\alpha\equiv +\frac{1}{2}\hbar |\alpha\rangle}
+
+\aeqn{10.49}{\hat{S}_z\beta\equiv \hat{S}_z|\beta\rangle = -\frac{1}{2}\hbar\beta\equiv -\frac{1}{2}\hbar |\beta\rangle}
+
+Note that all the following operators commute: $\hat{H}$, $\hat{L}^2$, $\hat{L}_z$, $\hat{S}^2$, and $\hat{S}_z$. This means that they all can be specified simultaneously. The spin eigenfunctions are taken to be orthonormal:
+
+\aeqn{10.50}{\int\alpha^*\alpha d\sigma\equiv\langle\alpha|\alpha\rangle = \int\beta^*\beta d\sigma\equiv\langle\beta|\beta\rangle = 1}
+
+\aeqn{10.51}{\int\alpha^*\beta d\sigma\equiv\langle\alpha|\beta\rangle = \int\beta^*\alpha d\sigma\equiv\langle\beta|\alpha\rangle = 0}
+
+where the integrations are over variables that the spineigen functions depend on.
+Note that we have not specified the actual forms these eigenfunctions. We have only
+stated that they follow from the rules of angular momentum. A complete wavefunction
+for a hydrogen like atom must specify also the spin part. The total wavefunction is then a product of the spatial
+wavefunction and the spin part.
+
+}
+
+\opage{
+
+% TODO: Specify how S_x and S_y operate on spin functions.
+
+\otext
+Note that analogously, the $\hat{S}_x$ and $\hat{S}_y$ operators can be defined. These do not commute with $\hat{S}_z$.
+Because electrons have spin angular momentum, the unpaired electrons in silver atoms (Stern-Gerlach experiment)
+produce an overall magnetic moment (``the two two spots of silver atoms''). The spin magnetic moment is proportional to its spin angular momentum (compare with \ref{eq10.36}):
+
+\aeqn{10.52}{\vec{\hat{\mu}}_S = -\frac{g_ee}{2m_e}\vec{\hat{S}}}
+
+where $g_e$ is the free electron $g$-factor (2.002322 from quantum electrodynamics). The $z$-component of the spin magnetic moment is ($z$ is the quantiziation axis):
+
+\aeqn{10.53}{\hat{\mu}_z = -\frac{g_ee}{2m_e}\hat{S}_z}
+
+Since $S_z$ is given by \ref{eq10.45}, we have:
+
+\aeqn{10.54}{\mu_z = -\frac{g_ee\hbar}{2m_e}m_s = -g_e\mu_Bm_s}
+
+Thus the total energy for a spin in an external magnetic field is:
+
+\aeqn{10.55}{E = g_e\mu_Bm_sB}
+
+where $B$ is the magnetic field strength (in Tesla).
+
+}
+
+\opage{
+
+\otext
+By combining the contributions from the hydrogenlike atom Hamiltonian and the orbital
+and electron Zeeman terms, we have the total Hamiltonian:
+
+\aeqn{10.56}{\hat{H} = \hat{H}_0 + \frac{eB}{2m_e}\hat{L}_z + \frac{g_eeB}{2m_e}\hat{S}_z = \hat{H}_0 + \frac{eB}{2m_e}\left(\hat{L}_z + g_e\hat{S}_z\right)}
+
+The eigenvalues of this operator are (derivation not shown):
+
+\aeqn{10.57}{E_{n,m_l,m_s} = -\frac{m_ee^4Z^2}{2(2\pi\epsilon_0)^2\hbar n^2} + \frac{eB\hbar}{2m_e}\left(m_l + g_em_s\right)}
+
+\ofig{hydrogen_zeeman}{0.5}{Splitting of hydrogenlike atom energy levels in external magnetic field}
+
+}

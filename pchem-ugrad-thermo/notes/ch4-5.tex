@@ -1,0 +1,188 @@
+\opage{
+\otitle{4.5 Fugacity and activity}
+
+\begin{columns}
+
+\begin{column}{8cm}
+
+\otext
+\underline{Idea:} Keep the basic form of the equations that were derived for ideal gases, but use an effective pressure (``fugacity'') and effective chemical potential (``activity'').
+
+\vspace*{0.3cm}
+
+Fugacity $f = f(P)$ would deviate from the real pressure $P$ at high pressures. At low pressures it approaches the real pressure:
+
+\aeqn{4.71}{\lim\limits_{P\rightarrow 0}\frac{f(P)}{P} = 1}
+
+\end{column}
+
+\begin{column}{2cm}
+
+\operson{lewis}{0.1}{Gilbert Newton Lewis, American physical chemist (1875 - 1946)}
+
+\end{column}
+
+\end{columns}
+
+For example, the Gibbs energy (Eq. (\ref{eq4.68})) in terms of fugacity is:
+
+\aeqn{4.70}{\bar{G} = \bar{G}^\circ + RT\ln\left(\frac{f}{P^\circ}\right)}
+
+\otext
+
+Note that fugacity has the units of pressure. Also, for a real gas, it is directly related to the Gibbs energy. If the equation of state for a real gas is know, it is possible to calculate the fugacity.
+
+}
+
+\opage{
+
+\otext
+\underline{Derivation of expression for fugacity for a real gas at constant temperature:}
+
+\vspace*{0.2cm}
+
+First recall Eq. (\ref{eq4.38}): $V = \left(\frac{\partial G}{\partial P}\right)_{T,\lbrace n_i\rbrace}$
+
+\vspace*{0.2cm}
+
+At constant temperature: $d\bar{G} = \bar{V}dP$ (real gas) and $d\bar{G}^{id} = \bar{V}^{id}dP$ (ideal gas)
+
+\vspace*{0.2cm}
+
+The Gibbs energy differential between the real and ideal gases is:
+
+$$d\left(\bar{G} - \bar{G}^{id}\right) = \left(\bar{V} - \bar{V}^{id}\right)dP$$
+
+\vspace*{0.2cm}
+
+Integration of both sides gives:
+
+\aeqn{4.72}{\int\limits_{G(P^*)}^{G(P)}d\left(\bar{G} - \bar{G}^{id}\right) = \int\limits_{P^*}^{P}\left(\bar{V} - \bar{V}^{id}\right)dP}
+
+Performing the integration yields:
+
+\aeqn{4.73}{\left(\bar{G} - \bar{G}^{id}\right)_P - \left(\bar{G} - \bar{G}^{id}\right)_{P^*} = \int\limits_{P^*}^{P}\left(\bar{V} - \bar{V}^{id}\right)dP}
+
+Letting $P^*\rightarrow 0$ makes $\bar{G} \rightarrow \bar{G}^{id}$ and:
+
+\aeqn{4.74}{\left(\bar{G} - \bar{G}^{id}\right) = \int\limits_{0}^{P}\left(\bar{V} - \bar{V}^{id}\right)dP}
+
+}
+
+\opage{
+
+\otext
+Using Eq. (\ref{eq4.70}) for the real gas, Eq. (\ref{eq4.68}) for the ideal gas and inserting them into Eq. (\ref{eq4.74}) we have:
+
+\aeqn{4.75}{\ln\left(\frac{f}{P}\right) = \frac{1}{RT}\int\limits_{0}^{P}\left(\bar{V} - \bar{V}^{id}\right)dP\textnormal{ (note: }\bar{G}^\circ\textnormal{ is the same for both gases)}}
+
+Exponentiating both sides gives:
+
+\aeqn{4.76}{\phi \equiv \frac{f}{P} = \exp\left[\frac{1}{RT}\int\limits_{0}^{P}\left(\bar{V} - \bar{V}^{id}\right)dP\right]}
+
+where $\phi$ is called the fugacity coefficient. Next we introduce the molar volumes for the real and ideal gases (see Eqs. (\ref{eq1.3}) and (\ref{eq1.24})):
+
+$$\bar{V} = \frac{RTZ}{P}\textnormal{ and }\bar{V}^{id} = \frac{RT}{P}$$
+
+When these are inserted into Eq. (\ref{eq4.76}), we get:
+
+\aeqn{4.77}{\phi = \frac{f}{P} = \exp\left[\frac{1}{RT}\int\limits_{0}^{P}\left(\frac{RTZ}{P} - \frac{RT}{P}\right)dP\right] = \exp\left[\int\limits_{0}^{P}\frac{Z - 1}{P}dP\right]}
+
+\underline{Note:} The compressibility factor $Z$ depends on pressure, $Z = Z(P)$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} What is the expression for the fugacity when the compressibility factor is expanded as a power series?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The power series expansion is given by Eq. (\ref{eq1.11}):
+
+$$Z = 1 + B'P + C'P^2 + ...$$
+
+Inserting this into Eq. (\ref{eq4.77}), we get:
+
+$$f = P\exp\left[\int\limits_0^P\frac{Z - 1}{P}dP\right] = P\exp\left[\int\limits_0^P\frac{B'P + C'P^2 + ...}{P}dP\right]$$
+$$= P\exp\left[\int\limits_0^P\left(B' + C'P + ...\right)dP\right] = P\exp\left[B'P + \frac{C'P^2}{2} + ...\right]$$
+
+\hrulefill
+
+\textbf{Example.} What is the expression for the fugacity of a van der Waals gas?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The compressibility factor of a van der Waals gas is given by Eq. (\ref{eq1.24}):
+
+$$Z = 1 + \frac{1}{RT}\left(b - \frac{a}{RT}\right)P\textnormal{ (to first order in }P\textnormal{)}$$
+
+}
+
+\opage{
+
+\otext
+Just like in the previous example, we insert the expression for $Z$ into Eq. (\ref{eq4.77}):
+
+$$f = P\exp\left[\int\limits_0^P\frac{Z-1}{P}dP\right] = P\exp\left[\frac{1}{RT}\int\limits_0^P\left(b - \left(\frac{a}{RT}\right)\right)dP\right]$$
+$$= P\exp\left[\frac{P}{RT}\left(b - \frac{a}{RT}\right)\right]$$
+
+\hrulefill
+
+\textbf{Example.} Given that the van der Waals constants of N$_2$ are $a = 1.408$ L$^2$ bar mol$^{-2}$ and $b = 0.03913$ L mol$^{-1}$, estimate the fugacity of the gas at 50 bar and 298 K.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Insert the constants into the above expression (previous example):
+
+$$f = P\exp\left[\frac{P}{RT}\left(b - \frac{a}{RT}\right)\right]$$
+$$= \left(50\textnormal{ bar}\right)\times\exp\left\lbrace\left(\frac{50\textnormal{ bar}}{\left(0.083145\textnormal{ L bar K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(298\textnormal{ K}\right)}\right)\right.$$
+$$\left.\times\left[\left(0.03913\textnormal{ L mol}^{-1}\right) - \frac{1.408\textnormal{ L}^2\textnormal{ bar mol}^{-2}}{\left(0.083145\textnormal{ L bar K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(298\textnormal{ K}\right)}\right]\right\rbrace$$
+$$=48.2\textnormal{ bar}$$
+
+}
+
+\opage{
+
+\otext
+\underline{Note:} All thermodynamic tables refer to the ideal gas pressure $P$ instead of the fugacity. In general, the fugacity can be either smaller (at low $P$) or higher than (at high $P$) the true pressure $P$. This can be seen by inspecting the graph shown in the first chapter where we plotted $Z$ as a function of $P$. There $Z$ may take values on either side of 1, which may make the exponent term in the fugacity expression (Eq. (\ref{eq4.77})) either negative, zero, or positive.
+
+\ofig{ideal-vs-real}{0.6}{}
+
+Even though we have not discussed the chemical potential in detail yet, we conclude that the same idea can be applied to the chemical potential as well (cf. Eq. (\ref{eq4.70})):
+
+\aeqn{4.78}{\mu_i = \mu_i^\circ + RT\ln\left(a_i\right)}
+
+where $\mu_i$ is the chemical potential and $a_i$ is the activity. The activity is dimensionless, and $a_i = 1$ in the reference state for which $\mu_i = \mu_i^\circ$.
+
+}
+
+\opage{
+
+\otext
+\begin{tabular}{ll}
+For real gases: & $a_i = \frac{f_i}{P^\circ}$\\
+& \\
+For ideal gases: & $a_i = \frac{P_i}{P^\circ}$\\
+& \\
+For pure liquids and solids ($P \propto P^\circ$): & $a_i \approx 1$\\
+\end{tabular}
+
+\vspace*{0.3cm}
+
+If the molar volume is assumed to be constant (i.e., liquids and solids), we can integrate one of the Maxwell equations (Eq. (\ref{eq4.48})):
+
+$$\left(\frac{\partial \mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace} = \bar{V}_i$$
+
+Integration of this expression yields:
+
+\aeqn{4.79}{\mu_i(T,P) = \mu_i^\circ + \bar{V}_i\left( P - P^\circ\right)}
+
+Note that we assumed that $T$ and $V$ are constants during the integration over $P$. Comparison of Eqs. (\ref{eq4.79}) with (\ref{eq4.78}) shows that:
+
+\beqn{4.80}{RT\ln\left(a_i\right) = \bar{V}_i\left( P - P^\circ\right)}{\Rightarrow a_i = e^{\bar{V}_i\left( P - P^\circ\right)/\left( RT\right)}}
+
+Later we will see that when dealing with solutions, we write activity as a product of activity coefficient and concentration.
+
+}

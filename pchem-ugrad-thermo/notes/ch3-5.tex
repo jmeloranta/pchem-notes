@@ -1,0 +1,95 @@
+\opage{
+\otitle{3.5 Entropy of mixing ideal gases}
+
+\otext
+Consider mixing of two species of ideal gas:
+
+\ofig{mixing}{0.3}{}
+
+If the wall is just removed, we have clearly an irreversible process. However, in order to calculate change in entropy, we need a reversible path ($V = V_1 + V_2$):
+
+\begin{enumerate}
+\item Isothermal reversible expansion of each gas to the final volume $V$.
+\item Reversible mixing of gases at constant volume $V$.
+\end{enumerate}
+
+Segment 1 is understandable, but how can we carry out segment 2 reversibly?
+
+\vspace*{0.2cm}
+
+\underline{Consider step 2 first (i.e. both gases have been already expanded to $V$):}
+
+}
+
+\opage{
+
+\begin{columns}
+
+\begin{column}{2cm}
+\ofig{mixing2}{0.7}{}
+
+\end{column}
+
+\begin{column}{6cm}
+
+\otext
+
+Permeable membranes overlap. The non-permeable membrane is all the way to the right.
+
+\vspace*{0.7cm}
+
+The non-permeable membrane is moved towards the left end. At the same time the ``Gas 1'' permeable membrane is moved towards the left end. The ``Gas 2'' permeable membrane is kept at the center.
+
+\vspace*{0.4cm}
+
+The ``Gas 1'' permeable membrane is finally moved all the way to the left. The non-permeable membrane has been moved to the center. ``Gas 2'' and non-permeable membranes are on top of each other.
+
+\end{column}
+
+\end{columns}
+
+\begin{tabular}{ll|l}
+Dashed line     & = Membrane permeable to ``Gas 1'' & \underline{This process is reversible.}\\
+Dotted line     & = Membrane permeable to ``Gas 2'' & It can proceed in both\\
+Continuous line & = Non-permeable membrane & directions.\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+Is there any $PV$-work involved in (frictionless) movement of the membranes?
+
+\vspace*{0.2cm}
+
+No, consider the following figure:
+
+\ofig{mixing3}{0.9}{}
+
+When the two membranes move to the left, there are equal pressures on both sides: Gas 1 ($P_1$) + Gas 2 ($P_2$) and Gases 1 and 2 ($P_1 + P_2$). Both pressure and volume are constant during the process and hence no work is done: $w = 0$.
+
+}
+
+\opage{
+
+\otext
+Since we are dealing with ideal gases at constant temperature, the change in internal energy ($\Delta U$) is zero. Recall that for ideal gases the internal energy depends only on temperature (see Eq. (\ref{eq2.69})). Now the first law of thermodynamics ($\Delta U = q + w$) yields $q = -w = 0$ ($w = 0$ from the previous page). No changes in heat also means that there is no change in entropy and hence, for this segment, $\Delta S = 0$.
+
+\vspace*{0.2cm}
+
+\underline{We still need to consider the first segment (step 1). Now Eq. (\ref{eq3.35}) can be applied:}
+
+\aeqn{3.41}{\textnormal{For gas 1: }\Delta S_1 = -n_1R\ln\left(\frac{V_1}{V}\right) = -n_1R\ln\left(\frac{n_1}{n_1+n_2}\right) = -n_1R\ln\left(y_1\right)}
+
+\aeqn{3.42}{\textnormal{For gas 2: }\Delta S_2 = -n_2R\ln\left(\frac{V_2}{V}\right) = -n_2R\ln\left(\frac{n_2}{n_1+n_2}\right) = -n_2R\ln\left(y_2\right)}
+
+The total change in entropy due to mixing is given as a sum:
+
+\aeqn{3.43}{\Delta S_{mixing} = -n_1R\ln\left(y_1\right) - n_2R\ln\left(y_2\right)}
+
+or, in general:
+
+\aeqn{3.44}{\Delta S_{mixing} = -R\sum\limits_{i=1}^{N_s}n_i\ln\left(y_i\right) > 0}
+
+}

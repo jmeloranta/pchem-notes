@@ -1,0 +1,71 @@
+\opage{
+\otitle{7.1 Coulomb's law, electric field, and electric potential}
+
+\otext
+The force $\vec{f}$ between two point charges (denoted by 1 and 2) is given by the Coulomb's law:
+
+\aeqn{7.1}{\vec{f} = \frac{1}{4\pi\epsilon_0\epsilon_r}\frac{Q_1Q_2}{r^2}\vec{r}}
+
+where:\\
+\begin{tabular}{ll}
+$r$   & = distance between the charges\\
+$Q_1$ & = charge of particle 1\\
+$Q_2$ & = charge of particle 2\\
+$\epsilon_0$ & = permittivity of vacuum (constant; 8.854 187 817 $\times$ 10$^{-12}$ C$^2$ N$^{-1}$ m$^{-2}$)\\
+$\epsilon_r$ & = relative permittivity (dielectric constant) of the material (solid, gas, etc.)\\
+$\vec{r}$    & = unit vector connecting charges 1 and 2.\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+When only the magnitude of the force is considered, the above equation becomes:
+
+\aeqn{7.2}{f = \frac{Q_1Q_2}{4\pi\epsilon_0\epsilon_rr^2}}
+
+The electric field strength at point 1 is given by the ratio between force and the charge $Q_1$:
+
+\aeqn{7.3}{\vec{E} = \frac{\vec{f}}{Q_1}}
+
+}
+
+\opage{
+
+\otext
+For each well behaved vector field (i.e. conservative) there is a potential $\phi$ such that:
+
+\aeqn{7.5}{\vec{E} = -\vec{\nabla}\phi}
+
+Note that here $\phi = \phi(x, y, z)$ and $E$ is a vector-field with components ($E_x(x, y, z)$, $E_y(x, y, z)$, $E_z(x, y, z)$). Gradient ($\vec{\nabla}$) is an example of a vector operator:
+
+$$\vec{\nabla} = \left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)$$
+
+\textbf{Example.} Calculate the gradient vector for function $f(x, y, z) = x^2 + y^2 + z^2$ and find the point where the length of the gradient vector becomes zero.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.}  Calculate the partial derivatives of $f$ with respect to $x$, $y$ and $z$:
+
+$$\frac{\partial f}{\partial x} = 2x, \frac{\partial f}{\partial y} = 2y, \frac{\partial f}{\partial z} = 2z$$
+$$\Rightarrow \vec{\nabla}f = \left(2x,2y,2z\right).\textnormal{ When }x = 0, y = 0, z = 0,\textnormal{ then }\left|\vec{\nabla f}\right| = 0.$$
+Note that function $f$ has its (global) minimum at this point.
+
+}
+
+\opage{
+
+\otext
+Definition of 1 Volt (V): In presence of the electric field (from $Q_2$), the difference between the electric potential at two points is equal to the work per unit charge required to move a charged test particle from one point to the other. Thus 1 V = 1 J C$^{-1}$. The choice of zero potential is arbitrary but is usually chosen to correspond to infinite separation of charges.
+
+\vspace*{0.2cm}
+
+The electric potential $\phi$ at point $r$ is the work required to bring a unit positive charge from infinity to $r$. Combining Eqs. (\ref{eq7.1}) and (\ref{eq7.5}) and integrating from infinity to $r$ gives:
+
+\aeqn{7.7}{\phi(r) = -\frac{Q_2}{4\pi\epsilon_0\epsilon_r}\int\limits_{\infty}^{r}\frac{dr'}{r'^2} = \frac{Q_2}{4\pi\epsilon_0\epsilon_r r}}
+
+In electrolyte solutions we have electroneutrality condition:
+
+\aeqn{7.8}{\sum\limits_{i=1}^{N_P}n_iz_i = 0}
+
+where $N_P$ is the number of phases, $n_i$ is the amount of ions in phase $i$ and $z_i \times e$ is the charge of ions ($e$ = charge of one proton; 1.6022 $\times$ 10$^{-19}$ C). The charge $z_i$ is positive for cations and negative for anions. For a phase to have a non-zero electric potential, there must be a small deviation from Eq. (\ref{eq7.8}) but these deviations are small and we can still say that it holds (to good approximation).
+
+}

@@ -1,0 +1,168 @@
+\opage{
+\otitle{3.1 Entropy as a state function}
+
+\otext
+The first law of thermodynamics says only that the total energy is conserved but \textit{it does not provide any information as to whether the process can proceed spontaneously.}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider gas expanding into vacuum. In practice, we know that the gas will flow from the high pressure chamber into the low pressure chamber.
+
+\ofig{joule-exp}{0.5}{}
+
+The first law for this system only states that the total energy is conserved but says nothing about which way the gas would flow.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} In practice, we know that some chemical reaction proceed \textit{spontaneously} but some may require heat in order to proceed (\textit{nonspontaneous process})
+
+\vspace*{0.2cm}
+
+\underline{Question:} How do we identify a spontaneous process?
+
+\vspace*{0.2cm}
+
+From the previous examples, it is obvious that a flow of heat is involved in these processes. Heat is, however, not a state function (i.e. $dq$ is not an exact differential). This can be seen by inspecting Eq. (\ref{eq2.45}):
+
+\aeqn{3.1}{dq_{rev} = \left(\frac{\partial U}{\partial T}\right)_VdT + \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]dV}
+
+where we consider reversible heating and $P_{ext} = P$. We will use Eq. (\ref{eq2.22}) as the test for exactness:
+
+\vspace*{-0.2cm}
+
+\aeqn{3.2}{M = \left(\frac{\partial U}{\partial T}\right)_V\textnormal{ and }N = P + \left(\frac{\partial U}{\partial V}\right)_T}
+
+and the required partial derivatives are then ($U$ is well behaving, i.e. derivatives exist and are continuous):
+
+\beqn{3.3}{\left(\frac{\partial M}{\partial V}\right)_T = \left(\frac{\partial}{\partial V}\left(\frac{\partial U}{\partial T}\right)_V\right)_T = \left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V}
+{\left(\frac{\partial N}{\partial T}\right)_V = \left(\frac{\partial P}{\partial T}\right)_V + \left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V}
+
+Subtracting the two partial derivatives gives:
+
+}
+
+\opage{
+
+\otext
+\aeqn{3.4}{\left(\frac{\partial N}{\partial T}\right)_V - \left(\frac{\partial M}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V}
+
+Based on this $dq_{rev}$ would only be exact if $\left(\frac{\partial P}{\partial T}\right)_V = 0$. \textit{This does not hold even for ideal gases:} $\left(\frac{\partial P}{\partial T}\right)_V = \frac{nR}{V}$ (from $PV = nRT$). Thus line integral of $dq_{rev}$ depends on the path and $q_{rev}$ is not a state function of the system. Thus it is not useful to consider heat as an indicator for a spontaneity of the process.
+
+\vspace*{0.2cm}
+
+Recall that some times division of an inexact differential by a suitable term (integrating factor) may result in exact differential. In this case it turns out that division by $T$ (temperature) yields an exact differential:
+
+\aeqn{3.5}{\frac{dq_{rev}}{T} = \umark{\frac{(\partial U / \partial T)_V}{T}}{= M}dT + \umark{\left[\frac{P}{T} + \frac{(\partial U / \partial V)_T}{T}\right]}{= N}dV}
+
+By taking the partial derivatives required in the exactness test and subtracting $\left(\partial M / \partial V\right)_T$ from $\left(\partial N / \partial T\right)_V$ (denoted by $\Delta$) we get:
+
+\aeqn{3.6}{\Delta = \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} - \frac{1}{T^2}\left(\frac{\partial U}{\partial V}\right)_T}
+
+At least for ideal gases $\Delta = 0$ since $\left(\partial U / \partial V\right)_T = 0$ (Joule's experiment) and $PV = nRT$. Thus $dq_{rev} / T$ is exact for ideal gases.
+
+}
+
+\opage{
+
+\otext
+It will turn out that the $dq_{rev} / T$ is the quantity that we are looking for (entropy). It is a useful quantity because it is a state function of the system (no path dependency). Note that we have only shown this to hold for ideal gases, a more detailed consideration will be given later.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Show that the values of the line integral for $dq_{rev} / T$ are identical along the following paths (ideal gas, reversible processes, $n = 1$; one mole of gas):
+
+\vspace*{0.2cm}
+
+\underline{Closed path 1:}\\
+Segment A: ($T_1$, $P_1$, $V_1$) -- ($T_1$, $P_2$, $V_2$) isothermal\\
+Segment B: ($T_1$, $P_1$, $V_1$) -- ($T_2$, $P_3$, $V_2$) adiabatic\\
+Segment C: ($T_2$, $P_3$, $V_2$) -- ($T_1$, $P_2$, $V_2$) constant volume\\
+\vspace*{0.2cm}
+\underline{Closed path 2:}\\
+Segment A: ($T_1$, $P_1$, $V_1$) -- ($T_1$, $P_2$, $V_2$) isothermal\\
+Segment D: ($T_1$, $P_1$, $V_1$) -- ($T_3$, $P_1$, $V_2$) constant pressure\\
+Segment E: ($T_3$, $P_1$, $V_2$) -- ($T_1$, $P_2$, $V_2$) constant volume\\
+
+\vspace*{-0.2cm}
+
+\ofig{two-paths2}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} Calculate $dq_{rev} / T$ along each segment. And sum the contributions from each segment.\\
+
+\vspace*{0.2cm}
+
+\underline{Path 1.} (``contribution from A + B + C = 0'')\\
+
+\vspace*{0.2cm}
+
+\textit{Segment A:} The temperature is constant along this path. For an ideal gas, the internal energy depends only on the temperature (Eq. (\ref{eq2.69})) and therefore $dU = 0$. Hence along this path (Eq. (\ref{eq2.9})): $dq_{rev} = -dw = PdV = (RT / V) dV$. Division of both sides by $T$ and integration gives:
+
+$$\Delta S = \int\limits_{q_2}^{q_1}\frac{dq_{rev}}{T} = R\int\limits_{V_2}^{V_1}\frac{dV}{V} = R\ln\left(\frac{V_1}{V_2}\right)$$
+
+\textit{Segment B:} Since the change is adiabatic, $dq_{rev} = 0$ and the corresponding line integral over $dq_{rev} / T$ is zero as well.
+
+\vspace*{0.2cm}
+
+\textit{Segment C:} Because volume is constant (``constant volume process''), $dw_{rev} = 0$. The first law (Eqs. (\ref{eq2.9}) and (\ref{eq2.47})) now states that $dq_{rev} = dU = C_V dT$. Division by $T$ and integration along the segment gives:
+
+$$\Delta S = \int\limits_{q_3}^{q_2}\frac{dq_{rev}}{T} = \int\limits_{T_2}^{T_1}\frac{C_V}{T}dT = C_V\int\limits_{T_2}^{T_1}\frac{dT}{T} = C_V\ln\left(\frac{T_1}{T_2}\right)$$
+
+Note that $C_V$ is independent of temperature (ideal gas; Eq. (\ref{eq2.71})).
+
+}
+
+\opage{
+
+\otext
+Summing along the path B + C gives just $C_V \ln(T_1 / T_2)$ and the contribution along A is $R\ln(V_2 / V_1)$. Thus we have (using Eq. (\ref{eq2.82})):
+
+$$\oint dS = \oint\frac{dq_{rev}}{T} = C_V\ln\left(\frac{T_1}{T_2}\right) - R\ln\left(\frac{V_2}{V_1}\right) = 0$$
+
+Note that an alternative form for Eq. (\ref{eq2.82}) is (considering now segment B):
+
+$$\left(\frac{T_1}{T_2}\right) = \left(\frac{V_2}{V_1}\right)^{R/C_V}$$
+
+\vspace*{0.2cm}
+
+\underline{Path 2.} (``contribution from D + E + A = 0'')\\
+
+\vspace*{0.2cm}
+
+\textit{Segment A}: The same as in the previous path.\\
+
+\vspace*{0.2cm}
+
+\textit{Segment D:} At constant pressure $dq_{rev} / T = dH / T$ (Eq. (\ref{eq2.57})). According to Eq. (\ref{eq2.61}), $dH / T = (C_P / T) dT$. Integration of the expression from $T_1$ to $T_3$ gives ($C_P$ is constant for ideal gases; Eq. (\ref{eq2.72})):
+
+$$\Delta S = \int\limits_{q_1}^{q_3}\frac{dq_{rev}}{T} = \int\limits_{T_1}^{T_3}\frac{C_P}{T}dT = C_P\ln\left(\frac{T_3}{T_1}\right)$$
+
+}
+
+\opage{
+
+\otext
+\textit{Segment E:} At constant volume, $dw = 0$. The first law of thermodynamics then gives (Eqs. (\ref{eq2.9}) and (\ref{eq2.47})):
+
+$$\Delta S = \int\limits_{q_3}^{q_1}\frac{dq_{rev}}{T} = \int\limits_{U_3}^{U_1}\frac{dU}{T} = \int\limits_{T_3}^{T_1}\frac{C_V}{T}dT = C_V\ln\left(\frac{T_1}{T_3}\right)\textnormal{ (constant }C_V\textnormal{ assumed)}$$
+
+The total contribution over the closed loop along ``D + E + A'' segments is:
+
+$$\oint dS = \oint\frac{dq_{rev}}{T} = C_P\ln\left(\frac{T_3}{T_1}\right) + C_V\ln\left(\frac{T_1}{T_3}\right) - R\ln\left(\frac{V_2}{V_1}\right)$$
+$$= \ln\left(\frac{T_3}{T_1}\right)\times\umark{\left(C_P - C_V\right)}{= R\textnormal{ (Eqs. (\ref{eq2.71}, \ref{eq2.72}))}} - R\ln\left(\frac{V_2}{V_1}\right)$$
+$$= R\times\left(\ln\left(\frac{T_3}{T_1}\right) - \ln\left(\frac{V_2}{V_1}\right)\right)$$
+
+In order to proceed, we note that the pressure at the end points of segment D is constant. By using the ideal gas law for both end points, we get:
+
+$$\frac{T_3}{T_1} = \frac{V_2}{V_1}$$
+
+Thus the logarithm terms cancel and the integral is zero.
+
+}

@@ -1,0 +1,63 @@
+\opage{
+\otitle{5.7 Equilibrium constants for gas reactions written in terms of concentrations}
+
+\otext
+Previously the equilibrium constants were written in terms of pressure. Now the task is to express the equilibrium constant constant in terms of concentrations for gas phase reactions.
+
+\vspace*{0.2cm}
+
+$K_P$ = Equilibrium constant calculated using partial pressures.\\
+$K_c$ = Equilibrium constant calculated using concentrations.\\
+
+\vspace*{0.1cm}
+
+Below we will show that usually $K_P \ne K_c$ and derive the relation between them. First we note that partial pressures are related to concentrations $c_i$ by $P_{i,eq} = n_{i,eq}RT / V = c_{i,eq}RT$ and then Eq. (\ref{eq5.20}) gives:
+
+\aeqn{5.55}{K_P = \prod\limits_{i=1}^{N_s}\left(\frac{c_iRT}{P^\circ}\right)^{v_i}}
+
+Next we introduce standard concentration denoted by $c^\circ$, which is 1 mol dm$^{-3}$ and insert this into Eq. (\ref{eq5.55}):
+
+\vspace*{-0.3cm}
+
+\aeqn{5.56}{K_P = \prod\limits_{i=1}^{N_s}\left[\left(\frac{c_i}{c^\circ}\right)\left(\frac{c^\circ RT}{P^\circ}\right)\right]^{v_i} = \left(\frac{c^\circ RT}{P^\circ}\right)^v\prod\limits_{i=1}^{N_s}\left(\frac{c_i}{c^\circ}\right)^{v_i} = \left(\frac{c^\circ RT}{P^\circ}\right)^v K_c}
+
+\vspace*{-0.3cm}
+
+where $v = \sum\limits_{i=1}^{N_s}v_i$. Also $K_c$ is defined as:
+
+\aeqn{5.57}{K_c = \prod\limits_{i=1}^{N_s}\left(\frac{c_i}{c^\circ}\right)^{v_i}}
+
+}
+
+\opage{
+
+\otext
+Note that $K_c$ is also a function of temperature only (just like $K_P$).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the value of the equilibrium constant $K_c$ for the dissociation of ethane into methyl radicals at 1000 K? The reaction is: C$_2$H$_6(g)$ = 2CH$_3(g)$. $\Delta_f G^\circ(\textnormal{CH}_3) = 159.8\textnormal{ kJ mol}^{-1}$ and $\Delta_fG^\circ(\textnormal{C}_2\textnormal{H}_6) = 109.6\textnormal{ kJ mol}^{-1}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we calculate $\Delta_r G^\circ$ by Eq. (\ref{eq5.37}):
+
+\vspace*{-0.4cm}
+
+$$\Delta_rG^\circ = 2\Delta_f G^\circ(\textnormal{CH}_3) - \Delta_fG^\circ(\textnormal{C}_2\textnormal{H}_6) = 2\left(159.8\textnormal{ kJ mol}^{-1}\right) - \left(109.6\textnormal{ kJ mol}^{-1}\right)$$
+$$ = 210.1\textnormal{ kJ mol}^{-1}$$
+
+Now Eq. (\ref{eq5.13}) gives $K_P$:
+
+\vspace*{-0.4cm}
+
+$$K_P = \exp\left(-\frac{\Delta_rG^\circ}{RT}\right) = \exp\left(\frac{-210.1\textnormal{ kJ mol}^{-1}}{(8.315\times 10^{-3}\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1})(10^3\textnormal{ K})}\right) = 1.062\times 10^{-11}$$
+
+Finally convert from $K_P$ to $K_c$ by Eqs. (\ref{eq5.56}) and (\ref{eq5.57}):
+
+$$K_c = \frac{\left(\left[\textnormal{CH}_3\right] / c^\circ\right)^2}{\left[\textnormal{C}_2\textnormal{H}_6\right] / c^\circ} = K_P \frac{P^\circ}{c^\circ RT} = \left(1.062\times 10^{-11}\right)$$
+$$\times \frac{1\textnormal{ bar}}{\left(1\textnormal{ mol L}^{-1}\right)\left(0.08315\textnormal{ L bar K}^{-1}\textnormal{ mol}^{-1}\right)\left( 1000\textnormal{ K}\right)} = 1.278\times 10^{-13}$$
+
+Note that in above $c^\circ$ is required to get the right unit cancellation for $K_c$.
+
+}

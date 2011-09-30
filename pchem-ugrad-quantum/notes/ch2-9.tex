@@ -1,0 +1,61 @@
+\opage{
+\otitle{2.9 Hartree-Fock self-consistent field method}
+
+\otext
+Even approximate methods for many-electron atoms become very complicated to treat with a pen and paper.
+Fortunately modern computers can be programmed to solve this type of problems efficiently. Such approach relies
+heavily on the methods of numerical analysis.
+
+\begin{columns}
+\begin{column}{7.6cm}
+
+\otext
+
+In 1928 Douglas Hartree introduced the self-consistent field (SCF) method. This method can be used to calculate an
+approximate wavefunction and energy for any ground-state atom (or molecule).
+
+\otext
+If the interelectron repulsion terms in the Schr\"odinger equation are ignored, the $n$-electron equation can be separated into $n$ one-electron equations (just like was done for He). The approximate wavefunction is then a product of the one-electron wavefunctions (orbitals).
+\end{column}
+\vline\hspace*{0.1cm}\begin{column}{2cm}
+\operson{hartree}{0.2}{Douglas Hartree (1897 - 1958) English physicist}
+\end{column}
+\end{columns}
+
+\otext
+Hartree used a symmetric variational wavefunction corresponding to a product of the orbital functions $\phi_i$:
+
+\aeqn{10.86}{\psi = \phi_1\phi_2...\phi_n}
+
+where each orbital satisfies the hydrogenlike Schr\"odinger equation (i.e. just one electron):
+
+}
+
+\opage{
+
+\otext
+\aeqn{10.88}{-\frac{\hbar^2}{2m_e}\Delta\phi_i(x,y,z) + V_i(x,y,z)\phi_i(x,y,z) = \epsilon_i\phi_i}
+
+where $\epsilon_i$ is the energy of the orbital $i$. There are $n$ such equations for each electron
+in the atom (or molecule). The effective potential $V_i$ depends on other orbitals and
+hence the $n$ equations are coupled and must be solved iteratively. For the exact form of
+the potential, see Molecular Quantum Mechanics (3rd ed.) by Atkins and Friedman.
+The SCF process is continued until the orbitals and their energies no longer change
+during the iteration. Note that the Hartree approach is missing two important effects:
+antisymmetry of the wavefuinction and so called electron correlation (not discussed
+further here). The antisymmetry is required by the Pauli principle.
+
+\otext
+In 1930 Fock and Slater concluded that the wavefunction must be antisymmetric and
+the Hartree method should employ the Slater determinant form (Eq. (\ref{eq10.78})), which includes
+spin orbitals. This method is referred to as the Hartree-Fock (HF) method. Note that we have
+skipped all the details of the model as well as its derivation (see the previously mentioned reference for
+more information). There are number of methods (computationally very demanding) that
+can include electron correlation on top of the HF model (configuration interaction (CI) and
+coupled culsters (CC); see Introduction to Computational Chemistry by Jensen).
+Computational methods typically employ a set of Gaussian functions for describing
+the orbitals (``basis set''). The larger the basis set, the better results it gives but at the
+expense of computer time. These basis sets are typically expressed with various acronyms
+like STO-3G, 3-21G, 6-311G*, etc.
+
+}

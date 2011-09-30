@@ -1,0 +1,7 @@
+/* Evaluate associate Laguerre polynomial */ 
+
+/* Load orthopoly package */
+load(orthopoly);
+/* Generate the polynomial using gen_laguerre() function and simplify
+ * the result using ratsimp() function. */
+ratsimp(gen_laguerre(5,k,x));

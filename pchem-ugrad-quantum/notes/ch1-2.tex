@@ -1,0 +1,71 @@
+\opage{
+\otitle{1.2 The Heisenberg uncertainty principle}
+
+\otext
+\uline{Classical mechanics:} No limitations in the accuracy with which observables may be measured.\\
+\vspace*{0.2cm}
+\uline{Quantum mechanics:} Certain pairs of observables may not be observed with arbitrarily high precision simultaneously (\href{http://en.wikipedia.org/wiki/Werner_Heisenberg}{\uline{Heisenberg}}, 1927).\\
+
+\otext
+Heisenberg's \href{http://en.wikipedia.org/wiki/Uncertainty_principle}{\uline{uncertainty principle}} can be derived from the results obtained in the previous section. For simplicity, consider position ($\hat{x}$) and momentum ($\hat{p}_x$) in one dimension. Gaussian functions have the optimal properties with respect to Fourier transformation (i.e., Fourier transformation of a gaussian
+is another gaussian) and hence, without loss of generality, we can choose $\psi(x)$ to be a gaussian:
+
+\vspace*{-0.5cm}
+
+\begin{columns}
+\begin{column}{4cm}
+\ofig{gaussian}{0.2}{Localized/delocalized state}
+\end{column}
+\begin{column}{7cm}
+\aeqn{X.7}{\psi(x) = \frac{1}{(2\pi)^{1/4}\sqrt{\sigma}}\exp\left(-\frac{\left(x - \mu\right)^2}{4\sigma^2}\right)}
+
+\vspace*{-0.5cm}
+
+\otext
+where $\mu$ is the position of the gaussian and $\sigma^2$ describes the width. The choice of $\mu$ does not affect the end result and hence we set it to zero. The standard deviation in $\hat{x}$ is equal to $\sigma^2$:
+
+\aeqn{X.8}{\left(\Delta x\right)^2 = \sigma^2 \Rightarrow \Delta x = \sigma}
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+By Fourier transforming $\psi(x)$ and calculating the standard deviation for $\hat{p}_x$, we get the following result:
+
+\aeqn{X.9}{\left(\Delta p_x\right)^2 = \frac{\hbar^2}{4\sigma^2} \Rightarrow \Delta p_x = \frac{\hbar}{2\sigma} = \frac{\hbar}{2\Delta x} \Rightarrow \Delta x\Delta p_x = \frac{\hbar}{2}}
+
+Since gaussian functions are optimal for this property, it follows that any given function must satisfy the following inequality:
+
+\aeqn{X.10}{\Delta x\Delta p_x \ge \frac{\hbar}{2}}
+
+where $\Delta x$ is the standard deviation in $\hat{x}$ ($\sigma_x$) and $\Delta p_x$ the standard deviation in $\hat{p}_x$ ($\sigma_{p_x}$) (see Eq. (\ref{eqX.2}) for definition of standard deviation for an operator). Eq. (\ref{eqX.10}) is called the \textit{Heisenberg uncertainty principle} for position and momentum. Even though time is not an observable in standrard quantum mechanics, it is possible to write Eq. (\ref{eqX.10}) for time and energy conjugate pair as well:
+
+\aeqn{X.11}{\Delta t\Delta E \ge \frac{\hbar}{2}}
+
+where $\Delta t$ is the uncertainty in time and $\Delta E$ is the uncertainty in energy.
+
+\otext
+\textbf{Excercise (advanced).} Verify the expressions for $\Delta x$ and $\Delta p_x$ as given in Eqs. (\ref{eqX.8}) and (\ref{eqX.9}).
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The Heisenberg uncertainty principle basically states that if the wavefunction is narrow spatially, it must be wide in momentum (and vice versa). In practice, this means that if we try to localize a particle spatially, we loose information about its momentum. In classical physics, it is possible to exactly specify both position and momentum simultaneously.
+
+\hrulefill
+
+\textbf{Advanced topic.} The \href{http://en.wikipedia.org/wiki/EPR_paradox}{\uline{Einstein-Podolsky-Rosen (EPR) paradox}} revised our understanding of the uncertainty principle (1935):
+
+\begin{itemize}
+\item[1.] The result of a measurement performed on one part (\textbf{A}) of a quantum system has a non-local effect on the physical reality of another distant part (\textbf{B}), in the sense that quantum mechanics can predict outcomes of some measurements carried out at \textbf{B}.
+\item[2.] OR Quantum mechanics is incomplete in the sense that some element of physical reality corresponding to \textbf{B} cannot be accounted for by quantum mechanics (i.e. an extra variable is needed to account for it).
+\end{itemize}
+
+This suggests that quantum behavior is inherent to the quantum system and is not a result of a perturbation from a measurement event. The EPR paradox was originally formulated to demonstrate that quantum mechanics is flawed. Einstein always considered quantum mechanics to be incomplete as he used to say ``God doesn't play dice'' and Schr\"odinger shared the same view. Bohm later developed a non-local \href{http://en.wikipedia.org/wiki/Hidden_variable_theories}{\uline{``hidden variable'' theory}} that is consistent with quantum mechanics (see also the \href{http://en.wikipedia.org/wiki/Bell's_theorem}{\uline{Bell inequality}}).
+
+}

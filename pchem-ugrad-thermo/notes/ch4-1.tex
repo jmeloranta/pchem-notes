@@ -1,0 +1,82 @@
+\opage{
+\otitle{4.1 Fundamental equation for the internal energy}
+
+\otext
+Let's first recall what we have learned so far:
+
+\vspace*{0.2cm}
+
+\underline{The first law of thermodynamics (Eq. (\ref{eq2.9})):} $dU = \inex{dq} + \inex{dw}$\\
+\underline{The second law of thermodynamics (Eq. (\ref{eq3.15})):} $dS \ge \frac{\inex{dq}}{T}$\\
+
+\vspace*{0.2cm}
+
+Consider a closed system with only reversible $PV$-work: $dw = -PdV$ and $dS = \frac{\inex{dq}}{T}$
+
+Combining this with the 1st and 2nd laws gives: $dU = TdS - PdV$.
+
+\vspace*{0.4cm}
+
+\begin{columns}
+
+\begin{column}{8cm}
+\otext
+
+When chemical potential is included above, we get the generalized form for $dU$:
+
+\aeqn{4.7}{dU = TdS - PdV + \umark{\sum\limits_{i=1}^{N_s}\mu_i dn_i}{\textnormal{``chemical work''}}}
+
+where $N_s$ is the number of chemical species, $\mu_i$ is the chemical potential and $n_i$ is the amount of substance of species $i$.
+
+\end{column}\vline\hspace*{0.2cm}
+
+\begin{column}{2.5cm}
+\operson{willard_gibbs}{0.15}{J. Willard Gibbs, American physicist (1839 - 1903)}
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Note that $U$ depends on variables $S, V$ and $\lbrace n_i\rbrace$. These variables are called the \textit{natural variables} of $U$. The total differential of $U$ can be written as (cf. Eq. (\ref{eq1.40})):
+
+\aeqn{4.8}{dU = \left(\frac{\partial U}{\partial S}\right)_{V,\lbrace n_i\rbrace} dS + \left(\frac{\partial U}{\partial V}\right)_{S,\lbrace n_i\rbrace} dV + \sum\limits_{i=1}^{N_s}\left(\frac{\partial U}{\partial n_i}\right)_{S,V,\lbrace n_j\rbrace_{j\ne i}} dn_i}
+
+If this is compared with Eq. (\ref{eq4.7}), we can see that partial derivatives in front of $dS$, $dV$ and $dn_i$ must be equal to $T$, $-P$ and $\mu_i$, respectively:
+
+\aeqn{4.9}{T = \left(\frac{\partial U}{\partial S}\right)_{V,\lbrace n_i\rbrace}, P = -\left(\frac{\partial U}{\partial V}\right)_{S,\lbrace n_i\rbrace}, \mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{S,V,\lbrace n_j\rbrace_{j\ne i}}}
+
+Thus if we know the partial derivatives of the internal energy with respect to $S$, $V$ and $n_i$, we can calculate $T$, $P$ and $\mu_i$ using Eq. (\ref{eq4.9}).
+
+\vspace*{0.3cm}
+
+If we allow the process to be irreversible, we have to consider the inequality in the second law and keep in mind that the pressure now is really $P_{ext}$:
+
+\aeqn{4.16}{dU \le TdS - P_{ext}dV + \sum\limits_{i=1}^{N_s}\mu_i dn_i}
+
+If the entropy, volume and amounts of substance are constant, we have:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{4.17}{\left(dU\right)_{S,V,\lbrace n_i\rbrace} \le 0}
+
+This is the criterion for spontaneous change and equilibrium in the system involving $PV$-work and specified amounts of $N_s$ species. At equilibrium, $U$ at constant $S$, $V$, and $\lbrace n_i\rbrace$ must be at a minimum.
+
+\vspace*{0.2cm}
+
+If $T$, $P$, and $\mu_i$ are constant, Eq. (\ref{eq4.7}) can be integrated:
+
+\aeqn{4.18}{U = TS - PV + \sum\limits_{i=1}^{N_s} \mu_i n_i}
+
+\underline{Note:} It is not convenient to use $S$ and $V$ as variables because they not easily controlled during chemical processes.
+
+\vfill
+
+}

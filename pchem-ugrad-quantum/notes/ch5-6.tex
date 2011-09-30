@@ -1,0 +1,172 @@
+\opage{
+\otitle{5.6 Rotational spectra of polyatomic molecules}
+
+\otext
+In the following we assume that the polyatomic molecule is a rigid rotor (i.e. the centrifugal distortion is ignored). The center of mass for a molecule is defined as:
+
+\aeqn{n5.44}{\vec{R}_{cm} = \frac{\sum\limits_im_i\vec{r}_i}{\sum\limits_i m_i}}
+
+where the summation is over the nuclei in the molecule. The \textit{moment of inertia} is defined as:
+
+\aeqn{n5.45}{I = \sum\limits_i m_i\left|\vec{R}_i' - \vec{R}_{cm}\right|^2 = \sum\limits_i m_i\left|\vec{R}_i\right|^2}
+
+where $R_i'$ denotes the coordinates for nucleus $i$ with mass $m_i$. To simplify notation we used $\vec{R}_i = \vec{R}_i' - \vec{R}_{cm} = \left(x_i, y_i, z_i\right)$ where $x_i,y_i,z_i$ refer to the Cartesian components for the position of nulceus $i$ with respect to the center of mass. The moments of inertia about $x,y,$ and $z$ axes can be written as:
+
+\vspace*{-0.2cm}
+
+\aeqn{n5.46}{I_x = \sum\limits_im_i\left(y_i^2 + z_i^2\right)\textnormal{, }I_y = \sum\limits_im_i\left(x_i^2 + z_i^2\right)\textnormal{, }I_z = \sum\limits_im_i\left(x_i^2 + y_i^2\right)}
+
+\textit{Products of inertia} are defined (other combinations in a similar way):
+
+\aeqn{n5.47}{I_{xy} = I_{yx} = \sum\limits_im_ix_iy_i}
+
+}
+
+\opage{
+
+\otext
+\textit{Principal axes} are perpendicular axes chosen in such way that they all pass through the center of mass and all products of intertia vanish (see Eq. (\ref{eqn5.47})). The moments of inertia with respect to these axes are called \textit{principal moments of inertia} and denoted by $I_a$, $I_b$, and $I_c$. The axes $a$, $b$, and $c$ are expressed in the \textit{molecular frame} (as opposed to the \textit{laboratory frame}), which means that they rotate with the molecule. The principal axes are labelled such that $I_a\le I_b\le I_c$. The principal axes can often be assigned by inspecting the symmetry of the molecule.
+
+\vspace*{0.2cm}
+
+The principal moments of inertia are used to classify molecules:
+
+\vspace*{-0.2cm}
+
+\begin{center}
+\begin{tabular}{lll}
+Moments of inertia & Type of rotor & Examples\\
+\cline{1-3}
+$I_b = I_c, I_a = 0$ & Linear & HCN\\
+$I_a = I_b = I_c$ & Spherical top & CH$_4$, SH$_6$, UF$_6$\\
+$I_a < I_b = I_c$ & Prolate symmetric top & CH$_3$Cl\\
+$I_a = I_b < I_c$ & Oblate symmetric top & C$_6$H$_6$\\
+$I_a \ne I_b \ne I_c$ & Asymmetric top & CH$_2$Cl$_2$, H$_2$O\\
+\end{tabular}
+\end{center}
+
+\vspace*{-0.2cm}
+
+The next task is to come up with a quantum mechanical hamiltonian for the molecular rotation. We will do it as follows:
+
+\begin{enumerate}
+\item Write the classical expression for molecular rotation in terms of classical angular momentum
+\item Replace the classical angular momentum with the corresponding quantum mechanical operators
+\item Solve the resulting Schr\"odinger equation
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+According to classical mechanics kinetic energy for rotation around one axis is given by:
+
+\aeqn{n5.48}{E_r = \frac{1}{2}I\omega^2 = \frac{\left(I\omega\right)^2}{2I} = \frac{L^2}{2I}}
+
+where $\omega$ is the angular velocity (rad/s), $I$ is the moment of inertia (Eq. (\ref{eqn5.45})) and $L$ is the angular momentum. For an object that can rotate in 3D, we have to account for rotation about each axis:
+
+\aeqn{n5.49}{E_r = \frac{1}{2}I_a\omega_a^2 + \frac{1}{2}I_b\omega_b^2 + \frac{1}{2}I_c\omega_c^2}
+
+This can be written in terms of angular momentum about the corresponding axes (see Eq. (\ref{eqn5.48})):
+
+\aeqn{n5.50}{E_r = \frac{L_a^2}{2I_a} + \frac{L_b^2}{2I_b} + \frac{L_c^2}{2I_c}}
+
+with the total angular momentum given by $L^2 = L_a^2 + L_b^2 + L_c^2$.
+
+\vspace*{0.2cm}
+
+\underline{Spherical top:} For a spherical top we have $I = I_a = I_b = I_c$ and therefore we can rewrite Eq. (\ref{eqn5.50}) as:
+
+\aeqn{n5.51}{E_r = \frac{L^2}{2I}}
+
+}
+
+
+\opage{
+
+\otext
+To make the transition to quantum mechanics, we need to replace $L^2$ with the quantum mechanical operator (Eqs. (\ref{eq9.152}), (\ref{eq9.153}), (\ref{eq9.154}), and (\ref{eq9.155})). We have already found the eigenfunctions and eigenvalues of the $L^2$ operator (Eqs. (\ref{eq9.160}) and (\ref{eq9.161})) and therefore we can just write down the solution:
+
+\aeqn{n5.52}{E_r = \frac{J(J+1)\hbar^2}{2I} = BJ(J+1)\textnormal{ where }J=0,1,2,...}
+
+where $B = \hbar^2 / (2I)$ is the rotational constant. When studying molecular rotation, it is customary to use the wavenumber units for rotational constants:
+
+\aeqn{n5.53}{\tilde{B} = \frac{\hbar}{4\pi cI}}
+
+The rotational energy is often also expressed in wavenumber units:
+
+\aeqn{n5.54}{\tilde{E}_r = \tilde{B}J(J+1)}
+
+The energy separation between two adjacent levels is then given by:
+
+\aeqn{n5.55}{\tilde{E}_r(J) - \tilde{E}_r(J-1) = 2\tilde{B}J} 
+
+Spherical top molecules cannot have permanent dipole moment (based on symmetry as discussed earlier) and therefore they do not have pure rotational spectra. They may exhibit rotational fine structure in their vibrational or electronic spectra. 
+
+The moment of inertia for a symmetrical tetrahedral molecule, such as CH$_4$, is given by:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{n5.56}{I = \frac{8}{3}mR^2}
+
+where $R$ is the bond length and $m$ is the mass of hydrogen.
+
+\vspace*{0.2cm}
+
+\underline{Linear molecule:} For a linear molecule, $I_b = I_c$ with $I_a = 0$. Eq. (\ref{eqn5.49}) shows that the rotational energy about the $a$ axis is zero. Therefore we can write the rotational energy as ($L^2_a = 0$):
+
+\aeqn{n5.57}{E_r = \frac{L_b^2}{2I_b} + \frac{L_c^2}{2I_c} = \frac{L_b^2 + L_c^2}{2I_b} = \frac{L^2}{2I_b}}
+
+The rotational energies are therefore at (see Eq. (\ref{eqn5.52})):
+
+\aeqn{n5.58}{\tilde{E}_r = \tilde{B}J(J+1)}
+
+\vspace*{0.2cm}
+
+\underline{Symmetric top:} This covers both prolate symmetric top ($I_a < I_b = I_c$) and oblate symmetric top ($I_a = I_b < I_c$) cases. To account for both cases, we will just denote the moments of inertia as perpedicular $I_\perp$ (with the angular momenta $L_x$ and $L_y$) and parallel $I_{||}$ (with angular momentum $L_z$). The classical expresion for rotation is now:
+
+\aeqn{n5.59}{E_r = \frac{L_x^2 + L_y^2}{2I_\perp} + \frac{L_z^2}{2I_{||}}}
+
+}
+
+\opage{
+
+\otext
+By noting that the total amount of angular momentum is $L^2 = L_x^2 + L_y^2 + L_z^2$, we can rewrite the above as:
+
+\beqn{n5.60}{E_r = \frac{1}{2I_\perp}\left(L_x^2 + L_y^2 + L_z^2\right) - \frac{1}{2I_\perp}L_z^2 + \frac{1}{2I_{||}}L_z^2}
+{= \frac{1}{2I_\perp}L^2 + \left(\frac{1}{2I_{||}} - \frac{1}{2I_\perp}\right)L_z^2}
+
+Transition to quantum mechanics can be carried out by replacing $L^2 = J(J+1)\hbar^2$ (see Eq. (\ref{eq9.161})) and $L_z^2 = K^2\hbar^2$ (see Eq. (\ref{eq9.163})). Here $J$ describes the total amount of angular momentum whereas $K$ is related to the projection of angular momentum on the rotation axis ($K = 0$ angular momentum prependicular or $K = \pm J$ parallel). $K$ cannot exceed the total amount of angular momentum: $K = 0, \pm 1,..., \pm J$. Now we can write the quantum mechanical rotational energy:
+
+\aeqn{n5.61}{E_r = \frac{1}{2I_\perp}J(J+1)\hbar^2 + \left(\frac{1}{2I_{||}} - \frac{1}{2I_\perp}\right)K^2\hbar^2}
+
+with $J = 0, 1, 2, ...$ and $K = 0,\pm 1, \pm 2, ..., \pm J$. Converting to wavenumber units and introducing rotational constants $\tilde{B}$ and $\tilde{A}$ we arrive at:
+
+\aeqn{n5.62}{\tilde{E}_r = \tilde{B}J(J+1) + (\tilde{A} - \tilde{B})K^2}
+
+}
+
+\opage{
+
+\otext
+with
+
+\aeqn{n5.63}{\tilde{B} = \frac{\hbar}{4\pi cI_\perp}\textnormal{ and }A = \frac{\hbar}{4\pi cI_{||}}}
+
+The rotational selection rule for symmetric top molecules are $\Delta J = \pm 1$ and $\Delta K = 0$. The latter restriction arises from the fact that the permanent dipole moment, which is oriented along the principal axis (i.e., $J$), can interact with electromagnetic radiation. The perpendicular component to the principal axis (i.e., $K$) cannot as the dipole moment has no component in this direction.
+
+\begin{itemize}
+\otext
+\item Pure rotational spectroscopy has enabled the most precise evaluations of bond lengths and bond angles. However, for polyatomic molecules there is usually no unique way to extract this information. In these cases at least the three moments of inertia can be evaluated.
+\item Additional information can be obtained by studying different isotopic combinations of molecules. This provides additional restrictions when information on the molecular geometry is sought based on the experimental measurements.
+\item To avoid collisional broadening, very dilute gas phase samples are required ($\approx 10$ Pa).
+\item Permanent dipole moments can be studied by introducing an external electric field (Stark effect). This results in splitting of the rotational levels that is proportional to the dipole moment.
+\end{itemize}
+
+}

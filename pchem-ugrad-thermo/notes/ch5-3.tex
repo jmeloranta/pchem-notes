@@ -1,0 +1,175 @@
+\opage{
+\otitle{5.3 Determination of equilibrium constants}
+
+\otext
+Consider a chemical reaction: $a\textnormal{A} + b\textnormal{B} \rightleftharpoons c\textnormal{C} + d\textnormal{D}$. If the initial concentrations/pressures $\left[\textnormal{A}\right]_0$, $\left[\textnormal{B}\right]_0$, $\left[\textnormal{C}\right]_0$ and $\left[\textnormal{D}\right]_0$ are known and one of $\left[\textnormal{A}\right]$, $\left[\textnormal{B}\right]$,
+$\left[\textnormal{C}\right]$ or $\left[\textnormal{D}\right]$ is known at equilibrium, it is possible to use the above balanced chemical equation to obtain concentrations of all of the species at equilibrium. This is because there is just one variable that describes the reaction ($\xi$; the extent of reaction). Given the equilibrium concentrations/pressures for all the species, it is possible to derive an expression for $K$ in terms of $\xi$ by using Eq. (\ref{eq5.20}) and thus obtain a value for $K$ using experimental data.
+
+\vspace*{0.1cm}
+
+Examples of methods for determining concentrations/pressures:
+
+\begin{itemize}
+\item measurement of gas density or pressure
+\item light absorption
+\item refractive index
+\item electrical conductivity
+\end{itemize}
+
+\vspace*{0.1cm}
+
+\underline{Notes:}
+
+\begin{enumerate}
+\item The measurement may not change any of the concentrations/pressures in the system - otherwise the measurement would change the equilibrium as well!
+\item The same value for $K$ should be obtained when the equilibrium is approached from either side.
+\item The same value for $K$ should be obtained over a wide range of initial concentrations.
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+\underline{The relation between $K$ and $\xi_{eq}$:}
+
+\vspace*{0.2cm}
+
+We have already seen that the equilibrium constant $K$ can be written in terms of $\xi_{eq}$ (e.g., the water dissociation example). In the following we will consider a general equation of the form: $\textnormal{A} \rightleftharpoons m\textnormal{B}$ and derive a general expression for the equilibrium constant. The reaction is assumed to occur in the gas phase and all gaseous components should follow the ideal gas law. According to Eq. (\ref{eq5.20}) the equilibrium constant can be written as:
+
+\aeqn{5.30a}{K = \left(\frac{P_{\textnormal{A}}}{P^\circ}\right)^{-1}\times\left(\frac{P_{\textnormal{B}}}{P^\circ}\right)^m}
+
+Let us denote the total pressure by $P$ and partial pressures of A and B by $P_{\textnormal{A}}$ = $y_{\textnormal{A}}P$ and $P_{\textnormal{B}} = y_{\textnormal{B}}P$. The concentrations of A and B at equilibrium can be written in terms of $\xi_{eq}$ (note the scaling of $\xi$):
+
+\beqn{5.30b}{n_{\textnormal{A},eq} = n_{\textnormal{A},0}\left(1 - \xi_{eq}\right)\textnormal{ and }n_{\textnormal{B},eq} = n_{\textnormal{A},0}\xi_{eq}m}{\textnormal{The total amount} = n_{\textnormal{A},eq} + n_{\textnormal{B},eq} = n_{\textnormal{A},0}\left(1 - \xi_{eq}\right) + n_{\textnormal{A},0}\xi_{eq}m}
+
+From this we can calculate the molar fractions and further the partial pressures $P_{\textnormal{A}}$ and $P_{\textnormal{B}}$:
+
+\aeqn{5.30c}{y_{\textnormal{A}} = \frac{1 - \xi_{eq}}{1 - \xi_{eq}\left(1 - m\right)}\textnormal{ and }y_{\textnormal{B}} = \frac{\xi_{eq}}{1 - \xi_{eq}\left(1 - m\right)}}
+
+}
+
+\opage{
+
+\otext
+\aeqn{5.30d}{P_{\textnormal{A}} = P\times\frac{1 - \xi_{eq}}{1 - \xi_{eq}\left(1 - m\right)}\textnormal{ and }P_{\textnormal{B}} = P\times\frac{\xi_{eq}m}{1 - \xi_{eq}\left(1 - m\right)}}
+
+Inserting these into the equilibrium constant expression, we get:
+
+\beqn{5.30e}{K = \left(\frac{P}{P^\circ}\right)^{m-1}\times\left(\frac{1 - \xi_{eq}}{1 - \xi_{eq}\left(1 - m\right)}\right)^{-1}\times\left(\frac{\xi_{eq}m}{1 - \xi_{eq}\left(1 - m\right)}\right)^m}{ = \left(\frac{P/P^\circ}{1 - \xi_{eq}\left(1 - m\right)}\right)^{m-1}\times\frac{\left(\xi_{eq}m\right)^m}{\left(1 - \xi_{eq}\right)^m}}
+
+If $m = 2$ (for example, N$_2$O$_4(g) = 2$NO$_2(g)$), this reduces to:
+
+\aeqn{5.30}{K = \frac{4\xi_{eq}^2P / P^\circ}{1 - \xi_{eq}^2}}
+
+\vspace*{-1.5cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\ofig{eqconst}{0.45}{Equilibrium extent of reaction as a function of pressure at various values of $K$.}
+
+\end{column}
+
+\begin{column}{7cm}
+
+In this case, the equation can be also solved for $\xi$:
+
+\aeqn{5.31}{\xi_{eq} = \frac{1}{\left[1 + \left(4 / K\right)\left(P / P^\circ\right)\right]^{1/2}}}
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{The relation between $\xi_{eq}$ and gas densities:}
+
+\vspace*{0.2cm}
+
+When $m > 1$, it is possible to determine the extent of reaction by measuring the density of the gas. For example, consider reaction A = 2B and denote the mass of A by $m_{\textnormal{A}}$ and the molecular mass by $M_{\textnormal{A}}$. Also assume that temperature and pressure are constant and that both A and B follow the ideal gas law. The initial volume before the reaction takes place is:
+
+\aeqn{5.32a}{V_{ini} = \frac{m_{\textnormal{A}}RT}{M_{\textnormal{A}}P}\textnormal{ (where we used }n = m_{\textnormal{A}} / M_{\textnormal{A}}\textnormal{)}}
+
+At equilibrium we have a similar equation (the total mass is conserved in chemical reactions and we still use $m_{\textnormal{A}}$ below):
+
+\aeqn{5.32b}{V_{eq} = \frac{m_{\textnormal{A}}RT}{M_{eq}P}\textnormal{ where }M_{eq} = y_{\textnormal{A}}M_{\textnormal{A}} + y_{\textnormal{B}}M_{\textnormal{B}} = y_{\textnormal{A}}M_{\textnormal{A}} + \frac{1}{2}y_{\textnormal{B}}M_{\textnormal{A}}}
+
+where we also used the fact that $M_{\textnormal{A}} = 2M_{\textnormal{B}}$ (the mass conservation restriction). Calculation of the ratios between the volumes gives:
+
+\beqn{5.32c}{\frac{V_{ini}}{V_{eq}} = \frac{M_{eq}}{M_{\textnormal{A}}} = \frac{y_{\textnormal{A}}M_{\textnormal{A}} + \frac{1}{2}y_{\textnormal{B}}M_{\textnormal{A}}}{M_{\textnormal{A}}} = \frac{1}{1 + \xi_{eq}}}{\textnormal{with }y_{\textnormal{A}} = \frac{1 - \xi_{eq}}{1 + \xi_{eq}}\textnormal{ and }y_{\textnormal{B}} = \frac{2\xi_{eq}}{1 + \xi_{eq}}}
+
+}
+
+\opage{
+
+\otext
+Note that the mass conservation also relates the volumes to densities $\rho$:
+
+\aeqn{5.32d}{\left\lbrace\begin{matrix} 
+\rho_{ini}V_{ini} = m_{\textnormal{A}}\\
+\rho_{eq}V_{eq} = m_{\textnormal{A}}\\
+\end{matrix}\right. \Rightarrow \frac{\rho_{eq}}{\rho_{ini}} = \frac{V_{ini}}{V_{eq}}}
+
+If we solve for $\xi_{eq}$ on previous page, we get two useful results:
+
+\aeqn{5.32}{\xi_{eq} = \frac{M_{\textnormal{A}} - M_{eq}}{M_{eq}}\textnormal{ and }\xi_{eq} = \frac{\rho_{ini} - \rho_{eq}}{\rho_{eq}}}
+
+Thus by measuring either the molar masses or gas densities before the reaction takes place and at the equilibrium, Eq. (\ref{eq5.32}) can be used for calculating $\xi_{eq}$. Note that this derivation assumed a specific stoichiometry for the chemical equation.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider reaction N$_2$O$_4(g)$ = 2NO$_2(g)$ (molecular weight of N$_2$O$_4$ is 92.01 g mol$^{-1}$) at constant $T$ (298.15 K) and $P$ (1.0133 bar). 1.588 g of N$_2$O$_4$ dissociates and expands to 500 cm$^3$ volume. What is the extent of reaction $\xi_{eq}$ and the equilibrium constant $K$?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} $\xi_{eq}$ can be calculated using Eq. (\ref{eq5.32}) with the molecular weights as follows:
+
+\vspace*{-0.4cm}
+
+$$M_{eq} = \frac{m_{\textnormal{N}_2\textnormal{O}_4} RT}{V_{eq}P} = \frac{\left(1.588 \textnormal{ g}\right)\left(0.083145\textnormal{ L bar K}^{-1}\textnormal{ mol}^{-1}\right)\left(298.15\textnormal{ K}\right)}{\left(1.013\textnormal{ bar}\right)\left(0.5\textnormal{ L}\right)}$$
+\vspace*{-0.2cm}
+$$ = 77.70\textnormal{ g mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+$M_{ini}$ was given as 92.01 g mol$^{-1}$ and now by applying Eq. (\ref{eq5.32}) we get:
+
+$$\xi = \frac{M_{ini} - M_{eq}}{M_{eq}} = \frac{\left(92.01\textnormal{ g mol}^{-1}\right) - \left(77.70\textnormal{ g mol}^{-1}\right)}{77.70\textnormal{ g mol}^{-1}} = 0.1842$$
+
+The equilibrium constant can be obtained from Eq. (\ref{eq5.31}):
+
+$$K = \frac{4\xi_{eq}^2\left(P / P^\circ\right)}{1 - \xi_{eq}^2} = \frac{4\left(0.1842\right)^2\left(1.0133\right)}{1 - \left(0.1842\right)^2} = 0.143$$
+
+\hrulefill
+
+For a more complicated reaction A + 3B = 2C, the following expression for the equilibrium constant can be obtained:
+
+\aeqn{5.34}{K = \frac{16\xi_{eq}^2\left(1 - \xi_{eq}\right)}{\left( 1 - 3\xi_{eq}\right)^3\left(P / P^\circ\right)^2}}
+
+Each type of reaction requires its own expressions for $K$ and $\xi_{eq}$ but they can be derived by using the previously outlined approach.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Consider the following reaction: N$_2(g)$ + 3H$_2(g)$ = 2NH$_3(g)$. What total pressure must be used to obtain 10\% conversion of nitrogen to ammonia at 400 \degree C? Assume equimolar initial mixture of N$_2$ and H$_2$ and ideal gas behavior. The equilibrium constant for the reaction is $1.60 \times 10^{-4}$ at standard pressure of 1 bar.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} 10\% conversion corresponds to $\xi_{eq} = 0.1$. We use Eq. (\ref{eq5.34}):
+
+$$P = P^\circ\left(\frac{16\xi_{eq}^2\left(1 - \xi_{eq}\right)}{\left(1 - 3\xi_{eq}\right)^3K}\right)^{1/2} = \left(1\textnormal{ bar}\right) \times \left(\frac{16\times\left(0.1\right)^2\times\left(1 - 0.1\right)}{\left(1 - 3\times 0.1\right)^3\times\left(1.60\times 10^{-4}\right)}\right)^{1/2}$$
+$$ = 51.2\textnormal{ bar}$$
+
+\underline{Note:} Calculation of the equilibrium compositions of a reaction system that contains two or more reactions is more complicated (results in many different equations instead of just one). Furthermore the equations are non-linear, which typically means that it is not possible to find analytic solutions. Numerical methods are the only way to proceed in such case (i.e., computers).
+
+}

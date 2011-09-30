@@ -1,0 +1,147 @@
+\opage{
+\otitle{5.2 Equilibrium constant expressions for gas reactions}
+
+\otext
+Recall that for real gases the activity is given by (see Eqs. (\ref{eq4.70}) and (\ref{eq4.78})): $a_i = \frac{f_i}{P^\circ}$
+where $P^\circ$ is the standard state pressure (1 bar) and fugacity is given, for example, by Eq. (\ref{eq4.77}):
+
+\vspace*{-0.2cm}
+
+$$f_i = P_i \exp\left(\int\limits_0^{P_i}\frac{Z - 1}{P}dP\right)$$
+
+and $Z$ is the compressibility factor of the gas. At equilibrium Eq. (\ref{eq5.11}) now gives:
+
+\aeqn{5.19}{K = \prod\limits_{i=1}^{N_s}a_{i,eq}^{v_i} = \prod\limits_{i=1}^{N_s}\left(\frac{f_{i,eq}}{P^\circ}\right)^{v_i}}
+
+For ideal gases Eq. (\ref{eq5.19}) can be written as follows ($a_i = P_i / P^\circ$, see Eq. (\ref{eq4.78})):
+
+\aeqn{5.20}{K = \prod\limits_{i=1}^{N_s}\left(\frac{P_{i,eq}}{P^\circ}\right)^{v_i}\textnormal{ and }Q = \prod\limits_{i=1}^{N_s}\left(\frac{P_i}{P^\circ}\right)^{v_i}}
+
+\underline{Notes:}
+
+\begin{itemize}
+\item $K$ depends only on partial pressures $P_i$ and also on the total pressure $P$.
+\item As $K$ depends on the way the stoichiometric coefficients are written, a full reaction equation must always be written when specifying $K$.
+\item $K$ determines $\xi_{eq}$ (the equilibrium extent of the reaction) via Eq. (\ref{eq5.11}).
+\end{itemize}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} A mixture of CO($g$) and CH$_3$OH($g$) at 500 K with $P_{\textnormal{CO}} = 10$ bar, $P_{\textnormal{H}_2} = 1$ bar,
+and $P_{\textnormal{CH}_3\textnormal{OH}} = 0.1$ bar is passed over a catalyst. The reaction occurring in the gas phase is:
+
+$$\textnormal{CO}(g, 10 \textnormal{ bar}) + 2\textnormal{H}_2(g, 1 \textnormal{ bar}) = \textnormal{CH}_3\textnormal{OH}(g, 0.1 \textnormal{ bar})$$
+
+where the standard reaction Gibbs energy is $\Delta_r G^\circ = 21.21$ kJ mol$^{-1}$. In which direction would the reaction proceed? Assume that the gases behave according to the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Recall that the the reaction Gibbs energy ($\Delta_rG$) tells us which way the reaction would proceed. If it is negative, the reaction proceeds spontaneously from left to right and if it is positive, the reaction proceeds spontaneously from right to left. If $\Delta_rG$ is zero, the reaction is in equilibrium. By using Eqs. (\ref{eq5.14}) and (\ref{eq5.20}) we get:
+
+\vspace*{-0.4cm}
+
+$$\Delta_r G = \Delta_r G^\circ + RT\ln\left(Q\right) = 21.21\textnormal{ kJ mol}^{-1} + \left(0.0083145\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(500\textnormal{ K}\right)$$
+$$\times\ln\left(\frac{0.1}{10\times1^2}\right) = 2.07\textnormal{ kJ mol}^{-1} > 0$$
+
+Thus the reaction is not spontaneous as written. Note that the only effect of $P^\circ$'s in this calculation were to cancel the units since its numerical value was 1 bar. The stoichiometric coefficients are: $v_{\textnormal{CO}} = -1, v_{\textnormal{H}_2} = -2$ and $v_{\textnormal{CH}_3\textnormal{OH}} = 1$.
+
+}
+
+\opage{
+
+\otext
+If the conditions had been chosen as follows:
+
+$$\textnormal{CO}(g, 1 \textnormal{ bar}) + 2\textnormal{H}_2(g, 10 \textnormal{ bar}) = \textnormal{CH}_3\textnormal{OH}(g, 0.1 \textnormal{ bar})$$
+
+we would have:
+
+\vspace*{-0.6cm}
+
+$$\Delta_r G = 21.21\textnormal{ kJ mol}^{-1} + \left(0.0083145\textnormal{kJ K}^{-1}\textnormal{ mol}^{-1}\right)\left(500\textnormal{ K}\right)\times\ln\left(\frac{0.1}{1\times 10^2}\right)$$
+\vspace*{-0.4cm}
+$$ = -7.51\textnormal{ kJ mol}^{-1} < 0$$
+
+This means that the reaction would be thermodynamically spontaneous.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider decomposition reaction of water:
+
+$$\textnormal{H}_2\textnormal{O}(g)\rightleftharpoons \textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g)$$
+
+The standard reaction Gibbs energy for this reaction is 118.08 kJ mol$^{-1}$ at 2300 K. What is the extent of reaction $\xi_{eq}$ at 2300 K and at a total pressure of 1.00 bar? Assume that gases behave according to the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we use Eq. (\ref{eq5.13}) to get the equilibrium constant $K$:
+
+$$\ln\left (K\right) = -\frac{\Delta_r G^\circ}{RT} = \frac{118080\textnormal{ J mol}^{-1}}{\left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(2300\textnormal{ K}\right)} = -6.175\Rightarrow K = 2.08\times 10^{-3}$$
+
+}
+
+\opage{
+
+\otext
+In the following, the initial amount of water is denoted by $n$ and initially all other concentrations are zero. At given extent of reaction $\xi$, the amount of each component is: $n_{\textnormal{H}_2\textnormal{O}} = (1 - \xi )n$, $n_{\textnormal{H}_2} = \xi n$ and $n_{\textnormal{O}_2} = \xi n / 2$. Thus the total amount is $\left(1 - \xi\right)n + \xi n + \xi n / 2 = n\left(1 + \xi / 2\right)$ and the mole fractions are then: $y_{\textnormal{H}_2\textnormal{O}} = \left(1 - \xi\right) / \left(1 + \xi / 2\right)$, $y_{\textnormal{H}_2} = \xi / \left(1 + \xi / 2\right)$ and $y_{\textnormal{O}_2} = \left(\xi / 2\right) / \left(1 + \xi / 2\right)$. The partial pressures ($P_i$) can be calculated by multiplying the corresponding mole fraction by the total pressure $P$. Note that the choice of $\xi$ is slightly different than in Eq. (\ref{eq5.2}) (scaling $\xi = n\xi'$ so that $\xi$ is now between 0 and 1). Then apply Eq. (\ref{eq5.20}) to relate the partial pressures to $K$:
+
+\vspace*{-0.4cm}
+
+$$K = \frac{P_{\textnormal{H}_2}\sqrt{P_{\textnormal{O}_2}}}{P_{\textnormal{H}_2\textnormal{O}}\sqrt{P^\circ}} = \frac{\xi_{eq}^{3/2}\bar{P}^{1/2}}{\left( 1 - \xi_{eq}\right)\left(2 + \xi_{eq}\right)^{1/2}}\textnormal{ where }\bar{P} = P / P^\circ = \left(1\textnormal{ bar}\right) / \left(1\textnormal{ bar}\right) = 1$$
+$$K = \frac{\xi_{eq}^{3/2}}{\left( 1 - \xi_{eq}\right)\left( 2 + \xi_{eq}\right)^{1/2}} = 2.08\times 10^{-3}\Rightarrow \xi_{eq} = 0.020\textnormal{ (numerical solution)}$$
+$$\textnormal{(there are actually three roots: one real and two complex)}$$
+
+Therefore about 2\% of H$_2$O is dissociated under the given conditions.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Demonstrate that chemical reactions in the gas phase never go to completion. Assume ideal gas behavior as well as constant pressure and temperature.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Consider reaction A$(g)$ = B$(g)$ at constant pressure. First calculate the Gibbs energy of the system as a function of the extent of reaction $\xi$ (Eq. (\ref{eq5.3})):
+
+}
+
+\opage{
+
+\otext
+
+$$dG = -S\umark{dT}{= 0} + V\umark{dP}{= 0} + \left(\sum\limits_{i=1}^{N_s}v_i\mu_i(\xi)\right)d\xi = \mu_{\textnormal{B}}(\xi)d\xi - \mu_{\textnormal{A}}(\xi)d\xi$$
+
+Using Eq. (\ref{eq4.78}), the chemical potentials can be written as:
+
+$$\mu_{\textnormal{A}} = \mu_{\textnormal{A}}^\circ + RT\ln\left(\frac{P_{\textnormal{A}}}{P^\circ}\right) = \mu_{\textnormal{A}}^\circ + RT\ln\left(\frac{y_{\textnormal{A}}P}{P^\circ}\right)$$
+$$= \mu_{\textnormal{A}}^\circ + RT\left(\ln\umark{\left(y_{\textnormal{A}}\right)}{=(1 - \xi)n_{tot} / n_{tot}} + \ln\left(\frac{P}{P^\circ}\right)\right) = \mu_{\textnormal{A}}^\circ + RT\left(\ln\left(1 - \xi\right) + \ln\left(\frac{P}{P^\circ}\right)\right)$$
+$$\mu_{\textnormal{B}} = \mu_{\textnormal{B}}^\circ + RT\left(\ln\left(\xi\right) + \ln\left(\frac{P}{P^\circ}\right)\right)$$
+
+Inserting these results into the expression for $dG$, we get:
+
+$$dG = \left\lbrace\umark{\Delta\mu_{\textnormal{BA}}}{= \mu_{\textnormal{B}}^\circ - \mu_{\textnormal{A}}^\circ} + RT\ln\left(\frac{\xi}{1 - \xi}\right)\right\rbrace d\xi$$
+
+}
+
+\opage{
+
+\otext
+Integration of this equation from the initial point ($\xi = 0$) to $\xi$ gives:
+
+$$\int\limits_{G(0)}^{G(\xi)}dG = \int\limits_{0}^{\xi}\left\lbrace \Delta\mu_{\textnormal{BA}} + RT\ln\left(\frac{\xi}{1 - \xi}\right)\right\rbrace d\xi \Rightarrow$$
+$$\Delta G(\xi) = \xi\Delta\mu_{\textnormal{BA}} + RT\int\limits_{0}^{\xi}\ln\left(\frac{\xi}{1 - \xi}\right)d\xi = \xi\Delta\mu_{\textnormal{BA}} + RT\umark{\left(\left(1 - \xi\right)\ln\left(1 - \xi\right) + \xi\ln\left(\xi\right)\right)}{= \Delta_{mix} G}$$
+
+Consider the following examples ($\Delta G$ in units of J mol$^{-1}$):
+
+\vspace*{-0.4cm}
+
+\ofig{react-example-1}{0.5}{}
+
+}
+
+\opage{
+
+\ofig{react-example-2}{0.5}{}
+
+}

@@ -1,0 +1,50 @@
+% Problem 8/5 solution
+\noindent
+\underline{Solution:}
+
+\begin{enumerate}
+
+\item
+
+\begin{tabular}{lllll}
+      & NOCl & NO & Cl$_2$ & Total\\
+Init. & $n_0$& 0  & 0      & $n_0$\\
+Eq.   & $n_0 - 2\xi$ & $2\xi$ & $\xi$ & $n_0 + \xi$\\
+\end{tabular}
+
+Here $\xi$ goes from 0 to $n_0/2$. It is more convenient to work with reduced variable $\xi' = \xi/n_0$. In this case the above table takes the form:
+
+\begin{tabular}{lllll}
+      & NOCl & NO & Cl$_2$ & Total\\
+Init. & 1 & 0  & 0      & 1\\
+Eq.   & $1 - 2\xi'_{eq}$ & $2\xi'_{eq}$ & $\xi'_{eq}$ & $1 + \xi'_{eq}$\\
+$y_i$ & $(1 - 2\xi')/(1+\xi')$ & $2\xi'/(1+\xi')$ & $\xi'/(1+\xi')$ & 1\\
+\end{tabular}
+
+Calculation with both $\xi$ and $\xi$ would give the same molar fractions and hence the same equilibrium constant $K$. At equilibrium $P_{tot} = 1$ bar and $P_{\textnormal{NOCl}} = 0.64$ bar. Because $P_{\textnormal{NOCl}} = y_{\textnormal{NOCl}}P_{tot}$, we get $y_{\textnormal{NOCl}} = 0.64$. Above we have an expression that relates $y_{\textnormal{NOCl}}$ and $\xi'$ to each other:
+
+$$y_{\textnormal{NOCl}} = \frac{1 - 2\xi'_{eq}}{1 + \xi'_{eq}} = 0.64\Rightarrow \xi'_{eq} = 0.136$$
+
+The equilibrium constant can be written in terms of molar fractions to yield $K$ ($y_{\textnormal{Cl}_2}^{eq} = 0.120$ and $y_{\textnormal{NO}}^{eq} = 0.239$):
+
+$$K = \frac{\left(P_{\textnormal{NO}}^{eq}\right)^2\left(P_{\textnormal{Cl}_2}^{eq}\right)}{\left(P_{\textnormal{NOCl}}^{eq}\right)^2} = \frac{\left(y_{\textnormal{NO}}^{eq}\right)^2\left(y_{\textnormal{Cl}_2}^{eq}\right)}{\left(y_{\textnormal{NOCl}}^{eq}\right)^2}\times\left(\frac{P_{tot}}{P^\circ}\right) = 0.0167$$
+
+Now $K$ can be related to $\Delta_rG^\circ$:
+
+$$\Delta_rG^\circ = -RT\ln(K) = -\left(8.314\textnormal{JK}^{-1}\textnormal{mol}^{-1}\right)\times\left(500\textnormal{ K}\right)\ln\left(0.0167\right)$$
+$$ = 17.0\textnormal{ kJ mol}^{-1}$$
+
+\item Note here that a change in total pressure will change the extent of reaction. For this reason, we have to solve for both $\xi'$ and $P_{tot}$ at the same time by using two different equations:
+
+$$K =  \frac{\left(y_{\textnormal{NO}}^{eq}\right)^2\left(y_{\textnormal{Cl}_2}^{eq}\right)}{\left(y_{\textnormal{NOCl}}^{eq}\right)^2}\times\left(\frac{P_{tot}}{P^\circ}\right) = 0.0167$$
+$$y_{\textnormal{Cl}_2}^{eq}\times P_{tot} = 0.1\textnormal{ bar}$$
+
+Inserting the 2nd into the 1st gives:
+
+$$\frac{\left(y_{\textnormal{NO}}^{eq}\right)^2\times\left(\frac{0.1\textnormal{ bar}}{1\textnormal{ bar}}\right)} {\left(y_{\textnormal{NOCl}}^{eq}\right)^2} = 0.0167\Rightarrow \frac{y_{\textnormal{NO}}^{eq}}{y_{\textnormal{NOCl}}^{eq}} = \sqrt{0.167}$$
+$$\frac{2\xi'_{eq}}{1-2\xi'_{eq}} = 0.409\Rightarrow \xi'_{eq} = 0.145\Rightarrow y_{\textnormal{Cl}_2}^{eq} = \frac{0.145}{1 + 0.145} = 0.127$$
+$$\Rightarrow P_{tot} = 0.787\textnormal{ bar}$$
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

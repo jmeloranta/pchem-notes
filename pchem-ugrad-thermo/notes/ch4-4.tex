@@ -1,0 +1,181 @@
+\opage{
+\otitle{4.4 Effect of pressure on the Gibbs energy}
+
+\otext
+\underline{How does $G$ change as a function of pressure?}
+
+\vspace*{0.2cm}
+
+First Recall Eq. (\ref{eq4.38}): $\left(\frac{\partial G}{\partial P}\right)_{T,\lbrace n_i\rbrace} = V$. 
+
+\vspace*{0.2cm}
+
+Integration of this equation gives:
+
+\aeqn{4.64}{\int\limits_{G_1}^{G_2} dG = \int\limits_{P_1}^{P_2}VdP \Rightarrow G_2 = G_1 + \int\limits_{P_1}^{P_2}\umark{V}{>0}dP}
+
+Thus \textit{the Gibbs energy always increases with the increasing pressure} when $T$ and $\lbrace n_i\rbrace$
+are constant.
+
+\vspace*{0.2cm}
+
+For liquids and solids volume ($V$) is approx. independent of pressure ($P$) and thus:
+
+\aeqn{4.66}{G_2 = G_1 + V\left(P_2 - P_1\right)\textnormal{ or }\Delta G = V\Delta P}
+
+For ideal gases ($PV = nRT$), we can write:
+
+\aeqn{4.69}{G_2 = G_1 + nRT\ln\left(\frac{P_2}{P_1}\right)\textnormal{ or }\Delta G = nRT\ln\left(\frac{P_2}{P_1}\right)}
+
+Setting $P_2 = P, P_1 = P^\circ, G_2 = G$ and $G_1 = G^\circ$, we get:
+
+\aeqn{4.68}{G = G^\circ + nRT\ln\left(\frac{P}{P^\circ}\right)}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Given the expression for the molar Gibbs energy (Eq. (\ref{eq4.68})) and considering an ideal gas, derive the corresponding expression for the following thermodynamic properties: $V, U, H, S$ and $A$ at constant $T$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The molar Gibbs energy is given by Eq. (\ref{eq4.68}) with over bars:
+
+$$\bar{G} = \bar{G}^\circ + RT\ln\left(\frac{P}{P^\circ}\right)$$
+
+We need to find a similar -type expression for the above thermodynamic properties. The form should be: $X = X^\circ + \textnormal{``possible pressure correction''}$.
+For an ideal gas we have:
+
+$$P\bar{V} = RT \Rightarrow \bar{V} = \frac{RT}{P}$$
+
+
+Based on Eq. (\ref{eq2.69}), the internal energy of an ideal gas does not depend on volume or pressure but only on temperature:
+
+$$\bar{U} = \bar{U}^\circ$$
+
+Recall that enthalpy is defined as $H = U + PV$. For an ideal gas $PV =$ constant $= nRT$, thus:
+
+$$\bar{H} = \bar{U} + P\bar{V} = \bar{U}^\circ + RT = \bar{H}^\circ$$
+
+}
+
+\opage{
+
+\otext
+Eq. (\ref{eq3.36}) for the molar entropy states that: $\bar{S} = \bar{S}^\circ - R\ln\left(\frac{P}{P^\circ}\right)$.
+
+\vspace*{0.2cm}
+
+For the Helmholtz energy we have:
+
+$$\bar{A}^\circ = \bar{G}^\circ - P\bar{V} = \bar{G}^\circ - RT$$
+$$\Rightarrow \bar{A} = \bar{G} - P\bar{V} = \bar{G} - RT = \umark{\bar{G}^\circ - RT}{= \bar{A}^\circ} + RT\ln\left(\frac{P}{P^\circ}\right) = \bar{A}^\circ + RT\ln\left(\frac{P}{P^\circ}\right)$$
+
+\vspace*{0.3cm}
+
+\textbf{Example.} An ideal gas at 27 \degree C expands isothermally and reversibly from 10 to 1 bar against a pressure that is gradually reduced. Calculate $q$ per mole and $w$ per mole and each of the thermodynamic quantities $\Delta \bar{G}$, $\Delta \bar{U}$, $\Delta \bar{H}$, $\Delta \bar{S}$ and $\Delta \bar{A}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Since the process is reversible \& isothermal and the gas is ideal, we have:
+
+$$dw = -P_{ext}d\bar{V} = -Pd\bar{V} \Rightarrow w = -RT\ln\left(\frac{\bar{V}_2}{\bar{V}_1}\right) = -RT\ln\left(\frac{P_1}{P_2}\right)$$
+$$= -\left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(300.15\textnormal{ K}\right)\times\ln\left(\frac{10\textnormal{ bar}}{1\textnormal{ bar}}\right) = -5746\textnormal{ J mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+Recall that Helmholtz energy gives the maximum amount of work that the system can do in a reversible process. Here the work and Helmholtz energy should be equal. Formally this can be seen integrating Eq. (\ref{eq4.29}) at constant $T$:
+
+$$dA = -S\umark{dT}{\equiv 0} - PdV = -PdV = dw \Rightarrow \Delta A = w = -5746\textnormal{ J mol}^{-1}$$
+
+The internal energy of an ideal gas depends only on temperature and hence:
+
+$$\Delta\bar{U} = 0 \Rightarrow q = \Delta\bar{U} - w = 5746\textnormal{ J mol}^{-1}$$
+
+Likewise, the enthalpy of an ideal gas depends only on temperature:
+
+$$\Delta\bar{H} = \Delta\bar{U} + \Delta\left(P\bar{V}\right) = \umark{\Delta\bar{U}}{\equiv 0} + \umark{\Delta\left(RT\right)}{\equiv 0} = 0$$
+
+To get the change in the Gibbs energy ($\Delta\bar{G}$), we integrate Eq. (\ref{eq4.38}):
+
+$$\Delta\bar{G} = \int\limits_{G_1}^{G_2} dG = \int\limits_{P_1}^{P_2} \bar{V}dP = \int\limits_{P_1}^{P_2}\frac{RT}{P}dP = RT\ln\left(\frac{P_2}{P_1}\right)$$
+$$= \left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(300.15\textnormal{ K}\right)\times\ln\left(\frac{1\textnormal{ bar}}{10\textnormal{ bar}}\right) = -5746\textnormal{ J mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+Entropy for a reversible process at constant $T$ can be calculated using Eq. (\ref{eq3.9}):
+
+$$\Delta\bar{S} = \frac{q_{rev}}{T} = \frac{5746\textnormal{ J mol}^{-1}}{300.15\textnormal{ K}} = 19.14\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+Another way to calculate the entropy difference is (``$G = H - TS$''):
+
+$$\Delta\bar{S} = \frac{\Delta\bar{H} - \Delta\bar{G}}{T} = 19.14\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\textbf{Example.} An ideal gas expands isothermally at 27 \degree C into an evacuated vessel so that the pressure drops from 10 to 1 bar; that is, it expands from a vessel of 2.463 L into a connecting vessel such that the total volume becomes 24.63 L. Calculate the change in thermodynamic quantities that were calculated in the previous example.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} This process is isothermal but NOT reversible. Since the system as a whole is closed, no external work is done and $w = 0$. Also at constant $T$, $\Delta U = 0$ and hence the first law of thermodynamics implies that also $q = 0$. The other quantities are the same as in the previous example, because the quantities are state functions and the choice of path does not affect the result. Both initial and final states in this example are identical to those in the previous example.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the Gibbs energy of formation at 10 bar and 298.15 K for: (a) Gaseous methanol (CH$_3$OH) (the standard Gibbs energy of formation $-161.96$ kJ mol$^{-1}$) and (b) Liquid methanol (density 0.7914 g cm$^{-3}$ and the standard Gibbs energy of formation $-166.27$ kJ mol$^{-1}$). Assume that gaseous methanol behaves according to the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The Gibbs energy of formation is defined essentially the same way as we defined the enthalpy of formation previously. For (a) we can use Eq. (\ref{eq4.68}):
+
+$$\Delta_f G = \Delta_f G^\circ + RT\ln\left(\frac{P}{P^\circ}\right) = -161.96\textnormal{ kJ mol}^{-1} + \left(8.3145\times 10^{-3}\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1}\right)$$
+$$\times\left(298.15\textnormal{ K}\right)\times\ln\left(\frac{10\textnormal{ bar}}{1\textnormal{ bar}}\right) = -156.25\textnormal{ kJ mol}^{-1}$$
+
+Thus we see that the Gibbs energy of formation is higher at higher pressure. In practice this means that it was not as favorable to form methanol at high pressure than at the low pressure. In both cases the reaction is spontaneous.
+
+\vspace*{0.2cm}
+
+For (b) the molar volume of the liquid is approximately independent of pressure.
+In this case we can use directly Eq. (\ref{eq4.66}). First we have to calculate to molar volume:
+
+}
+
+\opage{
+
+\otext
+$$\bar{V} = \frac{M_{\textnormal{CH}_3\textnormal{OH}}}{\rho_{\textnormal{CH}_3\textnormal{OH}}} = \frac{32.04\textnormal{ g mol}^{-1}}{0.7914\textnormal{ g cm}^{-3}} = 40.49 \textnormal{ cm}^3\textnormal{ mol}^{-1}$$
+$$= \left(40.49\textnormal{ cm}^3\textnormal{ mol}^{-1}\right)\times\left(10^{-2}\textnormal{ m cm}^{-1}\right)^3 = 40.49\times 10^{-6}\textnormal{ m}^3\textnormal{ mol}^{-1}$$
+
+This gives the molar Gibbs energy of formation:
+$$\Delta_f G = \Delta_f G^\circ + \bar{V}\left(P - P^\circ\right) = \left(-166.27\textnormal{ kJ mol}^{-1}\right) + \left(40.49\times 10^{-6}\textnormal{ m}^3\textnormal{ mol}^{-1}\right)$$
+$$\times \left(\frac{9\times 10^5\textnormal{ Pa}}{10^3\textnormal{J / kJ}}\right) = -166.23\textnormal{ kJ mol}^{-1}$$
+
+\vspace*{-0.8cm}
+
+\begin{columns}
+
+\begin{column}{5cm}
+\otext
+
+\underline{Note:} The Gibbs energy of formation for a gases and liquids have very different pressure dependency. This can be seen in the graph shown on the right (the value of the $\bar{V}\times\Delta P$ term above for the liquid is small compared to $\Delta_f G^\circ$). At the intersection, both species have the same molar volume.
+
+\end{column}
+
+\vspace*{-0.2cm}
+
+\begin{column}{4cm}
+
+\ofig{gibbs-liquid-gas}{0.25}{}
+
+\end{column}
+
+\end{columns}
+
+}

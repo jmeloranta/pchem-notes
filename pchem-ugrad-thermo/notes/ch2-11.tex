@@ -1,0 +1,212 @@
+\opage{
+\otitle{2.11 Thermochemistry}
+
+\otext
+Chemical reaction (or phase change) in a system is said to be:\\
+
+\vspace*{0.25cm}
+
+\underline{Exothermic}, if heat $q < 0$ (i.e. it releases heat).\\
+\underline{Endothermic}, if heat $q > 0$ (i.e. it requires heat).\\
+
+\vspace*{0.25cm}
+
+Since enthalpy is an extensive property that is a function of the state of the system (homogenous of degree 1; see Eq. (\ref{eq1.38})), we can express it in terms of partial molar enthalpies:
+
+\aeqn{2.86}{dH = \sum\limits_{i=1}^{N_s}\bar{H}_idn_i}
+
+where $N_s$ is the number of species and $H_i$ is the molar enthalpy of species $i$. When the temperature and the pressure are constant, Eq. (\ref{eq2.57}) gives:
+
+\aeqn{2.87}{dH = dq_P = \sum\limits_{i=1}^{N_s}\bar{H}_idn_i}
+
+where subscript $P$ refers to constant pressure.
+
+}
+
+\opage{
+
+\otext
+\underline{Notation of chemical reactions:}
+
+\aeqn{2.88}{0 = \sum\limits_{i=1}^{N_s}v_iB_i}
+
+where $B_i$ is the chemical formula of species $i$ and $v_i$ is the corresponding stoichiometric coefficient.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Use the above notation to express the following chemical reaction:
+
+$$\textnormal{H}_2 + \frac{1}{2}\textnormal{O}_2 \rightarrow \textnormal{H}_2\textnormal{O}$$
+
+\textbf{Solution.} Insert the stoichiometric coefficients into Eq. (\ref{eq2.88}):
+
+$$0 = -1\textnormal{H}_2 - \frac{1}{2}\textnormal{O}_2 + 1\textnormal{H}_2\textnormal{O}$$
+
+Here $v_1 = -1, v_2 = -1/2, v_3 = 1$ and $N_s = 3$.
+
+\vspace*{0.2cm}
+
+\underline{Extent of chemical reaction ($\xi$) is defined as:}
+
+\aeqn{2.90}{n_i = n_{i0} + v_i\xi}
+
+where $n_{i0}$ is the initial amount of species $i$ (mol), $\xi$ is the extent of reaction (mol) and $v_i$ are the stoichiometric coefficients (dimensionless). Note that $\xi$ evolves from initial value of zero to the final value where any of the component $n_i$'s reach zero.
+
+}
+
+\opage{
+
+\otext
+By combing Eqs. (\ref{eq2.87}) and (\ref{eq2.90}) we get:
+
+\aeqn{2.91}{dH = dq_P = \sum\limits_{i=1}^{N_s}\bar{H}_i\umark{v_id\xi}{=dn_i}}
+
+Dividing both sides of this equation by $d\xi$ yields:
+
+\aeqn{2.92}{\Delta_rH = \left(\frac{\partial H}{\partial\xi}\right)_{T,P} = \frac{dq_P}{d\xi} = \sum\limits_{i=1}^{N_s}v_i\bar{H}_i}
+
+where $\Delta_r H$ is the \underline{reaction enthalpy}. Reaction enthalpy tells us the rate of enthalpy change at given point of reaction ($\xi$). Note that \textit{the reaction enthalpy depends on the way the chemical equation is written}. For example, $2\textnormal{H}_2 + \textnormal{O}_2 \rightarrow 2\textnormal{H}_2\textnormal{O}$ has twice the reaction enthalpy than $\textnormal{H}_2 + \frac{1}{2}\textnormal{O}_2 \rightarrow \textnormal{H}_2\textnormal{O}$.
+The SI unit of reaction enthalpy is J mol$^{-1}$.
+
+\vspace*{0.25cm}
+
+\underline{Thermodynamic standard state:}\\
+
+\vspace*{0.2cm}
+
+Denoted by superscript \degree (degree). For a standard state, Eq. (\ref{eq2.92}) reads:
+
+\aeqn{2.93}{\Delta_r H^\circ = \sum\limits_{i=1}^{N_s}v_i\bar{H}_i^\circ}
+
+}
+
+\opage{
+
+\otext
+The standard state of a substance at a specified temperature is its pure form at 1 bar.\\
+
+\vspace*{0.2cm}
+
+The phase of the substance is indicated by $g$ (gas), $l$ (liquid) or $s$ (solid).\\
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the standard state of CH$_3$CH$_2$OH ($l$) at 298 K?\\
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The standard state is pure liquid ethanol at 298 K and 1 bar (external) pressure.
+
+\vspace*{0.25cm}
+
+Enthalpy change in chemical reactions:
+
+\vspace*{0.2cm}
+
+\begin{columns}
+
+\begin{column}{3cm}
+
+\begin{columns}
+
+\begin{column}{2.3cm}
+
+\operson{lavoisier}{0.15}{Antoine Lavoisier, French scientist (1743 - 1794)\vspace*{0.6cm}}
+
+\end{column}
+
+\begin{column}{2cm}
+
+\operson{laplace}{0.1}{Pierre-Simon Laplace, French mathematician and astronomer (1749 - 1827)}
+\end{column}
+
+\end{columns}
+
+\end{column}\hspace*{-0.5cm}\vline\hspace*{0.25cm}
+
+\begin{column}{5cm}
+
+\vspace*{-0.2cm}
+
+\otext
+
+\underline{Lavoisier \& Laplace in 1780:} ``The heat absorbed in decomposing a compound must be equal to the heat evolved in its formation under the same conditions.''\\
+
+\vspace*{0.2cm}
+
+This means that in forward and reverse reactions the \textit{sign} in $\Delta H$ is changed.
+
+\vspace*{0.2cm}
+
+\underline{Germain Hess in 1840:} ``The overall heat of a chemical reaction at constant pressure is the same, regardless of the intermediate steps involved.''
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Note that both previous statements follow directly from the first law of thermodynamics.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Burning of graphite (in presence of excess O$_2$) to CO$_2$:
+
+$$\textnormal{C(graphite)} + \textnormal{O}_2(g) \rightarrow \textnormal{CO}_2(g)\textnormal{ }\Delta_rH^\circ = -393.509\textnormal{ kJ mol}^{-1}$$
+
+Note that the sign signifies that the reaction is exothermic (releases heat to the surroundings).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Burning of CO (in presence of excess O$_2$) to CO$_2$:
+
+$$\textnormal{CO}(g) + \frac{1}{2}\textnormal{O}_2(g) \rightarrow \textnormal{CO}_2(g)\textnormal{, }\Delta_r H^\circ = -282.98\textnormal{ kJ mol}^{-1}$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Dissociation of water to hydrogen and oxygen:
+
+$$\textnormal{H}_2\textnormal{O}(l) \rightarrow \textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g)\textnormal{, }\Delta_r H^\circ = + 286\textnormal{ kJ mol}^{-1}$$
+
+Note that the ``+'' sign means that the reaction is endothermic (draws heat from the surroundings).
+
+\vspace*{0.2cm}
+
+For reactions, that cannot be studied directly, reaction enthalpies can be obtained by dividing the reaction into parts, which can be studied with the desired accuracy.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The heat released by burning graphite to CO is difficult to measure accurately because part of it might produce CO$_2$ and part of the graphite might not react at all. How can we determine the reaction enthalpy in this case?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we write reactions for burning of graphite yielding CO$_2$ and burning of CO to CO$_2$ (excess O$_2$ to ensure that reactions proceed all the way):
+
+$$\textnormal{(1) C(graphite)} + \textnormal{O}_2(g) \rightarrow \textnormal{CO}_2(g)\textnormal{, }\Delta_r H^\circ = -393.51\textnormal{ kJ mol}^{-1}$$
+$$\textnormal{(2) CO}(g) + \frac{1}{2}\textnormal{O}_2(g) \rightarrow \textnormal{CO}_2(g)\textnormal{, }\Delta_r H^\circ = -282.98\textnormal{ kJ mol}^{-1}$$
+
+Consider the reverse reaction of the last equation (Lavoisier \& Laplace):
+
+$$\textnormal{(3) CO}_2(g) \rightarrow\textnormal{CO}(g) + \frac{1}{2}\textnormal{O}_2(g)\textnormal{, }\Delta_r H^\circ = +282.98\textnormal{ kJ mol}^{-1}$$
+
+Next we add equations (1) and (3) together:
+
+\vspace*{-0.2cm}
+
+$$\textnormal{C(graphite)} + \textnormal{O}_2(g) + \textnormal{CO}_2(g) \rightarrow \textnormal{CO}_2(g) + \textnormal{CO}(g) + \frac{1}{2}\textnormal{O}_2(g)$$
+
+and after cancelling terms from the left and right sides, we get:
+
+\vspace*{-0.2cm}
+
+$$\textnormal{C(graphite)} + \frac{1}{2}\textnormal{O}_2(g) \rightarrow \textnormal{CO}$$
+
+The total reaction enthalpy is obtained by adding the corresponding values for the partial reactions (Hess): $\Delta_r H^\circ = \left(-393.51 + 282.98\right)\textnormal{ kJ mol}^{-1} = -110.53\textnormal{ kJ mol}^{-1}$.
+
+}

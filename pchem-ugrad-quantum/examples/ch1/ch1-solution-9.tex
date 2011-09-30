@@ -1,0 +1,15 @@
+% Problem 9/1 solution
+\noindent
+\underline{Solution:}\\
+
+The Hamiltonian for 2-D rotation is $\hat{H} = \frac{\hat{L}_z^2}{2I} = -\frac{\hbar^2}{2I}\frac{d^2}{d\phi^2}$ where the rotation axis is denoted by $z$ and $\phi$ is the angle of rotation.
+
+\begin{enumerate}
+\item Operate first by $\hat{L}_z$ on $e^{i\phi}$: $\hat{L}_ze^{i\phi} = -i\hbar\frac{d}{d\phi}e^{i\phi} = \hbar e^{i\phi}$. Thus $\hat{H}e^{i\phi} = \frac{\hbar^2}{2I}e^{i\phi}$.
+\item The same reasoning gives: $\hat{L}_z e^{-2i\phi} = -i\hbar\frac{d}{d\phi}e^{-2i\phi} = -2\hbar e^{-2i\phi}$ and $\hat{H}e^{-2i\phi} = \frac{4\hbar^2}{2I}e^{-2i\phi}$.
+\item The given wavefunction is not an eigenfunction of $\hat{L}_z$: $\hat{L}_z\cos(\phi) = -i\hbar\left(-\sin(\phi)\right)$ (expectation value is zero).
+However, it is an eigenfunction of $\hat{H}$: $\hat{H}\cos(\phi) = -\frac{\hbar^2}{2I}\frac{d^2}{d\phi^2}\cos(\phi) = \frac{\hbar^2}{2I}\cos(\phi)$.
+\item Operation by $\hat{L}_z$ would change the plus sign in the middle of the wavefunction into a minus, hence this is not an eigenfunction of $\hat{L}_z$. It is an eigenfunction of $\hat{H}$: $\hat{H}(\cos(\chi)e^{i\phi} + \sin(\chi)e^{-i\phi}) = -\frac{\hbar^2}{2I}\left((i)^2\cos(\chi)e^{i\phi} + (-i)^2\sin(\chi)e^{-i\phi}\right) = \frac{\hbar^2}{2I}\left(\cos(\chi)e^{i\phi} + \sin(\chi)e^{-i\phi}\right)$.
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

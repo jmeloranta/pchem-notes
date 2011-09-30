@@ -1,0 +1,190 @@
+\opage{
+ 
+\begin{columns}
+
+\begin{column}{8cm}
+\otitle{6.2 The Clapeyron equation}
+
+\otext
+Consider a one-component system with two phases. The Gibbs phase rule is now: $F = C - p + 2 = 1$. At equilibrium the chemical potentials (i.e. the Gibbs energy energy at constant $P$ and $T$) for both phases (denoted by $\alpha$ and $\beta$) must be equal (see Eq. (\ref{eq4.82})):
+
+\aeqn{6.3}{\mu_{\alpha} = \mu_{\beta}}
+
+\end{column}
+
+\begin{column}{2cm}
+
+\ofig{clapeyron}{0.2}{\hspace*{-0.3cm}Benoit Clapeyron, French engineer and physicist (1799 - 1864).}
+
+\end{column}
+
+\end{columns}
+
+\otext
+
+If either $P$ or $T$ is changed one of the phases $\alpha$ or $\beta$ will disappear. However, it is possible to vary both $P$ and $T$ in such a way that both phases will remain (i.e. to follow the phase boundary line in a phase diagram; phase boundary line = phase coexistence curve).
+
+\vspace*{0.2cm}
+
+If derivative $dP / dT$ was known along the phase coexistence curve, it would be possible to calculate, for example, how $P$ must be changed if $T$ is changed by certain amount while preserving both phases. It turns out that this derivative is given by the Clapeyron equation.
+
+\vspace*{0.2cm}
+
+\underline{Clapeyron equation:}
+
+\vspace*{0.2cm}
+
+The phase equilibrium relation Eq. (\ref{eq6.3}) must hold for any $P$ and $T$ along the phase coexistence line. If the pressure and temperature are varied with the restriction $\mu_{\alpha} = \mu_{\beta}$, we can also write $d\mu_{\alpha} = d\mu_{\beta}$.
+
+}
+ 
+\opage{
+
+\otext
+The Gibbs-Duhem equation (Eq. (\ref{eq4.103})) for both phases gives:
+
+$$n_{\alpha}d\mu_{\alpha} - V_{\alpha}dP + S_{\alpha}dT = 0$$
+$$n_{\beta}d\mu_{\beta} - V_{\beta}dP + S_{\beta}dT = 0$$
+
+Solving for $d\mu$'s gives:
+
+$$d\mu_{\alpha} = \bar{V}_{\alpha}dP - \bar{S}_{\alpha}dT$$
+$$d\mu_{\beta} = \bar{V}_{\beta}dP - \bar{S}_{\beta}dT$$
+
+Since $d\mu_{\alpha} = d\mu_{\beta}$, we get essentially the Clapeyron equation:
+
+\aeqn{6.5}{\bar{V}_{\alpha}dP - \bar{S}_{\alpha}dT = \bar{V}_{\beta}dP - \bar{S}_{\beta}dT}
+
+This can be rewritten (using Eq. (\ref{eq3.30}); $\Delta S = \Delta H / T$) as:
+
+\aeqn{6.6}{\frac{dP}{dT} = \frac{\bar{S}_{\beta} - \bar{S}_{\alpha}}{\bar{V}_{\beta} - \bar{V}_{\alpha}} = \frac{\Delta\bar{S}}{\Delta\bar{V}} = \frac{\Delta\bar{H}}{T\Delta\bar{V}}}
+
+The deltas in this equation refer to differences in the values for the two phases. This Clapeyron equation may be applied to vaporization, sublimation, fusion or the transition between two solid phases of a pure substance.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} What is the rate of change per Pascal (Pa) in the boiling point of water at a 100 \degree C in atmospheric pressure? The molar enthalpy of vaporization is 40.69 kJ mol$^{-1}$, the molar
+volume of liquid water is 0.019 $\times$ 10$^{-3}$ m$^3$ mol$^{-1}$, and the molar volume of steam is 30.199 $\times$ 10$^{-3}$ m$^3$ mol$^{-1}$. All values are given at 100 \degree C and 1.01325 bar.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Use the Clapeyron Eq. (\ref{eq6.6}):
+
+\vspace*{-0.3cm}
+
+$$\frac{dP}{dT} = \frac{\Delta_{vap}H}{T\left(\bar{V}_g - \bar{V}_l\right)} = \frac{40690\textnormal{ J mol}^{-1}}{\left(373.15\textnormal{ K}\right)\left(30.180\times 10^{-3}\textnormal{ m}^3\textnormal{ mol}^{-1}\right)} = 3613\textnormal{ Pa K}^{-1}$$
+
+Finally use the reciprocal identity to obtain the rate:
+
+$$\frac{dT}{dP} = \left(\frac{dP}{dT}\right)^{-1} = \frac{1}{3613\textnormal{ Pa K}^{-1}} = 2.76\times 10^{-4}\textnormal{ K Pa}^{-1}$$
+
+\textbf{Example.} Calculate the change in pressure required to increase the freezing point of water by 1 mK. At 273.15 K the heat of fusion of ice is 333.5 J g$^{-1}$, the density of water is 0.9998 g cm$^{-3}$ (= g / mL = kg / L), and the density of ice is 0.9168 g cm$^{-3}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we note that the molar volumes are given by the inverse of density:
+
+$$\bar{V} = \frac{1}{\rho}$$
+
+}
+
+\opage{
+
+\otext
+Therefore we get the molar volumes for the liquid and solid:
+
+\vspace*{-0.3cm}
+
+$$\bar{V}_l = \frac{1}{0.9998\textnormal{ g cm}^{-3}} = 1.0002\textnormal{ cm}^3\textnormal{ g}^{-1}\textnormal{ and }\bar{V}_s = \frac{1}{0.9168\textnormal{ g cm}^{-3}} = 1.0908\textnormal{ cm}^3\textnormal{ g}^{-1}$$
+
+Note that we have expressed everything in terms of grams rather than moles. If molar volume would be needed in units of volume / mol then one should use the molecular weight of the substance to convert. Provided that the molar quantities of $\Delta H$ and $\Delta V$ are independent of temperature and pressure, we can integrate Eq. (\ref{eq6.6}):
+
+\vspace*{-0.3cm}
+
+$$dP = \frac{\Delta_{fus}\bar{H}}{T\Delta\bar{V}}dT \Rightarrow \Delta P = \frac{\Delta_{fus}\bar{H}}{\Delta\bar{V}}\int\limits_{T_i}^{T_f}\frac{dT}{T} = \frac{\Delta_{fus}\bar{H}}{\Delta\bar{V}}\ln\left(\frac{T_f}{T_i}\right)$$
+$$\approx \frac{\Delta_{fus}\bar{H}}{\Delta\bar{V}}\left(\frac{T_f}{T_i} - 1\right) \approx \frac{\Delta_{fus}\bar{H}}{\Delta\bar{V}T_i}\times \Delta T$$
+
+For a change of 1 mK both $\Delta_{fus}H$ and the molar volumes are approximately constant. In the present case $T_i = 273.150$ K (freezing point of water at ambient pressure), $\Delta T = 0.001$ K and $T_f = 273.151$ K. The task is now to find $\Delta P$:
+
+\vspace*{-0.3cm}
+
+$$\Delta P = \frac{\left(333.5\textnormal{ J g}^{-1}\right)\left(0.001\textnormal{ K}\right)}{\left(-9.06\times 10^{-8}\textnormal{ m}^3\textnormal{ g}^{-1}\right)\left(273.15\textnormal{ K}\right)} = -1.348\times 10^4\textnormal{ Pa} = -0.134\textnormal{ bar}$$
+
+\vspace*{-0.2cm}
+
+Note that for water $dP / dT < 0$! This means that the phase boundary slope in the phase diagram is negative. In most cases $\bar{V} > 0$ and $dP / dT > 0$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the vapor pressure of H$_2$O($l$) at 298.15 K when the following values are given: $\Delta_{f}G_{298\textnormal{ K}}^\circ (\textnormal{H}_2\textnormal{O}(g)) = -228.6\textnormal{ kJ mol}^{-1}$ and $\Delta_{f}G_{298\textnormal{ K}}^\circ (\textnormal{H}_2\textnormal{O}(l))$ $= -237.1\textnormal{ kJ mol}^{-1}$. Assume that the gases follow the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Phase changes can be considered as ``chemical reactions'':
+
+\vspace*{-0.2cm}
+
+$$\textnormal{H}_2\textnormal{O}(l) = \textnormal{H}_2\textnormal{O}(g)$$
+
+Recall Eq. (\ref{eq5.13}) and the definition of equilibrium constant Eq. (\ref{eq5.11}):
+
+$$\Delta_r G^\circ = -RT\ln\left(K\right) = -RT\ln\left(\frac{a\left(\textnormal{H}_2\textnormal{O}(g)\right)}{\umark{a\left(\textnormal{H}_2\textnormal{O}(l)\right)}{=1}}\right) = -RT\ln\left(a\left(\textnormal{H}_2\textnormal{O}(g)\right)\right)$$
+
+\vspace*{-0.2cm}
+
+To get $\Delta_rG^\circ$ we use Eq. (\ref{eq5.37}):
+
+\vspace*{-0.4cm}
+
+$$\Delta_rG^\circ = \Delta_fG^\circ\left(\textnormal{H}_2\textnormal{O}(g)\right) - \Delta_fG^\circ\left(\textnormal{H}_2\textnormal{O}(l)\right) = \left(-228.6\textnormal{ kJ mol}^{-1}\right) - \left(-237.1\textnormal{ kJ mol}^{-1}\right)$$
+$$ = 8.56\textnormal{ kJ mol}^{-1}$$
+
+The ideal gas assumption with Eq. (\ref{eq5.11}) and replacing the subsrcipt $r$ with $vap$ (our ``reaction'' is vaporization):
+
+$$\Delta_{vap}G^\circ = -RT\ln\left(P_{\textnormal{H}_2\textnormal{O}(g)} / P^\circ\right) \Rightarrow P_{\textnormal{H}_2\textnormal{O}(g)} = P^\circ\exp\left(-\frac{\Delta_{vap}G^\circ}{RT}\right)$$
+
+}
+
+\opage{
+
+\otext
+
+$$P_{\textnormal{H}_2\textnormal{O}(g)} = \left(1\textnormal{ bar}\right)\exp\left(-\frac{8560\textnormal{ J mol}^{-1}}{\left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\left(298.15\textnormal{ K}\right)}\right) = 0.032\textnormal{ bar}$$
+
+\textbf{Example.} Calculate the equilibrium pressure for the conversion of graphite to diamond at 25 \degree C. The densities of graphite and diamond may be taken to be 2.25 and 3.51 g cm$^{-3}$, respectively, independent of pressure, in calculating the change of $\Delta G$ with pressure.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Consider the initial (1) and final (2) states:\\
+State 1: Graphite ($\Delta_fG^\circ = 0$ kJ mol$^{-1}$) and $P_1 = 1$ bar (standard pressure $P^\circ$).\\
+State 2: Diamond ($\Delta_fG^\circ = 2900$ J mol$^{-1}$) and $P_2 =$ unknown (to be calculated).\\
+
+\vspace*{0.2cm}
+
+Recall Eq. (\ref{eq4.38}): $V = \left(\frac{\partial G}{\partial P}\right)_{T,n}$. Integration of this equation at constant temperature gives:
+
+\vspace*{-0.2cm}
+
+$$\int\limits_{\Delta\bar{G}_1}^{\Delta\bar{G}_2}d\left(\Delta\bar{G}\right) = \int\limits_{P_1}^{P_2}\Delta\bar{V}dP \Rightarrow \Delta\bar{G}_2 - \Delta\bar{G}_1 = P_2\Delta\bar{V} - P_1\bar{V}\textnormal{ (}\Delta\bar{V}\textnormal{ indep. of }P\textnormal{)}$$
+$$\Rightarrow P_2 = \frac{\Delta\bar{G}_2 - \Delta\bar{G}_1}{\Delta\bar{V}} + P_1 \Rightarrow P_2 = \frac{-2900\textnormal{ J mol}^{-1}}{-1.91\times 10^{-6}\textnormal{ m}^3\textnormal{ mol}^{-1}} + 10^5\textnormal{ Pa} = 1.52\times 10^9\textnormal{ Pa}$$
+
+
+}
+
+\opage{
+
+\otext
+
+$$\textnormal{where }\bar{V} = \left( 12\textnormal{ g mol}^{-1}\right)\left(\frac{1}{3.51\textnormal{ g m}^{-3}} - \frac{1}{2.25\textnormal{ g m}^{-3}}\right)\times 10^6 = -1.91\times 10^{-6}\textnormal{ m}^3\textnormal{ mol}^{-1}$$
+
+The above the Gibbs energy difference between the states 1 and 2 is given by the difference of the formation Gibbs energies $\Delta_fG^\circ$ for each phase.
+
+\vfill
+
+}

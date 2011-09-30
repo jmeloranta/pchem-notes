@@ -1,0 +1,29 @@
+% Problem 1/4 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{itemize}
+
+\item[a)] Use the following equation from the lecture notes:
+
+$$\Delta S = nR\ln\left(\frac{V_2}{V_1}\right) = \left(1\textnormal{ mol}\right)\times\left(8.314\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\ln\left(\frac{10\textnormal{ L}}{0.5\textnormal{ L}}\right)$$
+$$ = 24.91\textnormal{ J K}^{-1}$$
+
+\item[b)] Start with the following equation (see lecture notes):
+
+$$\left(\frac{\partial S}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V$$
+
+The equation of state gives:
+
+$$P = \frac{nRT}{V - nb} - \frac{an^2}{V^2} \Rightarrow \left(\frac{\partial P}{\partial T}\right)_V = \frac{nR}{V - nb}$$
+$$\Rightarrow \left(\frac{\partial S}{\partial V}\right)_T = \frac{nR}{V - nb} \Rightarrow \Delta S = \int\limits_{V_1}^{V_2}\frac{nR}{V -nb}dV = nR\ln\left(\frac{V_2 - nb}{V_1 - nb}\right)$$
+$$\textnormal{or }\Delta\bar{S} = R\ln\left(\frac{\bar{V}_2 - b}{\bar{V}_1 - b}\right)$$
+
+Plugging in the numerical values gives:
+
+$$\Delta S = \left(1\textnormal{ mol}\right)\times\left(8.314\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times$$
+$$\ln\left(\frac{10\textnormal{ L} - (1\textnormal{ mol})\times (0.03913\textnormal{ L mol}^{-1})}{0.5\textnormal{ mol} - (1\textnormal{ mol})\times (0.03913\textnormal{ L mol}^{-1}}\right) = 25.55\textnormal{ J K}^{-1}$$
+
+\end{itemize}
+
+\hrule\vspace{0.5cm}

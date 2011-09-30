@@ -1,0 +1,110 @@
+\noindent
+\textbf{CHEM 352:
+\ifthenelse{\equal{\solutions}{true}}{Examples}{Homework} for chapter 3.}\\
+
+\noindent
+1. a) Show that $sp^2$ hybrid orbital $h = \frac{1}{\sqrt{3}}\left( s + \sqrt{2}p_x\right)$ is normalized.
+The functions $s$ and $p_x$ denote normalized hydrogenlike atomic orbitals.\\
+\phantom{1. }b) Normalize the following molecular orbital $\psi = \psi_{s,A} + \lambda\psi_{s,B}$ where
+$\psi_{s,A}$ and $\psi_{s,B}$ are normalized and $\lambda$ is a parameter. Use the notation $S$ for overlap
+integral to simplify the result.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-1}}{}
+
+\noindent
+2. Consider hydrogen molecule (H(A)--H(B)) with the LCAO-MO orbitals formed from the atomic orbitals $1s_A$ and $1s_B$:
+
+\begin{center}
+$1\sigma_g = N_1\left( 1s_A + 1s_B\right)$ and $1\sigma_u^* = N_2\left( 1s_A - 1s_B\right)$
+\end{center}
+
+\vspace{-0.5cm}
+\phantom{2. }a) Show that the Slater determinant corresponding to the ground state solution is antisymmetric.\\
+\phantom{2. }b) One of the excited states of H$_2$ corresponds to the following Slater determinant:
+
+\begin{center}
+$
+\psi_{MO} = \frac{1}{\sqrt{2}}\begin{vmatrix}
+1\sigma_g(1)\alpha(1) & 1\sigma_u^*(1)\alpha(1)\\
+1\sigma_g(2)\alpha(2) & 1\sigma_u^*(2)\alpha(2)\\
+\end{vmatrix}
+$
+\end{center}
+
+\noindent
+\phantom{2. b) }What electron configuration does this correspond to?\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-2}}{}
+
+\noindent
+3. Determine the valence electron configurations and bond orders in the following molecules:
+C$_2^+$, C$_2$, C$_2^-$, N$_2^+$, N$_2$, N$_2^-$, O$_2^+$, O$_2$, O$_2^-$. Which of these
+molecules are paramagnetic and what are their term symbols?\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-3}}{}
+
+\noindent
+4. Sketch the molecular orbital diagram for B$_2$ molecule by using $1s$, $2s$ and $2p$ atomic orbitals and
+all 10 electrons. What is the term symbol?\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-4}}{}
+
+\noindent
+5. a) Sketch a molecular orbital diagram for XeF molecule and determine the electronic configuration. Would
+XeF$^+$ have shorter bond length than XeF?\\
+\phantom{5. }b) Construct a molecular orbital diagram for the double bond (4 electrons) in ethene by using
+the carbon $sp^2$ hybrid orbitals as basis set. Choose the energy order of the $\sigma$ and $\pi$ orbitals
+in such a way that a stable molecule is formed.\\
+\phantom{5. }c) Explain why Ne$_2$ molecule is not stable. Why are atoms with the outmost $s$ and $p$ orbitals 
+full (e.g. the octet electronic configuration) chemically inert?\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-5}}{}
+
+\noindent
+6. Use the variational principle to obtain the lowest energy solution to the hydrogen atom Schr\"odinger
+equation in spherical coordinates by using the following trial wavefunctions:\\
+\phantom{6. }a) $\psi_{trial} = e^{-kr}$ with $k$ as a variational parameter.\\
+\phantom{6. }b) $\psi_{trial} = e^{-kr^2}$ with $k$ as a variational parameter.\\
+Note that both trial functions depend only on $r$ and the angular terms disappear
+from the Laplacian. You may find the following integrals useful:
+
+\begin{center}
+$\int_0^\infty x^ne^{-ax}dx = \frac{n!}{a^{n+1}}$\\
+$\int_0^\infty x^me^{-ax^2}dx = \frac{\Gamma[(m + 1)/2]}{2a^{(m + 1) / 2}}$\\
+$\Gamma[n + 1] = n!$, with $0! = 1$ ($n$ is integer)\\
+$\Gamma[n + 1] = n\Gamma[n]$\\
+$\Gamma\left[\frac{1}{2}\right] = \sqrt{\pi}$
+\end{center}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-6}}{}
+
+\noindent
+7. Calculate the $\pi$ orbitals of allyl radical (corresponding to localized structure 
+$\overset{\textnormal{.}}{\textnormal{CH}_2}$--C=CH$_2$, however, assume delocalization in your calculation)
+by using the H\"uckel theory.\\
+a) What is the wavelength of the LUMO $\leftarrow$ HOMO electronic transition when $\beta = -22,000$ cm$^{-1}$?\\
+b) Calculate the charge densities and bond orders from the H\"uckel wavefunction. Definitions for these
+observables are given below:\\
+
+\noindent
+\underline{Electron density on atom $i$:}
+
+\begin{center}
+$$\rho(i) = \sum_{j = 1}^{N_{MO}} |c_i^j|^2n_j$$
+\end{center}
+
+\noindent
+where $n_j$ is the number of electrons on orbital $j$ and $c_i^j$ is the H\"uckel MO coefficient of the basis
+function centered on atom $i$ for orbital $j$. The summation runs over the occupied orbitals.\\
+
+\noindent
+\underline{Bond order between atoms $i$ and $j$:}
+
+\begin{center}
+$$\textnormal{bond order} = \sum_{k = 1}^{N_{MO}} c_i^k c_j^k n_k$$
+\end{center}
+
+\noindent
+where the symbols are defined as above.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-7}}{}

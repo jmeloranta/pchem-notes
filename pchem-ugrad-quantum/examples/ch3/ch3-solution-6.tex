@@ -1,0 +1,136 @@
+% Problem 3/6 solution
+\noindent
+\underline{Solution:}\\
+
+\noindent
+Use the variational principle and employ spherical coordinates in integrations:\\
+
+$E = \frac{\int\psi^*_{trial}H\psi_{trial}d\tau}{\int\psi^*_{trial}\psi_{trial}d\tau}$
+
+\noindent
+a)
+$$\int\psi^*_{trial}\psi_{trial}d\tau = \int_0^\infty e^{-2kr}
+\underbrace{4\pi r^2dr}_{d\tau} = 4\pi\int_0^\infty r^2e^{-2kr}dr
+= \frac{\pi}{k^3}$$
+
+$$\int\psi_{trial}^*H\psi_{trial}d\tau = \int\left( e^{-kr}\right)
+\left( -\frac{\hbar^2}{2m_e}\Delta - \frac{e^2}{4\pi\epsilon_0r}\right)
+\left( e^{-kr}\right)d\tau$$
+
+$$= \int_0^\infty\left( e^{-kr}\right)
+\left( -\frac{\hbar^2}{2m_e}\left[\frac{\partial^2}{\partial r^2} + \frac{2}{r}\frac{\partial}
+{\partial r}\right] - \frac{e^2}{4\pi\epsilon_0r}\right)\left( e^{-kr}\right)
+\left( 4\pi r^2dr\right)$$
+
+$$= -\frac{4\pi\hbar^2}{2m_e}\int_0^\infty \left( e^{-kr}\right)
+\left( k^2e^{-kr} - \frac{2k}{r}e^{-kr}\right)r^2dr 
+- \frac{e^2}{\epsilon_0}\int_0^\infty\frac{e^{-2kr}}{r}r^2dr$$
+
+$$= -\frac{4\pi\hbar^2}{2m_e}\int_0^\infty e^{-2kr}(r^2k^2 - 2kr)dr
+- \frac{e^2}{\epsilon_0}\int_0^\infty re^{-2kr}dr$$
+
+$$= -\frac{2\pi\hbar^2k^2}{m_e}\underbrace{\int_0^\infty r^2 e^{-2kr}dr}_{= \frac{2}{(2k)^3}}
++ \frac{4\pi\hbar^2k}{m_e}\underbrace{\int_0^\infty re^{-2kr}dr}_{= 
+\frac{1}{(2k)^2}} - \frac{e^2}{\epsilon_0}\underbrace{\int_0^\infty
+re^{-2kr}dr}_{= \frac{1}{(2k)^2}}$$
+
+$$= -\frac{\pi\hbar^2}{2m_ek} + \frac{\pi\hbar^2}{m_ek}
+- \frac{e^2}{4k^2\epsilon_0}$$
+
+\noindent
+These results give:\\
+
+$$\frac{\int\psi^*H\psi d\tau}{\int\psi^*\psi d\tau} =
+\left( -\frac{\pi\hbar^2}{2m_ek} + \frac{\pi\hbar^2}{m_ek}
+- \frac{e^2}{4k^2\epsilon_0}\right) / \left( \pi / k^3\right)$$
+
+$$ = -\frac{\hbar^2k^2}{2m_e} + \frac{\hbar^2k^2}{m_e} - \frac{e^2k}
+{4\pi\epsilon_0} = \frac{\hbar^2k^2}{2m_e} - \frac{e^2k}{4\pi\epsilon_0}$$\\
+
+\noindent
+This expression must be minimized with respect to variational parameter
+$k$:\\
+
+$$\frac{dE}{dk} = d\left( \frac{\hbar^2k^2}{2m_e} - \frac{e^2k}
+{4\pi\epsilon_0}\right) / dk = \frac{\hbar^2k}{m_e} - \frac{e^2}
+{4\pi\epsilon_0} = 0$$
+
+$$\Rightarrow k = \frac{m_ee^2}{4\pi\epsilon_0\hbar^2} \Rightarrow
+E = -\frac{1}{2}\frac{m_ee^4}{(4\epsilon_0)^2\hbar^2} = -hcR$$
+
+\noindent
+where $R$ is the Rydberg constant.\\
+
+\noindent
+b) The logic is exactly the same as in part a).\\
+
+$$\int\psi^*_{trial}\psi_{trial}d\tau = \int_0^\infty e^{-2kr^2}
+\underbrace{4\pi r^2dr}_{d\tau} = \frac{4\pi\Gamma[3/2]}{2(2k)^{3/2}}
+= \frac{\pi^{3/2}}{(2k)^{3/2}}$$
+
+\noindent
+The Laplacian of this function is given by:
+
+$$\Delta\psi_{trial} = \frac{\partial}{\partial r}\left( -2kre^{-kr^2}
+\right) + \frac{2}{r}\left( -2kr\right)e^{-kr^2} = \left( 4k^2r^2
+- 6k\right) e^{-kr^2}$$
+
+\noindent
+Thus the energy expectation value is (without normalization):\\
+
+$$\int_o^\infty\left( -\frac{2\hbar^2k^2r^2}{m_e} + \frac{3k\hbar^2}
+{m_e} - \frac{e^2}{4\pi\epsilon_0}\frac{1}{r}\right)e^{-2kr^2}\times
+4\pi r^2dr$$
+
+$$= 4\pi\int_0^\infty\left( -\frac{2\hbar^2k^2r^4}{m_e} 
++ \frac{3k\hbar^2r^2}{m_e} - \frac{e^2r}{4\pi\epsilon_0}\right) e^{-2kr^2}dr$$
+
+$$= -\frac{8\pi\hbar^2k^2}{m_e}\underbrace{\int_0^\infty r^4 
+e^{-2kr^2}dr}_{\frac{\Gamma[5/2]}{2(2k)^{5/2}} = \frac{3\sqrt{\pi}}{8(2k)^{5/2}}}
++ \underbrace{\frac{12\pi k\hbar^2}{m_e}\int_o^\infty 
+r^2e^{-2kr^2}dr}_{\frac{\Gamma[3/2]}{2(2k)^{3/2}} = \frac{\sqrt{\pi}}{4(2k)^{3/2}}}
+- \frac{e^2}{\epsilon_0}\underbrace{\int_0^\infty 
+re^{-2kr^2}dr}_{\frac{\Gamma[1]}{2(2k)} = 1/(4k)}
+$$
+
+$$= - \frac{3\pi^{3/2}\hbar^2}{4m_e\sqrt{2k}} + \frac{3\pi^{3/2}\hbar^2}
+{2m_e\sqrt{2k}} - \frac{e^2}{4\epsilon_0k}$$
+
+$$\Rightarrow \frac{\int\psi^*_{trial}\psi_{trial}d\tau}
+{\int\psi^*_{trial}\psi_{trial}d\tau} 
+= \frac{-\frac{3\pi^{3/2}\hbar^2}{4m_e\sqrt{2k}} + \frac{3\pi^{3/2}\hbar^2}
+{2m_e\sqrt{2k}} - \frac{e^2}{4\epsilon_0k}}{\frac{\pi^{3/2}}{(2k)^{3/2}}}
+= -\frac{3\hbar^2k}{2m_e} + \frac{6\hbar^2k}{2m_e} - \frac{e^2\sqrt{2k}}
+{2\pi^{3/2}\epsilon_0}
+$$
+
+$$= \frac{3\hbar^2k}{2m_e} - \frac{e^2\sqrt{k}}{\sqrt{2}\pi^{3/2}\epsilon_0}$$
+
+\noindent
+To find the minimum value for energy (with respect to $k$), we calculate
+the first derivative and set it to zero:\\
+
+$$E = \frac{3\hbar^2k}{2m_e} - \frac{e^2\sqrt{k}}{\sqrt{2}\pi^{3/2}\epsilon_0}$$
+
+$$\Rightarrow \frac{\partial E}{\partial k} = \frac{3\hbar^2}{2m_e}
+- \frac{e^2}{2\sqrt{2}\pi^{3/2}\epsilon_0\sqrt{k}} = 0$$
+
+$$\Rightarrow k=\left(\frac{m_ee^2}{3\sqrt{2}\pi^{3/2}\epsilon_0\hbar^2}
+\right)^2 = \frac{m_e^2e^4}{18\pi^3\epsilon_0^2\hbar^4}$$
+
+\noindent
+The total energy at this point is:
+
+$$E = \frac{3\hbar^2}{2m_e}\times\frac{m_e^2e^4}{18\pi^3\epsilon_0^2
+\hbar^4} - \frac{e^2}{\sqrt{2}\pi^{3/2}\epsilon_0}\times
+\frac{m_ee^2}{3\sqrt{2}\pi^{3/2}\epsilon_0\hbar^2}
+= \frac{m_ee^4}{12\pi^3\epsilon_0^2\hbar^2} - \frac{2m_ee^4}
+{12\pi^3\epsilon^2_0\hbar^2}$$
+
+$$ = -\frac{m_ee^4}{12\pi^3\epsilon_0^2\hbar^2} = -\frac{8}{3\pi}hcR \approx -0.85hcR$$\\
+
+\noindent
+c) The function in a) gives lower energy and therefore that trial function
+is better.\\
+
+\hrule\vspace{0.5cm}

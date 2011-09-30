@@ -1,0 +1,376 @@
+\opage{
+\otitle{6.4 Vapor-liquid equilibrium of ideal binary liquid mixtures}
+
+\otext
+\underline{Task:} To understand vapor-liquid equilibrium when two components are present in a liquid. For example, when we have a mixture of benzene and toluene at a given temperature, what is the vapor composition and the vapor pressure? This consideration would be very important when separating these components by distillation. In this section, we will assume that gases follow the ideal gas law although a more general theory would have to use fugacities instead of partial pressures.
+
+\vspace*{0.2cm}
+
+Consider a non-reactive binary component mixture of liquids. When the liquid and vapor phases are in eqiulibrium, the chemical potentials for each component must equal:
+
+\aeqn{6.19}{\mu_1(l) = \mu_1(g)\textnormal{ and }\mu_2(l) = \mu_2(g)}
+
+For ideal gases the chemical potential for each component in the gas phase is given by Eq. (\ref{eq5.10}) with $a_i = P_i / P^\circ$:
+
+\aeqn{6.20}{\mu_i(g) = \mu_i^\circ (g) + RT\ln\left(\frac{P_i}{P^\circ}\right)\textnormal{ where }i=1,2}
+
+For the liquid phase components we have to use the general form (Eq. (\ref{eq4.78})):
+
+\aeqn{6.21}{\mu_i(l) = \mu_i^\circ (l) + RT\ln\left(a_i\right)}
+
+}
+
+\opage{
+
+\otext
+By combining the above equations:
+
+\aeqn{6.22}{\mu_i^\circ(g) + RT\ln\left(\frac{P_i}{P^\circ}\right) = \mu_i^\circ(l) + RT\ln\left(a_i\right)}
+
+If this equation is written for a pure liquid $i$, it reads:
+
+\aeqn{6.23}{\mu_i^\circ(g) + RT\ln\left(\frac{P_i^*}{P^\circ}\right) = \mu_i^\circ(l)}
+
+where $P_i^*$ is the equilibrium vapor pressure of pure $i$. Subtract Eq. (\ref{eq6.23}) from (\ref{eq6.22}) and we can rearrange the resulting equation as:
+
+\aeqn{6.24}{RT\ln\left(\frac{P_i}{P_i^*}\right) = RT\ln(a_i) \Rightarrow a_i = \frac{P_i}{P_i^*}}
+
+Thus, if the vapor follows the ideal gas law, the activity of a component in a solution is given by the ratio of its partial pressure above the solution to the vapor pressure of the pure liquid.
+
+\vspace*{0.2cm}
+
+An experimental finding (Francois-Marie Raoult, 1830 - 1901):
+
+\aeqn{6.26}{P_i\approx x_iP_i^*\textnormal{ (Raoult's law)}}
+
+where $P_i^*$ is the equilibrium pressure of \textit{pure} liquid $i$ and $x_i$ is its molar fraction in \textit{liquid} phase.
+
+}
+
+\opage{
+
+\otext
+This holds well when the components are chemically ``similar''. An eample of chemically similar compounds is given by a benzene/toluene mixture. The Raoult's law is demonstrated for this mixture below.
+
+\vspace*{-0.3cm}
+
+\begin{columns}
+
+\hspace*{-1cm}
+\begin{column}{5cm}
+\ofig{benzene-toluene}{0.4}{}
+\end{column}
+
+\begin{column}{4cm}
+
+\otext
+
+Chemical similarity: A and B are ``similar'' if the molecular interactions between A -- A, A -- B and B -- B are nearly identical. For the benzene/toluene example, these interactions are long-range van der Waals forces.
+
+\end{column}
+
+\end{columns}
+
+Because the gas phase was assumed to be ideal, we can express the partial pressure of a gas component $i$ by multiplying the total gas pressure by the molar fraction in the \textit{gas phase} ($y_i$):
+
+\aeqn{6.27}{P_i = y_iP \approx x_iP_i^*}
+
+This lets us connect the molar fraction in the liquid phase ($x_i$) to the gas phase quantities.
+
+}
+
+\opage{
+
+\otext
+From Eq. (\ref{eq6.27}) we can solve for $x_i$ (the liquid phase molar fraction):
+
+\aeqn{6.27a}{x_i = y_i\frac{P}{P^*_i} = \frac{P_i}{P^*_i}}
+
+Based on Eq. (\ref{eq6.24}), the above is equal to activity $a_i$:
+
+\aeqn{6.27b}{a_i = x_i}
+
+Now we have managed to get an expression for activity in the liquid phase by considering the gas phase and the Raoult's law. Inserting this into Eq. (6.21) gives:
+
+\aeqn{6.28}{\mu_i(l) = \mu_i^\circ (l) + RT\ln\umark{\left(x_i\right)}{=a_i}}
+
+Solutions for which Eq. (\ref{eq6.27b}) holds are called ideal solutions. Recall that $y_i$ is the mole fraction in the gas phase and $x_i$ is the mole fraction in the liquid phase. The total vapor pressure of an ideal binary mixture is given by:
+
+\aeqn{6.29}{P = P_1 + P_2 = x_1P_1^* + x_2P_2^* = P_2^* + \left(P_1^* - P_2^*\right)x_1}
+
+\vspace*{0.2cm}
+
+Why is the total pressure line also called the ``bubble point line''?
+
+\vspace*{0.2cm}
+A liquid boils when its vapor pressure exceeds the external pressure. For example, under normal conditions water boils at 100 \degree C because at that point its vapor pressure is equal to the atmospheric pressure (1 atm). Boiling is seen as formation of gas bubbles in the liquid. Consider the plot below where the total vapor pressure is shown as a function of $x_1$.
+
+}
+
+\opage{
+
+\otext
+
+\vspace*{-0.4cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{bubble-point}{0.5}{}
+\end{column}
+
+\begin{column}{6cm}
+
+\otext
+
+If the external pressure would be below the bubble point line, the liquid would start boiling. In the opposite case, the liquid does not boil.
+\end{column}
+
+\end{columns}
+
+\hrulefill
+
+The vapor composition of a binary solution can be calculated using Raoult's law:
+
+\aeqn{6.30}{y_1 = \frac{P_1}{P_1 + P_2} = \frac{x_1P_1^*}{x_1P_1^* + x_2P_2^*} = \frac{x_1P_1^*}{P_2^* + \left(P_1^* - P_2^*\right)x_1}}
+
+This equation can be solved for $x_1$:
+
+\aeqn{6.31}{x_1 = \frac{y_1P_2^*}{P_1^* + \left(P_2^* - P_1^*\right)y_1}}
+
+By eliminating $x_1$ by using Eq. (\ref{eq6.27}), we get:
+
+\aeqn{6.32}{P = \frac{P_1^*P_2^*}{P_1^* + \left(P_2^* - P_1^*\right)y_1}}
+
+}
+
+\opage{
+
+\otext
+This function is plotted below (i.e., total pressure vs. molar fraction in the gas phase) for benzene/toluene solution:
+
+\vspace*{-0.2cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{dew-point}{0.45}{}
+\end{column}
+
+\begin{column}{6cm}
+
+\vspace*{-1cm}
+
+\otext
+
+At external pressures below the dew point line the binary mixture exists as a two-component gas. Above this line liquid starts to form.
+
+\vspace*{0.2cm}
+
+$P_1^*$ = Vapor pressure of pure toluene.\\
+$P_2^*$ = Vapor pressure of pure benzene.\\
+\end{column}
+
+\end{columns}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\vspace*{-1cm}
+\ofig{bubble-dew}{0.4}{}
+\end{column}
+
+\begin{column}{6cm}
+
+\vspace*{-1cm}
+
+\otext
+
+Liquid and vapor compositions for benzene/toluene mixture is shown. Note that the $x$-axis might be somewhat confusing: it is used for two different variables $x_1$ and $y_1$. This does not mean that they would be equal! Variable $x_1$ corresponds to the top straight line and $y_1$ for the lower curve. A tie line (dashed line) connects $x_1$ and $y_1$ at a given total pressure $P$. In the pressure ranges from $P_1^*$ to $P_2^*$, the system may exist in liquid-gas phase equilibrium with a given $x_1$ and $y_1$.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} At 60 \degree C the vapor pressures of pure benzene and toluene are 0.513 and 0.185 bar, respectively. What are the equations of the bubble point and dew point lines? For a solution with 0.60 mole fraction of toluene, what are the partial pressures of toluene and benzene, and what is the mole fraction of toluene in the vapor? Assume ideal solutions.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Denote toluene by 1 and benzene by 2. The bubble point line is given by Eq. (\ref{eq6.29}):
+
+$$P(x_1) = P_2^* + \left(P_1^* - P_2^*\right)x_1 = 0.513\textnormal{ bar} - \left(0.328\textnormal{ bar}\right)x_1$$
+
+The dew point line is given by Eq. (\ref{eq6.32}):
+
+$$P(y_1) = \frac{P_1^*P_2^*}{P_1^* + \left(P_2^* - P_1^*\right)y_1} = \frac{0.0949\textnormal{ bar}^2}{0.185\textnormal{ bar} - \left(0.328\textnormal{ bar}\right)y_1}$$
+
+With 0.60 mole fraction of toluene, the partial pressures are given by Eq. (\ref{eq6.26}):
+
+$$P_1 = x_1P_1^* = 0.60\times\left(0.185\textnormal{ bar}\right) = 0.111\textnormal{ bar}$$
+$$P_2 = x_2P_2^* = 0.40\times\left(0.513\textnormal{ bar}\right) = 0.205\textnormal{ bar}$$
+
+From the above bubble point line equation with $x_1 = 0.60$, we get:
+
+$$P = 0.513\textnormal{ bar} - \left(0.328\textnormal{ bar}\right)\times\left(0.60\right) = 0.316\textnormal{ bar}$$
+
+}
+
+\opage{
+
+\otext
+Eq. (\ref{eq6.30}) relates $y_1$ and $x_1$ to each other and hence:
+
+$$y_1 = \frac{x_1P^*_1}{P_2^* + \left(P_1^* - P_2^*\right)x_1} = \frac{0.60 \times \left(0.185\textnormal{ bar}\right)}{0.513\textnormal{ bar} - \left(0.328\textnormal{ bar}\right)\times 0.60} = 0.351$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the activities of toluene (component 1) and benzene (component 2) in the liquid by using the values given in the previous example. Assume ideal solutions.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Use Eq. (\ref{eq6.24}):
+
+$$a_1 = \frac{P_1}{P_1^*} = 0.600\textnormal{ and }a_2 = \frac{P_2}{P_2^*} = 0.400$$
+
+Note that we assumed an ideal solution, the activities are equal to the mole fractions.
+
+\vspace*{0.3cm}
+
+\underline{Thermodynamic quantities of ideal solutions}
+
+\vspace*{0.2cm}
+
+In ideal solutions the activities are given by Eq. (\ref{eq6.28}): $\mu_i(l) = \mu_i^\circ (l) + RT\ln\left(x_i\right)$.
+
+\vspace*{0.2cm}
+
+The molar Gibbs energy of a solution at constant $T$ and $P$ is given by Eq. (\ref{eq4.45}):
+
+$$\bar{G} = \sum\limits_{i=1}^{N_s} \mu_i\frac{n_i}{n} = \sum\limits_{i=1}^{N_s} \mu_i x_i$$
+
+}
+
+\opage{
+
+\otext
+Inserting the chemical potential expression in above, we get (constant $T$ and $P$):
+
+\aeqn{6.33}{\bar{G} = \sum\limits_{i=1}^{N_s} x_i\mu_i = \sum\limits_{i=1}^{N_s}x_i\mu_i^\circ + RT\sum\limits_{i=1}^{n_S}x_i\ln\left(x_i\right)}
+
+Note that this expression gives the molar Gibbs energy as a function of pressure and temperature. Thus this expression contains all of the thermodynamic information about an ideal solution.
+
+\vspace*{0.2cm}
+
+The molar entropy of an ideal solution can be obtained using Eqs. (\ref{eq4.37}) and (\ref{eq4.47}):
+
+\aeqn{6.34}{\bar{S} = -\left(\frac{\partial\bar{G}}{\partial T}\right)_P = -\sum\limits_{i=1}^{N_s}x_i\left(\frac{\partial\mu_i^\circ}{\partial T}\right)_P - R\sum\limits_{i=1}^{N_s}x_i\ln\left(x_i\right) = \sum\limits_{i=1}^{N_s}S_i^\circ - R\sum\limits_{i=1}^{N_s}x_i\ln\left(x_i\right)}
+
+The molar enthalpy of an ideal solution can be calculated by using the Gibbs-Helmholtz equation (using Eqs. (\ref{eq4.62}), (\ref{eq4.47}) with $\bar{G}_i^\circ = \mu_i^\circ$, and $\bar{G}_i^\circ = \bar{H}_i^\circ - T\bar{S}_i^\circ$):
+
+\vspace*{-0.2cm}
+
+\beqn{6.35}{\hspace*{-1.2cm}\bar{H} = -T^2\left[\frac{\partial\left(\bar{G}/T\right)}{\partial T}\right]_{P,\lbrace n_i\rbrace} = -T^2\sum\limits_{i=1}^{N_s}\left[x_i\frac{\partial\left(\mu_i^\circ / T\right)}{\partial T}\right] = -T^2\sum\limits_{i=1}^{N_s}\left[x_i\left(\frac{1}{T}\frac{\partial\mu_i^\circ}{\partial T} - \frac{\mu_i^\circ}{T^2}\right)\right]\hspace*{0.6cm}}
+{= \sum\limits_{i=1}^{N_s} x_i\left(-T\frac{\partial\mu_i^\circ}{\partial T} + \mu_i^\circ\right) = \sum\limits_{i=1}^{N_s}x_i\left(T\bar{S}^\circ_i + \bar{G}_i^\circ\right) = \sum\limits_{i=1}^{N_s}x_i\bar{H}_i^\circ}
+
+}
+
+\opage{
+
+\otext
+The molar volume is obtained from Eq. (\ref{eq4.38}):
+
+\vspace*{-0.2cm}
+
+\aeqn{6.36}{\bar{V} = \left(\frac{\partial\bar{G}}{\partial P}\right)_{T,\lbrace n_i\rbrace} = \left(\partial\left[\sum x_i\omark{RT\ln(x_i)}{= \mu_i - \mu_i^\circ\textnormal{(\ref{eq6.28})}}\right] / \partial P\right) = \sum x_i\left(\partial\mu_i / \partial P\right) = \sum\limits_{i=1}^{N_s}x_i\bar{V}_i}
+
+Remember above that $\mu_i^\circ$ does not depend on pressure - only on temperature.
+
+\vspace*{0.2cm}
+
+The first terms (with superscripts \degree) in Eqs. (\ref{eq6.33}) and (\ref{eq6.34}) give the thermodynamic properties of isolated species (i.e. no mixing) and the possible second term the effect of mixing:
+
+\aeqn{6.37}{\Delta_{mix} G = RT\sum\limits_{i=1}^{N_s}x_i\ln\left(x_i\right)}
+
+\aeqn{6.38}{\Delta_{mix} S = -R\sum\limits_{i=1}^{N_s}x_i\ln\left(x_i\right)}
+
+\aeqn{6.39}{\Delta_{mix} H = 0}
+
+\aeqn{6.40}{\Delta_{mix} V = 0}
+
+These results are essentially the same as we obtained earlier for ideal gas mxitures. \textit{Note that there is no volume change or heat evolution when ideal solutions are formed under constant temperature and pressure.}
+
+}
+
+\opage{
+
+\otext
+\underline{The effect of temperature on ideal binary liquid mixtures at constant pressure}
+
+\vspace*{0.2cm}
+
+Consider toluene (1) - benzene (2) mixture at atmospheric pressure (units in bar):
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lllllllll}
+    & 80.1 \degree C & 88 \degree C & 90 \degree C & 94 \degree C & 98 \degree C & 100 \degree C & 104 \degree C & 110.6 \degree C\\
+$P_1^*$ & -- & 0.508 & 0.543 & 0.616 & 0.698 & 0.742 & 0.836 & \underline{1.013}\\
+$P_2^*$ & \underline{1.013} & 1.285 & 1.361 & 1.526 & 1.705 & 1.800 & 2.004 & --\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+The boiling points for pure liquids were underlined above. Vapor pressures for pure liquids can be determined experimentally.
+
+\vspace{0.3cm}
+
+\textbf{Example.} Calculate the liquid mole fraction ($x_1$) of toluene in benzene-toluene solution that boils at 100 \degree C. Calculate also the toluene mole fraction ($y_1$) in the vapor above the liquid.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We use Eq. (\ref{eq6.29}) and solve for $x_1$, recall that a liquid boils when its vapor pressure reaches the external pressure (one atmosphere here) and use the above table:
+
+$$x_1 = \frac{P - P_2^*}{P_1^* - P_2^*} = \frac{(1.013\textnormal{ bar}) - (1.800\textnormal{ bar})}{(0.742\textnormal{ bar}) - (1.800\textnormal{ bar})} = 0.744$$
+
+By knowing $x_1$, we can further use Eq. (\ref{eq6.27}) to get $y_1$:
+
+$$y_1 = \frac{x_1P_1^*}{P} = \frac{0.744\times\left(0.742\textnormal{ bar}\right)}{1.013\textnormal{ bar}} = 0.545$$
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The method of fractional distillation can be understood in the previously developed theory. Consider a binary ideal mixture with components A and B. In this example component A (i.e. the volatile component) has a lower boiling point than B.
+
+\vspace*{0.2cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{distillation}{0.5}{}
+\end{column}
+
+\begin{column}{6cm}
+
+\vspace*{-0.5cm}
+
+\otext
+
+\begin{enumerate}
+\item Consider a solution with mole fraction $x_1$ of A.
+\item Heat the solution to its boiling point $T_2$. The liquid mole fraction is now $x_2$.
+\item Extract vapor, which has mole fraction $y_2$. Note that there is more of the volatile component in the gas phase than in the liquid.
+\end{enumerate}
+
+Repeat the above cycle for the liquid, which was condensed from the gas phase above. The next step is shown as $x_3$ and $y_3$. By repeating the cycle, a better separation of the components can be reached.
+
+\end{column}
+
+\end{columns}
+
+}

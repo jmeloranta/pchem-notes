@@ -1,0 +1,94 @@
+\opage{
+\otitle{5.13 Molar absorption coefficient and the transition dipole moment}
+
+\otext
+The relationship between the transition dipole moment and the molar absorption coefficient $\epsilon$ (m$^2$ mol$^{-1}$) is given by:
+
+\aeqn{n5.122}{\int_{band}\epsilon d\nu = \frac{2\pi^2N_A\nu_{12}}{2.303\times 3hc\epsilon_0}\left|\vec{\mu}\right|^2}
+
+where $N_A$ is the Avogadro's number (mol$^{-1}$), $\nu_{12}$ is the excitation frequency (Hz), $h$ is the Planck's constant, $c$ the speed of light and $\epsilon_0$ the vacuum permittivity.
+
+\otext
+\textbf{Derivation.} We will first establish the relationship between $\kappa$ ($\kappa = 2.303\epsilon$) and the Einstein coefficient $B$. After this we will insert the expression for $B$ and convert to using $\epsilon$ rather than $\kappa$.
+
+\otext
+Starting from the stimulated absorption expression (Eq. (\ref{eqn5.3})):
+
+\aeqn{nn1}{\left(\frac{dN_1}{dt}\right)_{abs} = -\umark{B\rho_\nu(\nu_{12})}{\textnormal{``rate; 1/s''}}N_1}
+
+with $B$ expressed in m kg$^{-1}$, $\rho_\nu$ in J s m$^{-3}$, we can write this in terms of concentration:
+
+\aeqn{nn2}{\left(\frac{d\left[A\right]}{dt}\right)_{abs} = -B_{12}\rho_\nu(\nu_{12})\left[A\right]}
+
+}
+
+\opage{
+
+\otext
+where $\left[A\right]$ denotes the ground state concentration of the absorbing molecule $A$. The LHS in Eq. (\ref{eqnn2}) is equal to the number of moles of photons ($ph$) absorbed per unit time (note the change in sign):
+
+\aeqn{nn3}{\left(\frac{d\left[ph\right]}{dt}\right)_{abs} = B\rho_\nu(\nu_{12})\left[A\right]}
+
+The LHS in this equation is related to the intensity of light absorbed, which is usually expressed in terms of number of photons rather than moles of photons. This is given by (in units of W m$^{-2}$):
+
+\aeqn{nn4}{dI_{abs} = h\nu_{12}\times\left(\frac{d\left[ph\right]}{dt}\right)\times N_A\times dx}
+
+where $dx$ represens a depth over which the absorption occurs. Using this result we can write Eq. (\ref{eqnn3}) as:
+
+\aeqn{nn5}{dI_{abs} = B\rho_\nu(\nu_{12})\left[A\right]N_Ah\nu_{12}dx}
+
+The light intensity $I$ (W m$^{-2}$) passing through the sample is:
+
+\aeqn{nn6}{I = I_0 - I_{abs}}
+
+where $I_0$ is the incident light intensity on the sample. In terms of differentials this becomes:
+
+\aeqn{nn7}{dI = -dI_{abs}}
+
+}
+
+\opage{
+
+\otext
+The above result combined with Eq. (\ref{eqnn5}) gives:
+
+\aeqn{nn8}{dI = -B\rho_\nu(\nu_{12})\left[A\right]h\nu_{12}dx}
+
+$\rho_\nu$ can be related to the light intensity per frequency (Hz):
+
+\aeqn{nn9}{dE = I(\nu_{12})\times A\times\Delta t\times d\nu_{12} / \Delta\nu_{12}}
+
+where $A$ is the area of the incident light over time period $\Delta t$ and $\Delta\nu_{12}$ is the frequency range of radiation. This can be used to write $\rho_\nu$ as ($V$ volume in which the radiation is contained):
+
+\aeqn{nn10}{\rho_\nu(\nu_{12})d\nu_{12} = \frac{dE}{V} = \frac{I(\nu_{12})A\Delta td\nu_{12}}{\Delta\nu_{12}Ac\Delta t} = \frac{I(\nu_{12})}{\Delta\nu_{12}c}d\nu_{12}}
+
+This gives directly:
+
+\aeqn{nn11}{\rho_\nu(\nu_{12}) = \frac{I(\nu_{12})}{\Delta\nu_{12}c}}
+
+Combining this with Eq. (\ref{eqnn8}) gives:
+
+\aeqn{nn12}{dI = -\frac{BN_Ah\nu_{12}}{c\Delta\nu_{12}}\left[A\right]dxI}
+
+This can be compared with Eq. (\ref{eqn5.117}) to identify:
+
+\aeqn{nn13}{\kappa = \frac{BN_Ah\nu_{12}}{c\Delta\nu_{12}}}
+
+}
+
+\opage{
+
+\otext
+where $\kappa$ is in units of m$^2$ mol$^{-1}$. We eliminate $\Delta\nu_{12}$ by assuming that:
+
+\aeqn{nn14}{\kappa\Delta\nu_{12} \approx \int_{band}\kappa d\nu_{12}}
+
+which allows us to writen Eq. (\ref{eqnn13}) as:
+
+\aeqn{nn15}{\int_{band}\kappa d\nu = \frac{BN_Ah\nu_{12}}{c}}
+
+with $B$ given by Eq. (\ref{eqn5.22}). By also noting that $\kappa \approx 2.303\epsilon$ we can finally write:
+
+\aeqn{nn16}{\int_{band}\epsilon d\nu = \frac{2\pi^2N_A\nu_{12}}{2.303\times 3hc\epsilon_0}\left|\vec{\mu}\right|^2}
+
+}

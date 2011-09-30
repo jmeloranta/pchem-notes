@@ -1,0 +1,494 @@
+\opage{
+\otitle{4.9 Symmetry and vanishing integrals}
+
+\otext
+Suppose you would like to evaluate an integral of the following form:
+
+\aeqn{12.21}{I = \int f_1 f_2 d\tau}
+
+where $f_1$ and $f_2$ are some functions. They could, for example, be atomic orbitals
+centered at two different nuclei. In this case $I$ would be the same as the overlap integral $S$. Recall that if $S = 0$, the two atomic orbitals do not interact with each other to form molecular orbitals. It turns out that the symmetries of $f_1$ and $f_2$ can be used in deciding if the above integral is zero.
+
+\otext
+Recall how we used the $u/g$ symmetry labels (i.e. odd/even functions) to determine if integration over some function would give a value of zero. A generalization of this result says that if the function has symmetry other than $A_1$, its integral will be zero. Note that this result cannot be reversed: if a function has $A_1$ symmetry, this \underline{does not guarantee that the corresponding integral is non-zero}. In Eq. (\ref{eq12.21}) we consider a product of two functions and we should somehow determine the symmetry the product $f_1\times f_2$ based on the individual symmetries of $f_1$ and $f_2$. This can be done my ``multiplying'' the symmetries of $f_1$ and $f_2$ according to the \textbf{direct product table} of the point group in question. For $u/g$ symmetry labels, we used previously simple product rules: $g\times g = g$, $u\times g = u$, $g\times u = u$ and $u\times u = g$, which represents a simple example of symmetry multiplication operations. Direct product tables for some common point groups are given below.
+
+}
+
+\opage{
+
+\otext
+\begin{table}
+\caption{Direct product table for $C_1$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c}
+$C_1$ & $A$ \\
+\hline
+$A$ & $A$ \\ 
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_s$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_s$ & $A'$ & $A''$ \\
+\hline
+$A'$ & $A'$ & $A''$\\ 
+$A''$ & $A''$ & $A'$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_i$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_i$ & $A_g$ & $A_u$ \\
+\hline
+$A_g$ & $A_g$ & $A_u$\\ 
+$A_u$ & $A_u$ & $A_g$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $C_{2v}$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{2v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.75cm}
+
+\begin{table}
+\caption{Direct product table for $C_{3v}$ and $D_3$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{3v}$ & $A_1$ & $A_2$ & $E$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E$\\  
+$A_2$ & $A_2$ & $A_1$ & $E$\\
+$E$ & $E$ & $E$ & $A_1 + A_2 + E$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.75cm}
+
+{\tiny
+\begin{table}
+\caption{Direct product table for $C_{4v}$, $D_{2d}$ and $D_4$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{4v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$ & $E$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$ & $E$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$ & $E$\\
+$E$   & $E$   & $E$   & $E$   & $E$ & $A_1 + A_2 + B_1 + B_2$\\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $C_{5v}$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{5v}$ & $A_1$ & $A_2$ & $E_1$ & $E_2$ \\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E_1$ & $E_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $E_2$ & $E_1$\\
+$E_1$ & $E_1$ & $E_1$ & $A_1 + A_2 + E_2$ & $E_1 + E_2$\\
+$E_2$ & $E_2$ & $E_2$ & $E_1 + E_2$ & $A_1 + A_2 + E_2$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_{6v}$ and $D_{6h}$. For $D_{6h}$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$C_{6v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E_1$ & $E_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E_1$ & $E_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$ & $E_1$ & $E_2$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$ & $E_2$ & $E_1$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$ & $E_2$ & $E_1$\\
+$E_1$ & $E_1$ & $E_1$ & $E_2$ & $E_2$ & $A_1 + A_2 + E_2$ & $B_1 + B_2 + E_1$\\
+$E_2$ & $E_2$ & $E_2$ & $E_1$ & $E_1$ & $B_1 + B_2 + E_1$ & $A_1 + A_2 + E_2$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $D_2$ and $D_{2h}$. For $D_{2h}$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$D_2$ & $A$ & $B_1$ & $B_2$ & $B_3$ \\
+\hline
+$A$ & $A$ & $B_1$ & $B_2$ & $B_3$\\  
+$B_1$ & $B_1$ & $A$ & $B_3$ & $B_2$\\
+$B_2$ & $B_2$ & $B_3$ & $A$ & $B_1$\\
+$B_3$ & $B_3$ & $B_2$ & $B_1$ & $A$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $D_{3h}$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$C_{3h}$ & $A_1'$ & $A_2'$ & $E'$ & $A_1''$ & $A_2''$ & $E''$\\
+\hline
+$A_1'$ & $A_1'$ & $A_2'$ & $E'$ & $A_1''$ & $A_2''$ & $E''$\\
+$A_2'$ & $A_2'$ & $A_1'$ & $E'$ & $A_2''$ & $A_1''$ & $E''$\\
+$E'$ & $E'$ & $E'$ & $A_1' + A_2' + E'$ & $E''$ & $E''$ & $A_1'' + A_2'' + E''$\\
+$A_1''$ & $A_1''$ & $A_2''$ & $E''$ & $A_1'$ & $A_2'$ & $E'$\\
+$A_2''$ & $A_2''$ & $A_1''$ & $E''$ & $A_2'$ & $A_1'$ & $E'$\\
+$E''$ & $E''$ & $E''$ & $A_1'' + A_2'' + E''$ & $E'$ & $E'$ & $A_1' + A_2' + E'$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $T_d$ and $O_h$. For $O_h$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$T_d$ & $A_1$ & $A_2$ & $E$ & $T_1$ & $T_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E$ & $T_1$ & $T_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $E$ & $T_2$ & $T_1$\\
+$E$ & $E$ & $E$ & $A_1 + A_2 + E$ & $T_1 + T_2$ & $T_1 + T_2$\\
+$T_1$ & $T_1$ & $T_2$ & $T_1 + T_2$ & $A_1 + E + T_1 + T_2$ & $A_2 + E + T_1 + T_2$\\
+$T_2$ & $T_2$ & $T_1$ & $T_1 + T_2$ & $A_2 + E + T_1 + T_2$ & $A_1 + E + T_1 + T_2$\\
+\end{tabular}
+\end{table}
+
+{\tiny
+\begin{table}
+\caption{Direct product table for $I_h$ with $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c}
+$I_h$ & $A$ & $T_1$ & $T_2$ & $G$ & $H$\\
+\hline
+$A$ & $A$ & $T_1$ & $T_2$ & $G$ & $H$\\  
+$T_1$ & $T_1$ & $A + T_1 + H$ & $G + H$ & $T_2 + G + H$ & $T_1 + T_2 + G + H$\\
+$T_2$ & $T_2$ & $G + H$ & $A + T_2 + H$ & $T_1 + G + H$ & $T_1 + T_2 + G + H$\\
+$G$ & $G$ & $T_2 + G + H$ & $T_1 + G + H$ & $A + T_1 + T_2 + G + H$ & $T_1 + T_2 + G + 2H$\\
+$H$ & $H$ & $T_1 + T_2 + G + H$ & $T_1 + T_2 + G + H$ & $T_1 + T_2 + G + 2H$ & $A + T_1 + T_2 + 2G + 2H$\\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Consider ($s$, $p_x$) and ($s$, $p_z$) orbital pairs within $C_{2v}$ symmetry:
+
+\ofig{overlap}{0.7}{}
+
+By using the $C_{2v}$ character table, we can assign these orbitals the following symmetries: $s$ and $p_z$ span $A_1$ and $p_x$ spans $B_1$. To see if $s$ and $p_x$ overlap (i.e. to see if the overlap integral is possibly non-zero), we have to multiply $A_1$ (for $s$) and $B_1$ (for $p_x$) according to the $C_{2v}$ direct product table. This gives $A_1\times B_1 = B_1$ as the result, which means that the overlap integral is zero. On the other hand, both $s$ and $p_z$ are $A_1$ and multiplying $A_1\times A_1 = A_1$,
+which means that the overlap integral between these two orbitals \underline{may be} non-zero. This was just a simple demonstration of the method and often the end result is not as clear as in this example.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Consider NH$_3$ molecule ($C_{3v}$) with just the atomic $s$ orbitals on the hydrogens as a basis set. Note that we do not consider any functions on the nitrogen as we will try to see which of its atomic orbitals would have the right symmetry to form MOs with the hydrogen atom orbitals (AO). The hydrogen AOs should be combined to have the proper symmetry within $C_{3v}$. Such orbitals are called \underline{symmetry adapted linear combinations} (SALCs). Label the hydrogen AOs as $s_A$, $s_B$, $s_C$.
+
+\ofig{nh3}{0.8}{The $C_{3v}$ axis is perpendicular to the plane of the paper and goes through the nitrogen atom.}
+
+}
+
+\opage{
+
+\otext
+First we construct the matrix representations for the symmetry operations in $C_{3v}$. The symmetry operations have the following effect on the hydrogen AOs:\\
+
+\begin{table}
+\begin{tabular}{c|ccc}
+ & $s_A$ & $s_B$ & $s_C$\\
+\hline
+$E$ & $s_A$ & $s_B$ & $s_C$\\
+$C_3^-$ & $s_C$ & $s_A$ & $s_B$\\
+$C_3^+$ & $s_B$ & $s_C$ & $s_A$\\
+$\sigma_v$ & $s_A$ & $s_C$ & $s_B$\\
+$\sigma_v'$ & $s_B$ & $s_A$ & $s_C$\\
+$\sigma_v''$ & $s_C$ & $s_B$ & $s_A$\\
+\end{tabular}
+\label{symtab}
+\end{table}
+
+\otext
+Thus the matrix representatives can be written:
+
+\begin{center}
+$(A, B, C) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(E) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+ (\textnormal{with Tr} = 3)$
+\end{center}
+
+\begin{center}
+$(C, A, B) = 
+\begin{pmatrix}
+0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(C_3^-) = 
+\begin{pmatrix}
+0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0\\
+\end{pmatrix}
+ (\textnormal{with Tr} = 0)$
+\end{center}
+
+}
+
+\opage{
+
+\begin{center}
+$(B, C, A) = 
+\begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(C_3^+) = 
+\begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0\\
+\end{pmatrix}
+(\textnormal{with Tr} = 0)$
+\end{center}
+
+\begin{center}
+$(A, C, B) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(\sigma_v) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{pmatrix}
+(\textnormal{with Tr} = 1)$
+\end{center}
+
+\begin{center}
+$(B, A, C) = 
+\begin{pmatrix}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(\sigma_v') = 
+\begin{pmatrix}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+(\textnormal{with Tr} = 1)$
+\end{center}
+
+\begin{center}
+$(C, B, A) = 
+\begin{pmatrix}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+A\\
+B\\
+C\\
+\end{pmatrix}
+\Rightarrow D(\sigma_v'') = 
+\begin{pmatrix}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+\end{pmatrix}
+(\textnormal{with Tr} = 1)$
+\end{center}
+
+\otext
+Note that the matrix trace operation is invariant under similarity transformations (i.e., multiplication by rotation matrices). Thus if we ``rotate'' our basis set in such a way that we choose it to be some linear combination of our present basis functions, the matrix character is unaffected by this choice.
+
+}
+
+\opage{
+
+\otext
+To summarize the matrix characters:\\
+
+\begin{center}
+\begin{tabular}{ccc}
+$E$ & $C_3^+$ & $\sigma_v$\\
+3 & 0 & 1\\
+\end{tabular}
+\end{center}
+
+\otext
+Next we could proceed in finding the irreps for the matrix representatives but there is a shortcut we can take. Since the matrix character is invariant with respect to basis set rotations, we can just find the irreps that sum up to give the above characters. If we sum $A_1$ ($(1, 1, 1)$ from the character table) and $E$ ($(2, -1, 0)$ from the character table) we get:
+
+$$A_1 + E = (1, 1, 1) + (2, -1, 0) = (3, 0, 1).$$
+
+\otext
+This means that the three $s$ orbitals may form SALCs with $A_1$ and $E$ symmetries within $C_{3v}$. Note that $E$ is doubly degenerate and that we have a consistent number of orbitals (three AOs giving three SALCs). This approach tells us only the symmetries of the
+orbitals but does not give explicit expressions for them. The expressions could be ontained by finding the diagonal matrix representations but this would involve essentially diagonalization of matrices which can be rather laborous. Instead we use the following rules for constructing the SALCs (the result will not be properly normalized):
+
+}
+
+\opage{
+
+\otext
+\begin{itemize}
+\item[1.] Construct a table showing the effect of each operation on each orbital of the original basis (this was done already on page \ref{symtab}).\\
+\item[2.] To generate the combination of a specified symmetry species, take each column in turn and:\\
+\begin{itemize}
+ \item[\scriptsize i] \scriptsize Multiply each member of the column by the character of the corresponding operation.\\
+ \item[ii] Add together all the orbitals in each column with the factors determined in (i).\\
+ \item[iii] Multiply the sum by ``dimension of the symmetry element / order of the group'' The dimension of the symmetry element is the character under operation $E$ ($E$ = 2, $T$ = 3, ..., $A/B$ = 1) and the order of the group is the total number of characters; for $C_{3v}$ this is 6.\\
+\end{itemize}
+\end{itemize}
+
+\otext
+The first SALC with $A_1$ symmetry can now found to be (the $s_A$ column multiplied by $A_1$ characters (1, 1, 1, 1, 1, 1); the total number of symmetry operations is 6 in $C_{3v}$) (dimension = 1):
+
+$$\psi_{A_1} = \frac{1}{6}\left( s_A + s_B + s_C + s_A + s_B + s_C\right) = \frac{1}{3}\left( s_A + s_B + s_C\right)$$
+
+From our previous consideration we know that we are still missing two orbitals, which belong to degenerate $E$. The same method with each column of the table (page \ref{symtab}) and $E$ characters (2, $-1$, $-1$, 0, 0, 0) gives (dimension = 2):\\
+
+}
+
+\opage{
+
+$\psi_E = \frac{1}{6}\left( 2s_A - s_B - s_C\right)$, 
+$\psi_E' = \frac{1}{6}\left( 2s_B - s_A - s_C\right)$, 
+$\psi_E'' = \frac{1}{6}\left( 2s_C - s_B - s_A\right)$
+
+\otext
+We know that we should only have two orbitals in $E$ but the above gives us three orbitals. It turns out that any one of these three expressions can be written as a sum of the other two (i.e., they are linearly dependent). The difference of the second and third equations gives:
+
+$$\psi_E''' = \frac{1}{2}\left(s_B - s_C\right)$$
+
+which is orthogonal to the first equation. Thus the required two orthogonal SALCs are:
+
+$$\psi_E''' = \frac{1}{2}\left(s_B - s_C\right)\textnormal{ and }\psi_E = \frac{1}{6}\left( 2s_A - s_B - s_C\right)$$
+
+The remaining question is that which of these SALCs may have non-zero overlap with the AOs of the nitrogen atom? Recall that a non-zero overlap leads to formation of MOs. The nitrogen atom has $s, p_x, p_y$ and $p_z$ valence AOs, which may overlap with the SALCs. The $s$ orbital is clearly $A_1$ since it is spherically symmetric. By inspecting the character table, one can see labels $x$, $y$ and $z$ in the ``Operator'' column. In addition to just operators, it also tells us the symmetries of the $p$ orbitals. Thus both $p_x$ and $p_y$ belong to $E$ and $p_z$ belongs to $A_1$. Recall that for overlap to occur, the multiplication of orbital symmetries must give $A_1$. To check for this:
+
+}
+
+\opage{
+
+\begin{tabular}{cccl}
+SALC & N AO & N AO symmetry & Overlap integral\\
+$\psi_{A_1}$ & $s$ & $A_1$ & $A_1\times A_1 = A_1$ (\textbf{overlap})\\
+$\psi_{A_1}$ & $p_x$ & $E$ & $A_1\times E = E$ (no overlap)\\
+$\psi_{A_1}$ & $p_y$ & $E$ & $A_1\times E = E$ (no overlap)\\
+$\psi_{A_1}$ & $p_z$ & $A_1$ & $A_1\times A_1 = A_1$ (\textbf{overlap})\\
+
+$\psi_{E}$ & $s$ & $A_1$ & $E\times A_1 = E$ (no overlap)\\
+$\psi_{E}$ & $p_x$ & $E$ & $E\times E = A_1$ (\textbf{overlap})\\
+$\psi_{E}$ & $p_y$ & $E$ & $E\times E = A_1$ (\textbf{overlap})\\
+$\psi_{E}$ & $p_z$ & $A_1$ & $E\times A_1 = E$ (no overlap)\\
+
+$\psi_{E}'$ & $s$ & $A_1$ & $E\times A_1 = E$ (no overlap)\\
+$\psi_{E}'$ & $p_x$ & $E$ & $E\times E = A_1$ (\textbf{overlap})\\
+$\psi_{E}'$ & $p_y$ & $E$ & $E\times E = A_1$ (\textbf{overlap})\\
+$\psi_{E}'$ & $p_z$ & $A_1$ & $E\times A_1 = E$ (no overlap)\\
+
+\end{tabular}
+
+\otext
+Following the LCAO method, we would therefore construct three linear combinations, which form the final molecular orbitals:\\
+
+\vspace{0.5cm}
+LC1: $c_1\psi_{A_1} + c_2 s + c_3 p_z$ (with overall symmetry $A_1$)\\
+LC2: $c_4\psi_E + c_5 p_x + c_6 p_y$ (with overall symmetry $E$)\\
+LC3: $c_7\psi_E' + c_8 p_x + c_9 p_y$ (with overall symmetry $E$)\\
+
+}
+
+\opage{
+
+\otext
+Integrals of the form:
+
+\aeqn{12.19a}{I = \int f_1 f_2 f_3 d\tau}
+
+are also common in quantum mechanics. For example, such integrals occur in calculation of allowed transitions in optical spectroscopy (i.e., transition dipole moment). In similar way to Eq. (\ref{eq12.21}), the direct products of symmetries of the three functions must span $A_1$ where the multiplication is carried out by using the direct product table for the group in question.
+
+\otext
+\textbf{Example.} It can be shown that the intensity of an optical transition $I$ between states $\psi_i$ and $\psi_f$ is proportional to the square of the transition dipole matrix element:
+
+\aeqn{12.20a}{I\propto |\vec{\mu}_{fi}|^2 = \mu_x^2 + \mu_y^2 + \mu_z^2}
+
+where the Cartesian components ($k = x, y, z$) of the transition dipole matrix element are defined:
+
+\aeqn{12.21a}{\mu_{k,fi} = \left< \psi_f|\hat{\mu}_k|\psi_i\right> = -e\int\psi_f^*k\psi_i^{\phantom{*}}d\tau}
+
+The Cartesian component $k$ defines the propagation axis of linearly polarized light. If the above integral is zero, the transition is optically forbidden (and cannot be seen in optical absorption or emission spectra).
+
+}
+
+\opage{
+
+\otext
+For example, to see if an electron in hydrogen atom can be excited optically from $1s$ to $2s$ orbital, we would have to calculate the following integral (due to spherical symmetry, all the Cartesian components are the same -- here we chose $z$):
+
+$$\int\psi_{2s}z\psi_{1s}d\tau$$
+
+The center of symmetry is located at the nucleus and the symmetry operations operate on the hydrogen atom orbitals. For our present purposes, we can treat H atom as a $D_{2h}$ object. Both $1s$ and $2s$ are $A_g$ (spherically symmetric). The transition dipole operator $z$ spans $B_{1u}$ (see the Operator column the character table). According to $D_{2h}$ direct product table the result is $B_{1u}$. Since this is different from $A_g$, the integral is zero. This means that it is not possible to introduce the $1s \rightarrow 2s$ transition optically (i.e., it is forbidden). Note that in general one needs to also consider the $x$ and $y$ components (which are also zero here).
+\vfill
+
+}

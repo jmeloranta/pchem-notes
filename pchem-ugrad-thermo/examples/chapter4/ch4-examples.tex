@@ -1,0 +1,12 @@
+% Display both problems and solutions
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\newcommand{\sijoitus}[2]{\operatornamewithlimits{\Bigl/}_{\!\!\!#1}^{\,#2}}
+\begin{document}
+
+% Set this to false to print out the problems only.
+\newcommand{\solutions}{true}
+\input{ch4-problems}
+\end{document}

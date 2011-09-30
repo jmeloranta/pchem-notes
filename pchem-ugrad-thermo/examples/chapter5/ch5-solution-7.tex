@@ -1,0 +1,19 @@
+% Problem 7/5 solution
+\noindent
+\underline{Solution:}
+
+Recall that at equilibrium $\Delta_rG = 0$ and then $0 = \Delta_rG = \Delta_rG^\circ + RT\ln\left(P/P^\circ\right)$. Note that only O$_2$(g) enters the equation as the other components are solids and have unit activities. On the other hand, $\Delta_rG^\circ = \Delta_rH^\circ - T\Delta_rS^\circ$. Combining the two equations and solving for $T$ gives:
+
+$$T = \frac{\Delta_rH^\circ}{\Delta_rS^\circ - R\ln\left(P/P^\circ\right)}$$
+
+To use this result, we need to know $\Delta_rH^\circ$ and $\Delta_rS^\circ$ at temperature $T$. Provided that $\Delta_rC_P = 0$, both of these quantities are independent temperature (see lecture notes). From the NIST Chemistry Webbook (only Ag$_2$O(s) contributes below):
+
+$$\Delta_rH^\circ = \sum\limits_iv_i\Delta_rH^\circ = -2\left(-31.05\textnormal{ kJ mol}^{-1}\right) = 62.10\textnormal{ kJ mol}^{-1}$$
+$$\Delta_rS^\circ = \sum\limits_iv_i\bar{S}^\circ = 4\times\left(42.55\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right) + \left(205.138\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right)$$
+$$ - 2\times\left(121.3\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right) = 132.7\textnormal{ JK}^{-1}\textnormal{ mol}^{-1}$$
+
+When these numbers are inserted into the earlier expressions, we get:
+
+$$T = \frac{\left(62100\textnormal{ J mol}^{-1}\right)}{\left(132.7\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right) - \left(8.314\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right)\ln(0.2)} = 425\textnormal{ K}$$
+
+\hrule\vspace{0.5cm}

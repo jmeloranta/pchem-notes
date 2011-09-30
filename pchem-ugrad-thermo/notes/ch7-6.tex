@@ -1,0 +1,78 @@
+\opage{
+\otitle{7.6 Determination of standard thermodynamic properties of ions}
+
+\otext
+According to Eq. (\ref{eq7.44}) the standard EMF ($E^\circ$) can be determined from:
+
+\aeqn{7.71}{\Delta_r G^\circ = -\left|v_e\right|FE^\circ = -RT\ln(K)}
+
+If we consider reaction: $$\frac{1}{2}\textnormal{H}_2(g) + \textnormal{AgCl}(s) = \textnormal{HCl}(aq) + \textnormal{Ag}(s)$$
+
+The equilibrium constant for this reaction is given by:
+
+\beqn{7.72}{K = \exp\left(\frac{\left(96485\textnormal{ C mol}^{-1}\right)\left(0.2224\textnormal{ V}\right)}{\left(8.3145\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right)\left(298.15\textnormal{ K}\right)}\right) = 5745}
+{K = \frac{a_{\textnormal{HCl}}}{\sqrt{P_{\textnormal{H}_2} / P^\circ}}\textnormal{ (H}_2\textnormal{ ideal gas)}}
+
+If the standard EMF of a cell is measured as a function of temperature, then $\Delta_rS^\circ$, $\Delta_rH^\circ$ and $\Delta_rC_P^\circ$ can be calculated using the following relations (see Eqs. (\ref{eq2.61}), (\ref{eq4.37}), $H = G + TS$, and (\ref{eq7.71})):
+
+}
+
+\opage{
+
+\aeqn{7.73}{\Delta_rS^\circ = \left|v_e\right|F\left(\frac{\partial E^\circ}{\partial T}\right)_P}
+
+\aeqn{7.74}{\Delta_rH^\circ = -\left|v_e\right|FE^\circ + \left|v_e\right|FT\left(\frac{\partial E^\circ}{\partial T}\right)_P}
+
+\aeqn{7.75}{\Delta_rC_P^\circ = \left|v_e\right|FT\left(\frac{\partial^2 E^\circ}{\partial T^2}\right)_P}
+
+
+\textbf{Notes:}
+
+\begin{enumerate}\otext
+\item These standard thermodynamic properties have been expressed with respect to a hypothetical standard state where the electrolyte has molality of 1 mol kg$^{-1}$ and the interactions for the resulting ions correspond to infinite dilution. For example, the true activity of 1 mol kg$^{-1}$ HCl solution is less than 1.
+\item The standard thermodynamic properties have been tabulated (see the NIST online database). The standard state for strong electrolytes is assumed to consists of completely ionized (for example, HCl, NaCl, etc.). For weak electrolytes, usually two different standard states are given: fully ionized and un-ionized (not dissociated).
+\item The experiments can not measure individual ions separately (electroneutrality condition). However, by using a convention: $\Delta_fG^\circ (\textnormal{H}^+) = \Delta_fH^\circ(\textnormal{H}^+) = 0$, the properties of other ions can be calculated.
+\item For strong electrolytes the standard Gibbs energy of formation can be obtained by summing the corresponding formation energies for the ions.
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the standard molar entropy of chloride ion in aqueous solution at 298.15 K starting with the Gibbs energy of formation ($-131.23$ kJ mol$^{-1}$) and the enthalpy of formation ($-167.16$ kJ mol$^{-1}$).
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} By using ''$G = H - TS$`` we can calculate $\Delta_fS^\circ$:
+
+\vspace*{-0.3cm}
+
+$$\Delta_fS^\circ(\textnormal{Cl}^-) = \frac{\Delta_fH^\circ(\textnormal{Cl}^-) - \Delta_fG(\textnormal{Cl}^-)}{T} = \frac{\left(-167.16\textnormal{ kJ mol}^{-1}\right) - \left(-131.23\textnormal{ kJ mol}^{-1}\right)}{298.15\textnormal{ K}}$$
+$$ = -120.51\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+Consider the following reaction: $\frac{1}{2}\textnormal{Cl}_2(g) + e^- = \textnormal{Cl}^-(aq)$
+
+Now we can write: $\Delta_f\bar{S}^\circ(\textnormal{Cl}^-) = \bar{S}^\circ(\textnormal{Cl}^-) - \frac{1}{2}\bar{S}^\circ(\textnormal{Cl}_2) - \bar{S}^\circ(e^-)$
+
+where $\bar{S}^\circ(e^-) = 1/2 \times \bar{S}^\circ\left(\textnormal{H}_2(g)\right)$ because $2e^- + 2\textnormal{H}^+ = \textnormal{H}_2$. Thus we can write:
+
+\vspace*{-0.3cm}
+
+$$\bar{S}^\circ(\textnormal{Cl}^-) = \Delta_f\bar{S}^\circ\left(\textnormal{Cl}^-\right) + \frac{1}{2}\bar{S}^\circ\left(\textnormal{Cl}_2\right) + \bar{S}^\circ\left(e^-\right) = \left(-120.51\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)$$
+$$ + \left(\frac{\left(223.08\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right)}{2}\right) + \left(\frac{\left(130.68\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)}{2}\right) = 56.36\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+It should be remembered that the tabulated data (e.g. the NIST database) gives the properties in the limit of zero ionic strength. At higher ionic strengths the extended Debye-H\"uckel law must be used. Some quantitative expressions are as follows:
+
+\aeqn{7.79}{\Delta_fG^\circ_i(I) = \Delta_fG_i^\circ(I\rightarrow 0) - RT\ln\left(\gamma_i\right)}
+
+\aeqn{7.80}{\Delta_fH^\circ(I) = -T^2\left[\frac{\partial\left(\Delta_fG_i^\circ(I) / T\right)}{\partial T}\right]_P}
+
+$\Delta_rG^\circ$ and $\Delta_rH^\circ$ can be obtained by using the above expressions and Eqs. (\ref{eq2.94}) and (\ref{eq5.37}).
+
+}

@@ -1,0 +1,96 @@
+\opage{
+\otitle{4.6 The significance of the chemical potential}
+
+\otext
+Recall that we did not carry out Legendre transformation with respect to $n_i$ and $\mu_i$. Thus $U$, $H$, $A$ and $G$ behave exactly the same way with respect to these variables. Collecting the results from Eqs. (\ref{eq4.9}), (\ref{eq4.21}), (\ref{eq4.32}) and (\ref{eq4.39}):
+
+\beqn{4.81}{\mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{\tiny S,V,\lbrace n_i\rbrace_{i\ne j}} = \left(\frac{\partial H}{\partial n_i}\right)_{S,P,\lbrace n_i\rbrace_{i\ne j}}}{ = \left(\frac{\partial A}{\partial n_i}\right)_{T,V,\lbrace n_i\rbrace_{i\ne j}} = \left(\frac{\partial G}{\partial n_i}\right)_{T,P,\lbrace n_i\rbrace_{i\ne j}}}
+
+The last definition based on the Gibbs energy is the most convenient because it is easy to hold $T$ and $P$ constant in practical applications.
+
+\vspace*{0.2cm}
+
+Consider a single species which is distributed in two different phases. An example of such system is liquid water and water vapor. Let us denote the amount of substance in phase $\alpha$ as $n_\alpha$ and the amount of substance in phase $\beta$ as $n_\beta$. The corresponding chemical potentials are denoted by $\mu_\alpha$ and $\mu_\beta$. When an infinitesimal amount of substance is transferred between the phases, we have $-dn_\alpha = dn_\beta \equiv dn$ (what leaves $\alpha$ must enter $\beta$ and vice versa). According to Eq. (\ref{eq4.81}), differential of the Gibbs energy is (constant $T$ and $P$):
+
+\aeqn{4.82}{\left(dG\right)_{T,P} = \mu_\alpha dn_\alpha + \mu_\beta dn_\beta = \left(\mu_\beta - \mu_\alpha\right)dn}
+
+}
+
+\opage{
+
+\otext
+Recall that for a spontaneous process $dG < 0$. Consider five different cases:
+
+\begin{enumerate}
+\item $dn > 0$ (i.e. substance moves from $\alpha$ to $\beta$) and $\mu_\beta < \mu_\alpha$. This fulfills the $dG$ requirement for a spontaneous process. Substance moves from the phase with higher chemical potential to the phase where the chemical potential is lower.
+\item $dn > 0$ (i.e. substance moves from $\alpha$ to $\beta$) and $\mu_\beta > \mu_\alpha$. $dG$ would be positive and therefore this process is not spontaneous.
+\item $dn < 0$ (i.e. substance moves from $\beta$ to $\alpha$) and $\mu_\beta < \mu_\alpha$. $dG$ would be positive and therefore this process is not spontaneous.
+\item $dn < 0$ (i.e. substance moves from $\beta$ to $\alpha$) and $\mu_\beta > \mu_\alpha$. This fulfills the $dG$ requirement for a spontaneous process. Substance moves from the phase with higher chemical potential to the phase where the chemical potential is lower.
+\item $dn = 0$ (i.e. nothing transferred) or $\mu_\alpha = \mu_\beta$ (i.e. chemical potentials equal). This corresponds to equilibrium ($dG = 0$). Such an equilibriums can exist even if the phases are at different pressures.
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+Measurement of $\mu_i$ as a function of $P$ and $T$ can be used to determine the molar entropy and the molar volume. To do this, we use the Maxwell relations (derivation is similar to Eqs. (\ref{eq4.46}) - (\ref{eq4.48})):
+
+\aeqn{4.84}{-\bar{S}_i = -\left(\frac{\partial S}{\partial n_i}\right) = \left(\frac{\partial\mu_i}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+\aeqn{4.85}{\bar{V}_i = \left(\frac{\partial V}{\partial n_i}\right) = \left(\frac{\partial\mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace}}
+
+\textbf{Example.} Consider a mixture of ideal gases. What are the expressions for the chemical potentials and the partial molar entropies?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} For simplicity we carry out the calculation for two species. Extension to many species is straight forward. We will show this in three parts:
+
+\begin{enumerate}
+\item Prove that the molar volume of the mixture ($V$) is equal to the partial molar volumes of the components ($V_1$ and $V_2$).
+\item Use Eq. (\ref{eq4.48}) to obtain $\left(\partial\mu_i / \partial P_i\right)$.
+\item Integrate the resulting expression to obtain $\mu_i$.
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+\underline{Step \#1.} First we note that the total number of gas atoms/molecules is given by $n = n_1 + n_2$, the total pressure $P = P_1 + P_2$ where each gas follows its own ideal gas law $P_i V = n_iRT$. There is no interaction between gas atoms/molecules in an ideal gas and therefore we can add up all these individual ideal gas equations to get $V = \frac{nRT}{P}$. Now Eq. (\ref{eq1.39}) $\Rightarrow \bar{V}_i = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \frac{RT}{P} = \bar{V}$.
+
+\vspace*{0.2cm}
+
+\underline{Step \#2.} By using Eq. (\ref{eq4.85}), the above result, the chain rule and $P_i = x_iP$, we can write:
+
+\vspace*{-0.3cm}
+
+$$\bar{V} = \frac{RT}{P} = \bar{V}_i = \left(\frac{\partial \mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace} = \left(\frac{\partial \mu_i}{\partial P_i}\times\frac{\partial P_i}{\partial P}\right)_{T,\lbrace n_i\rbrace} = x_i\left(\frac{\partial \mu_i}{\partial P_i}\right)_{T,\lbrace n_i\rbrace}$$
+\aeqn{4.87}{\Rightarrow \left(\frac{\partial \mu_i}{\partial P_i}\right)_{T,\lbrace n_i\rbrace} = \frac{RT}{P_i}}
+
+\vspace*{0.2cm}
+
+\underline{Step \#3.} Integration of the above equation gives:
+
+$$\int\limits_{\mu_i^\circ}^{\mu_i}d\mu_i = RT\int\limits_{P^\circ}^{P_i}\frac{dP_i}{P_i}$$
+
+\aeqn{4.89}{\mu_i = \mu_i^\circ + RT\ln\left(\frac{P_i}{P^\circ}\right)}
+
+}
+
+\opage{
+
+\otext
+By differentiating Eq. (\ref{eq4.89}) with respect to $T$ and using Eq. (\ref{eq4.84}) we get:
+
+\aeqn{4.90}{\bar{S}_i = \bar{S}_i^\circ - R\ln\left(\frac{P_i}{P^\circ}\right)}
+
+The same equation for pure ideal gas was derived earlier: $\bar{S} = \bar{S}^\circ - R\ln\left(\frac{P}{P^\circ}\right)$.
+
+\vspace*{0.3cm}
+
+\underline{Note:} The chemical potential is one of the most important concepts in chemical thermodynamics. In both chemical reactions and phase changes, the chemical potential of a species times its differential amount (reacted or transferred) determines the change in $U$, $H$, $A$, or $G$, depending on the variables that are held constant during the process.
+
+\vfill
+
+}

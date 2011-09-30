@@ -1,0 +1,144 @@
+\opage{
+\otitle{5.11 Raman spectroscopy}
+
+\otext
+When a sample is irradiated with monochromatic light, the incident radiation may be absorbed, may stimulate emission, or may be scattered. There are several types of scattering processes: \textit{Rayleigh scattering}, \textit{Mie scattering}, and \textit{Raman scattering}. Rayleigh scattering is the elastic scattering of light by particles that are much smaller than the wavelength of the light. For example, Rayleigh scattering makes the sky look blue because short wavelengths (blue) are scattered more than long wavelengths (red) in the atmosphere. Mie scattering occurs when the particles are about the same size as the wavelength of light. This can be important, for example, in atomosphere where small soot and dust can scatter light.
+
+\vspace*{0.2cm}
+
+In this section we are interested in Raman scattering where the incident light exchanges energy with the sample as it scatters. If the incident photons loose energy in the process, the spectral lines of the scattered light are called \textit{Stokes lines}. If the opposite happens, the lines are called \textit{anti-Stokes lines}. The spectral line from scattered light that is at the exactly at the excitation wavelength is called the \textit{Rayleigh line}. If the incident monochromatic light is resonant with some electronic state, the process is called \textit{resonance Raman}. Resonance Raman process is much more efficient than non-resonant Raman. Most often the amount of (non-resonant) Raman scattering is very small (less than 1 part in 10$^6$) and therefore the method is not very sensitive. Furthermore, the Raman frequency shifts may sometimes be small and the strong Rayleigh line may overlap with the Raman lines. Lasers produce intense monochromatic light and therefore they are ideal for Raman experiments.
+
+}
+
+\opage{
+
+\otext
+\ofig{raman}{0.35}{Typical Raman experiment setup.}
+
+\ofig{raman2}{0.35}{Stokes and anti-Stokes Raman transitions.}
+
+}
+
+\opage{
+
+\otext
+Energy is conserved in a Raman process and therefore we must have:
+
+\aeqn{n5.104}{h\nu + E_i = h\nu' + E_f}
+
+where $\nu$ is the frequency of the incoming light, $\nu'$ is the frequency of the Raman scattered light, $E_i$ is the initial energy of the molecule, and $E_f$ is the final energy of the molecule. This can be arranged into the following resonance condition:
+
+\aeqn{n5.105}{h(\nu' - \nu) = E_i - E_f = h\Delta\nu_R = hc\Delta\tilde{\nu}_R}
+
+where $\Delta\tilde{\nu}_R$ is the Raman shift in wavenumber units. The Raman shifts observed correspond to vibrational and rotational level spacings and hence it can be used to obtain information about molecular vibration and rotation. Thus it obtains similar information that IR spectroscopy does but, as we will see later, it will have different selection rules. It is important from the experimental point of view that the Raman effect can be observed with monochromatic light source operating at any wavelength. This offers an important advantage over IR spectroscopy. Consider, for example, a water based sample, which would obviously absorb all incident IR light making any IR measurement impossible. Raman, on the other hand, can employ a wavelength that is not absorbed by water and therefore it is possible to measure these samples.
+
+\vspace*{0.2cm}
+
+The Raman effect arises from the induced polarization of scattering molecules that is caused by the electric field component of light. By polarization we refer to the shift in the electron density in an atom/molecule. In the following, we will carry out classical treatment of Raman scattering. The full quantum treatment is out of the scope of this course.
+
+}
+
+\opage{
+
+\otext
+We start by considering an isotropic molecule, which has the same optical properties in all directions. This could be, for example, CH$_4$. A dipole moment $\vec{\mu}$ is induced in the molecule by an electric field $\vec{E}$:
+
+\aeqn{n5.106}{\vec{\mu} = \alpha\vec{E}}
+
+where $\alpha$ is the \textit{polarizability tensor} with elements $\alpha_{xx}, \alpha_{xy}, ...$. The elements of this tensor $\alpha_{ij}$ tell us how easy it is to polarize the electronic cloud int direction $i$ when the field is oriented along $j$. The unit for polarizability is Cm/Vm$^{-1}$ = C$^2$m$^2$/J. The isotropic part of the polarizabiility is given by $(\alpha_{xx} + \alpha_{yy} + \alpha_{zz}) / 3$. If we consider molecular rotation, the molecule must have anisotropy in $\alpha$ or in case of molecular vibration $\alpha$ must change along the vibration. When this molecule rotations (or vibrates) at frequency $\nu_k$, we can write the change in polarizability as a function of the frequency:
+
+\aeqn{n5.107}{\alpha = \alpha_0 + \left(\Delta\alpha\right)\cos\left(2\pi\nu_kt\right)}
+
+where $\alpha_0$ is the equilibrium polarizability and $\Delta\alpha$ is its variation. The electric field in electromagnetic radiation varies with time as:
+
+\aeqn{n5.108}{E = E^0\cos(2\pi\nu_0t)}
+
+Now we can calculate the induced dipole moment as a function of time:
+
+}
+
+\opage{
+
+\otext
+\beqn{n5.109}{\mu(t) = \left(\alpha_0 + \Delta\alpha\times\cos(2\pi\nu_kt)\right)E^0\cos(2\pi\nu_0t)}
+{= \alpha_0E^0\cos(2\pi\nu_0t) + \frac{1}{2}\Delta\alpha E^0\left(\cos(2\pi(\nu_0 + \nu_k)t) + \cos(2\pi(\nu_0 - \nu_k)t)\right)}
+
+where the last form has been obtained by $\cos(a)\cos(b) = (\cos(a+b) + \cos(a - b))/2$. The three terms that emerged represent the Rayleigh scattering (at $\nu_0$), anti-Stokes ($\nu_0 + \nu_k$), and Stokes ($\nu_0 - \nu_k$). This treatment does not account for the fact that anti-Stokes lines originate from excited levels (see the the previous transition diagram), which have lower thermal population than the ground state. Thus anti-Stokes lines are weaker than Stokes lines. At very low temperatures, only Stoke lines would be observed. 
+
+\vspace*{0.2cm}
+
+For a molecular motion to be Raman active, we must clearly have $\Delta\alpha\ne 0$. This means that the polarizability of the molecule must change along the coordinate of the motion (i.e. vibration or rotation). For both heteronuclear and homonuclear diatomic molecules polarizability changes as a function of bond length because the electronic structure changes. Also, for molecular rotation, it is fairly easy to see that the spatial orientation of molecules should also change the polarizability (note: does not apply to spherical rotors). This means that it is possible to study these molecules by using the Raman technique execpt spherical top molecules which do not show the rotational Raman effect.
+
+}
+
+\opage{
+
+\otext
+ Just like we predicted IR activity in the previous section, one can use symmetry to predict Raman activity. The transition operator in Eq. (\ref{eqn5.104a}) consist now of terms such as $x^2, xy, y^2, ...$ (see character tables), which highlights the fact that two photons are acting on the sample. Again, one would have to show that the direct products of irreps gives the totally symmetry representation. For example, all modes in CH$_4$ molecule (normal mode symmetries $A_1$, $E$, and $T_2$ in $T_d$) are Raman active because the Raman operators span the same symmetry elements. This leads to a general rule that states: \textit{if the symmetry species of a normal mode is the same as the symmetry species of a quadratic form for the operator, then the mode may be Raman active}. 
+
+\vspace*{0.2cm}
+
+Since Raman is a two-photon process, it is more difficult treat than simple absorption or emission. We just summarize the rotational Raman selection rules:
+
+\vspace*{-0.2cm}
+
+\ceqn{n5.110}{\textnormal{Linear molecules: }\Delta J = 0,\pm 2}
+{\textnormal{Symmetric top: }\Delta J = 0,\pm 2\textnormal{, }\Delta K = 0\textnormal{ when }K = 0}
+{\textnormal{\phantom{Symmetric top:} }\Delta J = 0,\pm 1, \pm 2\textnormal{, }\Delta K = 0\textnormal{ when }K\ne 0}
+
+When molecular vibration is involved, the selection rule is $\Delta v = \pm 1$. When vibrational Raman transitions are accompanied by rotational transitions, $\Delta J = 0, \pm 2$. These selection rules can be derived by using group theory.
+
+}
+
+\opage{
+
+\otext
+The frequencies of the Stokes lines ($\Delta J = 2$) in the rotational Raman spectrum of a linear molecule are given by:
+
+\aeqn{n5.114}{\Delta\tilde{\nu}_R = \tilde{B}J'(J' + 1) - \tilde{B}J''(J''+1)}
+
+where $J''$ referes to the inital state rotational quantum number. These lines appear at lower frequencies than the exciting light and are referred to as the $S$ branch. The line intensities depend on the initial state thermal populations. The anti-Stokes lines ($\Delta J = -2$) are given by:
+
+\aeqn{n5.115}{\Delta\tilde{\nu}_R = -2\tilde{B}(2J'' - 1)\textnormal{ where }J''\ge 2}
+
+These lines are referred to as the $O$ branch. It is also possible to observe the $Q$ branch for which $\Delta J = 0$.
+
+\vspace*{0.2cm}
+
+For vibrational Raman, the selection rule is basically $\Delta v = \pm 1$ but one should use group theory to see more accurately which modes can be active. \textit{If the molecule has a center of symmetry, then no mode can be both IR and Raman active.} The \textit{technique of depolarization} can be used to determine if a particular Raman line belongs to a totally symmetric normal mode. The depolarization ratio, $\rho$, of a line is the ratio of the intensities, $I$, of the scattered light with light polarizations perpendicular and parallel to the plane of polarization of incident light:
+
+\aeqn{n5.115b}{\rho = \frac{I_{\perp}}{I_{||}}}
+
+}
+
+
+
+\opage{
+
+\otext
+To measure $\rho$, the intensity of a Raman line is measured with a polarizing filter first parallel and then perpendicular to the polarization of the incident light. If the scattered light is not polarized, then both intensities in Eq. (\ref{eqn5.115b}) are the same and $\rho \approx 1$. If the light retains its initial polarization, then $I_{\perp} \approx 0$ and also $\rho \approx 0$. A line is classified as \textit{depolarized} if $\rho \ge 0.75$ and \textit{polarized} if $\rho < 0.75$. It can be shown that only totally symmetric vibrations give rise to polarized lines (i.e. the light polarization is largely preserved).
+
+\vspace*{0.2cm}
+
+The intensity of Raman transitions can be enhanced by \textit{coherent anti-Stokes Raman spectroscopy} (CARS). In this technique two laser beams with frequencies $\nu_1$ and $\nu_2$ are mixed together in the sample so that they give rise to coherent radiation at several different frequencies. One of the frequencies is:
+
+\aeqn{n5.115c}{\nu' = 2\nu_1 - \nu_2}
+
+Suppose that frequency $\nu_2$ is varied until it matches one of the Stokes lines of the sample. If this is $\nu_1 - \Delta\nu$ then the coherent emission will have frequency:
+
+\aeqn{n5.115d}{\nu' = 2\nu_1 - (\nu_1 - \Delta\nu) = \nu_1 - \Delta\nu}
+
+which is the frequency of the corresponding anti-Stokes line. This coherent radiation forms a spatially narrow beam of high intensity. CARS is a four wave mixing process (i.e. four photons are involved).
+
+}
+
+\opage{
+
+\ofig{rot-raman}{0.25}{Example of rotation-vibration Raman spectrum (N$_2$ gas)}
+
+\ofig{vib-raman}{0.2}{Example of vibration Raman spectrum (CCl$_4$ liquid)}
+
+}
+
+
+

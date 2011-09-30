@@ -1,0 +1,20 @@
+% Problem 2/3 solution
+\noindent
+\underline{Solution:}\\
+
+By using the result given in the first problem, we can obtain $\left(\frac{\partial U}{\partial V}\right)_T = 0$. The total differential for $dU$ now gives $dU = \left(\frac{\partial U}{\partial T}\right)_VdT$ and hence $dU = C_VdT$. The first law of thermodynamics, $dU = dq + dw$, gives $dq = C_VdT - dw$. Considering $PV$-work, we can write: $dq = C_VdT + P_{ext}dV$. Because the process is reversible, $P_{ext} = P$ and $dq = C_VdT + PdV$. For $dq$ to be exact we should have:
+
+$$\left(\frac{\partial C_V}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V$$
+
+From the first problem we know that the left hand side is zero. The right hand side, however, is not zero:
+
+$\left(\frac{\partial P}{\partial T}\right)_V = \frac{nR}{V - nb} \ne 0$
+
+Thus $dq$ is inexact. For $dq / T$ we have: $\frac{dq}{T} = \frac{C_V}{T}dT + \frac{P}{T}dV$. Now the exactness test gives:
+
+$$\left(\frac{\partial C_V / T}{\partial V}\right)_T = 0\textnormal{ (}T\textnormal{ is constant)}$$
+$$\left(\frac{\partial (nR / (V - nb))}{\partial T}\right)_V = 0\textnormal{ (the expression does not depend on }T\textnormal{)}$$
+
+Thus $dq/T$ is exact.
+
+\hrule\vspace{0.5cm}

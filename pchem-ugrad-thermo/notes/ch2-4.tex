@@ -1,0 +1,192 @@
+\opage{
+\otitle{2.4 Work of compression and expansion of a gas at constant temperature}
+
+\otext
+Work can be done on/by a gas upon compression/expansion. In the following example gas is the system and the surroundings constitutes of a piston and a thermostat (i.e. a container that keeps the temperature constant).
+
+\begin{columns}
+
+\begin{column}{5cm}
+Assumptions:
+\begin{itemize}
+\item No friction
+\item No external pressure outside the cylinder (from atmosphere)
+\item Cylinder immersed in a thermostat (constant $T$)
+\end{itemize}
+
+\end{column}
+
+\begin{column}{5cm}
+
+\ofig{constant-temperature}{0.5}{Compression by a piston with mass $m$.}
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.2cm}
+
+Consider a \underline{two stage process}:\\
+\begin{enumerate}
+\item Pressure $P_1$, Volume $V_1$ and Temperature $T$ (stops removed but the piston has not yet fallen down due to gravity).\\
+\item Pressure $P_2$, Volume $V_2$ and Temperature $T$ (the piston has fallen down).\\
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+At both points the external pressure is $P_{ext} = \frac{mg}{A}$ where $A$ is the area of the piston. Thus the force pushing the piston down is $mg$. At the end of the process the gas pressure will be the same as the external pressure: $P_{ext} = P_2$. Recall that work was defined as ``force $\times$ distance'', which in this case means (see Eq. (\ref{eq2.4}), $P_1 < P_2$):
+
+\aeqn{2.31}{w_{comp} = \int\limits_{ini}^{fin}\inex{dw} = \int\limits_{ini}^{fin} \umark{-P_{ext}}{\textnormal{constant}}dV = -P_2(V_2 - V_1) = P_2(V_1 - V_2) > 0}
+
+or expressed in another way without reference to $P_2$:
+
+\aeqn{2.31a}{w_{comp} = \int\limits_{ini}^{fin}\umark{-P_{ext}}{\textnormal{constant}}dV = \frac{mg}{A}\times\umark{\left(Ah\right)}{=\Delta V} = mg\times h\textnormal{ (force }\times\textnormal{distance)}}
+
+where the positive sign for $w_{comp}$ signifies that work was done on the system and $h$ denotes the distance that the piston moved (the shaded area on the previous page $P$-$V$ plot).
+
+\hrulefill
+
+Next, consider expansion of a gas in a two stage process:
+
+}
+
+\opage{
+
+\ofig{constant-temperature2}{0.5}{Expansion of gas (piston pushed up).}
+
+\otext
+Work done by the system is given by ($P_1 > P_2$, $P_2 = P_{ext}$):
+
+\aeqn{2.33}{w_{exp} = \int\limits_{ini}^{fin}\umark{-P_{ext}}{\textnormal{constant}}dV = -P_{ext}(V_2 - V_1) = P_2(V_1 - V_2) < 0}
+
+\underline{Note:} $\left|w_{comp}\right| > \left|w_{exp}\right|$. More work is required to compress the gas than can be obtained by expansion. This process is \textbf{irreversible}. Such behavior results from heat flow ($q$; not discussed yet).
+
+\vspace*{0.4cm}
+
+Is it possible to move the piston in such a way that $\left|w_{exp}\right| = \left|w_{comp}\right|$? In other words, is it possible to make the process \textbf{reversible} in terms of work?
+
+}
+
+\opage{
+
+\otext
+\underline{Yes.} Instead of single-step compression, we should use many compression steps with increasing external pressure $P_{ext}$. This can be achieved by increasing the mass gradually ($m_1 < m_2 < m_3 < ...$):
+
+\ofig{reversible}{0.4}{}
+
+In other words: do not apply all the force at once but increase it gradually. \textit{Note that in a reversible process the pressure inside the cylinder and the external pressure are equal at all times.} In this case the work is obtained by ($P$ is the pressure inside the cylinder):
+
+\aeqn{2.32}{w_{comp} = \int\limits_{ini}^{fin}\inex{dw} = -\int\limits_{V_1}^{V_2}P_{ext}dV = -\int\limits_{V_1}^{V_2}PdV}
+
+}
+
+\opage{
+
+\otext
+Expansion work $w_{exp}$ can also be carried out using infinite expansion steps ($m_1 > m_2 > m_3 ...$):
+
+\ofig{reversible2}{0.4}{}
+
+This infinite expansion process is also reversible. The expression for work is now:
+
+\aeqn{2.32a}{w_{exp} = \int\limits_{ini}^{fin}\inex{dw} = -\int\limits_{V_2}^{V_1}PdV}
+
+Work over one closed cycle (reversible compression followed by reversible expansion):
+
+\aeqn{2.34}{w_{cycle} = \umark{-\int\limits_{V_1}^{V_2}PdV}{\textnormal{compression}} \umark{-\int\limits_{V_2}^{V_1}PdV}{\textnormal{expansion}} = -\int\limits_{V_1}^{V_2}PdV + \int\limits_{V_1}^{V_2}PdV = 0}
+
+Thus the infinitesimal process is reversible. Many calculations can be carried out exactly only for reversible processes. Most processes in nature are, however, irreversible. Sometimes they can be approximated as reversible processes.
+
+}
+
+\opage{
+
+\otext
+For a reversible process $P_{ext} = P$ (in the cylinder) always. Assuming that the gas in the cylinder is ideal, we have for \textit{reversible expansion} ($T$ constant, $V_1 < V_2$, \textit{ini} = 1 and \textit{fin} = 2):
+
+\vspace*{-0.2cm}
+
+\aeqn{2.35}{w_{exp,rev} = -\int\limits_{V_1}^{V_2}P_{ext}dV = -\int\limits_{V_1}^{V_2}PdV = -\int\limits_{V_1}^{V_2}\frac{nRT}{V}dV = -nRT\ln\left(\frac{V_2}{V_1}\right)}
+
+For reversible compression ($T$ constant, $V_1 > V_2$, \textit{ini} = 1 and \textit{fin} = 2), we have $w_{comp,rev} = -nRT\ln\left(\frac{V_2}{V_1}\right) > 0$.
+
+\vspace*{0.2cm}
+
+For an ideal gas at constant temperature, we have $P_1V_1 = P_2V_2$ and Eq. (\ref{eq2.35}) can then be written:
+
+\aeqn{2.36}{w_{exp,rev} = -nRT\ln\left(\frac{V_2}{V_1}\right) = -nRT\ln\left(\frac{P_1}{P_2}\right) = nRT\ln\left(\frac{P_2}{P_1}\right)}
+
+The maximum amount of work of isothermal expansion of a van der Waals gas is:
+
+\vspace*{-0.2cm}
+
+\aeqn{2.37}{w_{exp,rev} = -\int\limits_{V_1}^{V_2}\left(\frac{nRT}{V-nb} - \frac{an^2}{V^2}\right)dV = -nRT\ln\left(\frac{V_2 - nb}{V_1 - nb}\right) + an^2\left(\frac{1}{V_1} - \frac{1}{V_2}\right)}
+
+\vspace*{0.2cm}
+
+\underline{Note:} During reversible processes the system and the surroundings are in equilibrium. However, such processes are ideal since they take infinitely long time to proceed.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the work done when 50 g of iron reacts with hydrochloric acid in (a) a closed vessel of fixed volume, (b) an open beaker at 25 \degree{}C. The reaction is:
+
+$$\textnormal{Fe}(s) + 2\textnormal{HCl}(aq) \rightarrow \textnormal{FeCl}_2(aq) + \textnormal{H}_2(g)$$
+
+Assume that H$_2$ follows the ideal gas law.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.}\\
+
+\vspace*{0.2cm}
+
+(a) The volume cannot change, so no $PV$-work is done and $w_{exp} = 0$.\\
+(b) The gas drives back the atmosphere and therefore $w_{exp} = -P_{ext}\Delta V$. We can neglect the initial volume ($V_1$) because the final volume ($V_2$) after production of gas, is much larger. We assume that H$_2$ behaves according to the ideal gas law ($n$ moles of H$_2$):
+
+$$\Delta V = V_2 - V_1 \approx V_2 = \frac{nRT}{P} = \frac{nRT}{P_{ext}}$$
+
+where $P$ is the gas pressure and $P_{ext}$ the atmospheric pressure. Note that solids have negligible volumes compared to gases and therefore we have:
+
+$$w_{exp} = -P_{ext}\Delta V \approx -P_{ext}\times \frac{nRT}{P_{ext}} = -nRT$$
+
+When 1 mol of Fe is consumed in the reaction, 1 mol H$_2$ is produced.
+
+}
+
+\opage{
+
+\otext
+Because the molar mass of Fe is 55.85 g mol$^{-1}$, it follows that:
+
+$$w_{exp} \approx -\frac{50\textnormal{ g}}{55.85\textnormal{ g mol}^{-1}}\times \left(8.3145\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right)\times\left(298.15\textnormal{ K}\right) = -2.2\textnormal{ kJ}$$
+
+Thus the system (H$_2$ gas from the reaction) does 2.2 kJ of work driving back the atmosphere.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Work of expansion of an ideal gas. One mole of an ideal gas expands from 5 to 1 bar at 298 K. Calculate $w_{exp}$ (a) for reversible expansion and (b) for an irreversible expansion against a constant external pressure of 1 bar.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} (a) We use Eq. (\ref{eq2.36}) with $P_1 = 5$ bar (\textit{ini}) and $P_2 = 1$ bar (\textit{fin}):
+
+$$w_{exp,rev} = nRT\ln\left(\frac{P_2}{P_1}\right) = \left(1\textnormal{ mol}\right)\times\left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\left(298\textnormal{ K}\right)\times\ln\left(\frac{1\textnormal{ bar}}{5\textnormal{ bar}}\right)$$
+
+\vspace*{-0.4cm}
+
+$$ = -4000\textnormal{ J}$$
+
+\vspace*{-0.4cm}
+
+\phantom{\textbf{Solution. }}(b) The irreversible work is given by Eq. (\ref{eq2.33}):
+
+$$w_{exp,irrev} = -P_2\left(V_2 - V_1\right) = -P_2\left(\frac{nRT}{P_2} - \frac{nRT}{P_1}\right) = nRT\left(\frac{P_2}{P_1} - 1\right)$$
+$$\left(1\textnormal{ mol}\right) \times \left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) \times \left(298\textnormal{ K}\right) \times \left(\frac{1\textnormal{ bar}}{5\textnormal{ bar}} - 1\right) = -2000\textnormal{ J}$$
+
+}

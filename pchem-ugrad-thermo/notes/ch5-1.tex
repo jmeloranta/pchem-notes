@@ -1,0 +1,166 @@
+\opage{
+\otitle{5.1 Derivation of the general equilibrium expression}
+
+\otext
+
+\begin{columns}
+
+\begin{column}{3cm}
+\operson{guldberg_waage}{0.2}{Norwegian chemists: Cato Guldberg (1836 - 1902) and Peter Waage (1833 - 1900)}
+\end{column}
+
+\begin{column}{7cm}
+\otext
+
+\underline{Experiments:} Chemical reactions can approach equilibrium from either direction (CG \& PW):
+
+$$\textnormal{A} + \textnormal{B} \rightleftharpoons \textnormal{C} + \textnormal{D}$$
+
+Thus it does not matter, if one mixes (A and B) or (C and D), the system will end up in the same equilibrium. Also they realized that the equilibrium depends on concentrations of A, B, C and D. Later van't Hoff (1877) suggested an expression for equilibrium, which depends on concentrations.
+\end{column}
+
+\end{columns}
+
+\hrulefill
+
+\vspace*{0.2cm}
+
+Recall Eq. (\ref{eq4.36}): $dG = -SdT + VdP + \sum\limits_{i=1}^{N_s}\mu_idn_i$
+
+\vspace*{0.2cm}
+
+Remember that most chemical reactions are carried out at constant pressure and temperature and hence $dT = dP = 0$. Next, recall Eq. (\ref{eq2.90}):
+
+\aeqn{5.2}{n_i = n_{i,0} + v_i\xi}
+
+where $n_i$ is the amount of species $i$, $n_{i0}$ is the initial amount of species $i$, $v_i$ is the stoichiometric coefficient and $\xi$ is the extent of reaction. Eq. (\ref{eq5.2}) yields the differential $dn_i = v_id\xi$. Sometimes we use the ``scaled'' version of Eq. (\ref{eq5.2}): $n_i = n_{i,0} + v_in_{i,0}\xi$ where $\xi$ is now strictly between 0 and 1.
+
+}
+
+\opage{
+
+\otext
+If one chemical reaction is considered, substitution of the differential into Eq. (\ref{eq4.36}) gives:
+
+\aeqn{5.3}{dG = -SdT + VdP + \left(\sum\limits_{i=1}^{N_s}v_i\mu_i\right)d\xi}
+
+At specified fixed $T$ and $P$:
+
+\aeqn{5.4}{\left(\frac{\partial G}{\partial\xi}\right)_{T,P} = \sum\limits_{i=1}^{N_s}v_i\mu_i}
+
+In chemical equilibrium $G$ has its minimum value and hence: $\left(\frac{\partial G}{\partial \xi}\right)_{T,P} = 0$
+
+\vspace*{0.2cm}
+
+Implying this condition to Eq. (\ref{eq5.4}), we get the equilibrium condition:
+
+\aeqn{5.5}{\sum\limits_{i=1}^{N_s}v_i\mu_{i,eq} = 0}
+
+\textit{This is equilibrium condition applies to all chemical equilibria (gases, liquids, solids,
+or solutions).}
+
+\vspace*{0.2cm}
+
+In similar fashion to Eq. (\ref{eq2.92}), we define the reaction Gibbs energy $\Delta_r G$:
+
+\aeqn{5.6}{\Delta_r G = \left(\frac{\partial G}{\partial\xi}\right)_{T,P}}
+
+}
+
+\opage{
+
+\otext
+By combining the equilibrium condition, Eqs. (\ref{eq5.4}) and (\ref{eq5.6}):
+
+\aeqn{5.7}{\Delta_r G = \sum\limits_{i=1}^{N_s}v_i\mu_i}
+
+The reaction Gibbs energy at a given value of $\xi$, tells us how much the Gibbs energy changes when $\xi$ is varied. Its value approaches zero when close to the equilibrium.
+
+\vspace*{0.2cm}
+
+Consider reaction: $\textnormal{A} + \textnormal{B} \rightleftharpoons \textnormal{C} + \textnormal{D}$
+
+\ofig{reaction-gibbs}{0.45}{}
+
+\underline{Note:} Usually $\Delta$ does denotes a difference but here it denotes a derivative. However, there is a close connection to differences in chemical potentials via Eq. (\ref{eq5.7}).
+
+}
+
+\opage{
+
+\otext
+To proceed towards the concept of equilibrium constant, recall Eq. (\ref{eq4.78}):
+
+\vspace*{-0.2cm}
+
+$$\mu_i = \mu_i^\circ + RT\ln\left(a_i\right)$$
+
+\vspace*{-0.2cm}
+
+where $\mu_i^\circ$ is the standard chemical potential and $a_i$ is activity of species $i$. In equilibrium, this equation can be written as ($a_{i,eq} = a_i(\xi_{eq})$):
+
+\aeqn{5.8}{\mu_{i,eq} = \mu_i^\circ + RT\ln\left(a_{i,eq}\right)}
+
+Inserting this into the equilibrium condition, Eq. (\ref{eq5.5}), gives:
+
+\aeqn{5.9}{\sum\limits_{i=1}^{N_s}v_i\mu_i^\circ = -RT\sum\limits_{i=1}^{N_s}v_i\ln\left(a_{i,eq}\right)}
+
+Using the rules of algebra for logarithms, this can be rewritten:
+
+\aeqn{5.10}{\sum\limits_{i=1}^{N_s}v_i\mu_i^\circ = -RT\sum\limits_{i=1}^{N_s}\ln\left(a_{i,eq}^{v_i}\right)}
+
+and further (``a sum of logarithms is a logarithm of products''):
+
+\aeqn{5.11}{\umark{\sum\limits_{i=1}^{N_s}v_i\mu_i^\circ}{=\Delta_r G^\circ} = -RT\ln\umark{\left(\prod\limits_{i=1}^{N_s}a_{i,eq}^{v_i}\right)}{\equiv K} = -RT\ln(K)}
+
+\vspace*{-0.2cm}
+
+\underline{Note:} $\Delta_r G^\circ$ is a plain number, which comes from the standard chemical potentials of the isolated species A, B, C, D whereas $\Delta_r G$ is a function depending on $\xi$. The value of $\Delta_r G^\circ$ depends only on the species which react but not on the details of the reaction itself. $\Delta_r G$ describes the reaction.
+
+}
+
+\opage{
+
+\otext
+Thus we can summarize the previous result as:
+
+\aeqn{5.13}{\Delta_r G^\circ = -RT\ln\left(K\right)}
+
+The equilibrium constant $K$ is directly related to the standard reaction Gibbs energy $\Delta_rG^\circ$. Because $\Delta_r G^\circ$ is a function of temperature only (pressure fixed to 1 bar), the equilibrium constant $K$ depends only on temperature. Note that $K$ is a dimensionless quantity.
+
+\hrulefill
+
+\vspace*{0.2cm}
+
+Let's consider a \textit{non-equilibrium condition} (i.e. $\Delta_r G \ne 0$) and rewrite Eqs. (\ref{eq5.7}) and (\ref{eq5.8}) as:
+
+\vspace*{-0.4cm}
+
+\aeqn{5.14}{\Delta_r G = \sum\limits_{i=1}^{N_s} v_i\mu_i^\circ + RT\sum\limits_{i=1}^{N_s}v_i\ln(a_i) = \Delta_r G^\circ + RT\ln\umark{\left(\prod\limits_{i=1}^{N_s}a_i^{v_i}\right)}{\equiv Q} = \Delta_rG^\circ + RT\ln\left(Q\right)}
+
+where we have defined reaction quotient $Q$. It is a very similar quantity to $K$ but it is a dynamic variable that describes a non-equilibrium situation. At equilibrium, $Q = K$ and in general $Q = Q(\xi)$ whereas $K$ does not depend on $\xi$. By calculating the reaction quotient $Q$, it is possible to determine the direction in which the chemical reaction would proceed at given $\xi$. Substitution of the definition of the Gibbs energy ($G = H - TS$) into Eq. (\ref{eq5.6}) gives:
+
+\aeqn{5.17}{\Delta_r G = \left(\frac{\partial H}{\partial\xi}\right)_{T,P} - T\left(\frac{\partial S}{\partial\xi}\right)_{T,P} = \Delta_r H - T\Delta_r S}
+
+}
+
+\opage{
+
+\otext
+Note that the previous definition is in agreement with Eqs. (\ref{eq2.92}). The same equation also applies when the reactants and products are in their standard states:
+
+\aeqn{5.17a}{\Delta_r G^\circ = \Delta_rH^\circ - T\Delta_rS^\circ}
+
+\textbf{Example.} Write expressions for $K$ and $Q$ for the following reaction:
+
+$$3\textnormal{C(graphite)} + 2\textnormal{H}_2\textnormal{O}(g) \rightleftharpoons \textnormal{CH}_4(g) + 2\textnormal{CO}(g)$$
+
+By applying Eqs. (\ref{eq5.11}) and (\ref{eq5.14}) we have:
+
+$$K = \left(\frac{a_{\textnormal{CH}_4}a^2_{\textnormal{CO}}}{a^3_{\textnormal{C}}a^2_{\textnormal{H}_2\textnormal{O}}}\right)\textnormal{ where the activities are evaluated at equilibrium (}\xi_{eq}\textnormal{)}$$
+
+$$Q(\xi) = \left(\frac{a_{\textnormal{CH}_4}a^2_{\textnormal{CO}}}{a^3_{\textnormal{C}}a^2_{\textnormal{H}_2\textnormal{O}}}\right)\textnormal{ where the activities are evaluated at a given point }\xi$$
+
+Also $Q\left(\xi_{eq}\right) = K$.
+
+}

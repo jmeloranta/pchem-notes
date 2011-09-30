@@ -1,0 +1,112 @@
+\opage{
+\otitle{2.7 Enthalpy and change of state at constant pressure}
+
+\otext
+Constant-pressure processes are more common in chemistry than constant-volume processes because many experiments are carried out in open vessels. If only pressure-volume work is done and the pressure is constant and equal to the applied pressure ($P_{ext}$), we have $w_P = -P_{ext}\Delta V = -P\Delta V$ ($P$ is the pressure of the system; quasi-static system). Now the change in internal energy ($\Delta U$) can be written as (see Eq. (\ref{eq2.8})):
+
+\aeqn{2.52}{\Delta U = q_P + w_P = q_P - P\Delta V}
+
+where subscript $P$ refers to a process at constant pressure (i.e. isobaric process). 
+
+\vspace*{0.3cm}
+
+Denote the initial state by 1 and the final state by 2 and write $\Delta U$ and $\Delta V$ explicitly:
+
+\aeqn{2.53}{U_2 - U_1 = q_P -P\left(V_2 - V_1\right)}
+
+Rearranging terms gives:
+
+\aeqn{2.54}{q_P = \umark{\left(U_2 + PV_2\right)}{=H_2} - \umark{\left(U_1 + PV_1\right)}{=H_1} = H_2 - H_1 = \Delta H}
+
+where we have used notation $H = U + PV$ and $H$ is the \textit{enthalpy}.
+
+}
+
+\opage{
+
+\otext
+From Eq.(\ref{eq2.54}) it also follows that the differentials corresponding to heat ($dq_P$) and enthalpy ($dH$) must be equal (at constant pressure):
+
+\aeqn{2.57}{dq_P = dH\textnormal{ (}H\textnormal{ is a state function and }dH\textnormal{ is exact)}}
+
+Because $dH$ is an exact differential, we can write the total differential as:
+
+\aeqn{2.58}{dH = \left(\frac{\partial H}{\partial T}\right)_P dT + \left(\frac{\partial H}{\partial P}\right)_T dP}
+
+Under constant pressure $dP = 0$ and if we combine Eqs. (\ref{eq2.57}) and (\ref{eq2.58}), we get:
+
+\aeqn{2.60}{dq_P = \left(\frac{\partial H}{\partial T}\right)_P dT}
+
+We can now define heat capacity at constant pressure ($C_P$) as follows:
+
+\aeqn{2.61}{C_P \equiv \frac{dq_P}{dT} = \left(\frac{\partial H}{\partial T}\right)_P}
+
+Integration of Eq. (\ref{eq2.60}) gives an expression for change in enthalpy (cf. Eq. (\ref{eq2.49})):
+
+\aeqn{2.62}{\Delta H_P = \int\limits_{T_1}^{T_2}C_P(T)dT \approx C_P\Delta T\textnormal{ (if }C_P\textnormal{ constant over }T_1,T_2\textnormal{ )}}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Enthalpy change can be measured with a constant-pressure calorimeter. A simple example of such calorimeter is the ``coffee-cup-calorimeter''. 10.0 g of ice at 273 K is added to such calorimeter containing 100.0 g of water at 303 K. The heat capacity of the calorimeter is 10.0 J K$^{-1}$. What is the final temperature of the water in the cup? It was observed that all ice melted and therefore we know that all ice was transformed to water.
+
+\begin{columns}
+
+\hspace*{-0.7cm}
+\begin{column}{2cm}
+\ofig{coffee-cup}{0.4}{}
+\end{column}
+
+\begin{column}{8.6cm}
+\otext
+
+\textbf{Solution.} Overall, the enthalpy is conserved (thermal insulation):
+
+\vspace*{-0.5cm}
+
+$$\umark{\Delta H_{\begin{matrix}\textnormal{\tiny ice}\\\textnormal{\tiny melts}\\\end{matrix}} + \Delta H_{\begin{matrix}\textnormal{\tiny cold water}\\\textnormal{\tiny warms to}\\\textnormal{\tiny final temp.}\\\end{matrix}}}{\textnormal{\tiny added ice}} + \umark{\Delta H_{\begin{matrix}\textnormal{\tiny water}\\\textnormal{\tiny cools}\\\end{matrix}}}{\begin{matrix}\textnormal{\tiny water present}\\\textnormal{\tiny in the cup}\\\end{matrix}} + \umark{\Delta H_{\begin{matrix}\textnormal{\tiny apparatus}\\\textnormal{\tiny cools}\end{matrix}}}{\textnormal{\tiny coffee cup}} = 0$$
+
+Enthalpy change for the melting process can be obtained by multiplying the mass of ice by the enthalpy of fusion (will be discussed in more detail later):
+
+\end{column}
+
+\end{columns}
+
+$$\Delta H_{\textnormal{\tiny ice melts}} = m_{\textnormal{\tiny ice}}\Delta_{fus}H = \left(10.0\textnormal{ g}\right)\times\umark{\left(333\textnormal{ J g}^{-1}\right)}{\textnormal{\tiny from table}} = 3330\textnormal{ J}$$
+
+Next we calculate the change in enthalpy when water at 273 K warms up to the final temperature (see Eq. (\ref{eq2.62})):
+
+}
+
+\opage{
+
+$$\Delta H_{\begin{matrix}\textnormal{\tiny cold water}\\\textnormal{\tiny warms to}\\\textnormal{\tiny final temp.}\\\end{matrix}} = m_{\textnormal{\tiny ice}}C_{\textit{\tiny P,}\textnormal{\tiny H}_\textnormal{\tiny 2}\textnormal{\tiny O}}\Delta T = \left(10.0\textnormal{ g}\right)\times\left(4.19\textnormal{ J g}^{-1}\textnormal{ K}^{-1}\right)\times\left(T_f - 273\textnormal{ K}\right)$$
+
+where $T_f$ denotes the (still unknown) final temperature. On the other hand, the water initially at 303 K cools down to the final temperature $T_f$:
+
+$$\Delta H_{\begin{matrix}\textnormal{\tiny water}\\\textnormal{\tiny cools}\\\end{matrix}} = m_{\textnormal{\tiny water}}C_{\textit{\tiny P,}\textnormal{\tiny H}_\textnormal{\tiny 2}\textnormal{\tiny O}}\Delta T = \left(100.0\textnormal{ g}\right)\times\left(4.19\textnormal{ J g}^{-1}\textnormal{ K}^{-1}\right)\times\left(T_f - 303\textnormal{ K}\right)$$
+
+Finally, we have to consider cooling of the calorimeter from 303 K down to the final temperature:
+
+$$H_{\begin{matrix}\textnormal{\tiny apparatus}\\\textnormal{\tiny cools}\end{matrix}} = C_{\textnormal{\tiny calorimeter}}\Delta T = \left(10.0\textnormal{ J K}^{-1}\right)\times\left(T_f - 303\textnormal{ K}\right)$$
+
+Because the net change in enthalpy is zero (conservation of enthalpy), we can solve for $T_f$:
+
+}
+
+\opage{
+
+\otext
+
+$$\left(3330\textnormal{ J}\right) + \left(41.9\textnormal{ J K}^{-1}\right)\times\left(T_f - 273\textnormal{ K}\right) + \left(419\textnormal{ J K}^{-1}\right)\times\left(T_f - 303\textnormal{ K}\right)$$
+$$ + \left(10.0\textnormal{ J K}^{-1}\right)\times\left(T_f - 303\textnormal{ K}\right) = 0 \Rightarrow T_f = 293\textnormal{ K}$$
+
+\underline{Note:} In non-SI units the temperatures correspond to:\\
+
+273 K = 31.7 \degree F = 0 \degree C (ice)\\
+293 K = 67.6 \degree F = 20 \degree C (final temperature)\\
+303 K = 85.7 \degree F = 30 \degree C (water)\\
+
+}

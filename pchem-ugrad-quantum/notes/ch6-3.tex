@@ -1,0 +1,83 @@
+\opage{
+\otitle{6.3 Franck-Condon principle}
+
+\otext
+What determines the line intensities in vibronic progressions? 
+
+\begin{center}
+\ofig{NO-B-X}{0.25}{\\NO radical B $\rightarrow$ X.}
+\end{center}
+
+\otext
+The lines belong to the same electronic transition but to different vibrational states. There must clearly be a factor that dictates the relative line intensities in the fluorescence spectrum. In the above example the initial state corresponds to $v'=0$ with the final states $v'' = 0, 1, 2, 3...$, which clearly indicates that the final state determines both the line position and intensity. 
+
+}
+
+\opage{
+
+\otext
+The \textit{Franck-Condon principle} (FC) states that the degree of overalp between the vibronic wavefunctions between the ground and excited electronic states determines the line intensity. This assumes that the electronic transition is much faster than the nuclear motion and hence the transitions are said to be ``vertical''.  The FC principle can be derived by calculating the transition dipole moment ($g$ = ground state, $e$ = excited state):
+
+\aeqn{6.1}{\left<\vec{\mu}\right> = \int\Psi_g^*\vec{\hat{\mu}}\Psi_ed\tau}
+
+where $\Psi_g$ and $\Psi_e$ are the full wavefunctions (i.e., electronic, vibrational, rotational degrees included) for the ground and excited states, respectively, and $\vec{\hat{\mu}} = \left(\hat{\mu}_x,\hat{\mu}_y,\hat{\mu}_z\right)$ is the transition dipole vector operator with the indicated Cartesian components.
+
+\otext
+When the electronic, rotation and vibration degrees of freedom are not coupled, we can write the total wavefunction as a product:
+
+\beqn{6.2}{\Psi_g = \psi_{g,el}\times\psi_{g,vib}^v\times\psi_{g,rot}^{J,M}}
+{\Psi_e = \psi_{e,el}\times\psi_{e,vib}^v\times\psi_{e,rot}^{J,M}}
+
+}
+
+\opage{
+
+\otext
+Inserting Eq. (\ref{eq6.2}) into Eq. (\ref{eq6.1}), we get:
+
+\aeqn{6.3}{\left<\vec{\mu}\right> = \int\psi_{g,el}^*\psi_{g,vib}^{v*}\psi_{g,rot}^{J,M*}\vec{\mu}\psi_{e,el}\psi_{e,vib}^{v'}\psi_{e,rot}^{J',M'}d\tau_ed\tau_{vib}\tau_{rot}}
+
+Note that $\vec{\mu}$ depends only on the electronic coordinate $r_e$ (i.e., $\vec{\mu} = \vec{\mu}(r_e)$). Assuming that the electronic transition dipole integral does not depend on the nuclear coordinates, we can write Eq. (\ref{eq6.3}) as:
+
+\beqn{6.4}{\left<\vec{\mu}\right> = \int\psi_{g,el}^*\vec{\mu}\psi_{e,el}d\tau_{el}\times\int\psi_{g,vib}^{v*}\psi_{g,rot}^{J,M*}\psi_{e,vib}^{v'}\psi_{e,rot}^{J',M'}d\tau_{vib}\tau_{rot}}
+{= \int\psi_{g,el}^*\vec{\mu}\psi_{e,el}d\tau_{el}\times\int\psi_{g,vib}^{v*}\psi_{e,vib}^{v'}d\tau_{vib}\times\int\psi_{e,rot}^{J,M*}\psi_{e,rot}^{J',M'}d\tau_{rot}}
+
+For an allowed transition, all the three integrals above must be non-zero. The first term basically gives the selection rules for electronic transitions in molecules (through group theory). The second term is the overlap integral between the vibronic wavefunctions in the ground and excited states (``FC overlap'') and the last term gives the rotational selection rule: $\Delta J = \pm 1$ and $\Delta M_J = 0, \pm 1$. The latter is the same selection rule as we had found previously for pure rotational spectra.
+
+\otext
+\underline{To summarize:} The relative line intensities in a vibrational progression are determined by the FC overlap integral.
+
+}
+
+\opage{
+
+\ofig{fc-a}{0.3}{}
+}
+
+\opage{
+
+\ofig{fc-b}{0.3}{}
+
+}
+
+\opage{
+
+\otext
+Remember that most often the equilibrium bond length ($R_e$) is different in ground and excited states and in practive the situation shown on the previous slide is most common. A good approximation for the diatomic molecular potentials is the Morse potential (see Eq. (\ref{eqn5.82})).
+
+\otext
+Recall that the transition probabilities are related to the square of the transition dipole moment and hence the relative intensities $I(v',v)$ in a vibrational progression are given by:
+
+\aeqn{6.5}{I(v',v) \propto \left|\int\psi_{g,vib}^{v*}\psi_{g,vib}^{v'}d\tau_{vib}\right|^2}
+
+\vspace*{-0.2cm}
+
+\begin{enumerate}
+\otext
+
+\item If the transition occurs from the excited state ($v = 0$) to the ground state (i.e., fluorescence), the vibrational progression will yield the vibrational energy spacings for the ground state.
+\item If the transition occurs from the ground state ($v' = 0$) to the excited state (i.e., absorption), the vibrational progression will yield the vibrational energy levels for the excited state.
+\item If the excited state is purely repulsive, only a broad line in absorption is seen. This can be understood in the presence of continuum vibrational states in the excited electronic state.
+\end{enumerate}
+
+}

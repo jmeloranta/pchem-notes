@@ -1,0 +1,114 @@
+\opage{
+\otitle{1.5 Real gases and the virial equation}
+
+\otext
+\textit{Real gases behave like ideal gases only in the limit of zero pressure and high temperature.}\\
+
+\vspace*{0.25cm}
+
+\underline{Compressibility factor} $Z$ indicates deviation from the ideal gas law:
+
+\aeqn{1.7b}{Z = \frac{P\bar{V}}{RT} = \frac{PV}{nRT}}
+
+\vspace*{-0.7cm}
+
+\ofig{compress}{0.45}{}
+
+}
+
+\opage{
+
+\ofig{lennard-jones}{0.45}{}
+
+\otext
+In the limit of high temperature, thermal energy dominates over the potential. At low temperatures the effect of the attractive part of the potential can be seen more clearly because thermal energy is not sufficient to smooth out the binding.
+
+\vspace*{0.5cm}
+
+\underline{Note:} The compressibility vs. pressure curves depend on the gas as well as the temperature.
+
+}
+
+\opage{
+
+\otext
+A number of different equations of state for real gases have been proposed:\\
+
+\vspace*{0.25cm}
+
+Ideal gas: \vspace*{-0.3cm} \aeqn{1.13a}{P = \frac{RT}{\bar{V}}}
+
+van der Waals (vdW): \vspace*{-0.3cm} \aeqn{1.13b}{P = \frac{RT}{\bar{V} - b} - \frac{a}{\bar{V}^2}}
+
+Berthelot: \vspace*{-0.3cm} \aeqn{1.13c}{P = \frac{RT}{\bar{V} - b} - \frac{a}{T\bar{V}^2}}
+
+Virial (Onnes): \vspace*{-0.3cm} \aeqn{1.13}{P = \frac{RT}{\bar{V}}\left\lbrace 1 + \frac{B(T)}{\bar{V}} + \frac{C(T)}{\bar{V}^2} + ...\right\rbrace}
+
+\vspace*{-0.25cm}
+Alternative forms of Eq. (\ref{eq1.13}):
+
+\aeqn{1.11}{Z = \frac{P\bar{V}}{RT} = 1 + \frac{B(T)}{\bar{V}} + \frac{C(T)}{\bar{V}^2} + ... = 1 + B'(T)P + C'(T)P^2 + ...}
+
+\vspace*{-0.25cm}
+
+\begin{columns}
+\begin{column}{3cm}
+\operson{kamerlingh-onnes}{0.07}{Kamerlingh Onnes, Dutch physicist (1853 -- 1936), Virial equation (1901), Liquid helium (1908), Nobel price (1913).}
+\end{column}
+\vline\hspace*{0.1cm}
+\begin{column}{7cm}
+where the relation ship between the two constants are given by:
+
+\vspace*{-0.2cm}
+
+\aeqn{1.12}{B'(T) = \frac{B(T)}{RT}\textnormal{ and }C'(T) = \frac{C(T) - B(T)^2}{(RT)^2}}
+
+\vspace*{-0.6cm}
+
+\otext
+\underline{Note:} Temperature where $B(T) = 0$ is called the Boyle temperature. At this temperature the gas behaves ideally over an extended range in pressure.\\
+
+\vspace*{0.2cm}
+
+The above equations of state can be derived using statistical mehanics and assuming a certain type of pair interaction. 
+
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Estimate the molar volume of CO$_2$ at 500 K and 100 atm by treating it as a van der Waals gas. For CO$_2$ the coefficients are: $a = 3.640$ atm L$^2$ mol$^{-2}$ and $b = 4.267 \times 10^{-2}$ L mol$^{-1}$.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} First rearrange the van der Waals equation (Eq. (\ref{eq1.13b})):
+
+$$\bar{V}^3 - \left(b + \frac{RT}{P}\right)\bar{V}^2 + \left(\frac{a}{P}\right)\bar{V} - \frac{ab}{P} = 0$$
+
+Roots of a cubic equation (molar volume is the unknown variable) can be found either analytically by using the appropriate formulas (by using the Maxima program described in the Appendix). Next, we setup numerical values for the coefficients:
+
+$$b + RT / P = 0.453\textnormal{ L mol}^{-1}$$
+$$a / P = 3.64\times 10^{-2}\textnormal{ (L mol}^{-1})^2$$
+$$ab / P = 1.55\times 10^{-3}\textnormal{ (L mol}^{-1})^3$$
+
+Thus the equation is:
+
+$$\bar{V}^3 - 0.453\bar{V}^2 + \left( 3.64\times 10^{-2}\right)\bar{V} - \left(1.55\times 10^{-3}\right) = 0$$
+
+The only real valued root is: $\bar{V} = 0.370$ L mol$^{-1}$ (0.410 L mol$^{-1}$ for ideal gas).
+
+}
+
+\opage{
+
+\otext
+When the equation of state is given, it defines a surface in three dimensional space. The surface is such that it satisfies the equation state. This is difficult to visualize in 3-D and therefore 2-D projections are preferred (i.e., one variable is kept constant when plotting). An example is shown below where the temperature was held constant.
+
+\ofig{isotherm-ideal}{0.3}{}
+
+This example corresponds to an ideal gas at 298.15 K temperature. Such plots for other equations of state are shown in the following sections.
+
+}

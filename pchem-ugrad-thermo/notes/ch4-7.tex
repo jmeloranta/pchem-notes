@@ -1,0 +1,190 @@
+\opage{
+\otitle{4.7 Additivity of partial molar properties}
+
+\otext
+In the following we will derive partial molar properties for $U$, $A$, $G$, $S$, $V$ and $H$ at constant $P$ and $T$.
+
+\vspace*{0.2cm}
+
+\underline{1. Partial molar Gibbs energy}
+
+\vspace*{0.2cm}
+
+Eq. (\ref{eq4.81}) states that the chemical potential $\mu_i$ is the partial molar Gibbs energy:
+
+$$G = \sum\limits_{i=1}^{N_s}n_i\mu_i = \sum\limits_{i=1}^{N_s}\left(\frac{\partial G}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{i\ne j}}\times n_i = \sum\limits_{i=1}^{N_s}n_i\bar{G}_i$$
+
+This is in agreement with the definition (i.e. Eqs. (\ref{eq1.38}) and (\ref{eq1.39})). Note that $T$ and $P$ are constant.
+
+\vspace*{0.2cm}
+
+\underline{2. Partial molar entropy}
+
+\vspace*{0.2cm}
+
+Differentiation of both sides of the above equation with respect to $-T$ gives:
+
+\vspace*{-0.2cm}
+
+$$\umark{-\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace}}{=S\textnormal{ (Eq. (\ref{eq4.37}))}} = -\sum\limits_{i=1}^{N_s}n_i\umark{\left(\frac{\partial \mu_i}{\partial T}\right)_{P,\lbrace n_i\rbrace}}{=-\left(\frac{\partial S}{\partial n_i}\right)\textnormal{, Eq. (\ref{eq4.47})}}$$
+
+\vspace*{-0.2cm}
+
+$$\Rightarrow S = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial S}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \sum\limits_{i=1}^{N_s}\bar{S}_i n_i$$
+
+This is consistent with Eqs. (\ref{eq1.38}) and (\ref{eq1.39}).
+
+}
+
+\opage{
+
+\otext
+\underline{3. Partial molar volume}
+
+\vspace*{0.2cm}
+
+Eq. (\ref{eq4.38}) reads: $V = \left(\frac{\partial G}{\partial P}\right)_{T,\lbrace n_i\rbrace}$
+
+\vspace*{0.2cm}
+
+Eqs. (\ref{eq1.39}) and (\ref{eq4.85}) give: $\bar{V}_i = \left(\frac{\partial V}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \left(\frac{\partial \mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace}$
+
+\vspace*{0.2cm}
+
+Differentiation of the Gibbs energy equation on the previous page with respect to $P$ gives (``the Gibbs energy Eq. differentiated''; cf. Eqs. (\ref{eq1.38}) and (\ref{eq1.39})):
+
+\aeqn{4.92}{V = \left(\frac{\partial G}{\partial P}\right)_{T,\lbrace n_i\rbrace} = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial\mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace} = \sum\limits_{i=1}^{N_s}\bar{V}_i n_i}
+
+\vspace*{0.3cm}
+
+\underline{4. Partial molar enthalpy}
+
+\vspace*{0.2cm}
+
+Recall that: $H = G + TS$. Since both $G$ and $S$ are additive:
+
+\vspace*{-0.3cm}
+
+\beqn{4.93}{H = G + TS = \sum\limits_{i=1}^{N_s} n_i\bar{G}_i + T\sum\limits_{i=1}^{N_s}n_i\bar{S}_i = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial G}{\partial n_i} + T\frac{\partial S}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}}}
+{= \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial\left(G + TS\right)}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial H}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}}}
+
+\underline{Note:} The same additivity properties hold for $U$ and $A$ as well.
+
+}
+
+\opage{
+
+\otext
+\underline{How do ideal mixtures of gases behave?}
+
+\vspace*{0.2cm}
+
+By ideal mixture we mean that the gases do not interact with each other and hence they have their independent equations of state. Consider an alternative form of Eq. (\ref{eq4.89}):
+
+\vspace*{-0.2cm}
+
+\aeqn{4.95}{\mu_i = \mu_i^\circ + RT\ln\left(\frac{P_i}{P^\circ}\right) = \mu_i^\circ + RT\ln\left(\frac{y_iP}{P^\circ}\right)}
+
+where $y_i$ is the mole fraction and $P$ is the total pressure (this will be used below).
+
+\vspace*{0.2cm}
+
+\underline{1. The total Gibbs energy of an ideal gas mixture}
+
+\beqn{4.97}{\hspace*{-0.6cm}G = \sum\limits_{i=1}^{N_s}n_i\mu_i = \sum\limits_{i=1}^{N_s}n_i\left(\mu_i^\circ + RT\ln\left(\frac{y_iP}{P^\circ}\right)\right) = \sum\limits_{i=1}^{N_s}n_i\mu_i^\circ + RT\sum\limits_{i=1}^{N_s}n_i\ln\left(y_i\right)\hspace*{0.5cm}}
+{\hspace*{-0.6cm} + RT\ln\left(\frac{P}{P^\circ}\right)\sum\limits_{i=1}^{N_s}n_i = n\left(\sum\limits_{i=1}^{N_s}y_i\mu_i^\circ + RT\sum\limits_{i=1}^{N_s}y_i\ln\left(y_i\right) + RT\ln\left(\frac{P}{P^\circ}\right)\umark{\sum\limits_{i=1}^{N_s}y_i}{\equiv 1}\right) = n\bar{G}}
+
+where $n = n_1 + ... + n_{N_s}$ and $\bar{G} = G / n$ is the molar Gibbs energy of the mixture.
+
+\vspace*{0.2cm}
+
+\underline{Note:} Expressions for $S$, $V$, $U$, $H$ and $A$ can be obtained from this equation by using the relations connecting these variables to each other.
+
+}
+
+\opage{
+
+\otext
+\underline{2. The total entropy of an ideal mixture}
+
+\vspace*{-0.2cm}
+
+\ceqn{4.98}{S = -\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+{= -\left[\sum\limits_{i=1}^{N_s}n_i\omark{\left(\frac{\partial\mu_i^\circ}{\partial T}\right)}{=-\bar{S}_i^\circ\textnormal{ (Eq. (\ref{eq4.84}))}} + R\sum\limits_{i=1}^{N_s}n_i\ln\left(y_i\right) + R\ln\left(\frac{P}{P^\circ}\right)\omark{\sum\limits_{i=1}^{N_s}n_i}{= n}\right]}
+{=n\left(\sum_{i=1}^{N_s}y_i\bar{S}_i^\circ - R\sum\limits_{i=1}^{N_s}y_i\ln\left(y_i\right) - R\ln\left(\frac{P}{P^\circ}\right)\right) = n\bar{S}}
+
+\vspace*{-0.3cm}
+
+where $\bar{S} = S / n$ is the total molar entropy of the mixture.
+
+\vspace*{0.3cm}
+
+\underline{3. The total enthalpy of an ideal mixture}
+
+\vspace*{0.2cm}
+
+At constant $P$ and $T$, $H = H^\circ$ and Eqs. (\ref{eq4.97}), (\ref{eq4.98}), (\ref{eq4.81}) and (\ref{eq1.39}) give:
+
+\vspace*{-0.4cm}
+
+\beqn{4.99}{H = H^\circ = G^\circ + TS^\circ = \sum\limits_{i=1}^{N_s}n_i\left(\mu_i^\circ + T\bar{S}_i^\circ\right)}
+{ = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial G^\circ}{\partial n_i} + T\frac{\partial S^\circ}{\partial n_i}\right)_{T,P,\lbrace n_j\rbrace_{j\ne i}} = \sum\limits_{i=1}^{N_s}n_i\left(\frac{\partial H^\circ}{\partial n_i}\right) = \sum\limits_{i=1}^{N_s}n_i\bar{H}_i^\circ}
+
+\vspace*{-0.2cm}
+
+\underline{Note:} The expression is independent of pressure (i.e. non-interacting gases).
+
+}
+
+\opage{
+
+\otext
+\underline{4. The volume of an ideal gas mixture}
+
+\vspace*{0.2cm}
+
+Direct calculation gives ($n = n_1 + ... + n_{N_s}$, $P = P_1 + ... + P_{N_s}$):
+
+\aeqn{4.100}{V = \frac{nRT}{P} = \sum\limits_{i=1}^{N_s}\umark{\frac{RT}{P}}{\equiv \left(\partial V / \partial n_i\right)}n_i = \sum\limits_{i=1}^{N_s} n_i\umark{\left(\frac{\partial V}{\partial n_i}\right)}{=\bar{V}_i} = \sum\limits_{i=1}^{N_s}n_i\bar{V}_i}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider mixing of two ideal gases as follows:
+
+\ofig{gas-mixing-example}{0.5}{}
+
+What are the initial values and the changes in Gibbs energy, entropy, enthalpy, and volume?
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} The initial values (i.e. before mixing) for the thermodynamic quantities in question are given by (separate systems):
+
+\vspace*{-0.4cm}
+
+$$G_{ini} = n_1\mu_1 + n_2\mu_2 \omark{=}{\textnormal{Eq. (\ref{eq4.89})}} n_1\mu_1^\circ + n_1RT\ln\left(\frac{P}{P^\circ}\right) + n_2\mu_2^\circ + n_2RT\ln\left(\frac{P}{P^\circ}\right)$$
+\vspace*{-0.4cm}
+$$S_{ini} = n_1\bar{S}_1 + n_2\bar{S}_2 \omark{=}{\textnormal{Eq. (\ref{eq4.90})}} n_1\bar{S}_1^\circ - n_1R\ln\left(\frac{P}{P^\circ}\right) + n_2\bar{S}^\circ_2 - n_2\ln\left(\frac{P}{P^\circ}\right)$$
+$$H_{ini} = n_1\bar{H}_1^\circ + n_2\bar{H}_2^\circ$$
+$$V_{ini} = n_1\frac{RT}{P} + n_2\frac{RT}{P}$$
+
+After mixing the thermodynamic quantities become:
+
+\vspace*{-0.4cm}
+
+$$G_{fin} \omark{=}{\textnormal{Eq. (\ref{eq4.97})}} \omark{n_1\mu_1^\circ + n_1RT\ln\left(\frac{P}{P^\circ}\right) + n_2\mu_2^\circ + n_2RT\ln\left(\frac{P}{P^\circ}\right)}{= G_{ini}} + n_1RT\ln\left(y_1\right)$$
+$$ + n_2RT\ln\left(y_2\right) = G_{ini} + RT\left(n_1\omark{\ln\left(y_1\right)}{< 0} + n_2\omark{\ln\left(y_2\right)}{< 0}\right) = G_{ini} + \omark{\Delta_{mix} G}{< 0\textnormal{ (spontaneous)}}$$
+
+}
+
+\opage{
+
+\otext
+$$S_{fin} \omark{=}{\textnormal{Eq. (\ref{eq4.98})}} \umark{n_1\bar{S}_1^\circ - n_1R\ln\left(\frac{P}{P^\circ}\right) + n_2R\ln\left(\frac{P}{P^\circ}\right)}{=S_{ini}} \umark{-Rn_1\ln\left(y_1\right) - Rn_2\ln\left(y_2\right)}{= \Delta_{mix} S > 0}$$
+$$ = S_{ini} + \Delta_{mix} S \textnormal{ (entropy increases)}$$
+$$H_{fin} \omark{=}{\textnormal{Eq. (\ref{eq4.99})}} n_1\bar{H}_1^\circ + n_2\bar{H}_2^\circ = H_{fin}\Rightarrow \Delta_{mix} H = 0$$
+$$V_{fin} \omark{=}{\textnormal{Eq. (\ref{eq4.100})}} n_1\frac{RT}{P} + n_2\frac{RT}{P} = V_{ini}\Rightarrow \Delta_{mix} V = 0$$
+
+}

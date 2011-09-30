@@ -1,0 +1,98 @@
+\noindent
+\textbf{CHEM 352:
+\ifthenelse{\equal{\solutions}{true}}{Examples}{Homework} for chapter 1.}\\
+
+\begin{enumerate}
+\item The ground state wavefunction for a hydrogen atom is $\psi_0(r) = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}$.
+\begin{enumerate}
+\item What is the probability for finding the electron within radius of $a_0$ from the nucleus?
+\item Two excited states of hydrogen atom are given by the following wavefunctions:
+$$\psi_1(r) = A(2 + \lambda r)e^{-\frac{r}{2a_0}}\textnormal{ and }\psi_2(r) = Br\sin(\theta)\cos(\phi)e^{-\frac{r}{2a_0}}$$
+
+Proceed in the following order: 1) obtain $\lambda$ from the orthogonality requirement between $\psi_0$ and $\psi_1$, 2) use the normalization requirement sepratately for $\psi_1$ and $\psi_2$ to get constants $A$ and $B$, respectively.
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-1}}{}
+
+\item 
+\begin{enumerate}
+\item Which of the following functions are eigenfunctions of $d/dx$ and $d^2/dx^2$: $\exp(ikx)$, $\cos(kx)$, $k$, and $\exp(ax^2)$.
+\item Show that the function $f(x, y, z) = \cos(ax)\cos(by)\cos(cz)$ is an eigenfunction of the Laplacian operator ($\Delta$) and calculate the corresponding eigenvalue.
+\item Calculate the standard deviation $\Delta r$ for the ground state of hydrogen atom $\psi_0(r)$.
+\item Calculate the expectation value for potential energy ($V(r) = -\frac{e^2}{4\pi\epsilon_0r}$) in hydrogen atom ground state $\psi_0(r)$. Express the result finally in the units of eV.
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-2}}{}
+
+\item Consider function $\psi(x) = \left(\frac{\pi}{\alpha}\right)^{-\frac{1}{4}}e^{-\alpha x^2/2}$. Using (only) this function, show that:
+
+\begin{enumerate}
+\item Operators $\hat{x}$ and $\hat{p}_x$ do not commute.
+\item Operators $\hat{x}^2$ and the inversion operator $\hat{I}$ commute ($\hat{I}x = -x$).
+\end{enumerate}
+
+Note that consideration of just one function does not prove a given property in general.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-3}}{}
+
+\item A particle is described by the following wavefunction: $\psi(x) = \cos(\chi)\phi_k(x)$ + $\sin(\chi)\phi_{-k}(x)$ where $\chi$ is a parameter (constant) and $\phi_k$ and $\phi_{-k}$ are orthonormalized eigenfunctions of the momentum operator with the eigenvalues $+\hbar k$ and $-\hbar k$, respectively.
+
+\begin{enumerate}
+\item What is the probability that a measurement gives $+\hbar k$ as the momentum of the particle?
+\item What is the probability that a measurement gives $-\hbar k$ as the momentum of the particle?
+\item What wavefunction would correspond to 0.90 probability for a momentum of $+\hbar k$?
+\item Consider another system, for which $\psi = 0.9\psi_1 + 0.4\psi_2 + c_3\psi_3$. Calculate $c_3$ when $\psi_1$, $\psi_2$ and $\psi_3$ are orthonormal. Use the normalization condition for $\psi$.
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-4}}{}
+
+\item Consider a particle in the following one-dimensional infinitely deep box potential:
+$$V(x) = \left\lbrace\begin{matrix}
+0, & \textnormal{ when }\left|x\right| \le a\\
+\infty, & \textnormal{ when }\left|x\right| > a\\
+\end{matrix}\right.
+$$
+
+Note that the position of the potential was chosen differently than in the lectures. The following two wavefunctions are eigenfunctions of the Hamiltonian corresponding to this potential:
+$$\psi_1(x) = \frac{1}{\sqrt{a}}\cos\left(\frac{\pi x}{2a}\right)\textnormal{ and } \psi_2(x) = \frac{1}{\sqrt{a}}\sin\left(\frac{\pi x}{2a}\right)$$
+
+with the associated eigenvalues are $E_1 = 1$ eV and $E_2 = 4$ eV. Define a superposition state $\psi$ as $\psi = \frac{1}{\sqrt{2}}\left(\psi_1 + \psi_2\right)$.
+
+\begin{enumerate}
+\item What is the average energy of the above superposition state (e.g. $<\hat{H}>$)?
+\item Plot $\psi_1$ and $\psi_2$ and determine the most probable positions for a particle in these states.
+\item What are the most probable positions for the particle given by wavefunction
+$\psi_3(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{3\pi x}{L}\right)$ where the box potential is now located between $\left[0,L\right]$.
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-5}}{}
+
+\item Calculate the uncertainty product $\Delta p\Delta x$ for the following wavefunctions:
+
+\begin{enumerate}
+\item $\psi_n(x) = \left(\frac{2}{a}\right)^{1/2}\sin\left(\frac{n\pi x}{a}\right)\textnormal{ with }0\le x\le L\textnormal{ (particle in a box)}$
+\item $\psi_n(x) = N_vH_v\left(\sqrt{\alpha}x\right)\exp\left(-\frac{\alpha x^2}{2}\right)\textnormal{ (harmonic oscillator)}$
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-6}}{}
+
+\item Scanning tunneling microscopy (STM) is a technique for visualizing samples at atomic resolution. It is based on tunneling of electron through the vacuum space between the STM tip and the sample. The tunneling current ($I\propto \left|\psi\right|^2$ where $\psi$ is the electron wavefunction) is very sensitive to the distance between the tip and the sample. Assume that the wavefunction for electron tunneling through the vacuum is given by $\psi(x) = B\exp^{-Kx}$ with $K = \sqrt{2m_e(V - E)/\hbar^2}$ and $V - E =$ 2.0 eV. What would be the relative change in the tunneling current $I$ when the STM tip is moved from $x_1 = 0.50$ nm to $x_2 = 0.60$ nm from the sample (e.g. $I_1 / I_2 =$ ?).
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-7}}{}
+
+\item Show that the sperhical harmonic functions a) $Y_{0,0}$, b) $Y_{2,-1}$ and c) $Y_{3,3}$ are eigenfunctions of the (three-dimensional) rigid rotor Hamiltonian. What are the rotation energies and angular momenta in each case?
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-8}}{}
+
+\item Calculate the z-component of angular momentum and the rotational kinetic energy in planar (e.g. 2-dimensional; rotation in $xy$-plane) rotation for the following wavefunctions ($\phi$ is the rotation angle with values between $\left[0, 2\pi\right[$):
+
+\begin{enumerate}
+\item $\psi = e^{i\phi}$
+\item $\psi = e^{-2i\phi}$
+\item $\psi = \cos(\phi)$
+\item $\psi = \cos(\chi)e^{i\phi} + \sin(\chi)e^{i\phi}$
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-9}}{}
+
+\end{enumerate}

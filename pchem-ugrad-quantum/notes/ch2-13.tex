@@ -1,0 +1,111 @@
+\opage{
+\otitle{2.13 Atomic term symbols}
+
+\otext
+In the previous table, column \#7 (``level'') denotes a term symbol for the given atom.
+This term symbol contains information about the total orbital and spin angular momenta
+as well as the total angular momentum (e.g. $J = L + S$). This is expressed as follows:
+
+\aeqn{10.108}{^{2S+1}L_J}
+
+where $S$ is the total spin defined in Eq. (\ref{eq10.103}), $L$ is the total angular momentum of Eq. (\ref{eq10.99}), and $J$ is the total angular momentum Eq. (\ref{eq10.106}). Both $2S+1$ and $J$ are expressed as numbers and for $L$ we use a letter: S for $L = 0$, P for $L = 1$, D for $L = 2$, etc. $2S+1$ is referred to as spin
+multiplicity (1 = singlet, 2 = doublet, 3 = triplet, ...). The term symbol specifies the ground state electronic
+configuration exactly. Note that column \#6 (``electron configuration'') in the table, is
+much longer and it ignores the exact configuration of electron spins. Note that only the valence
+electrons contribute to the term symbol.
+
+\otext
+\textbf{Example.} What is the atomic term symbol for He atom in its ground state?
+
+\otext
+\textbf{Solution.} The electron configuration in He is 1s$^2$ (e.g. two electrons on 1s orbital with opposite
+spins). First we use Eq. (\ref{eq10.103}) to obtain $S$. We have two possibilities: $S = 1$ (triplet) or $S = 0$
+(singlet). However, since we are interested in the ground state, both electrons are on 1s
+orbital and hence they must have opposite spins giving a singlet state. Thus $S = 0$
+and $2S + 1 = 1$. Since both electrons reside on s-orbital, $l_1 = l_2 = 0$ and $L = 0$ by Eq. (\ref{eq10.99}).
+Eq. (\ref{eq10.104}) now gives $J = L + S = 0 + 0 = 0$. The term symbol is therefore $^1$S$_0$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} What are the lowest lying state term symbols for a carbon atom?\\
+
+\otext
+\textbf{Solution.} The electronic configuration for ground state C is 1s$^2$2s$^2$2p$^2$. To get the possible lowest
+lying states, we only consider the two $p$-electrons. From Eq. (\ref{eq10.103}) we get: $S = \frac{1}{2} + \frac{1}{2} = 1$ or $S = 0$. The first case corresponds to triplet and the last singlet state. The total orbital angular momentum quantum numbers are given by Eq. (\ref{eq10.99}): $L = 2,1,0$, which correspond to D, P and S terms, respectively. Again, because the electrons must have opposite spins when the go on the same orbital, some $S$ and $L$ combinations are not possible. Consider the following scenarios:\\
+
+\otext
+1. $L = 2$ (D term): One of the states ($M_L = -2$) must correspond to configuration, where both electrons occupy a $p$-orbital having $m_l = -1$. Note that the electrons must go on the above orbital with opposite spins and therefore
+the triplet state, where the electrons could be parallel, is not allowed:
+
+\ofig{carbon1}{0.4}{}
+
+Thus we conclude that for $L = 2$, only the singlet state (e.g. $^1$D) is possible.
+
+\otext
+2. $L = 1$ (P term): The three eigen states correspond to:
+
+}
+
+\opage{
+
+\ofig{carbon2}{0.4}{}
+
+\otext
+All these cases can also be written for the triplet state because the electrons always occupy different orbitals. Hence we conclude that both singlet and triplet states are allowed for the P term (e.g. $^1$P and $^3$P).
+
+\otext
+3. $L = 0$ (S term): For this term we can only have $M_L = 0$, which corresponds to:
+
+\ofig{carbon3}{0.4}{}
+
+\otext
+Again, it is not possible to have triplet state because the spins would have to be parallel on the same orbital. Hence only $^1$S exists.
+
+}
+
+\opage{
+
+\otext
+We conclude that the following terms are possible: $^1$D, $^1$P, $^3$P and $^1$S. As we will see below, the Hund's rules predict that the $^3$P term will be the ground state (e.g. lowest energy). The total angular momentum quantum number $J$ for this state may have the following values: $J = L + S = 2, 1$, or $0$. Due to spin-orbit coupling, these states have different energies and the Hund’s rules predict that the $J = 0$ state lies lowest in energy. Therefore the $^3$P$_0$ state is the ground state of C atom.
+
+\begin{columns}
+\begin{column}{3cm}
+\operson{hund}{0.15}{Friedrich Hund (1896 - 1997), German Physicist}
+\end{column}\vline\hspace*{0.1cm}
+\begin{column}{7.6cm}
+\vspace*{0.2cm}
+
+Hund's (partly empirical) rules are:
+\begin{enumerate}
+\item The term arising from the ground configuration with the maximum multiplicity ($2S + 1$) lies lowest in energy.
+\item For levels with the same multiplicity, the one with the maximum value of $L$ lies lowest in energy.
+\item For levels with the same $S$ and $L$ (but different $J$), the lowest energy state depends on the extent to which the subshell is filled:
+\end{enumerate}
+\begin{itemize}
+\item[--] If the subshell is less than half-filled, the state with the smallest value of $J$ is the lowest in energy.
+\item[--] If the subshell is more than half-filled, the state with the largest value of $J$ is the lowest in energy.
+\end{itemize}
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{Spin-orbit interaction (very briefly):} This relativistic effect can be incorporated into non-relativistic quantum mechanics by including the following term into the Hamiltonian:
+
+\aeqn{X.31}{\hat{H}_{SO} = A\vec{\hat{L}}\cdot \vec{\hat{S}}}
+
+where $A$ is the spin-orbit coupling constant and $L$ and $S$ are the orbital and spin angular momentum operators, respectively. The total angular momentum $J$ commutes with both $\hat{H}$ and $\hat{H}_{SO}$ and therefore it can be specified simultaneously with energy. We say that the corresponding quantum number $J$ remains good even when spin-orbit interaction is included whereas $L$ and $S$ do not. The operator dot product $\hat{L}\cdot \hat{S}$ can be evaluated and expressed in terms of the corresponding quantum numbers:
+
+\aeqn{X.32}{\vec{\hat{L}}\cdot\vec{\hat{S}}\left|\psi_{L,S,J}\right> = \frac{1}{2}\left[J(J+1)-L(L+1)-S(S+1)\right]\left|\psi_{L,S,J}\right>}
+
+For example in alkali atoms ($S = 1/2, L = 1$), the spin-orbit interaction breaks the degeneracy of the excited $^2$P state ($^2$S$_{1/2}$ is the ground state):
+
+\ofig{spin-orbit}{0.5}{}
+
+}

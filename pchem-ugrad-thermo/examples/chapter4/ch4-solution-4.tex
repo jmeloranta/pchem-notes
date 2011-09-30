@@ -1,0 +1,21 @@
+% Problem 4/4 solution
+\noindent
+\underline{Solution:}\\
+
+Recall the first law of thermodynamics: $dU = dq + dw$. For $PV$-work $dw = -PdV$ and by the second law: $dq = TdS$. Thus: $dU = TdS - PdV$ and dividing both sides by $dV$ and imposing constant temperature:
+
+$$\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{\partial S}{\partial V}\right)_T - P = T\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} - P$$
+
+The equation of state gives:
+
+$$\frac{P\bar{V}}{RT} = 1 + \frac{B}{V}\Rightarrow P = \frac{RT}{\bar{V}} + \frac{BRT}{\bar{V}^2}$$
+
+Furthermore, differentiation of $P$ with respect to $T$ gives:
+
+$$\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} = \frac{R}{\bar{V}} + \frac{BR}{\bar{V}^2} + \left(\frac{\partial B}{\partial T}\right)\frac{RT}{\bar{V}^2}$$
+
+By inserting these results into the expression derived above:
+
+$$\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{R}{\bar{V}} + \frac{BR}{\bar{V}^2} + \left(\frac{\partial B}{\partial T}\right)_{\bar{V}}\frac{RT}{\bar{V}^2}\right) - \frac{RT}{\bar{V}} - \frac{BRT}{\bar{V}^2} = \left(\frac{\partial B}{\partial T}\right)_{\bar{V}}\frac{RT^2}{\bar{V}^2}$$
+
+\hrule\vspace{0.5cm}

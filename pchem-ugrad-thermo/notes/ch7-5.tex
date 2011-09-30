@@ -1,0 +1,182 @@
+\opage{
+\otitle{7.5 Debye-H\"uckel theory}
+
+\otext
+Electrolytes containing multiply charged ions (for example, Cu$^{2+}$) have greater effect on the activity constants of ions than singly charged ions (for example, H$^+$). To account for this, we define ionic strength $I$ (G. N. Lewis):
+
+\aeqn{7.59}{I = \frac{1}{2}\sum\limits_{i=1}^{N_s}m_iz_i^2 = \frac{1}{2}\left(m_1z_1^2 + m_2z_2^2 + ... + m_{N_s}z_{N_s}^2\right)}
+
+where $m_i$ is molality of ion $i$ and $z_i$ is charge for ion $i$ in units of $\left|e\right|$ (signed quantity).
+
+\vspace*{0.2cm}
+
+\textit{Why is the activity of ions reduced in a solution?}
+
+\ofig{ion-activity}{0.4}{}
+
+Note that because the Coulomb interaction has long range, it is nearly impossible to prepare dilute electrolytic solutions.
+
+}
+
+\opage{
+
+\otext
+In 1923 Peter Debye and Erich H\"uckel were able to show that for dilute solutions the activity coefficient $\gamma_i$ of ion $i$ with a charge number $z_i$ is given by (for details, see Phys. Z. 24:185, 305 (1923)):
+
+\begin{columns}
+
+\begin{column}{3cm}
+
+\operson{debye}{0.22}{Peter Debye, Dutch chemist (1884 - 1966), Nobel price 1936.}
+
+\operson{huckel}{0.25}{Erich H\"uckel, German chemist (1896 - 1980).}
+
+\end{column}\hspace*{-0.7cm}\vline\hspace*{0.1cm}
+
+\begin{column}{8cm}
+
+\vspace*{-0.4cm}
+
+\otext
+
+\aeqn{7.60}{\log\left(\gamma_i\right) = -Az_i^2\sqrt{I}}
+
+where $I$ is the ionic strength given by Eq. (\ref{eq7.59}) and:
+
+\aeqn{7.61}{A = \frac{1}{2.303}\left(\frac{2\pi N_Am_{solv}}{V}\right)^{1/2}\left(\frac{e^2}{4\pi\epsilon_0\epsilon_rkT}\right)^{3/2}}
+
+Here $m_{solv}$ is the mass of solvent in volume $V$ and $\epsilon_r$ is the relative permittivity of the solvent, $N_A$ is Avogadro's number (6.022137 $\times$ 10$^{23}$ molecules / mol), $e$ is the electron charge (1.6021773 $\times$ 10$^{-19}$ C), $\epsilon_0$ is the vacuum permittivity (8.8541878 $\times$ 10$^{-12}$ As V$^{-1}$ m$^{-1}$).
+
+\vspace*{0.2cm}
+
+To take the mean of ion activities, we first take logarithm of Eq. (\ref{eq7.55}):
+
+\vspace*{-0.2cm}
+
+\aeqn{7.62}{\log\left(\gamma_\pm\right) = \frac{1}{v_+ + v_-}\left(v_+\log\left(\gamma_+\right) + v_-\log\left(\gamma_-\right)\right)}
+
+Substitution of Eq. (\ref{eq7.60}) into (\ref{eq7.62}) gives:
+
+\aeqn{7.63}{\log\left(\gamma_\pm\right) = -A\left(\frac{v_+z_+^2 + v_-z_-^2}{v_+ + v_-}\right)\sqrt{I}}
+
+\end{column}
+
+\end{columns}
+}
+
+\opage{
+
+\otext
+By using the total charge neutrality $v_+z_+ = -v_-z_-$, we get:
+
+\aeqn{7.64}{\log\left(\gamma_\pm\right) = Az_+z_-\sqrt{I}}
+
+where $z$ has the sign corresponding to the ion.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Use the Debye-H\"uckel theory to calculate $\gamma_+$, $\gamma_-$, $\gamma_\pm$ and $a_{\textnormal{NaCl}}$ for 0.001 molal sodium chloride in water at 25 \degree C. Density of water is about 0.997 kg L$^{-1}$. The relative permittivity of H$_2$O at this temperature is 78.54.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} Eqs. (\ref{eq7.59}), (\ref{eq7.60}) and (\ref{eq7.61}) give:
+
+\vspace*{-0.4cm}
+
+$$A = \frac{1}{2.303}\left(\frac{2\pi N_Am_{solv}}{V}\right)\left(\frac{e^2}{4\pi\epsilon_0\epsilon_rkT}\right) = \frac{1}{2.303}\left(\frac{2\pi\left(6.022\times 10^{23}\textnormal{ mol}^{-1}\right)\left(997\textnormal{ kg}\right)}{\left(1.000\textnormal{m}^{-3}\right)}\right)$$
+$$\times\left(\frac{\left(1.602\times 10^{-19}\textnormal{ C}\right)^2}{4\pi\left(8.854\times 10^{-12}\textnormal{ AsV}^{-1}\textnormal{m}^{-1}\right)\left(78.54\right)\left(1.3861\times 10^{-23}\textnormal{JK}^{-1}\right)\left(298.2\textnormal{ K}\right)}\right)$$
+$$ = 0.509\textnormal{ kg}^{1/2}\textnormal{mol}^{-1/2}$$
+$$I = \frac{1}{2}\left(\left(0.001\textnormal{ mol kg}^{-1}\right)\times\left(-1\right)^2 + \left(0.001\textnormal{ mol kg}^{-1}\right)\times\left(1\right)^2\right) = 0.001\textnormal{ mol kg}^{-1}$$
+$$\log\left(\gamma_+\right) = \log\left(\gamma_-\right) = -Az_+^2\sqrt{I} = -Az_-^2\sqrt{I} = -\left(0.509\textnormal{ kg}^{1/2}\textnormal{mol}^{-1/2}\right)\times \left(\pm 1\right)^2$$
+$$\times \sqrt{0.001\textnormal{ mol kg}^{-1}} = -1.610\times 10^{-2} \Rightarrow \gamma_+ = \gamma_- = 0.964$$
+
+}
+
+\opage{
+
+\otext
+Next Eq. (\ref{eq7.64}) yields:
+
+\vspace*{-0.2cm}
+
+$$\log\left(\gamma_\pm\right) = Az_+z_-\sqrt{I} = \left(0.509\textnormal{ kg}^{1/2}\textnormal{ mol}^{-1/2}\right)\times (1) \times (-1)\times(0.001)^{1/2}$$
+$$\Rightarrow \gamma_\pm = \left(\gamma_+\gamma_-\right)^{1/2} = 0.964$$
+$$a_{\textnormal{NaCl}} = m^2\gamma_\pm^2 = (0.001^2)(0.964)^2 = 9.29\times 10^{-7}$$
+
+\hrulefill
+
+\textbf{Note:} The Debye-H\"uckel law, Eq (\ref{eq7.60}), works well up to ionic strengths about 0.01. However, large deviations between experiment and Eq. (\ref{eq7.60}) are observed already at this ionic strength when ions have high charges (greater than 4). This is because Eq. (\ref{eq7.60}) is an approximate result.
+
+\vspace*{0.2cm}
+
+At high ionic strengths the following empirical relation is often useful (extended Debye-H\"uckel equation):
+
+\beqn{7.65}{\log\left(\gamma_\pm\right) = \frac{Az_+z_-\sqrt{I}}{1 + B\sqrt{I}}}
+{\textnormal{or }\log\left(\gamma_i\right) = \frac{Az_i^2\sqrt{I}}{1 + B\sqrt{I}}}
+
+where $B = 1.6$ kg$^{1/2}$mol$^{-1/2}$ at 25 \degree C.
+
+}
+
+\opage{
+
+\otext
+\underline{Determination of activity coefficients using an electrochemical cell:}
+
+\vspace*{0.2cm}
+
+Consider the following reaction:
+
+$$\frac{1}{2}\textnormal{H}_2(g) + \textnormal{AgCl}(s) = \textnormal{HCl}(aq) + \textnormal{Ag}(s)$$
+
+The charge number in this reaction is one and the EMF is given by Eq. (\ref{eq7.42}):
+
+\aeqn{7.67}{E = E^\circ - \frac{RT}{F}\ln\left(\frac{a_{\textnormal{HCl}}}{\sqrt{P_{\textnormal{H}_2} / P^\circ}}\right)}
+
+where we have assumed H$_2$ to be an ideal gas. If the pressure of hydrogen is 1 bar and Eq. (\ref{eq7.57}) is introduced, we get:
+
+\aeqn{7.68}{E = E^\circ - \frac{2.303RT}{F}\log\left(\gamma_\pm^2m^2\right) = E^\circ - 0.05916\log\left(\gamma_\pm^2m^2\right)}
+
+where $\gamma_\pm$ is the HCl mean ionic activity and $m$ is HCl molality. The last step was obtained at 25 \degree C.
+
+\otext
+Eq. (\ref{eq7.68}) contains two unknowns, but they can be determined from a series measurements of the cell EMF with different HCl molalities. Rearranging Eq. (\ref{eq7.68}) gives:
+
+}
+
+\opage{
+
+\aeqn{7.69}{E + 0.1183\log\left(m\right) = E^\circ - 0.1183\log\left(\gamma_\pm\right)}
+
+\otext
+
+Extrapolation infinitely dilute HCl solutions gives an experimental estimate for $E^\circ$. This equation can be combined with the extended Debye-H\"uckel law to give better results at higher ionic strengths. After determining $E^\circ$, Eq. (\ref{eq7.69}) can be directly
+used to obtain $\gamma_\pm$.
+
+\vspace*{0.2cm}
+
+\textbf{Table.} Mean ionic activity coefficients $\gamma_\pm$ in water at 25 \degree C.
+
+\vspace*{-0.2cm}
+
+\begin{center}
+\begin{tabular}{lllll}
+$m$ (mol kg$^{-1}$) & HCl & LiCl & NaCl & CsCl\\
+0.01 & 0.905 & 0.904 & 0.902 & 0.899\\
+0.02 & 0.875 & 0.873 & 0.870 & 0.865\\
+0.05 & 0.830 & 0.825 & 0.820 & 0.807\\
+0.10 & 0.796 & 0.790 & 0.778 & 0.756\\
+0.20 & 0.767 & 0.757 & 0.735 & 0.718\\
+0.40 & 0.755 & 0.740 & 0.693 & 0.628\\
+1.0  & 0.809 & 0.774 & 0.657 & 0.544\\
+2.0  & 1.009 & 0.921 & 0.668 & 0.495\\
+3.0  & 1.316 & 1.156 & 0.714 & 0.478\\
+4.0  & 1.762 & 1.510 & 0.783 & 0.473\\
+5.0  & 2.38  & 2.02  & 0.874 & 0.474\\
+\end{tabular}
+\end{center}
+
+\vspace*{-0.2cm}
+
+\textbf{Notes:} Activities may be greater than one for high electrolyte concentrations. The data given in the previous table has been measured by using electrolytic cells (just like the HCl example).
+}

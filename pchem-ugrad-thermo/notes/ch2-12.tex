@@ -1,0 +1,129 @@
+\opage{
+\otitle{2.12 Enthalpy of formation}
+
+\otext
+Recall that we don't usually know the absolute values for the internal energy $U$ but only changes in it. Since $H = U + PV$, the same applies for $H$ and therefore we usually just concentrate on changes in enthalpy. However, we can specify a reference state and consider differences in enthalpy from this state (relative enthalpies or \underline{enthalpies of formation}; $\Delta_f H^\circ$). Such a state is obtained from the stoichiometric amounts of the molecules in the given substance in the standard state and at the temperature under consideration. When enthalpy of formation is calculated, one mole of the product must be considered.
+
+\vspace*{0.25cm}
+
+\textbf{Example.} What are the enthalpies of formation ($\Delta_f H^\circ$) for CO$_2(g)$, CO$(g)$, C$(g)$ and O$(g)$ under standard conditions (25 \degree C and 1 bar) and why?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Consider first CO$_2(g)$. The formation reaction for CO$_2$ is: $\textnormal{C}(s) + \textnormal{O}_2(g) \rightarrow \textnormal{CO}_2(g)$ with $\Delta_f H^\circ = -393.51$ kJ mol$^{-1}$. Note that always for the formation reaction: $\Delta_f H^\circ = \Delta_r H^\circ$. The situation for CO is analogous. How about C$(g)$? In this case the formation reaction is: $\textnormal{C(graphite)} \rightarrow \textnormal{C}(g)$. The reaction enthalpy for this reaction is 716.7 kJ mol$^{-1}$ under the present conditions
+(Numerical data can be found from the NIST Chemistry Webbook).
+
+\vspace*{0.2cm}
+
+When the enthalpies of formation for each substance in a chemical reaction are known, it is possible to calculate the reaction enthalpy by (both enthalpies under the same conditions):
+
+\aeqn{2.94}{\Delta_r H^\circ = \sum\limits_{i=1}^{N_s}v_i\Delta_f H_i^\circ}
+
+}
+
+\opage{
+
+\otext
+Enthalpy of formation for a compound can be determined:\\
+
+\begin{enumerate}
+\item \underline{Experimentally:} Calorimetric measurements, temperature variations of equilibrium constants, spectroscopic determination of dissociation energies.
+\item \underline{Theoretically:} From the first principles using electron structure methods.
+\end{enumerate}
+
+\vspace*{0.2cm}
+
+\underline{Note:} The first law of thermodynamics cannot determine if the reaction will occur spontaneously or not.
+
+\vspace*{0.25cm}
+
+\textbf{Example.} What are the standard enthalpy changes at 298.15 K for the following reaction:
+
+$$\textnormal{CO}_2(g) + \textnormal{C(graphite)} \rightarrow 2\textnormal{CO}(g)$$
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we note that for graphite $\Delta_f H^\circ\textnormal{(graphite)} = 0$ (choice of reference point). The other $\Delta_f H^\circ$ values can be looked up from the NIST \textit{chemistry webbook} database: $\Delta_f H^\circ(\textnormal{CO}) = -110.5$ kJ mol$^{-1}$ and $\Delta_f H^\circ(\textnormal{CO}_2) = -393.5$ kJ mol$^{-1}$. Note that these values are given at 298.15 K temperature. The standard reaction enthalpy is now given by:
+
+$$\Delta_r H^\circ = 2\Delta_f H^\circ(\textnormal{CO}) - \Delta_f H^\circ(\textnormal{CO}_2) - \Delta_f H^\circ(\textnormal{C(graphite)})$$
+$$= 2\left(-110.5\textnormal{ kJ mol}^{-1}\right) - \left(-393.5\textnormal{ kJ mol}^{-1}\right)$$
+$$= 172.5\textnormal{ kJ mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+If we need to calculate reaction enthalpies at some other temperature than 298.15 K, we have to use heat capacity $C_P$ to account for the change in temperature (Kirchhoff's law):
+
+\ofig{kirchhoff}{0.5}{}
+
+Starting from the reactants, calculate the change in enthalpy when temperature is changed from $T$ to 298 K, use the known reaction enthalpy for the reaction, and calculate the change in enthalpy when temperature is changed back from 298 K to $T$.
+
+\vspace*{0.2cm}
+
+}
+
+\opage{
+
+\otext
+The expression for $\Delta_r H^\circ$ at the given temperature $T$ is therefore:
+
+\vspace*{-0.2cm}
+
+\aeqn{2.96}{\Delta_r H^\circ_T = \omark{\int\limits_T^{298\textnormal{ K}} C_{P,react}^\circ(T)dT}{=-\int\limits_{298\textnormal{ K}}^T...} + \Delta_r H^\circ_{298\textnormal{ K}} + \int\limits_{298\textnormal{ K}}^T C_{P,product}^\circ(T) dT}
+
+\aeqn{2.97}{\Delta_r H^\circ_T = \Delta_r H^\circ_{298\textnormal {K}} + \int\limits_{298\textnormal{ K}}^T\omark{\Delta_r C_P^\circ(T)}{\equiv C_{P,product}^\circ - C_{P,react}^\circ}dT}
+
+\vspace*{-0.4cm}
+
+\aeqn{2.98}{\Delta_r C_P^\circ(T) = \sum\limits_{i=1}^{N_s}v_i\bar{C}^\circ_{P,i}(T)\textnormal{ (total heat capacity change in the reaction)}}
+
+\vspace*{-0.2cm}
+
+To get the temperature dependency of the reaction heat capacity ($\Delta_r C_P^\circ$), we use the empirical form of Eq. (\ref{eq2.63}):
+
+\vspace*{-0.2cm}
+
+\beqn{2.99}{\Delta_r C_P^\circ = \Delta_r\alpha + \left(\Delta_r\beta\right)T + \left(\Delta_r\gamma\right)T^2}
+{\textnormal{with }\Delta_r\alpha = \sum\limits_{i=1}^{N_s}v_i\alpha_i\textnormal{, }\Delta_r\beta = \sum\limits_{i=1}^{N_s}v_i\beta_i\textnormal{ and }\Delta_r\gamma = \sum\limits_{i=1}^{N_s}v_i\gamma_i}
+
+}
+
+\opage{
+
+\otext
+If the values $\alpha$, $\beta$ and $\gamma$ for each species $i$ are known, it is possible to insert them into Eq. (\ref{eq2.99}) and further use Eq. (\ref{eq2.98}) to obtain the reaction heat capacity:
+
+\ceqn{2.100}{\Delta_rH^\circ_T = \Delta_rH^\circ_{298\textnormal{ K}} + \int\limits_{298\textnormal{ K}}^T\left[\Delta_r\alpha + \Delta_r\beta T + \Delta_r\gamma T^2\right]dT}
+{= \Delta_r H^\circ_{298\textnormal{ K}} + \Delta_r\alpha\left(T - 298.15\textnormal{ K}\right) + \frac{\Delta_r\beta}{2}\left(T^2 - \left(298.15\textnormal{ K}\right)^2\right)}
+{ + \frac{\Delta_r\gamma}{3}\left(T^3 - \left(298.15\textnormal{ K}\right)^3\right)}
+
+In principle, it would be possible to choose another reference temperature. Sometimes absolute zero temperature is used ($\Delta_r H^\circ_{0\textnormal{ K}}$). For a diatomic molecule, this would correspond to the bond dissociation energy. Note that other empirical para\-metrizations are often also used. For example, the NIST chemistry webbook uses the Shomate equation, which is essentially a 3rd order polynomial with a $1/T^2$ term added.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The standard enthalpy of formation of gaseous H$_2$O at 298 K is $-241.8$ kJ mol$^{-1}$ (constants obtained from the NIST chemistry webbook). Estimate its value at 373 K given the following values for the molar heat capacities at constant pressure: H$_2$O (g): $\approx$34 J K$^{-1}$ mol$^{-1}$; H$_2$ (g): 28.8 J K$^{-1}$ mol$^{-1}$; O$_2$ (g): 28.9 J K$^{-1}$ mol$^{-1}$. Assume that the heat capacities are independent of temperature.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The reaction is: $\textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g) \rightarrow \textnormal{H}_2\textnormal{O}(g)$. When the heat capacities are independent of temperature, Eq. (\ref{eq2.97}) can be replaced with:
+
+$$\Delta_rH^\circ_{373\textnormal{ K}} = \Delta_rH^\circ_{298\textnormal{ K}} + \umark{\left(\left(373\textnormal{ K}\right) - \left(298\textnormal{ K}\right)\right)}{\Delta T = 75\textnormal{ K}} \Delta_rC_P^\circ$$
+
+To proceed, we need to evaluate $\Delta_rC_P^\circ$:
+
+$$\Delta_rC_P^\circ = C_{P,\textnormal{H}_2\textnormal{O}(g)}^\circ - \left(C_{P,\textnormal{H}_2(g)} + \frac{1}{2}C^\circ_{P,\textnormal{O}_2(g)}\right)$$
+$$= 34\textnormal{ JK}^{-1}\textnormal{mol}^{-1} - \left(28.8\textnormal{ JK}^{-1}\textnormal{mol}^{-1} + \frac{1}{2}\times 28.9\textnormal{ JK}^{-1}\textnormal{mol}^{-1}\right)$$
+$$ = -9.4\textnormal{ JK}^{-1}\textnormal{mol}^{-1}$$
+
+Using this we can calculate $\Delta_r H^\circ_{373\textnormal{ K}}$:
+
+\vspace*{-0.3cm}
+
+$$\Delta_rH^\circ_{373\textnormal{ K}} = -241.8\textnormal{ kJ mol}^{-1} + \left(75\textnormal{ K}\right)\times\left(-9.4\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right) \approx -243\textnormal{ kJ mol}^{-1}$$
+
+}

@@ -1,0 +1,183 @@
+\opage{
+\otitle{5.2 Experimental techniques}
+
+\otext
+In \textit{emission spectroscopy}, a molecule undergoes a transition from a state of high energy $E_2$ to a state of lower energy $E_1$ and emits the excess energy as a photon. In \textit{absorption spectroscopy}, the total amount of absorption of incident light is monitored as the frequency of the light is varied. This implies that the light must be nearly monochromatic (i.e. contains a very narrow range of wavelengths). In chemical applications photons with the following energies are often applied:
+
+\vspace*{-0.2cm}
+
+\ofig{EM_spectrum}{0.5}{}
+
+}
+
+\opage{
+
+\otext
+Both emission and absorption spectroscopy provide similar information, i.e. differences between the energy levels in atoms/molecules. Absorption experiments are more commonly applied than emission but in some cases emission experiments can be made more sensitive than absorption measurement. For systems with many degrees of freedom (i.e. molecules or atoms trapped in solids), absorption measurement probes the system when it is in its equilibrium geometry with respect to the ground state whereas the emission measurement probes the sytem \textit{often} after it has relaxed into its excited state equilibrium geometry.
+
+\vspace*{0.2cm}
+
+A schematic for a typical UV/VIS absorption experiment is shown below.
+
+\ofig{absorption}{0.4}{}
+
+Note that very often the monochromator is after the sample, which means that the sample is being irradiated with all frequencies that originate from the light source.
+
+}
+
+\opage{
+
+\otext
+\underline{Source of radiation:} The source generally produces radiation over a range of frequencies (i.e. wavelengths), and a dispersing element (see below) is used to extract the wanted frequency from it. Typical light sources are listed below.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lll}
+Region & Source & Remarks\\
+\cline{1-3}
+\textit{far infrared}  & mercury arc & radiation from hot quartz housing\\
+\textit{near infrared} & Nernst filament & a heated ceramic filament rare-earth oxides\\
+\textit{visible} & tungsten/iodine lamp & emits intense white light\\
+\textit{UV}      & D$_2$ or Xe discharge & also pulsed applications\\
+\textit{IR,Vis,UV} & Various lasers & High intensity, continuous and pulsed\\
+          &                & (also tunable: dye lasers, OPO etc.)\\
+\textit{microwaves} & Klystron & tunable monochromatic source\\
+\textit{radiowaves} & RF oscillators & tunable monochromatic source\\
+\textit{UV - X-rays} & Synchrotron & tunable monochromatic source\\
+\end{tabular}
+
+\vspace*{0.6cm}
+
+\underline{The dispersing element:} Unless the light source is already monochromatic, absorption spectrometers include a dispersing element that can spatially separate the different frequencies of light that the light source is emitting. This allows for the monitoring of a desired frequency. Examples of dispersing elements are glass or quartz \textit{prism} and \textit{diffraction grating}.
+
+}
+
+\opage{
+
+\otext
+\begin{columns}
+ 
+\begin{column}{4cm}
+ \ofig{prism}{0.4}{Prism demonstration}
+\end{column}
+
+\begin{column}{4cm}
+ \vspace*{-0.7cm}
+ \ofig{grating}{0.4}{Grating demonstration}
+\end{column}
+
+\end{columns}
+
+\vspace*{0.3cm}
+
+Prism utilizes the variation of refractive index with the frequency of the incident radiation. Materials typically have a higher refractive index for high-frequency radiation than low-frequency radiation. Therefore high-frequency radiation undergoes a greater deflection when passing through a prism.
+
+\vspace*{0.2cm}
+
+Diffraction grating consists of a glass or ceramic plate, which has fine grooves cut into it (about 1000 nm apart; separation comparable to visible light) and covered with a reflective aluminum coating. The grating causes interference between waves reflected from its surface, and constructive interference occurs at specific angles that depend on the wavelength of radiation. Note that the above example is not from a real diffraction grating but from a CDROM disk, which has similar grooves and demonstrates the separation of the colors in white light.
+
+}
+
+\opage{
+
+\otext
+\underline{Fourier transform techniques:} Modern optical spectrometers, particularly those operating in infrared, mostly use Fourier transform techniques of spectral detection and analysis. The heart of a Fourier transform spectrometer is a \textit{Michelson interferometer}, a device that analyzes the frequencies present in a signal. A Michelson interferometer works by splitting the beam from the sample into two and introducing a varying path length difference ($\Delta L$) into one of the beams.  
+
+\begin{columns}
+ 
+\begin{column}{4cm}
+ \ofig{michelson}{0.2}{Michelson interferometer.}
+\end{column}
+
+\begin{column}{5cm}
+
+\otext
+When the two components recombine, there is a phase difference between them, and they interfere either constructively or destructively depending on the difference in path lengths. The detected signal oscillates as the two components alternately come into and out of phase as the path length difference is varied. If the radiation has wavenumber $\tilde{\nu}$, the intensity of the detected signal due to radiation in the range of wavenumbers from $\tilde{\nu}$ to $\tilde{\nu} + d\tilde{\nu}$, which we denote $I\left(\Delta L, \tilde{\nu}\right)$, varies as a function of $\Delta L$ as:
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.4cm}
+
+\aeqn{n5.1b}{I\left(\Delta L,\tilde{\nu}\right)d\tilde{\nu} = I\left(\tilde{\nu}\right)\left(1 + 2\cos\left(2\pi\tilde{\nu}\Delta L\right)\right)}
+
+}
+
+\opage{
+
+\otext
+Hence, the interferometer converts the presence of a particular wavenumber component in the signal into a variation in intensity of the radiation reaching the detector. An actual signal does not usually consist of just one wavenumber component but it spans a large number of different wavenumbers. The total signal at the detector is a sum of all these components and hence we integrate over $\tilde{\nu}$:
+
+\aeqn{n5.1c}{I\left(\Delta L\right) = \int\limits_0^\infty I\left(\Delta L, \tilde{\nu}\right)d\tilde{\nu} = \int\limits_0^\infty I\left(\tilde{\nu}\right)\left(1 + \cos\left(2\pi\tilde{\nu}\Delta L\right)\right)d\tilde{\nu}}
+
+To separate the wavenumber components from the sum, we can use the Fourier transform (actually a cosine transform here) to determine the components:
+
+\beqn{n5.1d}{I(\tilde{\nu}) \propto \textnormal{Re}\left(\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}I(\Delta L)e^{-i2\pi\tilde{\nu}\Delta L}d\Delta L\right)}
+{ = \sqrt{\frac{2}{\pi}}\int\limits_0^\infty I(\Delta L)\cos\left(2\pi\tilde{\nu}\Delta L\right)d\Delta L}
+
+This should be compared to the original spectrum of the light source and then one can obtain the wavenumber components that were absorbed by the sample.
+
+}
+
+\opage{
+
+\otext
+A major advantage of the Fourier transform method is that all the radiation emitted by the light source is monitored continuously. A traditional spectrometer monitors only one wavenumber (or frequency) at a time. Fourier transform based spectrometers have typically higher sensitivity (through fast spectral accumulation), measure spectrum faster and are cheaper to construct than conventional spectrometers. The highest resolution achieved by Fourier based spectrometer, $\Delta\tilde{\nu}_{min}$, is determined by the maximum possible path length difference in the Michelson interferometer, $\Delta L_{max}$:
+
+\aeqn{n5.1e}{\Delta\tilde{\nu}_{min} = \frac{1}{2\Delta L_{max}}}
+
+To achieve a resolution of 0.1 cm$^{-1}$ requires a maximum path lenght difference of 5 cm.
+
+\vspace*{0.2cm}
+
+\underline{Detectors:} Detector is a device that converts the incident radiation into an electric current. This electrical signal can then be recorded by a computer for further processing or plotted directly on the screen. For infrared the following sensors are often used:
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+Type & Spectral range ($\mu$m)\\
+\cline{1-2}
+InGaAs photodiodes & 0.7 - 2.6\\
+Germanium photodiodes & 0.8 - 1.7\\
+PbS photoconductive detectors & 1 - 3.2\\
+PbSe photoconductive detectors & 1.5-5.2\\
+InAs photovoltaic detectors & 1 - 3.8\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+\begin{tabular}{ll}
+PtSi photovoltaic detectors & 1 - 5\\
+InSb photoconductive detectors & 1 - 6.7\\
+InSb photodiode detectors & 1 - 5.5\\
+HgCdTe (MCT) photoconductive detectors & 0.8 - 25\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+For visible and UV light photodiodes and photomultiplier tubes can be used. The detectors can also be constructed as an array, for example an array of photodiodes is called a \textit{diode array detector}. Radiation-sensitive semiconductor devices, such as a charge-coupled device (CCD), are increasingly dominating the detector market. These are typically also detector arrays which are employed, for example, in modern digital cameras. A major advantage of array detectors is that, when combined with a monochromator, it can record a spectrum containing many frequencies at once. A single detector is able to see only one frequency at a time and recording a spectrum involves turning of the diffractive element inside the spectrometer (slow). The sensitivity range of most UV detectors can be extended to even higher energies (VUV; vacuum UV) by using \textit{scintillators}.
+
+\vspace*{0.2cm}
+
+A common technique used in continuous wave experiments is to modulate the ingoing light intensity. The signal from the detector can then be amplified in such a way that only the frequency component corresponding to the modulated light is picked up. This is called \textit{phase sensitive detection} and it can be used to significantly reduce noise present in the signal. This arrangement requires the use of a \textit{light chopper} and a \textit{lock-in amplifier}.
+
+\vspace*{0.2cm}
+
+For microwaves a \textit{microwave detector diodes} and for radio frequencies \textit{detection coils} can be used. 
+
+}
+
+\opage{
+
+\otext
+\underline{The sample:} The highest resolution is obtained when the sample is gaseous and at such low pressure that collisions between the molecules are infrequent. Gaseous samples are essential for rotational (microwave) spectroscopy because under these conditions molecules can rotate freely. To achieve sufficient absorption, the path lengths through gaseous samples must be very long, of the order of meters. This can also be achieved by having multiple passage of the beam between parallel mirrors at each end of the sample cavity.
+
+\vspace*{0.2cm}
+
+The most common range for infrared spectroscopy if from 4000 cm$^{-1}$ to 625 cm$^{-1}$. Ordinary glass and quartz absorb over most of this range and hence some other materials must be used. The sample could be placed between salt windows, for example NaCl or KBr, which are transparent down to 625 cm$^{-1}$ and 400 cm$^{-1}$, respectively. For solid samples, one can prepare a pellet with a pellet press. For UV/Vis, NMR, ESR experiments quartz cuvettes can be employed. Remember that all optical components (e.g., windows, mirrors, prisms, gratings, beam splitters) used in the experiment must be compatible with the frequency of the light being used! 
+
+}

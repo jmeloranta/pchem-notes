@@ -1,0 +1,76 @@
+\newcommand{\omark}[2]{\mathop {#1}\limits^{#2}}
+\newcommand{\bmark}[3]{\mathop {#1}\limits^{#2}_{#3}}
+
+\noindent
+\textbf{Thermodynamics:
+\ifthenelse{\equal{\solutions}{true}}{Examples}{Homework} for chapter 9.}\\
+
+\begin{enumerate}
+
+\item N-bromoacetanilide (A) reacts to 4-bromoacetanilide (B) in dichloromethane at 15 $^\circ$ according to the following kinetics:
+
+\begin{tabular}{llllllll}
+$t$ (hr) & 0 & 4.0 & 10.5 & 23.0 & 31.5 & 45.0 & 48.0\\
+$10^2\times\left[\textnormal{A}\right]$ (M) & 1.00 & 0.907 & 0.762 & 0.566 & 0.466 & 0.348 & 0.321\\
+\end{tabular}
+
+\noindent
+Determine the first-rder rate constat, $k_1$, and the half-life $t_{1/2}$.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-1}}{}
+
+\item The oxidation of Fe(CN)$_6^{4-}$ to Fe(CN)$_6^{3-}$ by perxodisulfide, S$_2$O$_8^{2-}$, can be monitored spectrophotometrically by observing the increase in absorbance at 420 nm, A$_{420\textnormal{ nm}}$:
+
+$$2\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-} + \textnormal{S}_2\textnormal{O}_8^{2-} \omark{\rightarrow}{k_2} 2\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-} + 2\textnormal{SO}_4^{2-}$$
+with the differential rate-law:
+$$-\frac{1}{2}\frac{d\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]}{dt} = k_2\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]\left[\textnormal{S}_2\textnormal{O}_8^{2-}\right]$$
+
+\noindent
+Under the pseudo-first-order conditions with $\left[\textnormal{S}_2\textnormal{O}_8^{-2}\right] = 1.8\times 10^{-2}\textnormal{ M}$ and $\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right] = 6.5\times 10^{-4}\textnormal{ M}$., the following absorbances were recorded at 25 $^\circ$C:
+
+\begin{tabular}{llllllll}
+$t$ (s) & 0 & 900 & 1800 & 2700 & 3600 & 4500 & $\infty$\\
+$A_{420\textnormal{ nm}}$ & 0.120 & 0.290 & 0.420 & 0.510 & 0.581 & 0.632 & 0.781\\
+\end{tabular}
+
+\noindent
+Calculate the pseudo-first-order rate constant, $k_1 = k_2\left[\textnormal{S}_2\textnormal{O}_8^{2-}\right]$, and then the second-order rate constant $k_2$.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-2}}{}
+
+\item First-order rate constants, $k$, for the rotation about the C--N bond in N,N-dimethylnicotinamide measured at different temperatures by NMR are:
+
+\begin{tabular}{llllllll}
+$T$ (K) & 10.0 & 15.7 & 21.5 & 27.5 & 33.2 & 38.5 & 45.7\\
+$k$ (s$^{-1}$) & 2.08 & 4.57 & 8.24 & 15.8 & 28.4 & 46.1 & 93.5\\
+\end{tabular}
+
+\noindent
+Determine the Arrhenius activation energy $E_a$ and the pre-exponential factor $A$.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-3}}{}
+
+\item Derive the expression for the product (P) concentration in the following reaction:
+
+$$\textnormal{A} + \textnormal{B} \bmark{\rightleftharpoons}{k_+}{k_-} \textnormal{I} \omark{\rightarrow}{k} \textnormal{P}$$
+
+\noindent
+by using the approximation $k_- >> k$.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-4}}{}
+
+\item Carry out the same calculation as in the above problem but by using the steady-state approximation.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-5}}{}
+
+\item Show that the results of the previous problems can be used to derive the Michaelis-Menten enzyme kinetics model:
+
+$$\textnormal{E} + \textnormal{S} \bmark{\rightleftharpoons}{k_+}{k_-} \textnormal{ES} \omark{\rightarrow}{k} \textnormal{P} + \textnormal{E}$$
+
+\noindent
+(E = enzyme, S = substrate, and P = product) with $\frac{d\left[\textnormal{P}\right]}{dt} = k'\left[\textnormal{E}\right]_0$, $k' = k\left[\textnormal{S}\right] / (K_M + \left[\textnormal{S}\right])$ and $K_M = (k_- + k_+) / k_+$. Note that the substrate is in excess compared to the enzyme and the concentration of the enzyme is conserved in the reaction.\\
+
+\ifthenelse{\equal{\solutions}{true}}{\vspace*{-0.3cm}\input{ch9-solution-6}}{}
+
+\end{enumerate}
+

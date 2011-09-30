@@ -1,0 +1,64 @@
+% Problem 4/2 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{enumerate}
+\item The radial part for $2s$ orbital is (with $\rho = 2Zr/a_0$ substituted in):
+$$R_{2,0} = \frac{1}{2\sqrt{2}}\left(\frac{Z}{a_0}\right)^{3/2}\left(2 - \frac{Zr}{a_0}\right)e^{-\frac{Zr}{2a_0}}$$
+
+The corresponding radial probability density is:
+$$P_{2,0}(r) = r^2R^2_{2,0} = r^2\times\frac{1}{8}\left(\frac{Z}{a_0}\right)^3\left(2 - \frac{Zr}{a_0}\right)^2e^{-\frac{Zr}{a_0}}$$
+
+Next we must find the maximum value for $P_{2,0}(r)$. To do this, we look for zeros of the first derivative (with respect to $r$):
+$$\frac{P_{2,0}(r)}{dr} = \frac{rZ^3}{8a_0^6}e^{-Zr/a_0}\left(8a_0^3 - 16a_0^2rz + 8a_0r^2z^2 - r^3z^3\right) = 0$$
+
+The four roots for this equation are: $r = 0$, $r = 2a_0/Z$ and $r = \frac{a_0}{Z}\left(3 \pm \sqrt{5}\right)$. Next we have to check which root gives the highest probability:
+\begin{eqnarray}
+\nonumber
+& & P_{2,0}(0) = 0\\
+\nonumber
+& & P_{2,0}(2a_0/Z) = 0\\
+\nonumber
+& & P_{2,0}\left(\frac{a_0}{Z}\left(3 + \sqrt{5}\right)\right) = \frac{2Z}{a_0}\left(9 + 4\sqrt{5}\right)e^{-(3 + \sqrt{5})}\approx 0.191\times \frac{Z}{a_0}\\
+\nonumber
+& & P_{2,0}\left(\frac{a_0}{Z}\left(3 - \sqrt{5}\right)\right) = \frac{2Z}{a_0}\left(9 - 4\sqrt{5}\right)e^{-(3 - \sqrt{5})}\approx 0.0519\times \frac{Z}{a_0}
+\end{eqnarray}
+
+Thus the maximum is reached at $r = \frac{a_0}{Z}\left(3 + \sqrt{5}\right)$. One could check the second derivatives the further characterize this as a maxium. The most probable radius is therefore $\frac{a_0}{Z}\left(3 + \sqrt{5}\right)\approx 5.2\times\frac{a_0}{Z}$. Note that this is in agreement with the plot given in the lecture notes.
+
+\item First we show that $1s$ and $2s$ orbitals are orthogonal. The wavefunctions are (see lecture notes):
+\begin{eqnarray}
+\nonumber
+& & \psi_{1,0,0} = \frac{1}{\sqrt{\pi}}\left(\frac{Z}{a_0}\right)^{3/2}e^{-Zr/a_0}\\
+\nonumber
+& & \psi_{2,0,0} = \frac{1}{4\sqrt{2}\pi}\left(\frac{Z}{a_0}\right)^{3/2}\left(2 - \frac{Zr}{a_0}\right)e^{-\frac{Zr}{2a_0}}
+\end{eqnarray}
+
+These functions depend only on $r$ and therefore we just need to integrate over $r$ and may drop the constants:
+\begin{eqnarray}
+\nonumber
+& & \int\limits_0^{\infty} e^{-Zr/a_0}\times\left(2 - \frac{Zr}{a_0}\right)e^{-\frac{Zr}{2a_0}}r^2dr = \int\limits_0^{\infty}\left(2r^2 - \frac{Zr^3}{a_0}\right)e^{-\frac{3Zr}{2a_0}}dr\\
+\nonumber
+& & = 2\int\limits_0^{\infty}r^2e^{-\frac{3Zr}{2a_0}}dr - \frac{Z}{a_0}\int\limits_0^{\infty}r^3e^{-\frac{3Zr}{2a_0}}dr\\
+\nonumber
+& & = \frac{32a_0^3}{27Z^3} - \frac{32a_0^3}{27Z^3} = 0
+\end{eqnarray}
+
+where in the last step the integrals were looked up from a tablebook.
+
+Next we show that $2p_x$ and $2p_y$ are orthogonal. An easy way to see this is to note the angular dependencies of the orbitals:
+\begin{eqnarray}
+\nonumber
+& & p_x = -\frac{1}{\sqrt{2}}\left(p_{+1} - p_{-1}\right)\propto \sin(\theta)\cos(\phi)\\
+\nonumber
+& & p_y = \frac{i}{\sqrt{2}}\left(p_{+1} + p_{-1}\right)\propto \sin(\theta)\sin(\phi)
+\end{eqnarray}
+
+The only difference is in the $\phi$ part. The angular integral over $\phi$ is:
+$$\int\limits_0^{2\pi}\cos(\phi)\sin(\phi)d\phi = 0\textnormal{ (integrand is odd)}$$
+
+Because this angular part yields zero, integration over all spherical variables gives also zero. Hence $p_x$ and $p_y$ are orthogonal to each other.
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

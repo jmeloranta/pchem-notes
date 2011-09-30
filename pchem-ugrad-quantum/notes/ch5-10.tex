@@ -1,0 +1,200 @@
+\opage{
+\otitle{5.10 Vibrational spectra of polyatomic molecules}
+
+\otext
+Recall that $3N-6$ coordinates are required to describe the internal motions in a molecule with $N$ nuclei (or $3N-5$ for a linear molecule). The different types of possible vibrational motion can be described in terms of \textit{normal modes of vibration}. For a diatomic molecule, $N = 2$ and $3N - 5 = 1$ and there can only be one normal mode in such molecule (the bond vibration). For a linear CO$_2$ molecule we can have $3N - 5 = 4$ normal modes as shown below:
+
+\ofig{normal2}{0.3}{Normal modes of CO$_2$}
+
+\vspace*{0.2cm}
+
+For a nonlinear H$_2$O, $3N - 6 = 3$ and these normal modes are shown below:
+
+\ofig{normal}{0.3}{Normal modes of H$_2$O}
+
+}
+
+\opage{
+
+\otext
+First we consider classical vibration of a polyatomic molecule and transition to quantum mechanics later. The kinetic energy of a polyatomic molecule is given by:
+
+\aeqn{n5.95}{T = \frac{1}{2}\sum\limits_{k=1}^{N}m_k\left[\left(\frac{dx_k}{dt}\right)^2 + \left(\frac{dy_k}{dt}\right)^2 + \left(\frac{dz_k}{dt}\right)^2\right]} 
+
+This can be simplified by choosing mass-weighted Cartesian coordinates:
+
+\beqn{n5.96}{q_1 = \sqrt{m_1}\left(x_1 - x_{1e}\right)\textnormal{, }q_2 = \sqrt{m_1}\left(y_1 - y_{1e}\right)\textnormal{, }q_3 = \sqrt{m_1}\left(z_1 - z_{1e}\right)}
+{q_4 = \sqrt{m_2}\left(x_2 - x_{2e}\right)\textnormal{, ..., }q_{3N} = \sqrt{m_N}\left(z_N - z_{Ne}\right)}
+
+where $x_{ie}$ correspond to the equilibrium geometry of the molecule. The equilibrium geometry is independent of time and therefore the kinetic energy is:
+
+\aeqn{n5.97}{T = \frac{1}{2}\sum\limits_{i=1}^{3N}\left(\frac{dq_i}{dt}\right)^2}
+
+The potential energy $V$ is a function of the nuclear coodinates and therefore it is also a function of the mass-weighted coordinates. It is convinient to expand $V$ in Taylor series about the equilibrium geometry:
+
+\aeqn{n5.98}{V = V_e + \sum\limits_{i=1}^{3N}\left(\frac{\partial V}{\partial q_i}\right)_eq_i + \frac{1}{2}\sum\limits_{i=1}^{3N}\sum\limits_{j=1}^{3N}\left(\frac{\partial^2 V}{\partial q_i\partial q_j}\right)_eq_iq_j + ...}
+
+}
+
+\opage{
+
+\otext
+where $V_e$ is the potential energy at the equilibrium and subscript $e$ refers to the equilibrium geometry. Since $V_e$ is a constant it does not affect the potential shape and therefore we can set it to zero when considering molecular vibration. Also the first derivative term is zero at the equilibrium geometry and hence we are left with the 2nd derivative term. If we ignore the higher order terms, we can write the potential function as:
+
+\aeqn{n5.99}{V = \frac{1}{2}\sum\limits_{i=1}^{3N}\sum\limits_{j=1}^{3N}K_{ij}q_iq_j}
+
+where $K$ is a second derivative matrix with elements given by $K_{ij} = (\partial^2 V) / (\partial q_i\partial q_j)$. The total energy is now given by:
+
+\aeqn{n5.100}{E = T + V = \frac{1}{2}\sum\limits_{i=1}^{3N}\left(\frac{dq_i}{dt}\right)^2 + \frac{1}{2}\sum\limits_{i=1}^{3N}\sum\limits_{j=1}^{3N}K_{ij}q_iq_j}
+
+The main problem with this expression is the offdiagonal terms appearing in $K$. However, it is possible to find a linear transformation that converts the mass-weighted coordinates $q$ into new coordinates $Q$ in such way that $K$ is transformed into diagonal form. In practice, one should construct $K$, diagonalize it using similarity transformations $R$ (i.e., $RKR^{-1}$), and use $R$ to transform $q$ to $Q$. After eliminating the offdiagonal terms, we can write Eq. (\ref{eqn5.100}):
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{n5.101}{E = \frac{1}{2}\sum\limits_{i=1}^{3N}\left(\frac{dQ_i}{dt}\right)^2 + \frac{1}{2}\sum\limits_{i=1}^{N'}\kappa_iQ_i^2}
+
+where $N' = 3N - 6$ for a nonlinear molecule or $N' = 3N - 5$ for a linear molecule. Coordinates $Q_i$ are referred to as \textit{normal coordinates}. Note that it usually the diagonalization step is carried out numerically using computers. In a normal mode, the center of mass for the molecule does not move and the molecule does not rotate. Each normal mode has its characteristic \textit{vibration frequency}. Sometimes two or more normal modes may have the same energy, in which case they are said to be \textit{degenerate}. It can be shown that any vibrational motion of a polyatomic molecule can be expressed as a linear combination of normal mode vibrations.
+
+\vspace*{0.2cm}
+
+Next we carry out the quantum mechanical treatment of the normal mode problem. Since Eq. (\ref{eqn5.101}) is a sum of terms, which depend on different coordinates, we can separate the equation. This means that we can solve the problem separately for each normal mode. The equation corresponds to the harmonic oscillator problem along each normal mode and the energies are given by:
+
+\aeqn{n5.103}{E = \sum\limits_{i=1}^{N'}\left(v_i + \frac{1}{2}\right)hc\tilde{\nu}_i}
+
+}
+
+\opage{
+
+\otext
+where the frequency $\tilde{\nu}_i = \sqrt{\kappa_i/\mu_{Q_i}} / (2\pi)$. The eigenfunctions are then given by taking a product of the normal mode functions.
+
+\vspace*{0.2cm}
+
+For a given normal mode to be IR active, the displacement introduced by the normal mode must cause a change in dipole moment. This is a similar selection rule that we had for diatomic molecules. For example, the symmetric stretch of CO$_2$ is not IR active whereas all the other normal modes in this molecule produce a change in dipole moment. This can be also derived by using group theory. Note that the molecule in its equilibrium geometry does not have a dipole but when distorted, it can acquire dipole moment. Another restriction is that we can change the quantum number by $\pm 1$ for each mode. This selection rule is the same as we obtained for one harmonic oscillator earlier. Note that it is possible to have \textit{combination bands}, which means that two or more different modes are excited simultaneously. However, each of them just by $\pm 1$. This selection rule does not always hold rigorously, which means that it is possible to see overtone as we have already discussed for diatomic molecules. Furthermore, we have made the harmonic approximation, which may not hold for all molecules. 
+
+\vspace*{0.2cm}
+
+IR spectroscopy of polyatomic molecules is often used for identifying certain groups based on their characteristic frequencies (``fingerprints''). Below some common characteristic frequencies are given.
+
+}
+
+\opage{
+
+\otext
+\begin{itemize}
+\otext
+
+\item Hydrogen stretching vibrations, 3700 -- 2500 cm$^{-1}$. These vibrations occur at high frequencies because of the low mass of the hydrogen atom. If an OH group is not involved in hydrogen bonding, it usually has a frequency around 3600 -- 3700 cm$^{-1}$. Hydrogen bonding can cause the frequency to drop by 300 -- 1000 cm$^{-1}$. Other groups: NH (3300 -- 3400 cm$^{-1}$), CH (2850 -- 3000 cm$^{-1}$), SiH ($\approx 2200$ cm$^{-1}$), PH ($\approx 2400$ cm$^{-1}$), and SH ($\approx 2500$ cm$^{-1}$).
+
+\item Triple-bond region, 2500 -- 2000 cm$^{-1}$. Triple bonds have typically high frequencies because of the large force constants (``strong bonds''). For example, C$\equiv$C is typically 2050 -- 2300 cm$^{-1}$ (possibly weak) and C$\equiv$N 2200 -- 2300 cm$^{-1}$. 
+
+\item Double-bond region, 2000 -- 1600 cm$^{-1}$. Carbonyl groups, C=O of ketones, aldehydes, etc. show strong bands near 1700 cm$^{-1}$. Also C=C appears near 1650 cm$^{-1}$. Note that C-N-H bending may appear in this region as well.
+
+\item Single-bond region (stretch \& bend), 500 -- 1700 cm$^{-1}$. This region is not useful for identifying specific groups but it can be used as a ``fingerprint'' region since it can show even small differences between similar molecules. Organic molecules usually show peaks in the region between 1300 and 1475 cm$^{-1}$ (hydrogen bending). Out-of-plane bending of olefinic and aromatic CH groups usually occur between 700 -- 1000 cm$^{-1}$.
+
+\end{itemize}
+
+}
+
+\opage{
+
+\otext
+\underline{Symmetry species of normal modes and allowed transitions:}
+
+\vspace*{0.2cm}
+A powerful way of dealing with normal modes, especially of complex molecules, is to classify them according to their symmetries. Each normal mode must belong to one of the symmetry species (``irrep'') of the molecular point group. This will also allow us to use Eq. (\ref{eq12.19a}) in calculating the allowed transitions. To see how normal modes are labelled, consider the following example.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Establish the symmetry species of the normal modes of H$_2$O as shown at the beginning of this section. Water belongs to $C_{2v}$ point group. Which normal modes are IR allowed?
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} First we draw ``local coordinates axes'' on each at atom as shown below.
+
+\ofig{water-normal}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+The total number of coordinates to describe H$_2$O is $3N - 6 = 3$ ($N = 3$). The corresponding three normal modes were shown earlier. Next we have to find out which irreps span the normal modes in water. We will use the following rules to determine this:
+
+\begin{enumerate}
+\item If a local coordinate axis is unchanged in the symmetry operation, a value of 1 is added to the character.
+\item If a local coordinate axis changed direction in the symmetry operation, a value of $-1$ is added to the character.
+\item If any other displacement of the axis follows, no value is added to the character.
+\end{enumerate}
+
+The outcome of these operations is:
+\begin{eqnarray}
+\chi(E) = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = 9\nonumber\\
+\chi(C_2) =
+\mathop {\overbrace{- 1 - 1 + 1}}\limits^{\textnormal{oxygen}}
+\mathop {\overbrace{+ 0 + 0 + 0}}\limits^{\textnormal{hydrogen}}
+\mathop {\overbrace{+ 0 + 0 + 0}}\limits^{\textnormal{hydrogen}}
+= -1\\
+\chi(\sigma_v'(yz)) = 1 + 1 - 1 + 1 + 1 - 1 + 1 + 1 - 1 = 3\nonumber\\
+\chi(\sigma_v(xz)) = 1 + 1 - 1 + 0 + 0 + 0 + 0 + 0 + 0 = 1\nonumber
+\end{eqnarray}
+
+Recall that we have carried out similar task for molecular orbitals earlier (Ch. 4). 
+
+}
+
+\opage{
+
+\otext
+Next we need to find the combination of irreps that add up to this character. First we have to remember that our current treatment still includes translation and rotation (a total of 6 irreps), which give (see the $C_{2v}$ character table): $A_1$, $A_2$, $2\times B_1$, and $2\times B_2$. If these are added up, we get:
+
+$$\chi(E) = 6, \chi(C_2) = -2, \chi(\sigma_v(xz)) = 0 \textnormal{ and }\chi(\sigma_v'(yz)) = 0$$
+
+As we are still missing the three molecular vibrational normal modes, this does not add up to $(9, -1, 3, 1)$ but $(6, -2, 0, 0)$. To make the two characters match, we have to include $2\times A_1$ and $B_2$, which add up to the following character:
+
+$$\chi(E) = 3, \chi(C_2) = 1, \chi(\sigma_v(xz)) = 1 \textnormal{ and }\chi(\sigma_v'(yz)) = 3$$
+
+Adding the two characters above, matches what we had on the previous slide. Thus we conclude that water will have two $A_1$ and one $B_2$ symmetry normal modes. By carrying out symmetry operations on the normal modes of water (see the figure at the beginning of the section), we conclude that $\tilde{\nu}_1$ belongs to $A_1$, $\tilde{\nu}_2$ to $A_1$, and $\tilde{\nu}_3$ to $B_2$. When doint this, one should be observing how the directionality of the arrows changes and then comparing this with the numbers given in the character table (verify that you get the same result as given here!).
+
+}
+
+\opage{
+
+\otext
+To see if a given transition is IR active, one should consider the following integral, which gives the intensity $I$ of the transition (see also Eq. (\ref{eq12.21a})):
+
+\aeqn{n5.104a}{I_l \propto \left|\left<\psi_i\left|\vec{\mu}\right|\psi_f\right>\right|^2 = \left|\int\psi_i^*\vec{\mu}\psi_fd\tau\right|^2}
+
+where $\vec{\mu}$ is the dipole moment operator. The above relation is also know as Fermi's golden rule (with the proportionality constants omitted). Here $i$ refers to the initial (ground) vibrational state, which is always totally symmetric (i.e. $A_1$, $A_g$, etc.). The symmetry of the dipole moment operator (components $\mu_x$, $\mu_y$, and $\mu_z$) are proportional to the corresponding coordinates $x$, $y$, and $z$. The symmetries of these operators (i.e., $x$, $y$, and $z$ in the $C_{2v}$ character table) are, respectively, $B_1$, $B_2$, and $A_1$. Based on Eq. (\ref{eq12.19a}), the above integral can be nonzero only if the direct product of the three components in the integral yield the totally symmetric irrep. As molecules tend to be either randomly oriented in solid samples or rotating freely in liquid/gas samples, it is sufficient that one of the components $x$, $y$, $z$ gives a nonzero result. For the $B_2$ normal mode we get:
+
+\vspace*{-0.4cm}
+
+\begin{eqnarray}
+& & A_1\times B_1\times B_2 = (A_1\times B_1)\times B_2 = B_1\times B_2 = A_2 \ne A_1 \textnormal{(no contribution)}\nonumber\\
+& & A_1\times B_2\times B_2 = (A_1\times B_2)\times B_2 = B_2\times B_2 = A_1 \textnormal{(contributes)}\nonumber\\
+& & A_1\times A_1\times B_2 = (A_1\times A_1)\times B_1 = B_1\times B_2 = B_2 \ne A_1 \textnormal{(no contribution)}\nonumber
+\end{eqnarray}
+
+}
+
+\opage{
+
+\otext
+For the two $A_1$ normal modes we get:
+
+\vspace*{-0.4cm}
+
+\begin{eqnarray}
+& & A_1\times B_1\times A_1 = (A_1\times B_1)\times A_1 = B_1\times A_1 = B_1 \ne A_1 \textnormal{(no contribution)}\nonumber\\
+& & A_1\times B_2\times A_1 = (A_1\times B_2)\times A_1 = B_2\times A_1 = B_2 \ne A_1 \textnormal{(no contribution)}\nonumber\\
+& & A_1\times A_1\times A_1 = (A_1\times A_1)\times A_1 = B_1\times A_1 = A_1 \textnormal{(contributes)}\nonumber
+\end{eqnarray}
+
+Thus we conclude that all three normal modes are IR active. 
+
+}
+

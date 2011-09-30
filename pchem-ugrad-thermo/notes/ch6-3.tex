@@ -1,0 +1,83 @@
+\opage{
+
+\otitle{6.3 The Clausius-Clapeyron equation}
+
+\otext
+For vaporization and sublimation processes Rudloph Clausius showed that the Clapeyron equation may be simplified by assuming that the vapor phase obeys the ideal gas law and the molar volume of the liquid ($\bar{V}_l$) is small in comparison with the molar volume of the gas ($\bar{V}_g$). Substituting $RT / P$ for $\bar{V}_g$, Eq. (\ref{eq6.6}) becomes:
+
+\aeqn{6.8}{\frac{dP}{dT} \approx \frac{\Delta_{vap}H}{T\bar{V}_g} = \frac{P\Delta_{vap}H}{RT^2}}
+
+By separating variables to the opposite sides of the equation, Eq. (\ref{eq6.8}) becomes:
+
+\aeqn{6.9}{\frac{dP}{P} = \frac{\Delta_{vap}H}{RT^2}dT \Rightarrow \int\limits_{P^\circ}^{P}\frac{dP}{P} = \int\limits_{T_1}^{T_2}\frac{\Delta_{vap}H}{RT^2}dT}
+
+If $\Delta_{vap}H$ is assumed to be independent of temperature, we get:
+
+\aeqn{6.10}{\ln\left(\frac{P}{P^\circ}\right) = \frac{\Delta_{vap}H}{R}\int\limits_{T_1}^{T_2}T^{-2}dT = \frac{\Delta_{vap}H}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)}
+
+This can also be written as (indefinite integral):
+
+\aeqn{6.11}{\ln\left(P\right) = -\frac{\Delta_{vap}H}{RT} + C\textnormal{ where }C\textnormal{ is a constant}}
+
+}
+
+\opage{
+
+\otext
+This shows that a plot of $\ln\left(P\right)$ vs. $1 / T$ should be a straight line. When $P$ and $T$ are obtained from experiments, it is possible to extract $\Delta_{vap}H^\circ$ from the $(P, T)$ data. Such data is shown for water as an example below.
+
+\ofig{P-T-data-water-graph}{0.45}{}
+
+A linear fit gives $\Delta_{vap}H^\circ = 44.7$ kJ mol$^{-1}$ (literature value 44.0 kJ mol$^{-1}$ at 298 K). Note that the above experiment gives an average value for this quantity over the measurement temperature range as there is a small dependency on temperature.
+
+}
+
+\opage{
+
+\otext
+The Clausius-Clayperon equation can also be written as:
+
+\aeqn{6.14}{\ln\left(\frac{P_2}{P_1}\right) = \frac{\Delta_{vap}H\left(T_2 - T_1\right)}{RT_1T_2} = \frac{\Delta_{vap}H}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)}
+
+The above derivations suffer from two approximations: 1) $\Delta_rH^\circ$ was assumed to be independent of temperature and 2) the gas phase was assumed to follow the ideal gas law. The temperature dependency can be included in $\Delta_rH^\circ$ approximately by assuming the following form (not a very good approximation either):
+
+\aeqn{6.15}{\Delta_{vap}H = A + BT + CT^2}
+
+If this is inserted into Eq. (\ref{eq6.9}), we get:
+
+\aeqn{6.16}{\frac{dP}{P} = \frac{\Delta_{vap}H}{RT^2}dT = \frac{1}{R}\left(\frac{A}{T^2} + \frac{B}{T} + C\right)dT}
+
+Integration of this equation (without limits) gives the following result:
+
+\aeqn{6.17}{\ln\left(P\right) = \frac{1}{R}\left(-\frac{A}{T} + B\ln\left(T\right) + CT + D\right)}
+
+where $D$ is a constant of integration.
+
+}
+
+\opage{
+
+\otext
+To see how $\Delta_{vap}H$ can be determined graphically, we integrate Eq. (\ref{eq6.9}):
+
+$$\frac{dP}{P} = \frac{\Delta_{vap}H}{RT^2}dT \Rightarrow \int\limits_{P^\circ}^{P}\frac{dP}{P} = \int\limits_0^T\frac{\Delta_{vap}H}{RT^2}dT$$
+
+and differentiate both sides with respect to $T$:
+
+$$\frac{d\left(\ln\left(P/P^\circ\right)\right)}{dT} = \frac{\Delta_{vap}H}{RT^2} \Rightarrow \Delta_{vap}H = RT^2\frac{d\left(\ln\left(P/P^\circ\right)\right)}{dT}$$
+
+By using the chain rule and knowing that $d(1/T) / dT = -1 / T^2$, we get:
+
+$$\frac{d\left(\ln\left(P/P^\circ\right)\right)}{dT} = \frac{d\left(1 / T\right)}{dT}\times\frac{d\left(\ln\left(P / P^\circ\right)\right)}{d\left(1/T\right)} = -\frac{1}{T^2}\frac{d\left(\ln\left( P / P^\circ\right)\right)}{d\left(1 / T\right)}$$
+
+and therefore we have:
+
+\aeqn{6.17a}{\Delta_{vap} H = -R\frac{d\left(\ln\left(P/P^\circ\right)\right)}{d\left(1/T\right)}}
+
+Notes:
+\begin{itemize}
+\item $P$ above is the vapor pressure (the total external pressure is constant).
+\item The above form is particularly useful for onbtaining a graphical solution because the plot of $-R\times d\left((\ln\left(P / P^\circ\right)\right) / d\left(1 / T\right)$ gives $\Delta_{vap}H$ (which may or may not be constant).
+\end{itemize}
+
+}

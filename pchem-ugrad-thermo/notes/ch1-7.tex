@@ -1,0 +1,131 @@
+\opage{
+\begin{columns}
+\begin{column}{7cm}
+\otitle{1.7 The van der Waals equation}
+
+\otext
+Recall the van der Waals equation (Eq. (\ref{eq1.13b})): \aeqn{1.23}{\umark{\left(P + \frac{a}{\bar{V}^2}\right)}{P_{eff}}\umark{\left(\bar{V} - b\right)}{\bar{V}_{eff}} = RT}
+\end{column}
+\vline\hspace*{0.1cm}
+\begin{column}{3cm}
+\operson{van-der-waals}{0.06}{Johannes Diedrik van der Waals, Dutch physicist (1837 -- 1923), Nobel price (1910).}
+\end{column}
+\end{columns}
+
+\vspace*{-0.2cm}
+
+\otext
+This is similar to the ideal gas law but it uses effective pressure and volume. Reduction in the molar volume is needed because molecules have finite size (i.e. they are not point-like as assumed in the ideal gas law). This part is related to the repulsive wall of the molecule - molecule interaction. The effective pressure includes a correction that arises from attractive interactions between molecules (i.e. higher compressibility). Constants $a$ and $b$ depend on the gas. If monoatomic gas temperature is sufficiently high compared to its atom-atom binding energy, it can be shown that the parameters $a$ and $b$ are directly related to the atom -- atom pair interaction $U_{12}(r)$ by (see Landau and Lifshitz, Statistical Physics Pt. 1):
+
+\vspace*{-0.5cm}
+
+\beqn{1.21d}{a = \pi\int\limits_{2r_0}^{\infty}\left| U_{12}(r)\right| r^2dr}{b = \frac{16}{3}\pi r_0^3}
+
+\vspace{-0.2cm}
+
+where parameter $2r_0$ denotes the point where $U_{12}(r)$ becomes repulsive (i.e. it becomes positive when the interaction at infinity is taken to be zero).
+
+}
+
+\opage{
+
+\otext
+The compressibility factor $Z$ for a van der Waals gas is given by:
+
+\aeqn{1.24}{Z = \frac{P\bar{V}}{RT} = \frac{\bar{V}}{\bar{V} - b} - \frac{a}{RT\bar{V}} = \frac{1}{1 - b/\bar{V}} - \frac{a}{RT\bar{V}}}
+
+\hrulefill
+
+\textbf{Taylor series.} Function $f$ that has derivatives of all orders can be expanded in Taylor series: $f(x) = a_0 + a_1(x - h) + a_2(x - h)^2 + a_3(x - h)^3 + ...$ where the coefficients are given by:
+
+\aeqn{1.24a}{a_0 = f(h)\textnormal{ and }a_n = \frac{1}{n!}\left.\left(\frac{d^n f(x)}{dx^n}\right)\right|_{x=h}}
+
+and we say that the function was expanded about point $h$. When $h = 0$, the series expansion in called Maclaurin series.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Find the Taylor series for $\ln(x)$, expanded about $x = 1$ (i.e. $h = 1$ above).
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} The first derivative of $\ln(x)$ is $1/x$, which equals 1 at $x = 1$. The second derivative is $-1/x^2$, which equals $-1$ at $x = 1$. The derivatives follow a regular pattern:
+
+$$\left(\frac{d^n f}{dx^n}\right) = (-1)^{n-1}(n - 1)!$$
+
+}
+
+\opage{
+
+\otext
+so that we finally have: $\ln(x) = (x - 1) - \frac{1}{2}(x - 1)^2 + \frac{1}{3}(x - 1)^3 - \frac{1}{4}(x - 1)^4 + ...$\\
+
+\hrulefill
+
+When $b / \bar{V}$ is small, we can use the Maclaurin series to expand:
+
+\aeqn{1.24b}{\frac{1}{1 - b/\bar{V}} = 1 + \frac{b}{\bar{V}} + \left(\frac{b}{\bar{V}}\right)^2 + \left(\frac{b}{\bar{V}}\right)^3 + ...}
+
+Thus we can write the compressibility factor Z as (cf. Eq. (\ref{eq1.11})):
+
+\aeqn{1.24c}{Z = 1 + \umark{\left(b - \frac{a}{RT}\right)}{=B\textnormal{ in Eq. (\ref{eq1.11})}}\frac{1}{\bar{V}} + \left(\frac{b}{\bar{V}}\right)^2 + ...}
+
+Note that when $T$ is small, $1/T$ is large and therefore $a$ is important at low temperatures and $b$ at high temperatures. The Boyle temperature can now be obtained from $B(T) = 0$ as:
+
+\aeqn{1.24d}{T_B = \frac{a}{bR}}
+
+}
+
+\opage{
+
+\otext
+The following realtions can be used to relate $a, b$ and $P_c, T_c, \bar{V}_c$ to each other:
+
+\aeqn{1.32}{a = \frac{27R^2T_c^2}{64P_c} = \frac{9}{8}RT_c\bar{V}_c \Rightarrow T_c = \frac{8a}{9R\bar{V}_c} = \frac{8a}{27Rb}\textnormal{ and }
+P_c = \frac{RT_c}{8b} = \frac{a}{27b^2}}
+
+\aeqn{1.33}{b = \frac{RT_c}{8P_c} = \frac{\bar{V}_c}{3} \Rightarrow \bar{V}_c = 3b}
+
+\textbf{Example.} The experimentally determined critical constants for ethane are $P_c = 48.077$ atm and $T_c = 305.34$ K. Calculate the van der Waals parameters of the gas.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First convert everything to SI units:
+
+\vspace*{0.1cm}
+
+$P_c = 48.077 \times (1.013 \times 10^5)$ Pa = $4.870 \times 10^6$ Pa\\
+$\bar{V}_c = 0.1480$ dm$^3$ mol$^{-1} = 14.80 \times 10^{-5}$ m$^3$ mol$^{-1}$\\
+$T_c = 305.34$ K\\
+
+\vspace*{0.1cm}
+
+Eqs. (\ref{eq1.32}) and (\ref{eq1.33}) allow to express $a$ and $b$ in terms of three different pairs ($P_c, \bar{V}_c$), ($T_c, \bar{V}_c$) and ($P_c, T_c$). The ($P_c, T_c$) pair is given here and hence the following form of equations should be used to get $a$ and $b$:
+
+\aeqn{1.33a}{a = \frac{27\left(RT_c\right)^2}{64P_c}\textnormal{ and }b = \frac{RT_c}{8P_c}}
+
+}
+
+\opage{
+
+$$a = \frac{27\left(RT_c\right)^2}{64P_c} = \frac{27\left(8.3145\textnormal{ }\omark{\textnormal{J}}{\textnormal{Nm}}\textnormal{ mol}^{-1}\textnormal{ K}^{-1}\times 305.34\textnormal{ K}\right)^2}{64\left(4.870\times 10^6\textnormal{ }\umark{\textnormal{Pa}}{\textnormal{Nm}^{-2}}\right)} = 0.5583\frac{\textnormal{Nm}^4}{\textnormal{mol}^2}$$
+$$= 0.5583\frac{\left(\frac{\textnormal{N}}{\textnormal{m}^2}\right)\textnormal{m}^6}{\textnormal{mol}^2} = 0.5583\frac{\textnormal{Pa m}^6}{\textnormal{mol}^2} = 0.5583\frac{\left(9.869\times 10^{-6}\textnormal{ atm}\right)\left(10\textnormal{ dm}\right)^6}{\textnormal{mol}^2}$$
+\hspace*{0.5cm}$ = 5.510\textnormal{ dm}^6\textnormal{ atm mol}^{-2}$\\
+$$b = \frac{RT_c}{8P_c} = \frac{8.3145\textnormal{ J mol}^{-1}\textnormal{K}^{-1}\times 305.34\textnormal{ K}}{8\times\left(4.870\times 10^6\textnormal{ Pa}\right)} = 6.652\times 10^{-5} \textnormal{ m}^3\textnormal{ mol}^{-1}$$\\
+\hspace*{0.5cm}$ = 6.652\times \left(10\textnormal{ dm}\right)^3\textnormal{ mol}^{-1} = 0.06652\textnormal{ dm}^3\textnormal{ mol}^{-1}$\\
+
+\otext
+\underline{Note:} Once you get used to unit conversions, it may be easier to express the gas constant in units of dm$^3$ bar mol$^{-1}$ K$^{-1}$ (numerical value in these units is 0.083145). Other units can be used as long as they are consistent (\textit{unit analysis is important!}). SI units are ``automatically'' compatible with each other.
+
+}
+
+\opage{
+
+\otext
+The van der Waals equation fails in the neighborhood of the critical point:
+
+\aeqn{1.33b}{\left|\bar{V}_c - \bar{V}\right| \propto \left(T_c - T\right)^{1/2}}
+
+However, experiments show that the exponent is close to 0.32 rather than 1/2. Other properties that depend on $(T_c - T)$ show similar discrepancies as well.
+
+
+}

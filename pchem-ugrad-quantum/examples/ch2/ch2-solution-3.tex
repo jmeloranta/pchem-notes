@@ -1,0 +1,42 @@
+% Problem 3/2 solution
+\noindent
+\underline{Solution:}\\
+
+It is convenient to express the Cartesian orbitals in spherical coordinates (see lecture notes):
+\begin{eqnarray}
+\nonumber
+& & p_x = \sin(\theta)\cos(\phi)f(r)\textnormal{ where }f(r)\textnormal{ contains all }r\textnormal{ dependency}\\
+\nonumber
+& & p_y = \sin(\theta)\sin(\phi)f(r)
+\end{eqnarray}
+
+To simplify calculations, the $\phi$ containing part is rewritten as:
+
+$$\cos(\phi) = \frac{1}{2}\left(e^{i\phi} + e^{-i\phi}\right)\textnormal{ and }\sin(\phi) = \frac{1}{2i}\left(e^{i\phi} - e^{-i\phi}\right)$$
+
+The $\hat{L}_z$ operator in spherical coordinates was already given in the previous problem. Next we operate on $p_x$ and $p_y$ by $\hat{L}_z$:
+
+$$\hat{L}_zp_x = -i\hbar f(r)\frac{\sin(\theta)}{2}\frac{d}{d\phi}\left(e^{i\phi} + e^{-i\phi}\right) = i\hbar \underbrace{f(r)\sin(\theta)\times \frac{1}{2i}\left(e^{i\phi} - e^{-i\phi}\right)}_{= p_y} = i\hbar p_y
+$$
+
+Thus the operation does not yield a constant times the original function (e.g. not an eigenfunction). In similar way we can show that $p_y$ is not an eigenfunction of $\hat{L}_z$: $\hat{L}_zp_y = -i\hbar p_x$.
+
+Next we show that the following linear combinations are eigenfunctions of $\hat{L}_z$:
+\begin{eqnarray}
+\nonumber
+& & p_x + ip_y = \frac{f(r)\sin(\theta)}{2}\left[e^{i\phi} + e^{-i\phi} + i\left(\frac{1}{i}e^{i\phi} - \frac{1}{i}e^{-i\phi}\right)\right] = f(r)\sin(\theta)e^{i\phi}\\
+\nonumber
+& & p_x - ip_y = f(r)\sin(\theta)e^{-i\phi}
+\end{eqnarray}
+
+When operating on these by $\hat{L}_z$ we get:
+\begin{eqnarray}
+\nonumber
+& & \hat{L}_z \left(p_x + ip_y\right) = \hbar\underbrace{f(r)\sin(\theta)e^{i\phi}}_{=p_x + ip_y} = \hbar(p_x + ip_y)\\
+\nonumber
+& & \hat{L}_z \left(p_x - ip_y\right) = -\hbar f(r)\sin(\theta)e^{i\phi} = -\hbar(p_x - ip_y)
+\end{eqnarray}
+
+These have the right form (e.g. constant $\times$ the original function) and therefore they are eigenfunctions of $\hat{L}_z$.
+
+\hrule\vspace{0.5cm}

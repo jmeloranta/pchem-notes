@@ -1,0 +1,32 @@
+\opage{
+\otitle{8.3 Internal energy of monoatomic ideal gas}
+
+\otext
+For monoatomic gas, we need to only consider translational motion (no rotation or vibration). In order to use Eq. (\ref{eq8.30}), which here states that $U = kT^2\left(\partial Z_{tr} / \partial T\right)_{V,\left\lbrace n_i\right\rbrace}$, we have to calculate the translational partition function $Z_{tr}$. If the atoms are treated as ``particles in a box'' (see quantum mechanics notes), Eq. (\ref{eq8.43}) can be written as:
+
+\aeqn{8.46}{Z_{tr} = \frac{z_{tr}^N}{N!} = \frac{1}{N!}\left(\sum\limits_{n_x=1}^{\infty}\sum\limits_{n_y=1}^{\infty}\sum\limits_{n_z=1}^{\infty}e^{-(\beta h^2 / (8m))\times(n_x^2 / a^2 + n_y^2 / b^2 + n_z^2 / c^2)}\right)^N}
+
+where $h$ is the Planck's constant (6.626076 $\times$ 10$^{-34}$ J s), $m$ is the atom mass, $n_x$, $n_y$ and $n_z$ are quantum numbers, and $a,b,c$ define the volume where the atoms are confined (``the box''). When the quantitized levels are close to each other, we can replave the above summations by integrals, for example:
+
+\aeqn{8.47}{\sum\limits_{n_x=1}^{\infty}e^{-(\beta h^2 / (8m))\frac{n_x^2}{a^2}} \approx \int\limits_0^{\infty}e^{-(\beta h^2 / (8m))\frac{n_x^2}{a^2}}dn_x = \frac{1}{2}\left(\frac{8m\pi}{\beta h^2}\right)^{1/2}a}
+
+Since $\beta = \frac{1}{kT}$ and $V = abc$, we can rewrite Eq. (\ref{eq8.46}) as:
+
+}
+
+\opage{
+
+\beqn{8.48}{z_{tr} = \left(2\pi mkT / h^2\right)^{3/2}V}
+{\ln(z_{tr}) = \frac{3}{2}\ln\left(2\pi mk / h^2\right) + \frac{3}{2}\ln(T) + \ln(V)}
+
+For $N$ molecules we have:
+
+\aeqn{8.49}{\ln(Z_{tr}) = \ln\left(\frac{z_{tr}^N}{N!}\right) = N\ln(z_{tr}) - \ln(N!)}
+
+Now we can use Eq. (\ref{eq8.30}) to evaluate $U$:
+
+\aeqn{8.50}{U = kT^2\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,\left\lbrace n_i\right\rbrace} = \frac{3}{2}kNT^2 \times \frac{1}{T} = \frac{3}{2}kNT = \frac{3}{2}nRT}
+
+This corresponds to Eq. (\ref{eq2.69}) given earlier.
+
+}

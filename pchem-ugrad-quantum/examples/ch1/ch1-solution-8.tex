@@ -1,0 +1,19 @@
+% Problem 8/1 solution
+\noindent
+\underline{Solution:}\\
+\begin{eqnarray}
+\nonumber
+& & \hat{H}\psi(r,\theta,\phi) = E\psi(r,\theta,\phi)\textnormal{ where }\hat{H}=-\frac{\hbar^2}{2I}\Lambda^2\\
+\nonumber
+& & \Lambda^2 = \frac{1}{\sin^2(\theta)}\frac{\partial^2}{\partial\phi^2} + \frac{1}{\sin(\theta)}\frac{\partial}{\partial\theta}\sin(\theta)\frac{\partial}{\partial\theta}
+\end{eqnarray}
+
+Since $-\frac{\hbar^2}{2I}$ is constant, it is sufficient to show that spherical harmonics are eigenfunctions of $\Lambda^2$. We operate on the given spherical harmonics by $\Lambda^2$.
+\begin{enumerate}
+\item $\Lambda^2Y_0^0(\theta,\phi) = \Lambda^2\frac{1}{2\sqrt{\pi}} = 0\textnormal{ (no angular dependency)}$. The rotation energy is $E = -\frac{\hbar^2}{2I}\times 0 = 0$. Also $L^2 = 0\times\hbar^2 \Rightarrow L = 0$ (since $\hat{L}^2 = -\hbar^2\Lambda^2$).
+\item $\Lambda^2Y_2^{-1}(\theta,\phi) = \textnormal{ ...differentiation...} = -6Y_2^{-1}(\theta,\phi)$. The rotation energy is $E = -\frac{\hbar^2}{2I}\times (-6) = \frac{3\hbar^2}{I}$. Also $L^2 = 6\times\hbar^2 \Rightarrow L = \sqrt{6}\hbar$.
+\item Expression for $Y_3^3$ was not given in the lecture notes. We use Maxima to obtain the expression: $Y_3^3(\theta,\phi) = \frac{5\sqrt{7}e^{3\phi i}\sin^3(\theta)}{8\sqrt{5\pi}}$. Then we need to evaluate: $\Lambda^2Y_3^3(\theta,\phi) = \textnormal{ ...differentiation...} = -12Y_3^3(\theta,\phi)$.
+From this we can get the rotational energy as $E = \frac{6\hbar^2}{I}$. Also $L^2 = 12\times\hbar^2 \Rightarrow L = \sqrt{12}\hbar$.
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

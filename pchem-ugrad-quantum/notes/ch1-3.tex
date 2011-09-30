@@ -1,0 +1,287 @@
+\opage{
+
+\begin{columns}
+\begin{column}{6.8cm}
+\otitle{1.3 The Schr\"odinger equation}
+
+\otext
+According to classical physics, the \href{http://en.wikipedia.org/wiki/Kinetic_energy}{\uline{kinetic energy}} $T$ is given by:
+
+\aeqn{X.12}{T = \frac{p^2}{2m}}  
+\end{column}
+
+\begin{column}{3cm}
+\operson{schrodinger}{0.15}{\href{http://en.wikipedia.org/wiki/Erwin_Schrodinger}{\uline{Erwin Schr\"odinger}}, Austrian physicist (1887 - 1961), Nobel price 1933.}
+
+\end{column}
+
+\end{columns}
+
+\otext
+\textbf{Advanced topic.} If we assume that the Fourier duality (Eqs. (\ref{eqX.3}) and (\ref{eqX.4})) holds for position and momentum, we can
+derive the momentum operator in the position representation:
+
+\ceqn{X.13}{\left< \hat{p}_x\right> = \left<\hbar \hat{k}\right> = \hbar\left<\psi(k)\left|\hat{k}\right|\psi(k)\right> = \hbar\int\limits_{-\infty}^{\infty}\psi^*(k)k\psi(k)dk}
+{\overbrace{=}^\textnormal{Eq. (\ref{eqX.4})} \frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{-ikx}dx}_\textnormal{\href{http://en.wikipedia.org/wiki/Integration_by_parts}{\uline{integration by parts}}}dkdx'}
+{= -\frac{i\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}\int\limits_{-\infty}^{\infty}\frac{d\psi(x)}{dx}e^{-ikx}dxdkdx'\textnormal{ }}
+
+}
+
+\opage{
+
+\otext
+Next we a result from mathematics which states that:
+
+\aeqn{X.13a}{\int\limits_{-\infty}^{\infty}e^{ik(x' - x)}dk = 2\pi\delta(x' - x)}
+
+where $\delta$ denotes the \href{http://en.wikipedia.org/wiki/Dirac_delta_function}{\uline{Dirac delta measure}} (often incorrectly called the Dirac delta function):
+
+\aeqn{X.13b}{\delta(x) = \left\lbrace
+\begin{matrix}
+\infty\textnormal{ when }x = 0\\
+0\textnormal{ when }x\ne 0\\
+\end{matrix}\right.\textnormal{ and }\int\limits_{-\infty}^{\infty}\delta(x)dx = 1
+}
+
+Now we can continue working with Eq. (\ref{eqX.13}):
+
+\beqn{X.13c}{... = -i\hbar\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\psi^*(x')\frac{d\psi(x)}{dx}\delta(x' - x)dxdx'}{ = \int\limits_{-\infty}^{\infty}\psi^*(x)\left(-i\hbar\frac{d}{dx}\right)\psi(x)dx = \int\limits_{-\infty}^{\infty}\psi^*(x)\hat{p_x}\psi(x)dx}
+
+\hrulefill
+
+The above gives us the formal definition for the \href{http://en.wikipedia.org/wiki/Momentum_operator}{\uline{momentum operator}}:
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.20}{\hat{p}_x = -i\hbar\frac{d}{dx}}
+
+If this is inserted into the classical kinetic energy expression, we have:
+
+\aeqn{X.15}{\hat{T} = \frac{\hat{p}^2}{2m} = \frac{1}{2m}\left(-i\hbar\frac{d}{dx}\right)^2 = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}}
+
+The total energy is a sum of the \href{http://en.wikipedia.org/wiki/Kinetic_energy}{\uline{kinetic}} and \href{http://en.wikipedia.org/wiki/Potential_energy}{\uline{potential energies}}:
+
+\aeqn{X.16}{\hat{H} = \hat{T} + \hat{V} = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)}
+
+The above expression is an operator and as such it must operate on a wavefunction:
+
+\aeqn{X.17}{-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + V(x)\psi(x) = E\psi(x)}
+
+This is the \textit{time-independent \href{http://en.wikipedia.org/wiki/Schrodinger_equation}{\uline{Schr\"odinger equation}}} for one particle in one dimension. For one particle in three dimensions the equation can be generalized as:
+
+\aeqn{9.19}{-\frac{\hbar^2}{2m}\left(\frac{\partial^2\psi(x,y,z)}{\partial x^2} + \frac{\partial^2\psi(x,y,z)}{\partial y^2} + \frac{\partial^2\psi(x,y,z)}{\partial z^2}\right) + V(x,y,z)\psi(x,y,z) = E\psi(x,y,z)}
+
+}
+
+\opage{
+
+\otext
+The above equation was originally written in two different forms by Schr\"odinger (Eq. (\ref{eqX.19}); the differential form) and Heisenberg (the matrix form). Later \href{http://en.wikipedia.org/wiki/Paul_Dirac}{\uline{Paul Dirac}} showed that the two forms are in fact equivalent.
+
+\otext
+The partial derivative part in Eq. (\ref{eq9.19}) is called the \href{http://en.wikipedia.org/wiki/Laplace_operator}{\uline{Laplacian}} and is denoted by:
+
+\aeqn{X.19}{\Delta \equiv \nabla^2 \equiv \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}}
+
+\begin{columns}
+\begin{column}{3cm}
+\operson{dirac}{0.3}{Paul Dirac, British physicist (1902 - 1984), Nobel price 1933}
+\end{column}\hspace*{-1.5cm}\vline\hspace*{0.25cm}
+\begin{column}{6cm}
+With this notation, we can rewrite Eq. (\ref{eq9.19}) as:
+
+\beqn{9.17}{-\frac{\hbar^2}{2m}\nabla^2\psi + \hat{V}\psi = E\psi}{\textnormal{or just }\hat{H}\psi = E\psi}
+
+\vspace*{-0.25cm}
+\otext
+Note that $E$ is a constant and does not depend on the coordinates $(x, y, z)$. From a mathematical point of view, this corresponds to an \href{http://en.wikipedia.org/wiki/Eigenvalue,_eigenvector_and_eigenspace}{\uline{eigenvalue equation}} ($E$'s are eigenvalues and $\psi$'s are eigenfunctions). Operator $\hat{H}$ is usually called ``\href{http://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)}{\uline{Hamiltonian}}''.
+
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Eq. (\ref{eq9.17}) may have many different solution pairs: $(E_i, \psi_i)$. For a hydrogen atom, which consists of an electron and a nucleus, the Schr\"odinger equation has the form:
+
+\aeqn{X.20}{\overbrace{-\frac{\hbar^2}{2m_e}\Delta}^{\equiv \hat{T}}\psi - \overbrace{\frac{e^2}{4\pi\epsilon_0}\times\frac{1}{\sqrt{x^2+y^2+z^2}}}^{\equiv \hat{V}\textnormal{ (Coulomb potential)}}\psi = E\psi}
+
+where we have taken the nucleus to reside at the origin $(0, 0, 0)$. The values $E_i$ give the energies of the hydrogen atom states ($1s, 2s, 2p_x,$ etc.) and $\psi_i$ give the wavefunctions for these states (orbitals). Two examples of $\psi_i$ are plotted below:
+
+\ofig{sp-orbitals}{0.4}{}
+
+Note that $\psi_i$'s depend on three spatial coordinates and thus we would need to plot them in a four dimensional space! The above graphs show surfaces where the functions have some fixed value. These plots can be used to understand the shape of functions.
+
+}
+
+\opage{
+
+\otext
+The wavefunction contains all the information we can have about a particle in quantum mechanics. Solutions to Eq. (\ref{eq9.17}) are called stationary solutions (i.e., they do not depend on time).\\
+
+\vspace*{0.2cm}
+
+\textbf{Advanced topic.} If time-dependent phenomena were to be described by quantum mechanics, the time-dependent Schr\"odinger equation must be used (cf. Eq. (\ref{eq9.17})):
+
+\aeqn{X.21}{i\hbar\frac{\partial \psi(r, t)}{\partial t} = \hat{H}\psi(r,t)}
+
+Interestingly, this is related to \href{http://en.wikipedia.org/wiki/Fluid_dynamics}{\uline{fluid dynamics}} via the \href{http://en.wikipedia.org/wiki/Erwin_Madelung}{\uline{Madelung}} transformation:
+
+\vspace*{-0.1cm}
+
+\aeqn{X.21a}{\psi(r, t) = \sqrt{\rho(r,t)}e^{iS(r,t)/\hbar}}
+
+where $\rho$ is the ``liquid \href{http://en.wikipedia.org/wiki/Density}{\uline{density}}'' and $v = \nabla S/m$ is the liquid velocity.
+
+\hrulefill
+
+In Eq. (\ref{eqX.1}) we briefly noted that square of a wavefunction is related to probability of finding the particle at a given point. To find the probability ($P$) for the particle to exist between $x_1$ and $x_2$, we have to integrate over this range:
+ 
+\aeqn{9.21}{P(x_1,x_2) = \int\limits_{x_1}^{x_2} \left|\psi(x)\right|^2dx}
+
+When the integration is extended from minus infinity to infinity, we have the normalization condition (see Eq. (\ref{eqX.1})). This states that the probability for a particle to exist anywhere is one:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{9.22}{\int\limits_{-\infty}^{\infty}\left|\psi(x)\right|^2dx = \int\limits_{-\infty}^{\infty}\psi^*(x)\psi(x)dx = 1}
+
+The unit for $\psi$ (and $\psi^*$) in this one-dimensional case is m$^{-1/2}$. Note that probability does not have units. In three dimensions Eq. (\ref{eq9.22}) reads:
+
+\aeqn{X.22}{\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\left|\psi(x,y,z)\right|^2dxdydz = 1}
+
+\vspace*{-0.1cm}
+and the unit for $\psi$ is now m$^{-3/2}$. The probability interpretation was first proposed by Niels Bohr. From the mathematical point view, we usually make the following assumptions about $\psi$:
+
+\begin{enumerate}
+\item $\psi$ is a function (i.e., it is single valued).
+\item $\psi$ is a continuous and differentiable function.
+\item $\psi$ is a finite valued function.
+\item $\psi$ is normalized to one (this implies square integrability; \href{http://en.wikipedia.org/wiki/Lp_space}{\uline{L$^2$}}).
+\end{enumerate}
+
+If the volume element $dxdydz$ is denoted by $d\tau$, the normalization requirement is:
+
+\vspace*{-0.1cm}
+\aeqn{9.23}{\int\left|\psi\right|^2d\tau = \int\psi^*\psi d\tau = 1}
+
+Furthermore, functions $\psi_j$ and $\psi_k$ are said to be \href{http://en.wikipedia.org/wiki/Orthogonality}{\uline{orthogonal}}, if we have:
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.24}{\int\psi^*_j\psi_kd\tau = 0}
+
+A set of wavefunctions is said to be \href{http://en.wikipedia.org/wiki/Orthonormality}{\uline{orthonormal}}, if for each member $\psi_j$ and $\psi_k$:
+
+\aeqn{9.25}{\int\psi_j^*\psi_kd\tau = \delta_{jk}}
+
+where the \href{http://en.wikipedia.org/wiki/Kronecker_delta}{\uline{Kronecker delta}} is defined as:
+
+\aeqn{9.26}{\delta_{jk} = \left\lbrace\begin{matrix}
+0,\textnormal{ }j\ne k\\
+1,\textnormal{ }j = k\\
+\end{matrix}\right.}
+
+\textbf{Example.} The wavefunction for hydrogen atom ground state ($1s$) in spherical coordinates is: $\psi(r) = N \times \exp(-r / a_0)$. What is the value of the normalization constant $N$? Here $a_0$ is the Bohr radius ($5.2917725 \times 10^{-11}$ m or 0.529 \AA).
+
+\otext
+\textbf{Solution.} First we recall the \href{http://en.wikipedia.org/wiki/Spherical_coordinate_system}{\uline{spherical coordinate system}}:
+
+\vspace*{-0.5cm}
+
+\begin{columns}
+\begin{column}{7cm}
+
+\deqn{scoord}{x = r\sin(\theta)\cos(\phi)\textnormal{ where }\theta\in\left[0,\pi\right]}
+{y = r\sin(\theta)\sin(\phi)\textnormal{ where }\phi\in\left[0,2\pi\right]}
+{z = r\cos(\theta)\textnormal{ where }r\in\left[0,\infty\right]}
+{d\tau = r^2\sin(\theta)drd\theta d\phi}
+
+\end{column}
+\begin{column}{3cm}
+\ofig{spherical}{0.45}{}
+\end{column}
+\end{columns}
+
+This gives the transformation between a point the \href{http://en.wikipedia.org/wiki/Cartesian_coordinate_system}{\uline{Cartesian space}} $(x, y, z)$ and a point in spherical coordinates $(r, \theta, \phi)$. Now using Eq. (\ref{eq9.23}), we get:
+
+}
+
+\opage{
+
+\otext
+\ceqn{X.22a}{\int\left|\psi\right|^2d\tau = \int\limits_{r=0}^{\infty}\int\limits_{\theta=0}^{\pi}\int\limits_{\phi=0}^{2\pi}\underbrace{\left(Ne^{-r/a_0}\right)^2}_{=\left|\psi\right|^2}\underbrace{r^2\sin(\theta)drd\theta d\phi}_{=d\tau}}
+{=4\pi N^2\underbrace{\int\limits_{r=0}^{\infty} e^{-2r/a_0}r^2dr}_\textnormal{integration by parts} = a_0^3\pi N^2 = 1\textnormal{ (normalization)}}
+{\Rightarrow N = \frac{1}{\sqrt{\pi a_0^3}} \Rightarrow \psi(r) = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}}
+
+In the case of many particles, the Schr\"odinger equation can be written as ($3n$ dimensions, where $n$ = number of particles):
+
+\aeqn{X.23}{-\sum\limits_{i=1}^{n}\frac{\hbar^2}{2m_i}\Delta_i\psi(r_1,...,r_n) + V(r_1,...,r_n)\psi(r_1,...,r_n) = E\psi(r_1,...,r_n)}
+
+where $r_i$ refer to coordinates of the $i$th particle and $\Delta_i$ refers to Laplacian for that particle. Note that:
+
+}
+
+\opage{
+
+\begin{itemize}
+\item The dimensionality of the wavefunction increases as $3n$.
+\item Only for some simple potentials analytic solutions are known. In other cases approximate/numerical methods must be employed.
+\end{itemize}
+
+\hrulefill
+
+The following ``rules'' can be used to transform an expression in classical physics into an operator in quantum mechanics:
+
+\begin{itemize}
+\item Each Cartesian coordinate in the Hamiltonian function (i.e., classical energy) is replaced by an operator that consists of multiplication by that coordinate.
+\item Each Cartesian component of linear momentum $p_q$ ($q = x, y, z$) in the Hamiltonian function is replaced by the operator shown in Eq. (\ref{eq9.20}) for that component.
+\end{itemize}
+
+\textbf{Table.} Observables in classical mechanics and the corresponding quantum mechanical operators.\\
+
+\otext
+\uline{In one dimension:}\\
+\begin{tabular}{ll@{\extracolsep{1cm}}ll}
+\multicolumn{2}{c}{Classical mechanics} & \multicolumn{2}{c}{Quantum mechanics}\\
+Name & Symbol & Symbol & Operator\\
+\cline{1-4}
+Position & $x$ & $\hat{x}$ & Multiply by $x$\\
+Momentum & $p_x$ & $\hat{p}_x$ & $-i\hbar(d / dx)$\\
+Kinetic energy & $T_x$ & $\hat{T}_x$ & $-(\hbar^2 / (2m))(d^2 / dx^2)$\\
+Potential energy & $V(x)$ & $\hat{V}$ & Multiply by $V(x)$\\
+Total energy & $E = T+V$ & $\hat{H} = \hat{T} + \hat{V}$ & Operate by $\hat{T} + \hat{V}$\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+\uline{In three dimensions:}\\
+\begin{tabular}{ll@{\extracolsep{0.5cm}}ll}
+\multicolumn{2}{c}{Classical mechanics} & \multicolumn{2}{c}{Quantum mechanics}\\
+Name & Symbol & Symbol & Operator\\
+\cline{1-4}
+Position (vector) & $\vec{r}$ & $\vec{\hat{r}}$ & Multiply by $\vec{r}$\\
+Momentum (vector) & $\vec{p}$ & $\vec{\hat{p}}$ & $-i\hbar\left(\vec{i}\frac{\partial}{\partial x} + \vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial z}\right)$\\
+Kinetic energy & $T$ & $\hat{T}$ & $-\frac{\hbar^2}{2m}\Delta$\\
+Total energy & $E = T + V$ & $\hat{H} = \hat{T} + \hat{V}$ & Operate by $\hat{T} + \hat{V}$\\
+Angular momentum & $l_x = yp_z - zp_y$ & $\hat{L}_x$ & $-i\hbar\left(y\frac{\partial}{\partial z} - z\frac{\partial}{\partial y}\right)$\\
+                 & $l_y = zp_x - xp_z$ & $\hat{L}_y$ & $-i\hbar\left(z\frac{\partial}{\partial x} - x\frac{\partial}{\partial z}\right)$\\
+                 & $l_z = xp_y - yp_x$ & $\hat{L}_z$ & $-i\hbar\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)$\\
+                 & $\vec{l} = \vec{r}\times \vec{p}$ & $\vec{\hat{L}}$ & $-i\hbar\left(\vec{r}\times\vec{\nabla}\right)$\\
+\end{tabular}
+
+}

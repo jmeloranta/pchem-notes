@@ -1,0 +1,58 @@
+\opage{
+\otitle{5.9 Degrees of freedom and phase rule}
+
+\otext
+In this section we will derive the Gibbs phase rule:
+
+\aeqn{5.64}{F = C - p + 2}
+
+\begin{tabular}{ll}
+$F$ = & The total number of variables that must be used in specifying the system.\\
+$C$ = & The number of components present in the system (``\# of species - \# of\\
+      & reactions'': $N_s - R$).\\
+$p$ = & The number of phases present in the system.\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\underline{Justificaton:}
+
+\vspace*{0.2cm}
+
+Consider system with $p$ phases. If a phase contains $C$ components, its composition may be specified by $(C - 1)$ mole fractions (the remaining fraction can obtained from the fact that their sum must equal to 1). The total number of variables for for all the phases is given by $p \times (C - 1)$. In addition to these, one must also specify two more variables (like $P$ \& $T$, $V$ \& $P$ or $V$ \& $T$). Thus up to this point we can conclude that we at least have $F = p \times (C - 1) + 2$. Next we consider phase equilibria between $p$ different phases. For phases $\alpha$, $\beta$, $\gamma$, … we
+must have at equilibrium $\mu_{\alpha ,i} = \mu_{\beta ,i} = \mu_{\gamma ,i} = ...$ for each component $i$. Thus there are ($p - 1)$ such relationships for each component, which reduces the total number of required variables by $C(p - 1)$.
+
+\vspace*{0.2cm}
+
+Finally, by summing the previous contributions, we get the Gibbs phase rule:
+
+$$F = \left[p\left( C - 1\right) + 2\right] - C\left(p - 1\right) = C - p + 2$$
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The reaction CaCO$_3(s)$ = CaO$(s)$ + CO$_2(g)$ is at equilibrium.\\ 
+\begin{itemize}
+\item[(a)] How many degrees of freedom are there when all three compounds are present at equilibrium?\\
+\item[(b)] How many degrees of freedom are there when only CaCO$_3(s)$ and CO$_2(g)$ are present?
+\end{itemize}
+
+\vspace*{0.2cm}
+
+\textbf{Solution.}
+
+\vspace*{0.2cm}
+
+\begin{itemize}
+\item[(a)] The number of components: $C = N_s - R = 3 - 1 = 2$. Three compounds and one chemical reaction.\\
+The number of phases: $p = 2$ (solid and gas).\\
+The total number of variables needed: $F = C - p + 2 = 2$.\\
+Thus both temperature and pressure may be varied independently without destroying a phase.
+\item[(b)] $C = N_s - R = 2 - 0 = 2$ (no reaction; $R = 0$).\\
+$p = 2$ (solid \& gas).\\
+$F = 2 - 2 + 2 = 2$. This is the same as in a) because the restriction due to chemical reaction was removed but there is one component less. Both temperature and pressure may be varied without destroying a phase.
+\end{itemize}
+
+}

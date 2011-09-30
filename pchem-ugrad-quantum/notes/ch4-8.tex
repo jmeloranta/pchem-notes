@@ -1,0 +1,644 @@
+\opage{
+\otitle{4.8 Matrix representation of symmetry operations}
+
+\otext
+Symmetry operations can be written as matrices, which transform the object accordingly in space. In case of rotation, these are called \textbf{rotation matrices}. Consider first the inversion ($i$) operation, which we have seen to map coordinates $(x_1, y_1, z_1)$
+to $(x_2, y_2, z_2)$ where $x_1 = -x_2, y_1 = -y_2, z_1 = -z_2$. This can be written in matrix form as follows:
+
+\aeqn{12.4}{
+\begin{pmatrix}
+x_2\\
+y_2\\
+z_2\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & -1\\
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+y_1\\
+z_1\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+-x_1\\
+-y_1\\
+-z_1\\
+\end{pmatrix}
+}
+
+\otext
+Now we can identify the matrix that corresponds to $i$ as:\vspace{0.5cm}
+
+\aeqn{12.5}{
+D(i) = 
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & -1\\
+\end{pmatrix}
+}
+
+\otext
+The identity operation ($E$) is clearly then:\vspace{0.5cm}
+
+\aeqn{12.6}{
+D(E) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+}
+
+}
+
+\opage{
+
+\otext
+In general, \textbf{the matrix representation depends on the basis set and the choice of coordinate system}. In the following, we consider three atomic $p_x$ orbitals in SO$_2$ molecule:
+
+\ofig{so2}{1.25}{Atomic $p_x$ orbitals in SO$_2$ ($C_{2v}$). Consider the orbitals as free atomic orbitals in this example.}
+
+\otext
+Denote the $p_x$ orbitals on O atoms labeled as A and B by $p_A$ and $p_B$, respectively. The $p_x$ orbital of S atom is denoted by $p_S$. Consider first a $\sigma_v$ operation, which transforms $(p_S, p_A, p_B) \rightarrow (p_S, p_B, p_A)$. This can be written in matrix form as follows:
+
+\aeqn{12.7}{
+\begin{pmatrix}
+p_S\\
+p_B\\
+p_A\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+p_S\\
+p_A\\
+p_B\\
+\end{pmatrix}
+}
+
+}
+
+\opage{
+
+\otext
+Thus the \textbf{matrix representative} of $\sigma_v(xz)$ in this case is:
+
+\aeqn{12.8}{
+D(\sigma_v) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{pmatrix}
+}
+\vspace{-0.25cm}
+
+\otext
+The same method can be used to find matrix representatives for the other symmetry operations in $C_{2v}$. The effect of $C_2$ is to map $(p_S, p_A, p_B) \rightarrow (-p_S, -p_B, -p_A)$ and its representative is:
+
+\aeqn{12.9}{
+D(C_2) = 
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & 0 & -1\\
+0 & -1 & 0\\
+\end{pmatrix}
+}
+
+\otext
+The effect of $\sigma_v'(yz)$ is $(p_S, p_A, p_B) \rightarrow (-p_S, -p_A, -p_B)$ and the representative is:
+
+\aeqn{12.10}{
+D(\sigma_v') = 
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & -1\\
+\end{pmatrix}
+}
+\vspace{-0.25cm}
+
+\otext
+The identity operation ($E$) has no effect on the $p$ orbitals and therefore it corresponds to a unit matrix:
+
+\aeqn{12.11}{
+D(E) = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+}
+
+}
+
+\opage{
+
+\otext
+The set of matrices that represents all the operations of the group is called a \textbf{matrix representation} (denoted by $\Gamma$). The dimension of the basis set (above 3 - the three $p_x$ orbitals) is denoted by a superscript, $\Gamma^{(3)}$.
+
+\otext
+The \textbf{character} of an operation in a given representation is the sum of the diagonal elements of its matrix representative (matrix trace denoted by Tr()). The character of an operation depends on the basis set used. For example, the characters of previously found matrix representations are:
+\vspace{-0.25cm}
+
+\deqn{12.12}{\textnormal{Tr}(E) = 1 + 1 + 1 = 3}{\textnormal{Tr}(C_2) = -1 + 0 + 0 = -1}{\textnormal{Tr}(\sigma_v(xz)) = 1 + 0 + 0 = 1}
+{\textnormal{Tr}(\sigma_v'(yz)) = -1 - 1 - 1 = -3}
+
+\vspace{-0.25cm}
+
+\otext
+The previous matrix representatives appear to be in \textbf{block diagonal form}:
+
+\aeqn{12.13}{D =
+\begin{pmatrix}
+X & 0 & 0\\
+0 & X & X\\
+0 & X & X\\
+\end{pmatrix}
+}
+
+Thus the symmetry operations in $C_{2v}$ do not mix $p_S$ with $p_A$ and $p_B$ basis functions. This suggests that the matrix representation $\Gamma^{(3)}$ can be decomposed into two independent matrix representations (one for $p_S$ and one for $p_A$ and $p_B$).
+
+}
+
+\opage{
+
+\otext
+For $p_S$ we get (parentheses signify that these are matrices in general):
+
+\deqn{12.14}{D(E) = (1)}{D(C_2) = (-1)}{D(\sigma_v) = (1)}{D(\sigma_v') = (-1)}
+
+This one dimensional matrix representation is now denoted by $\Gamma^{(1)}$. For the $p_A$ and $p_B$, the matrix representation is found to be:
+
+\deqn{12.15}{
+D(E) = \begin{pmatrix}
+1 & 0\\
+0 & 1\\
+\end{pmatrix}
+}
+{
+D(\sigma_v) = \begin{pmatrix}
+0 & 1\\
+1 & 0\\
+\end{pmatrix}
+}
+{
+D(C_2) = \begin{pmatrix}
+0 & -1\\
+-1 & 0\\
+\end{pmatrix}
+}
+{
+D(\sigma_v') = \begin{pmatrix}
+-1 & 0\\
+0 & -1\\
+\end{pmatrix}
+}
+
+\vspace{-0.5cm}
+
+\otext
+This is denoted by $\Gamma^{(2)}$.
+
+}
+
+\opage{
+
+\otext
+The relationship between the original matrix representation and the above two reduced representations is written symbolically as:
+
+\aeqn{12.16}{\Gamma^{(3)} = \Gamma^{(1)} + \Gamma^{(2)}}
+
+Clearly the one-dimensional matrix representation $\Gamma^{(1)}$ cannot be reduced any further. A matrix representation that cannot reduced any further is called an \textbf{irreducuble representation} (or irrep for short).
+
+\otext
+How about the two-dimensional $\Gamma^{(2)}$? The matrices are not in block diagonal form and no further reduction is possible in this basis set. However, if we would choose our basis set slightly differently:
+
+\vspace{-0.25cm}
+
+\beqn{12.17}{p_1 = p_A + p_B}{p_2 = p_A - p_B}
+
+\vspace{-1cm}
+
+\ofig{so2a}{1.25}{$p_1$ and $p_2$ basis functions in SO$_2$.}
+
+}
+
+\opage{
+
+\otext
+In this new basis set the matrix representations in $\Gamma^{(2)}$ can be written as (``how does $(p_1, p_2)$ transform?''):
+
+\deqn{12.18}{
+D(E) = 
+\begin{pmatrix}
+1 & 0\\
+0 & 1\\
+\end{pmatrix}
+}
+{
+D(\sigma_v) =
+\begin{pmatrix}
+1 & 0\\
+0 & -1\\
+\end{pmatrix}
+}
+{
+D(C_2) =
+\begin{pmatrix}
+-1 & 0\\
+0 & 1\\
+\end{pmatrix}
+}
+{
+D(\sigma_v') =
+\begin{pmatrix}
+-1 & 0\\
+0 & -1\\
+\end{pmatrix}
+}
+
+\otext
+These matrices are in block diagonal form and therefore we can break the above representation into two one-dimensional representations. $p_1$ spans (identical to $\Gamma^{(1)}$ for $p_S$):
+
+\deqn{12.19}{D(E) = (1)}{D(C_2) = (-1)}{D(\sigma_v) = (1)}{D(\sigma_v') = (-1)}
+
+}
+
+\opage{
+
+\otext
+and $p_2$ spans (denoted by $\Gamma^{(1)'}$):
+
+\deqn{12.20}{D(E) = (1)}{D(C_2) = (1)}{D(\sigma_v) = (-1)}{D(\sigma_v') = (-1)}
+
+\otext
+In $C_{2v}$ the irreducible representation (irrep) corresponding to $\Gamma^{(1)}$ above is denoted by $B_1$ and $\Gamma^{(1)'}$ is denoted by $A_2$. What irreps would arise from an oxygen $s$-atom orbital basis?
+
+\otext
+In general, $C_{2v}$ can can have four kinds of irreps each with its own unique set of characters (ignore the Modes and Operators columns for now) as shown in the $C_{2v}$ character table.
+
+\begin{table}
+\caption{Character table for $C_1$ point group (Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{1.5cm}}r@{\extracolsep{1.5cm}}l@{\extracolsep{1.5cm}}l}
+$C_1$ & $E$ & Modes & Operators\\
+\hline
+$A$ & 1 & $R_x, R_y, R_z, T_x, T_y, T_z$ & $x, y, z, ...$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_s = C_h$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{1cm}}r@{\extracolsep{1cm}}r@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l}
+$C_s$ & $E$ & $\sigma_h$ & Modes & Operators\\
+\hline
+$A'$ & 1 & 1 & $R_z, T_x, T_y$ & $x, y, x^2, y^2, z^2, xy$\\
+$A''$ & 1 & $-1$ & $R_x, R_y, T_z$ & $z, yz, xz$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_i = S_2$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{1cm}}r@{\extracolsep{1cm}}r@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l}
+$C_i$ & $E$ & $i$ & Modes & Operators\\
+\hline
+$A_g$ & 1 & 1 & $R_x, R_y, R_z$ & $x^2, y^2, z^2, xy, xz, yz$\\
+$A_u$ & 1 & $-1$ & $T_x, T_y, T_z$ & $x, y, z$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{2v}$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}l@{\extracolsep{0.7cm}}l}
+$C_{2v}$ & $E$ & $C_2$ & $\sigma_v (xz)$ & $\sigma_v '(yz)$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2, y^2, z^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $-1$ & $R_z$ & $xy$ \\
+$B_1$ & 1 & $-1$ & 1 & $-1$ & $T_{x}, R_{y}$ & $x, xz$ \\
+$B_2$ & 1 & $-1$ & $-1$ & 1 & $T_{y}, R_{x}$ & $y, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{3v}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$C_{3v}$ & $E$ & $2C_3$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $R_z$ & \\
+$E$ & 2 & $-1$ & 0 & $T_{x}, T_{y}, R_{x}, R_{y}$ & $x, y, x^2 - y^2, xy, xz, yz$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{4v}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$C_{4v}$ & $E$ & $C_2$ & $2C_4$ & $2\sigma_v$ & $2\sigma_d$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & 1 & $-1$ & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & 1 & $-1$ & $-1$ & 1 & & $xy$\\
+$E$ & 2 & $-2$ & 0 & 0 & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{5v}$ point group (non-Abelian, achiral, $\alpha = 2\pi/5$).}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$C_{5v}$ & $E$ & $2C_5$ & $2C_5^2$ & $5\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & 1 & $-1$ & $R_z$ & \\
+$E_1$ & 2 & $2$cos$(\alpha)$ & $2$cos$(2\alpha)$ & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$ \\
+$E_2$ & 2 & $2$cos$(2\alpha)$ & $2$cos$(\alpha)$ & 0 & & $xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{6v}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}l@{\extracolsep{0.3cm}}l}
+$C_{6v}$ & $E$ & $C_2$ & $2C_3$ & $2C_6$ & $3\sigma_d$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 &  & \\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & & \\
+$E_1$ & 2 & $-2$ & $-1$ & 1 & 0 & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$ \\
+$E_2$ & 2 & 2 & $-1$ & $-1$ & 0 & 0 & & $xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{\infty v}$ point group (non-Abelian, achiral). When $\phi = \pi$ only one member in $C_\phi$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$C_{\infty v}$ & $E$ & $2C_\phi$ & ... & $\infty\sigma_v$ & Modes & Operators \\
+\hline
+$A_1 = \Sigma^+$ & 1 & 1 & ... & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2 = \Sigma^-$ & 1 & 1 & ... & $-1$ & $R_z$ & \\
+$E_1 = \Pi$ & 2 & $2\textnormal{cos}(\phi)$ & ... & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$ \\
+$E_2 = \Delta$ & 2 & $2\textnormal{cos}(2\phi)$ & ... & 0 & & $x^2 - y^2, xy$ \\
+$E_3 = \Phi$ & 2 & $2\textnormal{cos}(3\phi)$ & ... & 0 & & \\
+... & ... & ... & ... & ... & & \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_2$ point group (Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_2$ & $E$ & $C_2(z)$ & $C_2(y)$ & $C_2(x)$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & & $x^2, y^2, z^2$ \\
+$B_1$ & 1 & 1 & $-1$ & $-1$ & $R_z, T_z$ & $z, xy$ \\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & $R_y, T_y$ & $y, xz$ \\
+$B_3$ & 1 & $-1$ & $-1$ & 1 & $R_x, T_x$ & $x,yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{2h}$ point group (Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}l@{\extracolsep{0.2cm}}l}
+$D_{2h}$ & $E$ & $C_2(z)$ & $C_2(y)$ & $C_2(x)$ & $i$ & $\sigma(xy)$ & $\sigma(xz)$ & $\sigma(yz)$ & Modes & Operators \\
+\hline
+$A_g$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2, y^2, z^2$\\
+$B_{1g}$ & 1 & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & $-1$ & $R_z$ & $xy$\\
+$B_{2g}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & $R_y$ & $xz$\\
+$B_{3g}$ & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & $-1$ & 1 & $R_x$ & $yz$\\
+$A_u$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$B_{1u}$ & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & $T_z$ & $z$\\
+$B_{2u}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $T_y$ & $y$\\
+$B_{3u}$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & 1 & $-1$ & $T_x$ & $x$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_{2d}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_{2d}$ & $E$ & $2S_4$ & $C_2$ & $2C_2'$ & $2\sigma_d$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & $-1$ & 1 & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & 1 & $T_z$ & $z, xy$\\
+$E$ & 2 & 0 & $-2$ & 0 & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{3}$ point group (non-Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$D_3$ & $E$ & $2C_3$ & $3C_2'$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & & $z^2, x^2 + y^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $R_z, T_z$ & $z$\\
+$E$ & 2 & $-1$ & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz, xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_{3h}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}l@{\extracolsep{0.3cm}}l}
+$D_{3h}$ & $E$ & $\sigma_h$ & $2C_3$ & $2S_3$ & $3C_2'$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1'$ & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$ \\
+$A_2'$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$A_1''$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ &  & \\
+$A_2''$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $T_z$ & $z$\\
+$E'$ & 2 & 2 & $-1$ & $-1$ & 0 & 0 & $T_x, T_y$ & $x, y, x^2 - y^2, xy$ \\
+$E''$ & 2 & $-2$ & $-1$ & 1 & 0 & 0 & $R_x, R_y$ & $xz, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_4$ point group (non-Abelian, possibly chiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_4$ & $E$ & $C_2$ & $2C_4$ & $2C_2'$ & $2C_2''$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $z^2, x^2 + y^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z, T_z$ & $z$ \\
+$B_1$ & 1 & 1 & $-1$ & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & 1 & $-1$ & $-1$ & 1 & & $xy$\\
+$E$ & 2 & $-2$ & 0 & 0 & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.8cm}
+
+{\tiny
+\begin{table}
+\caption{Character table for $D_{6h}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$D_{6h}$ & $E$ & $2C_6$ & $2C_3$ & $C_2$ & $3C_2'$ & $3C_2''$ & $i$ & $2S_3$ & $2S_6$ & $\sigma_h$ & $3\sigma_d$ & $3\sigma_v$ & Modes & Operators\\
+\hline
+$A_{1g}$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$\\
+$A_{2g}$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_{1g}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & & \\
+$B_{2g}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & & \\
+$E_{1g}$ & 2 & 1 & $-1$ & $-2$ & 0 & 0 & 2 & 1 & $-1$ & $-2$ & 0 & 0 & $R_x, R_y$ & $xz, yz$\\
+$E_{2g}$ & 2 & $-1$ & $-1$ & 2 & 0 & 0 & 2 & $-1$ & $-1$ & 2 & 0 & 0 & & $x^2 - y^2, xy$\\
+$A_{1u}$ & 1 & 1 & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$A_{2u}$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & $T_z$ & $z$\\
+$B_{1u}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & & \\
+$B_{2u}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & 1 & $-1$ & & \\
+$E_{1u}$ & 2 & 1 & $-1$ & $-2$ & 0 & 0 & $-2$ & $-1$ & 1 & 2 & 0 & 0 & $T_x, T_y$ & $x, y$\\
+$E_{2u}$ & 2 & $-1$ & $-1$ & 2 & 0 & 0 & $-2$ & 1 & 1 & $-2$ & 0 & 0 & & \\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{\infty h}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$D_{\infty h}$ & $E$ & $2C_\phi$ & ... & $\infty\sigma_v$ & $i$ & $2S_\phi$ & ... & $\infty C_2'$ & Modes & Operators \\
+\hline
+$A_{1g} = \Sigma^+_g$ & 1 & 1 & ... & 1 & 1 & 1 & ... & 1 & & $x^2 + y^2, z^2$\\
+$A_{1u} = \Sigma^+_u$ & 1 & 1 & ... & 1 & $-1$ & $-1$ & ... & $-1$ & $T_z$ & $z$\\
+$A_{2g} = \Sigma^-_g$ & 1 & 1 & ... & $-1$ & 1 & 1 & ... & $-1$ & $R_z$ & \\
+$A_{2u} = \Sigma^-_u$ & 1 & 1 & ... & $-1$ & $-1$ & $-1$ & ... & 1 & & \\
+$E_{1g} = \Pi_g$ & 2 & 2cos$(\phi)$ & ... & 0 & 2 & $-$2cos$(\phi)$ & ... & 0 & $R_x, R_y$ & $xz, yz$\\
+$E_{1u} = \Pi_u$ & 2 & 2cos$(\phi)$ & ... & 0 & $-2$ & 2cos$(\phi)$ & ... & 0 & $T_x, T_y$ & $x, y$\\
+$E_{2g} = \Delta_g$ & 2 & 2cos$(2\phi)$ & ... & 0 & 2 & 2cos$(2\phi)$ & ... & 0 & & $x^2 - y^2, xy$\\
+$E_{2u} = \Delta_u$ & 2 & 2cos$(2\phi)$ & ... & 0 & $-2$ & $-$2cos$(2\phi)$ & ... & 0 & & \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $T_d$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$T_d$ & $E$ & $8C_3$ & $3C_2$ & $6S_4$ & $6\sigma_d$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$ \\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & & \\
+$E$ & 2 & $-1$ & 2 & 0 & 0 & & $ 2z^2-x^2-y^2, x^2-y^2$ \\
+$T_1$ & 3 & 0 & $-1$ & 1 & $-1$ & $R_x, R_y, R_z$ & \\
+$T_2$ & 3 & 0 & $-1$ & $-1$ & 1 & $T_x, T_y, T_z$ & $x, y, z, xy, xz, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+{\tiny
+\begin{table}
+\caption{Character table for $O_h$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}l@{\extracolsep{0.05cm}}l}
+$O_h$ & $E$ & $8C_3$ & $3C_2$ & $6C_4$ & $6C_2'$ & $i$ & $8S_6$ & $3\sigma_h$ & $6S_4$ & $6\sigma_d$ & Modes & Operators\\
+\hline
+$A_{1g}$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$\\
+$A_{2g}$ & 1 & 1 & 1 & $-1$ & $-1$ & 1 & 1 & 1 & $-1$ & $-1$ & & \\
+$E_g$ & 2 & $-1$ & 2 & 0 & 0 & 2 & $-1$ & 2 & 0 & 0 & & $2z^2 - x^2 - y^2, x^2 - y^2$\\
+$T_{1g}$ & 3 & 0 & $-1$ & 1 & $-1$ & 3 & 0 & $-1$ & 1 & $-1$ & $R_x, R_y, R_z$ & \\
+$T_{2g}$ & 3 & 0 & $-1$ & $-1$ & 1 & 3 & 0 & $-1$ & $-1$ & 1 & & $xy, xz, yz$\\
+$A_{1u}$ & 1 & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$A_{2u}$ & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & & \\
+$E_u$ & 2 & $-1$ & 2 & 0 & 0 & $-2$ & 1 & $-2$ & 0 & 0 & & \\
+$T_{1u}$ & 3 & 0 & $-1$ & 1 & $-1$ & $-3$ & 0 & 1 & $-1$ & 1 & $T_x, T_y, T_z$ & $x, y, z$\\
+$T_{2u}$ & 3 & 0 & $-1$ & $-1$ & 1 & $-3$ & 0 & 1 & 1 & $-1$ & & \\
+\end{tabular}
+\end{table}
+}
+
+\vspace{-0.7cm}
+
+{\tiny
+\begin{table}
+\caption{Character table for $I$ point group (non-Abelian, possibly chiral, $\alpha = 2\pi/5$).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$I$ & $E$ & $12C_5$ & $12C_5^2$ & $20C_3$ & $15C_2$ & Modes & Operators\\
+\hline
+$A$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$\\
+$T_1$ & 3 & $-2$cos$(2\alpha)$ & $-2$cos$(\alpha)$ & 0 & $-1$ & $R_x, R_y, R_z, T_x, T_y, T_z$ & $x, y, z$\\
+$T_2$ & 3 & $-2$cos$(\alpha)$ & $-2$cos$(2\alpha)$ & 0 & $-1$ &  & \\
+$G$ & 4 & $-1$ & $-1$ & 1 & 0 & & \\
+$H$ & 5 & 0 & 0 & $-1$ & 1 & & $2z^2 - x^2 - y^2, x^2 - y^2,$\\
+    &   &   &   &      &   & & $xy, yz, xz$\\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\otext
+Labels $A$ and $B$ are used to denote one-dimensional representations (there are no higher dimensional irreps in $C_{2v}$). If the character under the principal rotation is $+1$ it is labeled $A$ and if the character is $-1$ it is labeled $B$. When higher dimensional irreps occur in a group, they are denoted by $E$ (two-dimensional), $T$ (three-dimensional), $G$ (four-dimensional) and $H$ (five-dimensional) labels. Note that there is an unfortunate use of notation as $E$ may represent a label for irreps and the identity operation. The number of irreps is always the same as the number of symmetry operations in a group. Some of the the higher dimensional irreps may have characters equal to zero. For example, for $E$ the two degenerate states may behave differently with respect to a symmetry operation. One of them might change sign whereas the other one might not and the character would be a sum of these: $\chi = 1 - 1 = 0$. In general, $\chi$ consists of a sum of characters for all degenerate states.
+
+\otext
+The characters of identity operation ($E$) reveal the degeneracy of the orbitals (or whatever entities we are dealing with). For example, any orbital that has symmetry $A_1$ or $A_2$ in a $C_{3v}$ molecule may not be degenerate. Any doubly degenerate pair of orbitals must belong to $E$ irreducible representation. Often symmetries of orbitals are denoted by lower case letters (for example, $a_1$) whereas the overall symmetries of electronic wavefunctions are denoted with capital letters (for example, $A_1$). Note that, for example, it is not possible to have triply degenerate orbitals in $C_{3v}$ because the maximum value for the identity operation $E$ is 2. The symmetry classifications also apply for wavefunctions constructed from linear combinations of some basis functions (such as atomic orbitals).
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Can a triagonal BF$_3$ molecule have triply degenerate orbitals? What is the minimum number of atoms from which a molecule can be built that does exhibit triple degeneracy?\\
+
+\otext
+\textbf{Solution.} First we identify the point group of the molecule as $D_{3h}$ by using the previous flowchart. The $D_{3h}$ character table shows that the highest degree of degeneracy that can occur is 2 (i.e. $E$ terms). Therefore there cannot be any triply degenerate molecular orbitals in BF$_3$ (this would require a $T$ term to occur in the character table). The minimum number of atoms required to build a molecule that can have triply degenerate is four (for example, tetrahedral P$_4$ molecule, which belongs to $T_d$).\\
+
+\otext
+\textbf{Example.} What are the symmetry species of orbital $\psi = \psi_A - \psi_B$ in NO$_2$ molecule ($C_{2v}$). $\psi_A$ is an O2$p_x$ orbital on one of the O atoms and $\psi_B$ that on the other O atom.\\
+\otext
+\textbf{Solution.} The orbitals $\psi_A$ and $-\psi_B$ are centered on the O atoms:
+\vspace{-0.5cm}
+\ofig{no2}{1.0}{}
+
+}
+
+\opage{
+\otext
+One must consider each symmetry operation in $C_{2v}$ and calculate the characters:\\
+
+\otext
+1. $E$. This operation does nothing and leaves the wavefunction ($\psi$) unchanged. Thus $\chi (E) = 1$.\\
+2. $C_2$. This operation rotates $\psi$ by 180\degree . This does not change $\psi$ and $\chi (C_2) = 1$.\\
+3. $\sigma_v$. This operation swaps the $+$ and $-$ sections in $\psi$. Thus $\chi (\sigma_v) = -1$.\\
+4. $\sigma_v'$. This operation also swaps the $+$ and $-$ sections in $\psi$. Thus $\chi (\sigma_v') = -1$.\\
+
+\otext
+By reference to the $C_{2v}$ character table, it can be seen that this corresponds to $A_2$ symmetry species. Thus $\psi$ (linear combination) orbital is labeled as $a_2$.
+\vfill
+
+}

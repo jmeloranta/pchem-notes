@@ -1,0 +1,85 @@
+\opage{
+
+\otitle{1.14 Tunneling and reflection}
+
+\otext
+Previously, we have seen that a particle may appear in regions, which are classically forbidden. For this reason, there is a non-zero probability that a particle may pass over an energy barrier, which is higher than the available kinetic energy (``\href{http://en.wikipedia.org/wiki/Quantum_tunneling}{\uline{tunneling}}''). This is demonstrated below ($V > E$).
+
+\ofig{tunnel}{0.6}{Wavefunction for a particle with $E < V$ tunneling through a potential barrier}
+
+\vspace*{0.4cm}
+
+Consider the region left of the barrier (e.g. $x < 0$). Here the Schr\"odinger equation corresponds to that of a free particle ($E > 0$):
+
+\aeqn{9.178}{-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi_L(x) = E\psi_L(x)\textnormal{ (L = ``left side'')}}
+
+}
+
+\opage{
+
+\otext
+The general solution to this equation is:
+
+\aeqn{9.179}{\psi_L(x) = Ae^{ikx} + Be^{-ikx}\textnormal{ with }k^2 = \frac{2mE}{\hbar^2}}
+
+The term with $k$ corresponds to an incoming wave (i.e., propagating from left to right) and $-k$ to a reflected wave (i.e., propagating from right to left).
+
+\otext
+Within the potential barrier ($0 < x < a$) the Schr\"odinger equation reads:
+
+\aeqn{9.180}{-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi_M(x) - V\psi_M(x) = E\psi_M(x)\textnormal{ (M = ``middle'')}}
+
+where $V$ is a constant (i.e., does not depend on $x$). When $V > E$, the general solution is:
+
+\aeqn{9.181}{\psi_M(x) = A'e^{Kx} + B'e^{-Kx}\textnormal{ where }K^2 = \frac{2m\overbrace{(V - E)}^{> 0}}{\hbar^2}}
+
+\otext
+To the right of the potential barrier, we have a free propagating wave with only the right propagating wave component present:
+
+\aeqn{9.182}{\psi_R(x) = Fe^{ikx}\textnormal{ (R = ``right'')}}
+
+}
+
+\opage{
+
+\otext
+By requiring that the wavefunctions $\psi_L$, $\psi_M$ and $\psi_R$, and their first derivatives are continuous, the following expression can be derived:
+
+\aeqn{X.29}{T = \frac{\left|F\right|^2}{\left|A\right|^2} = \left\lbrace 1 + \frac{\left(e^{Ka} - e^{-Ka}\right)^2}{16\epsilon\left(1 - \epsilon\right)}\right\rbrace^{-1}\textnormal{ where }\epsilon = \frac{E}{V}}
+
+where $T$ is the transmission coefficient. A value of zero means no tunneling and a value of $\infty$ means complete tunneling. The corresponding reflection coefficient $R$ can be defined using $T$ as:
+
+\aeqn{X.30}{R = \frac{1}{T}}
+
+Note that the above discussion \textbf{does not involve time}.
+
+\otext
+\textbf{Example.} Estimate the relative probabilities that a proton and a deuteron can tunnel through a rectangular potential of height 1.00 eV (1.60 $\times$ 10$^{-19}$ J) and length 100 pm (1 \AA) when their energy is 0.9 eV (i.e., $E - V = 0.10$ eV).
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we calculate $K$ by using Eq. (\ref{eq9.181}):
+
+}
+
+\opage{
+
+$$K_\textnormal{H} = \left\lbrace\frac{2\overbrace{(1.67\times 10^{-27}\textnormal{ kg})}^\textnormal{mass of H}\times (1.6\times 10^{-20}\textnormal{ J})}{(1.055\times 10^{-34}\textnormal{ Js})^2}\right\rbrace^{1/2} = 6.9\times 10^{10}\textnormal{ m}^{-1}$$
+
+\vspace*{-0.5cm}
+
+$$K_\textnormal{D} = \left\lbrace\frac{2\overbrace{(2\times 1.67\times 10^{-27}\textnormal{ kg})}^\textnormal{mass of D}\times (1.6\times 10^{-20}\textnormal{ J})}{(1.055\times 10^{-34}\textnormal{ Js})^2}\right\rbrace^{1/2} = 9.8\times 10^{10}\textnormal{ m}^{-1}$$
+
+\vspace*{-0.3cm}
+
+By using these values and Eq. (\ref{eqX.29}), we get:
+
+$$\epsilon = E / V = \frac{0.9\textnormal{ eV}}{1.0\textnormal{ eV}} = 0.9$$
+
+$$T_\textnormal{H} = \left\lbrace 1 + \frac{\left(e^{K_\textnormal{H}a} - e^{-K_\textnormal{H}a}\right)^2}{16\epsilon (1-\epsilon)}\right\rbrace^{-1} = 1.4\times 10^{-6}$$
+
+$$T_\textnormal{D} = \left\lbrace 1 + \frac{\left(e^{K_\textnormal{D}a} - e^{-K_\textnormal{D}a}\right)^2}{16\epsilon (1-\epsilon)}\right\rbrace^{-1} = 4.4\times 10^{-9}$$
+
+$$\frac{T_\textnormal{H}}{T_\textnormal{D}} = 310\textnormal{ (H tunnels more efficiently than D)}$$
+
+}

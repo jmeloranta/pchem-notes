@@ -1,0 +1,107 @@
+\opage{
+\otitle{1.6 Particle in a one-dimensional box}
+
+\otext
+The simplest problem to treat in quantum mechanics is that of a particle of mass $m$ constrained to move in a one-dimensional box of length $a$ (``\href{http://en.wikipedia.org/wiki/Particle_in_a_box}{\uline{particle in a box}}''). The potential energy $V(x)$ is taken to be zero for $0 < x < a$ and infinite outside this region. The infinite potential can be treated as a boundary condition (i.e., the wavefunction must be zero outside $0 < x < a$). Such a bound potential will lead to quantized energy levels. In general, either a bound potential or a suitable boundary condition is required for quantization.
+
+\otext
+In the region between $0 < x < a$, the Schr\"odinger Eq. (\ref{eq9.29}) can be written as:
+
+\aeqn{9.59}{-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} = E\psi(x)}
+
+The infinite potential around the box imposes the following boundary conditions:
+
+$$\psi(0) = 0\textnormal{ and }\psi(a) = 0$$
+
+Eq. (\ref{eq9.59}) can be rewritten as:
+
+\aeqn{9.60}{\frac{d^2\psi(x)}{dx^2} = -\frac{2mE}{\hbar^2}\psi(x) \equiv -k^2\psi(x)\textnormal{ where } k=\sqrt{\frac{2mE}{\hbar^2}}}
+
+}
+
+\opage{
+
+\otext
+Eq. (\ref{eq9.60}) is a second order differential equation, which has solutions of the form:
+
+\aeqn{9.61}{\psi(x) = A\cos(kx) + B\sin(kx)}
+
+This solution must fulfill the boundary conditions:
+
+\beqn{9.62}{\psi(0) = A = 0\textnormal{ and }\psi(a) = A\cos(ka) + B\sin(ka) = B\sin(ka) = 0}
+{\Rightarrow \sin(ka) = 0 \Rightarrow ka = n\pi \Rightarrow k = \frac{n\pi}{a}\textnormal{ where }n=1,2,3...}
+
+\vspace*{0.2cm}
+
+Note that the value $n = 0$ is not allowed because it would lead to $\psi$ being identically zero. Thus the eigenfunctions and eigenvalues are (be careful with $h$ and $\hbar$!):
+
+\aeqn{9.64}{\psi_n(x) = B\sin\left(\frac{n\pi}{a}x\right)\textnormal{ and }E_n = \frac{\hbar^2k^2}{2m} = \frac{\hbar^2n^2\pi^2}{2ma^2} = \frac{h^2n^2}{8ma^2}}
+
+\otext
+This shows that the particle can only have certain energy values specified by $E_n$. Other energy values are forbidden (i.e., energy is said to be quantized). In the limit of large box ($a \rightarrow \infty$) or large mass ($m \rightarrow\infty$), the quantization diminshes and the particle begins to behave classically. The lowest energy level is given by $n = 1$, which implies that the energy of the particle can never reach zero (``zero-point motion''; ``\href{http://en.wikipedia.org/wiki/Standard_deviation}{\uline{zero-point energy}}'').
+
+\vspace*{0.2cm}
+The eigenfunctions in Eq. (\ref{eq9.64}) are not normalized (i.e., we have not specified $B$).
+
+}
+
+\opage{
+
+\otext
+Normalization can be carried out as follows:
+
+\aeqn{9.65}{1=\int\limits_0^a\psi_n^*(x)\psi_n(x)dx = B^2\underbrace{\int\limits_0^a\sin^2\left(\frac{n\pi x}{a}\right)dx}_{=a/2\textnormal{ (tablebook)}} = B^2\frac{a}{2} \Rightarrow B=\pm\sqrt{\frac{2}{a}}}
+
+Thus the complete eigenfunctions (choosing the ``+'' sign) are:
+
+\aeqn{9.67}{\psi_n(x) = \sqrt{\frac{2}{a}}\sin\left(\frac{n\pi x}{a}\right)}
+
+\ofig{elevels}{0.45}{}
+
+}
+
+\opage{
+
+\otext
+As shown in the previous figure, products between different eigenfunctions $\psi_i$ and $\psi_k$ have equal amounts of positive and negative parts and hence integrals over these products are zero (positive and negative areas cancel). The eigenfunctions are therefore orthonormalized (normalization was carried out earlier):
+
+\aeqn{9.68}{\int\limits_{-\infty}^{\infty}\psi_i(x)\psi_k(x)dx=\delta_{ik}}
+
+Note that these $\psi_i$'s are eigenfunctions of the energy operator but not, for example, the position operator. Therefore only the average position may be calculated (i.e., the expectation value), which is $a/2$ for all states. If we carried out measurements on position of the particle in a 1-D box, we would obtain different values according to the probability distribution shown on the previous slide (with the $a/2$ average).
+
+\otext
+\textbf{Example.} An electron is in one-dimensional box, which is 1.0 nm in length. What is the probability of locating the electron between $x = 0$ (the left-hand edge) and $x = 0.2$ nm in its lowest energy state?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} According to Eq. (\ref{eq9.21}) the probability is given by:
+
+$$\int\limits_{x = 0\textnormal{ nm}}^{0.2\textnormal{ nm}}\left|\psi_1(x)\right|^2dx = \overbrace{\frac{2}{1.0\textnormal{ nm}}\int\limits_{0\textnormal{ nm}}^{0.2\textnormal{ nm}}\sin^2\left(\frac{\pi x}{1.0\textnormal{ nm}}\right)dx}^{n=1,a=1\textnormal{ nm}}$$
+
+}
+
+\opage{
+
+\otext
+$$\left(\textnormal{Tablebook: }\int\sin^2\left(\frac{\pi}{a}x\right)dx = \frac{x}{2} - \frac{\sin\left(2\pi x/a\right)}{4\pi/a}\right)$$
+$$= \frac{2}{1.0\textnormal{ nm}}\left(\frac{0.2\textnormal{ nm}}{2} - \frac{\sin(2\pi\times(0.2\textnormal{ nm})/(1.0\textnormal{ nm}))}{4\pi/(1.0\textnormal{ nm})}\right)\approx 0.05$$
+
+\otext
+\textbf{Example.} Calculate $\left<p_x\right>$ and $\left<p_x^2\right>$ for a particle in one-dimensional box.\\
+\vspace*{0.2cm}
+\textbf{Solution.} The momentum operator $p_x$ is given by Eq. (\ref{eq9.20}).
+
+$$\left<p_x\right>_n = \int\limits_0^a\left[\left(\frac{2}{a}\right)^{1/2}\sin\left(\frac{n\pi x}{a}\right)\right]\left(-i\hbar\frac{d}{dx}\right)\left[\left(\frac{2}{a}\right)^{1/2}\sin\left(\frac{n\pi x}{a}\right)\right]dx$$
+$$= -\frac{2i\hbar n\pi}{a^2}\underbrace{\int\limits_0^a\overbrace{\sin\left(\frac{n\pi x}{a}\right)}^\textnormal{even}\overbrace{\cos\left(\frac{n\pi x}{a}\right)}^\textnormal{odd}dx}_{\equiv 0} = 0$$
+
+The value for $\left<p_x^2\right>$ is given by:
+
+}
+
+\opage{
+
+$$\left<p_x^2\right>_n = \int\limits_0^a\left[\left(\frac{2}{a}\right)^{1/2}\sin\left(\frac{n\pi x}{a}\right)\right]\left(-i\hbar\frac{d}{dx}\right)^2\left[\left(\frac{2}{a}\right)^{1/2}\sin\left(\frac{n\pi x}{a}\right)\right]dx$$
+$$= -\frac{2\hbar^2}{a}\int_0^a\left[\sin\left(\frac{n\pi x}{a}\right)\right]\frac{d^2}{dx^2}\left[\sin\left(\frac{n\pi x}{a}\right)\right]dx = \frac{2\hbar^2n^2\pi^2}{a^3}\underbrace{\int\limits_0^a\sin^2\left(\frac{n\pi x}{a}\right)dx}_{= a/2}$$
+$$= \frac{\hbar^2n^2\pi^2}{a^2}$$
+
+}

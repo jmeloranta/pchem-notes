@@ -1,0 +1,4 @@
+load(orthopoly);
+/* spherical_harmonic(l, m, theta, phi) */
+spherical_harmonic(0, 0, theta, phi); /* l = 0, m = 0 */
+spherical_harmonic(1, 1, x, y);       /* l = 1, m = 1 */

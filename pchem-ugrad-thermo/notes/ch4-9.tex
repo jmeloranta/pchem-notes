@@ -1,0 +1,186 @@
+\opage{
+\otitle{4.9 Additional applications of Maxwell relations}
+
+\otext
+First we consider Maxwell relations for a \underline{pure system} (i.e. only one species). The equations can be derived using $U$, $H$, $A$ or $G$:
+
+\vspace*{0.3cm}
+
+\aeqn{4.106}{\left(\frac{\partial T}{\partial \bar{V}}\right)_{\bar{S}} \omark{=}{\textnormal{Eq. (\ref{eq4.9})}}\left(\frac{\partial^2 \bar{U}}{\partial\bar{V}\partial\bar{S}}\right) \omark{=}{\textnormal{x-change OK}} \left(\frac{\partial^2 \bar{U}}{\partial\bar{S}\partial\bar{V}}\right) \omark{=}{\textnormal{Eq. (\ref{eq4.9})}} \left(\frac{\partial P}{\partial \bar{S}}\right)_{\bar{V}}}
+
+\aeqn{4.107}{\left(\frac{\partial T}{\partial P}\right)_{\bar{S}} \omark{=}{\textnormal{Eq. (\ref{eq4.21})}}\left(\frac{\partial^2 \bar{H}}{\partial P\partial\bar{S}}\right) \omark{=}{\textnormal{x-change OK}} \left(\frac{\partial^2 \bar{H}}{\partial\bar{S}\partial P}\right) \omark{=}{\textnormal{Eq. (\ref{eq4.21})}} \left(\frac{\partial \bar{V}}{\partial \bar{S}}\right)_{P}}
+
+\aeqn{4.108}{\left(\frac{\partial \bar{S}}{\partial \bar{V}}\right)_{T} \omark{=}{\textnormal{Eq. (\ref{eq4.30})}}\left(\frac{\partial^2 \bar{A}}{\partial\bar{V}\partial T}\right) \omark{=}{\textnormal{x-change OK}} \left(\frac{\partial^2 \bar{A}}{\partial T\partial\bar{V}}\right) \omark{=}{\textnormal{Eq. (\ref{eq4.31})}} \left(\frac{\partial P}{\partial T}\right)_{\bar{V}}}
+
+\aeqn{4.109}{-\left(\frac{\partial \bar{S}}{\partial P}\right)_{T} \omark{=}{\textnormal{Eq. (\ref{eq4.37})}}\left(\frac{\partial^2 \bar{G}}{\partial P\partial T}\right) \omark{=}{\textnormal{x-change OK}} \left(\frac{\partial^2 \bar{G}}{\partial T\partial P}\right) \omark{=}{Eq. (\ref{eq4.38})} \left(\frac{\partial \bar{V}}{\partial T}\right)_{P}}
+
+}
+
+\opage{
+
+\otext
+When a number of different species are present, the chemical potential must be included. For example for the internal energy $U$, the following Maxwell relations can be written (similar relations exist also for $H$, $A$ and $G$):
+
+\aeqn{4.13}{\left(\frac{\partial T}{\partial n_i}\right)_{S,V,\lbrace n_j\rbrace_{j\ne i}} = \left(\frac{\partial \mu_i}{\partial S}\right)_{V,\lbrace n_i\rbrace}}
+
+\aeqn{4.14}{-\left(\frac{\partial P}{\partial n_i}\right)_{S,V,\lbrace n_j\rbrace_{j\ne i}} = \left(\frac{\partial \mu_i}{\partial V}\right)_{S,\lbrace n_i\rbrace}}
+
+\aeqn{4.15}{\left(\frac{\partial\mu_i}{\partial n_j}\right)_{S,V,\lbrace n_k\rbrace_{k\ne j}} = \left(\frac{\partial \mu_j}{\partial n_i}\right)_{S,V,\lbrace n_k\rbrace_{k\ne i}}}
+
+\hrulefill
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate $\left(\partial\bar{U} / \partial\bar{V}\right)_T$ for a real gas.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Earlier we have shown that $\left(\partial\bar{U} / \partial \bar{V}\right)_T = 0$ for an ideal gas. If the equation of state of the real gas is known in terms of $P$, we will be able to use the following equation to calculate the partial derivative:
+
+\aeqn{4.111}{\left(\frac{\partial\bar{U}}{\partial\bar{V}}\right)_T = T\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} - P}
+
+}
+
+\opage{
+
+\otext
+To show that this result holds, we first combine the 1st and 2nd laws of thermodynamics (reversible process):
+
+\vspace*{0.2cm}
+
+1st law: $dU = \inex{dq}_{rev} + \inex{dw}_{rev} = \inex{dq}_{rev} - PdV\textnormal{ (if only \textit{PV}-work)}$
+
+\vspace*{0.2cm}
+
+2nd law: $dS = \frac{\inex{dq}_{rev}}{T}$
+
+\vspace*{0.2cm}
+
+Combined: $dU = TdS - PdV$
+
+\vspace*{0.2cm}
+
+By considering molar quantities in above, dividing both sides of the equation by $d\bar{V}$, and imposing constant temperature gives:
+
+\aeqn{4.110}{\left(\frac{\partial\bar{U}}{\partial\bar{V}}\right)_T = T\left(\frac{\partial\bar{S}}{\partial\bar{V}}\right)_T - P}
+
+Now Eq. (\ref{eq4.108}) allows us to write this as:
+
+$$\left(\frac{\partial \bar{U}}{\partial\bar{V}}\right)_T = T\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} - P$$
+
+\vspace*{0.2cm}
+
+\underline{Example.} This equation can be applied to a van der Waals gas. In this case the pressure can be written as (Eq. (\ref{eq1.23})):
+
+$$P = \frac{RT}{\bar{V} - b} - \frac{a}{\bar{V}^2}$$
+
+}
+
+\opage{
+
+\otext
+Differentiation of $P$ with respect $T$ gives: $\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} = \frac{R}{\bar{V} - b}$
+
+\vspace*{0.2cm}
+
+Substitution of this derivative in Eq. (\ref{eq4.111}) gives the partial derivative:
+
+\aeqn{4.112}{\left(\frac{\partial\bar{U}}{\partial\bar{V}}\right) = \frac{RT}{\bar{V} - b} - P = \frac{RT}{\bar{V} - b} - \left(\frac{RT}{\bar{V} - b} - \frac{a}{\bar{V}^2}\right) = \frac{a}{\bar{V}^2}}
+
+Integration of this equation yields the change in internal energy for a given change in volume at constant temperature:
+
+$$\Delta\bar{U} = \int\limits_{\bar{U}_1}^{\bar{U}_2}d\bar{U} = \int\limits_{\bar{V}_1}^{\bar{V}_2}\frac{a}{\bar{V}^2}d\bar{V} = a\left(\frac{1}{\bar{V}_1} - \frac{1}{\bar{V}_2}\right)$$
+
+\hrulefill
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Propane gas is allowed to expand isothermally from 10 to 30 L. What is the change in the molar internal energy? Use the van der Waals equation with $a = 8.779$ L$^2$ bar mol$^{-2}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we have to convert the value of $a$ into SI units:
+
+$$a = \left(8.779\textnormal{ L}^2\textnormal{ bar mol}^{-2}\right)\times\left(10^5\textnormal{ Pa bar}^{-1}\right)\times\left(10^{-3}\textnormal{ m}^3\textnormal{ L}^{-1}\right)^2$$
+$$= 0.8779\textnormal{ Pa m}^6\textnormal{ mol}^{-2}$$
+
+}
+
+\opage{
+
+\otext
+Then we can use the expression for $\Delta U$ on the previous page:
+
+$$\Delta \bar{U} =a\left(\frac{1}{\bar{V}_1} - \frac{1}{\bar{V}_2}\right) = \left( 0.8779\textnormal{ Pa m}^6\textnormal{ mol}^{-2}\right)$$
+$$\times\left(\frac{1}{10\times 10^{-3}\textnormal{ m}^3\textnormal{ mol}^{-1}} - \frac{1}{30\times 10^{-3}\textnormal{ m}^3\textnormal{ mol}^{-1}}\right) = 58.5\textnormal{ J mol}^{-1}$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the change in the molar entropy when a van der Waals gas expands isothermally?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we use one of the Maxwell relations (Eq. (\ref{eq4.108})) and then we integrate both sides of the resulting equation (see also the previous example):
+
+$$\left(\frac{\partial\bar{S}}{\partial\bar{V}}\right)_T \omark{=}{\textnormal{Eq. (\ref{eq4.108})}} \left(\frac{\partial P}{\partial T}\right)_{\bar{V}} = \frac{R}{\bar{V} - b}$$
+$$\int\limits_{\bar{S}_1}^{\bar{S}_2}d\bar{S} = R\int\limits_{\bar{V}_1}^{\bar{V}_2}\frac{d\bar{V}}{\bar{V} - b} \Rightarrow \Delta\bar{S} = R\ln\left(\frac{\bar{V}_2 - b}{\bar{V}_1 - b}\right)$$
+
+}
+
+\opage{
+
+\otext
+\underline{Cubic and isothermal expansion coefficients}
+
+\vspace*{0.2cm}
+
+The cubic expansion coefficient is defined as (``how fast the volume of a substance increases with temperature''):
+
+\aeqn{4.113}{\alpha = \frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_P = \frac{1}{\bar{V}}\left(\frac{\partial\bar{V}}{\partial T}\right)_P}
+
+The isothermal compressibility is defined as (``how fast the volume of a substance increases with pressure''):
+
+\aeqn{4.114}{\kappa = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T = -\frac{1}{\bar{V}}\left(\frac{\partial\bar{V}}{\partial P}\right)_T}
+
+For an ideal gas these quantities are $\alpha = 1/T$ and $\kappa = 1/P$. These constants can also be used in simplifying thermodynamic expressions. For example:
+
+\aeqn{4.115}{\left(\frac{\partial P}{\partial T}\right)_{\bar{V}} = -\frac{\left(\partial\bar{V}/\partial T\right)_P}{\left(\partial\bar{V} / \partial P\right)_T} = \frac{\alpha}{\kappa}}
+
+and further:
+
+\aeqn{4.116}{\left(\frac{\partial\bar{U}}{\partial \bar{V}}\right)_T \omark{=}{\textnormal{Eq. (\ref{eq4.111})}} \frac{\alpha T - \kappa P}{\kappa}}
+
+}
+
+\opage{
+
+\otext
+\underline{Dependency of enthalpy on the pressure at constant temperature}
+
+\vspace*{0.2cm}
+
+We are seeking an expression like Eq. (\ref{eq4.111}) that would help us to calculate the dependency of enthalpy on pressure. Both sides of the differential $dH = TdS + VdP$ can be divided by pressure at constant $T$ to obtain:
+
+\aeqn{4.117}{\left(\frac{\partial\bar{H}}{\partial P}\right)_T = T\left(\frac{\partial \bar{S}}{\partial P}\right)_T + \bar{V}}
+
+Using one of the Maxwell relations (Eq. (\ref{eq4.46})), we can modify this equation to:
+
+\aeqn{4.118}{\left(\frac{\partial\bar{H}}{\partial P}\right)_T = -T\left(\frac{\partial\bar{V}}{\partial T}\right)_P + \bar{V}}
+
+\vspace*{0.2cm}
+
+\underline{The relation between constant pressure and constant volume heat capacities}
+
+\vspace*{0.2cm}
+
+In Eq. (\ref{eq2.67}) we found the following relation:
+
+\aeqn{4.119}{\bar{C}_P - \bar{C}_V = \left[P + \left(\frac{\partial\bar{U}}{\partial\bar{V}}\right)_T\right]\left(\frac{\partial\bar{V}}{\partial T}\right)_P}
+
+From Eqs. (\ref{eq4.113}), (\ref{eq4.114}) and (\ref{eq4.116}) we can now get:
+
+\aeqn{4.120}{\bar{C}_P - \bar{C}_V = \frac{T\bar{V}\alpha^2}{\kappa}}
+
+Note that often it is more difficult to measure $C_V$ than $C_P$ experimentally. If $C_P$ is known, the above equation gives $C_V$.
+
+}

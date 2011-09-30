@@ -1,0 +1,49 @@
+\opage{
+\otitle{4.3 Effect of temperature on the Gibbs energy}
+
+\otext
+
+\underline{How does $G$ change as a function of temperature?} Eq. (\ref{eq4.37}) states that:
+
+$$\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace} = -S \le 0$$
+
+Since the derivative is zero or negative, the Gibbs energy decreases as $T$ increases given that $P$ and $\lbrace n_i\rbrace$ are constant.
+
+\vspace*{0.4cm}
+
+\underline{What is the relationship between $H$ and $G$ in terms of temperature?}
+
+\vspace*{0.2cm}
+
+Previously we have established that $G = H - TS$. If we replace $S$ with the above derivative:
+
+\aeqn{4.60}{G = H - TS = H + T\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+This equation can be modified by using the following expression ($G$ on the right hand side):
+
+\aeqn{4.61}{\left(\frac{\partial (G / T)}{\partial T}\right)_{P,\lbrace n_i\rbrace} = -\frac{G}{T^2} + \frac{1}{T}\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+Substitution of Eq. (\ref{eq4.60}) into this equation gives (``the Gibbs-Helmholtz equation''):
+
+\aeqn{4.62}{H = -T^2\left(\frac{\partial (G / T)}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+}
+
+\opage{
+
+\otext
+When looking at differences in the Gibbs energies and enthalpies, this becomes:
+
+\aeqn{4.63}{\Delta H = -T^2\left(\frac{\partial (\Delta G/T)}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+\vspace{0.3cm}
+
+\underline{Notes:}
+\begin{enumerate}
+\item If $\Delta G$ can be determined as a function of temperature, we can obtain $\Delta H$ using Eq. (\ref{eq4.63}).
+\item If $\Delta H$ is independent of temperature and $\Delta G$ is known at one temperature, it is possible to obtain $\Delta G$ at other temperatures with Eq. (\ref{eq4.63}).
+\end{enumerate}
+
+\vfill
+
+}

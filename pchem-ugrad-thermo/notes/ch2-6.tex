@@ -1,0 +1,88 @@
+\opage{
+\otitle{2.6 Change in state at constant volume}
+
+\otext
+Previously we have kept temperature constant and concentrated on the concept of work. In this section, under constant volume, heat must also be considered (here work $w$ will be zero). The amount of heat ($q$) can be measured by determining the change in temperature of a mass of material that absorbs the heat. The heat capacity ($C$) of the system is defined as:
+
+\vspace*{-0.1cm}
+
+\aeqn{2.44a}{C = \frac{\inex{dq}}{dT}\textnormal{ or }CdT = \inex{dq}}
+
+where the heat capacity acts as a proportionality constant between change in temperature and the amount of heat. Notice that the differential corresponding to heat is \textit{inexact}. This means that a path must be specified along which the differential is evaluated.
+
+\vspace*{0.25cm}
+
+For a chemically inert system we can use two variables for describing the system ($T$ and $V$ chosen here). Because the internal energy $U$ is a state function (i.e. the corresponding differential is exact), we have the total differential of $U$:
+
+\aeqn{2.44}{dU = \left(\frac{\partial U}{\partial T}\right)_VdT + \left(\frac{\partial U}{\partial V}\right)_TdV}
+
+Substituting $dU = dq - P_{ext}dV$ in Eq. (\ref{eq2.44}) gives (only $PV$-work included):
+
+\aeqn{2.45}{\inex{dq} = \left(\frac{\partial U}{\partial T}\right)_VdT + \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]dV}
+
+By choosing the path in such a way that the volume $V$ is constant, we have $dV = 0$ and:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{2.46}{\inex{dq}_V = \left(\frac{\partial U}{\partial T}\right)_V dT}
+
+Both the temperature and the heat transfer can be measured and thus it is convenient to define heat capacity $C_V(T)$ at constant volume as:
+
+\aeqn{2.47}{C_V(T) \equiv \frac{\inex{dq}_V}{dT} = \left(\frac{\partial U}{\partial T}\right)_V}
+
+For one mole of substance, heat capacity is denoted by $\bar{C}_V$.
+
+\vspace*{0.25cm}
+
+\underline{Note:} Temperature and heat are two different quantities. On molecular scales temperature is related to the kinetic energy distribution of molecules in the substance. Heat is related to the total energy of molecules (including potential energy).
+
+\vspace*{0.3cm}
+
+At constant volume, Eq. (\ref{eq2.47}) may be multiplied by $dT$ and integrated (see also Eq. (\ref{eq2.46})):
+
+\aeqn{2.48}{\Delta U_V = \int\limits_{T_1}^{T_2}C_V(T)dT = q_V}
+
+If $C_V$ is approximately constant between $T_1$ and $T_2$, we can simplify the above result:
+
+\aeqn{2.49}{\Delta U_V \approx C_V\left(T_2 - T_1\right) = C_V\Delta T}
+
+}
+
+\opage{
+
+\otext
+Now we know what $\left(\frac{\partial U}{\partial T}\right)_V$ means but how about $\left(\frac{\partial U}{\partial V}\right)_T$? To see this, we keep $T$ constant (Eq. (\ref{eq2.44})):
+
+\vspace*{-0.25cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{joule-exp}{0.5}{Joule's experiment: Gas expands\\\hspace*{0.2cm} into vacuum}
+\end{column}
+
+\begin{column}{6cm}
+
+\aeqn{2.50}{\inex{dq} = \left[P_{ext} + \left(\frac{\partial U}{\partial V}\right)_T\right]dV}
+
+Joule found in his experiments that $\Delta T\approx 0$ and therefore $q \approx 0$. Rigorously this can be shown to hold for ideal gases. This implies that for ideal gases we have:
+
+\aeqn{2.50b}{\inex{dq} = 0}
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.3cm}
+
+If we consider an ideal gas in a process where $P_{ext} = 0$ and $dV \ne 0$ (Joule's experiment), it follows that (Eq. (\ref{eq2.50})):
+
+\aeqn{2.50d}{\left(\frac{\partial U}{\partial V}\right)_T = 0\textnormal{ for an ideal gas}}
+
+\underline{This result does not hold for real gases.} In real gases molecules interact with each other and a change in volume affects the average distance between molecules.
+
+}

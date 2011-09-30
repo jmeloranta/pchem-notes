@@ -1,0 +1,104 @@
+\opage{
+\otitle{7.3 NMR and EPR experiments}
+
+\otext
+Two different approaches can be employed to record an EPR or NMR spectrum 1) continuous wave (CW) excitation or 2) pulsed excitation employing the Fourier technique. The pulsed method is nowadays the most common approach for NMR whereas the CW method is typically used in EPR experiments. Due to the large difference in the nuclear and electron magnetic moments, NMR experiments require larger magnetic fields than EPR.
+
+\otext
+\underline{CW excitation:} In a CW experiment both external magnetic and RF/microwave excitation fields are kept on constantly. In most NMR experiments the magnetic field is kept constant and the RF field frequency is varied to record the spectrum (i.e., to locate the resonant frequencies of the spins). Due to instrumental factors, in EPR experiments the microwave frequency is held constant while sweeping the external magnetic field. In NMR spectra the $x$-axis corresponds to frequency and in EPR to magnetic field value (in Tesla or Gauss). Note that the resonant frequencies and fields are related to each other through the resonance condition (see Eqs. (\ref{eq7.12}) (\ref{eq7.13})). Most CW experiments employ so called \textit{phase sensitive detection} technique (i.e., lock-in amplifier), which greatly enhances the sensitivity of the instrument but usually provides the $y$-axis as the first derivative of the absorption signal. 
+
+}
+
+\opage{
+
+\otext
+\ofig{nmr-epr}{0.3}{NMR/EPR resonance condition.}
+
+\ofig{nmr-epr-instrument}{0.4}{NMR/EPR block diagram (CW).}
+
+}
+
+\opage{
+
+\otext
+\underline{Pulsed excitation:} The pulsed technique, which is also called the \textit{Fourier transform spectroscopy}, uses short RF/MW pulses to excite the spins in a static external magnetic field (i.e., the field is \underline{not} swept). This approach attempts to excite all the spins at the same time and collect the spectrum from a single execution of the experiment, which typically takes less than a second. Typical pulse lengths for NMR are in the microsecond timescale whereas in EPR they are in nanoseconds.
+
+\ofig{nmr-epr-instrument2}{0.3}{NMR/EPR block diagram (pulsed instrument).}
+
+\otext
+To understand the pulsed magnetic resonance experiment, it is helpful to consider the time-dependent behavior of the spins and employ the vector model for spin angular momentum to represent their orientation with respect to the external magnetic field. A particle with spin 1/2 can have two orientations with respect to the external magnetic field ($m = 1/2$ or $m = -1/2$), which precess about the $z$ axis at the Larmor frequency:
+
+}
+
+\opage{
+
+\ofig{vector-model}{0.4}{}
+
+\otext
+For an ensemble of spins (on the right) the total magenization $\vec{M}$ is oriented along the $z$-axis. As the spins are randomly distributed around $z$, there is no net magnetization along $x$ or $y$ (vector sum). In this case the spins are said to be \textit{out of phase} with respect to each other.
+
+\otext
+Recall from Sec. 6.9 that linearly polarized electromagnetic field can be thought to consist of both clockwise and counter clockwise rotating components. If one of these components precesses at the same frequency as the spins (i.e., the Larmor frequency), it appears that it follows the spins in the $xy$-plane. From the point of view of the spins, it appears that the RF/MW field is stationary and we can use this \textit{rotating frame coordinate system} (denoted by a prime below). The RF/MW component rotating in the opposite direction does not induce any transitions.
+
+}
+
+\opage{
+
+\otext
+If a sufficiently high intensity RF/MW pulse is applied along the $x'$ axis (rotating frame), the magnetization $M$ can be rotated along the $x'$ axis:
+
+\ofig{pulse-exp}{0.3}{}
+
+Because all the spins precess in the $xy$ plane the same way (\textit{phase coherence}), the total magnetization will begin to oscillate in the $xy$ plane as well and this can be picked up by a Helmholtz coil (for NMR):
+
+\ofig{pulse-exp2}{0.3}{}
+
+}
+
+\opage{
+
+\otext
+Whenever the magnetization vector $M$ in the $xy$-plane passes a Holmholtz coil, a current is picked up by the coil. The two coils placed at $x$ and $y$ axes pick up a signal that is 90$^\circ$ out of phase with respect to each other.
+
+\otext
+Interaction of the spins with the surroundings (e.g., solvent, solid matrix) will eventually result in decay in the magnetization in the $xy$-plane. Two general mechanisms are responsible for this decay:
+
+\vspace*{-0.2cm}
+
+\begin{enumerate}
+\otext
+
+\item \underline{Spin-lattice relaxation ($T_1$):} The magnetization in the $xy$-plane is formed from an equal population of spins on the two spin states. If there are external oscillating magnetic fields present near the spins (from the surroundings; solvent, solid matrix etc.), they may return back to the original thermal distribution as a result of this interaction. This decreases the magnetization in the $xy$-plane. $T_1$ is also called \textit{longitudal relaxation time}.
+\item \underline{Spin-spin relaxation ($T_2$):} If the individual spins in the $xy$-plane start to fan-out because their Larmor frequencies are slightly different, the total magnetization will be reduced as there will be a partial cancellation of the magnetic moments of the individual spins in $xy$ (``out of phase''). The spins are said to loose their coherence the $xy$-plane. $T_2$ is also called the \textit{transverse relaxation time}.
+\end{enumerate}
+
+Both processes result in an exponential decay of the magnetization:
+
+}
+
+\opage{
+
+\otext
+
+\beqn{7.17}{M_z(t) - M_0 \propto e^{-t/T_1}}{M_{x,y}(t) - M_0 \propto e^{-t/T_2}}
+
+In fluid liquids, $T_1$ may have a similar magnitude to $T_2$ whereas in solids $T_1$ is often much longer than $T_2$. In liquids, $T_1$ is typically in the range of 0.5 - 50 seconds but in solids it can be up to 1000 seconds. Since most often $T_2 << T_1$, $T_2$ determines the NMR/ESR linewidth $\Delta\nu_{1/2}$ (half-width at half-height):
+
+\aeqn{7.18}{\Delta\nu_{1/2} = \frac{1}{\pi T_2}}
+
+In addition to $T_1$ and $T_2$ processes, the linewidhts can be affected by the sample inhomogeneity where each spin experiences a slightly different envronment (static; trapping sites in solids etc.). The overall spectrum appears as a sum of different NMR/EPR lines and gives \textit{inhomogeneous broadening}. For homogeneous lines the lineshape is Lorentzian (derivation from the Bloch equations) whereas for inhomoheneously broadened lines a Gaussian lineshape is obtained (statistical distribution). Note that in the presence of inhomogeneous broadening, Eqn. (\ref{eq7.18}) does not apply. If inhomogeneous effects are included, this is usually denoted by $T_2^*$.
+
+}
+
+\opage{
+
+\otext
+After pulsed excitation of the spins, the signal recorded by the Helmholtz coils is called the \textit{free induction decay} (FID). The FID contains an oscillating signal for each Larmor frequency present in the sample, which can be analyzed through the Fourier technique. Thus a Fourier transformation of the FID will yield the frequency domain NMR/EPR spectrum. Note that the FID decays in time by $T_1$ and $T_2$ processes, which contribute to the increased linewidth in the frequency domain spectrum. There are also other dynamic effects such as conformational changes, ion pair formation, etc. that may contribute to linewidhts (\textit{dynamical NMR/EPR}).
+
+\otext
+\textit{How can a single pulse excite many different Larmor frequencies at once in the sample?}
+
+\otext
+Remember that time (s) and frequency (1/s or Hz) are Fourier pairs. A short pulse in time will then correspond to a wide pulse in frequency. The shorter the pulse is, the more frequencies it will cover. However, a short pulse must be relatively more intense than a long pulse to produce the $90^\circ$ rotation of the magnetization (``$\pi/2$ pulse''). Therefore for both NMR and EPR it is advantageous to have as short and intense pulses as possible. Such pulses have one disadvantage, which is related to the deposition of large amount of power into the probe/cavity. The detector system will pick up an extremely strong signal from the excitation pulse and this will cover part of the FID. This condition is called \textit{ringing} and its effect on the spectrum can be partially overcome by \textit{windowing} the FID appropriately (for more information, see windowing and Fourier transformation). Typical pulse lengths are in $\mu$s - ms range for NMR and in ns for EPR. 
+
+}

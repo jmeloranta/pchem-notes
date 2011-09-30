@@ -1,0 +1,49 @@
+% Problem 3/1 solution
+\noindent
+\underline{Solution:}\\
+\begin{enumerate}
+\item 
+\begin{eqnarray}
+\nonumber
+& & \psi(x) = \left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2}\\
+\nonumber
+& & \hat{p}_x = -i\hbar\frac{d}{dx}\textnormal{ and }\left[\hat{x},\hat{p}_x\right]\psi(x) = \left(\hat{x}\hat{p}_x - \hat{p}_x\hat{x}\right)\psi(x)
+\end{eqnarray}
+
+To obtain the commutator, we need to operate with $\hat{x}$ and $\hat{p}_x$:
+\begin{eqnarray}
+\nonumber
+& & \left(\hat{x}\hat{p}_x\right)\psi(x) = -i\hbar\left(\frac{\pi}{\alpha}\right)^{-1/4}x\frac{d}{dx}e^{-\alpha x^2/2} = i\hbar\alpha\left(\frac{\pi}{\alpha}\right)^{-1/4}x^2e^{-\alpha x^2/2}\\
+\nonumber
+& & \left(\hat{p}_x\hat{x}\right)\psi(x) = -i\hbar\left(\frac{\pi}{\alpha}\right)^{-1/4}\frac{d}{dx}\left(xe^{-\alpha x^2/2}\right)\\
+\nonumber
+& & = i\hbar\alpha\left(\frac{\pi}{\alpha}\right)^{-1/4}x^2e^{-\alpha x^2/2} - i\hbar\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2}
+\end{eqnarray}
+
+When these are subtracted, we get:
+
+\begin{eqnarray}
+\nonumber
+& & \left(\hat{x}\hat{p}_x\right)\psi(x) - \left(\hat{p}_x\hat{x}\right)\psi(x) = i\hbar\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2}
+\end{eqnarray}
+
+When the wavefunction $\psi(x)$ is removed, we have:
+$$\left[\hat{x},\hat{p}_x\right] = i\hbar$$
+
+Because the commutator between these operators is non-zero, it means that they are complementary.
+
+\item The commutator for the given function is:
+\begin{eqnarray}
+\nonumber
+& & \left[\hat{x},\hat{I}\right]\psi(x) = \left(\hat{x}^2\hat{I} - \hat{I}\hat{x}^2\right)\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2}\\
+\nonumber
+& & = x^2\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha (-x)^2/2} - (-x)^2\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha (-x)^2/2}\\
+\nonumber
+& & = x^2\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2} - x^2\left(\frac{\pi}{\alpha}\right)^{-1/4}e^{-\alpha x^2/2} = 0\\
+\nonumber
+& & \Rightarrow \hat{x}^2\textnormal{ and }\hat{I}\textnormal{ commute for the given function.}
+\end{eqnarray}
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

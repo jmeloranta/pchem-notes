@@ -1,0 +1,31 @@
+% Problem 2/9 solution
+\noindent
+\underline{Solution:}
+
+According to the Lambert-Beer law, $A_{420\textnormal{ nm}} \propto \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]$. The rate of Fe(CN)$_6^{3-}$ disappearance and Fe(CN)$_6^{4-}$ appearance have the same magnitude but opposite sign:
+
+$$-\frac{1}{2}\frac{d\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]}{dt} = \frac{1}{2}\frac{d\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]}{dt}$$
+
+\noindent
+and also $\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right] = \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]_0 - \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]$.
+
+\noindent
+The above two relations can be combined as:
+$$\frac{1}{2}\frac{d\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]}{dt} = k_2\left(\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]_0 - \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]\right)\times\left[\textnormal{S}_2\textnormal{O}_8^{2-}\right]$$
+
+\noindent
+Since perxodisulfide is in excess, its concentration is approximately constant and we can treat the system as pseudo-first-order reaction:
+$$\frac{1}{2}\frac{d\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]}{dt} = k_1\left(\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]_0 - \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]\right)$$
+
+\noindent
+The solution to this differential equation is:
+$$\left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right] = \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{4-}\right]_0\times\left(1 - e^{-2k_1t}\right)$$
+
+\noindent
+Since $A_{420\textnormal{ 420nm}} \propto \left[\textnormal{Fe}\left(\textnormal{CN}\right)_6^{3-}\right]$, we proceed in fitting:
+$$A_{420\textnormal{ nm}} = C\times\left(1 - e^{-2k_1t}\right)$$
+
+\noindent
+Before fitting the data, one should notice that there is a baseline absorption at 420 nm since $A \ne 0$ at $t = 0$ (see the table of experimental data given). So first subtract 0.120 off from all the given values. Least squares fit to the above equation then yields $k_1 = 1.7\times 10^{-4}$ s$^{-1}$ and further $k_2 = \frac{k_1}{\left[\textnormal{S}_2\textnormal{O}_8^{2-}\right]} = \frac{1.7\times 10^4\textnormal{ s}^{-1}}{1.8\times 10^{-2}\textnormal{ M}} = 9.4\times 10^{-4}\textnormal{ s}^{-1}\textnormal{ M}^{-1}$. 
+
+\hrule\vspace{0.5cm}

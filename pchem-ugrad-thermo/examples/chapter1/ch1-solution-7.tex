@@ -1,0 +1,25 @@
+% Problem 7/1 solution
+\noindent
+\underline{Solution:}\\
+
+Based on the lecture notes, the van der Waals equation can be written:
+
+$$\left(P + \frac{a}{\bar{V}^2}\right)\left(\bar{V} - b\right) = RT$$
+
+Expand the left hand side and substitute $\bar{V} = V/n$ to get:
+
+$$nRT = PV - nPb + \frac{n^2a}{V} - \frac{n^3ab}{V^2}$$
+
+Implicit differentiation with respect to $P$ at constant $T$ gives (i.e., side by side):
+
+$$0 = V + P\left(\frac{\partial V}{\partial P}\right)_T - nb - \frac{n^2a}{V^2}\times\left(\frac{\partial V}{\partial P}\right)_T + \frac{2n^3ab}{V^3}\times\left(\frac{\partial V}{\partial P}\right)_T$$
+
+Solving for $\left(\frac{\partial V}{\partial P}\right)_T$ gives:
+
+$$\left(\frac{\partial V}{\partial P}\right)_T = \frac{nb - V}{P - n^2a/V + 2n^3ab/V^3}$$
+
+The definition of isothermal compressibility now gives (at last stage $V$ is assumed to be large):
+
+$$\kappa = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T = \frac{V - nb}{PV - n^2a/V + 2n^3ab/V^2} \rightarrow \frac{V}{PV} = \frac{1}{P}$$
+
+\hrule\vspace{0.5cm}

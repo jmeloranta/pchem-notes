@@ -1,0 +1,51 @@
+\opage{
+
+\otitle{1.13 The time-dependent Schr\"odinger equation}
+
+\otext
+\begin{itemize}
+\item[-] How does a quantum mechanical system evolve as a function of time?
+\item[-] How does the time-independent Schr\"odinger equation follow from the time-dependent equation?
+\item[-] What does it mean that the wavefunction is a complex valued function?
+\end{itemize}
+
+\otext
+Time evolution of a quantum system is given by the time-dependent Schr\"odinger equation:
+
+\aeqn{9.169}{\hat{H}\psi(x,t) = i\hbar\frac{\partial \psi(x,t)}{\partial t}}
+
+where $\hat{H} = \hat{T} + \hat{V}$. When the potential operator $\hat{V}$ depends only on position and \textit{not on time}, it is possible to separate Eq. (\ref{eq9.169}) by using the following product function:
+
+\aeqn{9.171}{\Psi(x,t) = \psi(x)f(t)}
+
+Substitution of this into (\ref{eq9.169}) gives:
+
+\aeqn{9.172}{\frac{1}{\psi(x)}\left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]\psi(x) = -\frac{\hbar}{i}\frac{1}{f(t)}\frac{df(t)}{dt}}
+
+The left hand side depends only on $x$ and the right hand side only on $t$ and thus both sides must be equal to a constant (denoted by $E$).
+
+}
+
+\opage{
+
+\otext
+By substituting $E$ into Eq. (\ref{eq9.172}), we obtain two different equations:
+
+\aeqn{9.173}{\left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]\psi(x) = E\psi(x)}
+
+\aeqn{9.174}{-\frac{\hbar}{i}\frac{df(t)}{dt} = Ef(t)}
+
+Eq. (\ref{eq9.173}) is the time-independent Schr\"odinger and the second equation can be integrated with the initial condition $\Psi(x, 0) = \psi(x)$ (i.e., $f(0) = 1$) as:
+
+\aeqn{9.175}{f(t) = e^{-Et/\hbar}}
+
+The time-dependent wavefunction is thus:
+
+\aeqn{9.176}{\Psi(x,t) = \psi(x)e^{-iEt/\hbar}}
+
+where the complex phase carries information about the energy of the system.
+
+\otext
+A superposition of eigenstates can be used to construct so called \href{http://en.wikipedia.org/wiki/Wave_packet}{\uline{wavepackets}}, which describe a localized system. Propagation of such wavepacket can be obtained by using the time-dependent Schr\"odinger equation. This is important when we are describing, for example, \href{http://en.wikipedia.org/wiki/Photodissociation}{\uline{photodissociation}} of diatomic molecules using quantum mechanics.
+
+}

@@ -1,0 +1,161 @@
+\opage{
+\otitle{5.5 Effect of temperature on the equilibrium constant}
+
+\otext
+The effect of temperature on chemical equilibrium is determined by $\Delta_r H^\circ$:
+
+\aeqn{5.38}{\Delta_rH^\circ \umark{=}{\textnormal{Eq.} (\ref{eq4.63})} -T^2\left[\frac{\partial\left(\Delta_r G^\circ / T\right)}{\partial T}\right]_P \umark{=}{\textnormal{Eq.} (\ref{eq5.13})} RT^2\left[\frac{\partial\left(\ln\left(K\right)\right)}{\partial T}\right]_P}
+
+\aeqn{5.39}{\Rightarrow \left(\frac{\partial\left(\ln\left(K\right)\right)}{\partial T}\right)_P = \frac{\Delta_r H^\circ}{RT^2}\textnormal{ (van't Hoff equation)}}
+
+For endothermic reactions the equilibrium constant increases as the temperature is increased, but for an exothermic reactions the equilibrium constant decreases as the temperature is increased. This means that endothermic (``requires heat'') reactions are favored at higher temperature whereas exothermic (``releases heat'') are favored at lower temperatures. The equilibrium shifts in direction where the reaction can ``consume'' more heat.
+
+\vspace*{0.2cm}
+
+If $\Delta_r H^\circ$ is independent of temperature, integration of Eq. (\ref{eq5.39}) from $T_1$ to $T_2$ gives:
+
+\aeqn{5.41a}{\ln\left(\frac{K\left(T_2\right)}{K\left(T_1\right)}\right) = \frac{\Delta_r H^\circ\left(T_2 - T_1\right)}{RT_1T_2}}
+
+where $K\left(T_1\right)$ and $K\left(T_2\right)$ are the equilibrium constants at $T_1$ and $T_2$, respectively.
+
+}
+
+\opage{
+
+\otext
+\underline{Note:} If $\Delta_r H^\circ$ is independent of temperature, then $\Delta_r C_P^\circ$ is zero (Eqs. (\ref{eq2.61}) and (\ref{eq2.96})). It will turn out later in Eq. (\ref{eq5.46}) that since $\Delta_r C_P^\circ$ is zero then $\Delta_r S^\circ$ is also independent of temperature.
+
+\vspace*{0.2cm}
+
+By assuming $\Delta_rC_P^\circ = 0$ and combining Eqs. (\ref{eq5.13}) and (\ref{eq5.17}) we get:
+
+\beqn{5.41}{\Delta_r G^\circ = -RT\ln\left(K\right)\textnormal{ and }\Delta_r G^\circ = \Delta_r H^\circ - T\Delta_rS^\circ}
+{\Rightarrow \ln\left(K\right) = -\frac{\Delta_r H^\circ}{RT} + \frac{\Delta_rS^\circ}{R}}
+
+Because $\Delta_r H^\circ$ and $\Delta_rS^\circ$ were assumed to be independent of temperature, plotting this function should yield a straight line ($\ln\left(K\right)$ vs. $1/T$).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate $\Delta_rH^\circ$ and $\Delta_rS^\circ$ for the reaction: N$_2(g)$ + O$_2(g)$ = 2NO$(g)$. Assume that $\Delta_rC_P^\circ$ is zero. The following values for $K$ were obtained experimentally:
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lllllllll}
+$T$ (K) & 1900 & 2000 & 2100 & 2200 & 2300 & 2400 & 2500 & 2600\\
+$K$ ($\times 10^{-4}$) & 2.31 & 4.08 & 6.86 & 11.0 & 16.9 & 25.1 & 36.0 & 50.3\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Use Eq. (\ref{eq5.41}) to obtain the slope and the intercept from a $\ln\left(K\right)$ vs. $1 / T$ plot. This must be done by fitting Eq. (\ref{eq5.41}) to the experimental data. From the slope one can obtain $\Delta_rH^\circ$ by multiplying by $-R$ and $\Delta_rS^\circ$ by multiplying the intercept by $R$. The plot (data and fitting) is shown below.
+
+}
+
+\opage{
+
+\otext
+
+\vspace*{-0.5cm}
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{eq-const-example}{0.2}{}
+\end{column}
+
+\begin{column}{6cm}
+Slope = $-\Delta_rH^\circ / R = -21.8 \times 10^3$ K\\
+Intercept = $\Delta_rS^\circ / R = 3.08$\\
+\end{column}
+
+\end{columns}
+
+The values for $\Delta_r H^\circ$ and $\Delta_r S^\circ$ can be now calculated:\\
+
+\vspace*{-0.5cm}
+
+$$\Delta_rH^\circ = -\textnormal{slope}\times R = -\left(-21.9\times 10^3\textnormal{ K}\right)\times\left(8.315\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) = 182\textnormal{ kJ mol}^{-1}$$
+\vspace*{-0.6cm}
+$$\Delta_r S^\circ = \textnormal{intercept}\times R = \left(3.08\right)\times\left(8.315\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) = 25.6\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+Note that the assumption of no temperature dependency in $\Delta_rH^\circ$ and $\Delta_rS^\circ$ appears to be a good one here. If this was not the case, the above plot would not yield a straight line (because ``the slope and intercept would depend on $T$'').
+
+\vspace*{0.2cm}
+
+The standard reaction entropy $\Delta_rS^\circ$ indicates how much the entropy changes in a reaction under standard conditions and at a given temperature. For a given reaction it can be calculated by:
+
+\vspace*{-0.2cm}
+
+\aeqn{5.42}{\Delta_rS^\circ = \sum\limits_{i=1}^{N_s}v_i\bar{S}^\circ_i}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the standard reaction entropies for the following reactions at 298 K by using the data in the Chemistry WebBook:
+
+\begin{itemize}
+\item[(a)] $\textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g) = \textnormal{H}_2\textnormal{O}(g)$
+\item[(b)] $\textnormal{N}_2(g) + 3\textnormal{H}_2(g) = 2\textnormal{NH}_3(g)$
+\end{itemize}
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Eq. (\ref{eq5.42}) gives the following results:
+
+\vspace*{-0.3cm}
+
+$$(\textnormal{a})\textnormal{ }\Delta_rS^\circ = \bar{S}^\circ_{\textnormal{H}_2\textnormal{O}(g)} - \bar{S}^\circ_{\textnormal{H}_2(g)} - \frac{1}{2}\bar{S}_{\textnormal{O}_2(g)} = \left(69.95\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)$$
+$$ - \left(130.68\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) - \frac{1}{2}\left(205.15\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) = -163.33\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\vspace*{-0.3cm}
+
+$$(\textnormal{b})\textnormal{ }\Delta_rS^\circ = 2\bar{S}^\circ_{\textnormal{NH}_3(g)} - \bar{S}^\circ_{\textnormal{N}_2(g)} - 3\bar{S}^\circ_{\textnormal{H}_2(g)} = 2\left(192.77\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)$$
+$$ - \left(191.61\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) - 3\left(130.68\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right) = -198.11\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+\hrulefill
+
+In general, both $\Delta_r H^\circ$ and $\Delta_r S^\circ$ depend on temperature because the reaction heat capacity depends on temperature. In Eqs. like (\ref{eq2.97}) and (\ref{eq3.49}) we have already seen this kind of temperature dependency (note that $\Delta_r$ and $\Delta_f$ quantities are very similar - one is for some given reaction and the other is for a formation reaction and thus they behave exactly the same way). To summarize the results:
+
+}
+
+\opage{
+
+\otext
+\aeqn{5.43}{\Delta_fH^\circ_i(T) = \Delta_fH^\circ_i(298.15\textnormal{ K}) + \int\limits_{298.15\textnormal{ K}}^T\bar{C}^\circ_{P,i}(T')dT'}
+
+\aeqn{5.44}{\bar{S}^\circ_i(T) = \bar{S}^\circ_i(298.15\textnormal{ K}) + \int\limits_{298.15\textnormal{ K}}^T \frac{\bar{C}_{P,i}(T')}{T'}dT'}
+
+\aeqn{5.45}{\Delta_rH^\circ(T) = \Delta_rH^\circ(298.15\textnormal{ K}) + \int\limits_{298.15\textnormal{ K}}^T \Delta_rC_{P}^\circ(T')dT'}
+
+\aeqn{5.46}{\Delta_rS^\circ(T) = \Delta_rS^\circ(298.15\textnormal{ K}) + \int\limits_{298.15\textnormal{ K}}^T \frac{\Delta_rC_{P}^\circ(T')}{T'}dT'}
+
+\vspace*{-0.2cm}
+
+Remember also Eq. (\ref{eq2.94}): $\Delta_rH^\circ = \sum\limits_{i=1}^{N_s}v_i\Delta_fH^\circ_i$ and $\Delta_rS^\circ = \sum\limits_{i=1}^{N_s}v_i\Delta_fS^\circ_i$. Recall also that $C_{P,i}^\circ$ can be represented as power series in $T$.
+
+\vspace*{0.1cm}
+
+The above results together with $\Delta_r G^\circ(T) = \Delta_rH^\circ(T) - T\Delta_rS^\circ(T)$ can be used for deriving an expression for $\Delta_rG^\circ$:
+
+\vspace*{-0.3cm}
+
+\aeqn{5.47}{\Delta_rG^\circ(T) = \Delta_rG^\circ(298.15\textnormal{ K}) + \int\limits_{298.15\textnormal{ K}}^T\Delta_rC_P^\circ(T')dT' - T\int\limits_{298.15\textnormal{ K}}^T\frac{\Delta_rC_P^\circ(T')}{T'}dT'}
+
+}
+
+\opage{
+
+\otext
+Note that above $\Delta_rG^\circ(298.15\textnormal{ K})$ must be interpreted as ($T \ne 298.15$ K!):
+
+$$\Delta_rG^\circ(298.15\textnormal{ K}) = \Delta_r H^\circ(298.15\textnormal{ K}) - T\Delta_rS^\circ(298.15\textnormal{ K})$$
+
+Recall from Eq. (\ref{eq5.13}) that $\ln\left(K\right) = -\Delta_rG^\circ / RT$ and thus we get:
+
+\beqn{5.48}{\ln\left(K(T)\right) = \frac{298.15\textnormal{ K}}{T}\times\ln\left(K(298.15\textnormal{ K})\right) - \frac{1}{RT}\int\limits_{298.15\textnormal{ K}}^T\Delta_rC_P^\circ(T')dT'\textnormal{\phantom{xxxxx}}}
+{ + \frac{1}{R}\int\limits_{298.15\textnormal{ K}}^T\frac{\Delta_rC_P^\circ(T')}{T'}dT'\hspace*{0.5cm}}
+
+However, calculation of the temperature dependency in $K$ is rather tedious this way. Numerical integration methods are a great help (i.e. using computers). Another way to integrate the Gibbs-Helmholtz is Eq. (\ref{eq4.62}). Also note that Eq. (\ref{eq5.48}) can be simplified if the reaction heat capacities are assumed to independent of temperature.
+
+}

@@ -1,0 +1,212 @@
+\opage{
+\otitle{6.1 Phase diagrams of one-component systems}
+
+\otext
+Earlier we saw that plotting a $P-V-T$ surface in three dimensions is difficult. Furthermore we have seen (i.e., the Gibbs phase rule) that at maximum two variables are need to defined for describing a one-component system. Most commonly $P$ and $T$ are chosen as variables when phase-diagrams are plotted.
+
+\vspace*{-0.4cm}
+
+\begin{columns}
+
+\begin{column}{3cm}
+\ofig{phase-diagram}{0.25}{Schematic phase diagram\\\hspace*{0.1cm} of water}
+\end{column}
+
+\begin{column}{3cm}
+\ofig{phase-diagram2}{0.4}{Phase diagram of helium}
+\end{column}
+
+\begin{column}{3cm}
+\ofig{phase-diagram3}{0.4}{Phase diagram of CO$_2$}
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Note that along the phase boundary lines two phases exist in equilibrium. The Gibbs phase rule now gives $F = 1$, which means that only one variable may be specified independently. The boundary lines can be understood as functions and as such they introduce a dependency between $P$ and $T$ (i.e. reduces $F$ to 1). At points where all three different phases exist at the same time (``triple point'') we have $F = 0$ (i.e. they are just points in the graphs and both $P$ and $T$ are fixed).
+
+\vspace*{0.2cm}
+
+\underline{What defines the phase boundaries?}
+
+\vspace*{0.2cm}
+
+Recall that at constant $T$ and $P$ the the equilibrium (i.e. $dG = 0$) between two phases $\alpha$ and $\beta$ is Eq. (\ref{eq4.82}):
+
+$$dG = \mu_{\alpha}dn_{\alpha} + \mu_{\beta}dn_{\beta} = \mu_{\alpha}dn - \mu_{\beta}dn = 0 \Rightarrow \mu(\alpha) = \mu(\beta)$$
+
+In order to tell which phase is stable at given pressure and temperature, we must calculate the chemical potentials for each phase and compare them. The phase with the lowest chemical potential is stable. To obtain general statements about stabilities of different phases, we must recall the following results (Eqs. (\ref{eq4.84}) and (\ref{eq4.85})):
+
+\aeqn{6.1}{-\bar{S} = \left(\frac{\partial \mu}{\partial T}\right)_P}
+
+\aeqn{6.2}{\bar{V} = \left(\frac{\partial \mu}{\partial P}\right)_T}
+
+Remember that derivatives define slopes (here for the chemical potential $\mu$).
+
+}
+
+\opage{
+
+\otext
+\underline{1. Dependency of $\mu$ on temperature}
+
+\vspace*{0.2cm}
+
+We will use Eq (\ref{eq6.1}) above to predict the slopes for $\mu = \mu(T)$. Remember that $S$ is always non-negative, which means that $\mu(T)$ must have a non-negative slope. From our statistical
+interpretation of entropy can conclude that: $\bar{S}$(solid) $<$ $\bar{S}$(liquid) $<<$ $\bar{S}$(gas). Based on these results we can graph $\mu(T)$ for each phase qualitatively.
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\ofig{mu-temperature}{0.5}{}
+
+\end{column}
+
+\begin{column}{4cm}
+
+\otext
+
+The slopes of the lines are given by $-\bar{S}_{\textnormal{solid}}$, $-\bar{S}_{\textnormal{liquid}}$ and $-\bar{S}_{\textnormal{gas}}$.
+
+\vspace*{0.2cm}
+
+Note that the entropy only gives the slope. Also this approximation assumes that $\mu(T)$ is a straight line.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+$T_m$ & = melting temperature\\
+$T_b$ & = boiling temperature\\
+$P$   & = constant\\
+\end{tabular}
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{2. Dependency of $\mu$ on pressure}
+
+\vspace*{0.2cm}
+
+The previous Eq. (\ref{eq6.2}) gives the slope for $\mu(P)$ when temperature is constant. The slope is equal to the molar volume, which is a non-negative quantity. The molar volumes for different phases are known to follow: $\bar{V}_{\textnormal{solid}} < \bar{V}_{\textnormal{liquid}} << \bar{V}_{\textnormal{gas}}$. An exception to this rule is, for example, water, which we will consider separately.
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\ofig{mu-pressure}{0.5}{}
+
+\end{column}
+
+\begin{column}{4cm}
+
+\otext
+
+The slopes of the lines are given by the molar volumes for the different phases. Note that the molar volume only gives the slope. Also this approximation assumes that $\mu(P)$ is a straight line.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+$P_m$ & = melting pressure\\
+$P_b$ & = boiling pressure\\
+$T$   & = constant\\
+\end{tabular}
+\end{column}
+
+\end{columns}
+
+If gas is compressed, it will first become liquid and upon more compression it will eventually become a solid. At some given temperature a liquid can be made to boil if the pressure is reduced accordingly. For example, vacuum distillation is based on this principle.
+
+}
+
+\opage{
+
+\otext
+For water we have: $\bar{V}_{\textnormal{liquid}} < \bar{V}_{\textnormal{solid}} << \bar{V}_{\textnormal{gas}}$
+
+\vspace*{0.2cm}
+
+Here it turns out that the volume of the solid is larger than the liquid (the density of liquid is higher than the solid). For this reason, for example, ice cubes stay on top of water or water upon freezing expands and in nature this expansion process can break even rocks. Most solids sink in the corresponding liquid because they contract on freezing (i.e., the density increases).
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{water-phasediag}{0.4}{}
+\end{column}
+
+\begin{column}{4cm}
+
+\otext
+
+The numbers in the graph refer to different solid crystal structures of water (i.e., ice). If the temperature is fixed at the dashed line and the initial pressure is zero then upon icreasing the pressure we will observe the following phases: solid(I), liquid, solid(V) and finally solid(IV).
+\end{column}
+
+\end{columns}
+
+Other substances that expand when they freeze are: sulfuric acid, gallium, acetic acid and silicon. For chemists this information is very useful in practical laboratory work: if you freeze these materials in ``fragile'' containers, you may break the container! The term fragility here refers to the ability of the container to withstand expansion (e.g., quartz vs. normal glass).
+
+}
+
+\opage{
+
+\otext
+\underline{3. Combined effect of pressure and temperature}
+
+\vspace*{0.2cm}
+
+The combined effect of pressure and temperature is shown below by plotting $\mu(T)$ vs. $T$ at two different pressures (``high'' and ``low''):
+
+\ofig{mu-pressure-temperature}{0.5}{}
+
+Note the shift in $T_m$ and $T_b$ as a function of pressure. At higher $P$ both $T_m$ and $T_b$ increase.
+
+}
+
+\opage{
+
+\otext
+The previously discussed changes in phase are said to be first order phase transitions. The first order refers to the fact the the chemical potential has discontinuous first derivative with respect to pressure and temperature. For example $d\mu(P)/dP$ is discontinuous at phase transitions:
+
+\ofig{mu-pressure}{0.5}{}
+
+Thus above on each side of the non-differentiable points, the substance has different molar volumes. At transition points heat capacities also tend to approach infinity. This can be understood qualitatively by inspecting Eqs. (\ref{eq2.47}) and (\ref{eq2.61}):
+
+$$C_V = \frac{dq_V}{dT}\textnormal{ and }C_P = \frac{dq_P}{dT}\Rightarrow \Delta T = \frac{q_V}{C_V(T)}\textnormal{ and }\Delta T = \frac{q_P}{C_P(T)}$$
+
+}
+
+\opage{
+
+\otext
+At transition points all the supplied heat ($q$) is used for driving the phase transition (i.e. the temeprature remains constant until the phase transition is complete). According to the previous equations this can only happen if the heat capacities are infinite at the transition points ($\Delta T = 0$, $q > 0 \Rightarrow C \rightarrow \infty$).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} A special case of phase transition occurs between two liquid phases He-I and He-II (normal and superfluid $^4$He) at low temperatures. Due to the shape of the transition, it is also called $\lambda$-transition (under saturated vapor pressure this occurs at 2.17 K).
+
+\ofig{lambda-helium}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+In a second order phase transition (no heat involved in transition) the first derivative of chemical potential is continuous but the second derivative has a discountinuity. The heat capacity does not become infinite at these points but show only a discontinuous jump. Behavior of various thermodynamic quantities at first and second order transition points is shown below.
+
+\ofig{phase-transitions}{0.4}{A) First order phase transition, B) Second order phase transition}
+
+\vspace*{0.3cm}
+
+Examples of 2nd order phase transitions are ferromagnetic, superconductor and superfluid transitions. The classification scheme for phase transitions was proposed by Paul Ehrenfest (1880 - 1933). Formally his classicication is not quite correct and one should differentiate between the 1st and 2nd order phase transitions by the involvement of heat exchange.
+
+}

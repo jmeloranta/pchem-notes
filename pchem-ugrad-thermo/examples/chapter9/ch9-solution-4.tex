@@ -1,0 +1,15 @@
+% Problem 4/9 solution
+\noindent
+\underline{Solution:}
+
+In the lecture notes it was shown that: $\frac{d\left[\textnormal{P}\right]}{dt} = k'\left[\textnormal{A}\right]\left[\textnormal{B}\right]$
+where $k' = \frac{k_+k}{k_-}$. This is effectively a second-order rate equation, which can be written in integrated form as:
+
+$$k't = \frac{1}{\left[\textnormal{B}\right]_0 - \left[\textnormal{A}\right]_0} \ln\left(\frac{\left[\textnormal{A}\right]_0\left(\left[\textnormal{B}\right]_0 - x\right)}{\left(\left[\textnormal{A}\right]_0-x\right)\left[\textnormal{B}\right]_0}\right)$$
+where $\left[\textnormal{A}\right] = \left[\textnormal{A}\right]_0 - x$, $\left[\textnormal{B}\right] = \left[\textnormal{B}\right]_0 - x$, and $\left[\textnormal{P}\right] = x$.
+
+\noindent
+This can be solved for $x$ (which is equal to $\left[\textnormal{P}\right]$):
+
+$$\left[\textnormal{P}\right] = x = \frac{\left[\textnormal{B}\right]_0 - \left[\textnormal{B}\right]_0e^{k't\left(\left[\textnormal{B}\right]_0 - \left[\textnormal{A}\right]_0\right)}}{1 - \frac{\left[\textnormal{B}\right]_0}{\left[\textnormal{A}\right]_0}e^{k't\left(\left[\textnormal{B}\right]_0 - \left[\textnormal{A}\right]_0\right)}}$$
+\hrule\vspace{0.5cm}

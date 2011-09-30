@@ -1,0 +1,56 @@
+\opage{
+\otitle{5.12 The Lambert-Beer law}
+
+\otext
+Consider an experiment where monochromatic light is passing through a sample of known concentration and thickness. The \textit{transmittance} of light at a particular wavelength can be determined by measuring the transmitted light intensity $I$ (W m$^{-2}$; $I = c\times\rho_\nu$) relative to the incident light intensity $I_0$ (W m$^{-2}$):
+
+\aeqn{n5.116}{T = \frac{I}{I_0}}
+
+Note that in most cases $I_0$ must include the possible effect of absorption by the solvent (and the sample cuvette), in which case $I_0$ refers to the intensity of light passing through the sample with the cuvette and solvent but not the compound being studied. Transmittance can be mapped at different wavelengths, and the absorption spectrum can be determined.
+
+\vspace*{0.2cm}
+
+To consider the absorption of light within the sample, we will derive the \textit{Lambert-Beer} law. The light beam is passed through the sample cuvette as shown below:
+
+\ofig{Beer_lambert}{0.13}{}
+
+}
+
+\opage{
+
+\otext
+The probability that a photon wil be absorbed is usually proportional to the concentration of absorbing molecules, to the intensity of light, and to the thickness of the sample for a very thin sample. This can be expressed as:
+
+\aeqn{n5.117}{dI = -\kappa cdxI \Rightarrow \frac{dI}{I} = -\kappa cdx}
+
+where $I$ is the light intensity (W m$^{-2}$), $dI$ is the change in light indentisty by a sample layer with thickness $dx$ (dm), $c$ is the concentration (mol L$^{-1}$), and $\kappa$ is the $e$-base molar absorption coefficient (dm$^{2}$ mol$^{-1}$). The distance $x$ is measured along the path of light propagation through the sample. This differential equation can be integrated:
+
+\beqn{n5.118}{\int\limits_{I_0}^I \frac{dI}{I} = -\kappa c\int\limits_0^Ldx}
+{\Rightarrow \ln\left(\frac{I}{I_0}\right) = 2.303\log\left(\frac{I}{I_0}\right) = -\kappa cL}
+
+Usually the 10-base logarithm is used (the \textit{Lambert-Beer law}):
+
+\aeqn{n5.119}{\log\left(\frac{I_0}{I}\right) \equiv A = \epsilon cL}
+
+}
+
+\opage{
+
+\otext
+where $A$ is the absorbance (dimensionless), $L$ is the length of the sample (dm), and $\epsilon$ is the \textit{molar absorption coefficient} (dm$^2$ mol$^{-1}$). If the sample length is given in cm, the molar absorption coefficient has units L mol$^{-1}$ cm$^{-1}$. $\epsilon$ is characteristic to a given absorbing species and it depends on wavelength, solvent, and temperature. Clearly, the absorbance $A$ also depends on the same conditions. Note that the Lambert-Beer law may not be obeyed if the incident light is not monochromatic, the compound photoassociates or photodissociates, or the sample is optically thick.
+
+\vspace*{0.2cm}
+
+For mixtures of independently absorbing substances the absorbance is given by:
+
+\aeqn{n5.120}{A = \log\left(\frac{I_0}{I}\right) = \left(\epsilon_1c_1 + \epsilon_2c_2 + ...\right)L} 
+
+The Lambert-Beer law can also be written in alternative ways:
+
+\ceqn{n5.121}{I = I_010^{-\epsilon cL}}
+{I = I_0e^{-\kappa c'L'}}
+{I = I_0e^{-\sigma Nx}}
+
+The difference between the first and second equations is just the use of different base for the logarithm. In the third equation $N$ is the number density of molecules (m$^{-3}$), $x$ is the length of the sample (m), and $\sigma$ is the \textit{absorption cross section} (m$^2$). For broad peaks, the molar absorption coefficient is recorded at the maximum absorbance ($\epsilon_{max}$).
+
+}

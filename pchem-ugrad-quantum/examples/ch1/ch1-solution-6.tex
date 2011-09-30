@@ -1,0 +1,124 @@
+% Problem 6/1 solution
+\noindent
+\underline{Solution:}\\
+\begin{enumerate}
+\item For momentum:
+\begin{eqnarray}
+\nonumber
+& & \psi_n(x) = \left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right),\textnormal{ where }0\le x\le L\\
+\nonumber
+& & \left<\hat{p}_x\right> = \int\limits_0^L\underbrace{\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)}_{\psi_n^*(x)}
+\underbrace{\left(-i\hbar\frac{d}{dx}\right)}_{\hat{p}_x}\underbrace{\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)}_{\psi_n(x)}dx\\
+\nonumber
+& & = -\frac{2i\hbar}{L}\int\limits_0^L\sin\left(\frac{n\pi x}{L}\right)\frac{d}{dx}\left(\sin\left(\frac{n\pi x}{L}\right)\right)dx
+\end{eqnarray}
+
+\begin{eqnarray}
+\nonumber
+& & = -\frac{2\pi ni\hbar}{L^2}\underbrace{\int\limits_0^L\sin\left(\frac{n\pi x}{L}\right)\cos\left(\frac{n\pi x}{L}\right)dx}_{= 0} = 0\\
+\nonumber
+& & \left<\hat{p}_x^2\right> = \int\limits_0^L\underbrace{\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)}_{\psi^*_n}
+\underbrace{\left(-i\hbar\frac{d}{dx}\right)^2}_{\hat{p}_x^2}\underbrace{\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)}_{\psi_n}dx\\
+\nonumber
+& & = -\frac{2\hbar^2}{L}\int\limits_0^L\sin\left(\frac{n\pi x}{L}\right)\frac{d^2}{dx^2}\sin\left(\frac{n\pi x}{L}\right)dx\\
+\nonumber
+& & = \frac{2n^2\pi^2\hbar^2}{L^3}\underbrace{\int\limits_0^L\sin\left(\frac{n\pi x}{L}\right)\sin\left(\frac{n\pi x}{L}\right)dx}_{=\frac{L}{2}} = \frac{n^2\pi^2\hbar^2}{L^2}
+\end{eqnarray}
+
+Now we can calculate $\Delta p = \sqrt{\left<\hat{p}_x^2\right> - \left<\hat{p}_x\right>^2} = \frac{n\pi\hbar}{L}$. For position we have:
+\begin{eqnarray}
+\nonumber
+& & \left<\hat{x}\right> = \int\limits_0^L\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)x\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)dx\\
+\nonumber
+& & = \frac{2}{L}\int\limits_0^Lx\sin^2\left(\frac{n\pi x}{L}\right)dx = L/2\\
+\nonumber
+& & \left<\hat{x}^2\right> = \int\limits_0^L\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)x^2\left(\frac{2}{L}\right)^{1/2}\sin\left(\frac{n\pi x}{L}\right)dx\\
+\nonumber
+& & = \frac{2}{L}\underbrace{\int\limits_0^Lx^2\sin^2\left(\frac{n\pi x}{L}\right)dx}_{=\frac{L^3(4n^2\pi^2 - 6)}{24\pi^2n^2}} = \frac{L^2(2\pi^2n^2 - 3)}{6\pi^2n^2} = \frac{L^2}{3}\left(1 - \frac{3}{2\pi^2n^2}\right)
+\end{eqnarray}
+
+Now $\Delta x = \sqrt{\left<\hat{x}^2\right> - \left<\hat{x}\right>^2} = \sqrt{\frac{L^2}{3}\left(1 - \frac{3}{2\pi^2n^2}\right) - \frac{L^2}{4}} = L\sqrt{\frac{1}{12} - \frac{1}{2\pi^2n^2}}$. Since we have both $\Delta x$ and $\Delta p$, we can evaluate the uncertainty product:
+$$\Delta p\Delta x = \hbar\sqrt{\frac{n^2\pi^2}{12} - \frac{6}{12}}$$
+
+The smallest value is obtained with $n = 1$: $\Delta p\Delta x\approx 0.568\times\hbar > \frac{\hbar}{2}$.
+
+\item First recall that:
+
+$$\psi_n(x) = N_vH_v\left(\sqrt{\alpha}x\right)e^{-\alpha x^2/2},\textnormal{ where }N_v=\frac{1}{\sqrt{2^vv!}}\left(\frac{\alpha}{\pi}\right)^{1/4}$$
+
+Also the following relations for Hermite polynomials are used (lecture notes \& tablebook):
+\begin{eqnarray}
+\nonumber
+ & & H_{v+1} = 2yH_v - 2vH_{v-1}\\
+\nonumber
+ & & \int\limits_{-\infty}^{\infty}H_{v'}(y)H)v(y)e^{-y^2}dy = \left\lbrace\begin{matrix}0, & \textnormal{if }v\ne v'\\
+\sqrt{\pi}2^vv!, & \textnormal{if }v = v'\end{matrix}\right.
+\end{eqnarray}
+
+Denote $y = \sqrt{\alpha}x$ and hence $dy = \sqrt{\alpha}dx$. Now $\left<\hat{x}\right>$ is given by:
+\begin{eqnarray}
+\nonumber
+& & \left<\hat{x}\right> = N_v^2\int\limits_{-\infty}^{\infty}H_v\left(\sqrt{\alpha}x\right)e^{-\alpha x^2/2}xH_v\left(\sqrt{\alpha}x\right)e^{-\alpha x^2/2}dx\\
+\nonumber
+& & = \frac{N_v^2}{\alpha}\int\limits_{-\infty}^{\infty}H_v(y)e^{-y^2/2}yH_v(y)e^{-y^2/2}dy\\
+\nonumber
+& & = \frac{N_v^2}{\alpha}\int\limits_{-\infty}^{\infty}\underbrace{H_v(y)y}_{=\frac{1}{2}H_{v+1}(y) + vH_{v-1}(y)}H_v(y)e^{-y^2}dy = 0
+\end{eqnarray}
+
+The last two steps involved using the recursion relation for Hermite polynomials as well as their orthogonality property. Next we calculate $\left<\hat{x}^2\right>$:
+
+\begin{eqnarray}
+\nonumber
+& & \left<\hat{x}^2\right> = \frac{N_v^2}{\alpha^{3/2}}\int\limits_{-\infty}^{\infty}\left(yH_v(y)\right)^2e^{-y^2}dy\\
+\nonumber
+& & = \frac{N_v^2}{\alpha^{3/2}}\int\limits_{-\infty}^{\infty}\left(\frac{1}{2}H_{v+1}(y) + vH_{v-1}(y)\right)^2e^{-y^2}dy\\
+\nonumber
+& & = \sqrt{\pi}\frac{N_v^2}{\alpha^{3/2}}\left(\frac{2^{v+1}(v+1)!}{4} + v^22^{v-1}(v - 1)!\right)\\
+\nonumber
+& & = \frac{1}{2\alpha}\left((v + 1) + v\right) = \frac{1}{\alpha}\left(v + \frac{1}{2}\right) = \frac{\hbar}{\sqrt{\mu k}}\left(v + \frac{1}{2}\right)
+\end{eqnarray}
+
+Combining the above calculations gives $\Delta x = \sqrt{\left(v + \frac{1}{2}\right)\frac{\hbar}{\sqrt{\mu k}}}$. Next we calculate $\Delta p$:
+\begin{eqnarray}
+\nonumber
+& & \hat{p} = -i\hbar\frac{d}{dx}\textnormal{ and }dy = \sqrt{\alpha}dx.\\
+\nonumber
+& & \left<\hat{p}\right> = \int\limits_{-\infty}^{\infty} N_vH_v(y)e^{-y^2/2}\hat{p}\left(N_vH_v(y)e^{-y^2/2}\right)dy\\
+\nonumber
+& & = -i\hbar N_v^2\int\limits_{-\infty}^{\infty}H_v(y)e^{-y^2/2}\frac{d}{dx}\left(H_v(y)e^{-y^2/2}\right)dy
+\end{eqnarray}
+
+Above differentiation of the eigenfunction changes parity and therefore the overall parity of the integrand is odd. Integral of odd function is zero
+and thus $\left<\hat{p}\right> = 0$. For $\left<\hat{p}^2\right>$ we have:
+\begin{eqnarray}
+\nonumber
+& & \left<\hat{p}^2\right> = \int\limits_{-\infty}^{\infty}N_vH_v(y)e^{-y^2/2}\hat{p}^2 N_vH_v(y)e^{-y^2/2}\frac{dy}{\sqrt{\alpha}}
+\end{eqnarray}
+The operator must also be transformed from $x$ to $y$: $\hat{p}^2 = (-i\hbar d/dx)^2$ $= (-i\hbar \sqrt{\alpha} d/dx)^2)$. The above becomes now:
+\begin{eqnarray}
+\nonumber
+& & \int\limits_{-\infty}^{\infty}N_vH_v(y)e^{-y^2/2}\left(-\hbar^2\alpha\frac{d^2}{dy^2}\right)\left(N_vH_v(y)e^{-y^2/2}\right)\frac{dy}{\sqrt{\alpha}}
+\end{eqnarray}
+
+\begin{eqnarray}
+\nonumber
+& & = -\hbar^2\sqrt{\alpha}N_v^2\int\limits_{-\infty}^{\infty}H_v(y)e^{-y^2/2}\frac{d^2}{dy^2}\left(H_v(y)e^{-y^2/2}\right)dy\\
+\nonumber
+& & = -\hbar^2\sqrt{\alpha}N_v^2\int\limits_{-\infty}^{\infty}H_v(y)\left[(y^2 - 1)H_v(y)\underbrace{-2yH_v'(y) + H_v''(y)}_{=-2vH_v(y)}\right]e^{-y^2}dy\\
+\nonumber
+& & = -\hbar^2\sqrt{\alpha}N_v^2\int\limits_{-\infty}^{\infty}H_v(y)\left[(y^2 - 1)H_v(y) - 2vH_v(y)\right]e^{-y^2}dy\\
+\nonumber
+& & = -\hbar^2\sqrt{\alpha}N_v^2\left[(-2v-1)\underbrace{\int\limits_{-\infty}^{\infty}H_v^2(y)e^{-y^2}dy}_{=\sqrt{\pi}2^vv!} + \int\limits_{-\infty}^{\infty}\underbrace{y^2H_v^2(y)}_{=\left(\frac{1}{2}H_{v+1}(y) + vH_{v-1}(y)\right)^2}e^{-y^2}dy\right]\\
+\nonumber
+& & = -\hbar^2\sqrt{\alpha}N_v^2\left[(-2v-1)\sqrt{\pi}2^vv! + \frac{1}{4}\sqrt{\pi}2^{v+1}(v+1)! + v^2\sqrt{\pi}2^{v-1}(v-1)!\right]\\
+\nonumber
+& & = \hbar^2\sqrt{\alpha}N_v^2\sqrt{\pi}2^vv!\left[2v+1-\frac{v+1}{2} - \frac{v}{2}\right] = \hbar^2\alpha\left[v + \frac{1}{2}\right]\\
+\nonumber
+& & = \hbar\sqrt{mk}\left[v + \frac{1}{2}\right]
+\end{eqnarray}
+
+Therefore we have $\Delta p = \sqrt{\hbar\sqrt{mk}\left[v + \frac{1}{2}\right]}$. Overall we then have $\Delta x\Delta p = \sqrt{\left(v + \frac{1}{2}\right)\frac{\hbar}{\sqrt{mk}}}\sqrt{\hbar\sqrt{mk}\left[v + \frac{1}{2}\right]}$ $= \hbar(v + \frac{1}{2})\ge \frac{\hbar}{2}$.
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

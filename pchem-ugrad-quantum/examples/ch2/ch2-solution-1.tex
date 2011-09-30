@@ -1,0 +1,49 @@
+% Problem 1/2 solution
+\noindent
+\underline{Solution:}\\
+
+First we check that the wavefunctions are normalized. For hydrogenlike atom orbitals we have the following orthonormality condition: $\left<\psi_{n,l,m}\left|\psi_{n',l',m'}\right.\right> = \delta_{nn'}\delta_{ll'}\delta_{mm'}$. The normalization of the given wavefunction can now be evaluated:
+\begin{eqnarray}
+\nonumber
+& & \left<\psi\left|\psi\right.\right> = \frac{1}{14}\left<2\psi_{1,0,0} - 3\psi_{2,0,0} - \psi_{3,2,2}\left|2\psi_{1,0,0} - 3\psi_{2,0,0} - \psi_{3,2,2}\right.\right>\\
+\nonumber
+& & = \frac{1}{14}(4 + 9 + 1) = 1\textnormal{ (due to orthonormality)}
+\end{eqnarray}
+
+\begin{enumerate}
+\item The probabilities for the energy eigenstates are given by squaring their coefficients in the wavefunction. The probabilities are then: $P(1,0,0) = 4/14 = 2 / 7, P(2,0,0) = 9/14$ and $P(3,2,2) = 1/ 14$.
+\item The expectation value for energy is:
+\begin{eqnarray}
+\nonumber
+& & \left<\psi\left|\hat{H}\right|\psi\right> = \frac{1}{14}\left<2\psi_{1,0,0} - 3\psi_{2,0,0} - \psi_{3,2,2}\left|\hat{H}\right|2\psi_{1,0,0} - 3\psi_{2,0,0} - \psi_{3,2,2}\right>\\
+\nonumber
+& & = \frac{1}{14}\left(4\overbrace{\left<\psi_{1,0,0}\left|\hat{H}\right|\psi_{1,0,0}\right>}^{=E_{1,0,0}} + 9\overbrace{\left<\psi_{2,0,0}\left|\hat{H}\right|\psi_{2,0,0}\right>}^{= E_{2,0,0}} + \overbrace{\left<\psi_{3,2,2}\left|\hat{H}\right|\psi_{3,2,2}\right>}^{=E_{3,2,2}}\right)\\
+\nonumber
+& & = \frac{2}{7}E_{1,0,0} + \frac{9}{14}E_{2,0,0} + \frac{1}{14}E_{3,2,2}
+\end{eqnarray}
+
+The numerical values for $E_{n,l,m}$'s can be calculated from:
+$$E_n = -\frac{hcR}{n^2} = \frac{-13.6\textnormal{ eV}}{n^2} = \frac{E_1}{n^2}$$
+
+Thus the numerical value for $\left<\hat{H}\right>$ is:
+$$\left<\hat{H}\right> = \left(\frac{2}{7} + \frac{9}{14}\times\frac{1}{4} + \frac{1}{14}\times\frac{1}{9}\right)E_1 = \frac{229}{504}E_1\approx -6.2\textnormal{ eV}$$
+
+The expectation value for $\vec{\hat{L}}^2$ is:
+\begin{eqnarray}
+\nonumber
+& & \vec{\hat{L}}^2\left|\psi_{n,l,m}\right> = l(l + 1)\hbar^2\left|\psi_{n,l,m}\right>\\
+\nonumber
+& & \left<\vec{\hat{L}}^2\right> = \frac{\hbar^2}{14}\left(0 + 0 + 2(2 + 1))\right) = \frac{3}{7}\hbar^2
+\end{eqnarray}
+
+The expectation value for $\hat{L}_z$ is:
+\begin{eqnarray}
+\nonumber
+& & \hat{L}_z\left|\psi_{n,l,m}\right> = m\hbar\left|\psi_{n,l,m}\right>\\
+\nonumber
+& & \left<\hat{L}_z\right> = \frac{\hbar}{14}(0 + 0 + 2) = \frac{1}{7}\hbar
+\end{eqnarray}
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

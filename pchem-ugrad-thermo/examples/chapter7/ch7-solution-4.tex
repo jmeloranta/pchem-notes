@@ -1,0 +1,24 @@
+% Problem 4/8 solution
+\noindent
+\underline{Solution:}
+
+(a) First the cell half-reactions must be written:\\
+Right electrode: $\frac{1}{2}\textnormal{Cl}_2(g) + e^- = \textnormal{Cl}^-(aq)$.\\
+Left electrode: $\textnormal{H}^+(aq) + e^- = \frac{1}{2}H_2(g)$.\\
+Total: $\frac{1}{2}\textnormal{Cl}_2(g) + \frac{1}{2}\textnormal{H}_2(g) = \textnormal{H}^+(aq) + \textnormal{Cl}^-(aq)$.
+
+The standard reaction Gibbs energy is then given by ($v_e = 1$):
+$$\Delta_r G^\circ = -\left|v_e\right|FE^\circ = -(96485\textnormal{ C mol}^{-1})(1.3604\textnormal{ V}) = -131.260\textnormal{ kJ mol}^{-1}$$
+and the remaining thermodynamic quantities are given by (see lecture notes):
+$$\Delta_rH^\circ = -\left|v_e\right|FE^\circ + \left|v_e\right|FT\left(\frac{\partial E^\circ}{\partial T}\right)_P$$
+$$ = -131.2604\textnormal{ kJ mol}^{-1} + \left(9.6485\textnormal{ C mol}^{-1}\right)\times (298.15\textnormal{ K})$$
+$$\times(-1.247\times 10^{-3}\textnormal{ V K}^{-1}) = -167.13\textnormal{ kJ mol}^{-1}$$
+$$\Delta_rS^\circ = \left|v_e\right|F\left(\frac{\partial E^\circ}{\partial T}\right)_P = -120.3\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$$
+
+(b) By definition: $\Delta_fG^\circ(\textnormal{H}^+) = \Delta_fH^\circ(\textnormal{H}^+) = \Delta_fS^\circ(\textnormal{H}^+) = 0$. From the above we also have $\Delta_fG^\circ(\textnormal{Cl}^-) = -131.260\textnormal{ kJ mol}^{-1}$ and $\Delta_fH^\circ(\textnormal{Cl}^-) = -167.13\textnormal{ kJ mol}^{-1}$. The only missing quantity is $\bar{S}^\circ(\textnormal{Cl}^-(aq))$ (i.e. the entropy of Cl$^-(aq)$. By definition, we have:
+
+$$\umark{\Delta_rS^\circ}{=-120\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}} = \umark{\bar{S}^\circ(\textnormal{H}^+)}{=0} + \umark{\bar{S}^\circ(\textnormal{Cl}^-(aq))}{=?} - \frac{1}{2}\umark{\bar{S}^\circ(\textnormal{H}_2(g))}{=130.684\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}} - \frac{1}{2}\umark{\bar{S}^\circ(\textnormal{Cl}_2(g)}{=223.066\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}}$$
+
+Solving for $\bar{S}^\circ(\textnormal{Cl}^-(aq))$ gives 56.6 J K$^{-1}$ mol$^{-1}$.
+
+\hrule\vspace{0.5cm}

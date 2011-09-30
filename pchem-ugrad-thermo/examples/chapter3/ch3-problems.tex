@@ -1,0 +1,72 @@
+\noindent
+\textbf{Thermodynamics:
+\ifthenelse{\equal{\solutions}{true}}{Examples}{Homework} for chapter 3.}\\
+
+\begin{enumerate}
+
+\item Show that $(\partial C_V / \partial V) = 0$ for a) an ideal gas, b) a van der Waals gas and c) a gas following $P = \frac{nRT}{V - nb}$. Assume that the following result holds:
+
+$$\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{\partial P}{\partial T}\right)_V - P$$
+
+Hint: In b) and c), differentiate with respect to both temperature and volume and recall that for exact differentials the order of differentiation can be exchanged.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-1}}{}
+
+\item Show that $q_{rev}$ is not a state function (i.e. $dq_{rev}$ is not exact) for a gas obeying the equation of state $P = \frac{RT}{\bar{V} - b}$, but that $d_{qrev} / T$ is. Assume a reversible process and consider only $PV$-work. Hint: you may proceed as follows:
+
+\begin{enumerate}
+\item Use the previous problem to calculate $\left(\partial U / \partial V\right)_T$.
+\item Use $dU = \left(\frac{\partial U}{\partial T}\right)_VdT + \left(\frac{\partial U}{\partial V}\right)_TdV$ to calculate $dU$.
+\item Use the first law of thermodynamics to get an expression for $dq$.
+\item Substitute the equation of state into the above expression.
+\item Apply the exactness test for differentials ($dq = M(V,T)dT + N(V,T)dV$). Use results from the previous problem to differentiate $M$ with respect to $V$.
+\item Repeat the same calculation for $dq/T$.
+\end{enumerate}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-2}}{}
+
+\item An ideal gas initially at $(P_1, V_1, T_1)$ undergoes a reversible isothermal expansion to $(P_2, V_2, T_1)$ (path 1). The same change in state of the gas can be achieved by allowing it to expand adiabatically from $(P_1, V_1, T_1)$ to $(P_3, V_2, T_2)$ and then heating it at constant volume to $(P_2, V_2, T_1)$ (path 2). Note that $T_2$ has not been specified and you should find an equation that determines it. Show that the entropy change for the reversible isothermal expansion (path 1) is the same as the sum of the entropy changes in the reversible adiabatic expansion and the reversible heating (path 2). Because the two paths give the same result, it is probable that the integral is independent of path. This is not a complete proof -- why?
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-3}}{}
+
+\item Water is vaporized reversibly at 100 $^\circ$C and 1.01325 bar. The heat of vaporization is 40.69 kJ mol$^{-1}$. a) What is the value of $\Delta S$ for the water? b) What is the value of $\Delta S$ for the water plus the heat reservoir at 100 $^\circ$C? The heat reservoir is thermally isolated from its surroundings.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-4}}{}
+
+\item Assuming that CO$_2$ is an ideal gas, calculate $\Delta H^\circ$ and $\Delta S^\circ$ for the following process:
+
+$$\textnormal{CO}_2(g, 298.15\textnormal{ K}, 1\textnormal{ bar}) \rightarrow \textnormal{CO}_2(g, 1000\textnormal{ K}, 1\textnormal{ bar})$$
+
+Consider 1 mol of gas and a reversible process. Given: $\bar{C}^\circ P(T) = 26.648 + 42.262 \times 10^{-3}T - 142.4 \times 10^{-7}T^2$ (units: J K$^{-1}$ mol$^{-1}$).
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-5}}{}
+
+\item Ammonia (considered to be an ideal gas) initially at 25 $^\circ$C and 1 bar pressure is heated at constant pressure until the volume has trebled. Assume reversible process. Calculate: a) $q$ per mole, b) $w$ per mole, c) $\Delta\bar{H}$, d) $\Delta\bar{U}$, e) $\Delta\bar{S}$ given $\bar{C}_P = 25.895 + 32.999\times 10^{-3}T - 30.46\times 10^{-7}T^2$ (in J K$^{-1}$ mol$^{-1}$).
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-6}}{}
+
+\item Three moles of an ideal gas expand isothermally and reversibly from 90 L to 300 L at 300 K. a) calculate $\Delta U$, $\Delta S$, $w$ and $q$ for this system, b) calculate $\Delta\bar{U}$, $\Delta\bar{S}$, $w$ per mole and $q$ per mole, c) If the expansion is carried out irreversibly by allowing the gas to expand into and evacuated container, what are the values of $\Delta\bar{U}$, $\Delta\bar{S}$, $w$ per mole and $q$ per mole?
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-7}}{}
+
+\item An ideal gas at 298 K expands isothermally from a pressure of 10 bar to 1 bar. What are the values of $w$ per mole, $q$ per mole, $\Delta\bar{U}$, $\Delta\bar{S}$ in the following cases? a) The expansion is reversible, b) The expansion is free (irreversible), (c) The gas and its surroundings form an isolated system, and the expansion is reversible and d) The gas and its surroundings form an isolated system, and the expansion is free (irreversible).
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-8}}{}
+
+\item One mole of gas A at 1 bar and one mole of gas B at 2 bar are separated by a partition and surrounded by a heat reservoir (i.e. the temperature is constant). When the partition is withdrawn, how much does the entropy change? Both gases behave according to the ideal gas law. Hint: consider the calculation in three steps: (I) the initial entropy difference from standard state, (II) change in entropy due to expansion/compression of gases at constant temperature and finally (III) entropy change due to mixing of the gases.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-9}}{}
+
+\item Calculate the change in molar entropy of aluminum that is heated from 600 $^\circ$ to 700 $^\circ$C. The melting point of aluminum is 660 $^\circ$C, the heat of fusion is 393 J g$^{-1}$ (the molar mass for aluminum is 27 g mol$^{-1}$), and the heat capacities at constant pressure of the solid and the liquid may be taken as 31.8 J K$^{-1}$ mol$^{-1}$ and 34.4 J K$^{-1}$ mol$^{-1}$ (independent of temperature), respectively.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-10}}{}
+
+\item Steam is condensed at 100 $^\circ$C, and the water is cooled to 0 $^\circ$C and frozen to ice. What is the molar entropy change of the water? Consider that the average specific heat of liquid water is 4.2 J K$^{-1}$ g$^{-1}$ (the molar mass of water is 18.016 g mol$^{-1}$). The enthalpy of vaporization at the boiling point and the enthalpy of fusion at the freezing point are 2258.1 J g$^{-1}$ and 333.5 J g$^{-1}$, respectively.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-11}}{}
+
+\item Calculate the increase in the molar entropy of nitrogen when it is heated from 25 $^\circ$C to 1000 $^\circ$C at constant pressure with: $\bar{C}_P = 26.9835 + 5.9622 \times 10^{-3}T - 3.377 \times 10^{-7}T^2$ in J K$^{-1}$ mol$^{-1}$.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch3-solution-12}}{}
+
+\end{enumerate}

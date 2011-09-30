@@ -1,0 +1,51 @@
+\opage{
+\otitle{6.8 Two-component systems consisting of solid and liquid phases}
+
+\otext
+When a solid solute (A) is left in contact with a solvent (B), it dissolves until the solution is saturated. In this case saturation is a state of equilibrium with the undissolved solute in equilibrium with the dissolved solute. Therefore, in a saturated solution the chemical
+potential of the pure solid solute ($\mu_{\textnormal{A}}(s,T)$) and the chemical potential of A in solution ($\mu_{\textnormal{A}}(l,T)$)
+are equal. The derivation below is essentially the same as given earlier in Eqs. (\ref{eq6.59}) through (\ref{eq6.62}).
+
+\vspace*{0.2cm}
+
+By using Eq. (\ref{eq6.28}), we can write for A:
+
+$$\mu_{\textnormal{A}}(l,T) = \mu_{\textnormal{A}}^\circ(l,T) + RT\ln\left(x_{\textnormal{A}}\right)$$
+
+Because there is equiblirum between the solid and dissolved forms of A, we have:
+
+$$\mu_{\textnormal{A}}(l,T) = \mu_{\textnormal{A}}(s,T)$$
+
+Furthermore, pure solids have activity equal to that of standard state:
+
+$$\mu_{\textnormal{A}}(s,T) = \mu_{\textnormal{A}}^\circ(s,T) \Rightarrow \mu_{\textnormal{A}}(l,T) = \mu_{\textnormal{A}}^\circ (s,T)$$
+
+Inserting this into the first equation, we get:
+
+$$\mu_{\textnormal{A}}^\circ (s,T) = \mu_{\textnormal{A}}^\circ(l,T) + RT\ln\left(x_{\textnormal{A}}\right)$$
+
+}
+
+\opage{
+
+\otext
+If we solve for $\ln\left(x_{\textnormal{A}}\right)$, the expression becomes (with $G = H - TS$):
+
+$$\ln\left(x_{\textnormal{A}}\right) = \frac{\mu_{\textnormal{A}}^\circ(s,T) - \mu_{\textnormal{A}}^\circ(l,T)}{RT} = -\frac{\Delta_{fus} G_{\textnormal{A}}^\circ}{RT} = -\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{RT} + \frac{\Delta_{fus}S^\circ_{\textnormal{A}}}{R}$$
+
+Note that above $\circ$ refers to the standard state of A (1 bar pressure and pure solute).
+
+\vspace{0.2cm}
+
+At constant $P$ and $T$, we can use Eq. (\ref{eq3.30}) and replace $\Delta_{fus}S$:
+
+$$\Delta_{fus} S_{\textnormal{A}^\circ} = \frac{\Delta_{fus}H_{\textnormal{A}}^\circ}{T_{fus,\textnormal{A}}} \Rightarrow \ln\left(x_{\textnormal{A}}\right) = -\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{RT} + \frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{RT_{fus,\textnormal{A}}}$$
+$$\Rightarrow \ln\left(x_{\textnormal{A}}\right) = -\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{R}\left(\frac{1}{T} - \frac{1}{T_{fus,A}}\right)$$
+
+Solving for $x_{\textnormal{A}}$ gives:
+
+\aeqn{6.79}{x_{\textnormal{A}} = \exp\left(-\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{R}\left(\frac{1}{T} - \frac{1}{T_{\textnormal{A},fus}}\right)\right)}
+
+This expression gives the solubility of A in B as a function of temperature when $\Delta_{fus}H^\circ_{\textnormal{A}}$ is known.
+
+}

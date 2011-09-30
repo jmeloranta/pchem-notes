@@ -1,0 +1,316 @@
+\opage{
+\otitle{4.2 Definitions of additional thermodynamic potentials using Legendre transformations}
+
+\otext
+\textit{What is Legendre transformation?} Consider the following differential:
+
+$$df(x,y) = \left(\frac{\partial f(x,y)}{\partial x}\right)dx + \left(\frac{\partial f(x,y)}{\partial y}\right)dy \equiv u(x,y)dx + v(x,y)dy$$
+
+Change the differentials from ($dx$,$dy$) to ($du$,$dy$) with the following transformation:
+
+$$g\equiv f - ux$$
+$$dg = df - udx - xdu = udx + vdy - udx - xdu = vdy - xdu$$
+
+\begin{columns}
+
+\begin{column}{7cm}
+where $x = -\frac{\partial g}{\partial u}$ and $v = \frac{\partial g}{\partial y}$. $x$ and $u$ are \textit{conjugate variables}.\\
+
+\vspace*{0.2cm}
+
+In a nutshell:\\
+
+\vspace*{0.2cm}
+
+``Transform the original differential in such a way that the new differential depends on the conjugate variables''
+
+\vfill
+\end{column}\vline\hspace*{0.1cm}
+
+\begin{column}{3cm}
+\operson{legendre}{0.6}{Adrien-Marie Legendre, French mathematician (1752 - 1833)}
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Next, we will apply Legendre transformation to internal energy (ignore chemical potential for now):
+
+\vspace*{-0.3cm}
+
+$$d\umark{U}{``f\textnormal{''}} = \umark{-P}{``u\textnormal{''}}\umark{dV}{``dx\textnormal{''}} + \umark{T}{``v\textnormal{''}}\umark{dS}{``dy\textnormal{''}}$$
+$$\umark{H}{``g\textnormal{''}} = \umark{U}{``f\textnormal{''}} - \umark{\left(-PV\right)}{``u\times x\textnormal{''}} = U + PV$$
+$$\umark{dH}{``dg\textnormal{''}} = \umark{T}{``v\textnormal{''}}\umark{dS}{``dy\textnormal{''}} - \left(\umark{V}{``x\textnormal{''}}\times\umark{\left(-dP\right)}{``du\textnormal{''}}\right) = TdS + VdP$$
+
+Now we have a new differential (enthalpy) $dH$ with new natural variables $S$ and $P$. Note that the original differential $dU$ had $S$ and $V$ as natural variables. Adding chemical potential does not change this result since we were not operating on the corresponding conjugate variables ($\mu_i$ and $n_i$):
+
+\aeqn{4.20}{dH = TdS + VdP + \sum\limits_{i=1}^{N_s}\mu_i dn_i}
+
+Recall that the total differential of $H$ is:
+
+\vspace*{-0.4cm}
+
+\aeqn{4.20a}{dH = \left(\frac{\partial H}{\partial S}\right)_{P,\lbrace n_i\rbrace} dS + \left(\frac{\partial H}{\partial P}\right)_{S,\lbrace n_i\rbrace} dP + \sum\limits_{i=1}^{N_s}\left(\frac{\partial H}{\partial n_i}\right)_{P,V,\lbrace n_j\rbrace_{j\ne i}} dn_i}
+
+}
+
+\opage{
+
+\otext
+By comparing the terms the same way as we did for $dU$, we get the following relations:
+
+\aeqn{4.21}{T = \left(\frac{\partial H}{\partial S}\right)_{P,\lbrace n_i\rbrace}, V = \left(\frac{\partial H}{\partial P}\right)_{S,\lbrace n_i\rbrace},\mu_i = \left(\frac{\partial H}{\partial n_i}\right)_{S,P,\lbrace n_j\rbrace_{j\ne i}}}
+
+Thus, if we can determine the partial derivatives of $H$ with respect to $S$, $P$ and $n_i$, we can always obtain $T$, $V$ and $\mu_i$ from Eq. (\ref{eq4.21}). A system under constant $S$, $P$, and $n_i$ combined with Eq. (\ref{eq4.20}) and exactly the same reasoning as in Eq. (\ref{eq4.17}) gives:
+
+\aeqn{4.24}{\left(dH\right)_{S,P,\lbrace n_i\rbrace} \le 0}
+
+A process occurs spontaneously at constant $S$, $P$ and $\lbrace n_i\rbrace$ if the enthalpy decreases.
+
+\vspace*{0.2cm}
+
+Furthermore, integration of Eq. (\ref{eq4.20}) under constant $T$, $P$ and $\lbrace \mu_i\rbrace$ results in:
+
+\aeqn{4.25}{H = TS + \sum\limits_{i=1}^{N_s}\mu_i n_i}
+
+Note that this yields Eq. (\ref{eq4.18}) when setting $H = U + PV$.
+
+}
+
+\opage{
+
+\otext
+Previously we established that $U$ and $H$ are connected to each other via Legendre transformation with conjugate variables $V$ and $P$. It is easier to control pressure than volume and therefore $H$ is more convenient to use in practice.
+
+\vspace*{0.2cm}
+
+How about the other conjugate variable pair ($T$, $S$)?
+
+\vspace*{0.2cm}
+
+Yes, it is more convenient to use temperature rather than entropy. Since ($V$, $P$) pair offers two choices ($U$ and $H$) and ($T$, $S$) another two, we have a total of four different possibilities:
+
+\vspace*{0.2cm}
+
+\begin{tabular}{llll}
+Quantity & Natural variables & Energy & Differential (*)\\
+Internal energy $U$ & $S, V, \lbrace n_i\rbrace$ &  $U$ & $dU = T dS - P dV$\\
+Enthalpy $H$ & $S, P, \lbrace n_i\rbrace$ & $H = U + PV$ & $dH = T dS + V dP$\\
+Helmholtz energy $A$ & $T, V, \lbrace n_i\rbrace$ & $A = U - TS$ & $dA = -S dT - P dV$\\
+Gibbs energy $G$ & $T, P, \lbrace n_i\rbrace$ & $G = H - TS$ & $dG = -S dT + V dP$\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+(*) chemical potential should be added to each differential. We are not considering Legendre transformation with respect to $n_i$ and $\mu_i$. The differential can also be derived from the given energy expression by considering the total differential.
+
+\vspace*{0.2cm}
+
+The last form is most useful in chemical applications since $T$ and $P$ can be controlled (i.e. they can be held constant).
+
+}
+
+\opage{
+
+\begin{columns}
+
+\begin{column}{7cm}
+
+\otext
+Expressions for the Helmholtz ``free energy'' ($A$):
+
+\aeqn{4.29}{dA = -SdT - PdV + \sum\limits_{i=1}^{N_s} \mu_idn_i}
+
+\aeqn{4.30}{S = -\left(\frac{\partial A}{\partial T}\right)_{V,\lbrace n_i\rbrace}}
+
+\aeqn{4.31}{P = -\left(\frac{\partial A}{\partial V}\right)_{T,\lbrace n_i\rbrace}}
+
+\aeqn{4.32}{\mu_i = \left(\frac{\partial A}{\partial n_i}\right)_{T,V,\lbrace n_j\rbrace_{j\ne i}}}
+
+\aeqn{4.33}{\left(dA\right)_{T,V,\lbrace n_j\rbrace_{j\ne i}} \le 0}
+
+\aeqn{4.34}{A = -PV + \sum\limits_{i = 1}^{N_s}\mu_i n_i}
+
+\end{column}
+
+\begin{column}{3cm}
+\operson{helmholtz}{0.15}{Hermann von Helmholtz, German physicist (1821 - 1894)}
+\end{column}
+
+\end{columns}
+
+\otext
+
+At constant $T$, a change in the Helmholtz energy is given by $\Delta A = \Delta U - T\Delta S$. This gives the amount of internal energy that is ``free'' for doing work in a spontaneous process.
+
+\vspace*{0.2cm}
+
+\underline{Note:} Helmholtz energy is less useful in chemistry than the Gibbs energy because processes and reactions are more often carried out at constant pressure rather than constant volume.
+
+}
+
+\opage{
+
+\otext
+The corresponding expressions for the Gibbs energy ($G$) are:
+
+\vspace*{-0.2cm}
+
+\begin{columns}
+
+\begin{column}{5cm}
+\aeqn{4.36}{dG = -SdT + VdP + \sum\limits_{i=1}^{N_s}\mu_idn_i}
+\aeqn{4.37}{S = -\left(\frac{\partial G}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+\aeqn{4.38}{V = \left(\frac{\partial G}{\partial P}\right)_{T,\lbrace n_i\rbrace}}
+\end{column}
+
+\begin{column}{5cm}
+\vspace*{0.8cm}
+\aeqn{4.39}{\mu_i = \left(\frac{\partial G}{\partial n_i}\right)_{T,P,\lbrace n_i\rbrace}}
+\vspace*{0.3cm}
+\aeqn{4.44}{\left(dG\right)_{T,P,\lbrace n_i\rbrace}\le 0}
+\vspace*{-0.1cm}
+\aeqn{4.45}{G = \sum\limits_{i=1}^{N_s}\mu_in_i \textnormal{(const. }T,P,\mu_i\textnormal{)}}
+\end{column}
+
+\end{columns}
+
+
+At constant $T$ and $P$, a change in the Gibbs energy is given by: $\Delta G = \Delta U + P\Delta V - T\Delta S$. In another words, it gives the maximum amount of internal energy that is available for doing non-expansion work in a spontaneous process.
+
+\vspace*{0.2cm}
+
+The related Maxwell equations (differentiation of the previous Eqs.):
+
+\aeqn{4.46}{\left(\frac{\partial S}{\partial P}\right)_{T,\lbrace n_i\rbrace} = -\left(\frac{\partial^2 G}{\partial P\partial T}\right)_{T,\lbrace n_i\rbrace} = -\left(\frac{\partial^2 G}{\partial T\partial P}\right)_{P,\lbrace n_i\rbrace} = -\left(\frac{\partial V}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+\aeqn{4.47}{\left(\frac{\partial S}{\partial n_i}\right)_{P,T,\lbrace n_j\rbrace_{j\ne i}} = -\left(\frac{\partial^2 G}{\partial n_i\partial T}\right)_{P,T,\lbrace n_j\rbrace_{j\ne i}} = -\left(\frac{\partial^2 G}{\partial T\partial n_i}\right)_{P,\lbrace n_i\rbrace} = -\left(\frac{\partial \mu_i}{\partial T}\right)_{P,\lbrace n_i\rbrace}}
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{4.48}{\left(\frac{\partial V}{\partial n_i}\right)_{P,T,\lbrace n_j\rbrace_{j\ne i}} = \left(\frac{\partial^2 G}{\partial n_i\partial P}\right)_{P,T,\lbrace n_j\rbrace_{j\ne i}} = \left(\frac{\partial^2 G}{\partial P\partial n_i}\right)_{T,\lbrace n_i\rbrace} = \left(\frac{\partial \mu_i}{\partial P}\right)_{T,\lbrace n_i\rbrace}}
+
+\underline{Note:} Since $G$ is a well behaving, the order of differentiation may changed.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Demonstrate the fact that if a thermodynamic potential is known as a function of its natural variables, we can calculate all of the thermodynamic properties of the system.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We choose to show this for the Gibbs energy ($G$). So we assume that the value of $G$ is known as a function of its natural variables $(T, P, \lbrace n_i\rbrace)$. In this example we will consider only single species, so that the chemical potential sum vanishes. The entropy and volume of the system can be calculated using (Eqs. (\ref{eq4.37}) and (\ref{eq4.38})):
+
+\vspace*{-0.4cm}
+
+$$S = -\left(\frac{\partial G}{\partial T}\right)_P\textnormal{ and }V = \left(\frac{\partial G}{\partial P}\right)_T$$
+
+Now using the equations given in the previous table, we have:
+
+$$U = G - PV + TS = G - P\left(\frac{\partial G}{\partial P}\right)_T - T\left(\frac{\partial G}{\partial T}\right)_P$$
+
+\vspace*{-0.3cm}
+
+$$H = G + TS = G - T\left(\frac{\partial G}{\partial T}\right)_P\textnormal{ and }A = G - PV = G - P\left(\frac{\partial G}{\partial P}\right)_T$$
+
+These expressions relate $U$, $H$, $A$, and $G$ to each other.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Show that the Gibbs energy gives a criterion for spontaneous change at constant $T$ and $P$ (Eq. (\ref{eq4.44})).
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Consider a system at constant $T$ and $P$. At constant $P$ we can use Eq. (\ref{eq2.57}): $dq = dH_{sys}$. The Clausius inequality (Eq. (\ref{eq3.21})) reads (now $T = T_{sys} = T_{surr}$):
+
+$$dS_{sys} \ge \frac{\inex{dq}}{T} = \frac{dH_{sys}}{T}\Rightarrow 0 \ge dH_{sys} - TdS_{sys} = dH_{sys} - TdS_{sys} - S_{sys}\umark{dT}{\textnormal{const.}} = dG$$
+
+This shows that $dG \le 0$. Thus for spontaneous changes the Gibbs energy always decreases. Note that the equal sign above applies only to reversible processes and that for irreversible changes the Gibbs energy always decreases. Also there was no need to consider the surroundings explicitly.
+
+\vspace*{0.2cm}
+
+\underline{Note:} Although the above criteria show whether a certain change is spontaneous, it does not necessarily follow that the change will take place with an appreciable speed.
+
+}
+
+\opage{
+
+\otext
+When other than $PV$-work occurs in the system, it contributes a term to the fundamental equation for the internal energy (Eq. (\ref{eq2.40c})). They can be included in the Gibbs energy:
+
+\aeqn{4.49}{dG = -SdT + VdP + \sum\limits_{i=1}^{N_s} \mu_idn_i + FdL + \gamma dA_S}
+
+where $F$ is the force of extension, $L$ is the length, $\gamma$ is the surface tension and $A_S$ is the surface area. Variables ($F$ and $L$) and ($\gamma$ and $A_S$) are conjugate variables and:
+
+\aeqn{4.50}{F = -\left(\frac{\partial G}{\partial L}\right)_{T,P,\lbrace n_i\rbrace,A_S}}
+
+\aeqn{4.51}{\gamma = \left(\frac{\partial G}{\partial A_S}\right)_{T,P,\lbrace n_i\rbrace,L}}
+
+What is the meaning of the Helmholtz and Gibbs energies in presence of non-$PV$ work?
+
+\vspace*{0.2cm}
+
+1. \textit{Helmholtz energy.} Consider the first law of thermodynamics (Eq. (\ref{eq2.9})): $dU = \inex{dq} + \inex{dw}$. Using Eq. (\ref{eq3.21}) gives:
+
+\aeqn{4.53}{-dU + TdS \ge -\textnormal{ }\inex{dw}}
+
+At constant temperature ($dT = 0$) we can write:
+
+\aeqn{4.54}{-d\left(U - TS\right) \ge -\textnormal{ }\inex{dw}}
+
+}
+
+\opage{
+
+\otext
+This implies that:
+
+\aeqn{4.55}{\left(dA\right)_T \le \inex{dw}}
+
+where $A$ is the Helmholtz energy. Thus a change in the Helmholtz energy gives an upper bound for the work that can be done on the surroundings . In real processes the \textit{amount} work that can be done is less than $|\Delta A|$. In this case both sides of Eq. (\ref{eq4.55}) are negative ($dw < 0$ and $(dA)_T < 0$); i.e. when the system does work on the surroundings (i.e. $|(dA)_T| \ge |\inex{dw}|$).
+
+\vspace*{0.2cm}
+
+\underline{Note:} $\inex{dw}$ now contains both $PV$ and non-$PV$ work.
+
+\vspace*{0.2cm}
+
+2. \textit{Gibbs energy.} The Gibbs energy is especially useful when non-$PV$ work is involved. When $PV$ and non-$PV$ work are separated, the first law of thermodynamics (Eq. (\ref{eq2.9})) can be written:
+
+\aeqn{4.56}{dU = \inex{dq} - P_{ext}dV + \inex{dw}_{nonPV}}
+
+With the inequality (Eq. (\ref{eq3.21})) $TdS \ge \inex{dq}$ we can write:
+
+\aeqn{4.57}{-dU - P_{ext}dV + TdS \ge -\inex{dw}_{nonPV}}
+
+At constant $T$ and $P$ (= $P_{ext}$), we have:
+
+\aeqn{4.58}{-d\left(U + PV - TS\right) \ge -\inex{dw}_{nonPV}}
+
+\aeqn{4.59}{\left(dG\right)_{T,P} \le \inex{dw}_{nonPV}}
+
+}
+
+\opage{
+
+\otext
+\underline{Notes:}
+
+\begin{enumerate}
+\item For a reversible process at constant $T$ and $P$ the change in Gibbs energy is equal to the non-$PV$ work done on the system by the surroundings.\item Eq. (\ref{eq4.59}) states that a change in the Gibbs energy at constant $T$ and $P$ gives an upper bound for the non-$PV$ work that the system can do on its surroundings. \textit{Remember that in this case $dG$ and $dw_{nonPV}$ are negative.}
+\item When work is done on the system, the Gibbs energy increases. When work is done by the system, the Gibbs energy decreases.
+\end{enumerate}
+
+\vfill
+
+}

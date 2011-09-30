@@ -1,0 +1,100 @@
+\opage{
+\otitle{3.4 Entropy changes in irreversible processes}
+
+\otext
+\textit{To obtain the change in entropy in an irreversible process we have to calculate $\Delta S$ along a reversible path between the initial state and the final state.}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the entropy change when supercooled water at $-$10 \degree C freezes.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The process is clearly irreversible because you can not simply carry it out in reverse. Any attempt to unfreeze the liquid would require, for example, an increase in temperature. This would correspond to another choice of path.
+
+\vspace*{0.2cm}
+
+Because the process is irreversible, we have to find another path that consists of reversible segments:
+
+\ofig{entropy3}{0.6}{}
+
+$\Delta \bar{H} = -6004$ kJ mol$^{-1}$, $\bar{C}_{liq} = 75.3$ J K$^{-1}$ mol$^{-1}$, $\bar{C}_{ice} = 36.8$ J K$^{-1}$ mol$^{-1}$.
+
+}
+
+\opage{
+
+\otext
+The system entropy is obtained as a sum over the three segments (the heat capacities correspond to constant-pressure values; $C_P$):
+
+\vspace*{-0.2cm}
+
+\ceqn{3.38}{\Delta \bar{S}_{syst} = \int\limits_{263\textnormal{ K}}^{273\textnormal{ K}}\frac{\bar{C}_{liq}}{T}dT + \frac{\Delta H}{T} + \int\limits_{273\textnormal{ K}}^{263\textnormal{ K}}\frac{\bar{C}_{ice}}{T}dT = \left(75.3\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\hspace*{1cm}}
+{\times\ln\left(\frac{273\textnormal{ K}}{263\textnormal{ K}}\right) + \frac{-6004\textnormal{ J mol}^{-1}}{273\textnormal{ K}} + \left(36.8\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\times\ln\left(\frac{263\textnormal{ K}}{273\textnormal{ K}}\right)}
+{= -20.54\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}}
+
+\vspace*{-0.2cm}
+
+According to the statistical interpretation of thermodynamics, the decrease in entropy here corresponds to increased order in ice (i.e., molecules are more rigid in the solid material than in the liquid).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the change in entropy of the surroundings (the glass bottle plus a large heat bath at $-$10 \degree C) in the previous example? What happens to the total entropy?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The process is (the gray area is the heat bath):
+
+\vspace*{-0.2cm}
+
+\ofig{bottles}{0.5}{}
+
+\vspace*{-0.2cm}
+
+}
+
+\opage{
+
+\otext
+Because the surroundings (bottle plus bath) are large, their temperature does not change remarkably during the heat transfer from the system. Heat transfer by an infinitely small amount at constant temperature from the system to the surroundings is a reversible process (i.e. it can be done the other way around as well). Thus, for the surroundings, a reversible path is the direct path (\#2 in previous diagram): H$_2$O ($l$, $-$10 \degree C) $\rightarrow$ H$_2$O ($s$, $-$10 \degree C).
+
+\vspace*{0.2cm}
+
+We use the Eq. (\ref{eq3.30}) to calculate the change in the entropy for the surroundings:
+
+$$\Delta \bar{S}_{surr} = \frac{q_{surr}}{T} = \frac{-q_{sys}}{T} = \frac{-\Delta \bar{H}_{263\textnormal{ K}}}{T}$$
+
+where we have to calculate the heat of fusion at 263 K for the system. In the previous example it was given at 273 K. To do this, we use the same idea as in the Eq. (\ref{eq2.96}):
+
+$$\Delta\bar{H}_{263\textnormal{ K}} = \int\limits_{263\textnormal{ K}}^{273\textnormal{ K}}\bar{C}_{liq}dT + \Delta\bar{H}_{273\textnormal{ K}} + \int\limits_{273\textnormal{ K}}^{263\textnormal{ K}}\bar{C}_{ice}dT$$
+$$= \bar{C}_{liq}\Delta T + \Delta\bar{H}_{273\textnormal{ K}} \umark{-\bar{C}_{ice}\Delta T}{\textnormal{limits!}} = \left(75.3\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right)\times\left(10\textnormal{ K}\right)$$
+$$- 6004\textnormal{ J mol}^{-1} - \left(36.8\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right)\times\left(10\textnormal{ K}\right) = -5619\textnormal{ J mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+Now we can calculate the entropy change (Eq. (\ref{eq3.30})):
+
+$$\Delta\bar{S}_{surr} = \frac{5619\textnormal{ J mol}^{-1}}{263\textnormal{ K}} = 21.37\textnormal{ J K}^{-1}\textnormal{mol}^{-1}$$
+
+The total entropy change (system + surroundings) is the the sum of the two:
+
+\vspace*{-0.2cm}
+
+$$\Delta S_{total} = \Delta S_{syst} + \Delta S_{surr} = \left(-20.54\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right) + \left(21.37\textnormal{ J K}^{-1}\textnormal{mol}^{-1}\right)$$
+$$ = 0.83\textnormal{ J K}^{-1}\textnormal{mol}^{-1} > 0$$
+
+\underline{Notes:}
+
+\begin{itemize}
+\item The total change is positive, indicating a spontaneous (irreversible) process. This is in line with Eq. (\ref{eq3.23}).
+\item The non-zero $\Delta S$ arises from the differences in reversible paths (\#1 and \#2) for the system and the bath. For the system (water/ice) the path \#1 is reversible and for the bath path \#2 is reversible. Only reversible paths can be used in calculating entropies. Along path \#2 the temperature is constant.
+\end{itemize}
+
+\vspace*{0.2cm}
+
+\underline{Trouton's rule:} A wide range of liquids have approximately the same entropy of vaporization (\textit{ca.} 85 J K$^{-1}$ mol$^{-1}$). This is an empirical result.
+
+}

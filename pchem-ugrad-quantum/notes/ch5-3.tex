@@ -1,0 +1,140 @@
+\opage{
+\otitle{5.3 Einstein coefficients and selection rules}
+
+\otext
+The overall spectrum of an atom or a molecule consists of series of lines, which correspond to the different types of transitions discussed previously. The strength of a given transition depends on the number of absorbing molecules per unit volme and the probability that the transition will take place. The latter can be evaluated using quantum mechanics. Einstein proposed that the rate of absorption of photons is proportional to the density of the electromagnetic radiation with the frequency matching the energy difference $\Delta E$. The \textit{rate of absorption} of photons is given by the equation:
+
+\aeqn{n5.3}{\left(\frac{dN_1}{dt}\right)_{\textnormal{abs}} = -B_{12}\rho_\nu(\nu_{12})N_1}
+
+where $B_{12}$ is the \textit{Einstein coefficient for stimulated absorption} (m kg$^{-1}$). The minus sign signifies that the number of molecules in state 1 is decreasing when electromagnetic radiation is absorbed. We also need to have balance between the transfer rates: $dN_1 / dt = -dN_2 / dt$.
+
+}
+
+\opage{
+
+\otext
+Due to (random) fluctuations in the electromagnetic field (``zero-point for electromagnetic field'' -- see your physics notes), atoms/molecules do not stay in the excited state indefinitely. The return process from the excited state to back to the initial state (\textit{spontaneous emission}) is described by adding a decay term for the excited state popoulation $N_2$:
+
+\aeqn{n5.4}{\left(\frac{dN_2}{dt}\right)_{\textnormal{spont}} = -A_{21}N_2}
+
+where $A_{21}$ is the \textit{Einstein coefficient for spontaneous emission} (s$^{-1}$). The since the field causing the emission is random, the emitted light will also have random direction and phase.
+
+\vspace*{0.2cm}
+
+There is another possible way an atom/molecule can return from state 2 to state 1. It turns out that photons can both be absorbed or they can induce emission (\textit{stimulated emission}). The emitted photon will have the same direction and phase as the other photon that caused the emission. The rate of simulated emission can be included in the rate equation by:
+
+\aeqn{n5.5}{\left(\frac{N_2}{dt}\right)_{\textnormal{stim}} = -B_{21}\rho_\nu(\nu_{12})N_2}
+
+where $B_{21}$ is the \textit{Einstein coefficient for stimulated emission}. It is interesting to note that this leads to amplification of the incident photons. This the fundamental process behind lasers (``light amplification by stimulated emission of radiation''). 
+
+}
+
+\opage{
+
+\otext
+Overall the resulting equations look like the ones you have seen in chemical kinetics. To summarize all the terms:
+
+\aeqn{n5.6}{\frac{dN_1}{dt} = -\frac{dN_2}{dt} = -B_{12}\rho_\nu(\nu_{12})N_1 + A_{21}N_2 + B_{21}\rho_\nu(\nu_{12})N_2}
+
+The three Einstein coefficients are related to each other as can be seen by setting $dN_1 / dt = 0$ (or $dN_2 / dt = 0$):
+
+\aeqn{n5.7}{\rho_\nu(\nu_{12}) = \frac{A_{21}}{\left(N_1 / N_2\right)B_{12} - B_{21}}}
+
+When the system is in thermal equilibrium, the ratio between the populations is given by the \textit{Boltzmann distribution}:
+
+\aeqn{n5.8}{\frac{N_2}{N_1} = e^{-(E_2 - E_1) / (k_BT)}}
+
+Since $E_2 > E_1$, most atoms/molecules will be in the lower energy level at thermal equilibrium. If the system is exposed to electromagnetic radiation at frequency $\nu_{12}$, which matches the energy gap $E_2 - E_1$, the final equilibrium that will be reached is given by:
+
+\aeqn{n5.9}{\frac{N_2}{N_1} = e^{-h\nu_{12} / (k_BT)}}
+
+Replacing $N_1/N_2$ in Eq. (\ref{eqn5.7}) by the above expression gives:
+
+}
+
+\opage{
+
+\otext
+\aeqn{n5.10}{\rho_\nu(\nu_{12}) = \frac{A_{21}}{B_{12}e^{h\nu_{12} / (k_BT)} - B_{21}}}
+
+This must be in agreement with \textit{Planck's blackbody distribution law} (see Ch. 1):
+
+\aeqn{n5.11}{\rho_\nu(\nu_{12}) = \frac{8\pi h\left(\nu_{12} / c\right)^3}{e^{h\nu_{12} / (k_BT)} - 1}}
+
+Comparison of Eqs. (\ref{eqn5.10}) and (\ref{eqn5.11}) term by term leads us to conclude:
+
+\aeqn{n5.12}{B_{12} = B_{21}}
+
+\aeqn{n5.13}{A_{21} = \frac{8h\pi\nu_{12}^3}{c^3}B_{21}}
+
+Thus if we know one of the Einstein coefficients, the above two relations will give the other two. Furthermore, since $B_{12} = B_{21}$ we can just denote these by $B$. For $A_{21}$ we can also use just $A$ since there is no $A_{12}$ (i.e. no spontaneous absorption). Integration of Eq. (\ref{eqn5.6}) along with replacing $N_1$ with $N_{total} - N_2$ where $N_{total} = N_1 + N_2$:
+
+\aeqn{n5.14}{\frac{N_2}{N_{total}} = \frac{B\rho_\nu\left(\nu_{12}\right)}{A + 2B\rho_\nu\left(\nu_{12}\right)}\left(1 - \exp\left(-\left[A + 2B\rho_\nu\left(\nu_{12}\right)\right]t\right)\right)}
+
+}
+
+\opage{
+
+\otext
+At $t = 0$ there are no atoms/molecules in the excited state. If the radiation density is held constant, $N_2 / N_{total}$ rises to an asymptotic value of $B\rho_\nu\left(\nu_{12}\right) / \left(A + 2B\rho_\nu\left(\nu_{12}\right)\right)$ as time progresses. Since $A > 0$ the previous expression is necessarily less than 1/2. Thus \textit{irradiation of a two-level system can never put more atoms/molecules in the higher level than in the lower level.}
+This result will explain why a two-level system cannot be used to make a laser. In order to obtain laser action, stimulated emission must be greater than the rate of absorption so that amplification of radiation can be achieved. This requires that:
+
+\aeqn{n5.18}{B_{21}\rho_\nu\left(\nu_{12}\right)N_2 > B_{12}\rho_\nu\left(\nu_{12}\right)N_1}
+
+Since $B_{12} = B_{21}$, laser action can only be obtained when $N_2 > N_1$. This situation is referred to as a \textit{population inversion}.
+
+\vspace*{0.2cm}
+
+Quantum mechanics can be used to calculate the Einstein coefficients. To calculate the coefficients $A$ and $B$ between levels $n$ and $m$, we need to evaluate the \textit{transition dipole moment}:
+
+\aeqn{n5.19}{\vec{\mu}_{mn} = \int\psi^*_n\vec{\hat{\mu}}\psi_md\tau = \left<\psi_n\right|\vec{\hat{\mu}}\left|\psi_m\right>}
+
+where $\vec{\hat{\mu}}$ is the quantum mechanical transition dipole operator for the atom/molecule:
+
+\aeqn{n5.20}{\vec{\hat{\mu}} = \sum\limits_iq_i\vec{r}_i}
+
+where the sum is over all the electrons and nuclei of the atom/molecule, $q_i$ is the charge, and $\vec{r}_i$ is the position of the particle. 
+
+}
+
+\opage{
+
+\otext
+If the transition diple moment vanishes, the spectral line has no intensity (i.e. no absorption occurs). The group theory and symmetry arguments can be used to derive \textit{selection rules} that helps us decide which transitions can occur (see Sec. 4).
+
+\vspace*{0.2cm}
+
+If the initial state has sufficient population and the transition dipole moment is non-zero, the corresponding spectral (absorption) line can be observed. It can be shown (derivation not shown) that the relation ship between the quantum mechanical transition dipole moment and the Einstein coefficients $A$ and $B$ are given by:
+
+\aeqn{n5.21}{A = \frac{12\pi^3\nu^3g_1}{3\epsilon_0hc^3g_2}\left|\mu_{12}\right|^2}
+
+\aeqn{n5.22}{B = \frac{2\pi2g_1}{3h^2\epsilon_0g_2}\left|\mu_{12}\right|^2}
+
+where $g_1$ and $g_2$ are the degeneracy factors for the initial and the final states, respectively, $c$ is the speed of light, $h$ is the Planck's constant, and $\epsilon_0$ is the vacuum permittivity. Eq. (\ref{eqn5.21}) indicates that the rate of spontaneous emission ($A_{12}N_2$) increases rapidly with frequency (i.e. decreasing wavelength). The spontaneous emission process is less significant for microwave and infrared regions whereas it is more important in the visible and UV regions.
+
+\vspace*{0.2cm}
+
+If the rate of spontaneous emission is negligible (i.e. $A$ is small), the net rate of absorption $R_{1\leftarrow 2}$ is given simply by:
+
+\aeqn{n5.23}{R_{2\leftarrow 1} = B_{21}N_1\rho_\nu\left(\nu_{12}\right) - B_{12}N_2\rho_\nu\left(\nu_{12}\right) = \left(N_1 - N_2\right)B\rho_\nu\left(\nu_{12}\right)}
+
+}
+
+\opage{
+
+\otext
+The above result shows that if the populations of the two states are equal, there will be no net absorption of radiation. The system is said to be \textit{saturated}.
+
+\vspace*{0.2cm}
+
+The coefficient $A_{12}$ can also be thought as a measure of the lifetime of state 2. You can think about the analogy between the current rate equations and the ones you have seen in chemical kinetics. Consider molecules in state 2 (i.e. excited state) with no radiation present and no stimulated emission. The molecules will make transition to state 1, emitting a photon having frequency $\nu_{12}$ with probability $A_{12}N_2$. This process is called \textit{fluorescence}. After a time $t$, the number of molecules per unit volume in state 2 is given by:
+
+\aeqn{n5.24}{N_2(t) = N_2(0)e^{-A_{12}t} = N_2(0)e^{-t / \tau}}
+
+where $\tau = \frac{1}{A_{12}}$ is called the \textit{radiative lifetime}. In general, the atom/molecule may be able to fluoresce to many different states (labelled as 2, 3, ...) giving emission at multiple wavelengths. In this case the \textit{total radiative lifetime} is given by:
+
+\aeqn{n5.25}{\frac{1}{\tau} = \sum_iA_{2i}}
+
+Note that there are other possibilities for energy dissipation than just radiation of photons. In some cases the energy is transferred to nuclear motion and the system may not fluoresce at all provided that the rate is faster than the radiative process. Such transitions are called \textit{non-radiative transitions}. To account for non-radiative transitions, one must add the appropriate decay terms into Eq. (\ref{eqn5.25}).
+
+}

@@ -1,0 +1,70 @@
+\opage{
+\otitle{7.5 The chemical shift (NMR)}
+
+\otext
+The nuclear magnetic moments interact with the \textit{local magnetic field}, which may be different from the applied external field. The difference between the two originates from the spin-orbit coupling that induces quantum mechanical currents in the electronic cloud. The local field can either augment the external field or oppose it. We denote the deviation of the local magnetic from the external field by $\delta B$, which is usually written in terms of the \textit{shielding constant} $\sigma$ ($B \equiv B_z$):
+
+\aeqn{7.19}{\delta B = -\sigma B}
+
+where $B$ is the strength of the external magnetic field. The shielding constant is usually positive but may sometimes also be negative. The ability of the applied external field to induce an electronic current in the molecule, and after the strength of the resulting local magnetic field at the nucleus, depends on the details of the electronic structure near the magnetic nucleus. This means that nuclei in different chemical environments usually have different shielding constants.
+
+\otext
+According to Eq. (\ref{eq7.19}) the local magnetic field at nucleus is given by:
+
+\aeqn{7.20}{B_{loc} = B + \delta B = (1 - \sigma)B}
+
+with the Larmor frequency given by (see Eq. (\ref{eq7.13})):
+
+\aeqn{7.21}{\nu = \frac{\gamma B_{loc}}{2\pi} = (1-\sigma)\frac{\gamma B}{2\pi}}
+
+Thus the Larmor frequency may be different for each magnetic nucleus depending on their chemical environment.
+
+}
+
+\opage{
+
+\otext
+The resonance frequencies are usually expressed in terms of \textit{chemical shift}, which is related to the difference between the resonance frequency $\nu$ and that of a standard $\nu^\circ$:
+
+\aeqn{7.22}{\delta = \frac{\nu - \nu^\circ}{\nu^\circ} \times 10^6}
+
+where $\delta$ is expressed in PPM (parts per million) as dictated by the $10^6$ factor above. The standard used for proton NMR is usually the proton resonance in tetramethylsilane (Si$\left(\textnormal{CH}_3\right)_4$ or TMS). For $^{13}$C the TMS carbon-13 resonance is often used and for $^{31}$P H$_3$PO$_4(aq)$. Note that the chemical shift scale is independent of the applied magnetic field whereas the resonance frequency expressed in Hz depends on the strength of the external magnetic field.
+
+\otext
+The relationship between the chemical shift and the shielding constant can be obtanined from Eqs. (\ref{eq7.20}) and (\ref{eq7.22}):
+
+\vspace*{0.2cm}
+
+\aeqn{7.23}{\delta = \frac{(1 - \sigma)B - (1 - \sigma^\circ)B}{(1-\sigma^\circ)B}\times 10^6 = \frac{\sigma^\circ - \sigma}{1 - \sigma^\circ}\times 10^6\approx (\sigma^\circ - \sigma)\times 10^6}
+
+Note that as shielding $\sigma$ decrases, $\delta$ increases. Thus nuclei with large chemical shift are said to be \textit{deshielded}. An NMR spectrum is typically displayed with $\delta$ icreasing from right to left. A list of typical chemical shifts in a given group are listed on the next slide.
+
+}
+
+\opage{
+
+\otext
+\textbf{Table.} Chemical shifts observed for protons in different molecular environments. X denotes a halogen atom.\\
+
+\begin{tabular}{l@{\extracolsep{0.5cm}}l@{\extracolsep{1cm}}l@{\extracolsep{0.5cm}}l}
+ & & & \\
+Shift (ppm) & Group       &        Shift (ppm) & Group\\
+-0.5 -- 0.5  & Cyclopropyl protons & 2.0 -- 4.0  & CH$_2$--N\\
+0.5 -- 1.5  &  CH$_3$--C   &            2.0 -- 4.5 &  CH$_2$--X\\
+0.5 -- 1.5  & CH--C        &        2.5 -- 3.5 &  CH--C$_6$H$_4$R\\
+0.5 -- 4.5  & R$_2$NH      &        2.5 -- 4.5 &  CH--N\\
+0.5 -- 10.0 & R--OH, alcohols  &    3.0 -- 4.0 &  CH$_3$--O\\
+1.0 -- 2.0  & CH$_2$--C    &           3.0 -- 4.0 &  CH$_2$--O\\
+1.0 -- 2.5  & CH$_3$--C=C  &           3.5 -- 5.5 &  CH--O\\
+1.5 -- 2.5  & CH$_2$--C=C  &           4.0 -- 6.0 &  CH--X\\
+1.5 -- 3.0  & CH$_3$C=O   &           4.5 -- 6.5 &  Alkenes, nonconj.\\
+2.0 -- 3.0  & CH$_3$--C$_6$H$_4$R  &         5.5 -- 7.5 &  Alkenes, conjugated\\
+2.0 -- 3.0  & CH$_2$--C=O  &           6.0 -- 9.0 &  Heteroaromatics\\
+2.0 -- 3.0  & CH--C=O      &        6.5 -- 8.5 &  Aromatics\\
+2.0 -- 3.0  & RNH$_2$      &          9.0 -- 10.5 &  H--C=O, aldehydes\\
+2.0 -- 4.0  & CH$_3$--N    &           10.0 -- 13.0 & RCOOH, acids\\
+\end{tabular}
+
+
+}
+

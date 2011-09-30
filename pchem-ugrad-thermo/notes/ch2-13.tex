@@ -1,0 +1,253 @@
+\opage{
+\otitle{2.13 Calorimetry}
+
+\begin{columns}
+
+\begin{column}{4cm}
+
+\ofig{constant-pressure-calorimeter}{0.4}{}
+
+\vspace{-0.2cm}
+
+\otext
+Constant pressure calorimeter. Experimental determination of $\Delta H$.
+
+\vspace*{0.2cm}
+
+When reactants A and B are mixed in the calorimeter, heat is either released or absorbed. This is observed using a thermometer. Note: $PV$-work is possible.
+
+\end{column}\hspace*{-1.6cm}\vline\hspace*{0.4cm}
+
+\begin{column}{4cm}
+
+\ofig{constant-volume-calorimeter}{0.4}{}
+
+\vspace{-0.2cm}
+
+\otext
+
+Constant volume calorimeter. Experimental determination of $\Delta U$.
+
+\vspace*{0.2cm}
+
+A compound reacts with O$_2$ (combustion). The heat released from the reaction, is conducted to the surrounding water bath. Changes in the bath temperature are measured with a thermometer. Note: no $PV$-work is possible.
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\underline{Constant pressure calorimeter:} Chemical reaction: R $\rightarrow$ P (volume may change).
+
+\begin{columns}
+
+\begin{column}{5cm}
+\aeqn{2.103}{\Delta H_A = \Delta H(T_1) + \Delta H_\textnormal{P}}
+
+\aeqn{2.104}{\Delta H_A = \Delta H_\textnormal{R} + \Delta H(T_2)}
+
+\hspace*{0.4cm}
+where $\Delta H_A$ is the overall\\\hspace*{0.5cm}enthalpy change.
+\end{column}\hspace*{-0.2cm}\vline\hspace*{0.4cm}
+
+\begin{column}{6cm}
+
+\ofig{constant-pressure-diagram}{0.5}{}
+
+Two different ways to proceed from reactants to products.
+
+\end{column}
+
+\end{columns}
+
+\vspace{0.25cm}
+
+The overall enthalpy is \textit{conserved}: $\Delta H_A = 0$. Thus we have two equations for $\Delta H$ at $T_1$ or $T_2$ ($\Delta T$ small; see Eq. (\ref{eq2.61}) with $\Delta P = 0$):
+
+\vspace*{-0.4cm}
+
+\aeqn{2.105}{\Delta H(T_1) = -\Delta H_\textnormal{P} = -\omark{\left[C_P(\textnormal{P}) + C_P(\textnormal{Cal})\right]}{*}\left(T_2 - T_1\right) = -C_{P,eff}(\textnormal{P})\Delta T}
+
+\vspace*{-0.7cm}
+
+\aeqn{2.106}{\Delta H(T_2) = -\Delta H_\textnormal{R} = -\umark{\left[C_P(\textnormal{R}) + C_P(\textnormal{Cal})\right]}{**}\left(T_2 - T_1\right) = -C_{P,eff}(\textnormal{R})\Delta T}
+
+\vspace*{-0.2cm}
+
+\begin{tabular}{ll}
+$C_P(\textnormal{P})$ & = (constant pressure) heat capacity of the product.\\
+$C_P(\textnormal{R})$ & = (constant pressure) heat capacity of the reactant.\\
+$C_P(\textnormal{Cal})$ & = (constant pressure) heat capacity of the calorimeter.\\
+\end{tabular}
+
+\vspace*{0.1cm}
+
+\underline{Note:} All $C_P$'s above are extensive variables (i.e. \textit{not} molar quantities).
+In practice, $C_P(cal)$ dominates and $C_{P,eff}(P) \approx C_{P,eff}(R)$.
+
+}
+
+\opage{
+
+\otext
+If $\Delta H$ has been determined in a calorimetric experiment, $\Delta_r H$ for a balanced chemical reaction can be calculated using:
+
+\aeqn{2.106a}{\Delta_r H = \frac{\Delta H}{\Delta\xi}\textnormal{ (}\xi\textnormal{ = the extent of reaction; see Eq. (\ref{eq2.90})})}
+
+If $\Delta\xi\approx 1$ then $\Delta_r H \approx\Delta H$. How can we determine $C_P(cal)$ in Eqs. (\ref{eq2.105}) and (\ref{eq2.106})?
+
+\vspace*{0.2cm}
+
+Use a calibrated heater to supply heat into the system and observe the temperature change using a thermometer. The amount of heat supplied by the heater is:
+
+\aeqn{2.106b}{q = \int\limits_{0}^{t}P(t)dt = \umark{UI}{=P}\int\limits_{0}^{t}dt = RI^2t}
+
+\aeqn{2.106c}{R = \frac{U}{I}\textnormal{ (Ohm's law)}}
+
+\aeqn{2.106d}{P = UI\textnormal{ (definition of power)}}
+
+where $q$ is the heat supplied by the electrical heater element, $P$ is the power dissipated (constant; Watt), $U$ is the applied potential (Volt; \textit{not internal energy}), $I$ is the current (Ampere) and $R$ is the heater resistance (Ohm). Alternatively, a reference chemical reaction with known heat release can be used.
+
+\vspace*{0.2cm}
+
+By recording data on $q$ vs. $T$, it is possible to obtain the total heat capacity from the slope, $\Delta q / \Delta T$, of this graph.
+
+}
+
+\opage{
+
+\otext
+\underline{Constant volume calorimeter:} Chemical reaction: R $\rightarrow$ P (pressure may change).\\
+At constant volume ($\Delta V = 0$), there cannot be any $PV$-work. This means that:
+
+\aeqn{2.106e}{P\Delta V = 0}
+
+Eq. (\ref{eq2.49}) states that:
+
+\aeqn{2.106f}{\Delta U = C_V\Delta T}
+
+when $\Delta T$ is small (such that $C_V$ is independent of $T$). Analogously to Eqs. (\ref{eq2.105}) and (\ref{eq2.106}) we have:
+
+\vspace*{-0.2cm}
+
+\aeqn{2.106g}{\Delta U(T_1) = -\Delta U_\textnormal{P} = -\left[C_V(\textnormal{P}) + C_V(\textnormal{Cal})\right]\left(T_2 - T_1\right) = -C_{V,eff}(\textnormal{P})\Delta T}
+
+\vspace*{-0.4cm}
+
+\aeqn{2.106h}{\Delta U(T_2) = -\Delta U_\textnormal{R} = -\left[C_V(\textnormal{R}) + C_V(\textnormal{Cal})\right]\left(T_2 - T_1\right) = -C_{V,eff}(\textnormal{R})\Delta T}
+
+The molar quantity is given by:
+
+\aeqn{2.106i}{\Delta_r U = \frac{\Delta U}{\Delta\xi}}
+
+The difference between $\Delta_r H$ and $\Delta_r U$ is the $PV$-work. For an ideal gas this is given by ($N_s$ is the number of gaseous components, $T$ $\approx$ constant, $v_i = \Delta n_i / \Delta\xi$):
+
+\aeqn{2.107}{\Delta_r H = \Delta_r U + \frac{\Delta(PV)}{\Delta\xi} \approx \Delta_r U + RT\sum\limits_{i=1}^{N_s}v_{g,i}}
+
+}
+
+\opage{
+
+\otext
+where $v_{g,i}$ is the stoichiometric coefficient for gaseous product $i$ (solids and liquids do not contribute).
+
+\vspace*{0.2cm}
+
+\underline{Notes:}
+
+\begin{itemize}
+\item In most experiments $C(\textnormal{Cal})$ is large compared to $C(\textnormal{R})$ or $C(\textnormal{P})$, which simply gives $\Delta U = -C_V(\textnormal{Cal})\Delta T$ or $\Delta H = -C_P(\textnormal{Cal})\Delta T$.
+\item Most chemists are interested in enthalpies because they describe best chemical reactions in open vessels. Theoretical chemists, however,
+would be more interested in internal energy because it is more directly related to the energies of bond forming/breaking.
+\end{itemize}
+
+\textbf{Example.} If we pass a current of 10.0 A from a 12 V power supply for 300 s, what is the amount of heat supplied?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The amount of heat dissipated by the heater is given by $q = U I t$:
+
+$$q = \left(10.0\textnormal{ A}\right)\times\left(12\textnormal{ V}\right)\times\left(300\textnormal{ s}\right) = 3.6\times 10^4\umark{\textnormal{AVs}}{=\textnormal{ J}} = 36\textnormal{ kJ}$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} If 1.247 g of solid glucose is burned in an adiabatic bomb calorimeter ($\Delta U = -2801$ kJ mol$^{-1}$), the temperature rises 1.693 K. What is the effective heat capacity of the bomb calorimeter?
+
+}
+
+\opage{
+
+\otext
+\textbf{Solution.} Since the volume is constant, we have:
+
+$$\Delta U = -C_V(\textnormal{Cal})\Delta T \Rightarrow C_V(\textnormal{Cal}) = -\frac{\Delta U}{\Delta T}$$
+$$C_V(\textnormal{Cal}) = -\left(1.247\textnormal{ g}\right)\times\frac{1\textnormal{ mol}}{180.16\textnormal{ g}}\times\frac{-2801\textnormal{ kJ}}{1\textnormal{ mol}} / \left(1.693\textnormal{ K}\right) = 11.44\textnormal{ kJ K}^{-1}$$
+
+\textbf{Example.} Consider an adiabatic bomb calorimeter. When compounds change their phase (e.g. from solid to gas or liquid to gas) during the reaction, the effective volume of the calorimeter changes. Assuming that the resulting gas products behave according to the ideal gas law, what is the correction required for the change in $\Delta H$ due to $PV$-work?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} If gaseous components are produced or consumed, the pressure inside the calorimeter changes during the reaction. This causes $\Delta U$ and $\Delta H$ to deviate from each other. This difference can be approximately expressed as:
+
+$$\Delta H = \Delta U + \Delta(PV) = \Delta U + \Delta(nRT) \approx \Delta U + RT\times\Delta n$$
+
+where we assume that the change in temperature is small. This correction is rather small and typically less than 1 \%.
+
+}
+
+\opage{
+
+\otext
+Several types of processes can be considered by calorimetric methods:
+
+\vspace*{0.4cm}
+
+\underline{Solvation process:}
+
+\vspace*{-0.5cm}
+
+$$\textnormal{HCl}(g) + 5\textnormal{H}_2\textnormal{O}(l) \rightarrow \textnormal{HCl}\textnormal{ solvated by 5H}_2\textnormal{O}\textnormal{ (}\Delta H_{sol}(298\textnormal{ K}) = -63.47\textnormal{ kJ mol}^{-1}\textnormal{)}$$
+
+\vspace*{0.2cm}
+
+\underline{Neutralization process:} H-A + HO-B $\rightarrow$ H$_2$O + A$^-$ + B$^+$
+
+\vspace*{0.2cm}
+
+For example, A could be Cl and B Na. When strong acid/base combination is neutralized, the enthalpy difference is approximately constant and independent of the base/acid pair. The reason is that the main contribution to the enthalpy difference (heat of neutralization) originates from:
+
+$$\textnormal{OH}^- + \textnormal{H}^+ \rightarrow \textnormal{H}_2\textnormal{O where }\Delta_rH^\circ(298\textnormal{ K}) = -55.84\textnormal{ kJ mol}^{-1}$$
+
+When a dilute solution of weak acid/base is neutralized, the heat of neutralization is less than that of strong acid/base neutralization.
+
+\vspace*{0.3cm}
+
+\textbf{Example.} Calculate the enthalpy of formation of H$^+$ and OH$^-$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We use the known reactions to deduce the enthalpy of formation:
+
+}
+
+\opage{
+
+\begin{tabular}{rll}
+$\textnormal{H}_2\textnormal{O}(l)$ & $= \textnormal{H}^+(ao) + \textnormal{OH}^-(ao)$ & $\Delta_r H^\circ = 55.84$ kJ mol$^{-1}$\\
+$\textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g)$ & $= \textnormal{H}_2\textnormal{O}(l)$ & $\Delta_r H^\circ = -285.83\textnormal{ kJ mol}^{-1}$\\
+\cline{1-3}
+$\textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g)$ & $= \textnormal{H}^+(ao) + \textnormal{OH}^-(ao)$ & $\Delta_r H^\circ = -229.99\textnormal{ kJ mol}^{-1}$\\
+\end{tabular}
+
+\vspace*{0.3cm}
+
+\underline{Note:} Separate enthalpies of formation cannot be obtained for H$^+$ and OH$^-$, only their sum. In most tablebooks, for H$^+$ the associated $\Delta_f H^\circ$ has been assigned to zero. $ao$ denotes that the ion is in aqueous solution.
+
+\vfill
+
+}
+

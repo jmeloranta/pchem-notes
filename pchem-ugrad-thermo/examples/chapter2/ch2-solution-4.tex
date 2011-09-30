@@ -1,0 +1,48 @@
+% Problem 4/2 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{enumerate}
+
+\item \underline{Isothermal process A.} Temperature after A, denoted by $T_2$, is given by the ideal gas law:
+
+$$T_2 = \frac{P_2V_2}{nR} = \frac{(2000\times 10^3\textnormal{ N m}^{-2})(10^{-3}\textnormal{ m}^3)}{(1\textnormal{ mol})(8.314\textnormal{ N m mol}^{-1}\textnormal{ K}^{-1})} = 240.6\textnormal{ K}$$
+
+Both $U$ and $H$ depend only on temperature for ideal gases. This is an isothermal process and hence both $\Delta U$ and $\Delta H$ are zero. The $PV$-work in this step is given by (see lecture notes):
+
+$$w_{rev} = -nRT\ln\left(\frac{V_2}{V_1}\right)$$
+$$ = -\left(1\textnormal{ mol}\right)\times\left(8.314\textnormal{ J mol}^{-1}\textnormal{ K}^{-1}\right)\times\left(240.6\textnormal{ K}\right)\times\ln\left(\frac{1\textnormal{ dm}^3}{10\textnormal{ dm}^3}\right) = 4.6\textnormal{ kJ}$$
+
+According to the first law of thermodynamics:
+
+$$\Delta U = q + w \Rightarrow q = \Delta U - w = 0 - 4.6\textnormal{ kJ} = -4.6\textnormal{ kJ}$$
+
+\item \underline{Isobaric process B.} The temperature at 3 is given by the ideal gas law:
+
+$$T_3 = \frac{P_3V_3}{nR} = \frac{(2000\times10^3\textnormal{ N m}^{-2})(10^{-2}\textnormal{ m}^3)}{(1\textnormal{ mol})(8.314\textnormal{ N m mol}^{-1}\textnormal{ K}^{-1})} = 2406\textnormal{ K}$$
+
+Changes in the internal energy and enthalpy are given by:
+
+$$\Delta U = \frac{3}{2}nR\Delta T = \frac{3}{2}nR\left(T_3 - T_2\right)$$
+$$ = 1.5 \times (1\textnormal{ mol}) \times\left( 8.314\textnormal{ J mol}^{-1}\textnormal{ K}^{-1}\right) \times \left( 2406\textnormal{ K} - 240.6\textnormal{ K} \right) = 27.0\textnormal{ kJ}$$
+$$\Delta H = \frac{5}{2}nR\Delta T = 45.0\textnormal{ kJ}$$
+
+The first law states: $\Delta U = q + w$ and thus if we know either $q$ or $w$, we can always calculate the other. In the isobaric case the work can be obtained with $P_{ext} = P$ and $dw = -P dV$. Integration of this equation gives: $w = -P\Delta V = -(2000 \times 10^3\textnormal{ Nm}^{-2}) \times (10 \times 10^{-3}\textnormal{ m}^3 - 1.0 \times 10^{-3}\textnormal{ m}^3) = -18.0\textnormal{ kJ}$. And further $q = 27.0\textnormal{ kJ} - (-18.0\textnormal{ kJ}) = 45.0\textnormal{ kJ}$.
+
+\item \underline{Isochoric process C.} The temperature at point 1 is given by the ideal gas law:
+
+$$T_1 = \frac{P_1V_1}{nR} = 240.6\textnormal{ K}$$
+
+Changes in the internal energy and enthalpy are given by:
+
+$$\Delta U = \frac{3}{2}nR\Delta T = 1.5\times \left(1\textnormal{ mol}\right) \times \left( 8.314\textnormal{ J mol}^{-1}\textnormal{ K}^{-1}\right)$$
+$$\times\left(240.6\textnormal{ K} - 2406\textnormal{ K}\right) = -27.0\textnormal{ kJ}$$
+
+$$\Delta H = \frac{5}{2}nR\Delta T = 2.5\times \left(1\textnormal{ mol}\right) \times \left( 8.314\textnormal{ J mol}^{-1}\textnormal{ K}^{-1}\right)$$
+$$\times\left(240.6\textnormal{ K} - 2406\textnormal{ K}\right) = -45.0\textnormal{ kJ}$$
+
+The volume is constant and hence $w = 0$ kJ. The first law gives $q = -27.0$ kJ. The total work in the cycle is: $w_{tot} = w_{\textnormal{A}} + w_{\textnormal{B}} + w_{\textnormal{C}} = (4.61 - 18.0 + 0.00)\textnormal{ kJ} = -13.4\textnormal{ kJ}$.
+
+\end{enumerate}
+
+\hrule\vspace{0.5cm}

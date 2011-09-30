@@ -1,0 +1,68 @@
+\opage{
+\otitle{1.11 Barometric formula}
+
+\otext
+In the following we calculate the effect of additional pressure arising from gravitation. This would be important, for example, if we consider a column of gas where a difference in gravitational force exists:
+
+\aeqn{1.41a}{F = -mg}
+
+where $m$ is the total mass of the gas and $g$ is the standard gravitation constant (9.80665 m s$^{-2}$). To be exact, this constant depends on the position of measurement on earth. It can be as high as 10.7 m s$^{-2}$. In non-SI units the value of this constant is 32.2 ft s$^{-2}$.
+
+\begin{columns}
+
+\begin{column}{2.5cm}
+\ofig{columns}{0.55}{}
+\end{column}
+
+\begin{column}{8cm}
+The amount of gas within $dh$ is:
+
+\aeqn{1.41b}{dm_{gas} = \rho\times A \times dh}
+
+where $\rho$ is the gas density (kg m$^{-3}$) and $A$ is the column cross section. The force difference is given by:
+
+\aeqn{1.41c}{dF = -dm_{gas}g = -\rho Agdh}
+
+Dividing both sides with $A$ yields the pressure difference:
+
+\aeqn{1.42}{dP = \frac{dF}{A} = -\rho g dh}
+
+Note the sign convention in force ($-$ = down).
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+For an ideal gas, we have an expression for the gas density $\rho$:
+
+\aeqn{1.42a}{PV = nRT\textnormal{ and }\rho = \frac{nM}{V} \Rightarrow \rho = \frac{PM}{RT}}
+
+where $M$ is the molar mass (kg mol$^{-1}$). Thus we have:
+
+\aeqn{1.43}{dP = -\frac{PM}{RT}gdh}
+
+Separation of variables and integration from $h = 0$ ($P_0$) to $h$ ($P$):
+
+\aeqn{1.44}{\int\limits_{P_0}^{P}\frac{dP}{P} = -\int\limits_{0}^{h}\frac{gM}{RT}dh}
+
+\aeqn{1.45}{\ln\left(\frac{P}{P_0}\right) = -\frac{gMh}{RT}}
+
+\aeqn{1.46}{P = P_0e^{-\frac{gMh}{RT}}}
+
+This is known as \textit{the barometric formula}.
+
+}
+
+\opage{
+
+\ofig{pressure}{0.25}{}
+
+\otext
+Pressures of O$_2$ and N$_2$ and the total pressure of atmosphere at various heights as predicted by Eq. (\ref{eq1.46}). It was assumed that the temperature does not depend on height (which is not quite true).
+
+}

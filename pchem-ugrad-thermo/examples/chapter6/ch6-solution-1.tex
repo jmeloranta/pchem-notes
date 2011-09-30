@@ -1,0 +1,16 @@
+% Problem 1/6 solution
+\noindent
+\underline{Solution:}
+
+First we need to calculate $\Delta_{vap}H$. The Clausius-Clapeyron equation in the lecture notes gives ($T_1 = 49.6$ $^\circ$C = 322.8 K, $P_1 = 53.32$ kPa; $T_2 = 68.7$ $^\circ$C = 341.9 K, $P_2 = 1$ atm = 101.325 kPa):
+
+$$\ln\left(\frac{P_2}{P_1}\right) = \frac{\Delta_{vap}\times\left(T_2 - T_1\right)}{RT_1T_2} \Rightarrow \Delta_{vap}H = \frac{RT_1T_2}{T_2 - T_1}\ln\left(\frac{P_2}{P_1}\right)$$
+$$ = 30.850\textnormal{ kJ mol}^{-1}$$
+
+Now that we know $\Delta_{vap}H$, we can proceed in calculating $T_1$ when $P_1 = 1$ bar = 100 kPa and $T_2$ \& $P_2$ are given above:
+
+$$T_1 = \frac{T_2\Delta_{vap}H}{RT_2\ln\left(P_2/P_1\right) + \Delta_{vap}H}$$
+$$ = \frac{\left(341.9\textnormal{ K}\right)\left(30850\textnormal{ J mol}^{-1}\right)}{\left(341.9\textnormal{ K}\right)\left(8.3145\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\ln\left(\frac{101.325\textnormal{ kPa}}{100\textnormal{ kPa}}\right) + \left(30850\textnormal{ J mol}^{-1}\right)}$$
+$$ = 341\textnormal{ K}$$
+
+\hrule\vspace{0.5cm}

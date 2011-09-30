@@ -1,0 +1,122 @@
+\opage{
+
+\otitle{9.4 Reactions approaching equilibrium}
+
+\otext
+Previously we have assumed that the foward reaction is dominating and therefore we have ignored the possiblity for the reaction go from right to left. When the reaction approaches equilibrium, we have to consider both forward and backward reactions.
+
+\vspace*{0.2cm}
+
+\underline{1. First-order reactions.} Consider equilibrium $A\rightleftharpoons B$ where reactions $A\rightarrow B$ and $A \leftarrow B$ occur simultaneously at appreciable rate. The rate constant for the forward reaction is denoted by $k_+$ and backward reaction by $k_-$. Both reactions are taken to be first order. For example, $A$ and $B$ could correspond to two different isomers of a molecule. The forward rate $r_+ = k_+\left[A\right]$ and backward rate $r_- = k_-\left[B\right]$. The rate law in terms of $A$ can then be written as:
+
+\aeqn{9.18}{\frac{d\left[A\right]}{dt} = -k_+\left[A\right] + k_-\left[B\right]}
+
+where the first term on the right hand side is responsible for the disappearance of $A$ and the second term for producing more $A$. Given the initial concentration of $A$ as $\left[A\right]_0$, the following balance has to hold at all times: $\left[A\right] + \left[B\right] = \left[A\right]_0$. Then we can write Eq. (\ref{eq9.18}) as:
+
+\aeqn{9.19}{\frac{d\left[A\right]}{dt} = -k_+\left[A\right] + k_-\left(\left[A\right]_0 - \left[A\right]\right) = -\left(k_+ + k_-\right)\left[A\right] + k_-\left[A\right]_0}
+
+The solution to this differential equation is (verification by differentiation):
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.20}{\left[A\right] = \frac{k_- + k_+e^{-\left(k_+ + k_-\right)t}}{k_+ + k_-}\left[A\right]_0}
+
+Equlibrium condition is reached after we wait long enough for the system to settle down (``steady-state''). Thus we take the limit of $t\rightarrow\infty$ above and obtain an expression for the equilibrium concentration of $A$:
+
+\aeqn{9.21}{\left[A\right]_{eq} = \frac{k_-\left[A\right]_{0}}{k_+ + k_-}}
+
+Since the concentrations of $A$ and $B$ are related to each other, we can get the equilibrium concentration of $B$:
+
+\aeqn{9.22}{\left[B\right]_{eq} = \left[A\right]_0 - \left[A\right]_{eq} = \left[A\right]_0\left(1 - \frac{k_-}{k_+ + k_-}\right) = \frac{k_+\left[A\right]_0}{k_+ + k_-}}
+
+If we approximate activities by concentrations, the equilibrium constant can be written for this reaction as (see Eq. (\ref{eq5.11})):
+
+\aeqn{9.23}{K = \frac{\left[B\right]_{eq}}{\left[A\right]_{eq}}}
+
+Inserting the equilibrium concentrations from Eq. (\ref{eq9.22}) into Eq. (\ref{eq9.23}), we get:
+
+\aeqn{9.24}{K = \frac{k_+}{k_-}}
+
+}
+
+\opage{
+
+\otext
+This is consistent with the statement saying that the forward and backward rates must be equal ($k_+\left[A\right]_{eq} = k_-\left[B\right]_{eq}$) at equilibrium. If the equilibrium constant $K$ and one of the rates are known then the remaining rate constant can be calculated. For a general reaction, the equilibrium constant can be expressed as:
+
+\aeqn{9.25}{K = \frac{k_{a,+}}{k_{a,-}}\times\frac{k_{b,+}}{k_{b,-}}\times...}
+
+\textit{We have now established an important link between the rates of reaction and thermodynamic equilibrium.}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} 1,2-dimethylcyclopropane $cis-trans$ isomerization follows first-order kinetics. At 726 K the $trans$ isomer was observed to form according to:
+
+\begin{center}
+\begin{tabular}{cccccccccc}
+$t$ (s) & 0 & 90 & 225 & 270 & 360 & 495 & 585 & 675 & $\infty$\\
+\% $trans$ & 0 & 18.9 & 37.7 & 41.8 & 49.3 & 56.5 & 60.1 & 62.7 & 70.0\\
+\end{tabular}
+\end{center}
+
+Calculate the equilibrium constant $K$ and the rate constants $k_+$ (foward) and $k_-$ (backward).
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We can directly fit the data to Eq. (\ref{eq9.20}). Since the two variables appear there separately, it is possible
+to determine them separately from this data. Once we get $k_+$ and $k_-$, we can use Eq. (\ref{eq9.24}) to calculate $K$.
+
+$$\frac{\left[A\right]}{\left[A\right]_0} = \frac{k_- + k_+e^{-\left(k_+ + k_-\right)t}}{k_+ + k_-}$$
+
+}
+
+\opage{
+
+\otext
+The data was not given in concentration units but percentages of $B$. Concentrations are proportional to \% and the proportionality constant cancels out for first-order reactions. The concentration of $A$ is proportional to $100\% - \textnormal{\% of \textit{trans}}$. Fitting the given data to Eq. (\ref{eq9.20}) is not a trivial matter. The equation is non-linear, which requires the non-linear least squares procedure. The result is shown below.
+
+\ofig{kinetics4}{0.3}{}
+
+We identify $k_+ = 2.40\times 10^{-3}$ s$^{-1}$ and $k_- = 1.08\times 10^{-3}$ s$^{-1}$. This gives $K = 2.40\times 10^{-3}/1.08\times 10^{-3}$ s$^{-1} = 2.22$. Non-linear least squares analysis is included in software packages like qtiplot, which is available from:\\ \url{http://soft.proindependent.com/qtiplot.html}.
+
+}
+
+\opage{
+
+\otext
+\underline{2. Relaxation kinetics.} The term \textit{relaxation} here denotes the return of a system to equilibrium after some given perturbation. This way we can study the relaxation kinetics near the equilibrium. An example of suitable perturbation could be a temperature jump that alters the equilibrium constant and hence the system will try reach the new equilibrium condition. It is possible to reach temperature jumps of 5-10 K in $\mu$s timescale. Other examples of perturbation are laser and microwave fields. Based on the van't Hoff equation (Eq. (\ref{eq5.39})), the equilibrium constant $K$ depends on temperature provided that $\Delta_rH^\circ$ is non-zero, which we assume in the following. 
+
+\vspace*{0.2cm}
+
+Consider equilibrium $A\rightleftharpoons B$, which is a first-order reaction. If the temperature is changes, the equilibrium constant $K = K(T)$ changed as well. Based on Eq. (\ref{eq9.25}), the rate constants also depend on temperature $k_+ = k_+(T)$ and/or $k_- = k_-(T)$. The response of the system will be \textit{exponential} as shown below.
+
+\vspace*{0.1cm}
+
+Cosider first the equilibrium condition:
+
+\aeqn{9.26}{\frac{d\left[A\right]_{eq}}{dt} = -k_+\left[A\right]_{eq} + k_-\left[B\right]_{eq}}
+
+Since we are at equilibrium $\frac{d\left[A\right]_{eq}}{dt} = 0$ and the forward and backward rates are equal: $k_+\left[A\right]_{eq} = k_-\left[B\right]_{eq}$. Next the system is perturbed in such a way that the reaction will try to reach new equilbrium concentrations given by $\left[A\right] = \left[A\right]_{eq} + \epsilon$ and $\left[B\right] = \left[B\right]_{eq} - \epsilon$. The former equation also defines the differential $d\left[A\right] = d\epsilon$. Now the system starts evolving according to:
+
+}
+
+\opage{
+
+\otext
+\aeqn{9.27}{\frac{d\left[A\right]}{dt} = -k_+\left[A\right] + k_-\left[B\right]}
+
+where the rate constants $k_+$ and $k_-$ now refer to the new values after perturbation. This equation can be written in terms of $\epsilon$ as:
+
+\aeqn{9.28}{\frac{d\epsilon}{dt} = -k_+\left(\left[A\right]_{eq} + \epsilon\right) + k_-\left(\left[B\right]_{eq} - \epsilon\right)}
+
+Since the forward and backward rates are equal, this simplifies to:
+
+\beqn{9.29}{\frac{d\epsilon}{dt} = -\umark{\left(k_+ + k_-\right)}{\equiv1/\tau, \textnormal{const.},>0}\epsilon}
+{\Rightarrow \epsilon = \epsilon_0e^{-t/\tau}}
+
+where $\epsilon_0$ is the change in concentration right after the temperature jump. From the exponential relaxation, we can obtain the sum of the new rate constants. When this is combined with the equilibrium condition, $K = \frac{k_+}{k_-}$, it is possible to obtain both rate constants individually.
+
+}

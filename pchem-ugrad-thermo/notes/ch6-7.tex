@@ -1,0 +1,117 @@
+\opage{
+\otitle{6.7 Colligative properties}
+
+\otext
+Colligative properties: depression of freezing point, elevation of boiling point, osmotic pressure, and the lowering of the vapor pressure by a non-volatile solute.
+
+\vspace*{0.2cm}
+
+\underline{The depression of freezing point}
+
+\vspace*{0.2cm}
+
+Consider an ideal mixture of solvent A and solute B (i.e. A is in excess of B). The phase equilibrium between solid A and liquid A is given by Eqs. (\ref{eq6.19}) and (\ref{eq6.21}) (also note that for solids $\mu^\circ = \mu$ and for ideal solutions $a_i = x_i$):
+
+\aeqn{6.59}{\mu_{\textnormal{A}}^\circ(s,T) = \mu_{\textnormal{A}}(s,T) = \mu_{\textnormal{A}}(l, T) = \mu_{\textnormal{A}}^\circ + RT\ln\left(a_{\textnormal{A}}\right) = \mu_{\textnormal{A}}^\circ + RT\ln\left(x_{\textnormal{A}}\right)}
+
+Solving for $\ln\left(x_{\textnormal{A}}\right)$ we get:
+
+\aeqn{6.60}{\ln\left(x_{\textnormal{A}}\right) = \frac{\mu_{\textnormal{A}}^\circ(s,T) - \mu_{\textnormal{A}}^\circ(l,T)}{RT} = -\frac{\Delta_{fus}G_{\textnormal{A}}^\circ(l,T)}{RT}}
+
+where $\Delta_{fus}G_{\textnormal{A}}^\circ$ is the Gibbs energy of fusion at temperature $T$.
+
+}
+
+\opage{
+
+\otext
+Next we assume that $\Delta_{fus}H^\circ$ and $\Delta_{fus}S^\circ$ are independent of temperature near the freezing point of $A$ (Eq. (\ref{eq3.30}) and constant $P$):
+
+\vspace*{-0.2cm}
+
+\aeqn{6.61}{\Delta_{fus}G^\circ_{\textnormal{A}} = \Delta_{fus}H^\circ_{\textnormal{A}} - T\Delta_{fus}S^\circ_{\textnormal{A}} = \Delta_{fus}H^\circ_{\textnormal{A}} - T\left(\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{T_{fus,\textnormal{A}}}\right) = \Delta_{fus}H^\circ_{\textnormal{A}}\left(1 - \frac{T}{T_{fus,\textnormal{A}}}\right)}
+
+When this is substituted into Eq. (\ref{eq6.60}), we have:
+
+\aeqn{6.62}{\ln\left(x_{\textnormal{A}}\right) = -\left(\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{R}\right)\left(\frac{1}{T} - \frac{1}{T_{fus,\textnormal{A}}}\right) = -\left(\frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{R}\right)\left(\frac{T_{fus,\textnormal{A}} - T}{T_{fus,\textnormal{A}}T}\right)}
+
+Next we relate $x_{\textnormal{A}}$ to $x_{\textnormal{B}}$ by $x_{\textnormal{A}} = 1 - x_{\textnormal{B}}$ (also $T \approx T_{fus,\textnormal{A}}$):
+
+\aeqn{6.63}{\ln\left(x_{\textnormal{A}}\right) = \ln\left(1 - x_{\textnormal{B}}\right) \approx - \frac{\Delta_{fus}H^\circ_{\textnormal{A}}}{RT^2_{fus,\textnormal{A}}} \times  \umark{\left(T_{fus,\textnormal{A}} - T\right)}{=\Delta T_f} = -\frac{\Delta_{fus}H^\circ_{\textnormal{A}}\Delta T_f}{RT^2_{fus,\textnormal{A}}}}
+
+This expression can be approximated by using the Taylor expansion of $\ln\left(1 - x\right)$:
+
+}
+
+\opage{
+
+\otext
+\beqn{6.64}{\ln\left(1 - x\right) = -x - \frac{1}{2}x^2 - \frac{1}{3}x^3 - ...\textnormal{ when }-1 < x < 1}
+{\approx -x \textnormal{ when higher order terms are ignored.}}
+
+With this approximation, Eq. (\ref{eq6.63}) can be written as:
+
+\aeqn{6.65}{\Delta T_f = \left(\frac{RT^2_{fus,\textnormal{A}}}{\Delta_{fus}H^\circ_{\textnormal{A}}}\right)x_{\textnormal{B}}}
+
+Where $\Delta T_f$ indicates the change (i.e. depression) in freezing point. In this context the concentration is often given in terms of molal concentrations $m$ (i.e. moles of solute per kilogram of solvent). The relation between these concentrations is:
+
+\aeqn{6.66}{x_{\textnormal{B}} = \frac{m_{\textnormal{B}}}{1 / M_{\textnormal{A}} + m_{\textnormal{B}}} \approx m_{\textnormal{B}}M_{\textnormal{A}}}
+
+where $M_\textnormal{A}$ is the molar mass of A. The last approximation applies to dilute solution. Substitution of Eq. (\ref{eq6.66}) into (\ref{eq6.65}) gives ($K_f$ is called the \textit{freezing point constant}):
+
+\aeqn{6.65a}{\Delta T_f = \frac{RT^2_{fus,\textnormal{A}} M_{\textnormal{A}} m_{\textnormal{B}} }{\Delta_{fus}H^\circ_{\textnormal{A}}} = K_fm_{\textnormal{B}}\textnormal{ with }K_f = \frac{RT^2_{fus,\textnormal{A}}M_{\textnormal{A}}}{\Delta_{fus}H^\circ_{\textnormal{A}}}}
+
+}
+
+\opage{
+
+\otext
+\underline{The elevation of boiling point}
+
+\vspace*{0.2cm}
+
+By using analogous approach to obtain the depression of freezing point, we can obtain the following expressions for the elevation of boiling point:
+
+\aeqn{6.66a}{\Delta T_b = \frac{RT^2_{vap,\textnormal{A}}}{\Delta_{vap}H^\circ_{\textnormal{A}}}x_{\textnormal{B}} = K_bm_{\textnormal{B}}\textnormal{ where }K_b = \frac{RT^2_{vap,\textnormal{A}}M_{\textnormal{A}}}{\Delta_{vap}H^\circ_{\textnormal{A}}}}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Denote the solvent by A and the solute by B. Derive an expression for the molar mass of B in terms of ($K_b$, $\Delta T_b$) or ($K_f$, $\Delta T_f$). Assume that the mass of B dissolved in A and the total weight of the solution are given and that the solution is dilute in B.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Since the solution is dilute in B, we have approximately mass(A) $\approx$ mass(A + B), where mass(A) is the mass of solvent A (kg) and mass(A + B) is the mass of the solution containing both A and B. Since $m_{\textnormal{B}}$ = ``moles of solute molecules dissolved'' / ``the total mass of the solvent'', we can write:
+
+$$m_{\textnormal{B}} = \frac{n_{\textnormal{B}}}{mass(\textnormal{A})} \approx \frac{n_{\textnormal{B}}}{mass(\textnormal{A} + \textnormal{B})}$$
+
+On the other hand we have:
+
+$$\Delta T_b = K_bm_{\textnormal{B}}\textnormal{ or }\Delta T_f = K_fm_{\textnormal{B}}$$
+
+}
+
+\opage{
+
+\otext
+By combining the above equations, we get:
+
+$$n_{\textnormal{B}} = \frac{\Delta T_f}{K_f} \times mass(\textnormal{A} + \textnormal{B})\textnormal{ or }n_{\textnormal{B}} = \frac{\Delta T_b}{K_b}\times mass(\textnormal{A} + \textnormal{B})$$
+$$\Rightarrow \textnormal{M.W. of B} = \frac{mass(\textnormal{B})}{n_{\textnormal{B}}} = \frac{K_f}{\Delta T_f}\times \frac{mass(\textnormal{B})}{mass(\textnormal{A} + \textnormal{B})}\textnormal{ in units of kg mol}^{-1}$$
+
+This allows for determination of the molecular mass of B experimentally provided that the constants $K_f$ (aka. cryoscopic constant) or $K_b$ (aka. ebullioscopic constant) are known. Their values for few selected solvents are shown below.
+
+\vspace*{0.2cm}
+
+\textbf{Table.} Cryoscopic and equlliscopic constants for selected solvents.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lll}
+Solvent & $K_f$ (K kg mol$^{-1}$) & $K_b$ (K kg mol$^{-1}$)\\
+Benzene & 5.12 & 2.53\\
+Camphor & 40 & -- \\
+Phenol & 7.27 & 3.04\\
+Water & 1.86 & 0.51\\
+\end{tabular}
+
+}

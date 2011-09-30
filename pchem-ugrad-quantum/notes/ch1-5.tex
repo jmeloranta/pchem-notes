@@ -1,0 +1,84 @@
+\opage{
+\otitle{1.5 Expectation values and superposition}
+
+\otext
+In most cases, we need to calculate expectation values for wavefunctions, which are not eigenfunctions of the given operator. It can be shown that for any given Hermitian operator and physically sensible \href{http://en.wikipedia.org/wiki/Boundary_condition}{\uline{boundary conditions}}, the eigenfunctions form a \href{http://en.wikipedia.org/wiki/Basis_(linear_algebra)}{\uline{complete basis set}}. This means that any well-behaved function $\psi$ can be written as a \href{http://en.wikipedia.org/wiki/Linear_combination}{\uline{linear combination}} of the eigenfunctions $\phi_i$ (``\href{http://en.wikipedia.org/wiki/Quantum_superposition}{\uline{superposition state}}''; the upper limit in the summation may be finite):
+
+\aeqn{9.50}{\psi(x) = \sum\limits_{i=1}^{\infty}c_i\phi_i(x)\textnormal{ where }\hat{A}\phi_i = a_i\phi_i}
+
+where $c_i$ are constants specific to the given $\psi$. Since the $\phi_i$ are orthonormal (Eq. (\ref{eq9.43})) and $\psi$is normalized to one, we have:
+
+\vspace*{-0.2cm}
+
+\aeqn{9.51}{1 = \int\psi^*\psi d\tau = \int\left(\sum\limits_{i=1}^{\infty}c_i\phi_i\right)^*
+\left(\sum\limits_{k=1}^{\infty}c_k\phi_k\right)d\tau = \sum\limits_{i=1}^{\infty}c_i^*c_i\int\phi_i^*\phi_i d\tau = \sum\limits_{i=1}^{\infty}\left|c_i\right|^2}
+
+The expectation value of $\hat{A}$ is given (in terms of the eigenfunction basis; $\hat{A}$ linear):
+
+\vspace*{-0.2cm}
+
+\beqn{9.52}{\left<\hat{A}\right> = \int\psi^*\hat{A}\psi d\tau = \int\left(\sum\limits_{i=1}^{\infty}c_i\phi_i\right)^*\hat{A}\left(\sum\limits_{k=1}^{\infty}c_k\phi_k\right)d\tau}
+{= \sum\limits_{i=1,k=1}^{\infty}c_i^*c_k\int\phi_i^*\hat{A}\phi_kd\tau = \sum\limits_{i=1,k=1}^{\infty}
+c_i^*c_k\left<\phi_i\left|\hat{A}\right|\phi_k\right>}
+
+}
+
+\opage{
+
+\otext
+Above $\left<\phi_i\left|\hat{A}\right|\phi_k\right>$ is often called a ``matrix element''. Since $\phi_i$'s are eigenfunctions of $\hat{A}$, we get:
+
+\aeqn{9.52a}{\left<\hat{A}\right> = \sum\limits_{i=1}^{\infty} \left|c_i\right|^2a_i}
+
+Note that above $\psi$ is not an eigenfunction of $\hat{A}$. The expectation value is a weighted average of the eigenvalues.
+
+\otext
+The coefficients $\left|c_i\right|^2$ give the probability for a measurement to give an outcome corresponding to $a_i$. This is often taken as one of the postulates (``assumption'') for quantum mechanics (Bohr's probability interpretation). Note that the coefficients $c_i$ may be complex but $\left|c_i\right|^2$ is always real.
+
+\otext
+Given a wavefunction $\psi$, it is possible to find out how much a certain eigenfunction $\phi_i$ contributes to it (using orthogonality of the eigenfunctions):
+
+\aeqn{9.54}{\int\phi_i^*\psi d\tau = \int\phi_i^*\left(\sum\limits_{k=1}^{\infty}c_k\phi_k\right)d\tau = c_i}
+
+\aeqn{9.55}{\textnormal{OR }\left|c_i\right|^2 = \left|\int\phi_i^*\psi d\tau\right|^2}
+
+Note that the discrete basis expansion does not work when the operator $\hat{A}$ has a continuous set of eigenvalues (``continuous spectrum'').
+
+}
+
+\opage{
+
+\otext
+The \href{http://en.wikipedia.org/wiki/Variance}{\uline{variance}} $\sigma_A^2$ for operator $\hat{A}$ is defined as (see Eq. (\ref{eqX.2})):
+
+\ceqn{9.57}{\sigma_A^2 = \left<\left(\hat{A} - \left<\hat{A}\right>\right)^2\right> = \left<\psi\left|\left(\hat{A} - \left<\hat{A}\right>\right)^2\right|\psi\right> = \left<\psi\left|\hat{A}^2\right|\psi\right>}{ - \underbrace{\left<\psi\left|2\hat{A}\left<\psi\left|\hat{A}\right|\psi\right>\right|\psi\right>}_{= 2\left<\psi\left|\hat{A}\right|\psi\right>^2} + \left<\psi\left|\hat{A}\right|\psi\right>^2}
+{= \left<\psi\left|\hat{A}^2\right|\psi\right> - \left<\psi\left|\hat{A}\right|\psi\right>^2 = \left<\hat{A}^2\right> - \left<\hat{A}\right>^2}
+
+The \href{http://en.wikipedia.org/wiki/Standard_deviation}{\uline{standard deviation}} is given by the square root of $\sigma_A^2$.
+
+\otext
+\textbf{Example.} Consider a particle in a quantum state $\psi$ that is a superposition of two eigenfunctions $\phi_1$ and $\phi_2$, with energy eigenvalues $E_1$ and $E_2$ of operator $\hat{H}$  ($E_1 \ne E_2$):
+
+$$\psi = c_1\phi_1 + c_2\phi_2$$
+
+If one attempts to measure energy of such state, what will be the outcome? What will be the average energy and the standard deviation in energy?
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} Since $\psi$ is normalized and $\phi_1$ and $\phi_2$ are orthogonal, we have $\left|c_1\right|^2 + \left|c_2\right|^2 = 1$. The probability of measuring $E_1$ is $\left|c_1\right|^2$ and $E_2$ is $\left|c_2\right|^2$. The average energy is given by:
+
+}
+
+\opage{
+
+\otext
+$$\left<\hat{H}\right> = \left<\psi\left|\hat{H}\right|\psi\right> = \left|c_1\right|^2\left<\phi_1\left|\hat{H}\right|\phi_1\right> + c_1^*c_2\left<\phi_1\left|\hat{H}\right|\phi_2\right> + c_2^*c_1\left<\phi_2\left|\hat{H}\right|\phi_1\right>$$
+$$ + \left|c_2\right|^2\left<\phi_2\left|\hat{H}\right|\phi_2\right> = \left|c_1\right|^2E_1 + c_1^*c_2E_2\underbrace{\left<\phi_1\left|\phi_2\right.\right>}_{= 0} + c_2^*c_1E_1\underbrace{\left<\phi_2\left|\phi_1\right.\right>}_{= 0} + \left|c_2\right|^2E_2$$
+$$= \left|c_1\right|^2E_1 + \left|c_2\right|^2E_2$$
+
+(Exercise: write the above equation without using the Dirac notation). The standard deviation is given by (\ref{eq9.57}): $\sigma_{\hat{H}} = \sqrt{\left<\hat{H}^2\right> - \left<\hat{H}\right>^2}$. We have already calculated $\left<\hat{H}\right>$ above and need to calculate $\left<\hat{H}^2\right>$ (use the eigenvalue equation and orthogonality):
+
+$$\left<\hat{H}^2\right> = \left<\psi\left|\hat{H}^2\right|\psi\right> = \left<\psi\left|\hat{H}\right|E_1c_1\phi_1 + E_2c_2\phi_2\right> = \left<c_1\phi_1 + c_2\phi_2\left|E_1^2c_1\phi_1 + E_2^2c_2\phi_2\right.\right>$$
+$$ = \left|c_1\right|^2E_1^2 + \left|c_2\right|^2E_2^2 \Rightarrow \sigma_{\hat{H}} = \sqrt{\left|c_1\right|^2E_1^2 + \left|c_2\right|^2E_2^2 - \left(\left|c_1\right|^2E_1 + \left|c_2\right|^2E_2\right)^2}$$
+
+}

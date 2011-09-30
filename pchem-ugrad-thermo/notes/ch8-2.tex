@@ -1,0 +1,47 @@
+\opage{
+\otitle{8.2 Canonical parition function for a monoatomic ideal gas}
+
+\otext
+Once system's partition function $Z$ has been found, Eqs. (\ref{eq8.30}), (\ref{eq8.31}) and (\ref{eq8.32}) can be used to calculate thermodynamic quantities. Exact calculation of $Z$ for real systems is difficult because atoms/molecules interact and may require quantum mechanical caclculations (i.e., to solve the Schr\"odinger equation). In the following, we will consider monoatomic ideal gas (distinguishable atoms), which means that we need to only consider translational motion of atoms (no vibration or rotation) and that the total energy can be expressed as a sum of individual atoms:
+
+\aeqn{8.39}{E_i = \sum\limits_{j = 1}^{N} \epsilon_{i,j}}
+
+where $E_i$ is the total energy for state $i$, $N$ the number of atoms and $\epsilon_{i,j}$ is the energy of atom $j$ in state $i$. The canonical partition function $Z$ can now be written as:
+
+\aeqn{8.40}{Z = \sum\limits_{i=1}^{\infty} e^{-\beta E_i} = \sum\limits_{i=1}^{\infty} e^{-\beta\sum\limits_{j=1}^N\epsilon_{i,j}}}
+
+Since the atoms are distinguishable and $i$ runs over all possible states, we can rewrite Eq. (\ref{eq8.40}) as:
+}
+
+\opage{
+
+\beqn{8.41}{Z = \omark{\sum\limits_{k=1}^{\infty}\sum\limits_{l=1}^{\infty} ... \sum\limits_{m=1}^{\infty}}{N\textnormal{ times}} e^{-\beta(\epsilon_k + \epsilon_l + ... + \epsilon_m)}}
+{= \sum\limits_{k=1}^{\infty}e^{-\beta\epsilon_k}\times\sum\limits_{l=1}^{\infty}e^{-\beta\epsilon_l}\times ...\times\sum\limits_{m=1}^{\infty}e^{-\beta\epsilon_m}}
+
+Atomic partition functions are defined as:
+
+\aeqn{8.42}{z_j \equiv \sum\limits_{i=1}^{\infty}e^{-\beta\epsilon_i}\textnormal{ and }Z = z_1\times z_2\times ... z_N}
+
+If the atoms are not all alike but there are $N_A$ (do not confuse this with the Avograro's number) atoms of species A, $N_B$ atoms of species B, etc. then:
+
+\beqn{8.43}{Z = \left(Z_A\right)^{N_A}\times\left(Z_B\right)^{N_B}\times ..}
+{\textnormal{where }Z_A = \sum\limits_{i=1}^{N_A}e^{-\beta\epsilon_{A,i}}, ...}
+
+Remember that this holds only for distinguishable particles (e.g., localized atoms in a solid).
+
+}
+
+\opage{
+
+\otext
+It turns out that quantum mechanics excludes some classical states for indistinguishable particles and hence a different form of Eq. (\ref{eq8.43}) must be used. It can be shown that at sufficiently high temperatures, the canonical partition function for indisinguishable particles is given by:
+
+\aeqn{8.44}{Z = \frac{z^N}{N!}\textnormal{ and }z\equiv\sum\limits_{i=1}^{\infty}e^{-\beta E_i}}
+
+where we have assumed that most molecules are in different microscopic states (see Physical Chemistry, Levine for more details). A mixture of species has then:
+
+\aeqn{8.45}{Z = \frac{\left(Z_A\right)^{N_A}}{N_A!}\times\frac{\left(Z_B\right)^{N_B}}{N_B!}\times ...}
+
+The above formula cannot be used, for example, at liquid helium temperatures where the high temperature assumption does not hold.
+
+}

@@ -1,0 +1,102 @@
+% Problem 1/1 solution
+\noindent
+\underline{Solution:}\\
+
+\begin{enumerate}
+\item The probability $P$ for finding the electron within $a_0$ (a ball with radius $a_0$; denoted by $V$ below) is:
+
+\begin{eqnarray}
+\nonumber
+& & P = \int\limits_V\psi_0^*\psi_0d\tau = \frac{1}{\pi a_0^3} \int\limits_{0}^{a_0} e^{-2r/a_0}\underbrace{4\pi r^2dr}_{= d\tau}\\
+\nonumber
+& & = \frac{4}{a_0^3}\times\frac{a_0^3 - 5a_0^3e^{-2}}{4} = 1 - 5e^{-2}\approx 0.323
+\end{eqnarray}
+
+Note that the $4\pi$ in the volume element above comes from the fact that the function in the integral does not depend on the angles $\theta$ and $\phi$ and therefore the angular part can be integrated independently to yield $4\pi$ (i.e. the original volume element $d\tau = r^2\sin(\theta)d\theta d\phi dr$ is then effectively just $4\pi r^2dr$). Above we have used the following result from a tablebook:
+
+\begin{eqnarray}
+& & \int x^2e^{ax}dx = \frac{a^{ax}}{a}\left(x^2 - \frac{2x}{a} + \frac{2}{a^2}\right)
+\nonumber
+\end{eqnarray}
+
+This was applied in the following form:
+
+\begin{eqnarray}
+\nonumber
+& & \int\limits_{0}^{a_0} e^{-2r/a_0}r^2dr\\
+\nonumber
+& & =\frac{e^{-2r/a_0}}{-2/a_0}\left(r^2 - \frac{2r}{-2/a_0} + \frac{2}{(-2/a_0)^2}\right) - \frac{1}{-2/a_0}\times \frac{2}{(-2/a_0)^2}\\
+\nonumber
+& & = -\frac{a_0 e^{-2}}{2}\left(a_0^2 + a_0^2 + \frac{a_0^2}{2}\right) + \frac{a_0^3}{4}\\
+\nonumber
+& & -\frac{5a_0^3e^{-2}}{4} + \frac{a_0^3}{4} = \frac{a_0^3 - 5a_0^3e^{-2}}{4}
+\end{eqnarray}
+
+\item First recall the wavefunctions:
+\begin{eqnarray}
+\nonumber
+& & \psi_0(r,\theta,\phi) = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}\\
+\nonumber
+& & \psi_1(r,\theta,\phi) = A(2 + \lambda r)e^{-r/(2a_0)}, \psi_2(r,\theta,\phi) = B\sin(\theta)\cos(\phi)re^{-r/(2a_0)}
+\end{eqnarray}
+
+First we calculate $\lambda$ from the orthogonality:
+
+\begin{eqnarray}
+\nonumber
+& & \int\psi_1^*\psi_0 d\tau = 4\pi\int\limits_{0}^\infty\psi^*_1(r)\psi_0(r)r^2dr = \frac{4\pi A}{\sqrt{\pi a_0^3}}\int\limits_{0}^\infty (2 + \lambda r)e^{-3r/(2a_0)} r^2dr = 0\\
+\nonumber
+& & \Rightarrow \int\limits_{0}^\infty(2 + \lambda r)e^{-3r/(2a_0)}r^2dr = 0\\
+\nonumber
+& & \Rightarrow 2\int\limits_{0}^{\infty}e^{-3r/(2a_0)}r^2dr + \lambda\int\limits_{0}^{\infty}e^{-3r/(2a_0)}r^3dr = 0\\
+\nonumber
+& & \Rightarrow 2\times\frac{16a_0^3}{27} + \lambda a_0^4 = 0\\
+\nonumber
+& & \Rightarrow a_0^3 + \lambda a_0^4 = 0 \Rightarrow \lambda = -\frac{1}{a_0}
+\end{eqnarray}
+
+Then determine $A$ from the normalization condition:
+
+\begin{eqnarray}
+\nonumber
+& & \int\limits_{r=0}^{\infty}\int\limits_{\theta = 0}^{\pi}\int\limits_{\phi = 0}^{2\pi}\left|\psi_1(r,\theta,\phi)\right|^2 r^2 \sin(\theta) drd\theta d\phi\\
+\nonumber
+& & = 4\pi A^2\int\limits_{r=0}^{\infty}\left(2 - \frac{r}{a_0}\right)^2e^{-r/a_0}r^2dr\\
+\nonumber
+& & = 4\pi A^2\left(4\int\limits_{r=0}^{\infty} r^2e^{-r/a_0}dr - \frac{4}{a_0}\int\limits_{r=0}^{\infty} r^3e^{-r/a_0}dr + \frac{1}{a_0^2}\int\limits_{r=0}^{\infty} r^4 e^{-r/a_0}dr\right)
+\end{eqnarray}
+
+\begin{eqnarray}
+\nonumber
+& & = 4\pi A^2\left(4\frac{2!}{(1/a_0)^3} - \frac{4}{a_0}\frac{3!}{(1/a_0)^4} + \frac{1}{a_0^2}\frac{4!}{(1/a_0)^5}\right)\\
+\nonumber
+& & = 4\pi A^2\left(8a_0^3 - 24a_0^3 + 24a_0^3\right) = 32\pi A^2 a_0^3 = 1\\
+\nonumber
+& & \Rightarrow A = \frac{1}{\sqrt{32\pi a_0^3}} = \frac{1}{4\sqrt{2\pi a_0^3}}
+\end{eqnarray}
+
+$B$ can also be determined from normalization:
+\begin{eqnarray}
+\nonumber
+& & \int\limits_{r=0}^{\infty}\int\limits_{\theta = 0}^{\pi}\int\limits_{\phi = 0}^{2\pi}\left|\psi_2(r,\theta,\phi)\right|^2 r^2 \sin(\theta) drd\theta d\phi\\
+\nonumber
+& & = B^2\int\limits_{r = 0}^{\infty}r^4e^{-r/a_0}dr\int\limits_{\theta = 0}^{\pi}\sin^3(\theta)d\theta\int\limits_{\phi = 0}^{2\pi}\cos^2(\phi)d\phi\\
+\nonumber
+& & B^2\left(\frac{24}{(1/a_0)^5}\right)\times\frac{4}{3}\times\pi = 32B^2\pi a_0^5 = 1 \Rightarrow B = \frac{1}{\sqrt{32\pi a_0^5}}\\
+\nonumber
+& & = \frac{1}{4\sqrt{2\pi a_0^5}}
+\end{eqnarray}
+
+Above we have used the following integrals (tablebook):
+
+\begin{eqnarray}
+\nonumber
+& & \int\limits_{0}^{\infty} x^n e^{-ax}dx = \frac{n!}{a^{n+1}}\\
+\nonumber
+& & \int\sin^3(ax)dx = \frac{\cos(3ax)}{12a} - \frac{3\cos(ax)}{4a}\\
+\nonumber
+& & \int\cos^2(ax)dx = \frac{x}{2} + \frac{\sin(2ax)}{4a}
+\end{eqnarray}
+
+\end{enumerate}
+\hrule\vspace{0.5cm}

@@ -1,0 +1,31 @@
+% Problem 2/8 solution
+\noindent
+\underline{Solution:}
+
+\noindent
+Entropy is given by:
+
+$$S = \frac{U}{T} + k\ln\left(Z_{tr}\right)$$
+
+\noindent
+where we need to use the following ($N$ is number of atoms):
+
+$$U = \frac{3}{2}NkT$$
+
+$$\ln\left(Z_{tr}\right) = N\times\left[\frac{3}{2}\ln\left(2\pi mk/h^2\right) + \frac{3}{2}\ln(T) + ln(V)\right] - \ln(N!)$$
+
+\noindent
+Inserting these into the expression for entropy, we get:
+
+$$S = \frac{3}{2}Nk + Nk\times\ln\left[\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\right] + \ln\left(\frac{V^{Nk}}{N!^k}\right)$$
+
+\noindent
+To simplify this expression we use $N! = N^N / e^N$:
+
+$$S = \frac{3}{2}nK + Nk\times\ln\left[\left(\frac{2\pi mkT}{h^2}\right)^{3/2} + \ln\left(\frac{V}{N}\right) + \ln(1)\right]$$
+
+This further simplifies as:
+
+$$S = nK\left\lbrace\ln\left[\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\times\frac{V}{N}\right] + \frac{5}{2}\right\rbrace$$
+
+\hrule\vspace{0.5cm}

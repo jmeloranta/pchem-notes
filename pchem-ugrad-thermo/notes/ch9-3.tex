@@ -1,0 +1,262 @@
+\opage{
+
+\otitle{9.3 Integrated rate laws}
+
+\otext
+By combining Eqs. (\ref{eq9.1}) and (\ref{eq9.3}), we can write for component $i$:
+
+\aeqn{9.6}{\frac{d\left[i\right]}{dt} = v_ik\left[A\right]^a\left[B\right]^b...}
+
+This is a differential equation for the unknown functions $\left[i\right](t)$. Most common solutions are considered below.
+
+\vspace*{-0.2cm}
+
+\begin{itemize}
+\otext
+
+\item \textit{First-order reactions}. For a reaction $A\rightarrow \textnormal{products}$, we have $v_A = -1$ and for first-order reaction $a = 1$. Eq. (\ref{eq9.6}) can now be written:
+
+\aeqn{9.7}{\frac{d\left[A\right]}{dt} = -k\left[A\right]^a = -k\left[A\right]}
+
+The solution to the above differential equation is an exponential function:
+
+\aeqn{9.8}{\left[A\right] = \left[A\right]_0e^{-kt}}
+
+This is called the \textit{integrated form} of the rate law. The unit for $k$ in this equation is s$^{-1}$. The \textit{half-life} $t_{1/2}$ (i.e., the time when half of the initial concentration is left) for a first-order reaction is given by:
+
+\aeqn{9.9}{\frac{\left[A\right]}{\left[A\right]_0} = \frac{1}{2} = e^{-kt_{1/2}} \Rightarrow t_{1/2} = \frac{\ln(2)}{k}}
+
+The numerical value for $\ln(2) \approx 0.693$.
+
+\end{itemize}
+
+}
+
+\opage{
+
+\begin{itemize}
+\otext
+
+\item \textit{Second-order reactions}. The second-order rate law is obtained from Eq. (\ref{eq9.6}) when $a = 2$:
+
+\aeqn{9.10}{\frac{d\left[A\right]}{dt} = -k\left[A\right]^a = -k\left[A\right]^2}
+
+The solution to this differential equation is (verify by differentiation):
+
+\aeqn{9.11}{\frac{1}{\left[A\right]} - \frac{1}{\left[A\right]_0} = kt\textnormal{ or }\left[A\right] = \frac{\left[A\right]_0}{1 + kt\left[A\right]_0}}
+
+The unit for the rate constant $k$ in this case is M$^{-1}$ s$^{-1}$ (or L mol$^{-1}$ s$^{-1}$). The half-life in this case is given by:
+
+\aeqn{9.12}{t_{1/2} = \frac{1}{k\left[A\right]_0}}
+
+which can be derived the same way as we did for the 1st order reaction. Another type of second-order reaction is:
+
+\aeqn{9.13}{\frac{d\left[A\right]}{dt} = -k\left[A\right]\left[B\right]}
+
+where $a = b = 1$ and their sum gives two as is required for an over all second-order reaction. The solution to this differential equation is given by:
+
+\aeqn{9.14}{\ln\left(\frac{\left[B\right]/\left[B\right]_0}{\left[A\right]/\left[A\right]_0}\right) = \left(\left[B\right]_0 - \left[A\right]_0\right)kt}
+
+\end{itemize}
+
+}
+
+\opage{
+
+\otext
+\textbf{Note:} When $\left[A\right] = \left[B\right]$, Eqs. (\ref{eq9.11}) and (\ref{eq9.14}) become idential as they describe the same rate law.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Solve the differential equation given in Eq. (\ref{eq9.7}).
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We proceed first by rearranging the equation:
+
+$$\frac{d\left[A\right]}{\left[A\right]} = -kdt$$
+
+then we can integrate both sides:
+
+$$\int\limits_{\left[A\right]_0}^{\left[A\right]} \frac{d\left[A\right]}{\left[A\right]} = -k\int\limits_0^tdt$$
+
+which gives after integration:
+
+$$\ln\left(\frac{\left[A\right]}{\left[A\right]_0}\right) = -kt$$
+
+This can be rearranged to correspond to Eq. (\ref{eq9.7}):
+
+$$\left[A\right] = \left[A\right]_0e^{-kt}$$
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Consider the following reaction:
+
+$$\textnormal{CH}_3\textnormal{N}_2\textnormal{CH}_3(g)\rightarrow \textnormal{CH}_3\textnormal{CH}_3(g) + \textnormal{N}_2(g)$$
+
+At 600 K the partial pressures of $\textnormal{CH}_3\textnormal{N}_2\textnormal{CH}_3$ were found as follows:
+
+\begin{center}
+\begin{tabular}{cccccc}
+$t$ (s) & 0 & 1000 & 2000 & 3000 & 4000\\
+$P$ (10$^{-2}$ Torr) & 8.20 & 5.72 & 3.99 & 2.78 & 1.94\\ 
+\end{tabular}
+\end{center}
+
+Show that this reaction is 1st order in $\textnormal{CH}_3\textnormal{N}_2\textnormal{CH}_3$ and find the rate constant at 600 K.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} First we remember Eq. (\ref{eq1.7a}), which gives the relationship between the partial pressure of an ideal gas with its mole fraction:
+
+$$P_i = \frac{n_i}{n}P = y_iP$$
+
+where $n_i$ is the number of moles of component $i$ and $n$ is the total number of moles present. Partial pressure $P_i$ is proportional to the concentration of $i$:
+
+$$P_i = \frac{n_i}{n}P = \frac{PV}{n}\times\frac{n_i}{V} = \umark{RT}{\textnormal{constant}}\times\frac{n_i}{V} \propto \frac{n_i}{V} = c_i$$
+
+where $c_i$ is the concentration of species $i$ and the gas mixture was assumed to follow the ideal gas law.
+
+}
+
+\opage{
+
+\otext
+Note that in the 1st order integrated rate law the above proportionality constant drops out and therefore Eq. (\ref{eq9.8}) can now be written:
+
+$$P_i = P_{i,0}e^{-kt}$$
+
+Here $P_i$ is the partial pressure of $\textnormal{CH}_3\textnormal{N}_2\textnormal{CH}_3$. Taking natural logarithms of this equation gives:
+
+$$\ln\left(\frac{P_i}{P_{i,0}}\right) = -kt$$
+
+Thus plotting $\ln\left(P_i/P_{i,0}\right)$ as a function of $t$ should give a straight line. 
+
+\vspace*{-0.4cm}
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{kinetics2}{0.3}{}
+\end{column}
+
+\begin{column}{5cm}
+\otext
+
+This plot is clearly linear indicating that the 1st order integrated rate law applies and the reaction is 1st order with respect to azomethane.
+The rate constant can be extracted directly from the slope as $k = -\textnormal{slope} = 3.6\times 10^{-4}$ s$^{-1}$.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} When gaseous ammonia decomposes on the surface of hot metal catalyst ($2\textnormal{NH}_3\rightarrow \textnormal{N}_2 + 3\textnormal{H}_2$), the half-life of of NH$_3(g)$ was observed to depend on its initial pressure as follows:
+
+\begin{center}
+\begin{tabular}{ccccc}
+$P_0$ (Torr) & 65 & 105 & 150 & 185\\
+$t_{1/2}$ (s) & 290 & 460 & 670 & 820\\
+\end{tabular}
+\end{center}
+
+What is the reaction rate and what is the value of rate constant?
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} First we observe that the half-life depends on the initial concentration and based on Eq. (\ref{eq9.9}) this cannot be a first-order reaction. For a second-order reaction the half-life should depend inversely on the initial concentration (see Eq. (\ref{eq9.12})) but here we observe exactly the opposite trend and this cannot therefore be a second-order reaction either. If we write the rate law in the form (\textit{zeroth-order reaction}):
+
+\aeqn{9.15}{\frac{d\left[A\right]}{dt} = -k\left[A\right]^0 = -k}
+
+The integrate rate law now becomes:
+
+\aeqn{9.16}{\left[A\right] - \left[A\right]_0 = -kt}
+
+Inserting $\left[A\right] = \left[A\right]_0/2$ above, gives the half-life as:
+
+\aeqn{9.17}{t_{1/2} = \frac{\left[A\right]_0 - \left[A\right]_0/2}{k} = \frac{\left[A\right]_0}{2k}}
+
+}
+
+\opage{
+
+\otext
+Since this is a gas phase reaction, we replace the concentration by partial pressure (as we did in the previous example). Note that in this example the proportionality constant does not cancel out and we will get the rate constant in pressure units. We expect the half-life to depend on the initial pressure of NH$_3(g)$ as follows:
+
+$$P_i = 2kt_{1/2}$$
+
+Therefore a plot of the partial pressure as a function of $t_{1/2}$ should give a straight line with the slope $2k$.
+
+\vspace*{-0.2cm}
+
+\begin{columns}
+
+\hspace*{-0.2cm}
+\begin{column}{3.3cm}
+\ofig{kinetics3}{0.3}{}
+\end{column}
+
+\begin{column}{6cm}
+\otext
+
+The data yields a straight line and confirms that this reaction is zeroth-order. The rate constant (in pressure units) can be extracted from the slope: $k = \textnormal{slope}/2 = 0.112\textnormal{ Torr s}^{-1}$. Note that linear regression analysis can also yield error estimates. Here the standard error estimate for the slope is $\pm0.003$, which gives $0.0015\textnormal{ Torr s}^{-1}$ error for the rate constant. Thus we would report the final result as: $k = 0.112\pm 0.002\textnormal{ Torr s}^{-1}$. Another important indicator is the correlation coefficient ($r^2$), which for this case was 0.9998 indicating a very good quality fit. Strong deviations from 1.0 would indicate a bad quality fit.
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Liquid phase reaction $\textnormal{CH}_3\textnormal{CH}_2\textnormal{NO}_2 + \textnormal{OH}^-\rightarrow \textnormal{H}_2\textnormal{O} + \textnormal{CH}_3\textnormal{CHNO}_2^-$ is second-order overall and the rate constant at 273 K is $k = 0.652\textnormal{ M}^{-1}\textnormal{ s}^{-1}$. The initial concentration for nitroethane is 4.00 mM and 5.00 mM for OH$^{-}$. How long does the reaction have to proceed in order to consume 90\% of the initial nitroethane concentration?
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} Let us denote nitroethane by $A$ and OH$^{-}$ by $B$. First we solve Eq. (\ref{eq9.14}) for $t$:
+
+$$t = \frac{1}{k\left(\left[B\right]_0 - \left[A\right]_0\right)}\ln\left(\frac{\left[B\right]/\left[B\right]_0}{\left[A\right]/\left[A\right]_0}\right)$$
+
+The current concentrations are $\left[A\right] = \left[A\right]_0 - x$ and $\left[B\right] = \left[B\right]_0 - x$ based on the stoichimetry of the chemical equation. 90\% consumption of $A$ (nitromethane) corresponds to 10\% being left: $\left(\left[A\right]_0 - x\right)/\left[A\right]_0 = 0.10$. Solving for $x$ gives $x = 0.90\times\left[A\right]_0 = 3.60$ mM. Then $\left[A\right] = \left[A\right]_0 - x = 0.40$ mM and $\left[B\right] = \left[B\right]_0 - x = 1.40$ mM. Inserting these values into the expression for $t$ we get:
+
+$$t = \frac{1}{0.652\textnormal{ M}^{-1}\textnormal{ s}^{-1}\left(5.00\times 10^{-3}\textnormal{ M} - 4.00\times 10^{-3}\textnormal{ M}\right)}$$
+$$\times\ln\left(\frac{1.40\times 10^{-3}\textnormal{ M} / 5.00\times 10^{-3}\textnormal{ M}}{0.40\times 10^{-3}\textnormal{ M} / 4.00\times 10^{-3}\textnormal{ M}}\right) = 1580\textnormal{ s}$$
+
+}
+
+\opage{
+
+\otext
+\underline{Summary of the rate laws:}\\
+
+\vspace*{0.2cm}
+
+\begin{center}
+
+\begin{tabular}{llll}
+Order & Reaction & Rate law & $t_{1/2}$\\
+\cline{1-4}
+0 & $A\rightarrow P$ & $r = k$ & $\frac{\left[A\right]_0}{2k}$\\
+  &                  & $\left[A\right] = \left[A\right]_0 - kt$\\
+1 & $A\rightarrow P$ & $r = k\left[A\right]$ & $\frac{\ln(2)}{k}$\\
+  &                  & $\left[A\right] = \left[A\right]_0e^{-kt}$\\
+2 & $A\rightarrow P$ & $r = k\left[A\right]^2$ & $\frac{1}{k\left[A\right]_0}$\\
+  &                  & $\left[A\right] = \frac{\left[A\right]_0}{1 + kt\left[A\right]_0}$\\
+  & $A + B\rightarrow P$ & $r = k\left[A\right]\left[B\right]$ & \\
+  &                      & $\ln\left(\frac{\left[B\right]/\left[B\right]_0}{\left[A\right]/\left[A\right]_0}\right) = \left(\left[B\right]_0 - \left[A\right]_0\right)kt$ & \\
+3 & $A + 2B\rightarrow P$ & $r = \left[A\right]\left[B\right]^2$ & \\
+  &                       & $kt = \frac{\ln\left(\frac{\left[B\right]\left[A\right]_0}{\left[A\right]\left[B\right]_0}\right)}{\left(\left[B\right]_0 - 2\left[A\right]_0\right)^2} + \frac{\left[B\right] - \left[B\right]_0}{\left(\left[B\right]_0 - 2\left[A\right]_0\right)\left[B\right]\left[B\right]_0}$ & \\
+  $n\ge 2$ & $A\rightarrow P$ & $r = k\left[A\right]^n$ & $\frac{2^{n-1} - 1}{(n-1)k\left[A\right]^{n-1}_0}$\\
+           &                  & $kt = \frac{1}{n-1}\left(\frac{1}{\left[A\right]^{n-1}} - \frac{1}{\left[A\right]^{n-1}_0}\right)$ & \\
+\end{tabular}
+
+\end{center}
+
+}

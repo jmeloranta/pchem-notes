@@ -1,0 +1,48 @@
+\opage{
+\otitle{4.8 Gibbs-Duhem Equation}
+
+\otext
+In this section we derive the Gibbs-Duhem equation, which we will need later. First we use Eq. (\ref{eq4.18}) constant $T$ and $P$:
+
+\vspace*{-0.2cm}
+
+$$U(V,S,\lbrace n_i\rbrace) = \sum\limits_{i=1}^{N_s}n_i\mu_i - PV + ST$$
+
+If we let each quantity vary in forming the corresponding differential $dU$, we get:
+
+$$dU = \sum\limits_{i=1}^{N_s} n_id\mu_i + \sum\limits_{i=1}^{N_s}\mu_idn_i - PdV - VdP + SdT + TdS$$
+
+On the other hand, since $U = U(V, S, \lbrace n_i\rbrace)$ the total differential of $U$ can be expressed in terms of the partial derivatives of $U$ (Eq. (\ref{eq4.7})):
+
+\vspace*{-0.4cm}
+
+$$dU = \sum\limits_{i=1}^{N_s}\umark{\left(\frac{\partial U}{\partial n_i}\right)_{V,S,\lbrace n_j\rbrace_{j\ne i}}}{=\mu_i\textnormal{ (Eq. (\ref{eq4.9}))}} dn_i + \umark{\left(\frac{\partial U}{\partial V}\right)_{S,\lbrace n_i\rbrace}}{=-P\textnormal{ (Eq. (\ref{eq4.9}))}}dV + \umark{\left(\frac{\partial U}{\partial S}\right)_{V,\lbrace n_i\rbrace}}{=T\textnormal{ (Eq. (\ref{eq4.9}))}}dS$$
+$$= \sum\limits_{i=1}^{N_s}\mu_idn_i - PdV + TdS$$
+
+}
+
+\opage{
+
+\otext
+By subtracting the two equations from each other yields:
+
+\aeqn{4.103}{\sum\limits_{i=1}^{N_s} n_id\mu_i - VdP + SdT = 0}
+
+This is known as \textit{the Gibbs-Duhem equation}. We will use it later when we discuss the Clapeyron equation as well as Henry's and Raoult's laws.
+
+\otext
+
+\underline{Notes:}
+
+\begin{enumerate}
+\otext
+
+\item At constant $P$ and $T$, Eq. (\ref{eq4.103}) becomes: $\sum\limits_{i=1}^{N_s}n_id\mu_i = 0$.
+
+\item For a system with two species (total 1 mol) at constant $T$ and $P$ we have ($x_1$ and $x_2$ are the mole fractions for species 1 and 2):
+
+\beqn{4.104}{x_1d\mu_1 + x_2d\mu_2 = 0\textnormal{ (with }x_2 = 1 - x_1\textnormal{)}}{\Rightarrow x_1d\mu_1 + (1 - x_1)d\mu_2 = 0}
+
+\end{enumerate}
+
+}

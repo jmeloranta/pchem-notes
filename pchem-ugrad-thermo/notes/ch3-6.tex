@@ -1,0 +1,68 @@
+\opage{
+\otitle{3.6 Entropy and statistical probability}
+
+\otext
+Consider again Joule's experiment (both bulbs with equal volume):
+
+\vspace*{-0.3cm}
+
+\ofig{joule-exp3}{0.5}{}
+
+With just one gas molecule, after opening the stopcock, the molecule can be in either bulb. Thus the number of equally probable arrangements is 2. With two gas molecules, they can be located both on the left, one on each side (two possibilities) and both on the right. This gives 4 equally probable arrangements. For $n$ molecules the number of equally probable arrangements is:
+
+\vspace*{0.2cm}
+
+\begin{tabular}{ll}
+\# of molecules & Number of possible arrangements\\
+2 & $2^2 = 4$\\
+3 & $2^3 = 8$\\
+4 & $2^4 = 16$\\
+... & ...\\
+$n$ & $2^n = \exp\left(\ln\left(2^{n}\right)\right)$\\
+\end{tabular}
+
+}
+
+\opage{
+
+\otext
+For one mole of molecules, $N = 6.022 \times 10^{23}$ ($n = 1$). The number of equally probably arrangements is:
+
+\aeqn{3.45}{2^{6.022\times10^{23}} = e^{4.174\times 10^{23}}}
+
+\underline{Boltzmann's postulate:} \aeqn{3.46}{S = k\ln\left(\Omega\right)}
+
+where $k$ is Boltzmann's constant ($= R \times N_A$) and $\Omega$ is the number of equally probable microscopic arrangements for the system. The numerical value for $k$ is $1.38066 \times 10^{-23}$ J K$^{-1}$. For changes in entropy the equation has the form:
+
+\aeqn{3.47}{\Delta S = S' - S = k\ln\left(\frac{\Omega'}{\Omega}\right)}
+
+Consider now the Joule's experiment. In the initial state all molecules are in the left bulb and there is only one possible arrangement, $\Omega = 1$. After opening the valve and reaching the equilibrium the number of possible arrangments is given by Eq. (\ref{eq3.45}):
+
+\vspace*{-0.2cm}
+
+$$\Omega' = e^{4.174\times 10^{23}}\textnormal{ (final state) and }\Omega = 1\textnormal{ (initial state)}$$
+$$\Delta S = k\ln\left(\frac{\Omega'}{\Omega}\right) = \left(1.381\times 10^{-23}\textnormal{ J K}^{-1}\right)\times\left(4.174\times 10^{23}\right) = 5.76\textnormal{ J K}^{-1}$$
+
+This is positive because entropy increases when volume increases. Note that if we chose two different volumes for the bulbs, then $\Omega \propto V_1$ and $\Omega' \propto V_2$ and we would recover the $\ln\left(\frac{V_1}{V_2}\right)$ form that we found earlier.
+
+}
+
+\opage{
+
+\otext
+If we compare this result with the one we calculated earlier (``expansion of ideal gas''), we note that they are identical (earlier we obtained $R\ln(2) \approx 5.76$). This gives strong support for Boltzmann's postulate (but does not prove that it is correct).
+
+\vspace*{0.2cm}
+
+Because of Eq. (\ref{eq3.15}), $\Delta S \ge q / T$, the entropy is a measure of heat flow between the system and the surroundings. When heat is absorbed by the system from its surroundings, $q$ is positive, and the entropy of the system increases. On the microscopic scale, the entropy is a measure of the dispersal of energy among the possible microstates of molecules in a system (``degrees of freedom'').
+
+\vspace*{0.4cm}
+
+\underline{Notes:}
+
+\begin{itemize}
+\item Since thermodynamics is a statistical theory, it works only when we have a large number of atoms/molecules.
+\item Some processes happen spontaneously even though they do not reduce the energy of a system. They are driven purely by favorable change in entropy! From the statistical point of view, it means that states with most degrees of freedom are favored.
+\end{itemize}
+
+}

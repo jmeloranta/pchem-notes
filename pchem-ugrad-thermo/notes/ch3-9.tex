@@ -1,0 +1,110 @@
+\opage{
+\otitle{3.9 Heat engines}
+
+\otext
+Heat engine is an engine that uses heat to generate mechanical work:
+
+\ofig{heat-engine}{0.4}{}
+
+\underline{Carnot heat engine:}
+
+\begin{enumerate}
+\item Isothermal expansion
+\item Adiabatic expansion
+\item Isothermal compression
+\item Adiabatic compression
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+Consider the $P-V$ plot of the Carnot heat engine (the four cycles are denoted by A, B, C, D, all processes are reversible):
+
+\begin{columns}
+
+\otext
+
+\begin{column}{1.5cm}
+\ofig{carnot-cycle}{0.4}{}
+\end{column}
+
+\begin{column}{9cm}
+
+\begin{enumerate}
+\item \tiny\textbf{A} $\rightarrow$ \textbf{B}:
+\begin{itemize}
+\item \tiny Heat $q_1$ is transferred from the high-temperature (isothermal at temperature $T_1$) reservoir to the cylinder
+\item Isothermal expansion of the gas pushes the piston towards larger cylinder volume
+\item The moving piston does work on the surroundings ($w_1$)
+\item $\Delta U_1 = q_1 + w_1$
+\end{itemize}
+\item \textbf{B} $\rightarrow$ \textbf{C}:
+\begin{itemize}
+\item \tiny Adiabatic expansion of the gas
+\item The expansion continues until temperature of the gas drops from $T_1$ to $T_2$
+\item During this stage the piston does work on the surroundings ($w_2$)
+\item $\Delta U_2 = w_2$
+\end{itemize}
+\item \textbf{C} $\rightarrow$ \textbf{D}:
+\begin{itemize}
+\item \tiny Isothermal compression of the gas
+\item The surroundings does work on the piston ($w_3$)
+\item Heat flows out to the low-temperature reservoir ($q_2$)
+\item $\Delta U_3 = q_2 + w_3$
+\end{itemize}
+\item \textbf{D} $\rightarrow$ \textbf{A}:
+\begin{itemize}
+\item \tiny Adiabatic compression of the gas
+\item The surroundings do work on the piston ($w_4$)
+\item No heat exchange
+\item A steam engine with two stages
+\item $\Delta U_4 = w_4$
+\end{itemize}
+
+\end{enumerate}
+
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Because the internal energy of the system is a state function, the total change in internal energy over a closed path must be zero (assume ideal gas):
+
+\aeqn{3.54}{\Delta U_{cycle} = \umark{\left(\omark{q_1}{q_{in}} + \omark{q_2}{q_{out}}\right)}{\equiv q_{cycle}} + \umark{\left(w_1 + w_2 + w_3 + w_4\right)}{\equiv w_{cycle}}}
+
+\aeqn{3.55}{\Rightarrow -w_{cycle} = q_{cycle} = q_{in} + q_{out}}
+
+\aeqn{3.56}{\Rightarrow \left|w_{cycle}\right| = \left|q_{in}\right| - \left|q_{out}\right|\textnormal{ }(q_{in} > 0\textnormal{ and }q_{out} < 0)}
+
+In order to find out the efficiency of the heat engine, we define the efficiency parameter $\epsilon$:
+
+\vspace*{-0.1cm}
+
+\aeqn{3.57}{\epsilon = \frac{w_{cycle}}{q_{in}} = \frac{\left|q_{in}\right| - \left|q_{out}\right|}{q_{in}} = 1 - \frac{\left|q_{out}\right|}{\left|q_{in}\right|}}
+
+Note that $0 < \epsilon < 1$ and larger value of $\epsilon$ correspond to better efficiency.
+
+\vspace*{0.2cm}
+
+Next we apply the concept of entropy to simplify Eq. (\ref{eq3.57}). Because the overall cycle is reversible, the total entropy change over the closed cycle is zero. Only two segments along the path deal with heat exchange (\textbf{A}-\textbf{B} and \textbf{C}-\textbf{D}). For these segments Eq. (\ref{eq3.9}) gives ($T_{in}$ and $T_{out}$ correspond to $T_1$ and $T_2$, respectively):
+
+\aeqn{3.59}{\Delta S_{cycle} = \frac{\left|q_{in}\right|}{T_h} - \frac{\left|q_{out}\right|}{T_c} = 0 \Rightarrow \frac{\left|q_{in}\right|}{T_h} = \frac{\left|q_{out}\right|}{T_c}}
+
+\aeqn{3.61}{\epsilon = 1 - \frac{T_c}{T_h}}
+
+}
+
+\opage{
+
+\otext
+Thus the ratio of $T_c / T_h$ must be made as small as possible to achieve high efficiency. Typically $T_c$ would be room temperature, and therefore $T_h$ should simply be made as high as possible.
+
+\vfill
+
+}

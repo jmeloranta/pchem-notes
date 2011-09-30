@@ -1,0 +1,79 @@
+\noindent
+\textbf{Thermodynamics:
+\ifthenelse{\equal{\solutions}{true}}{Examples}{Homework} for chapter 1.}\\
+
+\begin{enumerate}
+\item When 0.12 g of solid iodine was vaporized at 1670 K, the resulting gas displaced 20.2 cm$^3$ of dry air at 298 K and 99.9 kPa pressure. How many iodine molecules were dissociated (i.e. as atomic iodine) in the gas? The gas phase equilibrium reaction is:
+
+$$\textnormal{I}_2(g) \rightleftharpoons 2\textnormal{I}(g)$$
+
+Assume that the gas mixture (of I$_2$ and I) behave according to the ideal gas law.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-1}}{}
+
+\item What is the molar volume of $n$-hexane at 660 K and 91 bar according to (a) the ideal gas law and (b) the van der Waals equation? For $n$-hexane, $T_c$ = 507.7 K and $P_c$ = 30.3 bar. If you obtain an equation that you cannot solve analytically, attempt to solve it
+numerically.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-2}}{}
+
+\item Ten grams of N$_2$ is mixed with 5 g of O$_2$ and held at 25 $^\circ$C and 0.750 bar. (a) What are the partial pressures of N$_2$ and O$_2$? (b) What is the volume of the ideal mixture?
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-3}}{}
+
+\item Calculate $dZ / dP$ for a real gas in the limit $P \rightarrow 0$ using the virial equation.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-4}}{}
+
+\item The critical temperature of gaseous ammonia is 406 K and the critical pressure is 113 bar. Use the van der Waals equation to predict its molar volume at 273 K and 1 bar. Hint: Calculate first the coefficients $a$ and $b$, then write the equation for the molar
+volume: $V = \frac{RT}{P + a / \bar{V}^2} + b$. Guess an initial value for the molar volume and obtain a new value from the equation. Place the obtained value in the equation again to get a new value. Repeat this procedure until the value does not change anymore. This is an example of iterative methods for solving equations.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-5}}{}
+
+\item Derive the expressions for $V_c$ , $T_c$ and $P_c$ in terms of the van der Waals constants $a$ and $b$.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-6}}{}
+
+\item The isothermal compressibility $\kappa$ of a gas is defined as:
+
+$$\kappa = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T$$
+
+Calculate $\kappa$ for a van der Waals gas using the method of implicit differentiation (with respect to $P$). Show that in the limit of infinite volume, it yields $1/P$ (the same result as the ideal gas law).
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-7}}{}
+
+\item The cubic expansion coefficient is defined by
+
+$$\alpha = \frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_P$$
+
+Calculate the cubic expansion and isothermal compressibility coefficients for an ideal gas.
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-8}}{}
+
+\item A certain gas has the following equation of state:
+
+$$P = \frac{nRT}{V - nb}$$
+
+\begin{itemize}
+
+\item[a)] Calculate the following partial derivatives:
+
+$$\left(\frac{\partial P}{\partial V}\right)_T\textnormal{ and }\left(\frac{\partial P}{\partial T}\right)_V$$
+
+\item[b)] Show that the following relation holds for the mixed partial derivatives for this equation of state:
+
+$$\left(\frac{\partial^2 P}{\partial V\partial T}\right) = \left(\frac{\partial^2 P}{\partial T\partial V}\right)$$
+
+\end{itemize}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-9}}{}
+
+\item Calculate the compressibility factor $Z$ for NH$_3(g)$ at 400 K and 50 bar by using the attached graph and the virial equation.
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[scale=1.5]{graph}
+\end{figure}
+
+\ifthenelse{\equal{\solutions}{true}}{\input{ch1-solution-10}}{}
+
+\end{enumerate}

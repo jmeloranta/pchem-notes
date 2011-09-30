@@ -1,0 +1,48 @@
+\opage{
+\otitle{3.7 General expression for evaluating entropy}
+
+\otext
+The entropy of a substance at any desired temperature relative to its entropy at absolute zero may be obtained by integrating $dq / T$ from absolute zero to the desired temperature:
+
+\aeqn{3.49}{\bar{S}_T^\circ - \bar{S}_{0\textnormal{ K}}^\circ = \int\limits_{0\textnormal{ K}}^{T_m}\frac{\bar{C}_P^\circ(s)}{T}dT + \frac{\Delta H_{fus}^\circ}{T_m} + \int\limits_{T_m}^{T_b}\frac{\bar{C}_P^\circ(l)}{T}dT + \frac{\Delta H_{vap}^\circ}{T_b} + \int\limits_{T_b}^{T}\frac{\bar{C}_P^\circ(g)}{T}dT}
+
+where $T_m$ is the melting temperature and $T_b$ is the boiling temperature. If temperature $T$ is smaller than $T_m$ or $T_b$, the corresponding terms are omitted. The enthalpies have the following notation: $fus$ (fusion; crystallization/melting) and $vap$ (vaporization). Note that all the heat capacities in this expression depend on temperature:
+
+\begin{columns}
+
+\begin{column}{5cm}
+\vspace*{-0.3cm}
+\ofig{so2}{0.17}{}
+\end{column}
+
+\begin{column}{3cm}
+Heat capacity of sulfur dioxide at a constant pressure of 1 bar.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Entropy of sulfur dioxide at different temperatures ($T_m = 197.64$ K, $T_b =$ 263.08 K, $\Delta \bar{H}_{fus} = 7402$ J mol$^{-1}$, $\Delta \bar{H}_{vap} = 24937$ J mol$^{-1}$):
+
+\vspace*{0.4cm}
+
+\begin{tabular}{lll}
+$T$ (K) & Method of calculation & $\Delta\bar{S}^\circ$ (J K$^{-1}$ mol$^{-1}$)\\
+\cline{1-3}\\
+0 -- 15 & Debye function ($\bar{C}_P \propto T^3$) & 1.26\\
+15 -- 197.64 & Graphical, solid & 84.18\\
+197.64 & Fusion, $\Delta \bar{H}_{fus} / T_m$ & 37.45\\
+197.64 -- 263.08 & Graphical, liquid & 24.94\\
+263.08 & Vaporization, $\Delta \bar{H}_{vap} / T_b$ & 94.79\\
+263.08 -- 298.15 & From $\bar{C}_P$ of gas & 5.23\\
+\cline{3-3}
+& $\bar{S}^\circ(298.15\textnormal{ K}) - \bar{S}^\circ(0\textnormal{ K}) =$ & 247.85\\
+\end{tabular}
+
+\vfill
+
+}

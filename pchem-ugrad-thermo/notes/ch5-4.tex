@@ -1,0 +1,110 @@
+\opage{
+\otitle{5.4 Calculation of equilibrium constants using standard Gibbs energies of formation}
+
+\otext
+In general $\Delta_r G^\circ$ can be determined in three different ways:
+
+\begin{enumerate}
+\item Determine the equilibrium constant $K$ experimentally and use Eq. (\ref{eq5.13}).
+\item By using Eq. (\ref{eq5.17}): $\Delta_r G^\circ = \Delta_r H^\circ - T\Delta_r S^\circ$. with $\Delta_r H^\circ$ determined calorimetrically and $\Delta_r S^\circ$ obtained from the third law of thermodynamics.
+\item Statistical thermodynamics (theoretical approach).
+\end{enumerate}
+
+\hrulefill
+
+Calculation of $\Delta_r G^\circ$ from the standard Gibbs energy of formation ($\Delta_f G^\circ$):
+
+\aeqn{5.37}{\Delta_r G^\circ = \sum\limits_{i=1}^{N_s}v_i\Delta_fG_i^\circ\textnormal{ with }\Delta_f G^\circ_i = \Delta_f H_i^\circ - T\left(\bar{S}_i^\circ + \sum\limits_{j\ne i}v_j\bar{S}^\circ_j\right)}
+
+The entropy summation is over the elements that are required to form compound $i$. $\Delta_f G^\circ_i$ is the Gibbs energy for formation of species $i$. Note that at all temperatures $\Delta_f G^\circ (\textnormal{H}^+(aq)) = \Delta_f H^\circ (\textnormal{H}^+(aq)) = \bar{S}^\circ(\textnormal{H}^+(aq)) = 0$.
+
+\vspace*{0.2cm}
+
+First use the NIST Chemistry WebBook (\url{http://webbook.nist.gov/chemistry/}) to get the enthalpies of formation ($\Delta_r H^\circ_i$) and entropies ($S^\circ_i$) and finally calculate $\Delta_r G^\circ_i$ by using Eq. (\ref{eq5.37}).
+
+}
+
+\opage{
+
+\otext
+\underline{Note:} Even when $\Delta_r H^\circ$ is positive (i.e., endothermic reaction), $\Delta_r S^\circ$ may be sufficiently large so that it overall produces negative Gibbs energy. Such reactions are entropy driven.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the standard Gibbs energy of formation for gaseous water $\textnormal{H}_2(g) + \frac{1}{2}\textnormal{O}_2(g) = \textnormal{H}_2\textnormal{O}(g)$ given the following calorimetric data ($T = 298.15$ K):
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lll}
+ & $\Delta_fH^\circ$ (kJ mol$^{-1}$) & $S^\circ$ (J K$^{-1}$ mol$^{-1}$)\\
+H$_2$O$(g)$ & $-$241.8 & 188.8\\
+H$_2(g)$ & 0 & 130.7\\
+O$_2(g)$ & 0 & 205.1\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Apply Eq. (\ref{eq5.37}):
+
+\vspace*{-0.1cm}
+
+$$\Delta_f G^\circ(\textnormal{H}_2\textnormal{O}) = \Delta_f H^\circ(\textnormal{H}_2\textnormal{O}(g)) - T\Delta_f S^\circ(\textnormal{H}_2\textnormal{O}(g)) = \Delta_fH^\circ(\textnormal{H}_2\textnormal{O}(g))$$
+$$ - T\left\lbrace\bar{S}^\circ_{\textnormal{H}_2\textnormal{O}} \umark{-\bar{S}^\circ_{\textnormal{H}_2} - \frac{1}{2}\bar{S}^\circ_{\textnormal{O}_2}}{= \sum v_jS_j^\circ}\right\rbrace = \left(-241.8\textnormal{ kJ mol}^{-1}\right) - \left( 298.15\textnormal{ K}\right)$$
+$$\times\left\lbrace\left(0.1888\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1}\right) - \left(0.1307\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1}\right) - 0.5\left(0.2051\textnormal{ kJ K}^{-1}\textnormal{ mol}^{-1}\right)\right\rbrace$$
+$$= -228.6\textnormal{ kJ mol}^{-1}$$
+
+\vspace*{-0.1cm}
+
+
+Note that the quantities with $\Delta_f$ above are already per mole quantities and therefore do not require use of overbars.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Calculate the equilibrium constants for the following reactions at the indicated temperature:
+
+\vspace*{0.1cm}
+
+a) 3O$_2(g)$ = 2O$_3(g)$ at 25 \degree C\\
+b) CO$(g)$ + 2H$_2(g)$ = CH$_3$OH$(g)$ at 500 K ($\Delta_fG^\circ(\textnormal{CH}_3\textnormal{OH}) = 134.3\textnormal{ kJ mol}^{-1}$)\\
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} (a) First we have to calculate $\Delta_fG^\circ$ using the values of $\Delta_f H^\circ = 142.7$ kJ mol$^{-1}$ and $\Delta_f S^\circ = \bar{S}^\circ_{\textnormal{O}_3} - \frac{3}{2}\bar{S}^\circ_{\textnormal{O}_2} = -68.8\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}$, which give $\Delta_fG^\circ(\textnormal{O}_3(g)) = \Delta_f H^\circ(\textnormal{O}_3(g)) - T\Delta_f S^\circ(\textnormal{O}_3(g)) = 163.2\textnormal{ kJ mol}^{-1}$ (numerical values from the Chemistry WebBook). Note that the formation reaction for ozone is $\frac{3}{2}\textnormal{O}_2(g) \rightarrow \textnormal{O}_3(g)$.
+
+\vspace*{0.1cm}
+
+Then we use Eq. (\ref{eq5.37}) to get $\Delta_rG^\circ$ (note that $\Delta_f G^\circ(\textnormal{O}_2(g)) = 0$):
+
+$$\Delta_r G^\circ = 2\Delta_f G^\circ(\textnormal{O}_3(g)) - 3\Delta_f G^\circ (\textnormal{O}_2(g)) = 326.4\textnormal{ kJ mol}^{-1}$$
+
+Next apply Eq. (\ref{eq5.13}) to get $K$:
+
+\vspace*{-0.2cm}
+
+$$K = \exp\left(-\frac{\Delta_r G^\circ}{RT}\right) = 6.62\times 10^{-58}$$
+
+(b) First we have to calculate $\Delta_f G^\circ(\textnormal{CO}(g))$ at 500 K temperature. The formation reaction for CO$(g)$ is: $\textnormal{C (graphite)} + \frac{1}{2}\textnormal{O}_2(g) \rightarrow \textnormal{CO}(g)$. The required values can be found from the Chemistry WebBook but note that the required values must be at 500 K. For example, for CO at 500 K we get (graphite $\bar{S}^\circ$ assumed to be temperature independent):
+
+\vspace*{-0.2cm}
+
+$$\bar{S}^\circ_{\textnormal{CO}(g)} = 212.8\textnormal{ J mol}^{-1}\textnormal{ K}^{-1}, \bar{S}^\circ_{\textnormal{graphite}} = 5.6\textnormal{ J K}^{-1}\textnormal{mol}^{-1}$$
+
+}
+
+\opage{
+
+\otext
+
+$$\bar{S}^\circ_{\textnormal{O}_2(g)} = 220.8\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}, \Delta_fS^\circ (\textnormal{CO}(g)) = \left(212.8 - 5.6 - \frac{1}{2}\times 220.8\right)\textnormal{ }\frac{\textnormal{J}}{\textnormal{K mol}}$$
+$$= 96.8\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\textnormal{ at 500 K}$$
+
+The enthalpy at 500 K is $\Delta_f H^\circ (\textnormal{CO}(g)) = -104.6\textnormal{ kJ mol}^{-1}$, which results in  $\Delta_fG^\circ(\textnormal{CO}(g)) = -153.0\textnormal{ kJ mol}^{-1}$. For CH$_3$OH $\Delta_fG^\circ$ at 500 K was given (this could have been calculated using the heat capacity data given in the Chemistry WebBook data). Now Eqs. (\ref{eq5.37}) and (\ref{eq5.13}) give:
+
+$$\Delta_r G^\circ = \Delta_f G^\circ(\textnormal{CH}_3\textnormal{OH}(g)) - 2\umark{\Delta_fG^\circ(\textnormal{H}_2(g))}{_= 0} - \Delta_fG^\circ(\textnormal{CO}(g))$$
+$$= \left(-134.3\textnormal{ kJ mol}^{-1}\right) - \left(-153.0\textnormal{ kJ mol}^{-1}\right) = 18.7\textnormal{ kJ mol}^{-1}$$
+$$K = \exp\left(-\frac{\Delta_r G^\circ}{RT}\right) = \exp\left(-\frac{18700\textnormal{ J mol}^{-1}}{\left(8.31\textnormal{ J K}^{-1}\textnormal{ mol}^{-1}\right)\left(500\textnormal{ K}\right)}\right) = 1.11\times 10^{-2}$$
+
+}
