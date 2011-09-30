@@ -1,0 +1,33 @@
+/*
+ * Solve the coupled first order differential equations analytically.
+ *
+ */
+
+/* Define the equations */
+eq1: 'diff(r(t),t,1) = -k1 * r(t) + k3 * i(t);
+eq2: 'diff(i(t),t,1) = k1 * r(t) - (k3 + k2) * i(t);
+eq3: 'diff(p(t),t,1) = k2 * i(t);
+
+/* Form a list of equations and substitute in auxiliary variables */
+eqs: [eq1, eq2, eq3];
+eqs: subst(l1 + l2 - k1 - k2, k3, eqs);
+eqs: subst(l1 * l2 / k1, k2, eqs);
+eqs: subst((a * l2 + l1) / (a + 1), k1, eqs);
+
+/* Solve the coupled differential equations */
+res: desolve(eqs, [r(t), i(t), p(t)]);
+
+/*
+ * Substitute in the initial conditions:
+ * r(0) = r0 (constant; initial concentration of the reactant)
+ * i(0) = 0
+ * p(0) = 0
+ *
+*/
+res: subst(r0, r(0), res);
+res: subst(0, i(0), res);
+res: subst(0, p(0), res);
+
+/* Simplify and multply through with the exponent function */
+scanmap(multthru, ratsimp(res));
+

@@ -1,0 +1,238 @@
+\documentclass[byrevtex,amssymb,aps,pra,floatfix,letterpaper]{revtex4}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\bibliographystyle{apsrev}
+\date{\today}
+\pagestyle{plain}
+\newcommand{\degree}[0]{$^\circ$}
+
+\begin{document}
+
+\title{Experiment 2: Deprotonation/protonation rate constants}
+
+\date{\today}
+
+\maketitle
+
+\section{Introduction}
+
+In the previous experiment (Experiment \#1), acidity constants for aqueous 2-naphthol (ArOH) were determined for both the ground and lowest excited (singlet) states. These constants pertain to the equilibrium:
+
+\begin{equation}
+\textnormal{ArOH} + \textnormal{H}_2\textnormal{O} \mathop\rightleftharpoons\limits^{k_d'}_{k_p'} \textnormal{ArO}^- + \textnormal{H}_3\textnormal{O}^+
+\label{eq1}
+\end{equation}
+
+\noindent
+where the rate constants for the forward (i.e., deprotonation) and reverse (i.e., protonation) reactions are indicated as $k_d'$ and $k_p'$, respectively. A similar equilibrium can also be written for the excited state:
+
+\begin{equation}
+\textnormal{ArOH}^* + \textnormal{H}_2\textnormal{O} \mathop\rightleftharpoons\limits^{k_d}_{k_p} \textnormal{ArO}^{*-} + \textnormal{H}_3\textnormal{O}^+
+\label{eq2}
+\end{equation}
+
+\noindent
+where the values of the forward ($k_d$) and reverse ($k_p$) rate constants may be different from those in the ground state because of differences in the properties of the 2-naphthol in these two states (for example, $K_a \ne K_a^*$ in experiment \#1). The objective of this experiment is to determine the deprotonation/protonation rate constants of 2-naphthol in its lowest excited singlet state in aqueous solution. For a general overview of chemical kinetics, see Refs. \cite{ATKINS1,SILBEY}.
+
+In experiment \#1, the ratio of concentrations of the ground state free acid and the conjugate base were expressed as a function of $pH$ as:
+
+\begin{equation}
+pH = pK_a + \log\left(\frac{\left[\textnormal{ArO}^-\right]}{\left[\textnormal{ArOH}\right]}\right) \Leftrightarrow pH - pK_a = \log\left(\frac{\left[\textnormal{ArO}^-\right]}{\left[\textnormal{ArOH}\right]}\right)
+\label{eq3}
+\end{equation}
+
+\noindent
+where the molar concentrations were used to approximate activities. An analogous equation can be written for the excited state:
+
+\begin{equation}
+pH = pK_a^* + \log\left(\frac{\left[\textnormal{ArO}^{*-}\right]}{\left[\textnormal{ArOH}^*\right]}\right) \Leftrightarrow pH - pK_a^* = \log\left(\frac{\left[\textnormal{ArO}^{*-}\right]}{\left[\textnormal{ArOH}^*\right]}\right)
+\label{eq4}
+\end{equation}
+
+\noindent
+Eqs. (\ref{eq3}) and (\ref{eq4}) show that if the $pH$ of the solution is less than $pK_a$ of naphthol (in either electronic state), the free acid form will predominate over that of the conjugate base: $\left[\textnormal{ArOH}\right] > \left[\textnormal{ArO}^-\right]$. In the opposite case we have $pH > pK_a$ and then $\left[\textnormal{ArO}^-\right] > \left[\textnormal{ArOH}\right]$.
+
+Suppose that by using a suitable buffer, the $pH$ of the medium is established to be less than $pK_a$ but greater than $pK_a^*$. The ground state of the system will then consist primarily of ArOH and the excited state would be preferably in the form of ArO$^{*-}$. An electronic excitation via light absorption will instantaneously (time scale $\approx$ 10$^{-13}$ s) transform ArOH into ArOH$^*$. We may assume that in this experiment, the buffer holds the $pH$ of the medium constant during and after electronic excitation. This is a valid assumption because the number of photons absorbed per unit volume is much less than the ground-state concentration of ArOH ($\left[\textnormal{ArOH}^*\right] < \left[\textnormal{ArOH}\right]$). However, after excitation ArOH$^*$ will spontaneously dissociate to form ArO$^{*-}$ in order to establish a new equilibrium. Remember that under these circumstances, $\left[\textnormal{ArO}^{*-}\right]$ must be greater than $\left[\textnormal{ArOH}^*\right]$ because we had $pH > pK_a^*$ (see Eq. (\ref{eq4})). During the deprotonation process, the ArOH$^*$ concentration decreases while that of ArO$^{*-}$ increases.
+
+The strategy of this experiment in determining $k_d$ and $k_p$ is to measure the dependence of $\left[\textnormal{ArOH}^*\right]$ on the $pH$ of the solution. The concentration $\left[\textnormal{ArOH}^*\right]$ is monitored through its fluorescence intensity. The $pH$ is varied and established using an ammonium acetate buffer.
+
+\section{Kinetic analysis}
+
+Because in this experiment $pH < pK_a$, only light absorption by the protonated form (ArOH) is considered:
+
+\begin{equation}
+\textnormal{ArOH} + h\nu_{abs} \rightarrow \textnormal{ArOH}^*\textnormal{ (absorption)}
+\label{eq5}
+\end{equation}
+
+The ArOH$^*$ thus produced is, like any excited state, metastable and in relaxing, undergoes a number of different decay processes (here Ac = Acetate):
+
+\begin{equation}
+\textnormal{ArOH}^* \mathop\rightarrow\limits^{k_r} \textnormal{ArOH} + h\nu_{fluorescence} \textnormal{ with }r_r = k_r\left[\textnormal{ArOH}^*\right]\textnormal{ (fluorescence)}
+\label{eq6}
+\end{equation}
+
+\begin{equation}
+\textnormal{ArOH}^* \mathop\rightarrow\limits^{k_{nr}} \textnormal{ArOH} + \textnormal{``heat''} \textnormal{ with }r_{nr} = k_{nr}\left[\textnormal{ArOH}^*\right]\textnormal{ (nonradiative decay)}
+\label{eq7}
+\end{equation}
+
+\begin{equation}
+\textnormal{ArOH}^* \mathop\rightarrow\limits^{k_d} \textnormal{ArO}^{*-} + \textnormal{H}^+(aq) \textnormal{ with }r_d = k_d\left[\textnormal{ArOH}^*\right]\textnormal{ (deprotonation)}
+\label{eq8}
+\end{equation}
+
+\begin{equation}
+\textnormal{ArOH}^* + \textnormal{Ac}^- \mathop\rightarrow\limits^{k_{\textnormal{\tiny Ac}^-}} \textnormal{ArO}^{*-} + \textnormal{HAc} \textnormal{ with }r_{\textnormal{\tiny Ac}^-} = k_{\textnormal{\tiny Ac}^-}\left[\textnormal{ArOH}^*\right]\left[\textnormal{Ac}^-\right]\textnormal{ (deprotonation)}
+\label{eq9}
+\end{equation}
+
+\noindent
+where $r$'s denote rates of the reactions. In addition to radiative (fluorescence) decay (Eq. (\ref{eq6})) and non-radiative relaxation (Eq. (\ref{eq7})), ArOH$^*$ can undergo ``unassisted'' (Eq. (\ref{eq8})) and ``acetate-assisted'' (Eq. (\ref{eq9})) deprotonation. This distinction is significant because the rate
+of deprotonation will be enhanced in the presence of Ac$^-$ in the bimolecular step indicated above in Eq. (\ref{eq9}). Solvent plays a role in the unassisted deprotonation (Eq. (\ref{eq8})), but this step can be considered pseudo-first-order in ArOH$^*$ because the concentration of solvent is much larger than $\left[\textnormal{ArOH}^*\right]$. The reverse steps of the deprotonation processes, which are bimolecular and proportional to $\left[\textnormal{H}^+\right]$ and $\left[\textnormal{HAc}\right]$ (Eqs. (\ref{eq8}) and (\ref{eq9})), are ignored because under these experimental conditions, $\left[\textnormal{H}^+\right]$ and $\left[\textnormal{HAc}\right]$ are very small.
+
+If the $pH$ of the solution is much lower than $pK_a^*$ (for example, in the presence of sulfuric acid), deprotonation by either process above will be suppressed, and fluorescence from ArOH$^*$ predominates. In this case, the fluorescence intensity $I_f^o$, which is proportional to the ratio of the rate of radiative decay to the total ArOH$^*$ decay rate, is:
+
+\begin{equation}
+I_f^o \propto \frac{k_r\left[\textnormal{ArOH}^*\right]}{k_r\left[\textnormal{ArOH}^*\right] + k_{nr}\left[\textnormal{ArOH}^*\right]} = \frac{k_r}{k_r + k_{nr}}
+\label{eq10}
+\end{equation}
+
+\noindent
+where the proportionality involves instrumental factors.
+
+On the other hand, when $pK_a > pH > pK_a^*$ (for example, in NH$_4$Ac buffer solution), the deprotonation steps become kinetically important, and thus the denominator of Eq. (\ref{eq10}) will contain the additional terms: $k_d\left[\textnormal{ArOH}^*\right]$ and $k_{\textnormal{\tiny Ac}^-}\left[\textnormal{ArOH}^*\right]\left[\textnormal{Ac}^-\right]$. Therefore the ArOH$^*$ fluorescence intensity, now denoted as $I_f$, becomes:
+
+\begin{equation}
+I_f \propto \frac{k_r\left[\textnormal{ArOH}^*\right]}{k_r\left[\textnormal{ArOH}^*\right] + k_{nr}\left[\textnormal{ArOH}^*\right] + k_d\left[\textnormal{ArOH}^*\right] + k_{\textnormal{\tiny Ac}^-}\left[\textnormal{ArOH}^*\right]\left[\textnormal{Ac}^-\right]} = \frac{k_r}{k_r + k_{nr} + k_d + k_{\textnormal{\tiny Ac}^-}\left[\textnormal{Ac}^-\right]}
+\label{eq11}
+\end{equation}
+
+\noindent
+The deprotonation of ArOH$^*$ reduces its fluorescence intensity and therefore $I_f < I_f^o$. Assuming that $\left[\textnormal{ArOH}^*\right]$ is identical in all the solutions studied, the ratio of ArOH$^*$ fluorescence intensity in a solution containing sulfuric acid (``low $pH$ solution'') to that containing NH$_4$Ac buffer (``high $pH$ solution'') is obtained by dividing Eq. (\ref{eq10}) by Eq. (\ref{eq11}):
+
+\begin{equation}
+\frac{I_f^o}{I_f} = \frac{k_r + k_{nr} + k_d + k_{\textnormal{\tiny Ac}^-}\left[\textnormal{Ac}^-\right]}{k_r + k_{nr}}
+\label{eq12}
+\end{equation}
+
+\noindent
+This can be rearranged as:
+
+\begin{eqnarray}
+\label{eq13}
+& & \left(\frac{I_f^o}{I_f} - 1\right) = \frac{k_d}{k_r + k_{nr}} + \frac{k_{\textnormal{\tiny Ac}^-}\left[\textnormal{Ac}^-\right]}{k_r + k_{nr}}\\
+\nonumber
+& & \textnormal{OR }\underbrace{\left(\frac{I_f^o}{I_f} - 1\right)}_{``y''} = \underbrace{\tau_0k_d}_{``b''} + \underbrace{\tau_0k_{\textnormal{\tiny Ac}^-}}_{``k``}\times\underbrace{\left[\textnormal{Ac}^-\right]}_{''x``}
+\end{eqnarray}
+
+\noindent
+where $\tau_0 = 1 / (k_r + k_{nr})$ is called the radiative lifetime of ArOH$^*$ in the absence of significant deprotonation. A plot of ($I_f^o / I_f - 1$) vs. $\left[\textnormal{Ac}^-\right]$ should give a straight line with slope $\tau_0k_{\textnormal{\tiny Ac}^-}$ and intercept $\tau_0k_d$ (''Stern-Volmer plot``). To determine $k_d$ by this method, one must obtain $\tau_0$ from a separate experiment using a time-dependent measurement of the fluorescence decay. In fact, the whole experiment could be directly carried out by measuring the fluorescence lifetime, which gives the proportionality between the fluorescence intensity and excited state concentration (1st order exponential decay):
+
+\begin{equation}
+I_f(t) = \left[\textnormal{ArOH}^*\right]_{t=0}e^{-\left(k_f + k_{nr} + k_d + k_{\textnormal{\tiny Ac}^-}\left[\textnormal{\tiny Ac}^-\right]\right)t}
+\label{eq14}
+\end{equation}
+
+\noindent
+Here $\left[\textnormal{ArOH}^*\right]_{t=0}$ is the concentration of photoexcited ArOH immediately after excitation and $t$ is the time after excitation. However, this approach would require a more complicated (and expensive) experimental arrangement and is not used here. The fluorescence quantum yield $\Phi$ is often used to describe the fluorescence process efficiency and it is defined as (''low $pH$``):
+
+\begin{eqnarray}
+\label{eq15}
+& & \Phi = \frac{\textnormal{''fluorescing molecules``}}{\textnormal{''fluorescing + non-fluorescing molecules``}} =
+\frac{\left[\textnormal{ArOH}^*\right]_{t=0}\int\limits_0^\infty e^{-k_r t}dt}{\left[\textnormal{ArOH}^*\right]_{t=0}\int\limits_0^\infty e^{-k_r t}dt + \left[\textnormal{ArOH}^*\right]_{t=0}\int\limits_0^\infty e^{-k_{nr}t}dt}\\
+\nonumber
+& & = \frac{\int\limits_0^\infty e^{-k_r t}dt}{\int\limits_0^\infty e^{-k_r t}dt + \int\limits_0^\infty e^{-k_{nr}t}dt} \Rightarrow \Phi = \frac{1/k_r}{1/k_r + 1/k_{nr}}
+= \frac{k_{nr}}{k_r + k_{nr}} = k_{nr}\tau_0\textnormal{ with }\tau_0 = 1/\left(k_r + k_{nr}\right)
+\end{eqnarray}
+
+In this experiment, $k_d$ will be obtained using the steady-state approach previously described. The reference data for determining $\tau_0$ (e.g. the radiative lifetime of ArOH$^*$ without deprotonation) is provided in the appendix. Note that in deriving Eqs. (\ref{eq12}) and (\ref{eq13}), it was assumed that the concentration of ArOH$^*$ is invariant. This condition requires that the amount of light absorbed by ArOH per unit time be constant. Thus not only must the formal concentration of ArOH be identical in each sample, but also the excitation source of the spectrometer must not fluctuate (i.e., constant intensity). Satisfying these conditions is crucial for the success of the experiment.
+
+Once a value of $k_d$ is obtained from the analysis of the data as discussed above, the value of $k_p$ (i.e., the ArO$^{*-}$ protonation rate constant) can be determined from $K_a^*$ because this set of elementary reactions we have:
+
+\begin{equation}
+K_a^* = \frac{k_d}{k_p}
+\label{eq16}
+\end{equation}
+
+\section{Experiment}
+
+\noindent
+\underline{Task overview:}\\
+
+\begin{enumerate}
+\item Dilute the provided 2.0 $\times$ 10$^{-3}$ M 2-naphthol stock solution twice with the solvent 1) 0.01 M NH$_4$Ac, 2) 0.02 M NH$_4$Ac, 3) 0.04 M NH$_4$Ac, 4) 0.06 M NH$_4$Ac, and 5) 0.08 M NH$_4$Ac. The dilution is carried out the same way as in experiment \#1: 1) pipet 1 mL of 2-naphthol into a 25 mL volumetric flask and fill up to the mark with the solvent; 2) pipet 1 mL of the resulting solution into another 25 mL volumetric flask and fill up to the mark with the solvent. Stock solutions of the previous mentioned NH$_4$Ac containing solvents will be provided. The resulting 2-naphthol concentration is now 3.2 $\times$ 10$^{-6}$ M, which is suitable for fluorescence measurements.
+
+\item Follow the instructions below and measure the samples in the above order. If the excitation source remains steady and the solutions have the same 2-naphthol concentrations, a distinct isostilbic point (a point of equal brightness) should be observed. This is the common crossing point for all the ArOH fluorescence spectra. You can look for this point after you have plotted your data.
+
+\end{enumerate}
+
+\noindent
+\underline{Operation of Perkin-Elmer LS50B fluorescence spectrometer:}\\
+
+\begin{enumerate}
+\item Switch on instrument. Turn on computer.
+\item Click on FLWinlab. Double click on any method that has 2-naphthol fluorescence in it.
+\item Make sure the settings are as follows. With the ''Emission Tab`` selected: START = 320 nm, END = 500 nm, EXCITATION = 320 nm, EX SLIT = 5.0 nm, EM SLIT = 4.3 nm, SCAN SPEED = 240 nm / min. REMEMBER TO SET THE FILENAME AT THE BOTTOM OF THE DIALOG! (it will be saved on the hard disk, the file name should end with .sp extension) Uncheck the AUTO INCREMENT FILENAMES box. If this is not done, the filenames will get \#xx (xx = number) tagged on them. Be sure to change the
+filename for each scan. 
+\item Use the four clear-sided quartz cell. Do not leave fingerprints on it.
+\item Click green ''traffic light`` button (top-left corner).
+\item Click the autoexpand buttons (above the spectrum, red arrows on the buttons).
+\item Close the Scan window by choosing FILE $\rightarrow$ EXIT. It is not necessary to save the method -- the spectrum was saved automatically.
+\item To save the spectrum in ASCII format on your floppy, select (in FL WinLab window) FILE $\rightarrow$ OPEN. Type in the spectrum filename (from step 3.) in ''Filename:`` text box. Note that your file may not appear in the list of files (program bug) and you have to manually type in the file name. The spectrum should appear on the screen. If you get multiple spectra overlaid, then you should remove the unwanted spectra with VIEW $\rightarrow$ REMOVE CURVE. Make sure that the graph that you want to save is active (by clicking on the graph name below the spectrum). Finally, choose FILE $\rightarrow$ SAVE AS, choose the file type as ASCII (not BINARY), double click on a: drive on the right, you may change the filename if you like, and press OK.
+\end{enumerate}
+
+\section{Data analysis and written laboratory report}
+
+\begin{enumerate}
+
+\item Calculate first the value of $\tau_0$ by using the data given in the appendix. Start the qtiplot program and type the table provided in the appendix into an empty table. Select the Y column by clicking at the top of the column by mouse. Choose ''Analyze $\rightarrow$ Fit Wizard...``. Choose the built-in category and ExpDecay1 from the list on the right. Check the ''Fit using built-in function`` box and click on ''$\rightarrow$`` at the bottom of the dialog. Be sure that the initial values for the variables are reasonable ($A \approx 2\times 10^4$). Next click on ''Fit`` button. The output can be found from the Results.log window (which you may have to scroll up to see the obtained value for variable $t$) as well as on the fit dialog. The variable $t$ is the exponential decay time $\tau_0$. If you entered time in ns, $\tau_0$  will be obtained in ns.
+
+\item Print out a copy of the graph, which includes the original data and the fitted exponential function and include the value of $\tau_0$ on the printout. The fluorescence quantum efficiency of ArOH under these conditions has been determined to be: $\Phi = 0.18$ \cite{MCBANE}. Calculate the values for both $k_r$ and $k_{nr}$ for ArOH$^*$ based on using your $\tau_0$ value and Eq. (\ref{eq15}).
+
+\item Tabulate the $I_f^o$ (i.e., the fluorescence intensity from the sample with H$_2$SO$_4$; protonated ArOH$^*$) and $I_f$ (i.e., the ArO$^*$ fluorescence intensity of the other samples) values for the samples and construct a Stern-Volmer plot (Eq. (\ref{eq13})). Note that the sample containing NaOH is only used for observing fluorescence from the pure ArO$^{*-}$ and should not be used in the plot (from experiment \#1). The protonated (maximum at $\approx$ 360 nm) and unprotonated (maximum at $\approx$ 430 nm) species exhibit two separate bands in the fluorescence spectra and hence their intensities can be determined simultaneously. First prepare a table of ''y`` and ''x`` values according to Eq. (\ref{eq13}) (i.e., $y=\frac{I_f^0}{I_f}$ and $x=\left[\textnormal{Ac}^-\right]$, respectively). Enter the tabulated values into the qtiplot program and fit a straight line to the data by choosing ''Analyze $\rightarrow$ Fit Linear``. The result will be shown in the Results.log window (both fitted values and their error estimates). Remember to provide literature values for the rate constants.
+
+\item Use the Stokes-Einstein-Smolouchowski equation to calculate the diffusion controlled rate constant $k_{diff}$ \cite{ATKINS1}:
+
+\begin{equation}
+k_{diff} = \frac{8RT}{3\eta}\textnormal{ (in SI-units: m}^3\textnormal{mol}^{-1}\textnormal{s}^{-1} = 10^3 \textnormal{ M}^{-1}\textnormal{s}^{-1}\textnormal{)}
+\label{eq17}
+\end{equation}
+
+where $R$ is the molar gas constant (8.314 J K$^{-1}$ mol$^{-1}$), $T$ is the sample temperature (K) and $\eta$ is the solvent viscosity (N s m$^{-2}$). The rate constant, $k_{diff}$, represents the limiting factor imposed by molecular diffusion in the liquid phase. Note that the above equation applies only for neutral species (e.g. no long-range Coulomb interactions). Here we can use viscosity of water at room temperature: $\eta = 1.040 \times 10^{-3}$ N s m$^{-2}$. Compare $k_{diff}$ with $k_{\textnormal{\tiny Ac}^-}$. When a rate constant is close to $k_{diff}$, it indicates that the reaction is diffusion controlled. Are the reactions here diffusion controlled?
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Acknowledgment:} This laboratory exercise was adapted from that described in Refs. \cite{MCBANE,LOEFROTH}.
+
+\section{Appendix}
+
+\noindent
+Fluorescence decay data for 2-naphthol in 0.10 M H$_2$SO$_4$ at 25 $^\textnormal{o}$C \cite{LOEFROTH}:\\
+
+\begin{center}
+\begin{tabular}{l@{\extracolsep{2cm}}c}
+Time (ns) & Intensity (photons emitted / s)\\
+0.00  &    21753\\
+1.00  &   18907\\
+2.00  &   16380\\
+3.00  &   14171\\
+4.00  &   12432\\
+5.00  &   10757\\
+6.00  &   9288\\
+7.00  &   8138\\
+8.00  &   7083\\
+9.00  &   6014\\
+10.00 &   5350\\
+\end{tabular}
+\end{center}
+
+\section{References}
+
+\vspace{-1cm}
+
+\bibliography{../../references}
+
+\end{document}
