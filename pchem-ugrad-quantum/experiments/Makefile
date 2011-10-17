@@ -4,6 +4,7 @@ all:
 	(cd experiment3; make)
 	(cd experiment4; make)
 	(cd experiment5; make)
+	pdfjoin --outfile quantum-experiments.pdf experiment?/exp?.pdf
 
 clean:
 	(cd experiment1; make clean)
