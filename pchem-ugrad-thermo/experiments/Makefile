@@ -5,6 +5,7 @@ all:
 	(cd experiment4; make)
 	(cd experiment5; make)
 	(cd experiment6; make)
+	pdfjoin --outfile thermo-experiments.pdf experiment?/exp?.pdf
 
 clean:
 	(cd experiment1; make clean)
