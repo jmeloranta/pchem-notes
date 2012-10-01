@@ -68,6 +68,25 @@ At least for ideal gases $\Delta = 0$ since $\left(\partial U / \partial V\right
 \opage{
 
 \otext
+The above expression for $\Delta$ can be derived as follows. First calculate $(\partial N / \partial T)_V$:
+$$\left(\frac{\partial N}{\partial T}\right)_V = \left(\frac{\partial}{\partial T}\left(\frac{P}{T}\right)\right)_V + \left(\frac{\partial}{\partial T}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial V}\right)_T\right)\right)_V$$
+$$= -\frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V + \frac{P}{T^2} + \left(\frac{\partial}{\partial T}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial V}\right)_T\right)\right)_V$$
+$$= -\frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V + \frac{P}{T^2} - \frac{1}{T^2}\times\left(\frac{\partial U}{\partial V}\right)_T + \frac{1}{T}\left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V$$
+
+Next we calculate $(\partial M / \partial V)_T$:
+
+$$\left(\frac{\partial M}{\partial V}\right)_T = \left(\frac{\partial}{\partial V}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial T}\right)_V\right)\right)_T$$
+$$= \frac{1}{T}\left(\frac{\partial}{\partial V}\left(\frac{\partial U}{\partial T}\right)_V\right)_T = \frac{1}{T}\left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V$$
+
+Subtracting the first expression from the second gives the difference $\Delta$:
+
+$$\Delta = \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} + \frac{1}{T^2}\left(\frac{\partial U}{\partial V}\right)_T$$
+
+}
+
+\opage{
+
+\otext
 It will turn out that the $dq_{rev} / T$ is the quantity that we are looking for (entropy). It is a useful quantity because it is a state function of the system (no path dependency). Note that we have only shown this to hold for ideal gases, a more detailed consideration will be given later.
 
 \vspace*{0.2cm}
