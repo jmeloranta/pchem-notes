@@ -67,7 +67,7 @@ Thus the original differential is not exact. After dividing $du$ by $x$, however
 
 $$\left(\frac{\partial M'}{\partial y}\right)_x = \left[\frac{\partial}{\partial y}\left(2ax + by\right)\right]_x = b$$
 
-$$\left(\frac{\partial N'}{\partial x}\right)_y = \left[\frac{\partial}{\partial x}\left(bx + 2cy\right)\right]_x = b$$
+$$\left(\frac{\partial N'}{\partial x}\right)_y = \left[\frac{\partial}{\partial x}\left(bx + 2cy\right)\right]_y = b$$
 
 This procedure of transforming an inexact differential into an exact one is called the \textit{method of integrating factors}.
 
@@ -144,7 +144,7 @@ For closed paths, this always yields zero (\textit{this does not hold for ineact
 \otext
 \textbf{Solution.} The integration path is not a single curve but two line segments. So we must carry out the integration separately for each segment. On the first segment, $y$ is constant, so $dy = 0$ and the integral containing $dy$ vanishes. On the second line segment, $x$ is constant, so $dx = 0$ and the integral containing $dx$ vanishes:
 
-$$\int\limits_C u = \int\limits_0^2 (2x + 9)dx + \int\limits_3^7 (6 + 4y)dy = \left.\left(\frac{2x^2}{2} + 9x\right)\right|_0^2 + \left.\left(6y + \frac{4y^2}{2}\right)\right|_3^7 = 126$$
+$$\int\limits_C du = \int\limits_0^2 (2x + 9)dx + \int\limits_3^7 (6 + 4y)dy = \left.\left(\frac{2x^2}{2} + 9x\right)\right|_0^2 + \left.\left(6y + \frac{4y^2}{2}\right)\right|_3^7 = 126$$
 
 Note that this is the same result as obtained in the previous example.
 
