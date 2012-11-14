@@ -70,8 +70,8 @@ At least for ideal gases $\Delta = 0$ since $\left(\partial U / \partial V\right
 \otext
 The above expression for $\Delta$ can be derived as follows. First calculate $(\partial N / \partial T)_V$:
 $$\left(\frac{\partial N}{\partial T}\right)_V = \left(\frac{\partial}{\partial T}\left(\frac{P}{T}\right)\right)_V + \left(\frac{\partial}{\partial T}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial V}\right)_T\right)\right)_V$$
-$$= -\frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V + \frac{P}{T^2} + \left(\frac{\partial}{\partial T}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial V}\right)_T\right)\right)_V$$
-$$= -\frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V + \frac{P}{T^2} - \frac{1}{T^2}\times\left(\frac{\partial U}{\partial V}\right)_T + \frac{1}{T}\left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V$$
+$$= \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} + \left(\frac{\partial}{\partial T}\left(\frac{1}{T}\times \left(\frac{\partial U}{\partial V}\right)_T\right)\right)_V$$
+$$= \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} - \frac{1}{T^2}\times\left(\frac{\partial U}{\partial V}\right)_T + \frac{1}{T}\left(\frac{\partial}{\partial T}\left(\frac{\partial U}{\partial V}\right)_T\right)_V$$
 
 Next we calculate $(\partial M / \partial V)_T$:
 
@@ -80,7 +80,7 @@ $$= \frac{1}{T}\left(\frac{\partial}{\partial V}\left(\frac{\partial U}{\partial
 
 Subtracting the first expression from the second gives the difference $\Delta$:
 
-$$\Delta = \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} + \frac{1}{T^2}\left(\frac{\partial U}{\partial V}\right)_T$$
+$$\Delta = \frac{1}{T}\left(\frac{\partial P}{\partial T}\right)_V - \frac{P}{T^2} - \frac{1}{T^2}\left(\frac{\partial U}{\partial V}\right)_T$$
 
 }
 
