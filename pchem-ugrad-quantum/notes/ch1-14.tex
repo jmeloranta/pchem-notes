@@ -9,7 +9,7 @@ Previously, we have seen that a particle may appear in regions, which are classi
 
 \vspace*{0.4cm}
 
-Consider the region left of the barrier (e.g. $x < 0$). Here the Schr\"odinger equation corresponds to that of a free particle ($E > 0$):
+Consider the region left of the barrier (i.e. $x < 0$). Here the Schr\"odinger equation corresponds to that of a free particle ($E > 0$):
 
 \aeqn{9.178}{-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi_L(x) = E\psi_L(x)\textnormal{ (L = ``left side'')}}
 
@@ -27,7 +27,7 @@ The term with $k$ corresponds to an incoming wave (i.e., propagating from left t
 \otext
 Within the potential barrier ($0 < x < a$) the Schr\"odinger equation reads:
 
-\aeqn{9.180}{-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi_M(x) - V\psi_M(x) = E\psi_M(x)\textnormal{ (M = ``middle'')}}
+\aeqn{9.180}{-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi_M(x) + V\psi_M(x) = E\psi_M(x)\textnormal{ (M = ``middle'')}}
 
 where $V$ is a constant (i.e., does not depend on $x$). When $V > E$, the general solution is:
 
@@ -47,9 +47,9 @@ By requiring that the wavefunctions $\psi_L$, $\psi_M$ and $\psi_R$, and their f
 
 \aeqn{X.29}{T = \frac{\left|F\right|^2}{\left|A\right|^2} = \left\lbrace 1 + \frac{\left(e^{Ka} - e^{-Ka}\right)^2}{16\epsilon\left(1 - \epsilon\right)}\right\rbrace^{-1}\textnormal{ where }\epsilon = \frac{E}{V}}
 
-where $T$ is the transmission coefficient. A value of zero means no tunneling and a value of $\infty$ means complete tunneling. The corresponding reflection coefficient $R$ can be defined using $T$ as:
+where $T$ is the transmission coefficient. A value of zero means no tunneling and a value of one means complete tunneling. The corresponding reflection coefficient $R$ can be defined using $T$ as (conservation of probability):
 
-\aeqn{X.30}{R = \frac{1}{T}}
+\aeqn{X.30}{R = 1 - T}
 
 Note that the above discussion \textbf{does not involve time}.
 
