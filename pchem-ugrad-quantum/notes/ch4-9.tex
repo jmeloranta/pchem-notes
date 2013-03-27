@@ -383,20 +383,21 @@ $$A_1 + E = (1, 1, 1) + (2, -1, 0) = (3, 0, 1).$$
 
 \otext
 This means that the three $s$ orbitals may form SALCs with $A_1$ and $E$ symmetries within $C_{3v}$. Note that $E$ is doubly degenerate and that we have a consistent number of orbitals (three AOs giving three SALCs). This approach tells us only the symmetries of the
-orbitals but does not give explicit expressions for them. The expressions could be ontained by finding the diagonal matrix representations but this would involve essentially diagonalization of matrices which can be rather laborous. Instead we use the following rules for constructing the SALCs (the result will not be properly normalized):
+orbitals but does not give explicit expressions for them. The expressions could be obtained by finding the diagonal matrix representations but this would involve essentially diagonalization of matrices which can be rather laborous. Instead we use the following rules for constructing the SALCs:
 
 }
 
 \opage{
 
+% \ref{symtab} gives wrong page no. - hard coded
 \otext
 \begin{itemize}
-\item[1.] Construct a table showing the effect of each operation on each orbital of the original basis (this was done already on page \ref{symtab}).\\
+\item[1.] Construct a table showing the effect of each operation on each orbital of the original basis (this was done already on page 241).\\
 \item[2.] To generate the combination of a specified symmetry species, take each column in turn and:\\
 \begin{itemize}
  \item[\scriptsize i] \scriptsize Multiply each member of the column by the character of the corresponding operation.\\
  \item[ii] Add together all the orbitals in each column with the factors determined in (i).\\
- \item[iii] Multiply the sum by ``dimension of the symmetry element / order of the group'' The dimension of the symmetry element is the character under operation $E$ ($E$ = 2, $T$ = 3, ..., $A/B$ = 1) and the order of the group is the total number of characters; for $C_{3v}$ this is 6.\\
+ \item[iii] Divide the sum by the order of the group. The order of the group is the total number of characters; for $C_{3v}$ this is 6.\\
 \end{itemize}
 \end{itemize}
 
@@ -405,7 +406,7 @@ The first SALC with $A_1$ symmetry can now found to be (the $s_A$ column multipl
 
 $$\psi_{A_1} = \frac{1}{6}\left( s_A + s_B + s_C + s_A + s_B + s_C\right) = \frac{1}{3}\left( s_A + s_B + s_C\right)$$
 
-From our previous consideration we know that we are still missing two orbitals, which belong to degenerate $E$. The same method with each column of the table (page \ref{symtab}) and $E$ characters (2, $-1$, $-1$, 0, 0, 0) gives (dimension = 2):\\
+From our previous consideration we know that we are still missing two orbitals, which belong to degenerate $E$. The same method with each column of the table (page 241) and $E$ characters (2, $-1$, $-1$, 0, 0, 0) gives (dimension = 2):\\
 
 }
 
