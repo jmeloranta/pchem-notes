@@ -30,7 +30,7 @@ where $x_{ie}$ correspond to the equilibrium geometry of the molecule. The equil
 
 \aeqn{n5.97}{T = \frac{1}{2}\sum\limits_{i=1}^{3N}\left(\frac{dq_i}{dt}\right)^2}
 
-The potential energy $V$ is a function of the nuclear coodinates and therefore it is also a function of the mass-weighted coordinates. It is convinient to expand $V$ in Taylor series about the equilibrium geometry:
+The potential energy $V$ is a function of the nuclear coordinates and therefore it is also a function of the mass-weighted coordinates. It is convenient to expand $V$ in Taylor series about the equilibrium geometry:
 
 \aeqn{n5.98}{V = V_e + \sum\limits_{i=1}^{3N}\left(\frac{\partial V}{\partial q_i}\right)_eq_i + \frac{1}{2}\sum\limits_{i=1}^{3N}\sum\limits_{j=1}^{3N}\left(\frac{\partial^2 V}{\partial q_i\partial q_j}\right)_eq_iq_j + ...}
 
@@ -47,7 +47,7 @@ where $K$ is a second derivative matrix with elements given by $K_{ij} = (\parti
 
 \aeqn{n5.100}{E = T + V = \frac{1}{2}\sum\limits_{i=1}^{3N}\left(\frac{dq_i}{dt}\right)^2 + \frac{1}{2}\sum\limits_{i=1}^{3N}\sum\limits_{j=1}^{3N}K_{ij}q_iq_j}
 
-The main problem with this expression is the offdiagonal terms appearing in $K$. However, it is possible to find a linear transformation that converts the mass-weighted coordinates $q$ into new coordinates $Q$ in such way that $K$ is transformed into diagonal form. In practice, one should construct $K$, diagonalize it using similarity transformations $R$ (i.e., $RKR^{-1}$), and use $R$ to transform $q$ to $Q$. After eliminating the offdiagonal terms, we can write Eq. (\ref{eqn5.100}):
+The main problem with this expression is the off-diagonal terms appearing in $K$. However, it is possible to find a linear transformation that converts the mass-weighted coordinates $q$ into new coordinates $Q$ in such way that $K$ is transformed into diagonal form. In practice, one should construct $K$, diagonalize it using similarity transformations $R$ (i.e., $RKR^{-1}$), and use $R$ to transform $q$ to $Q$. After eliminating the off-diagonal terms, we can write Eq. (\ref{eqn5.100}):
 
 }
 
@@ -106,7 +106,7 @@ IR spectroscopy of polyatomic molecules is often used for identifying certain gr
 \underline{Symmetry species of normal modes and allowed transitions:}
 
 \vspace*{0.2cm}
-A powerful way of dealing with normal modes, especially of complex molecules, is to classify them according to their symmetries. Each normal mode must belong to one of the symmetry species (``irrep'') of the molecular point group. This will also allow us to use Eq. (\ref{eq12.19a}) in calculating the allowed transitions. To see how normal modes are labelled, consider the following example.
+A powerful way of dealing with normal modes, especially of complex molecules, is to classify them according to their symmetries. Each normal mode must belong to one of the symmetry species (``irrep'') of the molecular point group. This will also allow us to use Eq. (\ref{eq12.19a}) in calculating the allowed transitions. To see how normal modes are labeled, consider the following example.
 
 \vspace*{0.2cm}
 
@@ -158,7 +158,7 @@ As we are still missing the three molecular vibrational normal modes, this does 
 
 $$\chi(E) = 3, \chi(C_2) = 1, \chi(\sigma_v(xz)) = 1 \textnormal{ and }\chi(\sigma_v'(yz)) = 3$$
 
-Adding the two characters above, matches what we had on the previous slide. Thus we conclude that water will have two $A_1$ and one $B_2$ symmetry normal modes. By carrying out symmetry operations on the normal modes of water (see the figure at the beginning of the section), we conclude that $\tilde{\nu}_1$ belongs to $A_1$, $\tilde{\nu}_2$ to $A_1$, and $\tilde{\nu}_3$ to $B_2$. When doint this, one should be observing how the directionality of the arrows changes and then comparing this with the numbers given in the character table (verify that you get the same result as given here!).
+Adding the two characters above, matches what we had on the previous slide. Thus we conclude that water will have two $A_1$ and one $B_2$ symmetry normal modes. By carrying out symmetry operations on the normal modes of water (see the figure at the beginning of the section), we conclude that $\tilde{\nu}_1$ belongs to $A_1$, $\tilde{\nu}_2$ to $A_1$, and $\tilde{\nu}_3$ to $B_2$. When doing this, one should be observing how the directions of the arrows change and then comparing this with the numbers given in the character table (verify that you get the same result as given here!).
 
 }
 
