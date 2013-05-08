@@ -2,12 +2,7 @@
 \otitle{2.6 Variational method}
 
 \otext
-The Schr\"odinger equation can only be solved analytically for simple systems, which consist
-of just one particle. When many particles interact through physically meaningful
-potentials, analytic solution is not possible. For example, no analytic solution to Schr\"odinger
-equation describing helium atom (two electrons) has been found. Thus it is important to develop approximate
-methods for finding the solutions and to be able to evaluate how close the approximate
-solution is to the correct one.
+The Schr\"odinger equation can only be solved analytically for simple systems, which consist of just one particle. When many particles interact through physically meaningful potentials, analytic solution is not possible. For example, no analytic solution to Schr\"odinger equation describing helium atom (two electrons) has been found. Thus it is important to develop approximate methods for finding the solutions and to be able to evaluate how close the approximate solution is to the correct one.
 
 \otext
 The variational method states, that for any ``trial'' wavefunction $\psi_t$, the following inequality holds:
@@ -16,10 +11,7 @@ The variational method states, that for any ``trial'' wavefunction $\psi_t$, the
 \frac{\langle\psi_t|\hat{H}|\psi_t\rangle}{\langle\psi_t|\psi_t\rangle}\ge E_1}
 {\int\psi_t^*\hat{H}\psi_td\tau\equiv\langle\psi_t|\hat{H}|\psi_t\rangle\ge E_1\textnormal{ (only when }\psi_t\textnormal{ normalized!)}}
 
-where $\hat{H}$ is the Hamiltonian and $E_1$ is the true ground-state energy. If the true ground-state
-wavefunction $\psi_1$ is inserted in place of $\psi_t$, the equality is reached. For all other wavefunctions
-(often called trial wavefunctions) the energy expectation value (i.e. the left side) will always be
-larger. The ratio on the first line is also called the ``Rayleigh ratio''.
+where $\hat{H}$ is the Hamiltonian and $E_1$ is the true ground-state energy. If the true ground-state wavefunction $\psi_1$ is inserted in place of $\psi_t$, the equality is reached. For all other wavefunctions (often called trial wavefunctions) the energy expectation value (i.e. the left side) will always be larger. The ratio on the first line is also called the ``Rayleigh ratio''.
 
 \otext
 \underline{Proof.} The proof is as follows:
@@ -29,10 +21,7 @@ larger. The ratio on the first line is also called the ``Rayleigh ratio''.
 \opage{
 
 \otext
-First we express a given trial solution $\psi_t$ as a linear combination of the eigenfunctions
-of $\hat{H}$. The eigenfunctions are said to form a complete set of basis functions and hence
-any well behaved function can be expressed as a linear combination of these basis
-functions.
+First we express a given trial solution $\psi_t$ as a linear combination of the eigenfunctions of $\hat{H}$. The eigenfunctions are said to form a complete set of basis functions and hence any well behaved function can be expressed as a linear combination of these basis functions.
 
 \aeqn{X.34}{\psi_t = \sum_{i=1}^\infty c_i\psi_i\textnormal{ where }\hat{H}\psi_i = E_i\psi_i}
 
@@ -51,16 +40,12 @@ Note that we have exchanged (infinite) summation and integration orders above an
 \opage{
 
 \otext
-\textbf{Example.} Consider a particle in a one-dimensional box problem (boundaries at $0$ and $a$).
-Use the variational theorem to obtain an upper bound for the ground state energy by using
-the following normalized wavefunction:
+\textbf{Example.} Consider a particle in a one-dimensional box problem (boundaries at $0$ and $a$). Use the variational theorem to obtain an upper bound for the ground state energy by using the following normalized wavefunction:
 
 $$\psi_t(x) = \frac{\sqrt{30}}{a^{5/2}}x(a - x)$$
 
 \otext
-\textbf{Solution.} Clearly, this is not the correct ground state wavefunction (see \ref{eq9.67}).
-Next, we check that this wavefunction satisfies the boundary conditions: $\psi_t(0) = 0$
-and $\psi_t(a) = 0$ (OK). The Hamiltonian for this problem is:
+\textbf{Solution.} Clearly, this is not the correct ground state wavefunction (see \ref{eq9.67}). Next, we check that this wavefunction satisfies the boundary conditions: $\psi_t(0) = 0$ and $\psi_t(a) = 0$ (OK). The Hamiltonian for this problem is:
 
 $$\hat{H} = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\textnormal{ (}0\le x\le a\textnormal{)}$$
 

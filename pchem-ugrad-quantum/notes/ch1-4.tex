@@ -99,10 +99,10 @@ Note that this implies that the eigenvalues are real: Let $\psi$ be an eigenfunc
 $\overbrace{\int\limits_{-\infty}^{\infty}\psi_j^*(x)\left(-i\hbar\frac{d\psi_k(x)}{dx}\right)dx}^\textnormal{LHS of Eq. (\ref{eq9.38})} = -i\hbar\int\limits_{-\infty}^{\infty}\psi_j^*(x)\frac{d\psi_k(x)}{dx}dx = \overbrace{\int\limits_{-\infty}^{\infty}\psi_k(x)\left(i\hbar\frac{d\psi_j^*(x)}{dx}\right)dx}^\textnormal{integration by parts}$
 $ = \underbrace{\int\limits_{-\infty}^{\infty}\psi_k(x)\left(-i\hbar\frac{d\psi_j(x)}{dx}\right)^*dx}_\textnormal{RHS of Eq. (\ref{eq9.38})} \Rightarrow \hat{p}_x\textnormal{ is Hermitian}$.
 
-Note that the wavefunctions approach zero at infinity and thus the boundary term in the intergration by parts does not contribute. In 3-D, one would have to use the \href{http://en.wikipedia.org/wiki/Green's_identities}{\uline{Green formula}}.
+Note that the wavefunctions approach zero at infinity and thus the boundary term in the integration by parts does not contribute. In 3-D, one would have to use the \href{http://en.wikipedia.org/wiki/Green's_identities}{\uline{Green formula}}.
 
 \vspace*{0.2cm}
-The Hermitian property can also be used to show that the eigenfunctions ($\psi_j$ and $\psi_k$), which have different eigevalues (i.e., $a_j$ and $a_k$ with $a_j \ne a_k$; ``non-degenerate''), are orthogonal to each other:
+The Hermitian property can also be used to show that the eigenfunctions ($\psi_j$ and $\psi_k$), which have different eigenvalues (i.e., $a_j$ and $a_k$ with $a_j \ne a_k$; ``non-degenerate''), are orthogonal to each other:
 
 \aeqn{9.41}{\textnormal{LHS of Eq. (\ref{eq9.38}): }\int\psi_j^*\hat{A}\psi_kd\tau = \int\psi_j^*a_k\psi_kd\tau = a_k\int\psi_j^*\psi_kd\tau}
 \aeqn{9.42}{\textnormal{RHS of Eq. (\ref{eq9.38}): }\int\psi_k\left(\hat{A}\psi_j\right)^*d\tau = \int\psi_k\left(a_j\psi_j\right)^*d\tau = a_j\int\psi_j^*\psi_kd\tau}
