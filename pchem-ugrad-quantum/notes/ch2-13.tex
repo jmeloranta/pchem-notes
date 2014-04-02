@@ -71,6 +71,41 @@ Again, it is not possible to have triplet state because the spins would have to 
 \otext
 We conclude that the following terms are possible: $^1$D, $^1$P, $^3$P and $^1$S. As we will see below, the Hund's rules predict that the $^3$P term will be the ground state (i.e., the lowest energy). The total angular momentum quantum number $J$ for this state may have the following values: $J = L + S = 2, 1$, or $0$. Due to spin-orbit coupling, these states have different energies and the Hund’s rules predict that the $J = 0$ state lies lowest in energy. Therefore the $^3$P$_0$ state is the ground state of C atom.
 
+\otext
+The above method is fast and convenient but does not always work. In the following we will list each possible electron configuration (microstate), label them according to their $M_L$ and $M_S$ numbers, count how many times each ($M_L$,$M_S$) combination appears and decompose this information into term symbols. The total number of possible microstates $N$ is given by:
+
+\vspace*{0.3cm}
+
+\aeqn{X.30}{N = \frac{(2(2l+1))!}{n!(2(2l+1) - n)!}}
+
+where $n$ is the number of electrons and $l$ is the orbital angular momentum quantum number (e.g., 1 for $s$ orbitals, 2 for $p$, etc.). Next we need to count how many states of each $M_L$ and $M_S$ we have:
+
+}
+
+\opage{
+
+\otext
+
+\ofig{carbon-full}{0.4}{}
+
+\vspace*{0.5cm}
+
+The total number of ($M_L$,$M_S$) combinations appearing above are counted in the following table and its decomposition into term symbols is demonstrated.
+
+}
+
+\opage{
+
+\otext
+
+\ofig{carbon-full-2}{0.4}{}
+
+}
+
+\opage{
+
+\otext
+
 \begin{columns}
 \begin{column}{3cm}
 \operson{hund}{0.15}{Friedrich Hund (1896 - 1997), German Physicist}
@@ -91,15 +126,17 @@ Hund's (partly empirical) rules are:
 \end{column}
 \end{columns}
 
+\vspace*{0.5cm}
+
+\underline{Spin-orbit interaction (very briefly):} This relativistic effect can be incorporated into non-relativistic quantum mechanics by including the following term into the Hamiltonian:
+
+\aeqn{X.31}{\hat{H}_{SO} = A\vec{\hat{L}}\cdot \vec{\hat{S}}}
+
 }
 
 \opage{
 
 \otext
-\underline{Spin-orbit interaction (very briefly):} This relativistic effect can be incorporated into non-relativistic quantum mechanics by including the following term into the Hamiltonian:
-
-\aeqn{X.31}{\hat{H}_{SO} = A\vec{\hat{L}}\cdot \vec{\hat{S}}}
-
 where $A$ is the spin-orbit coupling constant and $L$ and $S$ are the orbital and spin angular momentum operators, respectively. The total angular momentum $J$ commutes with both $\hat{H}$ and $\hat{H}_{SO}$ and therefore it can be specified simultaneously with energy. We say that the corresponding quantum number $J$ remains good even when spin-orbit interaction is included whereas $L$ and $S$ do not. The operator dot product $\hat{L}\cdot \hat{S}$ can be evaluated and expressed in terms of the corresponding quantum numbers:
 
 \aeqn{X.32}{\vec{\hat{L}}\cdot\vec{\hat{S}}\left|\psi_{L,S,J}\right> = \frac{1}{2}\left[J(J+1)-L(L+1)-S(S+1)\right]\left|\psi_{L,S,J}\right>}
