@@ -227,15 +227,17 @@ These expressions relate $U$, $H$, $A$, and $G$ to each other.
 \opage{
 
 \otext
-\textbf{Example.} Show that the Gibbs energy gives a criterion for spontaneous change at constant $T$ and $P$ (Eq. (\ref{eq4.44})).
+\textbf{Example.} Show that the Gibbs energy gives a criterion for spontaneous change at constant $T = T_{sys} = T_{surr}$ and $P$.
 
 \vspace*{0.2cm}
 
-\textbf{Solution.} Consider a system at constant $T$ and $P$. At constant $P$ we can use Eq. (\ref{eq2.57}): $dq = dH_{sys}$. The Clausius inequality (Eq. (\ref{eq3.21})) reads (now $T = T_{sys} = T_{surr}$):
+\textbf{Solution.} We need to show that $dG_{sys} \le 0 \Leftrightarrow dS_{tot} \ge 0$. First we calculate $dG_{sys}$ by noting that $G = H - TS$:
 
-$$dS_{sys} \ge \frac{\inex{dq}}{T} = \frac{dH_{sys}}{T}\Rightarrow 0 \ge dH_{sys} - TdS_{sys} = dH_{sys} - TdS_{sys} - S_{sys}\umark{dT}{\textnormal{const.}} = dG$$
+$$dG_{sys} = d\left(H_{sys} - TS_{sys}\right) = dH_{sys} - d\left(TS_{sys}\right) = dH_{sys} - \umark{S_{sys}dT}{=0} - TdS_{sys}$$
+$$ = dq_{sys} - TdS_{sys} = -dq_{surr} - TdS_{sys} \le 0$$
+$$\Leftrightarrow \umark{\frac{dq_{surr}}{T}}{=dS_{surr}} + dS_{sys} = dS_{tot} \ge 0$$
 
-This shows that $dG \le 0$. Thus for spontaneous changes the Gibbs energy always decreases. Note that the equal sign above applies only to reversible processes and that for irreversible changes the Gibbs energy always decreases. Also there was no need to consider the surroundings explicitly.
+Thus for spontaneous (irreversible) changes, the Gibbs energy will always decrease with the equal sign applying only to reversible processes. Note that there is no need to consider the surroundings explicitly when predicting spontaneity using Gibbs energy whereas the calculation using entropy must consider both the system and surroundings explicitly.
 
 \vspace*{0.2cm}
 
