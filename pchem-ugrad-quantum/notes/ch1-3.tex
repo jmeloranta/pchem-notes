@@ -22,8 +22,8 @@ According to classical physics, the \href{http://en.wikipedia.org/wiki/Kinetic_e
 derive the momentum operator in the position representation:
 
 \ceqn{X.13}{\left< \hat{p}_x\right> = \left<\hbar \hat{k}\right> = \hbar\left<\psi(k)\left|\hat{k}\right|\psi(k)\right> = \hbar\int\limits_{-\infty}^{\infty}\psi^*(k)k\psi(k)dk}
-{\overbrace{=}^\textnormal{Eq. (\ref{eqX.4})} \frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{-ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{ikx}dx}_\textnormal{\href{http://en.wikipedia.org/wiki/Integration_by_parts}{\uline{integration by parts}}}dkdx'}
-{= -\frac{i\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{-ikx'}\int\limits_{-\infty}^{\infty}\frac{d\psi(x)}{dx}e^{ikx}dxdkdx'\textnormal{ }}
+{\overbrace{=}^\textnormal{Eq. (\ref{eqX.4})} \frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{-ikx}dx}_\textnormal{\href{http://en.wikipedia.org/wiki/Integration_by_parts}{\uline{integration by parts}}}dkdx'}
+{= -\frac{i\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}\int\limits_{-\infty}^{\infty}\frac{d\psi(x)}{dx}e^{-ikx}dxdkdx'\textnormal{ }}
 
 }
 
@@ -32,7 +32,7 @@ derive the momentum operator in the position representation:
 \otext
 Next we a result from mathematics which states that:
 
-\aeqn{X.13a}{\int\limits_{-\infty}^{\infty}e^{ik(x - x')}dk = 2\pi\delta(x - x')}
+\aeqn{X.13a}{\int\limits_{-\infty}^{\infty}e^{ik(x' - x)}dk = 2\pi\delta(x' - x)}
 
 where $\delta$ denotes the \href{http://en.wikipedia.org/wiki/Dirac_delta_function}{\uline{Dirac delta measure}} (often incorrectly called the Dirac delta function):
 
@@ -45,7 +45,7 @@ where $\delta$ denotes the \href{http://en.wikipedia.org/wiki/Dirac_delta_functi
 
 Now we can continue working with Eq. (\ref{eqX.13}):
 
-\beqn{X.13c}{... = -i\hbar\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\psi^*(x')\frac{d\psi(x)}{dx}\delta(x - x')dxdx'}{ = \int\limits_{-\infty}^{\infty}\psi^*(x)\left(-i\hbar\frac{d}{dx}\right)\psi(x)dx = \int\limits_{-\infty}^{\infty}\psi^*(x)\hat{p_x}\psi(x)dx}
+\beqn{X.13c}{... = -i\hbar\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\psi^*(x')\frac{d\psi(x)}{dx}\delta('x - x)dxdx'}{ = \int\limits_{-\infty}^{\infty}\psi^*(x)\left(-i\hbar\frac{d}{dx}\right)\psi(x)dx = \int\limits_{-\infty}^{\infty}\psi^*(x)\hat{p_x}\psi(x)dx}
 
 \hrulefill
 
