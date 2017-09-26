@@ -1,24 +1,33 @@
 # Grace project file
 #
-@version 50121
-@page size 488, 500
+@version 50125
+@page size 457, 469
 @page scroll 5%
 @page inout 5%
 @link page off
-@map font 0 to "Times-Roman", "Times-Roman"
-@map font 1 to "Times-Italic", "Times-Italic"
-@map font 2 to "Times-Bold", "Times-Bold"
-@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
-@map font 4 to "Helvetica", "Helvetica"
-@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
-@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
-@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
-@map font 8 to "Courier", "Courier"
-@map font 9 to "Courier-Oblique", "Courier-Oblique"
-@map font 10 to "Courier-Bold", "Courier-Bold"
-@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
-@map font 12 to "Symbol", "Symbol"
 @map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 17 to "Nimbus-Sans-L-Regular-Condensed", "Nimbus-Sans-L-Regular-Condensed"
+@map font 18 to "Nimbus-Sans-L-Bold-Condensed", "Nimbus-Sans-L-Bold-Condensed"
+@map font 19 to "Nimbus-Sans-L-Regular-Condensed-Italic", "Nimbus-Sans-L-Regular-Condensed-Italic"
+@map font 20 to "Nimbus-Sans-L-Bold-Condensed-Italic", "Nimbus-Sans-L-Bold-Condensed-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 29 to "URW-Palladio-L-Roman", "URW-Palladio-L-Roman"
+@map font 30 to "URW-Palladio-L-Bold", "URW-Palladio-L-Bold"
+@map font 31 to "URW-Palladio-L-Italic", "URW-Palladio-L-Italic"
+@map font 32 to "URW-Palladio-L-Bold-Italic", "URW-Palladio-L-Bold-Italic"
+@map font 12 to "Symbol", "Symbol"
+@map font 34 to "URW-Chancery-L-Medium-Italic", "URW-Chancery-L-Medium-Italic"
 @map color 0 to (255, 255, 255), "white"
 @map color 1 to (0, 0, 0), "black"
 @map color 2 to (255, 0, 0), "red"
@@ -54,11 +63,11 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Wed May 14 18:05:54 2008"
+@timestamp def "Tue Sep 26 09:20:47 2017"
 @with line
 @    line on
 @    line loctype view
-@    line 0.244262295082, 0.685245901639, 0.432786885246, 0.470491803278
+@    line 0.244262295082, 0.686361487965, 0.432786885246, 0.471257768052
 @    line linewidth 2.0
 @    line linestyle 1
 @    line color 1
@@ -70,7 +79,7 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.124590163935, 0.701639344263
+@    string 0.124590163935, 0.702781619257
 @    string color 1
 @    string rot 0
 @    string font 0
@@ -126,7 +135,7 @@
 @    world 20, 0, 400, 10
 @    stack world 0, 0, 0, 0
 @    znorm 1
-@    view 0.115909, 0.153689, 0.888636, 0.870902
+@    view 0.115909, 0.153939, 0.888636, 0.872320
 @    title ""
 @    title font 0
 @    title size 1.500000
@@ -245,15 +254,15 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.5, 0.4
+@    legend 0.5, 0.400651204
 @    legend box color 1
 @    legend box pattern 1
-@    legend box linewidth 1.0
+@    legend box linewidth 2.0
 @    legend box linestyle 1
 @    legend box fill color 0
 @    legend box fill pattern 1
 @    legend font 0
-@    legend char size 1.000000
+@    legend char size 1.500000
 @    legend color 1
 @    legend length 4
 @    legend vgap 1

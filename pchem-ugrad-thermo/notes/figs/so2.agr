@@ -1,24 +1,33 @@
 # Grace project file
 #
-@version 50121
-@page size 488, 500
+@version 50125
+@page size 457, 469
 @page scroll 5%
 @page inout 5%
 @link page off
-@map font 0 to "Times-Roman", "Times-Roman"
-@map font 1 to "Times-Italic", "Times-Italic"
-@map font 2 to "Times-Bold", "Times-Bold"
-@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
-@map font 4 to "Helvetica", "Helvetica"
-@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
-@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
-@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
-@map font 8 to "Courier", "Courier"
-@map font 9 to "Courier-Oblique", "Courier-Oblique"
-@map font 10 to "Courier-Bold", "Courier-Bold"
-@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
-@map font 12 to "Symbol", "Symbol"
 @map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 17 to "Nimbus-Sans-L-Regular-Condensed", "Nimbus-Sans-L-Regular-Condensed"
+@map font 18 to "Nimbus-Sans-L-Bold-Condensed", "Nimbus-Sans-L-Bold-Condensed"
+@map font 19 to "Nimbus-Sans-L-Regular-Condensed-Italic", "Nimbus-Sans-L-Regular-Condensed-Italic"
+@map font 20 to "Nimbus-Sans-L-Bold-Condensed-Italic", "Nimbus-Sans-L-Bold-Condensed-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 29 to "URW-Palladio-L-Roman", "URW-Palladio-L-Roman"
+@map font 30 to "URW-Palladio-L-Bold", "URW-Palladio-L-Bold"
+@map font 31 to "URW-Palladio-L-Italic", "URW-Palladio-L-Italic"
+@map font 32 to "URW-Palladio-L-Bold-Italic", "URW-Palladio-L-Bold-Italic"
+@map font 12 to "Symbol", "Symbol"
+@map font 34 to "URW-Chancery-L-Medium-Italic", "URW-Chancery-L-Medium-Italic"
 @map color 0 to (255, 255, 255), "white"
 @map color 1 to (0, 0, 0), "black"
 @map color 2 to (255, 0, 0), "red"
@@ -54,11 +63,11 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue May 13 08:14:56 2008"
+@timestamp def "Tue Sep 26 09:21:30 2017"
 @with line
 @    line on
 @    line loctype view
-@    line 0.613114754098, 0.691803278689, 0.613114754098, 0.524590163934
+@    line 0.613114754098, 0.692929540482, 0.613114754098, 0.525444201312
 @    line linewidth 2.0
 @    line linestyle 3
 @    line color 1
@@ -70,7 +79,7 @@
 @with line
 @    line on
 @    line loctype view
-@    line 0.785245901639, 0.690163934426, 0.785245901639, 0.396721311475
+@    line 0.785245901639, 0.691287527352, 0.785245901639, 0.397367177242
 @    line linewidth 2.0
 @    line linestyle 3
 @    line color 1
@@ -82,7 +91,7 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.260655737705, 0.503278688525
+@    string 0.260655737705, 0.504098030635
 @    string color 1
 @    string rot 0
 @    string font 0
@@ -92,7 +101,7 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.803278688524, 0.344262295082
+@    string 0.803278688524, 0.344822757112
 @    string color 4
 @    string rot 0
 @    string font 0
@@ -102,7 +111,7 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.644262295082, 0.72131147541
+@    string 0.644262295082, 0.722485776805
 @    string color 2
 @    string rot 0
 @    string font 0
@@ -158,7 +167,7 @@
 @    world 0, 0, 300, 120
 @    stack world 0, 0, 0, 0
 @    znorm 1
-@    view 0.115909, 0.153689, 0.888636, 0.870902
+@    view 0.115909, 0.153939, 0.888636, 0.872320
 @    title ""
 @    title font 0
 @    title size 1.500000
@@ -229,7 +238,7 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 2.0
-@    yaxis  label "C\SP\N (J K\S-1\N mol\S-1\N)"
+@    yaxis  label "C\sP\N (J K\S-1\N mol\S-1\N)"
 @    yaxis  label layout para
 @    yaxis  label place spec
 @    yaxis  label place 0.000000, 0.080000
@@ -278,7 +287,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.656818181818, 0.819672131148
+@    legend 0.656818181818, 0.821006564552
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
