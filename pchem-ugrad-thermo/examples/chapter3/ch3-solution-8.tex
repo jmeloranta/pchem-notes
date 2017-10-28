@@ -6,7 +6,7 @@
 
 \item[a)] This is a reversible process and constant temperature implies that $\Delta\bar{U} = 0$. Also the enthalpy change for an ideal gas depends only on temperature $\Delta\bar{H} = 0$. By using the 1st law and the expression for reversible expansion (see lecture notes), we get:
 
-$$w_{rev} = -RT\ln\left(\frac{V_2}{V_1}\right) = -RT\ln\left(\frac{P_2}{P_1}\right) = - q_{rev}$$
+$$w_{rev} = -RT\ln\left(\frac{V_2}{V_1}\right) = RT\ln\left(\frac{P_2}{P_1}\right) = - q_{rev}$$
 
 By plugging in the values, we get $w_{rev} = -5.71$ kJ mol$^{-1}$ and $q_{rev} = 5.71$ kJ mol$^{-1}$. Now the definition of entropy gives the entropy change:
 
@@ -20,13 +20,11 @@ $$dS_{syst} = \frac{dq_{rev}}{T}\textnormal{ and for the surroundings }dS_{surr}
 
 Since temperature is constant, $\Delta U = 0$ and $\Delta H = 0$. Therefore:
 
-$$q_{rev} = -w = RT\ln\left(\frac{P_2}{P_1}\right)\textnormal{ (from previous calculations)}$$
+$$q_{rev} = -w = -RT\ln\left(\frac{P_2}{P_1}\right)\textnormal{ (from previous calculations)}$$
 
-Thus $\Delta S_{syst} = R\ln(P_2/P_1$) and $\Delta S_{surr}  = -R\ln(P_2/P_1)$. Thus the total change of entropy (system + surroundings) is zero. Also $q_{tot} = q_{sys} + q_{surr} = RT\ln(P_2/P_1) - RT\ln(P_2/P_1) = 0$. For the same reason, the total work $w_{tot} = w_{sys} + w_{surr} = 0$. Note that the system + surroundings is isolated from the rest of the world and therefore the total change in heat ($q_{tot}$) and work ($w_{tot}$) must clearly be zero.
+Thus $\Delta S_{syst} = -R\ln(P_2/P_1$) and $\Delta S_{surr}  = R\ln(P_2/P_1)$. Thus the total change of entropy (system + surroundings) is zero. Also $q_{tot} = q_{sys} + q_{surr} = -RT\ln(P_2/P_1) + RT\ln(P_2/P_1) = 0$. For the same reason, the total work $w_{tot} = w_{sys} + w_{surr} = 0$. Note that the system + surroundings is isolated from the rest of the world and therefore the total change in heat ($q_{tot}$) and work ($w_{tot}$) must clearly be zero.
 
-\item[d)] If we want to calculate the entropy change for the system, we need a reversible path for the calculation. Above this was done: $\Delta S_{syst} = R\ln(P_2/P_1)$. In free expansion, no work is done, $w_{sys} = 0$ (and $w_{surr} = 0$). Since $\Delta U = w_{sys} + q_{sys}$ and $\Delta U = 0$, $q_{sys} = 0$ as well (also then $q_{surr} = 0$). Thus the system is not interacting with the surroundings at all in this process. This means that the entropy of the surroundings does not change either, $\Delta S_{surr} =
-0$. The total entropy is then $\Delta S_{tot} = \Delta S_{syst} + \Delta S_{surr} = R\ln(P_2/P_1) = 19.1$ J K$^{-1}$ mol$^{-1}$.
-
+\item[d)] In free expansion, no work is done, $w_{sys} = 0$ (and $w_{surr} = 0$). Since $\Delta U = w_{sys} + q_{sys}$ and $\Delta U = 0$, $q_{sys} = 0$ as well (also then $q_{surr} = 0$). Since the surroundings is not receiving any heat, its entropy change is zero ($\Delta S_{surr} = 0$). For the system, a reversible path is constructed in part c) and $\Delta S_{sys} = -R\ln\left(P_2/P_1\right) > 0$. Therefore the free expansion process is spontaneous.
 \end{itemize}
 
 \hrule\vspace{0.5cm}
