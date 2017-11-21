@@ -5,3 +5,11 @@ all:
 	(cd ch4;make)
 	(cd ch5;make)
 	pdfjoin --outfile quantum-examples.pdf ch?/ch?-examples.pdf
+
+clean:
+	(cd ch1; make clean)
+	(cd ch2; make clean)
+	(cd ch3; make clean)
+	(cd ch4; make clean)
+	(cd ch5; make clean)
+	-rm -f *~ \#*\# *.pdf
