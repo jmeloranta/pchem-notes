@@ -1,0 +1,43 @@
+\opage{
+\otitle{1.4 Evaluation of pressure}
+
+\otext
+
+Since $P$ is not fixed in canonical ensemble, we have to derive an expression for it in terms of the ensemble state variables ($T, V, n$).
+In a smilar way to internal energy, pressure is obtained as ensemble average:
+
+\aeqn{1.21}{P = \left<P_i\right> = \sum_{i = 1}^{\infty}p_iP_i}
+
+where $P_i$ is the pressure of the $i$th member of the ensemble. Note that the value of $P_i$ varies from one ensemble member to another.
+
+\otext
+
+Based on the classical thermodynamics notes, the change in internal energy for an adiabatic process can be written in two ways:
+
+\aeqn{1.22}{dU = dw_{rev} = -PdV\textnormal{ and }dU = \left(\frac{\partial U}{\partial V}\right)dV}
+
+which can be combined to give:
+
+\aeqn{1.23}{P = -\left(\frac{\partial U}{\partial V}\right)}
+
+This should apply also to each ensemble member (where $U \mapsto E_i$) and therefore Eq. (\ref{eq1.21}) can be written as (see also Eq. (\ref{eq1.17})):
+
+\aeqn{1.24}{P = -\frac{1}{Z}\sum_{i=1}^{\infty}e^{-\beta E_i}\left(\frac{\partial E_i}{\partial V}\right)_n}
+
+}
+
+\opage{
+
+\otext
+
+To see how the above expression is related to the partition function, we differentiate $Z$ with respect to volume $V$:
+
+\beqn{1.25}{\left(\frac{\partial Z}{\partial V}\right)_{T,n} = \sum_{i=1}^{\infty}\left(\frac{\partial e^{-\beta E_i}}{\partial V}\right)_{T,n}}{=\sum_{i=1}^{\infty}\frac{\partial\left(e^{-\beta E_i}\right)}{\partial E_i}\times \frac{\partial E_i}{\partial V} = -\sum_{i=1}^{\infty}\beta e^{-\beta E_i}\left(\frac{\partial E_i}{\partial V}\right)_{T,n}}
+
+So, we can combined Eqs. (\ref{eq1.24}) and (\ref{eq1.25}) to yield:
+
+\aeqn{1.26}{P = \frac{1}{\beta Z}\left(\frac{\partial Z}{\partial V}\right)_{T,n} = \frac{1}{\beta}\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,n}}
+
+This follows the same pattern as we saw for internal energy $U$: a mathematical operation (that depends on $V, T, n$) extracts pressure from the partition function.
+
+}

@@ -1,0 +1,28 @@
+\opage{
+\otitle{2.5 Pressure of monatomic ideal gas}
+
+\otext
+
+First recall the ideal gas law from classical thermodynamics: $PV = nkT$ (or $PV = nRT$ in terms of moles). In the following, we will
+see how this result originates from statistical thermodynamics.
+
+\otext
+
+Pressure is given by Eq. (\ref{eq1.26}):
+
+$$P = kT\left(\frac{\partial\ln\left(Z_{tr}\right)}{\partial V}\right)_{T,n}$$
+
+The partial derivative above can be calculated from the translational partition function (Eqs. (\ref{eq2.13}) and (\ref{eq2.14})):
+
+$$\ln\left(Z_{tr}\right) = N\ln\left(z_{tr}\right) - \ln\left(N!\right)$$
+$$\ln\left(z_{tr}\right) = \frac{3}{2}\ln\left(2\pi mk/h^2\right) + \frac{3}{2}\ln(T) + \ln(V)$$
+
+So we get simply:
+
+\aeqn{2.22}{\left(\frac{\partial\ln\left(Z_{tr}\right)}{\partial V}\right)_{T,n} = \frac{n}{V}}
+
+and the pressure is then:
+
+\aeqn{2.23}{P = kT \frac{n}{V} = nkT / V\textnormal{ or }PV = nkT}
+
+}

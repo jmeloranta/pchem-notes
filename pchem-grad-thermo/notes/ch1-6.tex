@@ -1,0 +1,69 @@
+\opage{
+\otitle{1.6 Evaluation of entropy}
+
+\otext
+
+When only $PV$-work takes place, the 1st and 2nd laws of thermodynamics can be combined into (see classical thermodynamics notes):
+
+\aeqn{1.36}{dU = TdS - PdV\textnormal{ (natural variables }S, V\textnormal{)}}
+
+Solving for $dS$:
+
+\aeqn{1.37}{dS = \frac{dU}{T} + \frac{PdV}{T}}
+
+Next we apply the following equation to Eq. (\ref{eq1.37}):
+
+\aeqn{1.38}{d\left(\frac{U}{T}\right) = -\frac{U}{T^2}dT + \frac{dU}{T}\Rightarrow \frac{dU}{T} = d\left(\frac{U}{T}\right) + \frac{U}{T^2}dT}
+
+Inserting this to Eq. (\ref{eq1.37}) gives:
+
+\aeqn{1.39}{dS = d\left(\frac{U}{T}\right) + \frac{U}{T^2}dT + \frac{PdV}{T}}
+
+The expressions for $U$ and $P$ are known (see Eqs. (\ref{eq1.34}) and (\ref{eq1.35})) and these can be inserted above:
+
+\aeqn{1.40}{dS = d\left(\frac{U}{T}\right) + k\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,n}dT + k\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,n}dV}
+
+The total differential for $\ln(Z)$ can be written as:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{1.41}{d\ln(Z) = \left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,n}dT + \left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,n}dV}
+
+This corresponds to the last two terms in Eq. (\ref{eq1.40}) and hence we can rewrite Eq. (\ref{eq1.40}) as:
+
+\aeqn{1.42}{dS = d\left(\frac{U}{T}\right) + kd(\ln(Z)) = d\left(\frac{U}{T} + k\ln(Z)\right)}
+
+Both sides can be intergrated:
+
+\aeqn{1.43}{\int_{S(0)}^{S(T)} dS = \int_{g(0)}^{g(T)} d\umark{\left(\frac{U}{T} + k\ln\left(Z\right)\right)}{\equiv g}}
+
+which leads to (recall 3rd law of thermodynamics; $S(0) = 0$):
+
+\aeqn{1.44}{S(T) = \frac{U(T)}{T} + k\ln\left(Z(T)\right) - \lim_{T\rightarrow 0}\left[\frac{U(T)}{T} + k\ln\left(Z(T)\right)\right]}
+
+For most systems the limit is zero (* see below) and Eq. (\ref{eq1.44}) simplifies to:
+
+\aeqn{1.45}{S(T) = \frac{U(T)}{T} + k\ln\left(Z(T)\right) = kT\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,n} + k\ln(Z)}
+
+This expression gives the sought prescription for extracting entropy from the partition function.
+
+}
+
+\opage{
+
+\otext
+
+(*) Confined quantum mechanical systems have zero-point energy and therefore $U(T) \rightarrow E_1$ (the lowest energy configutation with only zero-point energy contributing) when $T \rightarrow 0$. In this limit,
+the first term in Eq. (\ref{eq1.44}) becomes simply $E_1/T$. For the second term, $k\ln(Z(T))$, only the lowest state (state 1) contributes to $Z$ and therefore (see
+Eq. (\ref{eq1.33})) $k\ln(Z(T)) = -E_1 / T$. Note that classical systems do not have zero-point energy and $E_1 = 0$.
+
+\otext
+
+Note that the above reasoning can also be used to show that Eq. (\ref{eq1.44}) is compatible with the 3rd law of thermodynamics (i.e., $S(T) \rightarrow 0$ when $T \rightarrow 0$).
+This consideration does not account for the possible degeneracy of the lowest state (residual entropy).
+
+}

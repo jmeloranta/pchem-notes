@@ -1,0 +1,24 @@
+\opage{
+\otitle{2.3 Calculation of internal energy}
+
+\otext
+
+To calculate the internal energy of monatomic ideal gas, we start with Eq. (\ref{eq1.34}):
+
+$$U = kT^2\left(\frac{\partial\ln(Z_{tr})}{\partial T}\right)_{V,n}$$
+
+Based on Eq. (\ref{eq2.14}), we can compute the required derivative above as follows:
+
+\beqn{2.15}{\left(\frac{\partial\ln\left(Z_{tr}\right)}{\partial T}\right)_{V,n} = \frac{\partial}{\partial T}\left(n\ln\left(z_{tr}\right) - \umark{\ln\left(n!\right)}{\rightarrow 0}\right)}{= n\frac{\partial}{\partial T}\left(\frac{3}{2}\umark{\ln\left(2\pi mk/h^2\right)}{\rightarrow 0} + \frac{3}{2}\ln(T) + \umark{\ln(V)}{\rightarrow 0}\right)_{V,n} = \frac{3}{2}n/T}
+
+Inserting this into the expression for $U$ gives:
+
+\aeqn{2.16}{U = kT^2\times\frac{3}{2}\frac{n}{T} = \frac{3}{2}nkT}
+
+This can be written in terms of per mole quantities as ($n$ in moles):
+
+\aeqn{2.17}{U = \frac{3}{2}nRT}
+
+where $R$ is related to $k$ by Avogadro's number: $R = k \times N_a = 8.31451$ J / (mol K).
+
+}

@@ -1,0 +1,51 @@
+\opage{
+\otitle{1.5 Determination of $\beta$}
+
+\otext
+We begin by differentiating Eq. (\ref{eq1.20}) with respect to $V$:
+
+\ceqn{1.27}{\left(\frac{\partial U}{\partial V}\right)_T = -\left[\frac{\partial}{\partial V}\left(\frac{\partial\ln(Z)}{\partial\beta}\right)_{V,n}\right]_T}{= -\left[\frac{\partial}{\partial\beta}\left(\frac{\partial\ln(\beta)}{\partial V}\right)_T\right]_V \omark{=}{(\ref{eq1.26})} -\left[\frac{\partial}{\partial\beta}(\beta P)\right]_V}{= -P - \beta\left(\frac{\partial P}{\partial\beta}\right)_V}
+
+Next we use the following result from classical thermodynamics:
+
+\aeqn{1.28}{\left(\frac{\partial U}{\partial V}\right)_T = T\left(\frac{\partial P}{\partial T}\right)_V - P}
+
+The first term on the right can be written in a different form as:
+
+\aeqn{1.29}{\frac{\partial P}{\partial T} = \frac{\partial P}{\partial (1/T)} \times \umark{\frac{\partial (1/T)}{\partial T}}{= -1/T^2} = -\frac{1}{T^2}\frac{\partial P}{\partial (1/T)}}
+
+}
+
+\opage{
+
+\otext
+
+Inserting this into Eq. (\ref{eq1.28}) gives:
+
+\aeqn{1.30}{\left(\frac{\partial U}{\partial V}\right)_T = T\times\left(-\frac{1}{T^2}\right)\times\left(\frac{\partial P}{\partial (1/T)}\right)_V - P = -\frac{1}{T}\left(\frac{\partial P}{\partial(1/T)}\right)_V - P}
+
+This can be compared with Eq. (\ref{eq1.27}) and we see that the last terms on the right in these equationsmust be equal:
+
+\aeqn{1.31}{\beta\left(\frac{\partial P}{\partial\beta}\right)_V = \frac{1}{T}\left(\frac{\partial P}{\partial(1/T)}\right)_V}
+
+This equation is statisfied if $\beta \propto 1/T$. The proportionality constant is called the Boltzmann constant ($k = 1.38066\times 10^{-23}$ J/K):
+
+\aeqn{1.32}{\beta = \frac{1}{kT}}
+
+This gives the complete form for the partition function $Z$ and the ensemble probability $p_i$:
+
+\beqn{1.33}{Z = \sum_{j=1}^{\infty}e^{-E_j/(kT)}}{p_i = \frac{1}{Z}e^{-E_i / (kT)}}
+
+}
+
+\opage{
+
+\otext
+
+We can now substitute the expression $\beta = \frac{1}{kT}$ in Eqs. (\ref{eq1.20}) and (\ref{eq1.26}):
+
+\aeqn{1.34}{U = -\left(\frac{\partial\ln(Z)}{\partial\beta}\right)_{V,n} = -\left(\frac{\partial\ln(Z)}{\partial T}\right)\times\umark{\left(\frac{dT}{d\beta}\right)}{= -\frac{1}{k\beta^2}} = kT^2\left(\frac{\partial\ln(Z)}{\partial T}\right)_{V,n}}
+
+\aeqn{1.35}{P = \frac{1}{\beta}\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,n} = kT\left(\frac{\partial\ln(Z)}{\partial V}\right)_{T,n}}
+
+}

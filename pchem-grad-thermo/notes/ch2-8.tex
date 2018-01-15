@@ -1,0 +1,157 @@
+\opage{
+\otitle{2.8 Monatomic systems at low temperatures}
+
+\otext
+
+According to quantum mechanics, indistinguishable particles can be classified as bosons (integer spin; 0, 1, 2, ...) or fermions (half-integer spin; 1/2, 3/2, ...). The main difference between
+the two is that only one fermion can occupy a given (discrete) state whereas multiple bosons can occupy the same state. The former is called the
+\textit{Pauli exclusion principle} (fermions only).
+
+\ofig{elevels}{0.4}{}
+
+\otext
+
+\textbf{Examples.} Bosons: $^4$He nucleus (spin 0), $^{14}$N nucleus (spin 1), photon (spin 1; $m_s = \pm 1$, no $m_s = 0$!). 
+Fermions: $^3$He nucleus (spin 1/2), electron (spin 1/2).
+
+}
+
+\opage{
+
+\otext
+
+\underline{Average occupation of discrete energy levels:}
+
+\begin{columns}
+\begin{column}{2cm}
+\ofig{elevels2}{0.4}{}
+\end{column}
+\begin{column}{7cm}
+The total energy of ensemble member $i$ is given by:
+
+\aeqn{2.27}{E_i = n_{i,1}\bar{\epsilon}_1 + n_{i,2}\bar{\epsilon}_2 + ... = \sum_{j=1}^{\infty}n_{i,j}\bar{\epsilon}_j}
+
+with a fixed number of particles $N$:
+
+\aeqn{2.28}{\sum_{j=1}^{\infty}n_{i,j} = N}
+\end{column}
+\end{columns}
+
+\otext
+
+The partition function is then (similar to Eq. (\ref{eq2.2})):
+
+\aeqn{2.29}{Z = \sum_{i=1}^{\infty}e^{-\beta E_i} = \sum_{i=1}^{\infty} \exp\left(-\beta\left(n_{i,1}\bar{\epsilon}_1 + n_{i,2}\bar{\epsilon}_2 + ...\right)\right)}
+
+where $i$ index corresponds to the ensemble member number and $j$ to the energy level.
+
+}
+
+\opage{
+
+The average occupation number of state $j$ is defined as:
+
+\aeqn{2.30}{\left<n_j\right> = \sum_{i=1}^{\infty}p_in_{i,j}}
+
+where $p_i$ is the probability for ensemble member $i$ to occur:
+
+\aeqn{2.31}{p_i = \frac{1}{Z}\exp\left(-\beta\left(n_{i,1}\bar{\epsilon}_1 + n_{i,2}\bar{\epsilon}_2 + ...\right)\right)}
+
+We can now derive an expression for the occupation number in terms of the partition function:
+
+\ceqn{2.32}{\left<n_j\right> = \sum_{i=1}^{\infty}p_in_{i,j} = \sum_{i=1}^{\infty}\frac{\exp\left(-\beta\sum_{k=1}^{\infty}n_{i,k}\bar{\epsilon}_k\right)}{Z}n_{i,j}}
+{ = \frac{1}{Z}\left(-\frac{1}{\beta}\frac{\partial}{\partial\bar{\epsilon}_j}\right)\umark{\sum_{i=1}^{\infty}\exp\left(-\beta\sum_{k=1}^{\infty}n_{i,j}\bar{\epsilon}_k\right)}{=Z} = -\frac{1}{\beta Z}\frac{\partial Z}{\partial \bar{\epsilon}_j}}
+{= -\frac{1}{\beta}\frac{\partial\ln(Z)}{\partial\bar{\epsilon}_j} = -kT\frac{\partial\ln(Z)}{\partial\bar{\epsilon}_j}}
+
+}
+
+\opage{
+
+\otext
+
+\underline{Classical Maxwell-Boltzmann distribution:}
+
+\otext
+
+Consider distinguishable (classical) ideal gas. The partition function and ensemble energy can be written as:
+
+$$Z = \left(\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}\right)^n\Rightarrow \ln(Z) = n\ln\left(\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}\right)$$
+$$E_i = \sum_{j=1}^{\infty}n_{i,j}\bar{\epsilon}_j$$
+
+Inserting these into Eq. (\ref{eq2.32}) gives:
+
+\beqn{2.33}{\left<n_j\right> = -\frac{1}{\beta}\frac{\partial}{\partial\bar{\epsilon}_j}\left(n\ln\left(\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}\right)\right)}
+{= -\frac{n}{\beta}\frac{1}{\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}}\times\frac{\partial}{\partial\bar{\epsilon}_j}\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i} = n\frac{e^{-\beta\bar{\epsilon}_j}}{\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}}}
+
+Therefore the statistical weights, $w_j$, in the \textit{Maxwell-Boltzmann distribution} are given by:
+
+\aeqn{2.34}{w_j = \frac{\left<n_j\right>}{n} = \frac{e^{-\beta\bar{\epsilon}_j}}{\sum_{i=1}^{\infty}e^{-\beta\bar{\epsilon}_i}}\textnormal{ where }\beta = \frac{1}{kT}}
+
+}
+
+\opage{
+
+\otext
+
+\underline{Quantum Bose-Einsten distribution (bosons):}
+
+\otext
+
+Bosons can occupy the single-particle states without any restrictions and we should treat them as indistinguishable. The partition
+function is now given by (sampling over all possible configurations such that $n_1 + n_2 + ... = n$):
+
+\beqn{2.35}{Z = \sum_{i=1}^{\infty}e^{-\beta E_i} = \mathop{\mathop{\sum_{n_1=0,1,2,...}}_{n_2=0,1,2,...}}_{...}e^{-\beta\left(n_1\bar{\epsilon}_1 + n_2\bar{\epsilon}_2 + ...\right)} = \mathop{\mathop{\sum_{n_1=0,1,2,...}}_{n_2=0,1,2,...}}_{...}e^{-\beta n_1\bar{\epsilon}_1}\textnormal{ \phantom{X}}}
+{\times e^{-\beta n_2\bar{\epsilon}_2} \times ... = \left(\sum_{n_1 = 0}e^{-\beta n_1\bar{\epsilon}_1}\right) \times \left(\sum_{n_2=0}e^{-\beta n_2\bar{\epsilon}_2}\right)\times ...}
+
+Extending the limits in the last summations above to infinity (large number of particles), we can turn the individual sums into 
+geometric series. For example, for state 1:
+
+\aeqn{2.36}{\sum_{n_1=0}^{\infty}e^{-\beta n_1\bar{\epsilon}_1} = 1 + e^{-\beta\bar{\epsilon}_1} + e^{-2\beta\bar{\epsilon}_1} + ... = \frac{1}{1 - e^{-\beta\bar{\epsilon}_1}}}
+
+Thus we can write the partition function as follows:
+
+\aeqn{2.37}{Z = \left(\frac{1}{1 - e^{-\beta\bar{\epsilon}_1}}\right)\times\left(\frac{1}{1 - e^{-\beta\bar{\epsilon}_2}}\right)\times ...}
+
+}
+
+\opage{
+
+\otext
+
+Taking natural log of both sides above gives:
+
+\aeqn{2.38}{\ln(Z) = -\sum_{i=1}^{\infty}\ln\left(1 - e^{-\beta\bar{\epsilon}_i}\right)}
+
+Eq. (\ref{eq2.32}) can be used to compute the average occupation number:
+
+\beqn{2.39}{\left<n_j\right> = -\frac{1}{\beta}\frac{\partial\ln(Z)}{\partial\bar{\epsilon}_j} = \frac{1}{\beta}\frac{\partial}{\partial\bar{\epsilon}_j}\left(\sum_{i=1}^{\infty}\ln\left(1 - e^{-\beta\bar{\epsilon}_i}\right)\right)}
+{=\frac{1}{\beta}\frac{\partial}{\partial\bar{\epsilon}_j}\left(\ln\left(1 - e^{-\beta\bar{\epsilon}_j}\right)\right) = \frac{e^{-\beta\bar{\epsilon}_j}}{1 - e^{-\beta\bar{\epsilon}_j}} = \frac{1}{e^{\beta\bar{\epsilon}_j} - 1}}
+
+Based on this result, the statistical weight of state $j$ is:
+
+\aeqn{2.40}{w_j = \frac{\left<n_j\right>}{n} = \frac{1}{n\left(e^{\beta\bar{\epsilon}_j} - 1\right)}}
+
+In order to conserve the total number of particles ($n$), an additional constant (chemical potential; $\mu$) should be included above:
+
+\aeqn{2.41}{w_j = \frac{\left<n_j\right>}{n} = \frac{1}{n\left(e^{\beta\left(\bar{\epsilon}_j-\mu\right)} - 1\right)}}
+
+}
+
+\opage{
+
+\otext
+
+\underline{Quantum Fermi-Diract distribution (fermions):}
+
+\otext
+
+Since only one fermion can occupy a given state, some configurations must be excluded from the above calculation (Pauli exclusion principle).
+It can be shown that in this case Eq. (\ref{eq2.41}) becomes:
+
+\aeqn{2.42}{w_j = \frac{\left<n_j\right>}{n} = \frac{1}{n\left(e^{\beta\left(\bar{\epsilon}_j-\mu\right)} + 1\right)}}
+
+\otext
+Note that for degenerate states, both Eqs. (\ref{eq2.40}) and (\ref{eq2.41}) should include the degeneracy factor (i.e., they should
+be multiplied by it).
+
+}

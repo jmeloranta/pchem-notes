@@ -1,0 +1,40 @@
+\opage{
+\otitle{2.2 Translational partition function}
+
+\otext
+We model the atoms as ``particle in a 3-D box" (quantum mechanics) and consider them as indistinguishable particles. The box could
+correspond to the container where the atoms are constrained in. The \textit{translational partition function} can then be written
+as (see Eq. (\ref{eq2.8})):
+
+\aeqn{2.9}{Z_{tr} = \frac{\left(z_{tr}\right)^n}{n!} = \frac{1}{n!}\left(\sum_{n_x=1}^{\infty}\sum_{n_y=1}^{\infty}\sum_{n_z=1}^{\infty}e^{-\beta E(n_x,n_y,n_z)}\right)^n}
+
+where the energy of the system is determined by the quantum numbers $n_x$, $n_y$, $n_z$:
+
+\aeqn{2.10}{E\left(n_x,n_y,n_z\right) = \frac{h^2}{8m}\left(\frac{n_x^2}{a^2} + \frac{n_y^2}{b^2} + \frac{n_z^2}{c^2}\right)}
+
+where $a$, $b$, and $c$ correspond to the box side lengths. Since the energy levels are very close to each other, we can replace
+the summations in Eq. (\ref{eq2.10}) by integrals (i.e., discrete vs. continuous):
+
+\aeqn{2.11}{\sum_{n_x}^{\infty}e^{-\left(\beta h^2 / (8m)\right)n_x^2/a^2} \approx \int_0^{\infty}e^{-\left(\beta h^2/(8m)\right)n_x^2/a^2}dn_x = \frac{1}{2}\left(\frac{8m\pi}{\beta h^2}\right)^{1/2}a}
+
+where the last step involves integration of $\int_0^{\infty} e^{-ax^2}$ (from mathematics handbook).
+
+}
+
+\opage{
+
+\otext
+
+Therefore the atomic partition function $z_{tr}$ is:
+
+\aeqn{2.12}{z_{tr} = \left(2\pi mkT/\hbar^2\right)^{3/2}V\textnormal{ where }V = abc\textnormal{ (volume)}}
+
+Taking natural logarithm of Eq. (\ref{eq2.12}):
+
+\aeqn{2.13}{\ln(z_{tr}) = \frac{3}{2}\ln\left(2\pi mk/h^2\right) + \frac{3}{2}\ln(T) + \ln(V)}
+
+The (total) translational partition function is then given by (see Eq. (\ref{eq2.8})):
+
+\aeqn{2.14}{\ln\left(Z_{tr}\right) = \ln\left(\frac{z_{tr}^n}{n!}\right) = n\ln\left(z_{tr}\right) - \ln\left(n!\right)}
+
+}

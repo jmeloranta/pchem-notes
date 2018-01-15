@@ -1,0 +1,43 @@
+\opage{
+\otitle{2.4 Calculation of entropy}
+
+\otext
+
+To calculate entropy, we start with Eq. (\ref{eq1.45}):
+
+$$S = \frac{U}{T} + k\ln(Z_{tr})$$
+
+and use Eq. (\ref{eq2.14}) for $Z_{tr}$:
+
+$$\ln\left(Z_{tr}\right) = n\ln\left(z_{tr}\right) - \ln\left(n!\right)$$
+$$= n\left[\frac{3}{2}\ln\left(2\pi mk/h^2\right) + \frac{3}{2}\ln(T) + \ln(V)\right] - \ln\left(n!\right)$$
+
+This gives the following expression for entropy $S$:
+
+\ceqn{2.18}{S = \frac{3}{2}nk + \frac{3}{2}nk\ln\left(2\pi mk/h^2\right) + \frac{3}{2}nk\ln\left(T\right) + nk\ln\left(V\right) - k\ln\left(n!\right)}{= nk\left(\frac{3}{2} + \frac{3}{2}\ln\left(\frac{2\pi mkT}{h^2}\right) + \ln(V) - \frac{1}{n}\ln(n!)\right)}{= nk\left(\frac{3}{2} + \ln\left(\left(\frac{2\pi mkT}{h^2}\right)^{3/2}V\right) - \frac{1}{n}\ln(n!)\right)}
+
+The last term on the right can be rewritten using Stirling's approximation ($n$ sufficiently large):
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{2.19}{\ln(n!) \approx n\ln(n) - n}
+
+Thus the last term becomes:
+
+\aeqn{2.20}{-\frac{1}{n}\ln(n!) \approx -\frac{1}{n}\left(n\ln(n) - n\right) = -\ln(n) + 1}
+
+Rewriting Eq. (\ref{eq2.18}) now gives the final result (for monatomic ideal gas):
+
+\beqn{2.21}{S = nk\left(\frac{3}{2} + \ln\left(\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\frac{V}{n}\right) + 1\right)}{=nk\left(\frac{5}{2} + \ln\left(\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\frac{V}{n}\right)\right)}
+
+This is a special case of so-called Sackur-Tetrode equation:
+
+\aeqn{2.21a}{S = nk\left[\frac{5}{2} + \ln\left(\left(\frac{4\pi m}{3h^2}\frac{U}{n}\right)^{3/2}\frac{V}{n}\right)\right]}
+
+which is a good approximation when $\frac{V}{n}\left(\frac{2\pi mkT}{h^2}\right)^{3/2} >> 1$.
+
+}

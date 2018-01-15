@@ -1,0 +1,65 @@
+\opage{
+\otitle{2.1 The atomic partition function}
+
+\otext
+
+We will apply the concepts developed in the previous chapter to monatomic (only translation) ideal gas 
+(no interaction between atoms). Assume a classical system where the particles are distinguishable (i.e., no states exlcuded).
+
+\otext
+
+The energy of an ensemble member identified by an $n$-dimensional vector $(k, l, ..., m)$, which plays the role of summation index $i$ in Eq. (\ref{eq2.1}), is:
+
+\aeqn{2.1}{E_{(k,l,...m)} = \epsilon_{k,1} + \epsilon_{l,2} + ... + \epsilon_{m,n}}
+
+where $\epsilon_{k,j}$ is the energy of atom $j$ in state $k$. Because the particles are identical and do not interact,
+they occupy the same atomic states. The (canonical) partition function can now be written as ($\beta = \frac{1}{kT}$):
+
+\beqn{2.2}{Z = \mathop{\sum_{k=1,l=1}^{\infty}}_{...,m=1}e^{-\beta E_{(k,l,...,m)}}}
+{= \umark{\sum_{k=1}^{\infty}\sum_{l=1}^{\infty}\cdot\cdot\cdot\sum_{m=1}^{\infty}}{n\textnormal{ summations}}e^{-\beta\left(\epsilon_{k,1} + \epsilon_{l,2} + ... + \epsilon_{m,n}\right)}}
+
+}
+
+\opage{
+
+\otext
+Eq. (\ref{eq2.2}) can be separated into a product:
+
+\aeqn{2.3}{Z = \umark{\sum_{k=1}^{\infty}e^{-\beta\epsilon_{k,1}}}{\textnormal{Atom \#1}} \times \umark{\sum_{l=1}^{\infty}e^{-\beta\epsilon_{l,2}}}{\textnormal{Atom \#2}} \times \cdot\cdot\cdot \times \umark{\sum_{m=1}^{\infty}e^{-\beta\epsilon_{m,n}}}{\textnormal{Atom \#}n}}
+
+The atoms occupy identical energy levels ($\epsilon_{i,1} = \epsilon_{i,2} = ... = \epsilon_{i,n} \equiv \epsilon_i$) without restrictions and hence all the terms above are identical:
+
+\aeqn{2.4}{Z = \left(\sum_{i=1}^{\infty}e^{-\beta\epsilon_i}\right)^n}
+
+The individual components in Eq. (\ref{eq2.3}) are called \textit{atomic partition functions}:
+
+\aeqn{2.5}{z_j \equiv \sum_{i=1}^{\infty}e^{-\beta \epsilon_{i,j}}}
+
+With this notation, Eq. (\ref{eq2.3}) becomes:
+
+\aeqn{2.6}{Z = z_1\times z_2\times ... \times z_n}
+
+and Eq. (\ref{eq2.4}) is then:
+
+\aeqn{2.7}{Z = z^n}
+
+where we imposed $z = z_1 = z_2 = ... = z_n$.
+
+}
+
+\opage{
+
+\otext
+
+If the atoms are distinguishable we can tell, for example, the difference between atom 1 in state 1 and atom 2 in state 2 VS. 
+atom 1 in state 2 and atom 2 in state 1. In this case Eq. (\ref{eq2.7}) is correct. However, according to quantum mechanics identical 
+particles should be \textit{indistinguishable}. Therefore the above construction leads to inclusion of states that do not exist. 
+For example, the two configurations mentioned above correspond to the same state and should not be included twice. The number of 
+distinct ways to distribute $n$ atoms over a large number of states is approximately given by factorial, $n!$, and therefore 
+we should normalize Eq. (\ref{eq2.4}):
+
+\aeqn{2.8}{Z = \frac{z^n}{n!}}
+
+However, this approximation fails at low temperatures (exclusion of states) and we will return to this point later.
+
+}

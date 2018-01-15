@@ -1,0 +1,65 @@
+\opage{
+\otitle{1.1 Outline and basic definitions}
+
+\otext
+Statistical thermodynamics was developed by Maxwell, Boltzmann, Gibbs and Einstein between 1860 - 1905. In this course, we will address topics such as:\\
+\begin{itemize}
+\item What is the connection between the microscopic interactions of a system and classical thermodynamics?
+\item Where do the expressions, such as $U = \frac{3}{2}nRT$ or $H = \frac{5}{2}nRT$ for monatomic ideal gases, used in classical thermodynamics come from?
+\item What are the underlying approximations behind the ideal gas law ($PV = nRT$)?
+\item What is the statistical interpretation of entropy ($S = k\ln\left(\Omega\right)$)?
+\item What are Maxwell-Boltzmann, Bose-Einstein, and Fermi-Dirac distributions?
+\item What is the origin of the most common equations of state for gases?
+\item Thermodynamics of molecules and thermochemistry
+\end{itemize}
+
+\otext
+We will assume a large number of particles such that the system can be treated statistically. 
+The underlying behavior of the individual particles (atoms/molecules) may be governed by classical or quantum mechanics 
+(e.g., electronic, translational, rotational, vibrational energy).
+
+}
+
+\opage{
+
+\underline{Terminology:}\\
+
+\begin{tabular}{ll}
+System & = Macroscopic thermodynamic system.\\
+Particles & = Particles that compose the system (e.g., atoms/molecules).\\
+Macrostate & = Macroscopic paramters (e.g., $V,P,T$) that specify the\\
+ & \phantom{=} state of the system.\\
+Microstate & = Atom/molecular level specification of the system (e.g., positions\\
+ & \phantom{=} and velocities of individual atoms/molecules).
+\end{tabular}
+
+\otext
+
+For a given macrostate many different microstates are possible. Usually only macrostate is observable.
+
+\otext
+\textbf{Ensemble:} A hypothetical collection of non-interacting systems. Each member has the same macrostate described by:
+
+\begin{itemize}
+\item $(n,V,T)$ - Canonical ensemble. \textbf{We will employ this ensemble here.}
+\item $(n,V,U)$ - Microcanonical ensemble.
+\item $(\mu,V,T)$ - Grand canonical ensemble.
+\end{itemize}
+
+\noindent
+where $n$ is the number of particles (no unit), $V$ is the volume (m$^{-3}$), $T$ is the temperature (K), $U$ is the internal energy (J), and $\mu$ is the chemical potential (J). Although the ensemble members have an identical macrostate, they do not correspond to the same microstate.
+
+\otext
+
+The choice of $n$ vs. $\mu$ often depends on whether a finite or a bulk system is considered. In general, a system can be described within any ensemble, but the actual calculations might be easier or more complicated depending on the choice.
+
+}
+
+\opage{
+
+\ofig{macro-micro}{0.4}{}
+
+\otext
+\textbf{Measurement:} A measurement of any macroscopic property consists of a time average over the measurement interval. Hence it involves an inherent time averaging process. \textit{How to avoid this?}
+
+}

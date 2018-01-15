@@ -1,0 +1,143 @@
+
+\opage{
+\otitle{1.2 Boltzmann probability}
+
+\otext
+\textbf{Postulate:} The measured time average of any macrosopic property of the system is equal to the average value of that property in the ensemble.
+This approach avoids taking time averages of the system (and hence considering the explicit microscopic level dynamics).
+
+\otext
+The internal energy ($U$) of a an ensemble is given by a weighted average of the ensemble members (\textit{ensemble average}):
+
+\aeqn{1.1}{U = \left<E_i\right> = \sum_{i=1}^{\infty} p_i E_i}
+
+where $E_i$ is the energy of ensemble member $i$ (J; includes a possible zero-point energy offset) and $p_i$ is its statistical weight (probability of the member; no unit). 
+
+\otext
+
+Since the available thermal energy dictates which ensemble members can be reached, we expect that $p_i$ should depend on $E_i$. For example, an ensemble
+member that has a very high energy (as compared to the available thermal energy) would have a low probability of occurring (i.e., small $p_i$).
+Therefore it would not contribute much to the summation in Eq. (\ref{eq1.1}).
+
+\otext
+In the following, our task is to show that $p_i$ is indeed determined by $E_i$:
+
+\aeqn{1.2}{p_i = \frac{e^{-\beta E_i}}{Z}\textnormal{ where }Z = \sum_{i=1}^{\infty}e^{-\beta E_i}}
+
+Also, it will turn out that $\beta = \frac{1}{kT}$ ($k$ is the Boltzmann constant).
+
+}
+
+\opage{
+
+\otext
+
+\textbf{Assumption:} All microstates that have equal energy have the same probability of occurring. This implies that
+the probability depends only on energy: $p_i = f(E_i)$. Note that states that belong to the same degenerate set are counted separately.
+
+\otext
+
+\underline{Evaluation of Boltzmann probabilities $p_i$:} Our task is to determine the function $f$ above.
+
+\ofig{subsystems}{0.4}{}
+
+We divide an ensemble member into two subsystems labelled by 1 and 2 in microstates $i$ and $j$, respectively (see above). 
+Based on the above assumption, we have:
+
+\aeqn{1.3}{p_{1,i} = f(E_{1,i})\textnormal{ and }p_{2,j} = g(E_{2,j})}
+
+where $p_{1,i}$ is the probability for subsystem 1 in microstate $i$ to occur and $p_{2,j}$ is the corresponding probability for
+subsystem 2 and microstate $j$.
+
+}
+
+\opage{
+
+\otext
+
+Note that $f$ and $g$ are not necessarily the same functions (although they will turn out to be so).
+
+\otext
+
+Provided that the interaction energy between the two subsystems is small compared to the overall energies of the subsystems
+(e.g., $n_1$ and $n_2$ are large), the total energy of the system is given by:
+
+\aeqn{1.4}{E_{1+2,k} = E_{1,i} + E_{2,j}\textnormal{ where }k = (i,j)}
+
+The probability for the system in microstate $k$ is then:
+
+\aeqn{1.5}{p_{1+2,k} = h(E_{1+2,k})\textnormal{ where }k = (i,j)}
+
+Since the subsystems are indepdendent, the overall probability must be a product:
+
+\aeqn{1.6}{h(E_{1+2,k}) = h(E_{1,i} + E_{2,j}) = f(E_{1,i})\times g(E_{2,j})}
+
+Therefore we are therefore looking for a probability function, which produces a product from the sum of two energies (probably the exponential function!).
+To see this, we carry out the following calculation:
+
+\otext
+
+Denote $x \equiv E_{1,i}$, $y \equiv E_{2,j}$, and $z \equiv x + y$. With this notation, the above equation becomes:
+
+\aeqn{1.7}{h(z) = f(x)g(y)}
+
+}
+
+\opage{
+
+\otext
+Differentiating Eq. (\ref{eq1.7}) with respect to $x$ from both sides gives:
+
+\aeqn{1.8}{\left(\frac{\partial h(z)}{\partial x}\right)_y = \left(\frac{df(x)}{dx}\right)g(y)}
+
+Using the chain rule on the left-hand side gives:
+
+\aeqn{1.9}{\left(\frac{\partial h(z)}{\partial x}\right)_y = \left(\frac{dh(z)}{dz}\right)\left(\frac{\partial z}{\partial x}\right)_y = \frac{dh(z)}{dz}}
+
+Combining Eqs. (\ref{eq1.8}) and (\ref{eq1.9}) yields:
+
+\aeqn{1.10}{\frac{dh(z)}{dz} = \left(\frac{df(x)}{dx}\right)g(y)}
+
+Similarily, performing the same operation with respect $y$ gives:
+
+\aeqn{1.11}{\frac{dh(z)}{dz} = f(x)\left(\frac{dg(y)}{dy}\right)}
+
+Dividing Eqs. (\ref{eq1.10}) and (\ref{eq1.11}) side by side ($dh(z)/dz$ cancels; ' denotes derivative) leads to:
+
+\aeqn{1.12}{\frac{g'(y)}{g(y)} = \frac{f'(x)}{f(x)} \equiv \beta\textnormal{ (constant)}}
+
+Since the two sides in the first part of this equation depend on $x$ and $y$ independently, they must be equal to a constant ($\beta$).
+
+}
+
+\opage{
+
+\otext
+
+Eq. (\ref{eq1.12}) is a differential equation for $f$ (or equivalently for $g$):
+
+\aeqn{1.13}{f'(x) = -\beta f(x) \Rightarrow f(x) = Ce^{-\beta x}}
+
+where $C$ is the integration constant. Recalling that $x = E_{1,i}$ we can write this as:
+
+\aeqn{1.14}{p_{1,i} = f(E_{1,i}) = Ce^{-\beta E_{1,i}}}
+
+Since the same argument can be made for subsystem 2, $\beta$ is a universal constant (that may depend on temperature).
+
+\otext
+
+When considering an ensemble (with $p_i = C\exp\left(-\beta E_i\right)$), the probabilities must be normalized to one:
+
+\aeqn{1.15}{\sum_{i=1}^{\infty} p_i = \sum_{i=1}^{\infty}Ce^{-\beta E_i} = 1}
+
+This determines the integration constant $C$:
+
+\aeqn{1.16}{C = \frac{1}{\sum_{i=1}^{\infty}\exp\left(-\beta E_i\right)} \equiv \frac{1}{Z}}
+
+where $Z$ is called the \textit{partition function}. Although $Z$ seems to play just the role of a normalization constant, it will
+turn out to be a central object in statistical thermodynamics (similar to the wavefunction in quantum mechanics). We conclude that
+the probabilities for ensemble members are given by:
+
+\aeqn{1.17}{p_i = \frac{e^{-\beta E_i}}{\sum_{j=1}^{\infty}e^{-\beta E_j}} = \frac{e^{-\beta E_i}}{Z}}
+
+}

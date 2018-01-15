@@ -1,0 +1,43 @@
+\opage{
+\otitle{1.8 The Boltzmann postulate for entropy}
+
+\otext
+
+The Boltzmann postulate for entropy states (recall from classical thermodynamics) that:
+
+\aeqn{1.50}{S = k\ln\left(\Omega\right)}
+
+where $\Omega$ is the number of microscopic ways to arrange the system. The origin of this result can be seen starting from Eq. (\ref{eq1.45}):
+
+$$S = \frac{U}{T} + k\ln(Z)$$
+
+Inserting the definition of $U$ (Eq. \ref{eq1.18}):
+
+$$U = \frac{1}{Z}\sum_{i=1}^{\infty}e^{-E_i/(kT)}\times E_i = -\frac{kT}{Z}\sum_{i=1}^{\infty}\ln\left(e^{-E_i/(kT)}\right)\times e^{-E_i/(kT)}$$
+
+Inserting this into the expression for $S$ gives:
+
+\aeqn{1.51}{S = -\frac{k}{Z}\sum_{i=1}^{\infty}\ln\left(e^{-E_i/(kT)}\right)\times e^{-E_i/(kT)} + k\ln(Z)}
+
+Since $\sum_{i=1}^{\infty} e^{-E_i/(kT)}{Z} = 1$, we can modify the last term:
+
+\aeqn{1.52}{S = -\frac{k}{Z}\sum_{i=1}^{\infty}\ln\left(e^{-E_i/(kT)}\right)\times e^{-E_i/(kT)} + \frac{k}{Z}\sum_{i=1}^{\infty}e^{-E_i/(kT)}\ln(Z)}
+
+}
+
+\opage{
+
+\otext
+
+Combining the terms in Eq. (\ref{eq1.52}) gives:
+
+\beqn{1.53}{S = -k\sum_{i=1}^{\infty}\umark{\frac{e^{-E_i/(kT)}}{Z}}{=p_i}\times\left(\ln\left(e^{E_i/(kT)}\right) - \ln(Z)\right)}{ = -k\sum_{i=1}^{\infty}p_i\ln\umark{\left(\frac{e^{E_i/(kT)}}{Z}\right)}{=p_i} = -k\sum_{i=1}^{\infty}p_i\ln\left(p_i\right)}
+
+This called the Gibbs equation for entropy. If all states have the same probability of occurring, $p_i \equiv 1/\Omega$ 
+($\Omega$ is the number of possible configurations), then Eq. (\ref{eq1.53}) can be written as:
+
+\aeqn{1.54}{S = -k\sum_{i=1}^{\Omega}\frac{1}{\Omega}\ln\left(\frac{1}{\Omega}\right) = k\ln\left(\Omega\right)}
+
+where the limit $\Omega\rightarrow\infty$ should be taken.
+
+}

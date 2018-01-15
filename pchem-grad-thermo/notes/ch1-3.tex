@@ -1,0 +1,27 @@
+\opage{
+\otitle{1.3 Evaluation of internal energy}
+
+\otext
+
+The internal energy $U$ can be obtained as an ensemble average:
+
+\aeqn{1.18}{U(T) = \sum_{i = 1}^{\infty}p_iE_i = \frac{1}{Z}\sum_{i=1}^{\infty} e^{-\beta E_i}\times E_i}
+
+where $Z = Z(\beta(T), V, n)$ and $n$ may include several variables representing each species present in the system. Note that
+this choice of variables corresponds to \textit{canonical ensemble} (i.e., fixed $T, V, n$).
+
+\otext
+
+Differentiation of $Z = \sum_{i=1}^{\infty}\exp\left(-\beta E_i\right)$ with respect to $\beta$ gives:
+
+\aeqn{1.19}{\left(\frac{\partial Z}{\partial\beta}\right)_{V,n}
+= \left(\frac{\partial}{\partial\beta}\sum_{i=1}^{\infty}e^{-\beta E_i}\right)_{V,n} = -\sum_{i=1}^{\infty}e^{-\beta E_i}\times E_i}
+
+Comparing this with Eq. (\ref{eq1.18}) leads to:
+
+\aeqn{1.20}{U(T) = -\frac{1}{Z}\left(\frac{\partial Z}{\partial\beta}\right)_{V,n} = -\left(\frac{\ln(Z)}{\partial\beta}\right)_{V,n}}
+
+This means that the internal energy can be obtained from $Z$ by applying the above mathematical operation on it (vrt. operators in quantum mechanics).
+Remember that it will turn out that $\beta = \beta(T)$, so the differentiations in Eq. (\ref{eq1.20}) will actually be with respect to temperature $T$.
+
+}
