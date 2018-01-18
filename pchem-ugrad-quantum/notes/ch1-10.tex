@@ -117,8 +117,9 @@ where $l$ is the \href{http://en.wikipedia.org/wiki/Azimuthal_quantum_number}{\u
 The following relations are useful when working with spherical harmonics:
 
 \aeqn{spherical2}{\int\limits_0^{\pi}\int\limits_0^{2\pi}Y_{l'}^{m'*}(\theta,\phi)Y_l^m(\theta,\phi)\sin(\theta)d\theta d\phi = \delta_{l,l'}\delta_{m,m'}}
-\beqn{spherical3}{\int\limits_0^{\pi}\int\limits_0^{2\pi}Y^{m''*}_{l''}(\theta,\phi)Y_{l'}^{m'}(\theta,\phi)Y_l^m(\theta,\phi)\sin(\theta)d\theta d\phi = 0}
-{\textnormal{unless }m'' = m + m'\textnormal{ and }l'' = l \pm 1}
+\ceqn{spherical3}{\int\limits_0^{\pi}\int\limits_0^{2\pi}Y^{m''*}_{l''}(\theta,\phi)Y_{l'}^{m'}(\theta,\phi)Y_l^m(\theta,\phi)\sin(\theta)d\theta d\phi = 0}
+{\textnormal{unless }m'' = m + m'\textnormal{ and a triangle with sides }l, l', l''\textnormal{ can be formed:}}
+{l''^2 = l^2 + l'^2 - 2ll'\cos(\alpha)\textnormal{ with some value of }\alpha\textnormal{ }(\left|\cos(\alpha)\right|\le 1)}
 \aeqn{spherical4}{Y^{m*}_l = (-1)^mY^{-m}_l\textnormal{ (Condon-Shortley)}}
 
 Operating on the eigenfunctions by $L_z$ gives the following eigenvalues for $L_z$:
