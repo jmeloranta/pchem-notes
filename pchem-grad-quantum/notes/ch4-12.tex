@@ -1,0 +1,82 @@
+\opage{
+\otitle{4.12 The relation between the schemes}
+
+\otext
+The state $\left|j_1,j_2;j,m_j\right>$ consists of all values of $m_{j_1}$ and $m_{j_2}$ such that $m_j = m_{j_1} + m_{j_2}$. Thus it should be possible to express the coupled state as a linear combination of the uncoupled states $\left|j_1,m_{j_1};j_2,m_{j_2}\right>$:
+
+\aeqn{4.45}{\left|j_1,j_2;j,m_j\right> = \sum\limits_{m_{j_1},m_{j_2}}C(m_{j_1},m_{j_2})\left|j_1,m_{j_1};j_2,m_{j_2}\right>}
+
+The coefficients $C(m_{j_1},m_{j_2})$ are called \textit{vector coupling coefficients} (or \textit{Glebsch-Gordan coefficients}, \textit{Wiegner coefficients}, and in a slightly modified form \textit{3j-symbols}).
+
+\vspace*{0.2cm}
+
+Let us consider the two spin-half particles in the previous example. The relation ship between the two representations is then:
+
+$$\left|1,+1\right> = \left|\frac{1}{2},+\frac{1}{2};\frac{1}{2},+\frac{1}{2}\right>$$
+$$\left|1,0\right> = \frac{1}{\sqrt{2}}\left|\frac{1}{2},+\frac{1}{2};\frac{1}{2},-\frac{1}{2}\right> + \frac{1}{\sqrt{2}}\left|\frac{1}{2},-\frac{1}{2};\frac{1}{2},-+\frac{1}{2}\right>$$
+$$\left|1,-1\right> = \left|\frac{1}{2},-\frac{1}{2};\frac{1}{2},-\frac{1}{2}\right>$$
+$$\left|0,0\right> = \frac{1}{\sqrt{2}}\left|\frac{1}{2},+\frac{1}{2};\frac{1}{2},-\frac{1}{2}\right> - \frac{1}{\sqrt{2}}\left|\frac{1}{2},-\frac{1}{2};\frac{1}{2},-+\frac{1}{2}\right>$$
+
+}
+
+\opage{
+
+\otext
+Note that in the triplet state we have a possibilty for the spins to be parallel ($\uparrow\uparrow$ or $\downarrow\downarrow$) where as in the singlet state we can only have opposite spins ($\uparrow\downarrow$ or $\downarrow\uparrow$). The $m_j = 0$ components differ only by their relative sign. For the triplet state the plus sign signifies that the spins are precessing in with the same phase whereas in the singlet state they are out of phase.
+
+\vspace*{0.2cm}
+
+Vector coupling coefficients can be derived based on the idea of the following example. In general, however, it is much easier to use numerical tables that list the coefficients. If we multiply Eq. (\ref{eq4.45}) from the left by $\left<j_1,m'_{j_1};j_2,m'_{j_2}\right|$ and notice that the only term that survives is $m_{j_1} = m'_{j_1}$ and $m_{j_2} = m'_{j_2}$ (orthogonality):
+
+\aeqn{4.46}{\left<j_1,m'_{j_1};j_2,m'_{j_2}\right|\left.j_1,j_2;j,m_j\right> = C(m'_{j_1},m'_{j_2})}
+
+In the following we specifically consider $j_1 = \frac{1}{2}$ and $j_2 = \frac{1}{2}$. The state with maximum $m_j$ must arise from the two angular momenta having the same $m_j$:
+
+\aeqn{4.47}{\left|\frac{1}{2},+\frac{1}{2};\frac{1}{2},+\frac{1}{2}\right>}
+
+By operating on this state with $j_-$ we get (see Eqs. (\ref{eq4.23}) and (\ref{eq4.29})):
+
+\aeqn{4.48}{j_-\left|j,m_j\right> = \sqrt{j(j+1) - m_j(m_j - 1)}\hbar\left|j,m_j-1\right>}
+
+and thus: $j_-\left|1,+1\right> = \sqrt{2}\hbar\left|1,0\right>$
+
+}
+
+\opage{
+
+\otext
+On the other hand we can also express $j_-$ using the individual lowering operators: $j_- = j_{1-} + j_{2-}$. Operation with this on $\left|1,+1\right>$ gives:
+
+$$j_-\left|j,m_j\right> = \left(j_{1-} + j_{2-}\right)\alpha_1\alpha_2 = \hbar\left(\alpha_1\beta_2 + \beta_1\alpha_2\right)$$
+
+Combining the two results above now gives:
+
+\aeqn{4.49}{\left|1,0\right> = \frac{1}{\sqrt{2}}\left(\alpha_1\beta_2 + \beta_1\alpha_2\right)}
+
+One could proceed by applying the above procude once more to obtain $\left|1,-1\right>$ or just by stating that both angular momenta must have the same $m_j$:
+
+\aeqn{4.50}{\left|1,-1\right> = \beta_1\beta_2}
+
+Subce $j^2$ is hermitean operator, its eigenfunctions are orthogonal. Changing the sign in Eq. (\ref{eq4.49}) will give this function:
+
+\aeqn{4.51}{\left|0,0\right> \frac{1}{\sqrt{2}}\left(\alpha_1\beta_2 - \beta_1\alpha_2\right)}
+
+The same procedure can be repeated for any values of $j_1$ and $j_2$. The above results can be compiled into a table of vector coupling coefficients.
+
+}
+
+\opage{
+
+\otext
+\begin{center}
+\begin{tabular}{llllll}
+$m_{j_1}$ & $m_{j_2}$ & $\left|1,+1\right>$ & $\left|1,0\right>$ & $\left|0,0\right>$ & $\left|1,-1\right>$\\
+\cline{1-6}\\
+$+\frac{1}{2}$ & $+\frac{1}{2}$ & 1 & 0 & 0 & 0\\
+$+\frac{1}{2}$ & $-\frac{1}{2}$ & 0 & $1/\sqrt{2}$ & $1/\sqrt{2}$ & 0\\
+$-\frac{1}{2}$ & $+\frac{1}{2}$ & 0 & $1/\sqrt{2}$ & $-1/\sqrt{2}$ & 0\\
+$-\frac{1}{2}$ & $-\frac{1}{2}$ & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{center}
+
+}

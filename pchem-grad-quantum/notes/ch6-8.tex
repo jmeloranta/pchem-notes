@@ -1,0 +1,105 @@
+\opage{
+\otitle{6.8 Perturbation theory for degenerate states}
+
+\otext
+One important assumption in the previous derivation of time-independent perturbation theory was that we did not allow degeneracy between $\left|0\right>$ and some other level. This is also obvious from the 1st and 2nd order energy expressions (see Eqs. (\ref{eq6.22}) and (\ref{eq6.24})), which would produce infinity in case of such degeneracy. Another problem is that when the energy levels are close, even a small perturbation can introduce very large changes (i.e., the effect of perturbation is not small). Remember that any linear combination of wavefunctions belonging to a degenerate set is still an eigenfunction. This gives us extra freedom to choose our wavefunction. Our task is to work around the possible divisions by zero and see if we can find an optimum way of chooing starting combinations of the wavefunctions.
+
+\vspace*{0.2cm}
+
+Let us assume that the level of interest is $r$-fold degenerate and that the states corresponding to the energy $E_0^{(0)}$ are $\left|0,l\right>$, with $l = 1, 2, ..., r$, and the corresponding wavefunctions are $\psi_{0,l}^{(0)}$. All of the $r$ states satisfy:
+
+\aeqn{6.29}{H^{(0)}\left|0,l\right> = E_0^{(0)}\left|0,l\right>}
+
+We form a linear combination of the degenerate states:
+
+\aeqn{6.30}{\phi_{0,i}^{(0)} = \sum\limits_{l=1}^r c_{il}\psi_{0,l}^{(0)}}
+
+}
+
+\opage{
+
+\otext
+When the perturbation is applied, the state $\phi_{0,i}^{(0)}$ distorts into $\psi_i$ and its energy changes from $E_0^{(0)}$ to $E_i$. The index $i$ is required now because the perturbation may be such that the degeneracy is lifted. As previously, we write the perturbed wavefunction and energy in terms of $\lambda$:
+
+$$\psi_i = \phi_{0,i}^{(0)} + \lambda\psi_{0,i}^{(1)} + ...$$
+$$E_i = E_0^{(0)} + \lambda E_{0,i}^{(1)}$$
+
+Substitution of these into $H\psi_i = E_i\psi_i$ and collection of powers of $\lambda$ as done previously gives (up to 1st order shown):
+
+\beqn{6.31}{H^{(0)}\phi_{0,i}^{(0)} = E_0^{(0)}\phi_{0,i}^{(0)}}
+{\left(H^{(0)} - E_0^{(0)}\right)\psi_{0,i}^{(1)} = \left(E_{0,i}^{(1)} - H^{(1)}\right)\phi_{0,i}^{(0)}}
+
+Next we express the first order corrected wavefunction $\psi_{0,i}^{(1)}$ as a linear combination of the unperturbed states. We divide the summation into two parts: degenerate and non-degenerate:
+
+$$\psi_{0,i}^{(1)} = \sum\limits_la_l\psi_{0,l}^{(0)} + \sum\limits_n\textnormal{}'a_n\psi_n\psi^{(0)}_n$$
+;5B
+}
+
+\opage{
+
+\otext
+Insertion of this into the 2nd equation of Eq. (\ref{eq6.31}) gives:
+$$\sum\limits_la_l\left(H^{(0)} - E_0^{(0)}\right)\left|0,l\right> + \sum\limits_n\textnormal{}'a_n\left(H^{(0)} - E_0^{(0)}\right)\left|n\right> = \sum\limits_lc_{il}\left(E_{0,i}^{(1)} - H^{(1)}\right)\left|0,l\right>$$
+
+Above we can replace $H^{(0)}\left|0,l\right>$ by $E_0^{(0)}\left|0,l\right>$ and $H^{(0)}\left|n\right>$ by $E_n^{(0)}\left|n\right>$:
+
+$$\sum\limits_la_l\left(E_0^{(0)} - E_0^{(0)}\right)\left|0,l\right> + \sum\limits_n\textnormal{}'a_n\left(E_n^{(0)} - E_0^{(0)}\right)\left|n\right> = \sum\limits_lc_{il}\left(E_{0,i}^{(1)} - H^{(1)}\right)\left|0,l\right>$$
+
+The first term above is clearly zero. Multiplication from the left by $\left<0,k\right|$ gives zero on the left because the states $\left|n\right>$ are orthogonal to the states $\left|0,k\right>$, and we have:
+
+$$\sum\limits_lc_{il}\left(E_{0,i}^{(1)}\left<0,k|0,l\right> - \left<0,k\right|H^{(1)}\left|0,l\right>\right) = 0$$
+
+The degenerate wavefunctions above are not necessary orthogonal and we introduce the following overlap integral:
+
+\aeqn{6.32}{S_{kl} = \left<0,k|0,l\right>}
+
+If the degenerate wavefunctions are orthogonal, we would have $S_{kl} = \delta_{kl}$. We also denote the hamiltonian matrix element as:
+
+}
+
+\opage{
+
+\otext
+\aeqn{6.33}{H_{kl}^{(1)} = \left<0,k\right|H^{(1)}\left|0,l\right>}
+
+Thus we arrive at the \textit{secular equation}:
+
+\aeqn{6.34}{\sum\limits_lc_{il}\left(E_{0,j}^{(1)}S_{kl} - H_{kl}^{(1)}\right) = 0}
+
+There is one equation for each value of $i$ ($i = 1, 2, ..., r$). This can also be expressed by using the \textit{secular determinant}:
+
+\aeqn{6.35}{det\left|H^{(1)}_{kl} - E_{0,i}^{(1)}S_{kl}\right| = 0}
+
+The solution of this equation will give the first-order energy correction $E_{0,i}^{(1)}$. Note that it also specifies the optimum linear combination of the degenerate functions to use for any subsequent perturbation distortion.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What is the first-order correction to the energies of a doubly degenerate pair of orthonormal states?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The degenerate pair is orthogonal, which means that $S_{12} = \delta_{12} = 0$. The secular determinant then reads:
+
+$$\left|\begin{matrix}
+H_{11}^{(1)} - E_{0,i}^{(1)} & H_{12}^{(1)}\\
+H_{21}^{(1)} & H_{22}^{(1)} - E_{0,i}^{(1)}\\
+\end{matrix}\right| = 0$$
+
+}
+
+\opage{
+
+\otext
+This determinant expands to:
+
+$$\left(H_{11}^{(1)} - E_{0,i}^{(1)}\right)\left(H_{22}^{(1)} - E_{0,i}^{(1)}\right) - H_{12}^{(1)}H_{12}^{(1)} = 0$$
+
+This gives the following quadratic equation for the energy:
+
+$$E_{0,i}^{(1)} - \left(H_{11}^{(1)} + H_{22}^{(1)}\right)E_{0,i}^{(1)} + \left(H_{11}^{(1)}H_{22}^{(1)} - H_{12}^{(1)}H_{21}^{(1)}\right) = 0$$
+
+The roots are the same as we obtained earlier for the two-level problem:
+$$E_{0,i}^{(1)} = \frac{1}{2}\left(H_{11}^{(1)} + H_{22}^{(1)}\right) \pm \left(\left(H_{11}^{(1)} + H_{22}^{(1)}\right)^2 - 4\left(H_{11}^{(1)}H_{22}^{(1)} - H_{12}^{(1)}H_{21}^{(1)}\right)\right)^{1/2}$$
+
+}
+

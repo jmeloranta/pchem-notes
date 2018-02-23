@@ -1,0 +1,43 @@
+\opage{
+\otitle{1.5 The construction of operators}
+
+\otext
+Operators for other observables can be constructed from the operators for position ($x$) and momentum ($p_x$). The kinetic energy operator $T$ can be constructed by using the classical analogy $T = \frac{p^2}{2m}$ where $m$ is the mass of the particle. Here we have considered only one dimension and in this case the kinetic energy operator becomes:
+
+\aeqn{1.8}{T = \frac{p_x^2}{2m} = \frac{1}{2m}\left(\frac{\hbar}{i}\frac{d}{dx}\right)^2 = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}}
+
+In three dimensions $T$ is given by:
+
+\aeqn{1.9}{T = -\frac{\hbar^2}{2m}\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\right)\equiv -\frac{\hbar^2}{2m}\nabla^2 \equiv -\frac{\hbar^2}{2m}\Delta}
+
+The operator for potential energy is simply given by multiplication by a potential function $V(x)$. In three dimensions it typically depends on the distance between particles ($r = \sqrt{x^2 + y^2 + z^2}$). For example, in the position representation the Coulomb potential energy of an electron ($e^-$) in the field of a nucleus of atomic number $Z$ is:
+
+\aeqn{1.10}{V(r) = -\frac{Ze^2}{4\pi\epsilon_0r}\times}
+
+where $r$ is the distance from the nucleus to the electron. Note that often the multiplication sign is omitted when specifying operators.
+
+}
+
+\opage{
+
+\otext
+The operator for the total energy (called the Hamiltonian) is given as the sum of kinetic and potential parts:
+
+\aeqn{1.11}{H = T + V}
+
+For example, for particle moving in one dimension subject to potential $V$, $H$ takes the following form:
+
+\aeqn{1.12}{H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)}
+
+For an electron with mass $m_e$ in hydrogen atom, the Hamiltonian takes the form:
+
+\aeqn{1.13}{H = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\epsilon_0r}}
+
+The general prescription for constructing operators in the position representation is:
+
+\begin{enumerate}
+\item Write the classical expression for the observable in terms of position coordinates and the linear momentum.
+\item Replace $x$ by multiplication by $x$ and replace $p_x$ by $\frac{\hbar}{i}\frac{\partial}{\partial x}$ (likewise for other coordinates).
+\end{enumerate}
+
+}

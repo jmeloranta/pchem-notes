@@ -1,0 +1,25 @@
+\opage{
+\otitle{3.10 The separation of the relative coordinates}
+
+\otext
+To separate Eq. (\ref{eq3.38}) into radial and angular parts, we write a product trial solution:
+
+\aeqn{3.39}{\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)}
+
+where $Y$ is spherical harmonic function. When this is substituted into the Schr\"odinger equation and use $\Lambda^2Y = -l(l+1)Y$, we get:
+
+$$\frac{1}{r}\frac{\partial^2}{\partial r^2}rRY - \frac{l(l+1)}{r^2}RY + \left(\frac{Ze^2\mu}{2\pi\epsilon_0\hbar^2r}\right)RY = -\left(\frac{2\mu E}{\hbar^2}\right)RY$$
+
+Both sides of the equation can be divided by $Y$, which leaves us with the \textit{radical Schr\"odinger equation}:
+
+$$\frac{1}{r}\frac{d^2(rR)}{dr^2} + \left(\frac{Ze^2\mu}{2\pi\epsilon_0\hbar^2r} - \frac{l(l+1)}{r^2}\right)R = -\left(\frac{2\mu E}{\hbar^2}\right)R$$
+
+This can be simplified by $u = rR$:
+
+\aeqn{3.40}{\frac{d^2u}{dr^2} + \left(\frac{2\mu}{\hbar^2}\right)\left(\frac{Ze^2}{4\pi\epsilon_0r} - \frac{l(l+1)\hbar^2}{2\mu r^2}\right)u = -\left(\frac{2\mu E}{\hbar^2}\right)u}
+
+This is a one dimensional Schr\"odinger equation with an \textit{effective potential} $V_{\textnormal{eff}}$:
+
+\aeqn{3.41}{V_{\textnormal{eff}} = -\frac{Ze^2}{4\pi\epsilon_0r} + \frac{l(l+1)\hbar^2}{2\mu r^2}}
+
+}

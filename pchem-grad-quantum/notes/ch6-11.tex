@@ -1,0 +1,28 @@
+\opage{
+\otitle{6.11 The Hellmann-Feynman theorem}
+
+\otext
+Consider a system that is described by a hamiltonian that depends parametrically on parameter $P$. This might be a coordinate of an atom in a molecule or the strength of the electric field to which the molecule is exposed. The exact solution (both energy $E$ and the wavefunction $\psi$) to the Schr\"odinger equation then also depends on $P$. In the following we will derive a result that will tell us how the energy $E$ of the system varies as a function of $P$ (the \textit{Hellmann-Feynman theorem}):
+
+\aeqn{6.42}{\frac{dE}{dP} = \left<\frac{\partial H}{\partial P}\right>}
+
+\textbf{Proof.} Let the exact wavefunction to be normalized to one for all values of $P$. Then we can write:
+
+$$E(P) = \int\psi^*(P)H(P)\psi(P)d\tau$$
+
+The derivative of $E$ with respect to $P$ is then:
+
+$$\frac{dE}{dP} = \int\left(\frac{\partial\psi^*}{\partial P}\right)H\psi d\tau + \int\psi^*\left(\frac{\partial H}{\partial P}\right)\psi d\tau + \int\psi^*H\left(\frac{\partial\psi}{\partial P}\right)d\tau$$
+$$= E\int\left(\frac{\partial\psi^*}{\partial P}\right)\psi d\tau + \int\psi^*\left(\frac{\partial H}{\partial P}\right)\psi d\tau + E\int\psi^*\left(\frac{\partial\psi}{\partial P}\right)d\tau$$
+
+}
+
+\opage{
+
+\otext
+$$ = E\frac{d}{dP}\int\psi^*\psi d\tau + \int\psi^*\left(\frac{\partial H}{\partial P}\right)\psi d\tau$$
+$$ = \int\psi^*\left(\frac{\partial H}{\partial P}\right)\psi d\tau = \left<\frac{\partial H}{\partial P}\right>$$
+
+The Hellmann-Feynman theorem is particularly useful result when the hamiltonian depends on $P$ in a simple way. For example, $H = H^{(0)} + Px$ would give $\partial H / \partial P = x$, which simply means that $dE / dP = \left<x\right>$. The main disadvantage of the Hellmann-Feynman theorem is that the wavefunction must be the exact solution to the Schr\"odinger equation. It can be shown that this requirement can be relaxed so that it sufficient for the wavefunction to be variationally optimized. This can be very useful for computational chemistry methods and, for example, the Carr-Parrinello \textit{ab initio} based molecular dynamics is largely based on this result. In this case the forces acting on the nuclei are calculated using the Hellmann-Feynman theorem. In other cases it may be possible to use the perturbation theory to calculate the response of the system on changing $P$.
+
+}

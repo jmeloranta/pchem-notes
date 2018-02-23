@@ -1,0 +1,107 @@
+\opage{
+\otitle{8.1 Hydrogen molecule-ion, H$_2^+$}
+
+\otext
+
+Recall the Born-Oppenheimer approximation from the undergraduate quantum
+chemistry course (electrons follow nuclear motion adiabatically):
+
+\aeqn{8.1}{\Psi(R,r) = \phi(R)\times\psi(r)}
+
+where $\Psi(R,r)$ is the total wavefunction that depends on both nuclear and
+electronic coordinates $R$ and $r$, respectively, $\phi(R)$ is the nuclear
+wavefunction, and $\psi(r)$ is the electronic wavefunction. Note that this
+approximation can fail when the electronic states become degenerate
+(non-adiabatic transitions).
+
+\otext
+
+We will now quickly review how molecular orbitals come out from the Schr\"odinger equation by considering a simple example. 
+The electronic Hamiltonian for H$_2^+$ is:
+
+\aeqn{8.2}{\hat{H} = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\epsilon_0r_A} - \frac{e^2}{4\pi\epsilon_0r_B} + \frac{e^2}{4\pi\epsilon_0 R}}
+
+where $r_A$ is the distance between the electron and nucleus A, $r_B$ is the same quantity for nucleus B, and $R$ is the distance
+between the two nuclei (A and B). 
+
+\otext
+
+While this one electron problem could be solved exactly (in elliptical coordinates), we will seek for an approximate solution by
+expressing the solution as a linear combination of suitable basis functions:
+
+\aeqn{8.3}{\psi(r) = \sum_{i=1}^{\infty} c_i\phi_i(r)}
+
+}
+
+\opage{
+
+\otext
+
+Here we choose a simple (finite) basis set that consists of only two hydrogen atom orbitals centered on each atom:
+
+\aeqn{8.4}{\psi(r) = c_A\phi_A(r) + c_B\phi_B(r)}
+
+This can be inserted into Eq. (\ref{eq6.35}), which gives the following determinant equation:
+
+\aeqn{8.5}{\left|\begin{matrix}
+\alpha - E & \beta - ES\\
+\beta - ES & \alpha - E
+\end{matrix}\right| = 0}
+
+where the overlap matrix $S = \left<\phi_A|\phi_B\right>$ = 0, $\alpha = \left<\phi_A\left|\hat{H}\right|\phi_A\right>$, 
+$\beta = \left<\phi_A\left|\hat{H}\right|\phi_B\right>$, and $E$ is the energy of the molecule. Just like the example
+below Eq. (\ref{eq6.35}), this gives the following roots for $E$ (eigenvalues):
+
+\vspace*{-0.2cm}
+
+\beqn{8.6}{E_+ = \frac{\alpha + \beta}{1 + S}}{E_- = \frac{\alpha - \beta}{1 - S}}
+
+\vspace*{-0.3cm}
+
+By inserting these values of $E$ in turn into Eq. (\ref{eq6.34}), one can obtain the corresponding eigenvectors (orthogonal):
+
+\vspace*{-0.7cm}
+
+\beqn{8.7}{E^+: c_A = c_B = \frac{1}{\sqrt{2(1 + S)}}}
+{E^-: c_A = -c_B = \frac{1}{\sqrt{2(1 - S)}}}
+
+where the latter equalities follow from normalization: $\left<\psi|\psi\right> = 1$.
+
+}
+
+\opage{
+
+\otext
+
+The quantities $\alpha$ (Coulomb integral) and $\beta$ (resonance integral) are (see Eq. (\ref{eq8.2})):
+
+\beqn{8.8}{\alpha = \left<\phi_A\left|\hat{H}\right|\phi_A\right> = E_{1s} - \frac{e^2}{4\pi\epsilon_0}\left<\phi_A\left|\frac{1}{r_B}\right|\phi_A\right> + \frac{e^2}{4\pi\epsilon_0R}}
+{\beta = \left<\phi_A\left|\hat{H}\right|\phi_B\right> = E_{1s}\left<\phi_A|\phi_B\right> - \frac{e^2}{4\pi\epsilon_0}\left<\phi_A\left|\frac{1}{r_B}\right|\phi_B\right> + \frac{e^2}{4\pi\epsilon_0R}\left<\phi_A|\phi_B\right>}
+
+The eigenfunctions corresponding to Eq. (\ref{eq8.7}) are:
+
+\vspace*{-0.5cm}
+
+\beqn{8.9}{1\sigma_g \equiv \psi_+(r) = \frac{1}{\sqrt{2(1 + S)}}\left(\phi_A(r) + \phi_B(r)\right)}
+{1\sigma_u \equiv \psi_-(r) = \frac{1}{\sqrt{2(1 - S)}}\left(\phi_A(r) - \phi_B(r)\right)}
+
+\vspace*{-0.5cm}
+
+\begin{columns}
+\begin{column}{3cm}
+\ofig{bonding}{0.2}{Bonding orbital ($\psi_+$)}
+\end{column}
+\begin{column}{3cm}
+\ofig{bonding2}{0.2}{Bonding orbital ($\psi_+^2$)}
+\end{column}
+\begin{column}{3cm}
+\ofig{antibonding}{0.2}{Antibonding orbital ($\psi_-$)}
+\end{column}
+\begin{column}{3cm}
+\ofig{antibonding2}{0.2}{Antibonding orbital ($\psi_-^2$)}
+\end{column}
+\end{columns}
+\otext
+Note that the antibonding orbital has \underline{zero} electron density between the nuclei.
+
+}

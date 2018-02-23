@@ -1,0 +1,136 @@
+\opage{
+\otitle{6.1 Time-independent perturbation theory (2 levels)}
+
+\otext
+In \textit{time-independent perturbation theory} we divide the original hamiltonian $H$ into two parts, dominant $H^{(0)}$ and less contributing $H^{(1)}$:
+
+\aeqn{6.1}{H = H^{(0)} + H^{(1)}}
+
+where $H^{(1)}$ is refered to as \textit{peturbation}. Our aim is to approximately generate the wavefunction and energy of the perturbed system by using the solution of the unperturbed system.
+
+\vspace*{0.2cm}
+
+First we consider a simple two-level system (only two eigenstates). We assume that these two eigenstates of $H^{(0)}$ are known and we denote them by $\left|1\right>$ ($\psi_1^{(0)}$) and $\left|2\right>$ ($\psi_2^{(0)}$). These states and functions form a complete orthonormal basis. The eigenstates have the corresponding energies $E_1^{(0)}$ and $E_2^{(0)}$. Thus both states fulfill the time-independent Schr\"odinger equation:
+
+$$H^{(0)}\psi_m^{(0)} = E_m^{(0)}\psi_m^{(0)}\textnormal{ where }m=1,2$$
+
+Since we hope to solve the full Schr\"odinger equation:
+
+\aeqn{6.2}{H\psi=E\psi}
+
+we do so by using a linear combination trial function:
+
+\aeqn{6.3}{\psi = a_1\psi_1^{(0)} + a_2\psi_2^{(0)}}
+
+}
+
+\opage{
+
+\otext
+To find constants $a_m$, we insert the linear combination into Eq. (\ref{eq6.2}):
+
+$$a_1(H - E)\left|1\right> + a_2(H - E)\left|2\right> = 0$$
+
+Multiplication of this equation by $\left<1\right|$ and $\left<2\right|$ in turn, gives two equations:
+
+\beqn{6.4}{a_1\left(H_{11} - E\right) + a_2H_{12} = 0}
+{a_1H_{21} + a_2\left(H_{22} - E\right) = 0}
+
+where we have used notation $H_{mn} = \left<m|H|n\right>$. The condition for the existence of non-trivial solution is (see your linear algebra notes):
+
+$$\left|\begin{matrix}
+H_{11} - E & H_{12}\\
+H_{21} & H_{22} - E\\
+\end{matrix}\right| = 0$$
+
+At this point it should be noted that the coefficients $a_1$ and $a_2$ have disappeared and only the unknown $E$ remains. Expansion of this determinant gives:
+
+$$\left(H_{11} - E\right)\left(H_{22} - E\right) - H_{12}H_{21} = 0$$
+$$\Rightarrow E^2 - \left(H_{11} + H_{22}\right)E + H_{11}H_{22} - H_{12}H_{21} = 0$$
+
+}
+
+\opage{
+
+\otext
+The above quadratic equation has the following two roots:
+
+\aeqn{6.5}{E_{\pm} = \frac{1}{2}\left(H_{11} + H_{22}\right)\pm\frac{1}{2}\sqrt{\left(H_{11} - H_{22}\right)^2 + 4H_{12}H_{21}}}
+
+In a special case, when the diagonal matrix elements of the perturbation are zero (i.e. $H^{(1)}_{mm} = 0$), we can write $H_{mm} = E^{(0)}_m$ and the above expression simplifies to:
+
+\aeqn{6.6}{E_{\pm} = \frac{1}{2}\left(E_1^{(0)} - E_2^{(0)}\right) \pm \frac{1}{2}\sqrt{\left(E_1^{(0)} - E_2^{(0)}\right)^2 + 4\epsilon^2}}
+
+where $\epsilon^2 = H^{(1)}_{12}H^{(1)}_{21}$. Since $H^{(1)}$ is hermitian, we can write $\epsilon^2 = \left|H_{12}^{(1)}\right|^2$. Note that when perturbation is absent, $\epsilon = 0$ and therefore $E_+ = E_1^{(0)}$ and $E_- = E_2^{(0)}$.
+
+\begin{columns}
+
+\begin{column}{4cm}
+\ofig{perturbation-1st}{0.35}{}
+\end{column}
+
+\begin{column}{6cm}
+\begin{itemize}
+\item The lower level $E_+$ is lowered from the unperturbed case and $E_-$ raised.
+\item The perturbation is preventing the energy levels from crossing (\textit{non-crossing rule}).
+\item The perturbation is greater at small $\Delta E$ values. For small $\Delta E$, $E_+ - E_- \approx 2\epsilon$.
+\end{itemize}
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+To summarize the effect of perturbation:
+
+\begin{enumerate}
+\item When a perturbation is applied, the lower level moves down in energy and the upper level moves up.
+\item The close the unperturbed states are, the greater the effect of a perturbation.
+\item The stronger the perturbation, the greater the effect on the energies of the levels.
+\end{enumerate}
+
+The effect of perturbation can be seen in more detail by considering the case of a weak perturbation relative to $\Delta E$: $\epsilon^2 << \left(E_1^{(0)} - E_2^{(0)}\right)^2$. Eqn. (\ref{eq6.6}) can now be expanded in series according to $\sqrt{1 + x} = 1 + \frac{1}{2}x + ...$:
+
+$$E_{\pm} = \frac{1}{2}\left(E_1^{(0)} + E_2^{(0)}\right)\pm\frac{1}{2}\left(E_1^{(0)} - E_2^{(0)}\right)\sqrt{1 + \frac{4\epsilon^2}{\left(E_1^{(0)} - E_2^{(0)}\right)^2}}$$
+$$ = \frac{1}{2}\left(E_1^{(0)} + E_2^{(0)}\right)\pm\frac{1}{2}\left(E_1^{(0)} - E_2^{(0)}\right)\left\lbrace 1 + \frac{2\epsilon^2}{\left(E_1^{(0)} - E_2^{(0)}\right)^2} + ...\right\rbrace$$
+
+}
+
+\opage{
+
+\otext
+When retaining the first two terms in the expansion of the square root we get (correct to 2nd order in $\epsilon$):
+
+$$E_+\approx E_1^{(0)} - \frac{\epsilon^2}{\Delta E^{(0)}}\textnormal{ and }E_- \approx E_2^{(0)} + \frac{\epsilon^2}{\Delta E^{(0)}}$$
+
+where $\Delta E^{(0)} = E_2^{(0)} - E_1^{(0)}$. This expansion is valid when $\left(2\epsilon/\Delta E^{(0)}\right)^2 << 1$:
+
+\ofig{perturbation-1st2}{0.35}{}
+
+In the limit $\left(2\epsilon/\Delta E^{(0)}\right)^2 \rightarrow 0$, the exact solution and the approximate solutions become identical.
+
+}
+
+\opage{
+
+\otext
+To get the wavefunctions (i.e. the coefficients $c_1$ and $c_2$), we need to substitute $E_+$ and $E_-$ back into the original linear equations. Subsitution of $E_+$ and $E_-$ in turn into Eqn. (\ref{eq6.4}) gives:
+
+\aeqn{6.8}{\psi_+ = \psi_1^0\cos(\zeta) + \psi^{(0)}_2\sin(\zeta)\textnormal{ and }\psi_- = -\psi_1^{(0)}\sin(\zeta) + \psi_2^{(0)}\cos(\zeta)}
+
+The normalization requirement and taking $H_{12}^{(1)} = H_{21}^{(1)}$ (they must be real in this case):
+
+\aeqn{6.9}{\tan(2\zeta) = \frac{2\left|H^{(1)}_{12}\right|}{E_1^{(0)} - E_2^{(0)}}}
+
+If the system is degenerate (i.e. $E_1^{(0)} = E_2^{(0)}$) the above gives $\tan(2\zeta) \rightarrow \infty$ which corresponds to $\zeta \rightarrow \pi/4$. This yields the following wavefunctions:
+
+\aeqn{6.10}{\psi_+ = \frac{1}{\sqrt{2}}\left(\psi_1^{(0)} + \psi_2^{(0)}\right)\textnormal{ and }\psi_- = \frac{1}{\sqrt{2}}\left(\psi_2^{(0)} - \psi_1^{(0)}\right)}
+
+This is a 50\%-50\% mixture of the original states. When the perturbation is small (i.e. $\zeta$ is small) compared to the energy level separation, we can assume that $\sin(\zeta) \approx \zeta$ and $\cos(\zeta) \approx 1$. Eqn. (\ref{eq6.8}) can then be written as:
+
+\aeqn{6.11}{\psi_+ \approx \psi_1^{(0)} - \frac{\left|H_{12}^{(1)}\right|}{\Delta E^{(0)}}\psi_2^{(0)}\textnormal{ and }\psi_- \approx \psi_2^{(0)} + \frac{\left|H_{12}^{(1)}\right|}{\Delta E^{(0)}}\psi_1^{(0)}}
+
+}

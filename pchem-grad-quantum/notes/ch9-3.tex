@@ -1,0 +1,70 @@
+\opage{
+\otitle{9.3 The energy of a single Slater determinant}
+
+\otext
+
+We will first express the Slater determinant ($\Phi$) in terms of the anti-symmetrizer operator $\hat{A}$ and the simple
+product of orbitals $\phi_i$ ($\Pi$):
+
+\aeqn{9.5}{\Phi = \hat{A}\left(\phi_1(1)\phi_2(2)...\phi_n(n)\right) = \hat{A}\Pi}
+
+The antisymmetrizer operator is defined as:
+
+\aeqn{9.6}{\hat{A} = \frac{1}{\sqrt{n!}}\sum_{p=0}^{n-1}\left(-1\right)^p\hat{P} = \frac{1}{\sqrt{n!}}\left(\hat{1}
+-\sum_{i,j}\hat{P}_{i,j} + \sum_{i,j,k}\hat{P}_{i,j,k} - ...
+\right)}
+
+where $\hat{1}$ is the identity operator, $\hat{P}_{i,j}$ generates all possible permutations of two electron coordinates, 
+$\hat{P}_{i,j,k}$ all possible permutations of three electron coordinates, etc. The following results for $\hat{A}$ can be shown
+to hold:
+
+\aeqn{9.10}{\hat{A}\hat{H} = \hat{H}\hat{A}\textnormal{ (commutes with the Hamiltonian)}}
+\aeqn{9.11}{\hat{A}\hat{A} = \sqrt{n!}\hat{A}}
+
+The total Hamiltonian can be broken down as follows:
+
+\aeqn{9.12}{\hat{H} = \hat{T}_e + \hat{V}_{ne} + \hat{V}_{ee} + \hat{V}_{nn}}
+
+where $\hat{T}_e$ is the electron kinetic energy, $\hat{V}_{ne}$ is the nuclear-electron attraction, $\hat{V}_{ee}$ is the
+electron-electron repulsion, and $\hat{V}_{nn}$ is the nuclear-nuclear repulsion (constant for given molecular geometry).
+
+}
+
+\opage{
+
+\otext
+
+The component operators above are defined as ($N$ is the number of nuclei in the molecule):
+
+\vspace*{-0.5cm}
+
+\deqn{9.13}{\hat{T}_e = -\sum_{i=1}^n\frac{1}{2}\nabla_i^2}
+{\hat{V}_{ne} = -\sum_{i=1}^{n}\sum_{j=1}^{N}\frac{Z_j}{\left|R_j-r_i\right|}}
+{\hat{V}_{ee} = \sum_{i < j}^{n}\frac{1}{\left|r_i - r_j\right|}}
+{V_{nn} = \sum_{i < j}^{N}\frac{Z_iZ_j}{\left|R_i - R_j\right|}}
+
+Since the nuclear - nuclear repulsion term $V_{nn}$ does not depend on the electron coordinates, it can be added to the total energy after the calculation.
+The remaining electronic part ($\hat{H}_e$) can be written in terms of the one and two electron operators:
+
+\vspace*{-0.25cm}
+
+\beqn{9.14}{\hat{H}_e = \sum_{i=1}^n\hat{h}_i + \sum_{i < j}^n\hat{g}_{ij} + V_{nn}}
+{\hat{h}_i = -\frac{1}{2}\nabla^2_i - \sum_{j=1}^{N}\frac{Z_j}{\left|R_j - r_i\right|}\textnormal{ and }\hat{g}_{ij} = \frac{1}{\left|r_i - r_j\right|}}
+
+}
+
+\opage{
+
+\otext
+
+The energy of a Slater determinant can be writen in terms of the permutation operator $P$ as follows:
+
+\aeqn{9.15}{E = \left<\Phi\left|\hat{H}\right|\Phi\right> = \left<\hat{A}\Pi\left|\hat{H}\right|\hat{A}\Pi\right> = \sqrt{n!}\left<\Pi\left|\hat{H}\right|\hat{A}\Pi\right> = \sum_p\left(-1\right)^p\left<\Pi\left|\hat{H}\right|\hat{P}\Pi\right>}
+
+For the one-electron $\hat{h}_1$ ($i = 1$; other indices evaluated the same way) and the leading term of Eq. (\ref{eq9.6}):
+
+\beqn{9.16}{\left<\Pi\left|\hat{h}_1\right|\Phi\right> = \left<\phi_1(1)\phi_1(2)...\phi_n(n)\left|\hat{h}_1\right|\phi_1(1)\phi_2(2)...\phi_n(n)\right>}
+{\left<\phi_1(1)\left|\hat{h}_1\right|\phi_1(1)\right>\left<\phi_2(2)|\phi_2(2)\right>\left<\phi_3(3)|\phi_3(3)\right>...\left<\phi_n(n)|\phi_n(n)\right>}
+
+
+}

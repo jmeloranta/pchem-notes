@@ -1,0 +1,51 @@
+\opage{
+\otitle{6.7 The clousure approximation}
+
+\otext
+If there is a significant band gap between the ground state and the excited states (which are located very close in energy), we can write the 2nd order correction to energy approximately as:
+
+\begin{columns}
+
+\begin{column}{3cm}
+
+\ofig{closure}{0.3}{}
+
+\end{column}
+
+\begin{column}{6cm}
+
+$$E_0^{(2)} \approx H_{00}^{(2)} - \frac{1}{\Delta E}\sum\limits_n\textnormal{}'H_{0n}^{(1)}H_{n0}^{(1)}$$
+
+This is almost the same form as a matrix product:
+
+$$\sum\limits_nA_{rn}B_{nc} = \left(AB\right)_{rc}$$
+
+\end{column}
+
+\end{columns}
+
+To complete the first expression above in terms of a matrix product, we need to subtract the additional terms that should not be present:
+
+\beqn{6.26}{E_0^{(2)} \approx H_{00}^{(2)} - \frac{1}{\Delta E}\sum\limits_nH_{0n}^{(1)}H_{n0}^{(1)} + \frac{1}{\Delta E}H_{00}^{(1)}H_{00}^{(1)}}
+{\approx H_{00}^{(2)} - \frac{1}{\Delta E}\left(H^{(1)}H^{(1)}\right)_{00} + \frac{1}{\Delta E}H_{00}^{(1)}H_{00}^{(1)}}
+
+}
+
+\opage{
+
+\otext
+Another way to see the above, is the use the completeness relation: $\sum\limits_n\left|n\right>\left<n\right| = 1$. The important point is that the energy correction is now expressed only in terms of integrals over the ground state of the system and we don't need the excited state wavefunctions. Note, however, that this worked only because we approximated the energy differences by one constant $\Delta E$. The above result is called the \textit{closure approximation}.
+
+\vspace*{0.2cm}
+
+The closure approximation for the 2nd order energy can be expressed as follows (derivation not shown):
+
+\beqn{6.27}{E_0^{(2)} \approx H_{00}^{(2)} - \frac{\epsilon^2}{\Delta E}}{\textnormal{where }\epsilon^2 = \left<0\right|H^{(1)2}\left|0\right> - \left<0\right|H^{(1)}\left|0\right>^2}
+
+Most often the energy level structure can deviate from the picture shown on the previous slide. In this case the closure approximation is not good. If one defines $\Delta E$ as follows:
+
+\aeqn{6.28}{\Delta E = \frac{H_{00}^{(1)2} - \left(H^{(1)2}\right)_{00}}{\sum\limits_n\textnormal{}'H_{0n}^{(1)}H_{n0}^{(1)} / \left(E_0^{(0)} - E_n^{(0)}\right)}}
+
+then the closure approximation becomes exact. However, this requires again the knowledge of the excited states!
+
+}

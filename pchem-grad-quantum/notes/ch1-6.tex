@@ -1,0 +1,46 @@
+\opage{
+\otitle{1.6 Integrals over operators}
+
+\otext
+In our calculations we will frequently have to evaluate integrals of the following form:
+
+\aeqn{1.14}{I = \int f^*_m\Omega f_nd\tau}
+
+where '*' denotes a complex conjugate and $d\tau$ is the \textit{volume element} (for example, in 3-D Cartesian coordinates $dxdydz$). The integral is take over the whole space, for 3-D Cartesian coodrinates: $x:-\infty\rightarrow\infty$, $y:-\infty\rightarrow\infty$, $z:-\infty\rightarrow\infty$.
+
+\vspace*{0.2cm}
+
+When $\Omega = 1$, Eq. (\ref{eq1.14}) turns into an \textit{overlap integral}:
+
+\aeqn{1.15}{S = \int f_m^*f_nd\tau}
+
+When $f_m$ and $f_n$ are \textit{orthogonal}, $S = 0$. If $S$ is close to 1, the two functions are nearly ``parallel''. A special case of Eq. (\ref{eq1.15}) with $m = n$ is the \textit{normalization integral}:
+
+\aeqn{1.16}{\int f_m^*f_md\tau \equiv \int\left|f_m\right|^2d\tau = 1}
+
+Given that $\int \left|g\right|^2d\tau$ has a finite value, it is possible to multiply $g$ by a constant and make it normalized.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example 1.4} Function $f(x) = \sin(n\pi/L)$ between $x=0$ and $x=L$ and zero elsewhere. Find the normalized form of this function (``normalize it'').
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Since the given function is non-zero only between $[0,L]$ we can restrict the integration in this interval:
+
+$$\int\limits_0^L\left|f(x)\right|^2dx = \int\limits_0^L f^*(x)f(x)dx = \int\limits_0^L \sin^2\left(\pi x/L\right)dx = \frac{1}{2}L$$
+
+where we have used the following result from tablebook: $\int\sin^2(ax)dx = \frac{1}{2a}(ax - \sin(ax)\cos(ax))$. Here we can see that $f(x)$ must be divided by $\sqrt{\frac{1}{2}L}$ to make it normalized. Thus defining $g(x) = \sqrt{\frac{2}{L}}\times f(x) = \sqrt{\frac{2}{L}}\sin(\pi x / L)$ gives a normalized function.
+
+\vspace*{0.2cm}
+
+A set of functions $f_n$ that are normalized and mutually orthogonal are said to be \textit{orthonormal}:
+
+\aeqn{1.17}{\int f_m^*f_nd\tau = \delta_{mn}}
+
+where $\delta_{mn}$ is the \textnormal{Kronecker delta}, which is 1 if $m = n$ and 0 otherwise.
+
+}

@@ -1,0 +1,426 @@
+\opage{
+\otitle{5.10 The great and little orthogonality theorems}
+
+\otext
+Consider a group of order $h$ and let $D^{(l)}(R)$ be the representative of the operation $R$ in a $d_l$-dimensional irreducible representation of symmetry species $\Gamma^{(l)}$ of the group. The \textit{great orthogonality theorem} states that:
+
+\aeqn{5.13}{\sum\limits_{R}D_{ij}^{(l)}(R)^*D_{i'j'}^{(l')}(R) = \frac{h}{d_l}\delta_{ll'}\delta_{ii'}\delta_{jj'}}
+
+Here * denotes complex conjugation. here the matrices will be real and the complex conjugation will have no effect. Note that the indices $i,j$ and $i',j'$ refer to the elements within the matrix. The summation runs over all possible symmetry operations $R$ in the group.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Consider $C_{3v}$ with $h = 6$ and choose a) $l = \textnormal{A}_1$, $l' = \textnormal{A}_1$, $i = j = i' = j' = 1$ and b) $l = \textnormal{E}$, $l' = \textnormal{E}$, $i = i' = 3$, $j = 4$, $j' = 3$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} a) For A$_1$ we have $d_l = 1$ with matrices $(1), (1), (1), (1), (1), (1)$. Here the indices $i, j, i',j'$ point to this only element in these matrices. The sum in Eq. (\ref{eq5.13}) now reads ($R = E, C_3^+, C_3^-, \sigma_v, \sigma_v', \sigma_v''$):
+$$\sum\limits_RD_{11}^{(\textnormal{A}_1)}(R)^*D_{11}^{(\textnormal{A}_1)}(R) = 1\times 1 + 1\times 1 + 1\times 1 + 1\times 1 + 1\times 1 + 1\times 1 = 6$$
+
+The right-hand-side in Eq. (\ref{eq5.13}) gives also $6/1 = 6$.
+
+}
+
+\opage{
+
+\otext
+b) Here we get the left-hand-side sum of Eq. (\ref{eq5.13}) to be:
+
+$$\sum\limits_RD_{34}^{(\textnormal{E})}(R)^*D_{33}^{(\textnormal{E})}(R) = D_{34}^{(\textnormal{E})}(E)^*D_{33}^{(\textnormal{E})}(E) + D_{34}^{(\textnormal{E})}(C_3^+)^*D_{33}^{(\textnormal{E})}(C_3^+) + ...$$
+$$ = 0\times 1 + 0\times 0 + 1\times 0 + 1\times 0 + 0\times 0 + 0\times 1 = 0$$
+
+The right-hand-side of Eq. (\ref{eq5.13}) is also zero.
+
+\vspace*{0.2cm}
+
+The \textit{little orthogonality theorem} states that:
+
+\aeqn{5.14}{\sum\limits_R\chi^{(l)}(R)^*\chi^{(l')}(R) = h\delta_{ll'}}
+
+\textbf{Proof.} This result can be derived directly from the great orthogonality theorem by setting $j = i$ and $j' = i'$ and summing over the diagonal elements:
+
+$$\sum\limits_{i,i'}\sum\limits_RD_{ii}^{(l)}(R)^*D_{i'i'}^{(l')}(R) = \sum\limits_R\left\lbrace\sum\limits_iD_{ii}^{(l)}(R)^*\right\rbrace\left\lbrace\sum\limits_{i'}D_{i'i'}^{(l')}(R)\right\rbrace$$
+$$ = \sum\limits_R\chi^{(l)}(R)^*\chi^{(l')}(R)$$
+
+}
+
+\opage{
+
+\otext
+The right-hand-side of Eq. (\ref{eq5.13}), with the same modifications as above, becomes:
+
+$$\sum\limits_{i,i'}\left(\frac{h}{d_l}\right)\delta_{ll'}\delta_{ii'}\delta_{ii'} = \frac{h}{d_l}\delta_{ll'}\sum\limits_i\delta_{ii} = h\delta_{ll'}$$
+
+The little orthogonality theorem can be expressed in a simpler form by using the fact that all operations of the same class have the same character. If the number of symmetry operations in a class $c$ is $g(c)$ then:
+
+\aeqn{5.15}{\sum\limits_c g(c)\chi^{(l)}(c)^*\chi^{(l')}(c) = h\delta_{ll'}}
+
+For example, for $C_{3v}$ we have $g(C_3) = 2$ and $g(\sigma_v) = 3$. With $l = l'$ this becomes:
+
+\aeqn{5.16}{\sum\limits_cg(c)\left|\chi^{(l)}(c)\right|^2 = h}
+
+By denoting $\sqrt{g(c)}\chi_c^{(l)}$ as a component $v_c^{(l)}$ of a vector $v^{(l)}$ we can write the above equation as:
+
+\aeqn{5.17}{\sum\limits_cv_c^{(l)*}v_c^{(l')} = \vec{v}^{(l)*} \cdot \vec{v}^{(l')} = h\delta_{ll'}}
+
+This states that the two vectors are orthogonal unless $l = l'$. This also gives that the number of symmetry species is equal to the number of classes.
+
+}
+
+\opage{
+
+\otext
+The vector notation can also be applied to the great orthogonality theorem. We denote $v^{(l,i,j)} = D_{ij}^{(l)}$ and then:
+
+\aeqn{5.18}{v^{(l,i,j)*}\cdot v^{(l',i',j')} = \frac{h}{d_l}\delta_{ll'}\delta_{ii'}\delta_{jj'}}
+
+Since the summation in Eq. (\ref{eq5.13}) is carried out over all $h$ operations of the group, the vectors $v$ must be $h$ dimensional. The total number of vectors of a given irreducible representation is $d_l^2$ because the labels $i$ and $j$ can take $d_l$ values in a $d_l\times d_l$ matrix. The number of these orthogonal vectors clearly cannot exceed the dimension $h$. They can, in fact, be shown to be equal:
+
+\aeqn{5.19}{\sum\limits_i d_l^2 = h}
+
+\textbf{Example.} Derive the $C_{3v}$ character table.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The order of the group is $h = 6$ and there are three different classes of symmetry operations ($E, 2C_3, 3\sigma_v$). We have already found A$_1$ and E previously. The dimensionality $d$ of the missing irrep can be found using Eq. (\ref{eq5.19}):
+
+$$1^2 + 2^2 + d^2 = 6 \Rightarrow d = 1$$
+
+This new irrep we will call A$_2$. With $l = \textnormal{A}_2$, Eq. (\ref{eq5.16}) gives:
+\vspace*{-0.2cm}
+$$\left(\chi^{(\textnormal{A}_2)}(E)\right)^2 + 2\left(\chi^{(\textnormal{A}_2)}(C_3)\right)^2 + 3\left(\chi^{(\textnormal{A}_2)}(\sigma_v)\right)^2 = h = 6$$
+
+}
+
+\opage{
+
+\otext
+With $l = \textnormal{A}_2$ and $l' = \textnormal{A}_1$ we get (Eq. (\ref{eq5.15})):
+
+$$\chi^{(\textnormal{A}_2)}(E)\chi^{(\textnormal{A}_1)}(E) + 2\chi^{(\textnormal{A}_2)}(C_3)\chi^{(\textnormal{A}_1)}(C_3) + 3\chi^{(\textnormal{A}_2)}(\sigma_v)\chi^{(\textnormal{A}_1)}(\sigma_v) = 0$$
+
+and with $l = \textnormal{A}_2$ and $l' = \textnormal{E}$:
+
+$$\chi^{(\textnormal{A}_2)}(E)\chi^{(\textnormal{E})}(E) + 2\chi^{(\textnormal{A}_2)}(C_3)\chi^{(\textnormal{E})}(C_3) + 3\chi^{(\textnormal{A}_2)}(\sigma_v)\chi^{(\textnormal{E})}(\sigma_v) = 0$$
+
+Substitution of the previously found characters for A$_1$ and E into the above two equations then gives:
+
+$$\chi^{(\textnormal{A}_2)}(E) + 2\chi^{(\textnormal{A}_2)}(C_3) + 3\chi^{(\textnormal{A}_2)}(\sigma_v) = 0$$
+$$2\chi^{(\textnormal{A}_2)}(E) - 2\chi^{(\textnormal{A}_2)}(C_3) = 0$$
+
+We have three equations that can now determine three the three unknown characters for A$_2$. By solving the three equations, we get $\chi^{(\textnormal{A}_2)}(E) = 1$, $\chi^{(\textnormal{A}_2)}(C_3) = 1$, and $\chi^{(\textnormal{A}_2)}(\sigma_v) = -1$.
+
+\vspace*{0.2cm}
+
+\begin{table}
+\caption{Character table for $C_1$ point group (Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{1.5cm}}r@{\extracolsep{1.5cm}}l@{\extracolsep{1.5cm}}l}
+$C_1$ & $E$ & Modes & Operators\\
+\hline
+$A$ & 1 & $R_x, R_y, R_z, T_x, T_y, T_z$ & $x, y, z, ...$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_s = C_h$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{1cm}}r@{\extracolsep{1cm}}r@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l}
+$C_s$ & $E$ & $\sigma_h$ & Modes & Operators\\
+\hline
+$A'$ & 1 & 1 & $R_z, T_x, T_y$ & $x, y, x^2, y^2, z^2, xy$\\
+$A''$ & 1 & $-1$ & $R_x, R_y, T_z$ & $z, yz, xz$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_i = S_2$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{1cm}}r@{\extracolsep{1cm}}r@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l}
+$C_i$ & $E$ & $i$ & Modes & Operators\\
+\hline
+$A_g$ & 1 & 1 & $R_x, R_y, R_z$ & $x^2, y^2, z^2, xy, xz, yz$\\
+$A_u$ & 1 & $-1$ & $T_x, T_y, T_z$ & $x, y, z$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{2v}$ point group (Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}r@{\extracolsep{0.7cm}}l@{\extracolsep{0.7cm}}l}
+$C_{2v}$ & $E$ & $C_2$ & $\sigma_v (xz)$ & $\sigma_v '(yz)$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2, y^2, z^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $-1$ & $R_z$ & $xy$ \\
+$B_1$ & 1 & $-1$ & 1 & $-1$ & $T_{x}, R_{y}$ & $x, xz$ \\
+$B_2$ & 1 & $-1$ & $-1$ & 1 & $T_{y}, R_{x}$ & $y, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{3v}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$C_{3v}$ & $E$ & $2C_3$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $R_z$ & \\
+$E$ & 2 & $-1$ & 0 & $T_{x}, T_{y}, R_{x}, R_{y}$ & $x, y, x^2 - y^2, xy, xz, yz$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{4v}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$C_{4v}$ & $E$ & $C_2$ & $2C_4$ & $2\sigma_v$ & $2\sigma_d$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & 1 & $-1$ & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & 1 & $-1$ & $-1$ & 1 & & $xy$\\
+$E$ & 2 & $-2$ & 0 & 0 & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{5v}$ point group (non-Abelian, achiral, $\alpha = 2\pi/5$).}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$C_{5v}$ & $E$ & $2C_5$ & $2C_5^2$ & $5\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & 1 & $-1$ & $R_z$ & \\
+$E_1$ & 2 & $2$cos$(\alpha)$ & $2$cos$(2\alpha)$ & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$ \\
+$E_2$ & 2 & $2$cos$(2\alpha)$ & $2$cos$(\alpha)$ & 0 & & $xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $C_{6v}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}l@{\extracolsep{0.3cm}}l}
+$C_{6v}$ & $E$ & $C_2$ & $2C_3$ & $2C_6$ & $3\sigma_d$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 &  & \\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & & \\
+$E_1$ & 2 & $-2$ & $-1$ & 1 & 0 & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$ \\
+$E_2$ & 2 & 2 & $-1$ & $-1$ & 0 & 0 & & $xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $C_{\infty v}$ point group (non-Abelian, achiral). When $\phi = \pi$ only one member in $C_\phi$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$C_{\infty v}$ & $E$ & $2C_\phi$ & ... & $\infty\sigma_v$ & Modes & Operators \\
+\hline
+$A_1 = \Sigma^+$ & 1 & 1 & ... & 1 & $T_z$ & $z, x^2 + y^2, z^2$ \\
+$A_2 = \Sigma^-$ & 1 & 1 & ... & $-1$ & $R_z$ & \\
+$E_1 = \Pi$ & 2 & $2\textnormal{cos}(\phi)$ & ... & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$ \\
+$E_2 = \Delta$ & 2 & $2\textnormal{cos}(2\phi)$ & ... & 0 & & $x^2 - y^2, xy$ \\
+$E_3 = \Phi$ & 2 & $2\textnormal{cos}(3\phi)$ & ... & 0 & & \\
+... & ... & ... & ... & ... & & \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_2$ point group (Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_2$ & $E$ & $C_2(z)$ & $C_2(y)$ & $C_2(x)$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & & $x^2, y^2, z^2$ \\
+$B_1$ & 1 & 1 & $-1$ & $-1$ & $R_z, T_z$ & $z, xy$ \\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & $R_y, T_y$ & $y, xz$ \\
+$B_3$ & 1 & $-1$ & $-1$ & 1 & $R_x, T_x$ & $x,yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{2h}$ point group (Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}r@{\extracolsep{0.2cm}}l@{\extracolsep{0.2cm}}l}
+$D_{2h}$ & $E$ & $C_2(z)$ & $C_2(y)$ & $C_2(x)$ & $i$ & $\sigma(xy)$ & $\sigma(xz)$ & $\sigma(yz)$ & Modes & Operators \\
+\hline
+$A_g$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2, y^2, z^2$\\
+$B_{1g}$ & 1 & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & $-1$ & $R_z$ & $xy$\\
+$B_{2g}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & $R_y$ & $xz$\\
+$B_{3g}$ & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & $-1$ & 1 & $R_x$ & $yz$\\
+$A_u$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$B_{1u}$ & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & $T_z$ & $z$\\
+$B_{2u}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $T_y$ & $y$\\
+$B_{3u}$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & 1 & $-1$ & $T_x$ & $x$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_{2d}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_{2d}$ & $E$ & $2S_4$ & $C_2$ & $2C_2'$ & $2\sigma_d$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_1$ & 1 & $-1$ & 1 & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & $-1$ & 1 & $-1$ & 1 & $T_z$ & $z, xy$\\
+$E$ & 2 & 0 & $-2$ & 0 & 0 & $T_x, T_y, R_x, R_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{3}$ point group (non-Abelian, possibly chiral).}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}r@{\extracolsep{0.5cm}}l@{\extracolsep{0.5cm}}l}
+$D_3$ & $E$ & $2C_3$ & $3C_2'$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & & $z^2, x^2 + y^2$ \\
+$A_2$ & 1 & 1 & $-1$ & $R_z, T_z$ & $z$\\
+$E$ & 2 & $-1$ & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz, xy, x^2 - y^2$ \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $D_{3h}$ point group (non-Abelian, achiral).}
+\begin{tabular}{l|@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}r@{\extracolsep{0.3cm}}l@{\extracolsep{0.3cm}}l}
+$D_{3h}$ & $E$ & $\sigma_h$ & $2C_3$ & $2S_3$ & $3C_2'$ & $3\sigma_v$ & Modes & Operators \\
+\hline
+$A_1'$ & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$ \\
+$A_2'$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$A_1''$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ &  & \\
+$A_2''$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $T_z$ & $z$\\
+$E'$ & 2 & 2 & $-1$ & $-1$ & 0 & 0 & $T_x, T_y$ & $x, y, x^2 - y^2, xy$ \\
+$E''$ & 2 & $-2$ & $-1$ & 1 & 0 & 0 & $R_x, R_y$ & $xz, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_4$ point group (non-Abelian, possibly chiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$D_4$ & $E$ & $C_2$ & $2C_4$ & $2C_2'$ & $2C_2''$ & Modes & Operators\\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $z^2, x^2 + y^2$\\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & $R_z, T_z$ & $z$ \\
+$B_1$ & 1 & 1 & $-1$ & 1 & $-1$ & & $x^2 - y^2$\\
+$B_2$ & 1 & 1 & $-1$ & $-1$ & 1 & & $xy$\\
+$E$ & 2 & $-2$ & 0 & 0 & 0 & $R_x, R_y, T_x, T_y$ & $x, y, xz, yz$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.8cm}
+
+{\tiny
+\begin{table}
+\caption{Character table for $D_{6h}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$D_{6h}$ & $E$ & $2C_6$ & $2C_3$ & $C_2$ & $3C_2'$ & $3C_2''$ & $i$ & $2S_3$ & $2S_6$ & $\sigma_h$ & $3\sigma_d$ & $3\sigma_v$ & Modes & Operators\\
+\hline
+$A_{1g}$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2, z^2$\\
+$A_{2g}$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $R_z$ & \\
+$B_{1g}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & & \\
+$B_{2g}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & & \\
+$E_{1g}$ & 2 & 1 & $-1$ & $-2$ & 0 & 0 & 2 & 1 & $-1$ & $-2$ & 0 & 0 & $R_x, R_y$ & $xz, yz$\\
+$E_{2g}$ & 2 & $-1$ & $-1$ & 2 & 0 & 0 & 2 & $-1$ & $-1$ & 2 & 0 & 0 & & $x^2 - y^2, xy$\\
+$A_{1u}$ & 1 & 1 & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$A_{2u}$ & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & $T_z$ & $z$\\
+$B_{1u}$ & 1 & $-1$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & & \\
+$B_{2u}$ & 1 & $-1$ & 1 & $-1$ & $-1$ & 1 & $-1$ & 1 & $-1$ & 1 & 1 & $-1$ & & \\
+$E_{1u}$ & 2 & 1 & $-1$ & $-2$ & 0 & 0 & $-2$ & $-1$ & 1 & 2 & 0 & 0 & $T_x, T_y$ & $x, y$\\
+$E_{2u}$ & 2 & $-1$ & $-1$ & 2 & 0 & 0 & $-2$ & 1 & 1 & $-2$ & 0 & 0 & & \\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Character table for $D_{\infty h}$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$D_{\infty h}$ & $E$ & $2C_\phi$ & ... & $\infty\sigma_v$ & $i$ & $2S_\phi$ & ... & $\infty C_2'$ & Modes & Operators \\
+\hline
+$A_{1g} = \Sigma^+_g$ & 1 & 1 & ... & 1 & 1 & 1 & ... & 1 & & $x^2 + y^2, z^2$\\
+$A_{1u} = \Sigma^+_u$ & 1 & 1 & ... & 1 & $-1$ & $-1$ & ... & $-1$ & $T_z$ & $z$\\
+$A_{2g} = \Sigma^-_g$ & 1 & 1 & ... & $-1$ & 1 & 1 & ... & $-1$ & $R_z$ & \\
+$A_{2u} = \Sigma^-_u$ & 1 & 1 & ... & $-1$ & $-1$ & $-1$ & ... & 1 & & \\
+$E_{1g} = \Pi_g$ & 2 & 2cos$(\phi)$ & ... & 0 & 2 & $-$2cos$(\phi)$ & ... & 0 & $R_x, R_y$ & $xz, yz$\\
+$E_{1u} = \Pi_u$ & 2 & 2cos$(\phi)$ & ... & 0 & $-2$ & 2cos$(\phi)$ & ... & 0 & $T_x, T_y$ & $x, y$\\
+$E_{2g} = \Delta_g$ & 2 & 2cos$(2\phi)$ & ... & 0 & 2 & 2cos$(2\phi)$ & ... & 0 & & $x^2 - y^2, xy$\\
+$E_{2u} = \Delta_u$ & 2 & 2cos$(2\phi)$ & ... & 0 & $-2$ & $-$2cos$(2\phi)$ & ... & 0 & & \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Character table for $T_d$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}r@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+$T_d$ & $E$ & $8C_3$ & $3C_2$ & $6S_4$ & $6\sigma_d$ & Modes & Operators \\
+\hline
+$A_1$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$ \\
+$A_2$ & 1 & 1 & 1 & $-1$ & $-1$ & & \\
+$E$ & 2 & $-1$ & 2 & 0 & 0 & & $ 2z^2-x^2-y^2, x^2-y^2$ \\
+$T_1$ & 3 & 0 & $-1$ & 1 & $-1$ & $R_x, R_y, R_z$ & \\
+$T_2$ & 3 & 0 & $-1$ & $-1$ & 1 & $T_x, T_y, T_z$ & $x, y, z, xy, xz, yz$ \\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+{\tiny
+\begin{table}
+\caption{Character table for $O_h$ point group (non-Abelian, achiral).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}r@{\extracolsep{0.05cm}}l@{\extracolsep{0.05cm}}l}
+$O_h$ & $E$ & $8C_3$ & $3C_2$ & $6C_4$ & $6C_2'$ & $i$ & $8S_6$ & $3\sigma_h$ & $6S_4$ & $6\sigma_d$ & Modes & Operators\\
+\hline
+$A_{1g}$ & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$\\
+$A_{2g}$ & 1 & 1 & 1 & $-1$ & $-1$ & 1 & 1 & 1 & $-1$ & $-1$ & & \\
+$E_g$ & 2 & $-1$ & 2 & 0 & 0 & 2 & $-1$ & 2 & 0 & 0 & & $2z^2 - x^2 - y^2, x^2 - y^2$\\
+$T_{1g}$ & 3 & 0 & $-1$ & 1 & $-1$ & 3 & 0 & $-1$ & 1 & $-1$ & $R_x, R_y, R_z$ & \\
+$T_{2g}$ & 3 & 0 & $-1$ & $-1$ & 1 & 3 & 0 & $-1$ & $-1$ & 1 & & $xy, xz, yz$\\
+$A_{1u}$ & 1 & 1 & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & & \\
+$A_{2u}$ & 1 & 1 & 1 & $-1$ & $-1$ & $-1$ & $-1$ & $-1$ & 1 & 1 & & \\
+$E_u$ & 2 & $-1$ & 2 & 0 & 0 & $-2$ & 1 & $-2$ & 0 & 0 & & \\
+$T_{1u}$ & 3 & 0 & $-1$ & 1 & $-1$ & $-3$ & 0 & 1 & $-1$ & 1 & $T_x, T_y, T_z$ & $x, y, z$\\
+$T_{2u}$ & 3 & 0 & $-1$ & $-1$ & 1 & $-3$ & 0 & 1 & 1 & $-1$ & & \\
+\end{tabular}
+\end{table}
+}
+
+\vspace{-0.7cm}
+
+{\tiny
+\begin{table}
+\caption{Character table for $I$ point group (non-Abelian, possibly chiral, $\alpha = 2\pi/5$).\hfill}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}r@{\extracolsep{0.1cm}}l@{\extracolsep{0.1cm}}l}
+$I$ & $E$ & $12C_5$ & $12C_5^2$ & $20C_3$ & $15C_2$ & Modes & Operators\\
+\hline
+$A$ & 1 & 1 & 1 & 1 & 1 & & $x^2 + y^2 + z^2$\\
+$T_1$ & 3 & $-2$cos$(2\alpha)$ & $-2$cos$(\alpha)$ & 0 & $-1$ & $R_x, R_y, R_z, T_x, T_y, T_z$ & $x, y, z$\\
+$T_2$ & 3 & $-2$cos$(\alpha)$ & $-2$cos$(2\alpha)$ & 0 & $-1$ &  & \\
+$G$ & 4 & $-1$ & $-1$ & 1 & 0 & & \\
+$H$ & 5 & 0 & 0 & $-1$ & 1 & & $2z^2 - x^2 - y^2, x^2 - y^2,$\\
+    &   &   &   &      &   & & $xy, yz, xz$\\
+\end{tabular}
+\end{table}
+}
+
+}

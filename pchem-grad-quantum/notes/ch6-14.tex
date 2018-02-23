@@ -1,0 +1,71 @@
+\opage{
+\otitle{6.14 Many level systems}
+
+\otext
+The previous two-level system shows that even very simple systems lead to very complicated differential equations. For $n$-level system one would have to solve an $n$-order differential equation, which is very difficult. Furthermore even for a two-level system the resulting equations can be solved only for relatively simple perturbations. In the following we discuss Dirac's alternative approach, which is called the \textit{variation of constants}.
+
+\vspace*{0.2cm}
+As before the hamiltonian is denoted by $H = H^{(0)} + H^{(1)}(t)$ and the eigenfunctions of $H^{(0)}$ by $\left|n\right>$ or $\psi_n^{(0)}$:
+
+$$\Psi_n^{(0)}(t) = \psi_n^{(0)}e^{-iE_n^{(0)}t/\hbar}\textnormal{ }H^{(0)}\Psi_n^{(0)} = i\hbar\frac{\partial\Psi_n^{(0)}}{\partial t}$$
+
+The perturbed time-dependent wavefunction $\Psi$ is expressed as a linear combination of the time-dependent unperturbed states:
+
+\aeqn{6.59}{\Psi(t) = \sum\limits_n a_n(t)\Psi_n^{(0)}(t) = \sum\limits_na_n(t)\psi_n^{(0)}e^{-iE_n^{(0)}t/\hbar}\textnormal{ and }H\Psi=i\hbar\frac{\partial\Psi}{\partial t}}
+
+Our task is to set up differential equations for the coefficients $a_n(t)$. To do this we substitute $\Psi$ into the time-dependent Schr\"odinger equation:
+
+}
+
+\opage{
+
+\otext
+
+$$\omark{H\Psi}{**} = \sum\limits_n a_n(t)\omark{H^{(0)}\Psi_n^{(0)}(t)}{*} + \sum\limits_na_n(t)H^{(1)}(t)\Psi_n^{(0)}(t)$$
+$$\umark{i\hbar\frac{\partial\Psi}{\partial t}}{**} = \sum\limits_n a_n(t)\umark{i\hbar\frac{\partial\Psi_n^{(0)}}{\partial t}}{*} + i\hbar\sum\limits_n \dot{a}_n(t)\Psi_n^{(0)}(t)$$
+
+The terms indicated by * are equal, likewise terms marked with ** are equal. So we are left with:
+
+$$\sum\limits_na_n(t)H^{(1)}(t)\Psi_n^{(0)}(t) = i\hbar\sum\limits_n\dot{a}_n(t)\Psi_n^{(0)}(t)$$
+
+Substituting in the explicit expression for $\Psi_n^{(0)}$ gives:
+
+$$\sum\limits_na_n(t)H^{(1)}(t)\left|n\right>e^{-iE^{(0)}_nt/\hbar} = i\hbar\sum\limits_n\dot{a}_n(t)\left|n\right>e^{-iE^{(0)}_nt/\hbar}$$
+
+To extract one of the $\dot{a}_k(t)$ on the right hand side, we multiply by $\left<k\right|$ from the left:
+
+$$\sum\limits_na_n(t)\left<k\left|H^{(1)}\right|n\right>e^{-iE_n^{(0)}t/\hbar} = i\hbar\dot{a}_k(t)e^{-iE_k^{(0)}t/\hbar}$$
+
+}
+
+\opage{
+
+\otext
+To simplify the expression, we use notation $H^{(1)}_{kn}(t) = \left<k\left|H^{(1)}(t)\right|n\right>$ and $\hbar\omega_{kn} = E_k^{(0)} - E_n^{(0)}$:
+
+\aeqn{6.60}{\dot{a}_k(t) = \frac{1}{i\hbar}\sum\limits_na_n(t)H_{kn}^{(1)}(t)e^{-\omega_{kn}t}}
+
+\textit{The above equation is still exact (no approximations have been made yet)}. From this point on, we will proceed in an approximate manner. First we integrate Eq. (\ref{eq6.60}):
+
+\aeqn{6.61}{a_k(t) - a_k(0) = \frac{1}{i\hbar}\sum\limits_n\int\limits_0^ta_n(t')H_{kn}^{(1)}(t')e^{i\omega_{kn}t'}dt'}
+
+The problem with this expression is that the expression for $a_k(t)$ depends on all other coefficients $a_n(t)$ inclusing $a_k(t)$ itself. The other coefficients $a_n(t)$ are unknown and are determined by similar expression to Eq. (\ref{eq6.61}). Therefore to solve Eq. (\ref{eq6.61}), we need to know all the coefficients before hand! In the following we make an approximation that the perturbation is weak and applied for a short period of time, which implies that the coefficients should approximately remain close to their initial values. If the system is initially in state $\left|i\right>$ then all coefficients other than $a_i(t)$ remain close to zero throughout the period. A state $\left|f\right>$, which is initially zero, will now be given by:
+
+}
+
+\opage{
+
+\otext
+$$a_f(t) \approx \frac{1}{i\hbar}\int\limits_0^ta_i(t')H_{fi}^{(1)}(t')e^{i\omega_{fi}t'}dt'$$ 
+
+This expression is derived from Eq. (\ref{eq6.61}) with all coefficients equal to zero except $a_i(t)$, which remains close to one. The latter fact gives:
+
+\aeqn{6.62}{a_f(t) \approx \frac{1}{i\hbar}\int\limits_0^tH_{fi}^{(1)}(t')e^{i\omega_{fi}t'}dt'}
+
+This expression gives the population of an initially unoccupied state $\left|f\right>$ as a function of time. This ignores the possibility that the state $\left|f\right>$ could be populated via an indirect route (i.e. through some other state). Another way to put this is to say that the perturbation acts only once. This is called the \textit{first order time-dependent perturbation theory}. The interaction of the perturbation can be expressed by using the \textit{Feynman diagrams} as shown below.
+
+\vspace*{-0.2cm}
+
+\ofig{feynman2}{0.3}{Feynman diagrams for 1st and 2nd order perturbation}
+
+}

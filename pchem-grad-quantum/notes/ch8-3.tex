@@ -1,0 +1,24 @@
+\opage{
+\otitle{8.3 Configuration interaction}
+
+\otext
+
+In order to improve the approximate wavefunction constructed from a single Slater determinant, it is possible to use a linear
+combination of Slater determinants (each with their own electronic configuration \& weight coefficient) as the wavefunction.
+This is called the \textit{method of configuration interaction} (CI). Consider H$_2$ moleculewith the following electronic configurations:
+$1\sigma_g^2$, $1\sigma_g^1\sigma_u^1$, and $1\sigma_u^2$. The wavefunctions with the corresponding spin parts are:
+
+\deqn{8.11}{\Psi_1(^1\Sigma_g) = 1\sigma_g(1)1\sigma_g(2)\times \phi_4}
+{\Psi_2(^1\Sigma_u) = \frac{1}{\sqrt{2}}\left(1\sigma_g(1)1\sigma_u(2) + 1\sigma_g(2)1\sigma_u(1)\right)\times\phi_4}
+{\Psi_3(^1\Sigma_g) = 1\sigma_u(1)1\sigma_u(2)\times\phi_4}
+{\Psi_4(^3\Sigma_u) = \frac{1}{\sqrt{2}}\left(1\sigma_g(1)1\sigma_u(2) - 1\sigma_g(2)1\sigma_u(1)\right)\times\phi_{1,2,3}}
+
+where $\phi_1$, $\phi_2$, and $\phi_3$ are the triplet spin parts (see Eqs. (\ref{eq7.27}), (\ref{eq7.28}), and (\ref{eq7.29})) and
+$\phi_4$ is the singlet spin part (see Eq. (\ref{eq7.30})). Only the same symmetry states may mix and therefore the CI wavefunction
+for the ground state H$_2$ would be written as:
+
+\aeqn{8.12}{\Psi = c_1\Psi_1 + c_3\Psi_3}
+
+where $c_1$ and $c_3$ are variational parameters to be determined. This wavefunction is more flexible than just $\Psi_1$.
+
+}

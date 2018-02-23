@@ -1,0 +1,102 @@
+\opage{
+\otitle{7.4 Excited states of helium atom}
+
+\otext
+
+In ground state helium atom ($1s2$ configuration) there was only one possible configuration. However, excited states
+(e.g., $1s^12s^2$) have two possible configurations that are degenerate. Denote the two orbitals by $a$ and $b$ and include
+the electron index by a number (1 or 2) and then the two configurations can be written as $a(1)b(2)$ (state 1) and $a(2)b(1)$ (state 
+2). Since the two configurations are degenerate, we have to use the degenerate version of perturbation theory (see Eq. (\ref{eq6.35})
+and the example below that).
+
+\otext
+
+The required matrix elements (2x2 determinant) are:
+
+\deqn{7.10}{H_{11} = \left<a(1)b(2)|\umark{H_1 + H_2}{H^{(0)}} + \umark{\frac{e^2}{4\pi\epsilon_0r_{12}}}{H^{(1)}}|a(1)b(2)\right> = E_a + E_b + J}
+{H_{22} = \left<a(2)b(1)|H_1 + H_2 + \frac{e^2}{4\pi\epsilon_0r_{12}}|a(2)b(1)\right> = H_{11}}
+{H_{12} = H_{21} = \left<a(1)b(2)|H_1 + H_2 + \frac{e^2}{4\pi\epsilon_0r_{12}}|a(2)b(1)\right>}
+{= \left<a(1)b(2)|\frac{e^2}{4\pi\epsilon_0r_{12}}|a(2)b(1)\right>\equiv K}
+
+Note that atomic orbitals $a$ and $b$ are orthgonal (e.g., $\left<a(1)|b(1)\right> = 0$).
+
+}
+
+\opage{
+
+\otext
+The last integral in Eq. (\ref{eq7.10}), which is denoted by $K$, is called the \textit{exchange integral}. The values of both $J$ and $K$ are positive.
+The determinant corresponding to Eq. (\ref{eq6.35}) is then:
+
+\beqn{7.11}{\left|\begin{matrix}H_{11}-ES_{11} & H_{12} - ES_{12}\\
+H_{21} - ES_{21} & H_{22} - ES_{22}\\
+\end{matrix}\right| = \left|\begin{matrix}H_{11} - E & H_{12}\\
+H_{21} & H_{22} - E\\
+\end{matrix}\right|
+}
+{= \left|\begin{matrix}E_a + E_b + J - E & K\\
+K & E_a + E_b + J - E\\
+\end{matrix}
+\right| = 0}
+
+The overlap matrices are: $S_{11} = S_{22} = 1$ (normalization) and $S_{12} = S_{21} = 0$ (orthogonality). The two solutions to this
+determnant equation are:
+
+\aeqn{7.12}{E = E_a + E_b + J \pm K}
+
+where
+
+\beqn{7.13}{J = \frac{e^2}{4\pi\epsilon_0}\left<a(1)b(2)\left|\frac{1}{r_{12}}\right|a(1)b(2)\right>}
+{K = \frac{e^2}{4\pi\epsilon_0}\left<a(1)b(2)|\frac{1}{r_{12}}|a(2)b(1)\right>}
+
+Note that $K$ involves the ``change of indices" and hence is called the exchange.
+
+}
+
+\opage{
+
+\otext
+
+The corresponding eigen functions can be solved from the determinant equation by substituting in the two energy values. The two
+eigen functions are:
+
+\beqn{7.14}{\psi_+(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) + b(1)a(2)\right)\textnormal{ (symmetric)}}
+{\psi_-(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) - b(1)a(2)\right)\textnormal{ (anti-symmetric)}}
+
+where symmetric and anti-symmetric refer to the exchange of the electron indices. The anti-symmetric eigen function ($-$) changes its
+sign when the indices 1 and 2 are exchanged whereas the symmetric ($+$) remains unchanged.
+Remember that electrons are fermions and their wavefunction should be anti-symmetric with respect to swapping the indices. 
+
+\otext
+
+Two electrons can exist as electronic singlet ($S = 0$; ``opposite spins") or triplet state ($S = 1$; ``parallel spins"). The possible
+spin functions are:
+
+\deqn{7.15}{\sigma_-(1,2) = \frac{1}{\sqrt{2}}\left(\alpha(1)\beta(2) - \beta(1)\alpha(2)\right) \textnormal{ (anti-symmetric)}}
+{\sigma_+^{+1}(1,2) = \alpha(1)\alpha(2)\textnormal{ (symmetric)}}
+{\sigma_+^{0}(1,2) = \frac{1}{\sqrt{2}}\left(\alpha(1)\beta(2) + \beta(1)\alpha(2)\right)\textnormal{ (symmetric)}}
+{\sigma_+^{-1}(1,2) = \beta(1)\beta(2)\textnormal{ (symmetric)}}
+
+}
+
+\opage{
+
+\otext
+
+In order to get a wavefunction that is anti-symmetric overall, we have to connect symmetric and anti-symmetric functions together.
+The four possible eigen functions (with fermionic symmetry) are then:
+
+\deqn{7.16}{\Psi_{0,0}(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) + b(1)a(2)\right)\times \frac{1}{\sqrt{2}}\left(\alpha(1)\beta(2) - \beta(1)\alpha(2)\right)}
+{\Psi_{1,+1}(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) - b(1)a(2)\right)\times \alpha(1)\alpha(2)}
+{\Psi_{1,0}(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) - b(1)a(2)\right)\times \frac{1}{\sqrt{2}}\left(\alpha(1)\beta(2) + \beta(1)\alpha(2)\right)}
+{\Psi_{1,-1}(1,2) = \frac{1}{\sqrt{2}}\left(a(1)b(2) - b(1)a(2)\right)\times \beta(1)\beta(2)}
+
+where the subscripts indicate the value of $S$ and $M_S$. The first line corresponds to the singlet state and the last three lines
+to the triplet state. Based on Eq. (\ref{eq7.12}), these states are separated in energy by $2K$.
+
+\otext
+
+The singlet and triplet states show distinctly different behavior when the two electrons approach each other (i.e., $\left|r_1 - r_2\right|\rightarrow 0$).
+The probability density increases for the singlet state (\textit{Fermi heap}) whereas it decreases for the triplet state (\textit{Fermi hole}).
+
+}

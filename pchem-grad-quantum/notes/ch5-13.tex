@@ -1,0 +1,81 @@
+\opage{
+\otitle{5.13 The symmetry properties of functions}
+
+\otext
+Consider again NH$_3$ molecule ($C_{3v}$) and the three $p$-orbitals located on the nitrogen atom (denoted by $p_x,p_y,p_z$). We expect this to reduce into one irrep spanned by $p_z$ and a two-dimensional irreducible representation spanned by $p_x,p_y$. Earlier we have found that (Sec. 3.13) the Cartesian $p$-orbitals can be written:
+
+$$p_x = xf(r)\textnormal{, }p_y = yf(r)\textnormal{, }p_z = zf(r)$$
+
+where $r$ is the distance from the nitrogen nucleus. All operations in the point group do not operate on $r$ so we can ignore $f(r)$ and see how $(x,y,z)$ transform.
+
+\vspace*{0.2cm}
+
+The effect of $\sigma_v$ on $(x,y,z)$ is:
+
+$$\sigma_v(x,y,z) = (-x,y,z) = (x,y,z)\omark{\left(\begin{matrix}
+-1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)}{ = D(\sigma_v)}$$
+
+Under the rotation $C_3^+$ we get:
+\vspace*{-0.2cm}
+$$C_3^+(x,y,z) = \left(-\frac{1}{2}x + \frac{1}{2}\sqrt{3}y, -\frac{1}{2}\sqrt{3}x - \frac{1}{2}y,z\right) = (x,y,z)\left(\begin{matrix}
+-\frac{1}{2} & -\frac{\sqrt{3}}{2} & 0\\
+\frac{\sqrt{3}}{2} & -\frac{1}{2} & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$$
+
+}
+
+\opage{
+
+\otext
+\begin{center}
+\begin{tabular}{ccc}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+$\left(\begin{matrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ & 
+$\left(\begin{matrix}
+-1/2 & -\sqrt{3}/2 & 0\\
+\sqrt{3}/2 & -1/2 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ &
+$\left(\begin{matrix}
+-1/2 & \sqrt{3}/2 & 0\\
+-\sqrt{3}/2 & -1/2 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$\\
+$\chi(E) = 3$ & $\chi(C_3^+) = 0$ & $\chi(C_3^-) = 0$\\
+ & & \\
+$D\left(\sigma_v\right)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+$\left(\begin{matrix}
+-1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ & 
+$\left(\begin{matrix}
+1/2 & -\sqrt{3}/2 & 0\\
+-\sqrt{3}/2 & -1/2 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ &
+$\left(\begin{matrix}
+1/2 & \sqrt{3}/2 & 0\\
+\sqrt{3}/2 & -1/2 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$\\
+$\chi(\sigma_v) = 1$ & $\chi(\sigma_v') = 1$ & $\chi(\sigma_v'') = 1$\\
+\end{tabular}
+\end{center}
+
+The characters of $E$, $2C_3$, and $\sigma_v$ in the basis $(x,y,z)$ are 3, 0, and 1. From the $C_{3v}$ character table we can see that A$_1 = (1,1,1)$, A$_2 = (1, 1, -1)$, and $E = (2, -1, 0)$. Taking $\Gamma = \textnormal{A}_1 + \textnormal{E}$ gives $(3, 0, 1)$. The function $z$ is basis for A$_1$ and the two $p_x,p_y$ orbitals span E. Formally, one should block-diagonalize the above representations as we did earlier to prove this. Character tables usually list the symmetry species of irreps spanned by $x,y,z$ because they are very important. We could continue this with $d$-orbitals where the Cartesian forms span $\Gamma = \textnormal{A}_1 + 2\textnormal{E}$ in $C_{3v}$. The Cartesian $d$-orbitals are:
+
+\vspace*{-0.3cm}
+
+$$d_{xy} = xyf(r)\textnormal{, }d_{yz} = yzf(r)\textnormal{, }d_{zx} = zxf(r)$$
+$$d_{x^2-y^2} = \left(x^2 - y^2\right)f(r)\textnormal{, }d_{z^2} = \left(3z^2 - r^2\right)f(r)$$
+
+}

@@ -1,0 +1,92 @@
+\opage{
+\otitle{1.8 Hermitian operators}
+
+\otext
+An operator is \textit{hermitian} if it satisfies the following relation:
+
+\aeqn{1.21}{\int f_m^*\Omega f_nd\tau = \left(\int f_n^*\Omega f_md\tau\right)^*}
+
+or alternatively:
+
+$$\int f_m^*\Omega f_nd\tau = \int\left(\Omega f_m\right)^*f_nd\tau$$
+
+By using the Dirac notation, we can write Eq. (\ref{eq1.21}):
+
+\aeqn{1.22}{\left<m\left|\Omega\right|n\right> = \left<n\left|\Omega\right|m\right>^*}
+
+\textbf{Example 1.5} Show that both position ($x$) and momentum ($p_x$) operators are hermitian.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Consider operator $x$ first (note that $x$ is real):
+
+$$\int f_m^*xf_nd\tau = \int f_n x f_m^*d\tau = \left(\int f_n^*x f_md\tau\right)^*$$
+
+For momentum we have $p_x = \frac{\hbar}{i}\frac{d}{dx}$ and then integration by parts:
+
+$$\int\limits_a^b u'v = \sijoitus{a}{b}uv - \int\limits_a^buv'$$
+
+}
+
+\opage{
+
+gives:
+
+$$\int\limits_{-\infty}^{\infty} f_m^*p_xf_ndx = \int\limits_{-\infty}^{\infty} f_m^*\frac{\hbar}{i}\frac{d}{dx}f_ndx = \frac{\hbar}{i}\sijoitus{-\infty}{\infty}f_m^*f_n - \frac{\hbar}{i}\int\limits_{-\infty}^{\infty} f_n\frac{d}{dx}f_m^*dx = ...$$
+
+Since both $f_m$ and $f_n$ must approach zero when $x$ approaches $\infty$, we can simplify:
+
+$$... = -\frac{\hbar}{i}\int\limits_{-\infty}^{\infty}f_n\frac{d}{dx}f_m^*dx = \left(\int\limits_{-\infty}^{\infty}f_n^*\frac{\hbar}{i}\frac{d}{dx}f_mdx\right)^*$$
+
+Thus we have shown that Eq. (\ref{eq1.21}) holds and $p_x$ is hermitean.
+
+\vspace*{0.2cm}
+
+There are a number of important properties that hold for hermitian operators:
+
+\begin{enumerate}
+\item[1.] \textit{The eigenvalues of hermitean operators are real.}\\
+
+\otext
+\textbf{Proof.} Consider an eigenvalue equation: $\Omega\left|\omega\right> = \omega\left|\omega\right>$
+and multiply it from the left by $\left<\omega\right|$: $\left<\omega\left|\Omega\right|\omega\right> = \omega\left<\omega|\omega\right> = \omega$
+where $\left<\omega|\omega\right> = 1$ (normalization). Complex conjugating both sides: $\left<\omega\left|\Omega\right|\omega\right>^* = \omega^*$
+By hermiticity we have $\left<\omega\left|\Omega\right|\omega\right>^* = \left<\omega\left|\Omega\right|\omega\right>$. The two above equations now yield $\omega = \omega^*$. This implies that $\omega$ is real.
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\begin{enumerate}
+\item[2.] Eigenfunctions corresponding to \textit{different} eigenvalues of an hermitian operator are orthogonal:
+
+\vspace*{-0.3cm}
+
+$$\left<f_m|f_n\right> = \delta_{mn}\textnormal{ where }f_m\textnormal{ and }f_n\textnormal{ belong to different eigenvalues (non-degenerate)}$$
+
+\vspace*{-0.3cm}
+
+\otext
+\textbf{Proof.} Choose two different eigenfunctions $\left|\omega\right>$ and $\left|\omega'\right>$ that satisfy:
+
+$$\Omega\left|\omega\right> = \omega\left|\omega\right>\textnormal{ and }\Omega\left|\omega'\right> = \omega'\left|\omega'\right>$$
+
+Multiplication side by side by $\omega$ and $\omega'$ gives:
+
+$$\left<\omega'\right|\Omega\left|\omega\right> = \omega\left<\omega'|\omega\right>\textnormal{ and }\left<\omega\right|\Omega\left|\omega'\right> = \omega'\left<\omega|\omega'\right>$$
+
+Taking complex conjugate of both sides of the 2nd relation above and subtracting it from the first we get:
+
+$$\left<\omega'\right|\Omega\left|\omega\right> - \left<\omega\right|\Omega\left|\omega'\right>^* = \omega\left<\omega'|\omega\right> - \omega'\left<\omega|\omega'\right>^*$$
+
+Since $\Omega$ is Hermitian, the left side of the above expression is zero. Since $\left<\omega|\omega\right>$ is real and $\left<\omega'|\omega\right> = \left<\omega|\omega'\right>$ we have:
+
+$$\left(\omega - \omega'\right)\left<\omega'|\omega\right> = 0$$
+
+Since we have non-degenerate situation, $\omega \ne \omega'$ and hence $\left<\omega'|\omega\right> = 0$. For example, eigenfunctions of ``Harmonic oscillator'' are orthogonal. Note that this result does not apply to degenerate states.
+
+\end{enumerate}
+
+}

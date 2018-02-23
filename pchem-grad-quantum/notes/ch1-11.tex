@@ -1,0 +1,65 @@
+\opage{
+\otitle{1.11 The outcome of measurements}
+
+\otext
+The following postulate establishes the link between the wavefunctions \& operators and experimental observations:
+
+\vspace*{0.2cm}
+
+\textbf{Postulate \#3.} When a system is described by a wavefunction $\psi(r)$ (note time independent wavefunction) we obtain the \textit{expectation value} of operator $\Omega$ as:
+
+\aeqn{1.23}{\left<\Omega\right> = \frac{\int\psi^*\Omega\psi d\tau}{\int\psi^*\psi d\tau} = \frac{\left<\psi\right|\Omega\left|\psi\right>}{\left<\psi|\psi\right>}}
+
+If the wavefunction $\psi$ is normalized:
+
+\aeqn{1.24}{\left<\Omega\right> = \int\psi^*\Omega\psi d\tau = \left<\psi\right|\Omega\left|\psi\right>}
+
+In general we assume that the we wavefunctions that we work with are normalized. Note that calculation of expectation value of an eigenfunction gives the corresponding eigenvalue ($\Omega\left|\psi\right> = \omega\left|\psi\right>$):
+
+\aeqn{1.25}{\left<\Omega\right> = \int\psi^*\Omega\psi d\tau = \int\psi^*\omega\psi d\tau = \omega\int\psi^*\psi d\tau = \omega}
+
+Recall that a general wavefunction can be always represented as a linear combination of eigenfunctions:
+
+\vspace*{-0.2cm}
+
+$$\psi = \sum\limits_{n=1}^{\infty}c_n\psi_n\textnormal{ where }\Omega\psi_n = \omega_n\psi_n$$
+
+}
+
+\opage{
+
+\otext
+The expectation value of this wavefunction can be calculated as:
+
+\aeqn{1.26}{\left<\Omega\right> = \sum\limits_{n=1}^\infty c^*_nc_n\omega_n\int\psi^*_n\psi_nd\tau = \sum\limits_{n=1}^{^\infty}c_n^*c_n\omega_n = \sum_{n=1}^{\infty}\left|c_n\right|^2\omega_n}
+
+where we have used the fact that $\int\psi_n^*\psi_md\tau = \delta_{mn}$. The expectation value is therefore a weighted average of over the eigen states of $\Omega$ that contribute to $\psi$. This can be cast into an additional postulate:
+
+\vspace*{0.2cm}
+
+\textbf{\#3'} When $\psi$ is an eigenfunction of the operator $\Omega$, the determination of the corresponding property $\Omega$ always yields one result, namely the corresponding eigenvalue $\omega$. The expectation value will simply be the eigenvalue $\omega$. When $\psi$ is not an eigenfunction of $\Omega$, a single measurement of the property yields a single outcome which is one of the eigenvalues of $\Omega$, and the probability that a particular eigenvalue $\omega_n$ is measured is equal to $\left|c_n\right|^2$, where $c_n$ is the coefficient of the eigenfunction $\psi_n$ in the expansion of the wavefunction.
+
+\vspace*{0.2cm}
+
+In practice, the above postulate means that multiple measurements on the system produce a distribution of outcomes and the distribution is determined by the coefficients, $\left|c_n\right|^2$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example 1.6} An operator $A$ has eigenfunctions $f_1, f_2, ..., f_n$ with corresponding eigenvalues $a_1,a_2, ..., a_n$. The state of the system is described by a normalized wavefunction $\psi$ given by:
+
+$$\psi = \frac{1}{2}f_1 - \left(\frac{3}{8}\right)^{1/2}f_2 + \left(\frac{3i}{8}\right)^{1/2}f_3$$
+
+What will be the outcome of measuring the observable $A$?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We need to evaluate the expectation value of $\psi$:
+
+$$\left< A\right> = \left<\left(\frac{1}{2}f_1 - \left(\frac{3}{8}\right)^{1/2}f_2 + \left(\frac{3i}{8}\right)^{1/2}f_3\right)\right|A\left|\left(\frac{1}{2}f_1 - \left(\frac{3}{8}\right)^{1/2}f_2 + \left(\frac{3i}{8}\right)^{1/2}f_3\right)\right>$$
+$$= \frac{1}{4}\left< f_1\right| A\left|f_1\right> + \frac{3}{8}\left<f_2\right| A\left|f_2\right> + \frac{3}{8}\left<f_3\right| A\left|f_3\right>$$
+$$ = \frac{1}{4}a_1 + \frac{3}{8}a_2 + \frac{3}{8}a_3$$
+
+}

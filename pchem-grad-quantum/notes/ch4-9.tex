@@ -1,0 +1,70 @@
+\opage{
+\otitle{4.9 The specification of coupled angular momenta}
+
+\otext
+In the following we will consider two sources of angular momentum, which are denoted by $j_1$ and $j_2$. These can arise from one particle in the form of its spin and orbital angular momenta or from two different particles. We need to find a way to express the total angular momentum $j$ that considers contribution of both $j_1$ and $j_2$.
+
+\vspace*{0.2cm}
+
+We denote the angular momentum quantum numbers for particle 1 by $j_1$ and $m_{j_1}$ and for particle 2 by $j_2$ and $m_{j_2}$. In order to represent the overall wavefunction as $\left|j_1,m_{j_1};j_2,m_{j_2}\right>$ we must make sure that all operators $j_1^2$, $j_2^2$, $j_{1z}$, $j_{2z}$ commute. In fact, each Cartesian component of $j_1$ and $j_2$ commute:
+
+\aeqn{4.39}{\left[j_{1q},j_{2q'}\right] = 0\textnormal{ where }q=x,y,z\textnormal{ and }q'=x,y,z}
+
+This can be seen simply by noting that each source of angular momentum have their own variables. Operators depending on different variables commute trivially. Since each Cartesian component commutes and $j_q^2 = j_{qx}^2 + j_{qy}^2 + j_{qz}^2$, we have the necessary commutation relations for expressing the wavefunction as $\left|j_1,m_{j_1};j_2,m_{j_2}\right>$.
+
+}
+
+\opage{
+
+\otext
+Next we will check if the \textit{total angular momentum} $j = j_1 + j_2$ could also be specified. First we need to verify that $j$ is angular momentum by using Eq. (\ref{eq4.7}):
+
+\ceqn{4.40}{\left[j_x,j_y\right] = \left[j_{1x} + j_{2x}, j_{1y} + j_{2y}\right]}
+{= \left[j_{1x},j_{1y}\right] + \left[j_{2x},j_{2y}\right] + \left[j_{1x},j_{2y}\right] + \left[j_{2x},j_{1y}\right]}
+{ = i\hbar j_{1z} + i\hbar j_{2z} + 0 + 0 = i\hbar j_z}
+
+The other commutation relations required by Eq. (\ref{eq4.7}) can be obtained from the above calculation by cyclic permutation of the coordinate labels. Thus we conclude that $j$ is angular momentum. (Exercise: Show that $j_1 - j_2$ is not angular momentum). Now we can also get the magnitude of $j$ as $\sqrt{j(j+1)}\hbar$ with $j$ integral or half-integral and the $z$ component given by $m_j\hbar$ with $m_j = j, j-1, ..., -j$.
+
+\vspace*{0.2cm}
+
+Can we specify $j$ if we have specified $j_1$ and $j_2$? To answer this question we need to consider the commutation relation between these operators:
+
+\ceqn{4.41}{\left[j^2,j_1^2\right] = \left[j_x^2 + j_y^2 + j_z^2,j_{1x}^2 + j_{1y}^2 + j_{1z}^2\right]}
+{ = \left[(j_{1x} + j_{2x})^2 + (j_{1y} + j_{2y})^2 + (j_{1z} + j_{2z})^2,j_{1x}^2 + j_{1y}^2 + j_{1z}^2\right]}
+{ = \left[j_{1x}^2,j_{1x}^2\right] + \left[j_{1x}j_{2x},j_{1x}^2\right] + ... = 0}
+
+because $\left[j_{1q},j_{2q}\right] = 0$, $\left[j_{1q},j_{1q}\right] = 0$, and $\left[j_{2q},j_{2q}\right] = 0$.
+
+}
+
+\opage{
+
+\otext
+This means that we can simultaneously specify the eigenvalues of $j_1^2$, $j_2^2$, and $j^2$. The operator $j$ also commutes with $j_z = j_{1z} + j_{2z}$. This allows us to specify the our eigenstates as $\left|j_1,j_2;j,m_j\right>$.  Can we proceed even further by also specifying $m_{j1}$ and $m_{j2}$? To answer this question we inspect the commutator between $j^2$ and $j_{1z}$ as an example:
+
+\feqn{4.42}{\left[j_{1z}, j^2\right] = \left[j_{1z},j_x^2\right] + \left[j_{1z},j_y^2\right] + \left[j_{1z},j_z^2\right]}
+{= \left[j_{1z},(j_{1x} + j_{2x})^2\right] + \left[j_{1z},(j_{1y} + j_{2y})^2\right] + \left[j_{1z},(j_{1z} + j_{2z})^2\right]}
+{ = \left[j_{1z},j_{1x}^2 + 2j_{1x}j_{2x}\right] + \left[j_{1z},j_{1y}^2 + 2j_{1y}j_{2y}\right]}
+{ = \left[j_{1z},j_{1x}^2 + j_{1y}^2\right] + 2\left[j_{1z},j_{1x}\right]j_{2x} + 2\left[j_{1z},j_{1y}\right]j_{2y}}
+{= \left[j_{1z},j_1^2 - j_{1z}^2\right] + 2i\hbar j_{1y}j_{2x} - 2i\hbar j_{1x}j_{2y}}
+{= 2i\hbar(j_{1y}j_{2x} - j_{1x}j_{2y}) \ne 0}
+
+Because this commutator is not zero, we cannot specify $j_{1z}$ and $j^2$ simultaneously. The same calculation can also be carried out for $\left[j_{2z},j\right]$. Thus we cannot specify $m_{j1}$ or $m_{j2}$ in this case. Thus we have the following choices:
+
+}
+
+\opage{
+
+\otext
+\begin{tabular}{lll}
+Representation & Wavefunction & Interpretation\\
+\cline{1-3}\\
+Coupled representation & $\left|j_1,j_2;j,m_j\right>$ & Idividual $m_{j1}$ and $m_{j2}$ unspecified.\\
+Uncoupled representation & $\left|j_1,m_{j1};j_2,m_{j2}\right>$ & Total angular momentum unspecified.\\
+\end{tabular}
+
+\vspace*{0.4cm}
+
+Later we will see that depending on the situation, one representation might be easier to use than the other. Both representations are complete in a sense that either one can be used to describe the system.
+
+}

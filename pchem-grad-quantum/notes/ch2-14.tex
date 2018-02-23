@@ -1,0 +1,43 @@
+\opage{
+\otitle{2.14 The two-dimensional square well (``2D box'')}
+
+\otext
+The Hamiltonian for a particle in two-dimensional square is given by:
+
+\aeqn{2.33}{H = -\frac{\hbar^2}{2m}\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right)}
+
+with Dirichlet boundary conditions $\psi(L_1,y) = 0$ and $\psi(x, L_2) = 0$. Inside the well the Schr\"odinger equation is:
+
+\aeqn{2.34}{\frac{\partial^2\psi}{\partial x^2} + \frac{\partial^2\psi}{\partial y^2} = -\frac{2mE}{\hbar^2}\psi}
+
+Since the Hamiltonian is a sum of terms each depending on $x$ and $y$ separately, we can write the solution as a product: $\psi(x,y) = X(x)Y(y)$. Inserting this into Eq. (\ref{eq2.34}):
+
+$$Y(y)\frac{d^2X(x)}{dx^2} + X(x)\frac{d^2Y(y)}{dy^2} = -\frac{2mE}{\hbar^2}X(x)Y(y)$$
+
+Division of both sides by $X(x)Y(y)$ yields:
+
+$$\frac{1}{X(x)}\frac{d^2X(x)}{dx^2} + \frac{1}{Y(y)}\frac{d^2Y(y)}{dy^2} = -\frac{2mE}{\hbar^2}$$
+
+}
+
+\opage{
+
+\otext
+Next we divide $E$ into two contributions $E = E^X + E^Y$ and separate the above equation as:
+
+$$\frac{d^2X(x)}{dx^2} = -\frac{2mE^X}{\hbar^2}X\textnormal{ and }\frac{d^2Y}{dy^2} = -\frac{2mE^Y}{\hbar^2}Y$$
+
+Both equations have the same form as the one-dimensional particle in a box. Hence we form the overall wavefunction as a product of the one dimensional problem solutions:
+
+\vspace*{-0.3cm}
+
+\beqn{2.35}{\psi_{n_1,n_2}(x,y) = \frac{2}{\sqrt{L_1L_2}}\sin\left(\frac{n_1\pi x}{L_1}\right)\sin\left(\frac{n_2\pi y}{L_2}\right)}
+{E_{n_1,n_2} = \frac{h^2}{8m}\left(\frac{n_1^2}{L_1^2} + \frac{n_2^2}{L_2^2}\right)\textnormal{ with }n_1 = 1, 2,...\textnormal{ and }n_2 = 1, 2,...}
+
+Note that in order to define a state, one must now use two independent quantum numbers $n_1$ and $n_2$. 
+
+\vspace*{-0.2cm}
+
+\ofig{pbox}{0.2}{Contour plots of the lowest eigenfunctions for the two-dimensional particle in a box problem.}
+
+}

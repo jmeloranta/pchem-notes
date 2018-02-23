@@ -1,0 +1,37 @@
+\opage{
+\otitle{5.8 Characters and classes}
+
+\otext
+Another important observation from the two previous examples is that the characters of the two rotations are the same as well as the characters of the three reflections are the same.  This can be used to divide symmetry operations into \textit{classes}. Two symmetry operations $R$ and $R'$ belong to the same class if there exists another symmetry operation $S$ of the group such that:
+
+\aeqn{5.11}{R' = S^{-1}RS}
+
+The elements $R$ and $R'$ are said to be \textit{conjugate}. In practice this means that the symmetry operations $R$ and $R'$ are the same kind of operations but performed with respect to symmetry elements that are related by a symmetry operation.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Show that the symmetry operations $C_3^+$ and $C_3^-$ are conjugate in the group $C_{3v}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We need to find a symmetry transformation ($S$ and $S^{-1}$) such that Eq. (\ref{eq5.11}) holds ($R = C_3^+$ and $R' = C_3^-$). If we choose $S = \sigma_v$ then also $S^{-1} = \sigma_v$. Group multiplication now gives:
+
+$$\sigma_v^{-1}C_3^+\sigma_v = \sigma_v\left(C_3^+\sigma_v\right) = \sigma_v\sigma_v' = C_3^-$$
+$$\Rightarrow C_3^+\textnormal{ and }C_3^-\textnormal{ are conjugate (belong to the same class)}$$
+
+}
+
+\opage{
+
+\otext
+Next we will show that symmetry operations in the same class have the same character ($\chi$):
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} We will use Eq. (\ref{eq5.10}) ($trABC = trCAB = trBCA$) and Eq. (\ref{eq5.11}) ($R' = S^{-1}RS$):
+
+$$\chi(R') = trD(R') = trD^{-1}(S)D(R)D(S) = trD(R)D(S)D^{-1}(S) = trD(R) = \chi(R)$$
+
+Although it is true that all members of the samel class have the same character in a given representation, the characters of different classes may be the same as one another. 
+
+}

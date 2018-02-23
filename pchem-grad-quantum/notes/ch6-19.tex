@@ -1,0 +1,34 @@
+\opage{
+\otitle{6.19 Lifetime and energy uncertainty}
+
+\otext
+If a system is stationary (i.e., $\left|\Psi\right|^2$ is time independent), it is described by one of its eigenfunctions with the phase part dictated by the state energy (i.e., $\Psi_i = \psi e^{-iE_it\hbar}$). If the wavefunction is not stationary, it means that the system is evolving towards another states and then its energy is imprecise. 
+Another way to think about this is to say that energy and time are Fourier pairs and subject to uncertainty. However, this is not a well defined statement since time is not an observable in non-relativistic quantum mechanics. Supppose that the probability of finding the system in a particular excited state $i$ decays exponentially with time-constant $\tau$:
+
+\aeqn{6.85}{\left|\Psi_i\right|^2 = \left|\psi_i\right|^2e^{-t/\tau}}
+
+The exponential decay form is approriate for many types of processes (including spontaneous emission). The amplitude of the state $i$ has then the following form:
+
+\aeqn{6.86}{\Psi_i = \psi_i e^{-iE_it/\hbar - t/(2\tau)}}
+
+The amplitude of this function decays in an oscillatory manner. What is the energy of this state? We can see this by analyzing the frequency components by using Fourier transformation:
+
+$$e^{-iE_it/\hbar - t/(2\tau)} = \int\limits_{-\infty}^{\infty}g(E')e^{-iE't/\hbar}dE'$$
+
+
+}
+
+\opage{
+
+\otext
+Fourier transforming this gives the following form for $g(E')$:
+
+\aeqn{6.87}{G(E') = \frac{\hbar / (2\pi\tau)}{(E - E')^2 + (\hbar/(2\tau))^2}}
+
+This expression is a superposition of many energies and therefore we have \textit{lifetime broadening} of the state. In spectroscopy, the lineshape that follows from this expression is called \textit{Lorentzian lineshape}. It is the most common lineshape in gas and liquid phase experiments where inhomogeneities of the sample are negligible. To get a qualitative result we note that the width at half-height is $\hbar/(2\tau)$ which gives:
+
+\aeqn{6.88}{\tau\Delta E\approx \frac{1}{2}\hbar}
+
+Note that this looks similar to the uncertainty principle between position and momentum. This is because position and momentum are also Fourier pairs and subject to uncertainty. Remember that if you have a narrow signal, its widht will be large in the corresponding Fourier space (and the other way around).
+
+}

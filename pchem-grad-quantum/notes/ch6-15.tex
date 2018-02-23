@@ -1,0 +1,22 @@
+\opage{
+\otitle{6.15 The effect of a slowly switched constant perturbation}
+
+\otext
+Here we apply Eq. (\ref{eq6.62}) to a perturbation that rises slowly from zero to a steady final value:
+
+\aeqn{6.63}{H^{(1)}(t) = \left\lbrace\begin{matrix}
+0 & \textnormal{ for }t < 0\\
+H^{(1)}(1-e^{-kt}) & \textnormal{ for }t\ge 0\\
+\end{matrix}\right.
+}
+
+where $H^{(1)}$ is a time-indepndent operator and, for slow switching, $k$ is small and positive constant. The coefficient of an initially occupied state is given by Eq. (\ref{eq6.62}):
+
+\beqn{6.64}{a_f(t) = \frac{1}{i\hbar}H_{fi}^{(1)}\int\limits_0^t\left(1 - e^{-kt'}\right)e^{i\omega_{fi}t'}dt'}
+{=\frac{1}{i\hbar}H_{fi}^{(1)}\left(\frac{e^{i\omega_{fi}t} - 1}{i\omega_{fi}} + \frac{e^{-\left(k - i\omega_{fi}\right)t} - 1}{k - i\omega_{fi}}\right)}
+
+At long times ($t >>1/k$ and slow switching $k^2<<\omega_{fi}^2$) we can write this approximately as (compare to Eq. (\ref{eq6.21}) -- time-independent formula):
+
+\aeqn{6.65}{\left|a_f(t)\right|^2 = \frac{\left|H_{fi}^{(1)}\right|^2}{\hbar^2\omega_{fi}^2} = \frac{\left|H_{fi}^{(1)}\right|^2}{\left(E_f^{(0)} - E_i^{(0)}\right)^2}}
+
+}

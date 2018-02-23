@@ -1,0 +1,52 @@
+\opage{
+\otitle{6.17 Transition rates to continuum states}
+
+\otext
+If a continuum of states exists in the neighborhood of the final state, we can still use Eq. (\ref{eq6.69}) to calculate the transition probability to one member of these states. To account for all of the states, one has to integrate over the continuum states. Before this can be done, one needs to specify the \textit{density of states} $\rho(E)$, which tells us the number of states available at energy $E$. In differential form $\rho(E)dE$ gives the number of states between $E$ and $E+dE$. The total transition probability can then be obtained by integrating over the continuum:
+
+\aeqn{6.71}{P(t) = \int P_f(t)\rho(E)dE}
+
+where the integration is carried over the energy range corresponding to the continuum set of states in question. To evaluate this integral, we first express the transition frequency $\omega_{fi}$ in terms of the energy $E$ by writing $\omega_{fi} = E / \hbar$:
+
+$$P(t) = \int4\left|V_{fi}\right|^2\frac{\sin^2\left(\frac{1}{2}\left(E / \hbar - \omega\right)t\right)}{\left(E/\hbar - \omega\right)^2}\rho(E)dE$$
+
+Since the incident frequency is going to excite a fairly narrow band in the continuum, we take the density of states to be independent of $E$. We also take the matrix element $\left|V_{fi}\right|$ to be constant (even though they vary with $E$). Then we can approximately write:
+
+}
+
+\opage{
+
+\otext
+
+$$P(t) = \left|V_{fi}\right|^2\rho(E_{fi})\int\frac{\sin^2\left(\frac{1}{2}\left(E / \hbar - \omega\right)t\right)}{\left(E/\hbar - \omega\right)^2}dE$$
+
+The integrand peaks at fairly narrow region in terms of $E$ and hence we can safely extend the limits of integration. To simplify the integral we also change the integration variable $x = \frac{1}{2}\left(E/\hbar - \omega\right)t$ $\rightarrow$ $dE = (2\hbar/t)dx$. The integral reads now:
+
+$$P(t) = \frac{2\hbar}{t}\left|V_{fi}\right|^2\rho(E_{fi})t^2\int\limits_{-\infty}^{\infty}\frac{\sin^2(x)}{x^2}dx$$
+
+From a mathematics table book we can find the following integral:
+
+$$\int\limits_{-\infty}^{\infty}\frac{\sin^2(x)}{x^2}dx = \pi$$
+
+This allows us the evaluate the integral:
+
+\aeqn{6.72}{P(t) = 2\pi\hbar t\left|V_fi\right|^2\rho(E_{fi})}
+
+Note that the power of $t$ appears as one rather than $t^2$ (Eq. (\ref{eq6.70})). This is because linewidth of the peak decreases as $1/t$ (i.e. the line gets narrower) and the overall area is then $t^2 \times 1/t = t$.
+
+}
+
+\opage{
+
+\otext
+The \textit{transition rate} $W$ is the rate of change of probability of being in an initially empty state:
+
+\aeqn{6.73}{W = \frac{dP}{dt}}
+
+The intensities of spectral lines are proportional to this because they depend on the rate of energy transfer between the system and the electromagnetic field. Therefore we can combine Eqs. (\ref{eq6.72}) and (\ref{eq6.73}):
+
+\aeqn{6.74}{W = 2\pi\hbar\left|V_{fi}\right|^2\rho(E_{fi})}
+
+This result is called \textit{Fermi's golden rule}, which can be used to calculate transition rates that are based on the density of states $\rho(E_{fi})$ and the transition matrix element $V_{fi}$.
+
+}

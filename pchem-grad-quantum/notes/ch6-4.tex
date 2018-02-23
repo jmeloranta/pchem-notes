@@ -1,0 +1,31 @@
+\opage{
+\otitle{6.4 The first-order correction to the wavefunction}
+
+\otext
+To find out the first-order corrected wavefunction, we multiply Eq. (\ref{eq6.19}) from the left by $\left<k\right|$ ($k\ne 0$):
+
+$$\sum\limits_na_n\left<k\right|\left(E_n^{(0)} - E_0^{(0)}\right)\left|n\right> = \left<k\right|\left(E_0^{(1)} - H^{(1)}\right)\left|0\right>$$
+
+Since the states are orthonormal, the above expression simplifies to:
+
+$$a_k\left(E_k^{(0)} - E_0^{(0)}\right) = E_0^{(1)}\left< k|0\right> - \left<k\right|H^{(1)}\left|0\right> = -\left<k\right|H^{(1)}\left| 0\right>$$
+
+Since the state $\left|0\right>$ is non-degenerate, the differences $E_k^{(0)} - E_0^{(0)}$ are all non-zero for $k \ne 0$. Therefore we can carry out the division:
+
+\aeqn{6.21}{a_k = \frac{H^{(1)}_{k0}}{E_0^{(0)} - E_k^{(0)}}}
+
+where $H^{(1)}_{k0} = \left<k\right|H^{(1)}\left|0\right>$. Then we can write the first-order wavefunction as:
+
+\beqn{6.22}{\psi_0^{(1)} = \sum\limits_k\textnormal{} '\left(\frac{H^{(1)}_{k0}}{E_0^{(0)} - E_k^{(0)}}\right)\psi_k^{(0)}}
+{\textnormal{and }\psi_0 \approx \psi_0^{(0)} + \psi_0^{(1)}}
+
+}
+
+\opage{
+
+\otext
+where the prime means that $k = 0$ should be excluded from the summation. Note that both the matrix element $H_{k0}^{(1)}$ and the energy separation between the states 0 and $k$ affect the extent to which the other states are mixed in. For example, states that are far away energetically from the state 0 are not expected to be mixed in by a weak perturbation.
+
+\vfill
+
+}

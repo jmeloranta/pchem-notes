@@ -1,0 +1,20 @@
+\opage{
+\otitle{2.6 The significance of the coefficients}
+
+\otext
+So far we have not discussed the meaning of the coefficients $A$ and $B$ in the solution $\psi(x) = A\exp(ikx) + B\exp(-ikx)$. Their meaning can be seen by operating on $\psi$ by the momentum operator and choosing $B = 0$ and $A = 0$ in turn:
+
+\beqn{2.9}{p\psi = \frac{\hbar}{i}\frac{d\psi}{dx} = \frac{\hbar}{i}\frac{d\left(Ae^{ikx}\right)}{dx} = k\hbar Ae^{ikx} = k\hbar\psi}
+{p\psi = \frac{\hbar}{i}\frac{d\psi}{dx} = \frac{\hbar}{i}\frac{d\left(Be^{-ikx}\right)}{dx} = -k\hbar Be^{-ikx} = -k\hbar\psi}
+
+The two eigenvalues $k\hbar$ and $-h\hbar$ correspond to states having linear momentum along positive and negative $x$-axis, respectively. The significance of the coefficients $A$ and $B$ depend on how the state of the particle was prepared. If $B = 0$ then the particle will travel along the positive $x$-axis direction.
+
+\vspace*{0.2cm}
+
+Note that neither $\cos(kx)$ nor $\sin(kx)$ are eigenfunctions of the momentum operator. For example:
+
+$$p\psi = \frac{\hbar}{i}\frac{d\psi}{dx} = \frac{\hbar}{i}\frac{d(\cos(kx))}{dx} = ik\hbar\sin(kx)$$
+
+A similar calculation can be carried out for $\cos(kx)$. For $\psi(x) = \sin(kx)$ we can write $\psi(x) = \frac{1}{2}Ce^{ikx} + \frac{1}{2}Ce^{-ikx}$ and we see that both $\sin(kx)$ and $\cos(kx)$ can be expressed as a linear combination of the eigenfunctions with equal weights. 
+
+}

@@ -1,0 +1,93 @@
+\opage{
+\otitle{6.9 Variation theory}
+
+\otext
+\textit{Variation theory} provides a way to asses how good a given approximate wavefunction (denoted by $\psi_{trial}$) is. This theorem can be used as a guide in improving $\psi_{trial}$. It turns out that this becomes essentially an optimization problem with respect to the degrees of freedom present in $\psi_{trial}$. This method was developed by Lord Rayleigh.
+
+\vspace*{0.2cm}
+
+Suppose that the system is described by a hamiltonian $H$ and that the \textit{lowest eigenvalue} is denoted by $E_0$. The \textit{Rayleigh ratio} $E$ is defined as:
+
+\aeqn{6.36}{E = \frac{\int\psi_{trial}^*H\psi_{trial}d\tau}{\int\psi_{trial}^*\psi_{trial}d\tau}}
+
+The \textit{variation theorem} then states that:
+
+\aeqn{6.37}{E \ge E_0\textit{ for any }\psi_{trial}}
+
+Note that this result applies only to the ground state solution.
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} The trial function can be written as a linear combination of the true (but unknown) eigenfunctions of the hamiltonian. These eigenfunctions form a complete set since the hamiltonian is hermitian.
+
+$$\psi_{trial} = \sum\limits_n c_n\psi_n\textnormal{ where }H\psi_n = E_n\psi_n$$
+
+Next consider the following integral $I$:
+
+}
+
+\opage{
+
+\otext
+$$I = \int\psi_{trial}^*\left(H - E_0\right)\psi_{trial}d\tau =\sum\limits_{n,n'}c_n^*c_{n'}\int\psi_n^*\left(H - E_0\right)\psi_{n'}d\tau$$
+$$= \sum\limits_{n,n'}c_n^*c_{n'}\left(E_{n'} - E_0\right)\int\psi_n^*\psi_{n'}d\tau = \sum\limits_n c_n^*c_n\left(E_n - E_0\right) \ge 0$$
+
+where the last inequality follows from $E_n \ge E_0$ and $\left|c_n\right|^2\ge 0$. Thus we have:
+
+$$\int\psi_{trial}^*\left(H - E_0\right)\psi_{trial}d\tau \ge 0$$
+$$\Rightarrow E \ge E_0$$
+
+\vspace*{0.2cm}
+
+This means that the trial wavefunction $\psi_{trial}$ giving the lowest value for $E$ can be considered to be the best estimate to the true ground state eigenfunction. Also an approximate $\psi_{trial}$ will immediately give you an upper limit esimate for the ground state energy. Often $\psi_{trial}$ is expressed in terms of a few variational parameters and optimization of them for the lowest value of $E$ will give the best possible $\psi_{trial}$.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Use the trial wavefunction $\psi_{trial} = e^{-kr}$ to find an upper limit estimate for hydrogen ground state energy. 
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The hamiltonian for hydrogen atom is:
+
+}
+
+\opage{
+
+\otext
+$$H = -\frac{\hbar^2}{2\mu}\nabla^2 - \frac{e^2}{4\pi\epsilon_0r}$$
+
+Since our trail wavefunction is independent of the angular variables (in spherical coordinates), we can rewrite our hamiltonian in terms of $r$ only:
+
+$$H = \frac{1}{r}\frac{d^2}{dr^2}\left(r\psi\right) - \frac{e^2}{4\pi\epsilon_0r}$$
+
+Next we need to evaluate the required integrals for Eq. (\ref{eq6.36}):
+
+$$\int\psi_{trial}^*\psi_{trial}d\tau = \omark{\int\limits_{0}{2\pi}d\phi}{= 2\pi}\omark{\int\limits_0^\pi\sin(\theta)d\theta}{= 2}\omark{\int\limits_0^\infty e^{-2kr}r^2dr}{=1/(4k^3)} = \frac{\pi}{k^3}$$
+$$\int\psi_{trial}^*\left(\frac{1}{r}\right)\psi_{trial}d\tau = \int\limits_0^{2\pi}d\phi\int\limits_0^{\pi}\sin(\theta)d\theta\omark{\int\limits_0^\infty e^{-2kr}rdr}{= 1 / (4k^2)} = \frac{\pi}{k^2}$$
+$$\int\psi_{trial}^*\nabla^2\psi_{trial}d\tau = \int\psi_{trial}^*\left(\frac{1}{r}\frac{d^2}{dr^2}\right)re^{-kr}d\tau$$
+
+}
+
+\opage{
+
+\otext
+$$ = \int\psi_{trial}^*\left(k^2 - \frac{2k}{r}\right)\psi_{trial}d\tau = k^2\int\psi_{trial}^*\psi_{trial}d\tau - 2k\int\psi_{trial}^*\left(\frac{1}{r}\right)\psi_{trial}d\tau$$
+$$= \frac{\pi}{k} - \frac{2\pi}{k} = -\frac{\pi}{k}$$
+
+Then we can write down the expectation value of $H$ as:
+
+$$\int\psi_{trial}^*H\psi_{trial}d\tau = \frac{\pi\hbar^2}{2\mu k} - \frac{e^2}{4\epsilon_0k^2}$$
+
+and the Rayleigh ratio is then:
+
+$$E(k) = \frac{\left(\pi\hbar^2/ (2\mu k)\right) - \left(e^2 / (4\epsilon_0k^2)\right)}{\pi / k^3} = \frac{k^2\hbar^2}{2\mu} - \frac{e^2k}{4\pi\epsilon_0}$$
+
+To find the minimum value for $E(k)$ we set $dE(k) / dk = 0$ zero:
+
+$$\frac{dE(k)}{dk} = \frac{k\hbar^2}{\mu} - \frac{e^2}{4\pi\epsilon_0} = 0$$
+
+This gives $k = \frac{e^2\mu}{4\pi\epsilon_0\hbar^2}$. The optimum value is then $E = -\frac{e^4\mu}{32\pi^2\epsilon_0^2\hbar^2}$.
+
+Note that this value happens to be the true ground state energy because our trial wavefunction was such that it can become the exact ground state eigenfunction.
+
+}

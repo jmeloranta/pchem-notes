@@ -1,0 +1,51 @@
+\opage{
+\otitle{6.2 Many-level systems}
+
+\otext
+Previously we dealt with only two levels but how does the above theory generalize when there are many levels present in the system?
+Note that it might be possible that two levels in the set are degenerate and special precautions must be taken in sch cases. In this 
+section we will take the levels to be non-degenerate but we will return to the degerenrate case later.
+
+\vspace*{0.2cm}
+
+Let's assume that we know the eigenvalues $E_n^{(0)}$ and eigenfunctions $\left|n\right>$ (orthonormal) of the hamiltonian $H^{(0)}$, which differs from $H$ to a small extent:
+
+\aeqn{6.12}{H^{(0)}\left|n\right> = E_n^{(0)}\left|n\right>\textnormal{ where }n=0,1,2,...}
+
+In the following we will be calculating the perturbed form of the state $\left|0\right>$ of energy $E_0^{(0)}$, which is not necessarily the ground state of the system. The hamiltonian for the perturbed system is written as:
+
+\aeqn{6.13}{H = H^{(0)} + \lambda H^{(1)} + \lambda^2H^{(2)} + ...}
+
+The parameter $\lambda$ will act only as a counter for the order of the perturbation. In the end the powers of $\lambda$ will allow us to identify first, second, etc. order terms. The perturbed wavefunction is written as:
+
+\aeqn{6.14}{\psi_0 = \psi_0^{(0)} + \lambda\psi_0^{(1)} + \lambda^2\psi_0^{(2)} + ...}
+
+The energy can also be written in a similar way:
+
+\aeqn{6.15}{E_0 = E_0^{(0)} + \lambda E_0^{(1)} + \lambda^2E_0^{(2)} + ...}
+
+}
+
+\opage{
+
+\otext
+where $E_0^{(1)}$ is the \textit{first order correction} to the energy and $E_0^{(2)}$ is the \textit{second order correction} etc. The overall equation that we are trying to solve is:
+
+\aeqn{6.16}{H\psi = E\psi}
+
+Next we insert the previous forms of $H$, $\psi$, and $E$ into the above equation:
+
+$$\lambda^0\left(H^{(0)}\psi_0^{(0)} - E_0^{(0)}\psi_0^{(0)}\right)$$
+$$+ \lambda^1\left(H^{(0)}\psi_0^{(1)} + H^{(1)}\psi_0^{(0)} - E_0^{(0)}\psi_0^{(1)} - E_0^{(1)}\psi_0^{(0)}\right)$$
+$$+ \lambda^2\left(H^{(0)}\psi_0^{(2)} + H^{(1)}\psi_0^{(1)} + H^{(2)}\psi_0^{(0)} - E_0^{(0)}\psi_0^{(2)} - E_0^{(1)}\psi_0^{(1)} - E_0^{(2)}\psi_0^{(0)}\right)$$
+$$+ \textnormal{...higher order terms...} = 0$$
+
+Since $\lambda$ is an arbitrary parameter, the terms in front of each $\lambda$ must each be zero:
+
+\deqn{6.17}{H^{(0)}\psi_0^{(0)} = E_0^{(0)}\psi_0^{(0)}}
+{\left(H^{(0)} - E_0^{(0)}\right)\psi_0^{(1)} = \left(E_0^{(1)} - H^{(1)}\right)\psi_0^{(0)}}
+{\left(H^{(0)} - E_0^{(0)}\right)\psi_0^{(2)} = \left(E_0^{(2)} - H^{(2)}\right)\psi_0^{(0)} + \left(E_0^{(1)} - H^{(1)}\right)\psi_0^{(1)}}
+{\textnormal{ and also for the higher order terms...}}
+
+}
+

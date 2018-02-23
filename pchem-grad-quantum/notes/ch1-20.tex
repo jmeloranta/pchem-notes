@@ -1,0 +1,43 @@
+\opage{
+\otitle{1.20 Matrices in quantum mechanics: Matrix elements}
+
+\otext
+If a complete set of functions is specified (``basis set''), then we can write operators in matrix form, provided that the number of functions in the set is finite. In case of infinite basis set, the corresponding matrices would have infinite dimensions. Recall that matrix multiplication follows the rule:
+
+\aeqn{1.40}{P_{rc} = \sum\limits_s M_{rs}N_{sc}}
+
+and especially note that in general $MN \ne NM$. In other words, they do not commute.
+
+\vspace*{0.2cm}
+
+Heisenberg formulated his version of quantum mechanics by using matrices rather than operators. The two formulations are equivalent with the exception on infinite basis set expansions where the matrix formulation becomes problematic. In many cases, we will use integrals of the form $\left<m\left|\omega\right|n\right>$, which we will often denote just by $\Omega_{mn}$. When $m$ and $n$ are members of the specified basis set, $\Omega_{mn}$ is called a \textit{matrix element} of operator $\Omega$.
+
+\vspace*{0.1cm}
+
+We will also often encounter sums of the following form:
+
+$$\sum\limits_s\left<r\left|A\right|s\right>\left<s\left|B\right|c\right>$$
+
+By using the matrix notation, we can write this as:
+
+}
+
+\opage{
+
+\otext
+$$\sum\limits_s A_{rs}B_{sc} = \left(AB\right)_{rc} = \left<r\left|AB\right|c\right>$$
+
+where $(AB)_{rc}$ denotes the matrix element of $AB$, which corresponds to operator $AB$. In the last step we have used the \textit{completeness relation} (also known as the \textit{closure relation}), which states that:
+
+$$\sum\limits_s\left|s\right>\left<s\right| = 1$$
+
+\textbf{Example 1.9} Use the completeness relation to show that the expectation value of the square of an hermitian operator is non-negative.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We calculate the expectation value:
+
+$$\left<\omega\left|\Omega^2\right|\omega\right> = \left<\omega\left|\Omega\Omega\right|\omega\right> = \sum\limits_s\left<\omega\left|\Omega\right|s\right>\left<s\left|\Omega\right|\omega\right> = \sum\limits_s\left<\omega\left|\Omega\right|s\right>\left<\omega\left|\Omega\right|s\right>^*$$
+$$ = \sum\limits_s\umark{\left|\left<\omega\left|\Omega\right|s\right>\right|^2}{\ge 0} \ge 0$$
+
+}

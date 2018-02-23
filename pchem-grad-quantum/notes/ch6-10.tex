@@ -1,0 +1,53 @@
+\opage{
+\otitle{6.10 The Rayleigh-Ritz method}
+
+\otext
+When the trial function $\psi_{trial}$ is represented as a linear combination of some given basis functions, we obtain a modified Rayleigh variational method, which is called the \textit{Rayleigh-Ritz} method. The coefficients appearing in the linear combination are optimize to yield the smalles value for the Rayleigh ratio (Eq. (\ref{eq6.36})). The trial function is written as:
+
+\aeqn{6.38}{\psi_{trial} = \sum\limits_ic_i\psi_i}
+
+where only the coefficients $c_i$ are varied but not the basis functions $\psi_i$. In the following we will assume that the coefficients $c_i$ are real. The Rayleigh ratio is then:
+
+\aeqn{6.39}{E = \frac{\int\psi_{trial}^*H\psi_{trial}d\tau}{\int\psi_{trial}^*\psi_{trial}d\tau} = \frac{\sum\limits_{i,j}\int\psi_iH\psi_jd\tau}{\sum\limits_{i,j}c_ic_j\int\psi_i\psi_jd\tau} = \frac{\sum\limits_{i,j}c_ic_jH_{ij}}{\sum\limits_{i,j}c_ic_jS_{ij}}}
+
+To find the minimum value for this ratio, we differentiate with respect to each $c_i$ and require that these derivatives are zero:
+
+$$\frac{\partial E}{\partial c_k} = \frac{\sum\limits_jc_jH_{kj} + \sum\limits_ic_iH_{ik}}{\sum\limits_{i,j}c_ic_jS_{ij}} - \frac{\left(\sum\limits_jc_jS_{kj} + \sum\limits_ic_iS_{ik}\right)\sum\limits_{i,j}c_ic_jH_{ij}}{\left(\sum\limits_{i,j}c_ic_jS_{ij}\right)^2}$$
+
+}
+
+\opage{
+
+\otext
+$$= \frac{\sum\limits_jc_j\left(H_{kj} - ES_{kj}\right)}{\sum\limits_{i,j}c_ic_jS_{ij}} + \frac{\sum\limits_ic_i\left(H_{ik} - ES_{ik}\right)}{\sum\limits_{i,j}c_ic_jS_{ij}} = 0$$
+
+This equation is staisfied if the numerators are zero and hence we end up with the secular equations:
+
+\aeqn{6.40}{\sum\limits_i\left(H_{ik} - ES_{ik}\right)c_i = 0}
+
+In the matrix form this is essentially $Ac = 0$ where the matrix $A$ has elements above shown in parentheses and $c$ is a vector consisting of the $c_i$'s. For such equation to have a non-trivial solution, the determinant corresponding to matrix $A$ must be zero:
+
+\aeqn{6.41}{\textnormal{det}\left|H_{ik} - ES_{ik}\right| = 0}
+
+The determinant, which does not have the coefficients $c_i$ in it anymore, expands as a polynomial in terms of $E$. If the original matrix was $n\times n$, then the resulting polynomial will have degree $n$. The lowest energy from the roots should be selected as the approximate value for the energy. Note that it may not be trivial to find the roots for high order polynomials. Once the energy $E$ is known, one can go back to Eq. (\ref{eq6.40}) and solve for the coefficients $c_i$.
+
+}
+
+\opage{
+
+\otext
+Notes:
+
+\begin{itemize}
+
+\item The variation principle leads to an \textit{upper bound} for the energy.
+
+\item It is also possible to determine an upper bound for the first excited state by formulating a trial function that is orthogonal to the ground state function. In principle this procedure can be continued through out the rest of the excited states as well (may not be very practical).
+
+\item There are also methods for finding the \textit{lower bound} for the energy. Thus one could sandwitch the value between the limits.
+
+\item The wavefunction is optimized in terms of energy and there is no guarantee that the resulting wavefunction would be able to describe any other property of the system well.
+
+\end{itemize}
+
+}

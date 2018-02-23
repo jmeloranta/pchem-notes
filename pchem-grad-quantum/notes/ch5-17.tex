@@ -1,0 +1,54 @@
+\opage{
+\otitle{5.17 Symmetry and degeneracy}
+
+\otext
+As we have noted earlier, in quantum mechanics symmetry and degeneracy are often related. First we note that the hamiltonian $H$ of a given system is invariant under every symmetry operation $R$ of the relevant point group:
+
+\aeqn{5.42}{(RH) = H}
+
+This states that the total energy of the system does not change under a symmetry operation. For example, in the harmonic oscillator problem the kinetic energy is proportional to $d^2/dx^2$ and the potential energy is proportional to $x^2$ Both operators are invariant to inversion about the $x$-axis (i.e. $x \rightarrow -x$).
+Furthermore, $H$ is also invariant under a similarity transformation of the group and we can write:
+
+$$RHR^{-1} = H$$
+
+Multiplication from the right by $R$ then gives $RH = HR$, which means that $R$ and $H$ commute.
+
+\vspace*{0.2cm}
+
+Eigenfunctions that are related by symmetry transformations of the system are degenerate.
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} Let $\psi_i$ be an eigenfunction of $H$ with eigenvalue $E$ (i.e. $H\psi_i = E\psi_i$). Multiply the eigenvalue equation from the left by $R$ and we obtain $RH\psi_i = ER\psi_i$. Then we insert $R^{-1}R$ (which is equal to the identity matrix) to get:
+
+}
+
+\opage{
+
+\otext
+
+$$RHR^{-1}R\psi_i = ER\psi_i$$
+
+From the invariance of $H$ we then have:
+
+$$HR\psi_i = ER\psi_i$$
+
+Therefore, $\psi_i$ and $R\psi_i$ correspond to the same energy $E$ and are then degenerate.
+
+\vspace*{0.2cm}
+
+The degree of degeneracy of a set of functions is equal to the dimension of the irreducible representation they span.
+
+\vspace{0.2cm}
+
+\textbf{Proof.} Consider a member $\psi_j$ of a basis for an irreducible representation of dimension $d$ of the point group in question. Suppose that the eigenvalue (i.e. energy) is $E$. Previously we saw that the projection operator $P_{ij}$ (Eq. (\ref{eq5.25})) can be used to generate all other members of the basis if one basis member is given. Since $P_{ij}$ is a linear combination of the symmetry operations in the group, it commutes with the hamiltonian. Hence:
+
+\vspace*{-0.3cm}
+
+$$H\psi_j  = E\psi_j$$
+$$\Rightarrow P_{ij}H\psi_j = HP_{ij}\psi_j = H\psi_i\textnormal{ and }P_{ij}E\psi_j = EP_{ij}\psi_j = E\psi_i$$
+$$\Rightarrow H\psi_i = E\psi_i$$
+
+One can generate all $d$ members of that belong to the degenerate set by applying all different possible $P_{ij}$ operations. The dimension is always given by the character of the identity operation, $\chi(E)$.
+
+}

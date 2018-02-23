@@ -1,0 +1,133 @@
+\opage{
+\otitle{5.6 The properties of matrix representations}
+
+\otext
+Two matrix representations are called \textit{similar} if the representatives for the two bases are related by the \textit{similarity transformation}:
+
+\beqn{5.7}{D(R) = cD'(R)c^{-1}}{D'(R) = c^{-1}D(R)c\textnormal{ (the inverse relation)}}
+
+where $c$ is a (non-singular) matrix formed by the coefficients that relate the two bases. The inverse relation is obtained by multiplying from the left by $c^{-1}$ and from the right by $c$.
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} Denote the old basis by $f(f_1,f_2,...,f_n)$ and the new basis by $f'(f'_1, f'_2,...,f'_n)$. The relationship between these two bases is obtained by taking a linear combination:
+
+$$f_i' = \sum\limits_jf_jc_{ji}$$
+
+where the coefficients $c_{ij}$ are constants that define linear combination. The right hand side can be written as a matrix product:
+
+$$f' = fc$$
+
+where $c$ is the matrix consisting of coefficients $c_{ij}$. Denote the matrix representation of operation $R$ by $D(R)$ (basis $f$) and $D'(R)$ (basis $f'$) then:
+
+}
+
+\opage{
+
+\otext
+$$Rf = fD(R)\textnormal{ and }Rf' = f'D'(R)$$
+
+We can now substitute $f' = fc$ into the last equation:
+
+$$Rfc = fcD'(R)$$
+
+Then we multiply from the right by $c^{-1}$ and note that $cc^{-1} = 1$:
+
+$$Rf = fcD'(R)c^{-1}$$
+
+Comparison of this with $Rf = fD(R)$ gives: $D(R) = cD'(R)c^{-1}$.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Recall the $s$-orbital basis that we used for NH$_3$: $(S_N, S_A, S_B, S_C)$. We can define a similar basis as follows: $(S_N, S_1, S_2, S_3)$ where $S_1 = S_A + S_B + S_C$, $S_2 = 2S_A - S_B - S_C$, and $S_3 = S_B - S_C$. This gives so called symmetry adapted basis functions as shown below:
+
+\ofig{nh3-symmetry-adapted}{0.3}{}
+
+}
+
+\opage{
+
+\otext
+The matrix representation of $C_{3v}$ in $(S_N,S_1,S_2,S_3)$ basis is given by:
+
+\begin{center}
+\begin{tabular}{lll}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & -1/2\\
+0 & 0 & 1/2 & -1/2\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & 1/2\\
+0 & 0 & -1/2 & -1/2\\
+\end{matrix}\right)$\\
+$\chi(E) = 4$ & $\chi(C_3^+) = 1$ & $\chi(C_3^-) = 1$\\
+ & & \\
+$D(\sigma_v)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & -1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & 1/2\\
+0 & 0 & 3/2 & 1/2\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & -1/2\\
+0 & 0 & -3/2 & 1/2\\
+\end{matrix}\right)$\\
+$\chi(\sigma_v) = 2$ & $\chi(\sigma_v') = 2$ & $\chi(\sigma_v'') = 2$\\
+\end{tabular}
+\end{center}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} The matrix representation of $C_3^+$ in $C_{3v}$ for the $s$-orbital basis (not the above symmetry adapted basis) was given previously. Construct the matrix for carrying out the similarity transformation between this basis and the symmetry adapted basis (above). Evaluate $C_3^+$ in the new basis (the result is given above).
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The relationship between the two bases is: $S_N = S_N, S_1 = S_A + S_B + S_C, S_2 = 2S_A - S_B - S_C, S_3 = S_B - S_C$
+
+The transformation between the bases can be represeted as:
+
+$$(s_N,S_1,S_2,S_3) = (S_N,S_A,S_B,S_C)\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 2 & 0\\
+0 & 1 & -1 & 1\\
+0 & 1 & -1 & -1\\
+\end{matrix}\right)$$
+
+This is the matrix $c$. Next we need to invert $c$:
+
+$$c^{-1} = \frac{1}{6}\left(\begin{matrix}
+6 & 0 & 0 & 0\\
+0 & 2 & 2 & 2\\
+0 & 2 & -1 & -1\\
+0 & 0 & 3 & -3\\
+\end{matrix}\right)$$
+
+This allows us to calculate $C_3^+$ in the new basis:
+
+$$D'(C_3^+) = c^{-1}D(C_3^+)c = ... = \left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & -1/2\\
+0 & 0 & 1/2 & 1/2\\
+\end{matrix}\right)$$
+
+}

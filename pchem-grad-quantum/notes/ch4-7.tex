@@ -1,0 +1,91 @@
+\opage{
+\otitle{4.7 The angular momentum eigenfunctions}
+
+\otext
+In the following we will consider \textit{orbital angular momentum} explicitly. We had concluded earlier that we needed to solve a 2nd order differential equation, which we just stated to be spherical harmonics (without the actual calculation). Here we show that there is an easier way to solve this problem where we just need to consider a first order differential equation.
+
+\vspace*{0.2cm}
+
+We start by looking for the wavefunction $\left|l,l\right>$ (i.e. $m_l = l$). Once we have found this wavefunction, we can apply the lowering operator $l_-$ on it to get the other wavefunctions corresponding to different $m_l$ values. We need to solve the equation:
+
+$$l_+\left|l,l\right> = 0$$
+
+To solve this equation, we need to express the Cartesian angular momentum operators in spherical coordinates:
+
+\vspace*{-0.2cm}
+
+\ceqn{4.30}{l_x = -\frac{\hbar}{i}\left(\sin(\phi)\frac{\partial}{\partial\theta} + \cot(\theta)\cos(\phi)\frac{\partial}{\partial\phi}\right)}
+{l_y = \frac{\hbar}{i}\left(\cos(\phi)\frac{\partial}{\partial\theta} - \cot(\theta)\sin(\phi)\frac{\partial}{\partial\phi}\right)}
+{l_z = \frac{\hbar}{i}\frac{\partial}{\partial\phi}}
+
+\vspace*{-0.2cm}
+
+where $\cot(\theta) = \frac{1}{\tan(\theta)}$.
+
+}
+
+\opage{
+
+\otext
+Now we can write the lowering and rising operators using the above Cartesian forms:
+
+\beqn{4.31}{l_+ = \hbar e^{i\phi}\left(\frac{\partial}{\partial\theta} + i\cot(\theta)\frac{\partial}{\partial\phi}\right)}
+{l_- = -\hbar e^{-i\phi}\left(\frac{\partial}{\partial\theta} - i\cot(\theta)\frac{\partial}{\partial\phi}\right)}
+
+Using these representations we can now rewrite our $l_+\left|l,l\right> = 0$ equation as:
+
+$$\hbar e^{i\phi}\left(\frac{\partial}{\partial\theta} + i\cot(\theta)\frac{\partial}{\partial\phi}\right)\psi_{l,l}(\theta,\phi) = 0$$
+
+This partial differential equation can be separated by writing $\psi(\theta,\phi) = \Theta(\theta)\Phi(\phi)$. After substituting, differentiating and dividing appropriately, we get:
+
+$$\frac{\tan(\theta)}{\Theta}\frac{d\Theta}{d\theta} = -\frac{i}{\Phi}\frac{d\Phi}{d\phi}$$
+
+Since the LHS depends on $\theta$ only and the RHS on $\phi$ only so they must be equal to some constant, which we denote by $c$. Therefore we can write two equations:
+
+$$\tan(\theta)\frac{d\Theta}{d\theta} = c\Theta\textnormal{ and }\frac{d\Phi}{d\phi} = ic\Phi$$
+
+}
+
+\opage{
+
+\otext
+These two equations can be integrated directly to give:
+
+$$\Theta \propto \sin^c(\theta)\textnormal{ and }\Phi\propto e^{ic\phi}$$
+
+The constant $c$ can be found to be equal to $l$ by requiring that $l_z\psi_{l,l} = l\hbar\psi_{l,l}$. Thus we can write the complete solution as:
+
+\aeqn{4.32}{\psi_{l,l} = N\sin^l(\theta)e^{il\phi}}
+
+where $N$ is a normalization constant. This can be verified to correspond to the spherical harmonics we listed earlier. To get the rest of the eigenfunctions, one now needs to apply $l_-$ repeatedly on Eq. (\ref{eq4.32}).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Construct the wavefunction for the state $\left|l,l-1\right>$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We know that $l_-\left|l,l\right> = c_-\hbar\left|l,l-1\right>$ and the position representation for $l_-$ we can proceed:
+
+$$l_-\psi_{l,l} = -\hbar e^{-i\phi}\left(\frac{\partial}{\partial\theta} - i\cot(\theta)\frac{\partial}{\partial\phi}\right)N\sin^l(\theta)e^{il\phi}$$
+$$= -N\hbar e^{-i\phi}\left(l\sin^{l-1}(\theta)\cos(\theta) - i(il)\cot(\theta)\sin^l(\theta)\right)e^{il\phi}$$
+$$ = -2Nl\hbar\sin^{l-1}(\theta)\cos(\theta)e^{i(l-1)\phi}$$
+
+}
+
+\opage{
+
+\otext
+On the other hand we also know that:
+
+$$l_-\left|l,l\right> = \sqrt{l(l+1) - l(l-1)}\hbar\left|l,l-1\right> = \sqrt{2l}\hbar\left|l,l-1\right>$$
+
+Therefore we can now extract $\left|l,l-1\right>$:
+
+$$\psi_{l,l-1} = -\sqrt{2l}N\sin^{l-1}(\theta)\cos(\theta)e^{i(l-1)\phi}$$
+
+Note that the normalization constant is universal in a sense that one $N$ will provide normalization for all $\left|l,m_l\right>$:
+
+$$N = \frac{1}{2^ll!}\sqrt{\frac{(2l+1)!}{4\pi}}$$
+
+}

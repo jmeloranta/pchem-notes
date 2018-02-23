@@ -1,0 +1,40 @@
+\opage{
+\otitle{5.7 The characters of representations}
+
+\otext
+The diagonal sum of matrix elements is called the \textit{character of the matrix}:
+
+\aeqn{5.8}{\chi(R) = \sum\limits_iD_{ii}(R)}
+
+The two different matrix representations using the two different bases previously all had the same characters for a given operation. In mathematics this operation is called \text{trace} of the matrix and is denoted by $tr$. For example:
+
+\aeqn{5.9}{\chi(R) = trD(R)}
+
+It turns out that similarity transforms preserve the matrix trace (invariance) and this is the reason why the two previous cases results in identical matrix traces.  In proving this results, we will use the following general results for matrices:
+
+\aeqn{5.10}{trABC = trCAB = trBCA}
+
+\textbf{Proof of matrix trace invariance.} First, we express the trace as a diagonal sum:
+
+$$trABC = \sum\limits_i\left(ABC\right)_{ii}$$
+
+}
+
+\opage{
+
+\otext
+Next we expand the matrix product using matrix multiplication:
+
+$$trABC = \sum\limits_{ijk}A_{ij}B_{jk}C_{ki}$$
+
+Matrix elements are just plain numbers and they can be multiplied in any order. Thus we recast the above as:
+
+$$trABC = \sum\limits_{ijk}B_{jk}C_{ki}A_{ij} = \sum\limits_j\left(BCA\right)_{jj} = trBCA$$
+
+This result can be used to establish the invariance of the trace under a similarity transformation ($D(R) = cD'(R)c^{-1}$):
+
+$$\chi(R) = trD(R) = trcD'(R)c^{-1} = trD'(R)c^{-1}c = trD'(R) = \chi'(R)$$
+
+This shows that the traces in both representations are equal.
+
+}

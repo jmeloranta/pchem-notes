@@ -1,0 +1,58 @@
+\opage{
+\otitle{2.12 Particle in a box: Solutions of the one dimensional problem}
+
+\otext
+Particle in one dimensional box is confined by a ``box potential'', which is essentially an infinitely deep square well. The Hamiltonian for this problem is given by:
+
+\aeqn{2.27}{H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\textnormal{ where }V(x) = \left\lbrace
+\begin{matrix}
+0,\textnormal{ for }0\le x\le L\\
+\infty, \textnormal{ otherwise}\phantom{xxx}\\
+\end{matrix}
+\right.
+}
+
+Because the potential energy at the walls (i.e. when $x = 0$ or $x = L$), the particle cannot penetrate the wall at these points. Thus we can replace the potential term with a \textit{Dirichlet boundary condition} where we require the wave function to be zero at $x = 0$ and $x = L$. Now Eq. (\ref{eq2.27}) can be written simply as:
+
+\aeqn{2.28}{H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}}
+
+but we require that $\psi$ in $H\psi = E\psi$ goes to zero at points $x = 0$ and $x = L$. Note that the previous equation looks like there is no external potential and one might think that there is no quantitization of energy. However, in this case the boundary conditions enforce the quantitization. The general solution to the eigenvalue problem $H\psi = E\psi$ with $H$ given in Eq. (\ref{eq2.28}) is:
+
+$$\psi(x) = C\cos(kx) + D\sin(kx)\textnormal{ with }k\hbar = \sqrt{2mE}$$
+
+}
+
+\opage{
+
+\otext
+This has to be zero when $x = 0$: $\psi(0) = C = 0$. Thus $C = 0$ and we have $\psi(x) = D\sin(kx)$ so far. At $x = L$ we have: $\psi(L) = D\sin(kL) = 0$. This can be satisfied when:
+
+\aeqn{2.29}{k = \frac{n\pi}{L}\textnormal{ where }n = 1,2,...}
+
+Note that the value $n = 0$ is excluded because it would yield $\psi(x) = 0$ for all $x$. The integer $n$ is called a \textit{quantum number} and can be used to label states of the system as well as to calculate the energy:
+
+\aeqn{2.30}{E_n = \frac{k^2\hbar^2}{2m} = \frac{n^2\hbar^2\pi^2}{2mL^2} = \frac{n^2h^2}{8mL^2}\textnormal{ with }n = 1, 2, ...}
+
+The important outcome of this calculation is to see that the energy is quantitized, which means that it can only take certain values (given by Eq. (\ref{eq2.30}). We still need to determine the constant $D$ in the wavefunction, which will be given by the normalization condition:
+
+$$\int\limits_0^L\psi^*(x)\psi(x)dx = D^2\int\limits_0^L\sin^2\left(\frac{n\pi x}{L}\right)dx = \frac{1}{2}LD^2$$
+
+which gives $D = \sqrt{2 / L}$.
+
+}
+
+\opage{
+
+\otext
+The complete wavefunction can now be written as:
+
+\aeqn{2.31}{\psi(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)}
+
+with the energies given by:
+
+$$E_n = \frac{n^2h^2}{8mL^2}\textnormal{ where }n = 1, 2, ...$$
+
+\ofig{elevels}{0.4}{Energy levels and wavefunctions for a particle in one dimensional box.}
+
+}
+

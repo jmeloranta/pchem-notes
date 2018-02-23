@@ -1,0 +1,49 @@
+\opage{
+\otitle{2.9 Penetration into and through barriers: An infinitely thick potential wall}
+
+\otext
+In the following we will consider how a particle in freely translational motion will react to a potential barrier. First we consider an infinitely thick potential barrier as shown below.
+
+\ofig{infinitely-thick-barrier}{0.6}{}
+
+We take the particle to approach from the left (Zone 1) and proceed to the right toward Zone 2. According to classical physics, the particle would be able to go over the barrier if it has enough kinetic energy ($T \ge V$). If this is not the case, the particle would bounce back and continue to the left. Quantum mechanics predicts something very different as it allows particle to overcome the barrier even if it does not have the sufficient kinetic energy.
+
+}
+
+\opage{
+
+\otext
+To solve the problem, we have to write the Schr\"odinger equation for the problem. Since we have two different zones with different potential energy, we can write two different equations:
+
+\beqn{2.14}{\textnormal{Zone 1 } (x < 0)\textnormal{: }H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}}
+{\textnormal{Zone 2 } (x \ge 0)\textnormal{: }H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V}
+
+In zone 1 the eigenfunctions correspond to those of a free particle (i.e., $e^{ikx}$ and $e^{-ikx}$). In Zone 2 we have to replace $E$ by $E - V$ to account for the change in potential. According to Eq. (\ref{eq2.5}) the solutions in these to zones are:
+
+\beqn{2.15}{\textnormal{Zone 1: } \psi(x) = Ae^{ikx} + Be^{-ikx}\textnormal{ with }k\hbar = \sqrt{2mE}}
+{\textnormal{Zone 2: } \psi(x) = A'e^{ik'x} + B'e^{-ik'x}\textnormal{ with }k'\hbar = \sqrt{2m\left(E - V\right)}}
+
+If $E < V$ then $k'$ must be imaginary so we will denote $k' = i\kappa$ to simplfy notation. Then in Zone 2 we have:
+
+\aeqn{2.16}{\textnormal{Zone 2: }\psi(x) = A'e^{-\kappa x} + B'e^{\kappa x}\textnormal{ where }\kappa\hbar = \sqrt{2m\left(V - E\right)}}
+
+}
+
+\opage{
+
+\otext
+The above wavefunction is a mixture of decaying and increasing exponentials and thus the wavefunction does not oscillate in Zone 2 (as opposed to Zone 1). Because the potential barrier is infinitely wide, we can safely exclude the increasing exponential in the solution since we expect the amplitude of the wavefunction to decay as we go deeper into the barrier:
+
+$$\textnormal{Zone 2: }\psi(x) = A'e^{-\kappa x}$$
+
+We can now give a qualitative picture of the solution:
+
+\ofig{infinitely-thick-barrier2}{0.6}{}
+
+The decay reate is determined by $\kappa$ and $\kappa^{-1}$ is called the \textit{penetration depth}. As can be seen in Eq. (\ref{eq2.16}), the penetration depth decreases when the mass increases or the potential barrier height $V$ increases.
+
+\vspace*{0.2cm}
+
+Macroscopic particles have such high mass that in practice they will not be found in classically forbidden regions. However, for light particles, such electrons or protons, this effect is often significant.
+
+}

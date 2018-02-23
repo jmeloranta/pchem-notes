@@ -1,0 +1,45 @@
+\opage{
+\otitle{1.14 The separation of the Schr\"odinger equation}
+
+\otext
+When the Hamiltonian operator $H$ does not depend on time, Eq. (\ref{eq1.27}) can be separated into two equations: 1) The time-independent Schr\"odinger equation and 2) an auxiliary equation defining the phase evolution of the time-dependent wavefunction. Since most often $H = T + V$ (``kinetic + potential''), it is sufficient to have the potential function $V$ time-independent. In the following we will demonstrate how the separation can be carried out in one dimension:
+
+$$H\Psi = -\frac{\hbar^2}{2m}\frac{\partial^2\Psi}{\partial x^2} + V(x)\Psi = i\hbar\frac{\partial\Psi}{\partial t}$$
+
+Apart from the wavefunction itself the left hand side depends only on the spatial coordinate $x$ and the right hand side only on time $t$. In such case one can write the solution in the following form: $\Psi(x,t) = \psi(x)\theta(t)$ where $\psi$ and $\theta$ are function that depend only on $x$ and $t$ respectively. After this substitution, we get:
+
+\vspace*{-0.2cm}
+
+$$-\frac{\hbar^2}{2m}\theta\frac{d^2\psi}{dx^2} + V(x)\psi\theta = i\hbar\psi\frac{d\theta}{dt}$$
+
+By dividing both sides by $\psi\theta$, we have:
+
+$$-\frac{\hbar^2}{2m}\frac{1}{\psi}\frac{d^2\psi}{dx^2} + V(x) = i\hbar\frac{1}{\theta}\frac{d\theta}{dt}$$
+
+The left hand side depends only on $\psi$ and the right hand side only on $\theta$. Since they can be varied independently and the equation still must hold, both sides of the equation must be constant. This constant we denote by $E$ and call it ``energy'':
+}
+
+\opage{
+
+\otext
+$$-\frac{\hbar^2}{2m}\frac{1}{\psi}\frac{d^2\psi}{dx^2} + V(x) = E$$
+
+By multiplying both sides by $\psi$ we finally have:
+
+\aeqn{1.29}{-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi}
+
+For short we can write this as $H\psi = E\psi$ (\textit{the time-independent Schr\"odinger equation}). In a similar way we obtain another equation for $\theta$:
+
+$$i\hbar\frac{d\theta}{dt} = E\theta$$
+
+which has a solution: 
+
+\aeqn{1.30}{\theta \propto e^{-iEt/\hbar}} 
+
+This results in phase spinning in the complex plane with frequency dictated by $E$:
+
+\aeqn{1.31}{\Psi(x,t) = \psi(x)e^{-iEt/\hbar}}
+
+The higher the energy, the faster the phase spinning. It is helpful to remeber the Euler's relation: $e^{ix} = \cos(x) + \sin(x)$ with the parity rules: $\sin(-x) = -\sin(x)$ and $\cos(-x) = \cos(x)$.  Thus the overall wavefunction $\Psi$ will have both $\psi$ and $\theta$ dependent parts in it with the first giving the spatial behavior and the latter the temporal behavior. Note that $\left|\Psi\right|^2$ does not depend on time and hence these states are called \textit{stationary}.
+
+}

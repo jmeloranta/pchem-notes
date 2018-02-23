@@ -1,0 +1,23 @@
+\opage{
+\otitle{1.12 The interpretation of the wavefunction}
+
+\otext
+The wavefunction is given the \textit{probability interpretation} (also called the \textit{Born interpretation}):
+
+\vspace*{0.2cm}
+
+\textbf{Postulate \#4.} For normalized wavefunctions $\psi(r)$, the probability that a particle will be found in the volume element $d\tau$ at the point $r$ is equal to $\left|\psi(r)\right|^2d\tau$.
+
+\vspace*{0.2cm}
+
+In one dimension the volume element $d\tau$ is $dx$ and in three dimensions $dxdydz$ (Cartesian coodinates) or $r^2\sin(\theta)drd\theta d\phi$ (spherical coordinates; $r: 0 \rightarrow \infty, \theta :0\rightarrow \pi, \phi : 0\rightarrow 2\pi$). According to the Born interpretation $\left|\psi(r)\right|^2d\tau$ gives the probability of the particle to occur within the volume element $d\tau$. The \textit{wavefunction itself has no direct physical} meaning since experiments can only determine quantities that depend on the square of the wavefunction. Note that the wavefunction may be a complex valued function whereas $\left|\psi(r)\right|^2$ is always real and non-negative.
+
+\vspace*{0.2cm}
+
+Note that any wavefunction that is square integrable (i.e. $\psi \in L^2$) can be normalized and given the probability interpretation. This also implies that $\left|\psi(r)\right| \rightarrow 0$ when $\left|r\right| \rightarrow \infty$. This will be especially useful result when applying the Green's formula:
+
+$$\int\limits_{\Omega}\frac{\partial v}{\partial x_j}wdx + \int\limits_{\Omega}v\frac{\partial w}{\partial x_j}dx = \int\limits_{\partial\Omega}vwn_jds$$
+
+where $v$ and $w$ are functions that depend on variables $x_1, x_2, ..., x_j, ..., x_N$ and $n_j$ are the components of the outward normal to $\partial\Omega$. If $v$ and $w$ are such that they appraoch zero at the boudary, the left hand side term is zero.
+
+}

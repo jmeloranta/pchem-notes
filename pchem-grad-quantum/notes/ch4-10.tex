@@ -1,0 +1,50 @@
+\opage{
+\otitle{4.10 The permitted values of the total angular momentum}
+
+\otext
+Consider the coupled representation $\left|j_1,j_2;j,m_j\right>$. What are the allowed values for $j$ and $m_j$? For example, if we have one $p$-electron, which has $l = 1$ and $s = 1/2$, then it does not seem possible to have total angular momentum to be larger than $3/2$. The allowed values for $m_j$ follow from $j_z = j_{1z} + j_{2z}$:
+
+\aeqn{4.43}{m_j = m_{j_1} + m_{j_2}}
+
+This states that the $z$-axis projections are just summed to give the total projected value. The possible values for $j$ are given by the Glebsch-Gordan (GG) series:
+
+\aeqn{4.44}{j = j_1 + j_2, j_1 + j_2 - 1, ..., \left|j_1 - j_2\right|}
+
+To justify this results we first notice that it gives the same number of states as the uncoupled representation. For example, when $j_1 = j_2 = 1$, the uncoupled representation has states: $\left|1,1;1,1\right>$, $\left|1,0;1,1\right>$, $\left|1,-1;1,1\right>$, ... ($3\times 3 = 9$ states). The coupled representation, according to the above prescription, gives: $\left|1,1;2,2\right>$, $\left|1,1;2,1\right>$, $\left|1,1;2,0\right>$, ... ($(2\times 2 + 1) + (2\times 1 + 1) + (2\times 0 + 1) = 9$ states).
+
+\vspace{0.2cm}
+
+To justify the first term in the GG series consider the state with the maximum amount of angular momentum about the quantitization axis: $m_{j_1} = j_1$ and $m_{j_2} = j_2$. Eq. (\ref{eq4.43}) gives then the following maximum value for $m_j = m_{j_1} + m_{j_2} = j_1 + j_2$. Since the maximum value for $m_j$ is $j$ by definition, we have $j = j_1 + j_2$.
+
+}
+
+\opage{
+
+\otext
+The second term in the GG series ($j = j_1 + j_2 - 1$) can be justified as follows. Consider two uncoupled states with 1) $m_{j_1} = j_1 - 1$ \& $m_{j_2} = j_2$  and 2)$m_j = j_1$ \& $m_{j_2} = j_2 - 1$. These two states contribute to $j = j_1 + j_2$ with $m_j = j-1$ but also to $j = j_1 + j_2 - 1$ with $m_j = j$. One can continue this process to account for all the states that are shown in the GG series. Overall the procedure must be repeated until the right number of states are identified.
+
+\vspace*{0.2cm}
+\textbf{Example.} What angular momentum can arise from two sources, which have $j_1 = \frac{1}{2}$ and $j_2 = \frac{3}{2}$? Express the eigenstates in both coupled and uncoupled representations.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} To find out the possible values for the total angular momentum $j$, we need to write the GG series (Eq. (\ref{eq4.44})):
+
+$$j = 2, 1$$
+
+Eigenstates in the uncoupled representation are:
+
+$$\left|\frac{1}{2},+\frac{1}{2};\frac{3}{2},+\frac{3}{2}\right>\textnormal{, }\left|\frac{1}{2},+\frac{1}{2};\frac{3}{2},+\frac{1}{2}\right>\textnormal{, }\left|\frac{1}{2},+\frac{1}{2};\frac{3}{2},-\frac{1}{2}\right>\textnormal{, }\left|\frac{1}{2},+\frac{1}{2};\frac{3}{2},-\frac{3}{2}\right>$$
+$$\left|\frac{1}{2},-\frac{1}{2};\frac{3}{2},+\frac{3}{2}\right>\textnormal{, }\left|\frac{1}{2},-\frac{1}{2};\frac{3}{2},+\frac{1}{2}\right>\textnormal{, }\left|\frac{1}{2},-\frac{1}{2};\frac{3}{2},-\frac{1}{2}\right>\textnormal{, }\left|\frac{1}{2},-\frac{1}{2};\frac{3}{2},-\frac{3}{2}\right>$$
+
+}
+
+\opage{
+
+\otext
+In the coupled representation the eigenstates are:
+
+$$\left|\frac{1}{2},\frac{3}{2};2,+2\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};2,+1\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};2,0\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};2,-1\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};2,-2\right>$$
+$$\left|\frac{1}{2},\frac{3}{2};1,+1\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};1,0\right>\textnormal{, }\left|\frac{1}{2},\frac{3}{2};1,-1\right>$$
+
+}

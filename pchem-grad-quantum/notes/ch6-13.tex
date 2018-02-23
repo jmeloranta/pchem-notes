@@ -1,0 +1,38 @@
+\opage{
+\otitle{6.13 The Rabi formula}
+
+\otext
+We are interested in finding the system in one of the two states as a function of time. The probabilities for the two states are given by $P_1(t) = \left|a_1(t)\right|^2$ and $P_2(t) = \left|a_2(t)\right|^2$. Initially we have $P_2(0) = 0$. We can now write down the \textit{Rabi formula} by using Eq. (\ref{eq6.55}):
+
+\aeqn{6.56}{P_2(t) = \left(\frac{4\left|V\right|^2}{\omega_{21}^2 + 4\left|V\right|^2}\right)\sin^2\left(\frac{1}{2}\left(\omega_{21}^2 + 4\left|V\right|^2\right)^{1/2}t\right)}
+
+where the probability for the system to be in state 1 is given by $P_2(t) = 1 - P_1(t)$. 
+
+\vspace*{0.2cm}
+
+\textbf{Case 1:} Degenerate states. In this case $\omega_{21} = 0$ and Eq. (\ref{eq6.56}) becomes:
+
+\aeqn{6.57}{P_2(t) = \sin^2\left(\left|V\right|t\right)}
+
+This shows that the population oscillates (\textit{Rabi oscillations}) between the two states. Because the oscillation period depends on $\left|V\right|$, we see that a strong perturbation drives the system more rapidly than a weak perturbation. Regardless of the strength of the perturbation, it is possible to achieve condition where the system is purely in state 1 or state 2.
+
+\vspace*{0.2cm}
+
+\textbf{Case 2:} $\omega_{21}^2>>4\left|V\right|^2$, which means that the energy levels are widely separated compared to the strength of the perturbation. In this case we can approximately remove $4\left|V\right|^2$ from the denominator and the argument of sin in Eq. (\ref{eq6.56}).
+
+}
+
+\opage{
+
+\otext
+\aeqn{6.58}{P_2(t) \approx \left(\frac{2\left|V\right|}{\omega_{21}}\right)^2\sin^2\left(\frac{1}{2}\omega_{21}t\right)}
+
+$P_2(t)$ with two different values of $\omega_{21}$ are plotted below.
+
+\vspace*{0.2cm}
+
+\ofig{rabi}{0.3}{}
+
+Note that this can be used to prepare population inversion even in a two-level system! This is, for example, used in NMR spectroscopy.
+
+}

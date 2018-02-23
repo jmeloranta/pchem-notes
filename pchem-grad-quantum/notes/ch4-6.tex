@@ -1,0 +1,100 @@
+\opage{
+\otitle{4.6 The matrix elements of the angular momentum}
+
+\otext
+We still have not worked out the function $c_\pm(j,m_j)$:
+
+\aeqn{4.23}{j_\pm\left|j,m_j\right> = c_\pm\left(j,m_j\right)\hbar\left|j,m_j\pm 1\right>}
+
+Because these functions form an orthonormal set, multiplication from the left gives:
+
+\aeqn{4.24}{\left<j,m_j\pm 1\right|j_\pm\left|j,m_j\right> = c_\pm(j,m_j)\hbar}
+
+So we basically need to know the above matrix elements in order to know $c_\pm$. These matrix elements play important role in calculating transition intensities in magnetic resonance spectroscopy. 
+
+\vspace*{0.2cm}
+
+\underline{Calculation of matrix elements.} Eqs. (\ref{eq4.18}) and (\ref{eq4.23}) give two different ways to evaluate the operation of $j_-j_+$:
+
+$$j_-j_+\left|j,m_j\right> = \left(j^2 - j_z^2 - \hbar j_z\right)\left|j,m_j\right> = \left(j(j+1) - m_j(m_j + 1)\right)\hbar^2\left|j,m_j\right>$$
+$$j_-j_+\left|j,m_j\right> = j_-c_+(j,m_j)\hbar\left|j,m_j+1\right> = c_+(j,m_j)c_-(j,m_j+1)\hbar^2\left|j,m_j\right>$$
+
+Comparison of these two expressions yields:
+
+}
+
+\opage{
+
+\otext
+\aeqn{4.25}{c_+(j,m_j)c_-(j,m_j+1) = j(j+1) - m_j(m_j + 1)}
+
+We need one more equation to obtain the $c_\pm$. Consider the following matrix element:
+
+$$\left<j,m_j\right|j_-\left|j,m_j+1\right> = c_-(j,m_j+1)\hbar$$
+
+This can be manipulated as follows ($j_x$ and $j_y$ are hermitean):
+
+$$\left<j, m_j\right|j_-\left|j,m_j+1\right> = \left<j,m_j\right|j_x - ij_y\left|j,m_j+1\right>$$
+$$ = \left<j,m_j\right|j_x\left|j,m_j+1\right> - i\left<j,m_j\right|j_y\left|j,m_j+1\right>$$
+$$ = \left<j,m_j+1\right|j_x\left|j,m_j\right>^* - i\left<j,m_j+1\right|j_y\left|j,m_j\right>^*$$
+$$ = \left(\left<j,m_j+1\right|j_x\left|j,m_j\right> + i\left<j,m_j+1\right|j_y\left|j,m_j\right>\right)^*$$
+$$ = \left<j,m_j+1\right|j_+\left|j,m_j\right>^*$$
+
+We have just shown that $j_-$ and $j_+$ are each other's \textit{hermitean conjugates}:
+
+\aeqn{4.26}{\left<j,m_j\right|j_-\left|j,m_j + 1\right> = \left<j,m_j+1\right|j_+\left|j,m_j\right>^*}
+
+}
+
+\opage{
+
+\otext
+In general, operators $A$ and $B$ are each other's hermietan conjugates if:
+
+\aeqn{4.27}{\left<a\right|A\left|b\right> = \left<b\right|B\left|a\right>^*}
+
+By combining Eqs. (\ref{eq4.23}) and (\ref{eq4.26}) we get the following relation between $c_-$ and $c_+$:
+
+\aeqn{4.28}{c_j(j,m_j+1) = c_+^*(j,m_j)}
+
+Eq. (\ref{eq4.25}) now gives:
+
+$$\left|c_+(j,m_j)\right|^2 = j(j+1) - m_j(m_j + 1)$$
+
+Next we choose $c_+$ to be real and positive:
+
+\aeqn{4.29}{c_+(j,m_j) = \sqrt{j(j+1) - m_j(m_j + 1)} = c_-(j,m_j)}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Evaluate the matrix elements (a) $\left<j,m_j+1\right|j_x\left|j,m_j\right>$,\\ (b) $\left<j,m_j + 2\right|j_x\left|j,m_j\right>$, and (c) $\left<j,m_j+2\right|j_x^2\left|j,m_j\right>$.
+
+\vspace*{0.3cm}
+
+\textbf{Solution.} Express $j_x$ in terms of the shift operators and use the previous results.
+
+}
+
+\opage{
+
+\otext
+(a) $$\left<j,m_j+1\right|j_x\left|j,m_j\right> = \frac{1}{2}\left<j,m_j+1\right|j_+ + j_-\left|j,m_j\right>$$
+$$= \frac{1}{2}\left<j,m_j+1\right|j_+\left|j,m_j\right> + \frac{1}{2}\umark{\left<j,m_j+1\right|j_-\left|j,m_j\right>}{ = 0}$$
+$$ = \frac{1}{2}c_+(j,m_j)\hbar$$
+
+(b) $$\left<j,m_j+2\right|j_x\left|j,m_j\right> = 0$$
+(the rising and lowering operators can not produce $\left|j,m_j+2\right>$ state from $\left|j,m_j\right>$)
+
+\vspace*{0.2cm}
+
+(c) $$\left<j,m_j+2\right|j_x^2\left|j,m_j\right> = \frac{1}{4}\left<j,m_j+2\right|j_+^2 + j_-^2 + j_+j_- + j_-j_+\left|j,m_j\right>$$
+
+}
+
+\opage{
+
+\otext
+$$= \frac{1}{4}\left<j,m_j+2\right|j_+^2\left|j,m_j\right> = \frac{1}{4}c_+(j,m_j+1)c_+(j,m_j)\hbar^2$$
+$$= \frac{1}{4}\sqrt{j(j+1) - (m_j+1)(m_j+2)}\sqrt{j(j+1) - m_j(m_j + 1)}\hbar^2$$
+
+}

@@ -1,0 +1,75 @@
+\opage{
+\otitle{4.5 The eigenvalues of angular momentum}
+
+\otext
+From our previous calculation it is apparent that $l_+$ and $l_-$ step $m_l$ by $\pm 1$. We have established that there must be an upper limit for $m_l$ since $f(\lambda,m_l) \ge m_l^2$. The maximum value for $m_l^2$ we denote by $l$. If we operate on a state with $m_l = l$, we generate nothing, because there is no state with a larger value of $m_l$:
+
+$$l_+\left|\lambda,l\right> = 0$$
+
+This relation will give us the unknown function $f$. When we apply $l_-$ on this, we get:
+
+$$l_-l_+\left|\lambda,l\right> = 0$$
+
+On the other hand, the product $l_-l_+$ can be expanded as follows:
+
+\beqn{4.18}{l_-l_+ = \left(l_x - il_y\right)\left(l_x + il_y\right) = l_x^2 + l_y^2 + il_xl_y - il_yl_x = l_x^2 + l_y^2 + i\left[l_x,l_y\right]}
+{= l^2 - l_z^2 + i\left(i\hbar l_z\right)}
+
+Thus we can write the previous equation as:
+
+$$l_-l_+\left|\lambda,l\right> = (l^2 - l_z^2 - \hbar l_z)\left|\lambda,l\right> = 0$$
+
+}
+
+\opage{
+
+\otext
+Rearranging the above gives now:
+
+$$l^2\left|\lambda,m\right> = \left(l^2_z + \hbar l_z\right)\left|\lambda,l\right> = \left(l^2 + l\right)\hbar^2\left|\lambda,l\right>$$
+
+Now it follows that $f(\lambda,l) = l(l+1)$. Since $l_-$ does not change the value of $l^2$, all states $\left|\lambda,l\right>, \left|\lambda,l-1\right>, ...$ have the same eigenvalue of $l^2$. Therefore:
+
+$$f(\lambda,m_l) = l(l+1)\textnormal{, for }m_l = l, l-1, ...$$
+
+Using similar reasoning, it can be shown that the lower limit for $m_l$ is $-l$. Thus overall we have:
+
+$$f(\lambda,m_l) = l(l+1)\textnormal{, for }m_l = l, l-1, ..., 0, ..., -l+1, -l$$
+
+By comparing the role of $\lambda$ in the original eigenvalue equation and the $l$ above, we can identify that they are the same: $\lambda = l$ (i.e. the maximum value of $\left|m_l\right|$). Now we have:
+
+\vspace*{-0.2cm}
+
+\aeqn{4.19}{f(l,m_l) = l(l+1)\textnormal{ for }m_l = l, l-1, ..., -l+1, -l}
+
+and also:
+
+\aeqn{4.20}{l^2\left|l,m_l\right> = l(l+1)\hbar^2\left|l,m_l\right>}
+
+and we already knew that:
+
+\aeqn{4.21}{l_z\left|l,m_l\right> = m_l\hbar\left|l,m_l\right>}
+
+}
+
+\opage{
+
+\otext
+Given a value for $l$ then $m_l$ can vary between $-l$ and $l$ taking unit steps. For example, $l = 2$ will give $m_l = +2,+1,0,-1,-2$. $l$ can also take a value of half-integer. For example, in this case $l = 3/2$ and $m_l = +3/2, 1/2, -1/2, -3/2$.
+
+\vspace*{0.2cm}
+
+Overall, based on the hermiticity of the angular momentum operators and their commutation relations, we have shown that:
+
+\begin{itemize}
+\item The magnitude of the angular momentum is confined to the values $\sqrt{l(l+1)}\hbar$ with $l=0,1,2,...$
+\item The component on an arbitrary $z$-axis is limited to the $2l+1$ values $m_l\hbar$ with $m_l = l, l-1, ..., -l$.
+\end{itemize}
+
+Note that the value of $l$ earlier in the context of rotation (cyclic boundary condition) was fixed to an integer whereas here it may also take half-integer values. It turns out that spin (electron or nuclear) will follow the angular momentum laws with integra or half-integral value of $l$. For systems with cyclic boundary conditions we will use notation $l$ and $m_l$, for general discussion on angular momentum $j$ and $m_j$ and $s$/$m_s$ for half-integral systems. The general notation would therefore be:
+
+\aeqn{4.22}{j^2\left|j,m_j\right> = j(j+1)\hbar^2\left|j,m_j\right>\textnormal{ and }j_z\left|j,m_j\right> = m_j\hbar\left|j,m_j\right>}
+
+with $m_j = j, j-1, ..., -j$.
+
+}

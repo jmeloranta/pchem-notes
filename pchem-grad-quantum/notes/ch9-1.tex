@@ -1,0 +1,33 @@
+\opage{
+\otitle{9.1 Mathematical definition of the problem}
+
+\otext
+
+Electronic structure calculations employ the time-independent Schr\"odinger equation:
+
+\vspace*{-0.25cm}
+
+\aeqn{9.1}{\hat{H}\psi(r;R) = E(R)\psi(r;R)}
+
+where $\psi(r;R)$ is the wavefunction ($r$ represents the electronic coodinates and $R$ the fixed molecular geometry), $E(R)$ is
+the electronic energy of the system at a given nuclear configuration $R$, and $\hat{H}$ is the electronic Hamiltonian:
+
+\aeqn{9.2}{\hat{H} = -\frac{\hbar^2}{2m_e}\sum_{i=1}^n\nabla_i^2 - \sum_{i=1}^n\sum_{j=1}^N\frac{Z_je^2}{4\pi\epsilon_0r_{ij}}
++ \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n\frac{e^2}{4\pi\epsilon_0r_{ij}}}
+
+Here $n$ is the number of electrons and $N$ the number of nuclei in the molecule. Note that this Hamiltonian is missing the
+nuclear - nuclear repulsion term, but this can be added to the total energy at the end of the calculation as the nuclei are
+assumed to be stationary. In terms of mathematics, Eq. (\ref{eq9.1}) classifies as an operator eigevalue problem. For practical
+numerical calculations, this equation is always discretized such that it becomes a matrix eigenvalue problem. In addition to
+the direct calculation of the energy, the equilibrium molecular geometry can be obtained by minimizing the energy in terms of $R$
+(geometry optimization).
+
+\otext
+
+There are two categories of methods for calculating the electronic structure: 1) \textit{ab initio} where the only input to the
+calculation is Eq. (\ref{eq9.1}) and a basis set to represent the wavefunction and 2) \textit{semiempirical} where
+a simplified form of the electronic Hamiltonian is used with possible additional parameters included from experimental data. 
+\textit{Ab initio} provide a clear strategy for improving the accuracy of the calculation whereas the situation is the opposite
+for most semiempirical methods.
+
+}

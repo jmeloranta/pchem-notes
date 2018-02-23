@@ -1,0 +1,53 @@
+\opage{
+\otitle{1.15 Simultaneous observables}
+
+\otext
+If a system is in one of the eigenstates of operator $A$ then is it possible to simultaneously determine another property which is expressed by operator $B$?
+For example, if we know the momentum of the particle exactly then is it possible to measure the position exactly? It turns out that some times it is possible to measure both $A$ and $B$ at the same time and some times not.
+
+\vspace*{0.2cm}
+
+Next we will prove the following result:
+
+\vspace*{0.1cm}
+
+\textbf{Property \#3.} Two operators $A$ and $B$ have precisely defined observables $\Leftrightarrow$ $\left[A,B\right] = 0$ (i.e. the operators must commute).
+
+\vspace*{0.1cm}
+
+\textbf{Proof.} ``$\Rightarrow$'' First we note that in order to precisely define the outcome from both $A$ and $B$, they must have share the same eigenfunctions. Thus: $A\left|\psi\right> = a\left|\psi\right>$ and $B\left|\psi\right> = b\left|\psi\right>$. Thus we can write:
+
+$$AB\left|\psi\right> = Ab\left|\psi\right> = bA\left|\psi\right> = ba\left|\psi\right> = ab\left|\psi\right> = aB\left|\psi\right> = Ba\left|\psi\right> = BA\left|\psi\right>$$
+
+``$\Leftarrow$'' We need to show that given that $A\left|\psi\right> = a\left|\psi\right>$ and $\left[A,B\right] = 0$, we have $B\left|\psi\right> = b\left|\psi\right>$. Because we have $A\left|\psi\right> = a\left|\psi\right>$, we can write:
+
+$$BA\left|\psi\right> = Ba\left|\psi\right> = aB\left|\psi\right>$$
+
+Because $A$ and $B$ commute, the first term can also be written as $AB\left|\psi\right>$ and hence:
+
+$$A\left(B\left|\psi\right>\right) = a\left(B\left|\psi\right>\right)$$
+
+}
+
+\opage{
+
+\otext
+This has the same form as the eigenvalue equation for $A$ and therefore $B\left|\psi\right>$ must be proportional to $\left|\psi\right>$. We denote this proportionality constant by $b$ and then we get the result we were looking for: $B\left|\psi\right> = b\left|\psi\right>$.
+
+\vspace*{0.2cm}
+
+In order to determine if two observables can be determined simultaneously with arbitrarily high precision, one must inspect the commutator between the corresponding operators.
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Is it possible to determine both position $x$ and momentum $p_x$ (i.e. momentum along the $x$-axis) simultaneously? How about $x$ and $p_y$?
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We have already calculated the commutator $\left[x,p_x\right]$ in Example 1.3 and noticed that it gives a non-zero result. Hence operators $p_x$ and $x$ cannot be determined simultaneously with arbitrarily high precision. On the other hand $x$ and $p_y$ commute and they can be determined simultaneously with arbitrarily high precision.
+
+\vspace*{0.2cm}
+
+Pairs of observables that cannot be determined simultaneously are said to be \textit{complementary}. 
+
+}

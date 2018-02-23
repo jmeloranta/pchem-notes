@@ -1,0 +1,23 @@
+\opage{
+\otitle{1.4 Commutation and non-commutation}
+
+\otext
+When two operators operate successively on a given function, it is important to note the order in which they operate. In general, $(AB)g \ne (BA)g$ where $A$ and $B$ are operators and $g$ is a function. Recall that the same holds for matrices where the order of multiplication may not usually be changed. A \textit{commutator} gives the difference between operators $AB$ and $BA$:
+
+\aeqn{1.7}{\left[A,B\right] = AB - BA}
+
+If $\left[A,B\right] = 0$ the operators commute and their operation order may be changed without further consideration. In general operators do not commute. When calculating commutators, one has to include a function that $(AB - BA)$ operates on and then in the end ``cancel'' out the function.
+
+\vspace*{0.2cm}
+
+\textbf{Example 1.3} Evaluate the commutator $\left[x,p_x\right]$ in the position representation.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Choosen an arbitrary function $f$. Note that we don't need to know its actual form. The commutator can be now evaluated as:
+
+$$\left[x,p_x\right] = \left(xp_x - p_xx\right)f = x\times \frac{\hbar}{i}\frac{\partial f}{\partial x} - \frac{\hbar}{i}\frac{\partial (xf)}{\partial x}$$
+$$= x\times\frac{\hbar}{i}\frac{\partial f}{\partial x} - \frac{\hbar}{i}f - x\times\frac{\hbar}{i}\frac{\partial f}{\partial x} = i\hbar f$$
+$$\Rightarrow \left[x,p_x\right] = i\hbar$$
+
+}

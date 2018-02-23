@@ -1,0 +1,102 @@
+\opage{
+\otitle{2.10 A barrier of finite width}
+
+\otext
+Next we will consider a barrier that has a finite width:
+
+\ofig{finite-width-barrier}{0.6}{}
+
+Here the potential function $V(x)$ is given by
+
+\vspace*{-0.4cm}
+
+\begin{eqnarray}
+\label{eq2.17}
+\textnormal{Zone 1 }(x < 0): & & V(x) = 0\\
+\nonumber
+\textnormal{Zone 2 }(0 \le x < L): & & V(x) = V\\
+\nonumber
+\textnormal{Zone 3 }(x \ge 0): & & V(x) = 0
+\end{eqnarray}
+
+Following our previous calculation, we can writen down the solution to Schr\"odinger equation as:
+
+\vspace*{-0.2cm}
+
+\ceqn{2.18}{\textnormal{Zone 1: }\psi(x) = Ae^{ikx} + Be^{-ikx} \textnormal{ with }k\hbar = \sqrt{2mE}}
+{\textnormal{Zone 2: }\psi(x) = A'e^{ik'x} + B'e^{-ik'x}\textnormal{ with }k'\hbar = \sqrt{2m\left(E - V\right)}}
+{\textnormal{Zone 3: }\psi(x) = A''e^{ikx} + B''e^{-ikx}\textnormal{ with }k\hbar = \sqrt{2mE}}
+
+}
+
+\opage{
+
+\otext
+Components with positive momentum ($k$) are called \textit{incoming waves} and with negative momentum \textit{outgoing waves}. In Zone 1 the coefficient $A$ gives the initial weight of the incoming wave and $B$ the outgoing wave. We will divide the solution into three different cases:
+
+\vspace*{-0.2cm}
+
+\begin{enumerate}
+\item \otext
+\underline{Case $E < V$.} In this case the particle does not have enough energy to classically cross the barrier. According to quantum mehcanics, it is possible that the particle will be able to cross the barrier. In Zone 2 Eq. (\ref{eq2.16}) gives the wavefunction as $\psi = A'e^{-\kappa x} + B'e^{\kappa x}$. To connect Zones 1, 2 and 3, we require that the wavefunction and its derivative are continuous at the boundaries (i.e., when $x = 0$ and $x = L$). The wavefunction continuity gives:
+
+\beqn{2.19}{\textnormal{At }x = 0\textnormal{: }A + B = A' + B'}{\textnormal{At }x = L\textnormal{: }A'e^{-\kappa L} + B'e^{\kappa L} = A''e^{ikL} + B''e^{-ikL}}
+
+Continuity for the first derivative gives:
+
+\beqn{2.20}{\textnormal{At }x = 0\textnormal{: }ikA - ikB = -\kappa A' + \kappa B'}{\textnormal{At }x = L\textnormal{: }-\kappa A'e^{-\kappa L} + \kappa B'e^{\kappa L} = ikA''e^{ikL} - ikB''e^{-ikL}}
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+
+\begin{enumerate}
+\item \otext
+(continued) So far we have four equations and six unknowns (the coefficients $A,B,A',B',A'',B''$). Normalization condition for the wavefunction gives one more equation. We can also state that in Zone 3 we should only have forward propagating wave, which means that $B'' = 0$. In zone 1 we can identify $B$ as the amplitude of the reflected wave. Then the \textit{reflection probability} $R$ and \textit{transmission probability} $T$ are given by (see Example 2.1):
+
+\vspace*{-0.2cm}
+
+\beqn{2.21}{R = \frac{J_x(-k)}{J_x(k)} = \frac{(k\hbar / m)\left|B\right|^2}{(k\hbar / m)\left|A\right|^2} = \frac{\left|B\right|^2}{\left|A\right|^2}}{T = \frac{\left|A''\right|^2}{\left|A\right|^2}}
+
+\vspace*{-0.2cm}
+
+Note that we have not written down the solution for $A, B, A', B', A'', B''$ since the expressions are quite complicated. The full expression for $T$ is:
+
+\vspace*{-0.2cm}
+
+\beqn{2.22}{T = \frac{1}{1 + \left(e^{\kappa L} - e^{-\kappa L}\right)^2 / \left(16\left( E / V\right)\left(1 - E / V\right)\right)}}{R = 1 - T}
+
+where $\kappa = \sqrt{2mV\left(1 - e/V\right)} / \hbar$. Since we have $E < V$, $T$ is often called the \textit{tunneling probability}.
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+
+\begin{enumerate}
+
+\item[2.] \otext
+\underline{$E > V$.} Classcally, the particle now has sufficient energy to overcome the potential barrier. One might expect to get $T = 1$ and $R = 0$ but this is not the case. To get the result, one can replace $\kappa$ by $-ik'$:
+
+\beqn{2.23}{T = \frac{1}{1 + \left(\sin^2\left(k'L\right)\right) / \left(4\left(E/V\right)\left(E / V - 1\right)\right)}}{R = 1 - T}
+
+where $\hbar k' = \sqrt{2mV\left(E / V - 1\right)}$. Note that $T$ reaches unity whenever $\sin(k'L) = 0$, which can happen at:
+
+\aeqn{2.24}{k' = \frac{n\pi}{L}\textnormal{ where }n = 1,2,3,...}
+
+Furthermore, $T$ has minima at:
+
+$$k' = \frac{n\pi}{2L}\textnormal{ where }n = 1, 3, ...$$
+
+At the high energy limit ($E >> V$), $T$ approaches one (i.e. the classical behavior). Note that even when $E > V$ there is a possibility that the particle is reflected back. This phenomenom is called \textit{antitunneling} or \textit{non-classical reflection}. 
+
+\end{enumerate}
+
+}

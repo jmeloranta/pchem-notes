@@ -1,0 +1,29 @@
+\opage{
+\otitle{1.1 Linear operators}
+
+\otext
+All operators in quantum mechanics are linear. A linear operator is defined as follows:
+
+\beqn{1.1}{\Omega(f + g) = \Omega f + \Omega g\textnormal{ (}f\textnormal{ and }g\textnormal{ are functions)}}
+{\Omega (af) = a\Omega f\textnormal{ (}a\textnormal{ is a constant and }f\textnormal{ is a function)}}
+
+
+\textbf{Example 1.1} Are the following operators linear?
+
+\begin{enumerate}
+\item[a)] Multiplication by a constant $C$.
+\item[b)] Differentiation.
+\item[c)] Integration.
+\item[d)] Taking natural logarithm.
+\end{enumerate}
+
+\textbf{Solution.}
+
+\begin{enumerate}
+\item[a)] $C(f + g) = Cf + Cg$ and $C(af) = Caf = aCf$. This fulfills Eq. (\ref{eq1.1}).
+\item[b)] Let $f = f(x)$. $\frac{d}{dx}(f + g) = \frac{df}{dx} + \frac{dg}{dx}$ and $\frac{d}{dx}(af) = a\frac{df}{dx}$. This is operator is linear.
+\item[c)] $\int(f + g)dx = \int fdx + \int gdx$ and $\int afdx = a\int fdx$.
+\item[d)] $\ln(f + g) \ne \ln(f) + \ln(g) = \ln(fg)$. This operator is not linear.
+\end{enumerate}
+
+}

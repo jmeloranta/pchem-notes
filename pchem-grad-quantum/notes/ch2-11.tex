@@ -1,0 +1,26 @@
+\opage{
+\otitle{2.11 The Eckart potential barrier}
+
+\otext
+The rectangular shape potential that we have considered previously is not very realistic in many practical problems. Unfortunately, the algebra becomes very tedious even with simple potential functions. One potential function with known solutions is the \textit{Eckart potential}:
+
+\aeqn{2.25}{V(x) = \frac{4V_0e^{\beta x}}{\left(1 + e^{\beta x}\right)^2}}
+
+where $V_0$ and $\beta$ are constants with dimensions of energy and inverse length, respectively. This function is plotted below.
+
+\vspace*{0.3cm}
+
+\ofig{eckart}{0.3}{}
+
+}
+
+\opage{
+
+\otext
+The Schr\"odinger equation corresponding to the potential in Eq. (\ref{eq2.25}) can be solved analytically. However, the calculation is quite complicated and we just note the end result for the transmission coefficient:
+
+\aeqn{2.26}{T = \frac{\cosh\left(4\pi\sqrt{2mE} / (\hbar\beta)\right) - 1}{\cosh\left(4\pi\sqrt{2mE} / (\hbar\beta)\right) + \cosh\left(2\pi\left|8mV_0 - \left(\hbar\beta\right)^2\right|^{1/2} / (\hbar\beta)\right)}}
+
+When $E << V_0$ we have $T \approx 0$. When $E \rightarrow V_0$ then $T$ approaches 1 and the classical limit is recovered when $E >> V_0$. More details of the Eckart potential problem can be found from \textit{Phys. Rev.} 35, 1303 (1930).
+
+}

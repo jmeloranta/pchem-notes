@@ -1,0 +1,50 @@
+\opage{
+\otitle{3.2 The angular momentum}
+
+\otext
+On the previous slide, the positive and negative values of $m_l$ correspond to different directions of rotation. This is similar what we had for linear momentum with $k$ and $-k$. To confirm this interpretation, we need to evaluate the $z$ component of angular momentum $l$. The classical expression for angular momentum is:
+
+\vspace*{0.2cm}
+
+\aeqn{3.7}{\vec{l} = \vec{r}\times\vec{p} = \left|\begin{matrix}
+i & j & k\\
+x & y & z\\
+p_x & p_y & p_z\\
+\end{matrix}
+\right|
+}
+
+where $i, j, k$ are orthogonal unit vectors along the $x, y, z$ axis, respctively. After expanding the determinant (see your CHEM352 notes), we get the $z$ component as:
+
+\aeqn{3.8}{L_z = xp_y - yp_x}
+
+Substitution of the quantum mechanical momentum operators gives:
+
+$$l_z = x\left(\frac{\hbar}{i}\frac{\partial}{\partial y}\right) - y\left(\frac{\hbar}{i}\frac{\partial}{\partial x}\right)$$
+
+In polar coordinates (see your CHEM352 notes) this becomes:
+
+\aeqn{3.9}{l_z = \frac{\hbar}{i}\frac{\partial}{\partial\phi}}
+
+}
+
+\opage{
+
+\otext
+
+Next we operate on the eigenfunctions we obtained earlier by $l_z$:
+
+\aeqn{3.10}{l_z\Phi_{m_l} = \frac{\hbar}{i}\frac{\partial}{\partial\phi}Ae^{im_l\phi} = m_l\hbar Ae^{im_l\phi} = m_l\hbar\Phi_{m_l}}
+
+This shows that the $z$ component of the angular momentum is positive if $m_l$ is positive and vice versa for negative values. Thus, when $m_l$ is positive, the rotation about $z$ axis proceeds counter clockwise and when $m_l$ is negative, the rotation proceeds clockwise.
+
+\vspace*{0.2cm}
+
+The remaining task is to normalize the wavefunctions (i.e. determine the constant $A$; note that $B$ is not needed since we allowed $m_l$ to absorb the sign). The normalization integral is:
+
+$$\int\limits_0^{2\pi}\Phi^*\Phi d\phi = \left|A\right|^2\int\limits_0^{2\pi}e^{-im_l\phi}e^{im_l\phi}d\phi = \left|A\right|^2\int\limits_0^{2\pi}f\phi = 2\pi\left|A\right|^2$$
+$$\Rightarrow A = \frac{1}{\sqrt{2\pi}}\textnormal{ (chosen to be real)}$$
+
+\textbf{Excercise.} Show that the eigenfunctions $\Phi_{m_l}$ form an orthogonal set of functions.
+
+}

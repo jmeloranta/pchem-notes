@@ -1,0 +1,155 @@
+\opage{
+\otitle{2.16 The harmonic oscillator}
+
+\otext
+The most important potential in chemistry and physics is the \textit{harmonic oscillator}. The name originates from the fact that this potential can also be used to describe oscillations in a spring or the movement of a pendulum. In physics it can be used to approximate the potential that atoms feel when they are trapped in a lattice, or in chemistry, when a chemical bond is approximated as a spring. The potential function has the following shape:
+
+\aeqn{2.37}{V(x) = \frac{1}{2}kx^2}
+
+where $k$ is the \textit{force constant} that defines the steepness of the potential function. Just like in the particle in one-dimensional box problem, this potential has quantitized levels with the associated energies and eigenfunctions. This is demonstrated below:
+
+\vspace*{-0.3cm}
+
+\ofig{hosc}{0.4}{Harmonic oscillator potential, quantitized energies and eigenfunctions.}
+
+}
+
+\opage{
+
+\otext
+The Hamiltonian for the harmonic oscillator problem is:
+
+\aeqn{2.38}{H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + \frac{1}{2}kx^2}
+
+and the corresponding Schr\"odinger equation is then:
+
+\aeqn{2.39}{-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + \frac{1}{2}kx^2\psi(x) = E\psi(x)}
+
+Often, instead of using $k$, the equation is written in terms of $\omega$, which is related to $k$ by $\omega = \sqrt{k / m}$ ($m$ is the particle mass). The easiest way to solve Eq. (\ref{eq2.39}) is to use so called \textit{rising} (or \textit{creation}) and \textit{lowering} (or \textit{annihilation}) operators. The idea is to express the original Hamiltonian as a product of two operators that are easier to deal with. The following choice can be used:
+
+$$a = \sqrt{\frac{m\omega}{2\hbar}}\left(x + i\frac{p}{m\omega}\right)$$
+$$a^+ = \sqrt{\frac{m\omega}{2\hbar}}\left(x - i\frac{p}{m\omega}\right)$$
+
+When these operators are multiplied, we get:
+
+$$a^+a = \frac{m\omega}{2\hbar}\left(x - i\frac{p}{m\omega}\right)\left(x + i\frac{p}{m\omega}\right) = \frac{1}{\hbar\omega}\left(\frac{p^2}{2m} + \frac{m\omega^2}{2}x^2\right) - \frac{1}{2}$$
+
+}
+
+\opage{
+
+\otext
+The Hamiltonian written in terms of $\omega$ is:
+
+$$H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + \frac{m\omega^2}{2}x^2$$
+
+Comparison of the two previous expressions yields the following:
+
+$$H = \hbar\omega\left(a^+a + \frac{1}{2}\right)$$
+
+The operators $a$ and $a^+$ do not commute. This can be seen by calculating $aa^+$ and comparing the result with the previous calculation of $a^+a$:
+
+$$aa^+ = \frac{m\omega}{2\hbar}\left(x + i\frac{p}{m\omega}\right)\left(x - i\frac{p}{m\omega}\right) = \frac{1}{\hbar\omega}\left(\frac{p^2}{2m} + \frac{m\omega}{2}x^2\right) + \frac{1}{2}$$
+
+Thus we get $\left[a,a^+\right] = 1$. Next we will consider eigenvalues of $H$:
+
+$$H\psi_n = \hbar\omega\left(a^+a + \frac{1}{2}\right)\psi_n = \lambda_n\psi_n$$
+
+\vspace*{-0.2cm}
+
+The eigenvalue $\lambda_n$ is positive since:
+
+$$\left<\psi_n\left|\hbar\omega\left(a^+a + \frac{1}{2}\right)\right|\psi_n\right> = \hbar\omega\left<\psi_n\left|a^+a\right|\psi_n\right> + \frac{1}{2}\hbar\omega$$
+$$= \hbar\omega\left(\left<\psi_n\left|a^+a\right|\psi_n\right> + \frac{1}{2}\right) = \hbar\omega\left<a\psi_n|a\psi_n\right> + \frac{\hbar\omega}{2} = \hbar\omega\int\left|a\psi_n\right|^2d\tau + \frac{\hbar\omega}{2} \ge \frac{\hbar\omega}{2}$$
+
+}
+
+\opage{
+
+\otext
+Consider operation of $a^+$ on $\psi$ (here $H\psi_n = \lambda_n\psi_n$):
+
+$$H\left(a^+\psi_n\right) = \hbar\omega\left(a^+a + \frac{1}{2}\right)a^+\psi_n = \hbar\omega\left(\umark{a^+aa^+}{= a^+(1 + a^+a)} + \frac{1}{2}a^+\right)\psi_n$$
+$$= \hbar\omega\left(a^+(1 + a^+a) + \frac{1}{2}a^+\right)\psi_n = \hbar\omega a^+\left(1 + a^+a + \frac{1}{2}\right)\psi_n$$
+$$ = a^+\left(\hbar\omega\left(a^+a + \frac{1}{2}\right) + \hbar\omega\right)\psi_n = a^+\left(\lambda_n + \hbar\omega\right)\psi_n = \left(\lambda_n + \hbar\omega\right)a^+\psi_n$$
+
+This states that the operator $a^+$ generated $\psi_{n+1}$ from $\psi_n$, which has one unit ($\hbar\omega$) higher energy. In a similar way, one can show that:
+
+$$H\left(a\psi_n\right) = \left(\lambda_n - \hbar\omega\right)a\psi_n$$
+
+This immediately tells us that the energy levels in harmonic oscillator are evenly spaced and that their separation is $\hbar\omega$. Furthermore, since all $\lambda_n$'s are positive, there must be a lower bound $\lambda_0$.
+}
+
+\opage{
+
+\otext
+If we take the lower limit for $\lambda_0 = \frac{\hbar\omega}{2}$ (our previous estimate) then we can write the original problem as:
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + \frac{m\omega^2}{2}x^2\psi = \umark{\lambda_0}{= \hbar\omega/2}\psi$$
+
+which appears to be satisfied by the following Gaussian function (direct calculation):
+
+$$\psi_0(x) \propto \exp\left(-\frac{m\omega x^2}{2\hbar}\right)$$
+
+Then we have clearly found the ground state solution to the harmonic oscillator problem. The rising operator can now be used to generate the excited states:
+
+\aeqn{2.40}{\lambda_n = \left(n + \frac{1}{2}\right)\hbar\omega\textnormal{ where }\omega = \sqrt{k/m}\textnormal{ and } n = 0, 1, 2...}
+
+To find the eigenfunctions, we must operate on $\psi_0$ by $a^+$:
+
+$$\psi_n = \left(a^+\right)^n\psi_0 = \left(\frac{m\omega}{2\hbar}\right)^{n/2}\left(x - i\frac{p}{m\omega}\right)^n\psi_0$$
+
+}
+
+\opage{
+
+\otext
+The rising operator essentially generates Hermite polynomials $H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)$ in front of the Gaussian function. Thus we can writen the complete wavefunction as (note that in the textbook, $n = v$):
+
+\aeqn{2.41}{\psi_n(x) = N_nH_n\left(\alpha x\right)e^{-\alpha^2 x^2 / 2} \textnormal{ }\alpha = \left(\frac{mk}{\hbar^2}\right)^{1/4}\textnormal{ }N_n = \sqrt{\frac{\alpha}{2^nn!\sqrt{\pi}}}}
+
+\vspace*{0.2cm}
+
+\textbf{Exercise.} Show that $N_n$ above produces a normalized wavefunction.
+
+\vspace*{0.2cm}
+
+For the two lowest stats the corresponding wavefunctions are:
+
+$$\psi_0(x) = \sqrt{\frac{\alpha}{\sqrt{\pi}}}e^{-\alpha^2x^2 / 2}\textnormal{ }\psi_1(x) = \sqrt{\frac{2\alpha^3}{\sqrt{\pi}}}xe^{-\alpha^2x^2/2}$$
+
+Some of the first Hermite polynomials are listed below:
+
+\vspace*{-0.2cm}
+
+\begin{center}
+\begin{tabular}{ll}
+$n$ & $H_n(x)$\\
+0 & 1\\
+1 & $2x$\\
+2 & $4x^2 - 2$\\
+3 & $8x^3 - 12x$\\
+4 & $16x^4 - 48x^2 + 12$\\
+5 & $32x^5 - 160x^3 + 120x$\\
+\end{tabular}
+\end{center}
+
+}
+
+\opage{
+
+\otext
+For example, the following Maxima program can be used to generate Hermite polynomials:\\
+
+\verbatiminput{maxima/hermite.mac}
+
+The following realtions are useful when working with  Hermite polynomials:
+
+$$H_v''(y) - 2yH_v'(y) + 2vH_v(y) = 0\textnormal{ (characteristic equation)}$$
+$$H_{v+1}(y) = 2yH_v(y) - 2vH_{v-1}(y)\textnormal{ (recursion relation)}$$
+$$\int\limits_{-\infty}^{\infty}H_{v'}(y)H_v(y)e^{-y^2}dy = \left\lbrace\begin{matrix}
+0, & \textnormal{ if }v' \ne v\\
+\sqrt{\pi}2^vv!, & \textnormal{ if }v' = v\\
+\end{matrix}\right.$$
+
+}

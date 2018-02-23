@@ -1,0 +1,45 @@
+\opage{
+\otitle{3.12 Probabilities and the radial distribution function}
+
+\otext
+The complete wavefunction for hydrogenic atoms is:
+
+$$\psi_{n,l,m_l} = R_{n,l} Y_{l,m_l}$$
+
+where $R_{n,l}$ are the associated Laguerre functions and the $Y_{l,m_l}$ are the spherical harmonics. In spherical coordinates the volume element for integration is $d\tau = r^2\sin(\theta)d\theta d\phi dr$. We need to consider integratetion of $\left|\psi_{n,l,m_l}\right|^2d\tau$ over a given region in space. If we want to calculate the \textit{radial distribution function} $P(r)$, we have to integrate over the angular variables:
+
+\aeqn{3.45}{P(r)dr = \int\limits_0^\pi\int\limits_0^{2\pi}R_{n,l}^2\left|Y_{l,m_l}\right|^2r^2\sin(\theta)d\theta d\phi dr}
+
+Since spherical harmonics are normalized in a sense that
+
+$$\int\limits_0^\pi\int\limits_0^{2\pi}\left|Y_{l,m_l}\right|^2\sin(\theta)d\theta d\phi = 1$$
+
+We then can calculate the probability for the electron to be found between $r$ and $r + dr$ as:
+
+\aeqn{3.46}{P(r)dr = R_{n,l}^2r^2dr}
+
+}
+
+\opage{
+
+\otext
+For 1s orbital ($n = 1$ and $l = 0$) we get the following expression:
+
+$$P(r) = 4\left(\frac{Z}{a_0}\right)^3r^2e^{-2Zr/a_0}$$
+
+We plotted $P(r)$ earlier, which shows the radial behavior of the wavefunctions:
+
+\ofig{radial2}{0.3}{}
+
+}
+
+\opage{
+
+\otext
+Note that all wavefunctions now approach zero when $r \rightarrow 0$ or $r \rightarrow \infty$. For $1s$ wavefunction, it is easy to see that the maximum occurs at:
+
+\aeqn{3.47}{r_{\textnormal{max}} = \frac{a_0}{Z}}
+
+by solving for $r$ in $dP(r) / dr = 0$. For hydrogen atom this gives $r_{\textnormal{max}} = a_0$. Note that the most probable radius decreases when the nuclear charge $Z$ increases. 
+
+}

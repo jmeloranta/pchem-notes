@@ -1,0 +1,90 @@
+\opage{
+\otitle{1.16 The uncertainty principle}
+
+\otext
+As we saw, if two operators do not commute, it is not possible to specify their eigenvalues of the operators simultaneously. However, it is possible to give up precision in one of the observables to acquire greater precision in the other. For example, if we have unertainty of $\Delta x$ in position $x$ and $\Delta p_x$ in momentum $p_x$, we can show that the following relation holds:
+
+\aeqn{1.32}{\Delta x\Delta p_x \ge \frac{1}{2}\hbar}
+
+This states that if $\Delta x$ increases (i.e. greater uncertainty) then we can have smaller $\Delta p_x$ (i.e. greater accuracy in momentum). This result was first presented by Heisenberg (1927). In general, for operators $A$ and $B$ with uncertainties $\Delta A$ and $\Delta B$, respectively, we have:
+
+\vspace*{-0.1cm}
+
+\aeqn{1.33}{\Delta A\Delta B\ge\frac{1}{2}\left|\left<\left[A,B\right]\right>\right|}
+
+where the uncertainties of $A$ (or $B$) are defined as:
+
+\aeqn{1.34}{\Delta A = \left\lbrace\left< A^2\right> - \left< A\right>^2\right\rbrace^{1/2}}
+
+\textbf{Proof.} Let $A$ and $B$ be operators and choose a wavefunction $\psi$ that is not necessarily an eigenfunction of $A$ or $B$. We will optimize the following non-negative integral with respect to scaling factor $\alpha$ to yield the minimum combined error:
+
+}
+
+\opage{
+
+\otext
+$$I = \int\psi^*\left|\left(\alpha\delta A + i\delta B\right)\right|^2\psi d\tau$$
+
+The scaling factor $\alpha$ acts to reduce the error in $A$ while the whole integral will give the combined error of both $A$ and $B$. Note that the contribution of $\delta B$ is included in the imaginary part as we want to be sure not have cancellation of the $\delta A$ and $\delta B$ contributions by sign. By squaring the whole integrand, we ensure that we get contributions from both errors added up as positive numbers.
+
+\vspace*{0.1cm}
+
+To simplify the calculation, we define the expectation values of $A$ and $B$ as:
+
+$$\left<A\right> = \left<\psi\left|A\right|\psi\right>\textnormal{ and }\left<B\right> = \left<\psi\left|B\right|\psi\right>$$ 
+
+and furthermore deviation of each operator around its expectation value by:
+
+$$\delta A = A - \left<A\right>\textnormal{ and }\delta B = B - \left<B\right>$$
+
+A direct calculation gives the following result (*):
+
+$$\left[\delta A, \delta B\right] = \left[A - \left<A\right>, B - \left<B\right>\right] = \left[A,B\right] \equiv iC$$
+
+Next we rewrite $I$ as follows:
+
+$$I = \int\psi^*\left(\alpha\delta A + i\delta B\right)^*\left(\alpha\delta A + i\delta B\right)\psi d\tau$$
+
+}
+
+\opage{
+
+$$= \int\psi^*\left(\alpha\delta A - i\delta B\right)\left(\alpha\delta A + i\delta B\right)\psi d\tau$$
+
+In the last step we used the fact that the operators are hermitian. In the Dirac notation this can be written as:
+
+$$I = \left<\psi|\left(\alpha\delta A - i\delta B\right)\left(\alpha\delta A + i\delta B\right)|\psi\right>$$
+
+This can be expanded as follows (see the result marked with (*) above for substituting in $C$):
+$$I = \alpha^2\left<\left(\delta A\right)^2\right> + \left<\left(\delta B\right)^2\right> + i\alpha\left<\delta A\delta B - \delta B\delta A\right> = \alpha^2\left<\left(\delta A\right)^2\right> + \left<\left(\delta B\right)^2\right> + \alpha\left<C\right>$$
+
+Since we want to minimize $I$ with respect to $\alpha$, we reorganize the above expression:
+
+$$I = \left<\left(\delta A\right)^2\right>\left(\alpha + \frac{\left<C\right>}{2\left<\left(\delta A\right)^2\right>}\right)^2 + \left<\left(\delta B\right)^2\right> - \frac{\left<C\right>^2}{4\left<\left(\delta A\right)^2\right>}$$
+
+Clearly the minimum value for $I$ is reached when $\alpha$ is chosen such that the first term above is zero. At this point $I$ takes the value:
+
+}
+
+\opage{
+
+$$I = \left<\left(\delta B\right)^2\right> - \frac{\left<C\right>^2}{4\left<\left(\delta A\right)^2\right>} \ge 0$$
+
+This can be rearranged as:
+
+$$\left<\left(\delta A\right)^2\right>\left<\left(\delta B\right)^2\right> \ge \frac{1}{4}\left<C\right>^2$$
+
+The left side of the equation can be simplified by using:
+
+$$\left<\left(\delta A\right)^2\right> = \left<\left(A - \left<A\right>\right)^2\right> = \left<A^2 - 2A\left<A\right> + \left<A\right>^2\right>$$
+$$= \left<A^2\right> - 2\left<A\right>\left<A\right> + \left<A\right>^2 = \left<A^2\right> - \left<A\right>^2 = \Delta A^2$$
+
+By doing the same operation on $B$ and substituting in $\Delta A$ and $\Delta B$ we arrive at:
+
+$$\Delta A^2\Delta B^2 \ge \frac{1}{4}\left<C\right>^2$$
+
+Taking square root of both sides yields the uncertainty principle (recall that $\left[A,B\right] = iC$):
+
+$$\Delta A\Delta B \ge \frac{1}{2}\left|\left<C\right>\right| = \frac{1}{2}\left|\left<\left[A,B\right]\right>\right|$$
+
+}

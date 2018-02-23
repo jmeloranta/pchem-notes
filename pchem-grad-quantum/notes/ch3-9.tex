@@ -1,0 +1,28 @@
+\opage{
+\otitle{3.9 The Schr\"odinger equation for hydrogenic atoms}
+
+\otext
+In the following we will obtain analytic solution to a problem that consists of one positively charged nucleus and one electron (``hydrogenic atom''). The nuclear charge is denoted by $Z$, which, for example, would be one for hydrogen atom. The solution will be ontained in spherical coordinates where we can separate the equation into radial and angular parts. The angular part we have already solved previously. The Hamiltonian for the two-particle electron-nucleus system is:
+
+\aeqn{3.35}{H = -\frac{\hbar^2}{2m_e}\nabla_e^2 - \frac{\hbar^2}{2m_N}\nabla_N^2 - \frac{Ze^2}{4\pi\epsilon_0 r}}
+
+where $m_e$ is the electron mass, $m_N$ is the mass of the nucleus, and $\nabla^2_e$ and $\nabla^2_N$ are the Laplacians with respect to electron and nuclear coordinates, respectively. The quantity $\epsilon_0$ in the Coulomb potential term is a constant (\textit{vacuum permittivity}). This Hamiltonian is very close to our previous rotational Hamiltonian apart from the Coulomb potential (attraction between $+$ and $-$ charges). Again, we can convert to center-of-mass and relative coordinates, the Halmitonian becomes:
+
+\aeqn{3.36}{H = -\frac{\hbar^2}{2m}\nabla_{\textnormal{cm}}^2 - \frac{\hbar^2}{2\mu}\nabla^2 - \frac{Ze^2}{4\pi\epsilon_0r}}
+
+where $m = m_e + m_N$ and the reduced mass $\mu$ is given by Eq. (\ref{eq3.29}).
+
+}
+
+\opage{
+
+\otext
+This can be separated into the translational and relative motion parts. The latter can be written as:
+
+\aeqn{3.37}{-\frac{\hbar^2}{2\mu}\nabla^2\psi - \frac{Ze^2}{4\pi\epsilon_0r}\psi = E\psi}
+
+Unlike the rigid rotor problem, the distance between the electron and the nucleus is not constant and therefore we need to include the radial part in our Laplacian. The Schr\"odinger equation now becomes:
+
+\aeqn{3.38}{\frac{1}{r}\frac{\partial^2}{\partial r^2}r\psi + \frac{1}{r^2}\Lambda^2\psi + \frac{Ze^2\mu}{2\pi\epsilon_0\hbar^2r}\psi = -\left(\frac{2\mu E}{\hbar^2}\right)\psi}
+
+}

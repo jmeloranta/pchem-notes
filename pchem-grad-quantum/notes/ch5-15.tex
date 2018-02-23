@@ -1,0 +1,73 @@
+\opage{
+\otitle{5.15 Direct-product groups}
+
+\otext
+Smaller groups can be extended into larger groups by ``glueing'' the character tables of smaller groups together. Consider two groups $G$ and $G'$ both of order $h$. The elemments in these groups are denoted by $R_1,R_2, ..., R_h$ and $R'_1, R'_2, ..., R'_h$. Let the two group satisfy:
+
+\begin{enumerate}
+\item The only element in common is the identity.
+\item The elements of group $G$ commute with the elements of group $G'$ (i.e. $RR' = R'R$).
+\end{enumerate}
+
+For example, $C_s$ and $C_{3v}$ fulfill these rulse. The product $RR'$ with each element of $G$ and $G'$ form a \textit{direct-product group}:
+
+\aeqn{5.37}{G'' = G\otimes G'}
+
+Here $G''$ is also a group:
+
+\begin{itemize}
+\item The identity element is clearly $E'' = EE'$.
+\item Associativity can be derived from $(RS)T = R(ST)$, $(R'S')T' = R'(S'T')$ and the commutability requirement.
+\item $R'' = R'R$ and $T''=T'T$, their product $R''T'' = R'RT'T = R'T'RT$. Now $R'T'\in G'$ and $RT\in G$ and hence the result belongs to $G''$.
+\item $R''R''^{-1} = RR'R^{-1}R'^{-1} = RR^{-1}R'R'^{-1} = EE' = E''' \Rightarrow$ Inverse exists and is in $G''$.
+\end{itemize}
+
+}
+
+\opage{
+
+\otext
+The order of the direct-product group is $hh'$. For example, for $C_s\otimes C_{3v}$ this is $2\times 6 = 12$. The direct-product group identified by constructing its elements and the character table can be constructed from the character tables of the component groups. Let $(f_1, f_2, ...)$ be a basis for an irreducible representation of $G$ and $(f_1', f_2', ...)$ be a basis for an irreducible representation $G'$. We can then write:
+
+\aeqn{5.38}{Rf_i = \sum\limits_jf_jD_{ij}(R)\textnormal{ and }R'f_r' = \sum\limits_sf'_sD_{sr}(R')}
+
+Then the effect of $RR'$ on the direct-product basis is:
+
+$$RR'f_if_r' = (Rf_i)(R'f_r') = \sum\limits_{j,s}f_jf_s'D_{ji}(R)D_{sr}(R')$$
+
+The character of the operation $RR'$ is now the sum of the diagonal elements:
+
+\aeqn{5.39}{\chi(RR') = \sum\limits_{ir}D_{ii}(R)D_{rr}(R') = \chi(R)\chi(R')}
+
+This means that the character table of the direct-product group can be written down simply by multiplying together the appropriate characters of the two contributing groups.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Construct the direct-product group $C_s\otimes C_{3v}$, identify it, and build its character table from the constituent groups.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} The groups $C_s$ and $C_{3v}$ have, respectively, two and three classes of symmetry operations, so the direct-product group has $2\times 3 = 6$ classes. Then it will also have six symmetry species of irreducible representations. The classes of $C_s$ are $(E,\sigma_h)$ and $C_{3v}$ are $(E,2C_3,3\sigma_v)$ (from character tables). Consider first the identity operation $E$ in $C_s$. When this is multiplied by the classes of $C_{3v}$ then the same classes are reproduced $(E,2C_3,\sigma_v)$. Multiplication of $\sigma_h$ in $C_s$ and $E$ in $C_{3v}$ gives again $\sigma_h$. The remaining combinations require more thinking, but essentially we get the following: $C_3\sigma_h = S_3$ and $\sigma_v\sigma_h = C_2$. The results are shown in the table below.
+
+\vspace*{0.2cm}
+
+\begin{tabular}{lllllll}
+ & $E$    & $\sigma_h$     & $2C_3$     & $2S_3$            & $3\sigma_v$     & $3C_2$\\
+ & $= EE$ & $ = E\sigma_h$ & $ = E2C_3$ & $ = \sigma_h2C_3$ & $ = E3\sigma_v$ & $ = \sigma_h3\sigma_v$\\
+\cline{1-7}
+$\textnormal{A}_1'$ $(= \textnormal{A}_1\textnormal{A}')$  & 1 & 1 & 1 & 1 & 1 & 1\\
+$\textnormal{A}_1''$ $(=\textnormal{A}_2\textnormal{A}'')$ & 1 & -1 & 1 & -1 & -1 & 1\\
+$\textnormal{A}_2'$ $(= \textnormal{A}_2\textnormal{A}')$  & 1 & 1 & 1 & 1 & -1 & -1\\
+$\textnormal{A}_2''$ $(= \textnormal{A}_1\textnormal{A}''$ & 1 & -1 & 1 & -1 & 1 & -1\\
+$\textnormal{E}'$ $(= \textnormal{E}\textnormal{A}')$ & 2 & 2 & -1 & -1 & 0 & 0 \\
+$\textnormal{E}''$ $(= \textnormal{E}\textnormal{A}'')$ & 2 & -2 & -1 & 1 & 0 & 0\\
+\end{tabular}
+
+\vspace*{0.2cm}
+
+Based on the character tables this corresponds to $D_{3h}$, so $C_s\otimes C_{3v} = D_{3h}$.
+
+}

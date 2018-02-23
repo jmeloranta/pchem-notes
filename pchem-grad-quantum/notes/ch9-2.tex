@@ -1,0 +1,31 @@
+\opage{
+\otitle{9.2 The Hartree-Fock method}
+
+\otext
+
+As we have seen before, the main difficulty in solving the electronic Schr\"odinger equation arises from the 
+electron - electron interaction term in the Hamiltonian. In the Hartree-Fock (HF) method this will be included
+in an average fashion such that the correlated motion between the electrons is neglegted. Since the HF wavefunction
+is not going to be an exact solution of the electronic Schr\"odinger equation, we have to calculate the corresponding
+energy by Eq. (\ref{eq6.36}):
+
+\aeqn{9.3}{E = \frac{\left<\psi\left|\hat{H}\right|\psi\right>}{\left<\psi|\psi\right>} = \left<\psi\left|\hat{H}\right|\psi\right>\textnormal{ (if }\psi\textnormal{ normalized)}}
+
+The wavefunction in the HF method is taken to be a single Slater determinant (see Eq. (\ref{eq7.23})), which accounts for the proper
+antisymmetry for fermions:
+
+\aeqn{9.4}{\hspace*{-0.4cm}
+\psi(r_1,...,r_n) = \frac{1}{\sqrt{n!}}
+\begin{vmatrix}
+\phi_1(1) & \phi_2(1) & \phi_3(1) & ... \\
+\phi_1(2) & \phi_2(2) & \phi_3(2) & ... \\
+\phi_1(3) & ... & ... & ...\\
+... & ... & ... & ...\\
+\end{vmatrix}
+}
+
+where $\phi_i$'s are the molecular orbitals, $n$ is the number of electrons, and the orbitals are taken to be orthonormalized: 
+$\left<\phi_i|\phi_j\right> = \delta_{ij}$ (Kronecker delta). More advanced methods include electron correlation by including more
+than one Slater determinant in the wavefunction, each with their own variational coefficient. 
+
+}

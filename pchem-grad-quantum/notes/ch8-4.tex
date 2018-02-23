@@ -1,0 +1,101 @@
+\opage{
+\otitle{8.4 Polyatomic molecules}
+
+\otext
+
+Calculations of more complex molecules can also employ the linear combination of atomic orbitals (LCAO) technique as we have used
+in the previous sections. The resulting molecular orbitals can be classified in terms of the irreps of the point group
+in which the molecule belongs to. This was covered to some extent in the undergraduate quantum chemistry notes (review the material), 
+but we will demonstrate the concept for water molecule below as we will need this for the computational chemistry part.
+
+\otext
+
+H$_2$O belongs to $C_{2v}$ point group, which consists of $A_1$ (fully symmetric), $A_2$, $B_1$, and $B_2$ irreps. The
+two hydrogen atoms are labeled by $A$ and $B$. The atomic basis functions are: H($1s_A$), H($1s_B$), O($2s$), O($2p_x$), O($2p_y$), 
+and O($2p_z$). The orientation of the molecule is shown below.
+
+\ofig{water}{0.5}{}
+
+}
+
+\opage{
+
+\otext
+
+Let us first consider the effect of the symmetry operations on these atomic orbitals:
+
+\begin{center}
+\begin{tabular}{l|rrrrrr}
+$C_{2v}$ & O$(2s)$ & O($2p_x$) & O($2p_y$) & O($2p_z$) & H($1s_A$) & H($1s_B$)\\
+\cline{1-7}
+$E$   & O($2s$) & O($2p_x$) & O($2p_y$) & O($2p_z$) & H($1s_A$) & H($1s_B$)\\
+$C_2$ & O($2s$) & $-$O($2p_x$) & $-$O($2p_y$) & O($2p_z$) & H($1s_B$) & H($1s_A$)\\
+$\sigma_v$   & O($2s$) &    O($2p_x$) & $-$O($2p_y$) & O($2p_z$) & H($1s_B$) & H($1s_A$)\\
+$\sigma_v'$  & O($2s$) & $-$O($2p_x$) &    O($2p_y$) & O($2p_z$) & H($1s_A$) & H($1s_B$)\\
+\end{tabular}
+\end{center}
+
+We can then construct the matrix representations for the symmetry operations. As an example, this is shown for $C_2$ below (order of
+basis functions as shown above):
+
+$$D(C_2) = \left(\begin{matrix}
+1 &  0 & 0  & 0 & 0 & 0\\
+0 & -1 & 0  & 0 & 0 & 0\\
+0 &  0 & -1 & 0 & 0 & 0\\
+0 &  0 &  0 & 1 & 0 & 0\\
+0 &  0 &  0 & 0 & \textbf{0} & \textbf{1}\\
+0 &  0 &  0 & 0 & \textbf{1} & \textbf{0}\\
+\end{matrix}\right)$$
+
+This matrix is diagonal with the exception of the block at the lower right (in boldface). The other matrix representations can be
+constructed similarily and the diagonals are:
+
+}
+
+\opage{
+
+\otext
+
+\begin{center}
+\begin{tabular}{llllll}
+Orbital & $E$ & $C_2$ & $\sigma_v$ & $\sigma_v'$ & Irrep\\
+O$(2s)$ & $+1$ & $+1$ & $+1$ & $+1$ & $A_1$\\
+O$(2p_x)$ & $+1$ & $-1$ & $+1$ & $-1$ & $B_1$\\
+O$(2p_y)$ & $+1$ & $-1$ & $-1$ & $+1$ & $B_2$\\
+O$(2p_z)$ & $+1$ & $+1$ & $+1$ & $+1$ & $A_1$\\
+\end{tabular}
+\end{center}
+
+The 2x2 block on the previous page (in boldface) is not diagonal but can be diagonalized by rotating the original
+basis set H($1s_A$), H($1s_B$) as follows:
+$$\left(\begin{matrix}
+1 & 1\\
+1 & -1\\
+\end{matrix}\right)\left(\begin{matrix}
+\textnormal{H}_{1s_A}\\
+\textnormal{H}_{1s_B}\\
+\end{matrix}\right) = \left(\begin{matrix}
+\textnormal{H}_{1s_A} + \textnormal{H}_{1s_B}\\
+\textnormal{H}_{1s_A} - \textnormal{H}_{1s_B}\\
+\end{matrix}\right)
+$$
+Thus the new basis functions are $\textnormal{H}_{1s_A} + \textnormal{H}_{1s_B}$ and $\textnormal{H}_{1s_A} - \textnormal{H}_{1s_B}$,
+which belong to $A_1$ and $B_2$ irreps, respectively. Only basis functions with the same symmetry can group together to form the molecular orbitals (SALCs):
+
+\vspace*{-0.25cm}
+
+\begin{center}
+\begin{tabular}{ll}
+$\psi(A_1)$ & $= c_1\textnormal{O}(2s) + c_2\textnormal{O}(2p_z) + c_3\left(\textnormal{H}(1s_A) + \textnormal{H}(1s_B)\right)$\\
+$\psi(B_1)$ & $= \textnormal{O}(2p_x)$\\
+$\psi(B_2)$ & $= c_4\textnormal{O}(2p_y) + c_5\left(\textnormal{H}(1s_A) - \textnormal{H}(1s_B)\right)$\\
+\end{tabular}
+\end{center}
+
+\vspace*{-0.25cm}
+
+If one would calculate the electronic structure of water molecule then the resulting electronic configuration could be expressed as:
+$1a_1^21b_2^22a_1^21b_1^2$ and the overall symmetry would then be $^1A_1$ (direct product). The convention for writing the electronic configuration
+uses lower case letters whereas the overall symmetry is in upper case.
+
+}

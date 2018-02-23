@@ -1,0 +1,259 @@
+\opage{
+\otitle{5.9 Irreducible representations}
+
+\otext
+Recall the matrix representation of $C_{3v}$ in the basis $(S_N,S_A,S_B,S_C)$:
+
+\begin{center}
+\begin{tabular}{lll}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+\end{matrix}\right)$\\
+$\chi(E) = 4$ & $\chi(C_3^+) = 1$ & $\chi(C_3^-) = 1$\\
+ & & \\
+$D(\sigma_v)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+\end{matrix}\right)$\\
+$\chi(\sigma_v) = 2$ & $\chi(\sigma_v') = 2$ & $\chi(\sigma_v'') = 2$\\
+\end{tabular}
+\end{center}
+
+All these matrices appear to be \textit{block-diagonal form}:
+
+$$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & X & X & X\\
+0 & X & X & X\\
+0 & X & X & X\\
+\end{matrix}\right)$$
+
+}
+
+
+\opage{
+
+\otext
+This means that we can break our original four-dimensional basis into two: one consisting of $S_N$ alone and the other three-dimensional basis:
+
+\begin{center}
+\begin{tabular}{ccc}
+$E$ & $C_3^+$ & $C_3^-$\\
+(1) & (1) & (1)\\
+$\left(\begin{matrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0\\
+\end{matrix}\right)$\\
+ & & \\
+$\sigma_v$ & $\sigma_v'$ & $\sigma_v''$\\
+(1) & (1) & (1)\\
+$\left(\begin{matrix}
+1 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+\end{matrix}\right)$\\
+\end{tabular}
+\end{center}
+
+The first row in each case indicates the one-dimensional representation spanned by $S_N$ and the 3$\times$3 matrices form the three-dimensional representation spanned by the basis $(S_A,S_B,S_C)$.
+
+\vspace*{0.2cm}
+
+The separation of the representation into sets of matrices of lower dimension (as done above) is called the \textit{reduction} of the representation. In this case we write:
+
+\aeqn{5.12}{D^{(4)} = D^{(3)} \oplus D^{(1)}}
+
+where $S_N$ is the basis for $D^{(1)}$.
+
+}
+
+\opage{
+
+\otext
+Above we say that the four-dimensional representation has been reduced to a \textit{direct sum} of a three-dimensional and a one-dimensional representation. Note that we are not simply just adding the matrices but also changing the dimensions.The one-dimensional representation above is called \textit{unfaithful representation} (here 1$\times$1 matrices with all the same element 1).
+
+\vspace*{0.2cm}
+
+Can we reduce $D^{(3)}$ further? If we use the symmetry adapted basis (as we had earlier):
+
+\begin{center}
+\begin{tabular}{lll}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & -1/2\\
+0 & 0 & 1/2 & 1/2\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & 1/2\\
+0 & 0 & -1/2 & -1/2\\
+\end{matrix}\right)$\\
+$\chi(E) = 4$ & $\chi(C_3^+) = 1$ & $\chi(C_3^-) = 1$\\
+ & & \\
+$D(\sigma_v)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & -1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & 1/2\\
+0 & 0 & 3/2 & 1/2\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & -1/2 & -1/2\\
+0 & 0 & -3/2 & 1/2\\
+\end{matrix}\right)$\\
+$\chi(\sigma_v) = 2$ & $\chi(\sigma_v') = 2$ & $\chi(\sigma_v'') = 2$\\
+\end{tabular}
+\end{center}
+
+}
+
+\opage{
+
+\otext
+This looks like these matrices resemble more diagonal form with the off diagonal block smaller:
+
+\vspace*{-0.2cm}
+
+$$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & X & X\\
+0 & 0 & X & X\\
+\end{matrix}\right)$$
+
+This corresponds to the following reduction:
+
+$$D^{(4)} = D^{(1)}\oplus D^{(1)}\oplus D^{(2)}$$
+
+The two one-dimensional representations are unfaithful and identical to the single one-dimensional representation introduced earlier. We just reduced the $D^{(3)}$ term:
+
+$$D^{(3)} = D^{(1)}\oplus D^{(2)}$$
+
+Here $S_1 = S_A + S_B + S_C$ is a basis for $D^{(1)}$. Note that both basis (i.e. $S_N$ and $S_1$) for the two $D^{(1)}$'s have the ``same symmetry'', which can be seen in the figure in Sec. 5.6. The same symmetry here is taken to mean that they act as a basis of the same matrix representation.
+
+\vspace*{0.1cm}
+
+The next question is obviously if the remaining two-dimensional representation $D^{(2)}$ can be reduced into two one-dimensional representations? We will see later that there is no similarity transformation that would reduce this representation further and as such we say that it is an \textit{irreducible representation} (or ``irrep'' for short). Another example of irreducible representation were the unfaithful representations $D^{(1)}$.
+
+}
+
+\opage{
+
+\otext
+Each irreducible representation is labeled by \textit{symmetry species}. The symmetry species is ascribed on the basis of the list of characters of the representation. For unfaithful representations (1$\times$1 matrices) the trace for each matrix corresponding to a given symmetry operation is always one. Thus we have $(1,1,1,1,1,1)$ in $C_{3v}$ for ($E$, $C_3^+$, $C_3^-$, $\sigma_v$, $\sigma_v'$, $\sigma_v''$). This vector consisting of the characters is labeled by A$_1$. The two-dimensional irreducible representation has character $(2,-1,-1,0,0,0)$ (label E). These can be identified from below:
+
+\vspace*{-0.1cm}
+
+\begin{center}
+\begin{tabular}{ccc}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+(1) & (1) & (1)\\
+(1) & (1) & (1)\\
+$\left(\begin{matrix}
+1 & 0\\
+0 & 1\\
+\end{matrix}\right)$ & 
+$\left(\begin{matrix}
+-1/2 & -1/2\\
+1/2 & -1/2\\
+\end{matrix}\right)$ &
+$\left(\begin{matrix}
+-1/2 & 1/2\\
+-1/2 & -1/2\\
+\end{matrix}\right)$\\
+ & & \\
+$D(\sigma_v)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+(1) & (1) & (1)\\
+(1) & (1) & (1)\\
+$\left(\begin{matrix}
+1 & 0\\
+0 & -1\\
+\end{matrix}\right)$ &
+$\left(\begin{matrix}
+-1/2 & 1/2\\
+3/2 & 1/2\\
+\end{matrix}\right)$ &
+$\left(\begin{matrix}
+-1/2 & -1/2\\
+-3/2 & 1/2\\
+\end{matrix}\right)$\\
+\end{tabular}
+\end{center}
+
+We have two A$_1$ ($S_N$ and $S_1$) and doubly degenerate E ($S_2$ and $S_3$).
+
+}
+
+\opage{
+
+\otext
+In general the letter A and B are used for the one-dimensional irreducible representations, E is used for two-dimensional, and T for three-dimensional. A general irreducible representation is denoted by $\Gamma$. If a particular set of functions is a basis for an irreducible representation $\Gamma$, we say that the basis \textit{spans} that irreducible representation. The complete list of characters of all possible irreducible representations of a group is called a \textit{character table}. There are only finite number of irreducible representations.
+
+\vspace*{0.2cm}
+
+The following three tasks are left:
+
+\begin{itemize}
+\item Determine which symmetry species of irreducible representation may occur in a group and establish their characters.
+\item Determine to what direct sum of irreducible representations an arbitrary matrix representation can be reduced to.
+\item Construct the linear combinations of members of an arbitrary basis that span a particular irreducible representation.
+\end{itemize}
+
+}

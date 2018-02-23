@@ -1,0 +1,27 @@
+\opage{
+\otitle{2.18 The classical limit}
+
+\otext
+We consider two classical limits:
+
+\begin{enumerate}
+
+\item As the quantum number $v \rightarrow \infty$, the maxima in $\left|\psi\right|^2$ tends to the left and right sides of the potential. These maxima correspond to \textit{classical turning points} where the system spends most of its time. Note that still on the average, the system will be found at the minimum of the potential.
+
+\item If the wavefunction is localized in space, we have a \textit{wavepacket}. Apart from the width, this type of wavefunction gives a well defined location.\\
+
+\end{enumerate}
+
+\textbf{Example.} Show that whatever superposition of harmonic oscillator is used to construct a wavepacket, it is localized at the same place at the times $0, T, 2T, ...$ where $T$ is the classical period of the oscillator.\\
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} The classical period is $T = 2\pi/\omega$. We need to form a time-dependent wavepacket by superimposing the $\Psi(x,t)$ for the oscillator, and then evaluate it at $t = nT$, with $n = 0, 1, 2, ...$. The wavepacket has the following form:
+
+$$\Psi(x,t) = \sum\limits_{v}c_v\Psi(x,t) = \sum\limits_v c_v\psi_v(x)e^{-E_vt/\hbar} = \sum\limits_v c_v\psi_v(x)e^{-i(v + 1/2)\omega t}$$
+
+At time $nT$ this becomes:
+
+$$\Psi(x,nT) = \sum\limits_v\psi_v(x)e^{-2\pi ni(v + 1/2)} = \sum\limits_v c_v\psi_v(x)\left(-1\right)^n = \left(-1\right)^n\Psi(x,0)$$
+
+}

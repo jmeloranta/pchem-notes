@@ -1,0 +1,56 @@
+\opage{
+\otitle{6.3 The first-order correction to the energy}
+
+\otext
+The first equation in Eq. (\ref{eq6.17}) is assumed to be known. The 2nd equation will give us the first order correction. Since $H_0$ is hermitian and its eigenfunctions for a complete basis, we can write the first order wavefunction as a linear combination:
+
+\aeqn{6.18}{\psi_0^{(1)} = \sum\limits_na_n\psi_n^{(0)}}
+
+where the sum is over all states of the system (might include continuum states). When this is inserted into the 2nd equation in Eq. (\ref{eq6.16}), we get:
+
+\aeqn{6.19}{\sum\limits_na_n\left(H^{(0)} - E_0^{(0)}\right)\left|n\right> = \sum\limits_na_n\left(E_n^{(0)} - E_0^{(0)}\right)\left|n\right> = \left(E_0^{(1)} - H^{(1)}\right)\left|0\right>}
+
+Multiplication of this equation from the left by $\left<0\right|$ gives:
+
+$$\sum\limits_na_n\left(E_n^{(0)} - E_0^{(0)}\right)\left<0|n\right> = \left<0\right|\left(E_0^{(1)} - H^{(1)}\right)\left|0\right> = E_0^{(1)} - \left<0\right|H^{(1)}\left|0\right>$$
+
+The left hand side of the above equation is zero (orthogonality and $n = 0$ is zero otherwise). Therefore we can write:
+
+\aeqn{6.20}{E_0^{(1)} = \left<0\right|H^{(1)}\left|0\right> = H^{(1)}_{00}}
+
+When the diagonal elements of $\left<0\right|H^{(1)}\left|0\right>$ are zero, there is no 1st order correction.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} A small step is introduced into the one-dimensional square-well problem as shown below. Calculate the first order correction to the energy of a particle confined to the well when $a = L/10$ and (a) $n = 1$ and (b) $n = 2$.
+
+\ofig{perturbation}{0.4}{}
+
+\textbf{Solution.} We will use Eq. (\ref{eq6.20}) by using the following hamiltonian:
+
+$$H^{(1)} = \left\lbrace\begin{matrix}
+            \epsilon\textnormal{, if }\frac{1}{2}\left(L - a\right)\le x\le \frac{1}{2}\left(L + a\right)\\
+            0\textnormal{, if }x\textnormal{ is outside this region}\hspace*{0.4cm}\\ 
+            \end{matrix}\right.
+$$
+
+The wavefunctions for the unperturbed system are given by Eq. (\ref{eq2.31}). One would expect that the effect for $n = 2$ would be smaller than for $n = 1$ because the former has a node in this region. Integration then gives:
+
+}
+
+\opage{
+
+\otext
+$$E_n^{(1)} = \frac{2\epsilon}{L}\int\limits_{(L-a)/2}^{L+a)2}\sin^2\left(\frac{n\pi x}{L}\right)dx = \epsilon\left(\frac{a}{L} - \frac{(-1)^n}{n\pi}\sin\left(\frac{n\pi a}{L}\right)\right)$$
+
+where we have used the following intergral from a tablebook (or integration by parts):
+
+$$\int\sin^2(kx)dx = \frac{1}{2}x - \frac{1}{4k}\sin(2kx) + C$$
+
+Now with $a = L/10$ and (a) $n = 1$, $E^{(1)} = 0.1984\epsilon$, and (b) $n = 2$ $E^{(1)} = 0.0065\epsilon$. This is just as we expected.
+When $\epsilon > 0$, the effect of the perturbation is to increase the energy.
+
+}

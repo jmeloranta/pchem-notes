@@ -1,0 +1,140 @@
+\opage{
+\otitle{6.18 The Einstein transition probabilities}
+
+\otext
+Fermi's golden rule is able to account for absorption of photons by matter but it cannot explain why emission from an excited state to the ground state would occur. Transitions should only occur if the system is subject to electromagnetic radiation. From pratical experience we know that once a molecule is promoted to an excited state, it will fluoresce even when no electromagnetic radiation is present. Clearly we are missing something in our description of this phenomenom.
+
+\vspace*{0.2cm}
+
+Einstein considered a collection of atoms that were in thermal equilibrium with the electromagnetic field at a temperature $T$. If the perturbation due to the incident electromagnetic radiation takes the form $V_{fi} = -\vec{\mu}\cdot\vec{\varepsilon}$ where $\vec{\mu} = \sum q_ir_i$ is the electric dipole moment and $\vec{\varepsilon}$ is the electric field. Thus $\left|V_{fi}\right|^2 \propto \left|\vec{\varepsilon}\right|^2$. Note that the oscillatory term (i.e. $\cos(\omega t)$) is present in $H^{(1)}(t)$ but was not written as part of $V_{fi}$ (or $H^{(1)}_{fi}$ in Eq. (\ref{eq6.44})). Intensity of light is also proportional to $\left|\vec{\varepsilon}\right|^2$ and hence $\left|V_{fi}\right|^2 \propto I$.
+
+\vspace*{0.2cm}
+
+The relationship between intensity $I$ (J/m$^2$) and the energy $E$ (J) of the electromagnetic field is given by:
+
+\aeqn{6.75}{dE = I(\nu)A\Delta td\nu}
+
+where $I(\nu)$ is the intensity of the electromagnetic field at frequency $\nu$, $A$ is the incident area, $\Delta t$ is the passage time through the sample so that $\Delta t c$ gives the length of the sample ($c$ is the speed of light). The volume containing the electromagnetic radiation is then given by $\Delta t c A$. This allows us to calculate the energy density:
+
+}
+
+\opage{
+
+\otext
+\beqn{6.76}{\rho_{rad}(\nu)d\nu = \frac{dE}{Ac\Delta t} = \frac{I(c)}{c}d\nu \Rightarrow \rho_{rad}(\nu) = \frac{I(\nu)}{c}}
+{\textnormal{Since }\left|V_{fi}\right|^2\propto I(\nu) \Rightarrow \left|V_{fi}\right|^2 \propto \rho_{rad}(\nu)}
+
+We also have $E_{fi} = h\nu_{fi}$ and we can use Fermi's golden rule (Eq. (\ref{eq6.74})) to write the transition rate from $\left|i\right>$ to $\left|f\right>$ (note the difference: $\rho$ vs. $\rho_{rad}$ and $H_{fi} = \hbar V_{fi}$):
+
+\aeqn{6.77}{W_{f\leftarrow i} = 2\pi\hbar\umark{\left|V_{fi}\right|^2}{\propto \rho_{rad}}\rho(E_{fi}) \equiv B_{fi}\rho_{rad}(E_{fi})}
+
+where the proportionality constant $B_{fi}$ is called the \textit{Einstein coefficient of stimulated absorption}. It is also possible to have the reverse process (i.e. light induced emission from $\left|f\right>\rightarrow\left|i\right>$; \textit{stimulated emission}):
+
+\aeqn{6.78}{W_{i\leftarrow f} = B_{if}\rho_{rad}(E_{if}) = B_{if}\rho_{rad}(E_{fi})}
+
+Since $V_{if}$ is hermitian, $\left|V_{if}\right|^2 = V_{if}V_{if}^* = V_{fi}^*V_{fi} = \left|V_{fi}\right|^2$. This implies that also $B_{if} = B_{fi} \equiv B$.
+
+\vspace*{0.2cm}
+
+Next we will show the connection between $B_{fi}$ and the \textit{transition dipole moment} $\vec{\mu}_{fi}$:
+
+\aeqn{6.80}{\vec{\mu}_{fi} = \int\psi_f^*\vec{\mu}\psi_id\tau}
+
+}
+
+\opage{
+
+\otext
+\underline{Transition dipole moment and the Einstein coefficient \textit{B}:}
+
+\vspace*{0.2cm}
+
+A molecule is exposed to light with its electric field vector lying along the $z$-axis ($\varepsilon(t) = 2\varepsilon\cos(\omega t)$) and oscillating at a frequency $\omega = 2\pi\nu$. The perturbation is then:
+
+$$H^{(1)}(t) = 2H_{fi}^{(1)}\cos(\omega t) = -2\mu_z\varepsilon\cos(\omega t)$$
+
+where $\mu_z$ is the $z$-component of the transition diple moment. Since $H_{fi}^{(1)} = \hbar V_{fi}$ we have $V_{fi} = -\mu_z\varepsilon / \hbar$. The transition rate from an initial state $\left|i\right>$ to a continuum of final states $\left|f\right>$ due to a perturbation of this form is given by Eq. (\ref{eq6.74}):
+
+$$W_{i\rightarrow f} = 2\pi\hbar\left|V_{fi}\right|^2\rho(E_{fi}) = \frac{2\pi}{\hbar}\mu_{fi,z}^2\varepsilon^2\rho(E_{fi})$$
+
+where $\rho(E_{fi})$ is the density of the continuum states at an energy $E_{fi} = \hbar\omega_{fi}$ and $\omega_{fi}$ is the transition angular frequency. In liquid or gaseous phases molecules are able to rotate freely, which randomizes the direction. Then we would replace $\mu_{fi,z}^2$ by the average over all directions $\frac{1}{3}\left|\mu_{fi}\right|^2$.
+
+\vspace*{0.2cm}
+
+The energy of a classical electromagnetic field is:
+
+$$E = \frac{1}{2}\int\left(\epsilon_0\left<\varepsilon^2\right> + \mu_0\left<\textrm{h}^2\right>\right)d\tau$$
+
+}
+
+\opage{
+
+\otext
+wherer $\left<\varepsilon^2\right>$ and $\left<\textrm{h}^2\right>$ are the time-averages of the squared field strengths ($\varepsilon$ = electric, $\textrm{h}$ = magnetic).
+In the present case the period is $2\pi/\omega$ and we average over that:
+
+$$\left<\varepsilon^2\right> = \frac{4\varepsilon^2}{2\pi/\omega}\int\limits_{0}^{2\pi/\omega}\cos^2(\omega t)dt = 2\varepsilon^2$$
+
+From electromagnetic theory (Maxwell's equations): $\mu_0\left<\textrm{h}^2\right> = \epsilon_0\left<\varepsilon^2\right>$ where $\mu_0$ is the vacuum permeability and $\epsilon_0$ is the permittivity. Therefore, for a field in a region of volume $V$, we have:
+
+$$E = 2\epsilon_0\varepsilon^2V\textnormal{ or }\varepsilon^2 = \frac{E}{2\epsilon_0V}$$
+
+To obtain the transition rate for non-monochromatic light, we need to consider a distribution of frequencies.  This can done by definining the density of radiation states $\rho_{rad}'(E)$, where $\rho_{rad}'(E)dE$ gives the number of waves with photon energies in the range $E$ to $E + dE$. Integration over energies now gives:
+
+}
+
+\opage{
+
+\otext
+$$W_{i\rightarrow f} = \frac{1}{6\epsilon_0\hbar^2}\left|\mu_{fi}\right|^2\left(\frac{E_{fi}\rho_{rad}'(E_{fi})}{V}\right)$$
+
+This integration is similar to what was used to get Eq. (\ref{eq6.74}) but now instead of integrating over density of final states, we integrate over denisty of non-monochromatic electromagnetic radiation. The term $E_{fi}\rho_{rad}'(E_{fi})$ gives the energy density of radiation states (of monochromatic light) and therefore we can write:
+
+$$W_{i\rightarrow f} = \frac{1}{6\epsilon_0\hbar^2}\left|\mu_{fi}\right|^2\rho_{rad}(E_{fi})$$
+
+By comparing this with Eq. (\ref{eq6.78}) we can identify the Einstein coefficient $B$:
+
+\aeqn{6.79}{B_{if} = \frac{\left|\mu_{fi}\right|^2}{6\epsilon_0\hbar^2}}
+
+The transition probabilities above refer to individual atoms. For a collection of atoms the rates must be multiplied by the number of atoms in each state. For a system in thermal equilibrium when there is no net energy transfer between the system and the field:
+
+$$N_iW_{f\leftarrow i} = N_fW_{f\rightarrow i}$$
+
+Since the two transition rates are equal, we conclude that the populations of the two levels are equal. This would be in apparent conflict with the Boltzmann distribution:
+
+}
+
+\opage{
+
+\otext
+
+$$\frac{N_f}{N_i} = e^{-E_{fi} / (kT)}$$
+
+Therefore there must be an additional process that contributes to emission:
+
+\aeqn{6.81}{W^{spont}_{f\rightarrow i} = A_{fi}}
+
+where $A_{fi}$ is called the \textit{Einstein coefficient of spontaneous emission}. The total rate of emission is then:
+
+\aeqn{6.82}{W_{f\rightarrow i} = A_{fi} + B_{fi}\rho_{rad}(E_{fi})}
+
+If we accept the Boltzmann distribution then the above expression can be rearranged as:
+
+$$\rho_{rad}(E_{fi}) = \frac{A_{fi}/B_{fi}}{(B_{if} / B_{fi})e^{E_{fi}/(kT)} - 1}$$
+
+On the other hand Planck distribution gives:
+
+\aeqn{6.83}{\rho_{rad}(E_{fi}) = \frac{8\pi h\nu_{fi}^3 / c^3}{e^{E_{fi}/(kT)} - 1}}
+
+Comparison of the above two equations yields that $B_{fi} = B_{if}$ as well as the relationship between $B$ and $A$ coefficients:
+
+}
+
+\opage{
+
+\otext
+\aeqn{6.84}{A_{fi} = \frac{8\pi h\nu_{fi}^3}{c^3}B_{fi}}
+
+It is important to note that the spontaneous emission increases as the third power of the transition frequency. Thus this process becomes more and more important at high frequencies. This predicts that it is very difficult to make lasers that operate at X-ray frequencies (and this is indeed the case!) because it is very difficult to maintain excited state populations. The spontaneous emission can be viewed to originate from the zero-point fluctuations present in the electromagnetic field (even when photons are not present). These cause random perturbations that act on atoms/molecules and cause them to emit. 
+
+}

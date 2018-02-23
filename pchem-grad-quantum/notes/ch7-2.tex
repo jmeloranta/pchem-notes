@@ -1,0 +1,133 @@
+\opage{
+\otitle{7.2 Transition probabilities and selection rules}
+
+\otext
+
+Based on Eqs. (\ref{eq6.80}), (\ref{eq6.79}), (\ref{eq6.81}), and (\ref{eq6.84}), the fluorescence intensity is determined by the transition
+dipole moment between states $f$ and $i$:
+
+$$\vec{\mu}_{fi} = \left<\psi\left|\vec{\mu}\right|\psi\right> = \int\psi^*\hat{\mu}\psi d\tau$$
+
+where the electric dipole operatior $\vec{\mu} = -e\vec{r}$ ($\vec{r}$ is the position vector). Large values of $\left|\vec{\mu}\right|$ result
+in intense transitions between the states. Selection rules state whether this integral is zero (forbidden transition) or non-zero (allowed transition).
+For atoms these rules can be written in terms of changes in the orbital angular momentum quantum numbers ($l$ and $m$).
+
+\otext
+
+\underline{Properties of spherical harmonics:}\\
+
+\aeqn{7.2}{\int\limits_0^{\pi}\int\limits_0^{2\pi}Y_{l'}^{m'*}(\theta,\phi)Y_l^m(\theta,\phi)\sin(\theta)d\theta d\phi = \delta_{l,l'}\delta_{m,m'}}
+\ceqn{7.3}{\int\limits_0^{\pi}\int\limits_0^{2\pi}Y^{m''*}_{l''}(\theta,\phi)Y_{l'}^{m'}(\theta,\phi)Y_l^m(\theta,\phi)\sin(\theta)d\theta d\phi = 0}
+{\textnormal{unless }m'' = m + m'\textnormal{ and a triangle with sides }l, l', l''\textnormal{ can be formed:}}
+{l''^2 = l^2 + l'^2 - 2ll'\cos(\alpha)\textnormal{ with some value of }\alpha\textnormal{ }(\left|\cos(\alpha)\right|\le 1)}
+\aeqn{7.4}{Y^{m*}_l = (-1)^mY^{-m}_l\textnormal{ (Condon-Shortley)}} 
+
+}
+
+\opage{
+
+\otext
+
+In terms of symmetry, the vector components of $\vec{\mu}$ behave the same way as $p$-orbitals (in spherical harmonic basis). 
+Therefore $l' = 1$ and $m' = +1, 0, -1$ in Eq. (\ref{eq7.3}). 
+
+\otext
+
+\underline{Selection rule $\Delta l = 0, \pm 1$:} The triangle condition in Eq. (\ref{eq7.3}) gives:
+
+$$l''^2 = l^2 + l'^2 + 2ll'\alpha'$$
+
+where all quantum numbers must be positive whole integers, $l' = 1$, and $\alpha' = \cos(\alpha)$ is a free parameter restricted to 
+values between $-1$ and $+1$. This becomes then:
+
+$$l''^2 = l^2 + 1 + 2l\alpha'$$
+
+\begin{center}
+\begin{tabular}{lllll}
+$l$ & $l''$ & $l''^2$ & $l^2 + 1 + 2l\alpha'$ & $\alpha'$\\
+\cline{1-5}
+0 & 0 & 0 & 1 & No solution\\
+0 & 1 & 1 & 1 & Any value of $\alpha'$ OK\\
+0 & 2 & 4 & 1 & No solution\\
+  &   & ETC.\\
+\cline{1-5}
+1 & 1 & 1 & $1 + 1 + 2\alpha'$ & No solution\\
+1 & 2 & 4 & $1 + 1 + 2\alpha'$ & $\alpha' = 1$\\
+1 & 3 & 9 & $1 + 1 + 2\alpha'$ & No solution\\
+  &   & ETC.\\
+\cline{1-5}
+2 & 3 & 9 & $4 + 1 + 4\alpha'$ & $\alpha' = 1$\\
+\end{tabular}
+\end{center}
+
+\otext
+
+The equation is therefore satisfied when $\Delta l = l'' - l = \pm 1$ (e.g., $s-p$ transition).
+
+}
+
+\opage{
+
+\otext
+
+\underline{Selection rule $\Delta m = 0, \pm 1$}: The second condition in Eq. (\ref{eq7.3}) with $m' = -1, 0, +1$ leads to $m'' = m + 1$, $m'' = m - 1$, or $m'' = m$.
+For short this is $\Delta m = m'' - m = 0, \pm 1$.
+
+\otext
+
+These results can also be derived using group theory as follows. Although atoms have infinitely high symmetry, for the following example we can
+restrict to $D_{2h}$. In this point group: $s$ orbitals belong to $A_g$, $p_x$ to $B_{3u}$, $p_y$ to $B_{2u}$, and $p_z$ to $B_{1u}$.
+The transition dipole operators share these same irreps. 
+
+\otext
+
+\underline{$\left<s|\hat{\mu}|p_x\right>$:}
+
+$x: A_g\times B_{3u}\times B_{3u} = A_g \times A_g = A_g\textnormal{ (possibly non-zero; allowed transition!)}$\\
+$y: A_g\times B_{2u}\times B_{3u} = B_{2u} \times B_{3u} = B_{1g}\textnormal{ (zero)}$\\
+$z: A_g\times B_{1u}\times B_{3u} = B_{1u} \times B_{3u} = B_{2g}\textnormal{ (zero)}$\\
+
+\otext
+
+\underline{$\left<s|\hat{\mu}|p_y\right>$:}
+
+$x: A_g\times B_{3u}\times B_{2u} = B_{3u} \times B_{2u} = B_{1g}\textnormal{ (zero)}$\\
+$y: A_g\times B_{2u}\times B_{2u} = A_g \times A_g = A_g\textnormal{ (possibly non-zero; allowed transition!)}$\\
+$z: A_g\times B_{1u}\times B_{2u} = B_{1u} \times B_{2u} = B_{3g}\textnormal{ (zero)}$\\
+
+\otext
+
+\underline{$\left<s|\hat{\mu}|p_z\right>$:}
+
+$x: A_g\times B_{3u}\times B_{1u} = B_{3u} \times B_{1u} = B_{2g}\textnormal{ (zero)}$\\
+$y: A_g\times B_{2u}\times B_{1u} = B_{2u} \times B_{1u} = B_{3g}\textnormal{ (zero)}$\\
+$z: A_g\times B_{1u}\times B_{1u} = A_g \times A_g = A_g\textnormal{ (possibly non-zero; allowed transition!)}$\\
+
+\otext
+
+Therefore $s-p$ transitions are electric dipole allowed (optical transition).
+
+}
+
+\opage{
+
+\otext
+
+However, $s-s$ transitions are not allowed because (e.g., $1s - 2s$):
+
+\otext
+
+$x: A_g\times B_{3u}\times A_g = B_{3u}\textnormal{ (zero)}$\\
+$y: A_g\times B_{2u}\times A_g = B_{2u}\textnormal{ (zero)}$\\
+$z: A_g\times B_{1u}\times A_g = B_{1u}\textnormal{ (zero)}$\\
+
+\otext
+
+Remember that electron spin does not change in optical transitions (optical spectroscopy). In magnetic resonance spectroscopy,
+transitions between either electron or nuclear spin states are observed.
+
+\otext
+
+Review the atomic and molecular term symbol sections from the undergraduate quantum notes.
+
+}

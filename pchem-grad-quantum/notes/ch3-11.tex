@@ -1,0 +1,91 @@
+\opage{
+\otitle{3.11 The radial Schr\"odinger equation}
+
+\otext
+The first term appearing in the effective potential (Eq. (\ref{eq3.41})) is the Coulomb interaction between the electron and the nucleus. The second term corresponds to a centrifugal force that impels he electron away from the nucleus. When $l = 0$ (i.e. spherical $s$-orbital), the centrifugal term is zero. When $l > 0$ the angular momentum drags the electron farther away from the nucleus. States with $l = 0$ and $l > 0$ have very different behavior near the nucleus: For $l = 0$ the effective potential tends toward $-\infty$ whereas for $l > 0$ it approaches $+\infty$. This implies that the $l > 0$ states have a node at the nucleus whereas $l = 0$ do not.
+
+\setcounter{equation}{42} % Skipped Eq. (3.42)
+
+\vspace*{0.2cm}
+
+The solutions to the radical Schr\"odinger equation are related to the \textit{associated Laguerre polynomials} (derivation not shown). Each Laguerre polynomial is labelled by two numbers $n$ and $l$ where $n = 1, 2, ...$ and $l = 0, 1, ..., n - 1$. The overall solution $R$ is a product of the normalization factor, the associated Laguerre polynomial $L$ and the exponential factor:
+
+$$R_{n,l}(r) = -\left\lbrace\left(\frac{2Z}{na}\right)^3\frac{(n - l - 1)!}{2n\left((n+l)!\right)^3}\right\rbrace\rho^lL_{n+l}^{2l+1}(\rho)e^{-\rho/2}$$
+
+where $\rho = \frac{2Zr}{na_0}$ and $a_0$ is the Bohr radius, which defined as:
+
+\aeqn{3.43}{a_0 = \frac{4\pi\epsilon_0\hbar^2}{m_ee^2} \approx 52.9\textnormal{ pm}}
+
+}
+
+\opage{
+
+\vspace*{-0.2cm}
+
+\otext
+\begin{table}
+\begin{tabular}{l@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l@{\extracolsep{1cm}}l}
+Orbital & $n$ & $l$ & $R_{nl}$\\
+\hline
+1s & 1 & 0 & $2\left(\frac{Z}{a_0}\right)^{3/2}e^{-\rho/2}$\\
+2s & 2 & 0 & $\frac{1}{2\sqrt{2}}\left(\frac{Z}{a_0}\right)^{3/2}(2 - \rho)e^{-\rho/2}$\\
+2p & 2 & 1 & $\frac{1}{2\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2}\rho e^{-\rho/2}$\\
+3s & 3 & 0 & $\frac{1}{9\sqrt{3}}\left(\frac{Z}{a_0}\right)^{3/2}(6 - 6\rho - \rho^2)e^{-\rho/2}$\\
+3p & 3 & 1 & $\frac{1}{9\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2}(4 - \rho)\rho e^{-\rho/2}$\\
+3d & 3 & 2 & $\frac{1}{9\sqrt{30}}\left(\frac{Z}{a_0}\right)^{3/2}\rho^2 e^{-\rho/2}$\\
+\end{tabular}
+% \label{table10.1}
+\caption{Examples of the radial wavefunctions for hydrogenlike atoms.}
+\end{table}
+
+\vspace*{-0.5cm}
+
+\begin{itemize}
+\item When $l = 0$ the radical wavefunction has non-zero value at $r = 0$. When $l > 0$, the radial wavefunction is zero at $r = 0$.
+\item Each radical wavefunction has $n - l - 1$ nodes in it (we exclude the zero at $r = 0$ for $l > 0$).
+\end{itemize}
+
+Inserting the radial wavefunctions into Eq. (\ref{eq3.40}) gives the energy:
+
+\aeqn{3.44}{E_n = -\left(\frac{Z^2\mu e^4}{32\pi^2\epsilon_0^2\hbar^2}\right)\frac{1}{n^2}}
+
+}
+
+\opage{
+
+\otext
+\begin{table}
+\begin{tabular}{l@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l@{\extracolsep{0.4cm}}l}
+Quantum \# & Values & $E$ contrib. & Meaning\\
+\hline
+$n$ & $1, 2, ...$ & YES & The principal\\
+    &             &     & quantum numer\\
+$l$ & $l < n$ & NO & Total angular\\
+    &         &    & momentum ($s,p, ...$)\\
+$m_l$ & $-l, -l+1, ..., 0, l-1, l$ & NO & Projection of\\
+      &                            &    & angular momentum.\\
+\end{tabular}
+% \label{table10.1}
+\end{table}
+
+\vspace{-0.9cm}
+\begin{columns}
+\begin{column}{5cm}
+\ofig{radial}{0.25}{Radial wavefunctions.}
+\end{column}
+\begin{column}{5cm}
+\ofig{radial2}{0.25}{Radial probabilities ($\times r^2$; see next section).}
+\end{column}
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+The following Maxima program can be used to plot te radial wavefunctions on the previous page
+(if wxMaxima is used, replace plot2d with wxplot2d):\\
+
+\verbatiminput{maxima/radial.mac}
+
+}

@@ -1,0 +1,106 @@
+\opage{
+\otitle{3.5 Particle on a sphere: The Schr\"odinger equation and its solution}
+
+\otext
+Next we consider a particle moving on a spherical shell (rather than in a circle), which means that we will need to consider two angular variables, i.e., spherical coordinates with $r$ fixed. Such system can be, for example, a diatomic molecule that rotates about its center of mass. The following calculation will also be useful when we solve the hydrogen atom problem. Here the potential energy is also zero and we need to consider cyclic boundary conditions for the angular variables. The Hamiltonian is then simply:
+
+\aeqn{3.16}{H = -\frac{\hbar^2}{2m}\nabla^2}
+
+This is most convenient to express in spherical coordinates:
+
+
+\begin{columns}
+
+\begin{column}{3cm}
+\vspace*{-0.3cm}
+\ofig{spherical}{0.6}{}
+\end{column}
+
+\begin{column}{6cm}
+\hspace*{-0.5cm}\ceqn{3.17}{x = r\sin(\theta)\cos(\phi)}{y = r\sin(\theta)\sin(\phi)}{z = r\cos(\theta)}
+$$\theta\in\left[0,\pi\right]\textnormal{, }\phi\in\left[0,2\pi\right]\textnormal{ and }r\in\left[0,\infty\right]$$
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+The laplacian can be written in spherical coordinates in various different equivalent forms (see a mathematics tablebook):
+
+\ceqn{3.18}{\nabla^2 = \frac{1}{r}\frac{\partial^2}{\partial r^2}r + \frac{1}{r^2}\Lambda^2}
+{\nabla^2 = \frac{1}{r^2}\frac{\partial}{\partial r}r^2\frac{\partial}{\partial r} + \frac{1}{r^2}\Lambda^2}
+{\nabla^2 = \frac{\partial^2}{\partial r^2} + \frac{2}{r}\frac{\partial}{\partial r} + \frac{1}{r^2}\Lambda^2}
+
+The \textit{legendrian} $\Lambda^2$ is the angular part of the laplacian:
+
+\aeqn{3.19}{\Lambda^2 = \frac{1}{\sin^2(\theta)}\frac{\partial^2}{\partial\phi^2} + \frac{1}{\sin(\theta)}\frac{\partial}{\partial\theta}\sin(\theta)\frac{\partial}{\partial\theta}}
+
+If the particle is confined to a spherical shell then $r$ is constant in the laplacian and then the hamiltonian reduces to:
+
+\aeqn{3.20}{H = -\frac{\hbar^2}{2mr^2}\Lambda^2}
+
+}
+
+\opage{
+
+\otext
+Since the moment of inertia $I = mr^2$ the Schr\"odinger equation now reads:
+
+\aeqn{3.21}{\Lambda^2\psi(\theta,\phi) = -\left(\frac{2IE}{\hbar^2}\right)\psi(\theta,\phi)}
+
+By multiplying the Schr\"odinger Eq. (\ref{eq3.21}) by $\sin^2(\theta)$, we can separate $\theta$ and $\phi$ parts. Thus the solution must be $\psi(\theta,\phi) = \Theta(\theta)\Phi(\phi)$. For $\Theta$ the equation becomes:
+
+$$\frac{d^2\Phi}{d\phi^2} = \textnormal{constant}\times\Phi$$
+
+This equation with cyclic boundary conditions we have already seen (particle confined to a ring). The eigenfunctions were given in Eq. (\ref{eq3.11}) and are labelled by the quantum number $m_l$. Solution for $\Theta$ is more complicated and we skip the derivation. The combined $\Phi\Theta$ functions are called the \textit{spherical harmonics} $Y_{l,m_l}(\theta,\phi)$. They satisfy the required eigenvalue equation:
+
+\aeqn{3.22}{\Lambda^2Y_{l,m_l} = -l(l+1)Y_{l,m_l}}
+
+where the quantum numbers $l$ and $m_l$ may have the following values:
+
+$$l = 0, 1, 2, ...\textnormal{ and }m_l = -l, -l+1, ..., 0, ..., l-1, l$$
+
+}
+
+\opage{
+
+\otext
+Spherical harmonics are composed of two factors:
+
+\aeqn{3.23}{Y_{l,m+l}(\theta,\phi) = \Theta_{l,m_l}(\theta)\Phi_{m_l}(\phi)}
+
+where $\Phi$ are solutions for the particle in a ring problem and $\Theta$ are called \textit{associated Legendre functions}. Some spherical harmonics are listed below.
+
+$$Y_{0,0} = \frac{1}{2\sqrt{\pi}}\textnormal{, }\textnormal{, }Y_{1,0} = \sqrt{\frac{3}{4\pi}}\cos(\theta)\textnormal{, }Y_{1,1} = -\sqrt{\frac{3}{8\pi}}\sin(\theta)e^{i\phi}$$
+$$Y_{1,-1} = \sqrt{\frac{3}{8\pi}}\sin(\theta)e^{-i\phi}\textnormal{, }Y_{2,0} = \sqrt{\frac{5}{16\pi}}(3\cos^2(\theta) - 1)\textnormal{, }Y_{2,1} = -\sqrt{\frac{15}{8\pi}}\sin(\theta)\cos(\theta)e^{i\phi}$$
+$$Y_{2,-1} = \sqrt{\frac{15}{8\pi}}\sin(\theta)\cos(\theta)e^{-i\phi}\textnormal{, }Y_{2,2} = \sqrt{\frac{15}{32\pi}}\sin^2(\theta)e^{2i\phi}\textnormal{, }Y_{2,-2} = \sqrt{\frac{15}{32\pi}}\sin^2(\theta)e^{-2i\phi}$$
+
+$$\textnormal{ETC.}$$
+
+Comparison of Eqs. (\ref{eq3.21}) and (\ref{eq3.22}) shows that (note degeneracy with respect to $m_l$):
+
+\aeqn{3.24}{E_{l,m_l} = l(l+1)\frac{\hbar^2}{2I}}
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Show that the spherical harmonic $Y_{1,0}$ is a solution of Eq. (\ref{eq3.22}).
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We substitute $Y_{1,0}$ into Eq. (\ref{eq3.22}):
+
+$$\Lambda^2Y_{1,0} = \frac{1}{\sin(\theta)}\frac{\partial}{\partial\theta}\sin(\theta)\frac{\partial}{\partial\theta}N\cos(\theta) = -N\frac{1}{\sin(\theta)}\frac{d}{d\theta}\sin^2(\theta)$$
+$$ = -2N\frac{1}{\sin(\theta)}\sin(\theta)\cos(\theta) = -2Y_{1,0}$$
+
+
+where here $N$ is the normalization factor for $Y_{1,0}$. The following Maxima program can be used to evaluate spherical harmonics. Maxima follows the Condon-Shortley convention but may have a different overall sign than in the previous table.
+
+\verbatiminput{maxima/spherical.mac}
+
+}

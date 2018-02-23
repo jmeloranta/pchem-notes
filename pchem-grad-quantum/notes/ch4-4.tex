@@ -1,0 +1,74 @@
+\opage{
+\otitle{4.4 The effect of the shift operators}
+
+\otext
+In the following we will explore the properties of angular momentum (without reference to our earlier work with spherical harmonics). We use two quantum numbers $\lambda$ and $m_l$ to denote the simultaneous eigenvalues of $l^2$ and $l_z$. The eigenstates are now labelled as $\left|\lambda,m_l\right>$. Here $m_l$ is defined as:
+
+\aeqn{4.14}{l_z\left|\lambda,m_l\right> = m_l\hbar\left|\lambda,m_l\right>}
+
+This definition is correct since $m_l$ is just a numerical factor multiplying $\hbar$ (which itself has the right units for angular momentum). Since $l_z$ is hermitean, $m_l$ must be real but at this point we don't know that it can only take discrete values.
+
+\vspace*{0.2cm}
+
+Since $l_z$ and $l^2$ commute, $\left|\lambda,m_l\right>$ is also an eigenstate of $l^2$. The eigenvalue of $l^2$ we take to depend on both $\lambda$ and $m_l$ as follows:
+
+\aeqn{4.15}{l^2\left|\lambda ,m_l\right> = f(\lambda ,m_l)\hbar^2\left|\lambda ,m_l\right>}
+
+where $f$ is an unknown function (that we know to be $\lambda(\lambda +1)$ based on our earlier work based on spherical harmonics). Since $l^2$ is hermitean, $f$ must be a real valued function.
+
+}
+
+\opage{
+
+\otext
+\underline{Show that the function $f$ is non-negative.}\\
+
+\vspace*{0.25cm}
+
+\underline{Proof.} First $l^2 = l_x^2 + l_y^2 + l_z^2 \Rightarrow l^2 - l_z^2 = l_x^2 + l_y^2$ and then:
+
+$$\left<\lambda,m_l\right|l^2 - l_z^2\left|\lambda,m_l\right> = \left<\lambda,m_l\right|l_x^2 + l_y^2\left|\lambda,m_l\right>$$
+$$ = \left<\lambda,m_l\right|l_x^2\left|\lambda,m_l\right> + \left<\lambda,m_l\right|l_y^2\left|\lambda,m_l\right> \ge 0$$
+
+where the last inequality follows from the fact that squares of hermitean operators give non-negative expectation values (Exercise: expand $\left|\lambda,m_l\right>$ in eigenfunctions of $l_x$ or $l_y$ and inspect the terms in the resulting sum). We can also write:
+
+$$\left<\lambda,m_l\right|(f(\lambda,m_l) - m_l^2)\hbar^2\left|\lambda,m_l\right> = \left<\lambda,m_l\right|l^2 - l_z^2\left|\lambda,m_l\right> \ge 0$$
+
+since $\left|\lambda,m_l\right>$ are eigenfunctions of both $l^2$ and $l_z$. This means that:
+
+\aeqn{4.16}{f(\lambda,m_l) \ge m_l^2 \ge 0}
+
+where the last inequality follows from the hermiticity of $l_z$.
+
+}
+
+\opage{
+
+\otext
+Next we will see how the shift operators operate on a given eigenstate. First we note that since $l_+$ and $l_-$ are defined in terms of $l_x$ and $l_y$, which do not have $\left|\lambda,m_l\right>$ as their eigenfunctions, and one expects that a new state will be created after their operation.
+
+\begin{enumerate}
+
+\item Apply $l^2$ on function $l_+\left|\lambda,m_l\right>$ and show that it is an eigenfunction and that there is no change in the eigenvalue (i.e. function $f$ value).
+$$l^2l_+\left|\lambda,m_l\right> = l_+l^2\left|\lambda,m_l\right> = l_+f(\lambda,m_l)\hbar^2\left|\lambda,m_l\right> = f(\lambda,m_l)\hbar^2l_+\left|\lambda,m_l\right>$$
+where we have used the fact that $\left[l^2,l_+\right] = 0$ (Eq. (\ref{eq4.13})).
+
+\item Next we apply $l_z$ on function $l_+\left|\lambda,m_l\right>$ and show that it is an eigenfunction and that the eigenvalue increases by $\hbar$:
+$$l_zl_+\left|\lambda,m_l\right> = \left(l_+l_z + \left[l_z,l_+\right]\right)\left|\lambda,m_l\right> = \left(l_+l_z + \hbar l_+\right)\left|\lambda,m_l\right>$$
+$$ = \left(l_+m_l\hbar + \hbar l_+\right)\left|\lambda,m_l\right> = \left(m_l + 1\right)\hbar l_+\left|\lambda,m_l\right>$$
+This is an eigenvalue equation with $l_+\left|\lambda,m_l\right>$ as the eigenfunction for $l_z$ and $\left(m_l + 1\right)\hbar$ as the eigenvalue. 
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+Thus the state $l_+\left|\lambda,m_l\right>$ is proportional to the state $\left|\lambda,m_l+1\right>$ and we can write:
+\beqn{4.17}{l_+\left|\lambda,m_l\right> = c_+\left(\lambda,m_l\right)\hbar\left|\lambda,m_l+1\right>}
+{l_-\left|\lambda,m_l\right> = c_-\left(\lambda,m_l\right)\hbar\left|\lambda,m_l-1\right>}
+
+where $c_+$ and $c_-$ are dimensionless constants. The 2nd line follows from analogous consideration for $l_-$. Clearly $l_+$ generates the next higher state in terms of $m_l$ and $l_-$ does the opposite. This is why they are called shift operators.
+
+}

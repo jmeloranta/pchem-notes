@@ -1,0 +1,68 @@
+\opage{
+\otitle{3.13 Atomic orbitals}
+
+\otext
+One electron wavefunctions are called \textit{atomic orbitals}. The atomic orbitals are labelled as $s$-orbital when $l = 0$, $p$-orbital when $l = 1$, etc. When electron is described by the wavefunction $\psi_{n,l,m_l}$ we say that the electron \textit{occupies} the orbital. An electron that occupies $s$-orbital is called an $s$-electron and similarly for the other orbitals.
+
+\vspace*{0.2cm}
+
+There are two common ways to represent an orbital graphically: 1) by denoting the electron density by shading or 2) by drawing \textit{boundary surface}. In the latter case the boundary surface is often chosen in such way that 90\% of the electron density resides inside the surface. For real orbitals, the sign is often denoted by writing $+$ or $-$ on the relevant lobes of the orbitals. Note that this representation only gives information about the shape and the radical extent of the orbital. Examples of atomic orbitals are shown on the next page. 
+
+\vspace*{0.2cm}
+
+For $p$-orbitals ($l = 1$), we have three different $m_l$ values allowed ($m_l = +1, 0, -1$). These are often labelled as $p_{+1}$, $p_0$, and $p_{-1}$. The orbital with $m_l = 0$ is also called a \textit{$p_z$-orbital}. The other two orbitals $p_{+1}$ and $p_{-1}$ are complex, and their maximum amplitude lies in the $xy$-plane.
+
+
+}
+
+\opage{
+
+\ofig{orbitals}{0.3}{Atomic orbital boundary surfaces.}
+
+}
+
+\opage{
+
+\otext
+The wavefunctions for $p$-orbitals are given by:
+
+\ceqn{3.48}{p_0 = p_z = \sqrt{\frac{3}{4\pi}}R_{n,l}(r)\cos(\theta)}
+{p_{+1} = -\sqrt{\frac{3}{8\pi}}R_{n,l}(r)\sin(\theta)e^{i\phi}}
+{p_{-1} = \sqrt{\frac{3}{8\pi}}R_{n,l}(r)\sin(\theta)e^{-i\phi}}
+
+Since $p$-orbitals are degenerate, linear combinations of the above functions are also eigenfunctions. We can write the \textit{Cartesian $p$-orbitals} as:
+
+\beqn{3.49}{p_x = \frac{1}{\sqrt{2}}\left(p_{-1} - p_{+1}\right) = \sqrt{\frac{3}{4\pi}}R_{n,l}(r)\sin(\theta)\cos(\phi)}
+{p_y = \frac{i}{\sqrt{2}}\left(p_{-1} + p_{+1}\right) = \sqrt{\frac{3}{4\pi}}R_{n,l}(r)\sin(\theta)\sin(\phi)}
+
+When there are well-defined $x$ and $y$ axes (such non-linear molecules), it is more approriate to use the Cartesian forms. The $p_x,p_y$, and $p_z$ orbitals are aligned along the correponding axes. Note that they change sign depending on passing through the origin along the axis.
+
+}
+
+\opage{
+
+\otext
+$d$-orbitals are five fold degenerate ($n > 2$). All orbitals, except $m_l = 0$, are complex and correspond to definite states of orbital angular momentum around the $z$-axis. It is possible to express these orbitals in their Cartesian forms as follows:
+
+$$d_{z^2} = d_0 = \sqrt{\frac{5}{16\pi}}R_{n,2}(r)\left(3\cos^2(\theta) - 1\right) = \sqrt{\frac{5}{16\pi}}R_{n,2}(r)\left(3z^2 - r^2\right) / r^2$$
+
+$$d_{x^2 - y^2} = \frac{1}{\sqrt{2}}\left(d_{+2} + d_{-2}\right) = \sqrt{\frac{15}{16\pi}}R_{n,2}(r)\left(x^2 - y^2\right) / r^2$$
+
+$$d_{xy} = \frac{1}{i\sqrt{2}}\left(d_{+2} - d_{-2}\right) = \sqrt{\frac{15}{4\pi}}R_{n,2}(r)xy / r^2$$
+
+$$d_{yz} = \frac{1}{i\sqrt{2}}\left(d_{+1} + d_{-1}\right) = -\sqrt{\frac{15}{4\pi}}R_{n,2}(r)yz / r^2$$
+
+$$d_{zx} = \frac{1}{\sqrt{2}}\left(d_{+1} - d_{-1}\right) = -\sqrt{\frac{15}{4\pi}}R_(n,2)(r)zx / r^2$$
+
+}
+
+\opage{
+
+\otext
+Given the analytic forms for the orbitals, it is now possible to calculate all their properties. For example, it is possible to obtain the mean radius for a given orbital by using $r$ as the operator (or its inverse $1/r$):
+
+\beqn{3.50}{\left<r\right>_{n,l,m_l} = \frac{n^2a_0}{Z}\left(1 + \frac{1}{2}\left(1 - \frac{l(l+1)}{n^2}\right)\right)}
+{\left<\frac{1}{r}\right>_{n,l,m_l} = \frac{Z}{a_0n^2}}
+
+Note that the mean radius for $ns$ orbital is larger than for $np$ orbital. 
+}

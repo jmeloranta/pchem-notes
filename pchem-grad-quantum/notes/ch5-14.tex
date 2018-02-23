@@ -1,0 +1,256 @@
+\opage{
+\otitle{5.14 The decomposition of direct-product bases}
+
+\otext
+As we just saw with $d$-orbitals, they correspond to quadratic forms of the Cartesian components $x,y,z$.  For example, $d_{xy} = xyf(r)$. Can we find the the symmetry species of these quadratic forms just be knowning the symmetry species for individual $x,y,z$? In more general terms, if we know the symmetry species spanned by a basis $(f_1,f_2,...)$, can we state the symmetry species spanned by their products, such as $(f_1^2,f_2^2,...)$?
+It turns out that this information is carried by the character tables.
+
+\vspace*{0.2cm}
+
+If $f_i^{(l)}$ is a member of a basis for an irreducible representation of symmetry species $\Gamma^{(i)}$ of dimension $d_l$, and $f_{i'}^{(l')}$ is a member of a basis for an irreducible representation of symmetry species $\Gamma^{(l')}$ of dimension $d_{l'}$, then the products also form a basis for a representation, which is called a \textit{direct-product representation} with dimension $d_l\times d_{l'}$.
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} Let $R$ be a symmetry operation of a group with its matrix representation denoted by $D(R)$. Two basis functions transform as follows:
+
+$$Rf_i^{(l)} = \sum\limits_jf_j^{(l)}D_{ji}^{(l)}(R)\textnormal{ and }Rf_{i'}^{(l')} = \sum\limits_{j'}f_{j'}^{(l')}D_{j'i'}^{(l')}(R)$$
+
+When these are multiplied, we get:
+
+}
+
+\opage{
+
+\otext
+$$\left(Rf_i^{(l)}\right)\left(Rf_{i'}^{(l')}\right) = \sum\limits_{j,j'}f_j^{(l)}f_{j'}^{(l')}D_{ji}^{(l)}(R)D_{j'i'}^{(l')}(R)$$
+
+This is appears to be a linear combination of products $f_j^{(l)}f_{j'}^{(l')}$ with the expansion coefficients given by $D^{(l)}_{ji}(R)D_{j'i'}^{(l')}(R)$ and hence forms a basis. The sums run to $d_l$ and $d_{l'}$ and hence the dimensionality of the expansion is $d_l\times d_{l'}$. The matrix representatitve of $R$ in the direct-product basis is $D^{(l)}_{ji}(R)D_{j'i'}^{(l')}(R)$ with $i,i'$ and $j,j'$ label the columns and rows of the matrix, respectively.
+
+\vspace*{0.2cm}
+
+Next we calculate the character of $R$ for its matrix representation in the direct-product basis. The diagonal elements now correspond to $i = i'$ and $j = j'$. and therefore the character is given by:
+
+\beqn{5.33}{\chi(R) = \sum\limits_{i,i'}D^{(l)}_{ii}(R)D_{i'i'}^{(l')}(R) = \left\lbrace\sum\limits_iD_{ii}^{(l)}(R)\right\rbrace\left\lbrace\sum_{i'}D_{i'i'}^{(l')}(R)\right\rbrace}
+{ = \chi^{(l)}(R)\chi^{(l')}(R)}
+
+This simply states that the characters of the operations in the direct-product basis are the products of the corresponding characters for the original bases. 
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Determine the symmetry species of the irreducible representations spanned by (a) the quadratic forms $x^2,y^2,z^2$ and (b) the basis $(xz,yz)$ in the group $C_{3v}$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} (a) First we use Eq. (\ref{eq5.33}) to find out the characters of each symmetry operation in $C_{3v}$. We saw previously that the basis $(x,y,z)$ spans a representation with characters 3, 0, 1 (corresponding to $E,2C_3,3\sigma_v$). The direct-product basis composed of $x^2,y^2,z^2$ therefore spans a representation with characters 9, 0, 1. Earlier we developed a simple method to find out the corresponding symmetry elements by looking for a sum of them that reproduces the right characters. Here $2\textnormal{A}_1 + \textnormal{A}_2 + 3\textnormal{E}$ yields the required character 9, 0, 1.
+
+\vspace*{0.1cm}
+
+(b) The basis $(xz,yz)$ is the direct product of the bases $z$ and $(x,y)$ which span $\textnormal{A}_1$ and E, respectively. From the $C_{3v}$ character table we get:
+
+$$(1\textnormal{ }1\textnormal{ }1)\times (2\textnormal{ }-1\textnormal{ }0) = (2\textnormal{ }-1\textnormal{ }0)$$
+
+This corresponds clearly to E itself. Therefore, $(xz,yz)$ is a basis for E. This is often denoted by writing $\textnormal{A}_1 \times \textnormal{E} = \textnormal{E}$. In a similar way the direct product of $(x,y)$ with itself, consists of the basis $(x^2,xy,yx,y^2)$ which spans $\textnormal{E}\times\textnormal{E} = \textnormal{A}_1 + \textnormal{A}_2 + \textnormal{E}$.
+
+\vspace*{0.2cm}
+
+Tables of decompositions of direct products like the ones above are called \textit{direct-product tables}. Note that the direct-product $\Gamma^{(l)}\times\Gamma^{(l')}$ contains only $\textnormal{A}_1$ when $l = l'$. Direct-product tables are listed in the following pages.
+
+}
+
+\opage{
+
+\otext
+\begin{table}
+\caption{Direct product table for $C_1$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c}
+$C_1$ & $A$ \\
+\hline
+$A$ & $A$ \\ 
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_s$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_s$ & $A'$ & $A''$ \\
+\hline
+$A'$ & $A'$ & $A''$\\ 
+$A''$ & $A''$ & $A'$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_i$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_i$ & $A_g$ & $A_u$ \\
+\hline
+$A_g$ & $A_g$ & $A_u$\\ 
+$A_u$ & $A_u$ & $A_g$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $C_{2v}$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{2v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.75cm}
+
+\begin{table}
+\caption{Direct product table for $C_{3v}$ and $D_3$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{3v}$ & $A_1$ & $A_2$ & $E$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E$\\  
+$A_2$ & $A_2$ & $A_1$ & $E$\\
+$E$ & $E$ & $E$ & $A_1 + A_2 + E$\\
+\end{tabular}
+\end{table}
+
+\vspace{-0.75cm}
+
+{\tiny
+\begin{table}
+\caption{Direct product table for $C_{4v}$, $D_{2d}$ and $D_4$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{4v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$ & $E$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$ & $E$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$ & $E$\\
+$E$   & $E$   & $E$   & $E$   & $E$ & $A_1 + A_2 + B_1 + B_2$\\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $C_{5v}$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$C_{5v}$ & $A_1$ & $A_2$ & $E_1$ & $E_2$ \\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E_1$ & $E_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $E_2$ & $E_1$\\
+$E_1$ & $E_1$ & $E_1$ & $A_1 + A_2 + E_2$ & $E_1 + E_2$\\
+$E_2$ & $E_2$ & $E_2$ & $E_1 + E_2$ & $A_1 + A_2 + E_2$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $C_{6v}$ and $D_{6h}$. For $D_{6h}$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$C_{6v}$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E_1$ & $E_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $B_1$ & $B_2$ & $E_1$ & $E_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $B_2$ & $B_1$ & $E_1$ & $E_2$\\
+$B_1$ & $B_1$ & $B_2$ & $A_1$ & $A_2$ & $E_2$ & $E_1$\\
+$B_2$ & $B_2$ & $B_1$ & $A_2$ & $A_1$ & $E_2$ & $E_1$\\
+$E_1$ & $E_1$ & $E_1$ & $E_2$ & $E_2$ & $A_1 + A_2 + E_2$ & $B_1 + B_2 + E_1$\\
+$E_2$ & $E_2$ & $E_2$ & $E_1$ & $E_1$ & $B_1 + B_2 + E_1$ & $A_1 + A_2 + E_2$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $D_2$ and $D_{2h}$. For $D_{2h}$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c@{\extracolsep{1cm}}c}
+$D_2$ & $A$ & $B_1$ & $B_2$ & $B_3$ \\
+\hline
+$A$ & $A$ & $B_1$ & $B_2$ & $B_3$\\  
+$B_1$ & $B_1$ & $A$ & $B_3$ & $B_2$\\
+$B_2$ & $B_2$ & $B_3$ & $A$ & $B_1$\\
+$B_3$ & $B_3$ & $B_2$ & $B_1$ & $A$\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Direct product table for $D_{3h}$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$C_{3h}$ & $A_1'$ & $A_2'$ & $E'$ & $A_1''$ & $A_2''$ & $E''$\\
+\hline
+$A_1'$ & $A_1'$ & $A_2'$ & $E'$ & $A_1''$ & $A_2''$ & $E''$\\
+$A_2'$ & $A_2'$ & $A_1'$ & $E'$ & $A_2''$ & $A_1''$ & $E''$\\
+$E'$ & $E'$ & $E'$ & $A_1' + A_2' + E'$ & $E''$ & $E''$ & $A_1'' + A_2'' + E''$\\
+$A_1''$ & $A_1''$ & $A_2''$ & $E''$ & $A_1'$ & $A_2'$ & $E'$\\
+$A_2''$ & $A_2''$ & $A_1''$ & $E''$ & $A_2'$ & $A_1'$ & $E'$\\
+$E''$ & $E''$ & $E''$ & $A_1'' + A_2'' + E''$ & $E'$ & $E'$ & $A_1' + A_2' + E'$\\
+\end{tabular}
+\end{table}
+
+}
+
+\opage{
+
+\begin{table}
+\caption{Direct product table for $T_d$ and $O_h$. For $O_h$: $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c@{\extracolsep{0.5cm}}c}
+$T_d$ & $A_1$ & $A_2$ & $E$ & $T_1$ & $T_2$\\
+\hline
+$A_1$ & $A_1$ & $A_2$ & $E$ & $T_1$ & $T_2$\\  
+$A_2$ & $A_2$ & $A_1$ & $E$ & $T_2$ & $T_1$\\
+$E$ & $E$ & $E$ & $A_1 + A_2 + E$ & $T_1 + T_2$ & $T_1 + T_2$\\
+$T_1$ & $T_1$ & $T_2$ & $T_1 + T_2$ & $A_1 + E + T_1 + T_2$ & $A_2 + E + T_1 + T_2$\\
+$T_2$ & $T_2$ & $T_1$ & $T_1 + T_2$ & $A_2 + E + T_1 + T_2$ & $A_1 + E + T_1 + T_2$\\
+\end{tabular}
+\end{table}
+
+{\tiny
+\begin{table}
+\caption{Direct product table for $I_h$ with $g\times g = g$, $g\times u = u$, $u\times g = u$, $u\times u = g$.}
+\begin{tabular}{l|@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c@{\extracolsep{0.1cm}}c}
+$I_h$ & $A$ & $T_1$ & $T_2$ & $G$ & $H$\\
+\hline
+$A$ & $A$ & $T_1$ & $T_2$ & $G$ & $H$\\  
+$T_1$ & $T_1$ & $A + T_1 + H$ & $G + H$ & $T_2 + G + H$ & $T_1 + T_2 + G + H$\\
+$T_2$ & $T_2$ & $G + H$ & $A + T_2 + H$ & $T_1 + G + H$ & $T_1 + T_2 + G + H$\\
+$G$ & $G$ & $T_2 + G + H$ & $T_1 + G + H$ & $A + T_1 + T_2 + G + H$ & $T_1 + T_2 + G + 2H$\\
+$H$ & $H$ & $T_1 + T_2 + G + H$ & $T_1 + T_2 + G + H$ & $T_1 + T_2 + G + 2H$ & $A + T_1 + T_2 + 2G + 2H$\\
+\end{tabular}
+\end{table}
+}
+
+}
+
+\opage{
+
+\otext
+We define the \textit{symmetrized direct product} as follows:
+
+\aeqn{5.34}{f^{(+)}_{ij} = \frac{1}{2}\left(f_i^{(l)}f_j^{(l)} + f_j^{(l)}f_i^{(l)}\right)}
+
+and the \textit{antisymmetrized direct product}:
+
+\aeqn{5.35}{f^{(-)}_{ij} = \frac{1}{2}\left(f_i^{(l)}f_j^{(l)} - f_j^{(l)}f_i^{(l)}\right)}
+
+For example, for $xy$ and $yx$ the symmetrized direct product gives $xy$ whereas the antisymmetrized case gives identically zero. In this case, the irreducible representations spanned by the antisymmetrized direct product should be discarded from the decomposition. The characters corresponding to the symmetrized and anti-symmetrized direct products are (derivation not shown):
+
+\aeqn{5.36}{\chi^+(R) = \frac{1}{2}\left(\chi^{(l)}(R)^2 + \chi^{(l)}(R^2)\right)\textnormal{ and }\chi^-(R) = \frac{1}{2}\left(\chi^{(l)}(R)^2 - \chi^{(l)}(R^2)\right)}
+
+In the direct-product tables the symmetry species of the antisymmetrized product is denoted by $\left[\Gamma\right]$. In the present case, we would denote:
+
+$$\textnormal{E}\times\textnormal{E} = \textnormal{A}_1 + \left[\textnormal{A}_2\right] + \textnormal{E}$$
+
+So now we would know that $(x^2,xy,y^2)$ spans $\textnormal{A}_1 + \textnormal{E}$.
+
+}

@@ -1,0 +1,67 @@
+\opage{
+\otitle{3.1 Particle on a ring: The Hamiltonian and the Schr\"odinger equation}
+
+\otext
+First we consider quantum mechanics of a particle travelling on a circular ring as shown below. Note the analogy to molecular rotation. 
+
+\begin{columns}
+
+\begin{column}{3.5cm}
+
+\ofig{angmom}{0.6}{Rotation about a fixed point}
+
+\end{column}
+
+\begin{column}{3.5cm}
+
+\ofig{angmom2}{0.6}{Rotation of diatomic molecule around the center of mass}
+
+\end{column}
+
+\end{columns}
+
+\vspace*{0.5cm}
+
+Particle mass is denoted by $m$, distance from the origin by $\vec{r}$ and the classical \textit{angular momentum} associated with the rotational motion by $\vec{l} = \vec{r}\times\vec{p}$. Classically the \textit{moment of inertia} is given by $I = m\left|r\right|^2$.
+
+}
+
+\opage{
+
+\otext
+The particle of mass $m$ is confined to circular orbit in the $xy$-plane. The potential energy is taken to be zero but we require periodic boundary copndition (i.e. the wavefunction must return to the same value after 360\degree rotation). The Hamiltonian is given by:
+
+\aeqn{3.1}{H = -\frac{\hbar^2}{2m}\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right)}
+
+Note that here we keep the distance between the particle and the center of rotation constant. Hence we can use the polar coorinates to simlify our calculations: $x = r\cos(\phi)$ and $y = r\sin(\phi)$ where $\phi: 0\rightarrow 2\pi$. The Laplacian $\nabla^2$ in polar coordinates is:
+
+\aeqn{3.2}{\nabla^2 = \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right) = \frac{\partial^2}{\partial r^2} + \frac{1}{r}\frac{\partial}{\partial r} + \frac{1}{r^2}\frac{\partial^2}{\partial\phi^2}} 
+
+In our problem $r$ is a constant and hence the $r$ dependent derivatives in the Hamiltonian are zero:
+
+\aeqn{3.3}{H = -\frac{\hbar^2}{2mr^2}\frac{d^2}{d\phi^2} = -\frac{\hbar^2}{2I}\frac{d^2}{d\phi^2}}
+
+The wavefunction depends only on the angle $\phi$. We denote this angle dependent wavefunction by $\Phi = \Phi(\phi)$. The Schr\"odinger equation is now:
+
+\aeqn{3.4}{\frac{d^2\Phi}{d\phi^2} = -\frac{2IE}{\hbar^2}\Phi}
+
+}
+
+\opage{
+
+\otext
+The general solutions to this equation are:
+
+\aeqn{3.5}{\Phi = Ae^{im_l\phi} + Be^{-im_l\phi}}
+
+The quantity $m_l$ is a dimensionless number. $\Phi$ must fulfills \textit{cyclic boundary condition}, which states that $\Phi(\phi) = \Phi(\phi + 2\pi)$. This implies that:
+
+\vspace*{-0.3cm}
+
+$$\hspace*{-0.4cm}\umark{Ae^{im_l(\phi + 2\pi)} + Be^{-im_l(\phi + 2\pi)}}{= \Phi(\phi + 2\pi)} = Ae^{im_l\phi}e^{2\pi im_l} + Be^{-im_l\phi}e^{-2\pi im_l} = \umark{Ae^{im_l\phi} + Be^{-im_l\phi}}{ = \Phi(\phi)}$$
+
+We can immediately see that for the above to hold, we must have $e^{2\pi im_l} = 1$. This means that $m_l = 0, \pm 1, \pm 2, ...$. It now follows from Eqs. (\ref{eq3.4}) and (\ref{eq3.5}) that:
+
+\aeqn{3.6}{E_{m_l} = \frac{m_l^2\hbar^2}{2I}\textnormal{ with }m_l = 0, \pm 1, \pm 2, ...}
+
+}

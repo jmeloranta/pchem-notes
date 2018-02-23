@@ -1,0 +1,156 @@
+\opage{
+\otitle{5.5 Matrix representations}
+
+\otext
+Once we define an entity defined over the object in vector notation (\textit{basis}), we can write down the \textit{matrix representations} for symmetry operations. 
+There is one matrix representation for each symmetry operation in the group. 
+
+\ofig{nh3-symmetry}{0.5}{NH$_3$ molecule ($C_{3v}$)}
+
+\vspace*{0.2cm}
+
+We define the basis to consist of the $s$-orbitals located at each atom in NH$_3$. These are denoted by $S_N$, $S_A$, $S_B$, and $S_C$. The \textit{dimension} of this basis is 4. We express the basis functions as a vector: $(S_N,S_A,S_B,S_C)$. In general for a basis with dimension $d$, we would write $\vec{f} = (f_1, f_2, ..., f_d)$. Consider first one of the $\sigma_v$ operations, which gives $\sigma_v (S_N, S_A, S_B, S_C) = (S_N,S_A,S_C,S_B)$. 
+
+}
+
+\opage{
+
+\otext
+The above $\sigma_v$ operation can be represented by the following matrix:
+
+\aeqn{5.3}{\sigma_v(S_N,S_A,S_B,S_C) = (S_N,S_A,S_B,S_C)\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)
+}
+
+The matrix representation of $\sigma_v$ in the given basis is denoted by $D(\sigma_v)$. This is always a square matrix with the dimensions given by the length of the basis vector. Following the matrix muliplication rule, we can write:
+
+\aeqn{5.4}{Rf_i = \sum\limits_{j}f_jD_{ji}(R)}
+
+where $D_{ij}(R)$ is the matrix element of representative $D(R)$ of the operation $R$. The other matrix representatives can be found in the same way. Note that for the identity operation we always gave $D(E)$  to be an identity matrix (i.e. ones on the diagonal with zeros everywhere else).
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Find the matrix representative for the operation $C_3^+$ in the group $C_{3v}$ for the $s$-orbital basis used above.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} Remember that the $+$ sign implies counter clockwise rotation around the principal axis. This gives $C_3^+(S_N,S_A,S_B,S_C) = (S_N,S_B,S_C,S_A)$. The corresponding matrix representation is then:
+
+}
+
+\opage{
+
+\otext
+$$C_3^+(S_N,S_A,S_B,S_C) = (S_N,S_A,S_B,S_C)\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)$$
+
+The complete set of matrix representatives for this case are given below:
+
+\vspace*{0.2cm}
+
+\begin{center}
+\begin{tabular}{lll}
+$D(E)$ & $D(C_3^+)$ & $D(C_3^-)$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+\end{matrix}\right)$\\
+$\chi(E) = 4$ & $\chi(C_3^+) = 1$ & $\chi(C_3^-) = 1$\\
+ & & \\
+$D(\sigma_v)$ & $D(\sigma_v')$ & $D(\sigma_v'')$\\
+$\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+\end{matrix}\right)$ & $\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+\end{matrix}\right)$\\
+$\chi(\sigma_v) = 2$ & $\chi(\sigma_v') = 2$ & $\chi(\sigma_v'') = 2$\\
+\end{tabular}
+\end{center}
+
+}
+
+\opage{
+
+\otext
+The above matrix representatives follow the group multiplication table. For example,
+
+
+$$D(\sigma_v)D(C_3^+) = \left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right)
+\left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+\end{matrix}\right) = \left(\begin{matrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+\end{matrix}\right) = D(\sigma_v'')$$
+
+In general we have for all members of the group:
+
+\aeqn{5.5}{\textnormal{if }RS = T\textnormal{, then }D(R)D(S) = D(T)}
+
+\textbf{Proof.} Consider two elements $R$ and $S$ which multiply to give the element $T$. From Eq. (\ref{eq5.4}) it follows that for the general basis $f$:
+
+$$RSf_i = R\sum\limits_{j}f_jD_{ji}(S) = \sum\limits_{j,k}f_kD_{kj}(R)D_{ji}(S)$$
+
+}
+
+\opage{
+
+\otext
+The last part is the same as a matrix product and hence we can write:
+
+$$RSf_i = \sum\limits_k f_k\left\lbrace D(R)D(S)\right\rbrace_{ki}$$
+
+where $\left\lbrace D(R)D(S)\right\rbrace$ refers to the element in row $k$ and column $i$ of the product matrix. We also know that $RS = T$ which implies that:
+
+$$RSf_i = Tf_i = \sum\limits_kf_k\left\lbrace D(T)\right\rbrace_{ki}$$
+
+By comparing the two equations above, we conclude that
+
+$$\left\lbrace D(R)D(S)\right\rbrace_{ki} = \left\lbrace D(T)\right\rbrace_{ki}$$
+
+This holds for all elements and therefore
+
+$$D(R)D(S) = D(T)$$
+
+}

@@ -1,0 +1,114 @@
+\opage{
+\otitle{6.12 Time-dependent perturbation theory}
+
+\otext
+Most perturbations that are considered in physical chemistry are time-dependent. Even stationary perturbations must be turned on and there is some initial period when the perturbation is essentially time dependent. All spectroscopic methods require time-dependent treatment since they use either the oscillating electric or magnetic field components of photons passing through the sample. Sometimes the response of the molecule to a time-dependent perturbation is so fast that a time-independent situation is observed fairly quickly. In these cases time-independent treatment would be sufficient. Note, howevere, that there are many kinds of perturbations that never ``settle down'' and hence a true time-dependent treatment is required (e.g., spectroscopy). In the following, we will first consider a two-level system (i.e. ground and excited state) and later extend the theory to describe many levels.
+
+\vspace*{0.2cm}
+
+The total hamiltonian of the system is written as a sum of time independent and time dependent parts:
+
+\aeqn{6.43}{H = H^{(0)} + H^{(1)}(t)}
+
+A typical example of a time-dependent perturbation is one that oscillates at an angular frequency $\omega$:
+
+\aeqn{6.44}{H^{(1)}(t) = 2H^{(1)}\cos(\omega t)}
+
+where $H^{(1)}$ is a time-dependent perturbation operator. We have to start with the time-dependent Schr\"odinger equation:
+
+}
+
+\opage{
+
+\otext
+\aeqn{6.45}{H\Psi = i\hbar\frac{\partial\Psi}{\partial t}}
+
+We consider two levels, which have energies $E^{(0)}_1$ and $E^{(0)}_2$ with the corresponding eigenfunctions $\psi^{(0)}_1$ and $\psi^{(0)}_2$:
+
+\aeqn{6.46}{H^{(0)}\psi_n^{(0)} = E_n^{(0)}\psi_n^{(0)}}
+
+with their time-dependent phase factors that satisfy the time-dependent Schr\"odinger equation:
+
+\aeqn{6.47}{\Psi^{(0)}_n(t) = \psi_n^{(0)}e^{-iE_n^{(0)}t/\hbar}}
+
+In the presence of the perturbation $H^{(1)}(t)$, the state of the system is expressed as a linear combination of the basis functions:
+
+\aeqn{6.48}{\Psi(t) = a_1(t)\Psi_1^{(0)}(t) + a_2(t)\Psi^{(0)}_2(t)}
+
+Here the coefficients are also time-dependent since the composition of the state may evolve with time. The overall time-dependency arises then from both the osillatory behavior in the basis functions as well as the coefficients $a_i$. The probability for the system to be in state $i$ ($i=1,2$) is given by $\left|a_i\right|^2$.
+
+\vspace*{0.2cm}
+
+Substitution of Eq. (\ref{eq6.48}) into the time-dependent Schr\"odinger equation (Eq. (\ref{eq6.47})) gives:
+
+$$H\Psi = a_1H^{(0)}\Psi_1^{(0)} + a_1H^{(1)}(t)\Psi_1^{(0)} + a_2H^{(0)}\Psi_2^{(0)} + a_2H^{(1)}(t)\Psi_2^{(0)}$$
+
+}
+
+\opage{
+
+\otext
+$$= i\hbar\frac{\partial}{\partial t}\left(a_1\Psi_1^{(0)} + a_2\Psi_2^{(0)}\right)$$
+$$= i\hbar a_1\frac{\partial\Psi_1^{(0)}}{\partial t} + i\hbar\Psi_1^{(0)}\frac{da_1}{dt} + i\hbar a_2\frac{\partial\Psi_2^{(0)}}{\partial t} + i\hbar\Psi_2^{(0)}\frac{da_2}{dt}$$
+
+Each basis function satisfies:
+
+$$H^{(0)}\Psi_n^{(0)} = i\hbar\frac{\partial\Psi_n^{(0)}}{\partial t}$$
+
+which allows us to rewrite the previous equation as ($\dot{a}_i \equiv da_i/dt$):
+
+$$a_1H^{(1)}(t)\Psi_1^{(0)} + a_2H^{(1)}(t)\Psi_2^{(0)} = i\hbar\dot{a}_1\Psi_1^{(0)} + i\hbar\dot{a}_2\Psi_2^{(0)}$$
+
+Next we put in the explicit forms for $\Psi^{(0)}_i$'s and use the Dirac notation for $\psi_i^{(0)}$:
+
+$$a_1H^{(1)}(t)\left|1\right>e^{-iE_1^{(0)}t/\hbar} + a_2H_{12}^{(1)}(t)\left|2\right>e^{-iE_2^{(0)}t/\hbar}$$
+$$=i\hbar\dot{a}_1\left|1\right>e^{-iE_1^{(0)}t/\hbar} + i\hbar\dot{a}_2\left|2\right>e^{-iE_2^{(0)}t/\hbar}$$
+
+Next we multiply by $\left<1\right|$ from the left and use the orthonormality of the states:
+
+$$a_1H_{11}^{(1)}(t)e^{-iE_1^{(0)}t/\hbar} + a_2H_{12}^{(1)}(t)e^{-iE_2^{(0)}t/\hbar} = i\hbar\dot{a}_1e^{-iE_1^{(0)}t/\hbar}$$
+
+}
+
+\opage{
+
+\otext
+where we have denoted $H_{ij}^{(1)}(t) = \left<i\left|H^{(1)}(t)\right|j\right>$. We can simplify the expression further by setting $\hbar\omega_{21} = E^{(0)}_2 - E^{(0)}_1$:
+
+\aeqn{6.49}{a_1H_{11}^{(1)}(t) + a_2H_{12}^{(1)}(t)e^{-\omega_{21}t} = i\hbar\dot{a}_1}
+
+Often the diagonal elements of the perturbation are zero (i.e. $H_{ii} = 0$, $i=1,2$). This yields (+ similar treatment for $a_2$ when multiplied by $\left<2\right|$):
+
+\beqn{6.50}{\dot{a}_1 = \frac{1}{i\hbar}a_2H_{12}^{(1)}(t)e^{-i\omega_{21}t}}
+{\dot{a}_2 = \frac{1}{i\hbar}a_2H_{21}^{(1)}(t)e^{-i\omega_{21}t}}
+
+\vspace*{0.2cm}
+
+\textbf{Case 1:} No perturbation ($H_{12}(t) = H_{21}(t) = 0$). Eq. (\ref{eq6.50}) gives that $\dot{a}_1 = \dot{a}_2 = 0$. Thus the coefficients $a_i(t)$ are constant and the only time evolution present in the wavefunction $\Psi$ is due to the exponential phase factors.
+
+\vspace*{0.2cm}
+
+\textbf{Case 2:} Constant perturbation applied at $t = 0$, $H_{12}^{(1)} = \hbar V$ and by hermiticity $H_{21}^{(1)} = \hbar V^*$. The equations become then:
+
+\aeqn{6.52}{\dot{a}_1 = -iVa_2e^{-i\omega_{21}t}\textnormal{ and }\dot{a}_2 = -iV^*a_1e^{i\omega_{21}t}}
+
+}
+
+\opage{
+
+\otext
+To solve the coupled differential equations, we differentiate $\dot{a}_2$ and then use the expression for $\dot{a}_1$:
+
+\aeqn{6.53}{\ddot{a}_2 = -iV^*\dot{a}_1e^{i\omega_{21}t} + \omega_{21}V^*a_1e^{i\omega_{21}t} = -\left|V\right|^2 a_2 + i\omega_{21}\dot{a}_2}
+
+The corresponding expression for $\ddot{a}_1$ can be obtained by exchanging the roles of $a_1$ and $a_2$. The general solution to this equation is:
+
+\aeqn{6.54}{a_2(t) = \left(Ae^{i\Omega t} + Be^{-i\Omega t}\right)e^{i\omega_{21}t/2}\textnormal{ where }\Omega = \frac{1}{2}\left(\omega_{21}^2 + 4\left|V\right|^2\right)^{1/2}}
+
+where the constants $A$ and $B$ are determined by the initial conditions. One can obtain a similar expression for $a_2$. In the initial state $a_1(0) = 1$ and $a_2(0) = 0$, which allows us to determine $A$ and $B$ (i.e. substitute these into the two equations for $a_1$ and another for $a_2$ and solve for $A$ and $B$). Then we obtain the following expressions:
+
+\aeqn{6.55}{a_1(t) = \left(\cos(\Omega t) + \frac{i\omega_{21}}{2\Omega}\sin(\Omega t)\right)e^{-i\omega_{21}t/2}\textnormal{ and }a_2(t) = -\frac{i\left|V\right|}{\Omega}\sin(\Omega t)e^{0\omega_{21}t/2}}
+
+This is an exact solution for the two level problem (i.e. no approximations).
+
+}

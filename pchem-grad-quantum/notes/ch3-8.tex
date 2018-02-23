@@ -1,0 +1,83 @@
+\opage{
+\otitle{3.8 The rigid rotor}
+
+\otext
+Now we will apply the previous theory to describe rotation of diatomic molecule where we assume that the bond length is fixed (``rigid rotor''). The masses of the nuclei are represented by $m_1$ and $m_2$ and their separation is fixed at distance $R$. The total Hamiltonian for this probelm is:
+
+\aeqn{3.28}{H = -\frac{\hbar^2}{2m_1}\nabla^2_1 - \frac{\hbar^2}{2m_2}\nabla_2^2}
+
+where $\nabla_i^2$ differentiates with respect to the coordinates of particle $i$. This can be transformed as (see Atkins \& Friedman, Molecular Quantum Mechanics, Further information 4):
+
+$$\frac{1}{m_1}\nabla_1^2 + \frac{1}{m_2}\nabla_2^2 = \frac{1}{m}\nabla_{\textnormal{cm}}^2 + \frac{1}{\mu}\nabla^2$$
+
+The subscript cm refers to the variables describing the center of mass translational movement of the molecule, the Laplacian without subscript refers to the internal coordinates of the molecule (vibration and rotation), $m = m_1 + m_2$ and:
+
+\aeqn{3.29}{\frac{1}{\mu} = \frac{1}{m_1} + \frac{1}{m_2}\textnormal{ or } \mu = \frac{m_1m_2}{m_1 + m_2}}
+
+where $\mu$ is called the \textit{reduced mass}.
+
+}
+
+\opage{
+
+\otext
+Now we can rewrite the Schr\"odinger equation as:
+
+\aeqn{3.30}{-\frac{\hbar^2}{2m}\nabla_{\textnormal{cm}}^2\Psi - \frac{\hbar^2}{2\mu}\nabla^2\Psi = E_{\textnormal{total}}\Psi}
+
+Since the Hamiltonia is a sum of two terms depending on different variables, it is possible to separate this equation as:
+
+\beqn{3.31}{-\frac{\hbar^2}{2m}\nabla^2_{\textnormal{cm}}\psi_{\textnormal{cm}} = E_{\textnormal{cm}}\psi_{\textnormal{cm}}}
+{-\frac{\hbar^2}{2\mu}\nabla^2\psi = E\psi}
+
+with $E_{\textnormal{total}} = E_{\textnormal{cm}} + E$. The first equation is related to free translation of the molecule where as the second equation describes both rotation and vibration of the (diatomic) molecule. The 2nd equation can be solved in spherical coordinates and simplified with the rigid rotor assumption ($R$ is constant). Thus the radial derivatives in the Laplacian are zero and only the angular part is retained:
+
+\aeqn{3.32}{-\frac{\hbar^2}{2\mu R^2}\Lambda^2\psi = E\psi}
+
+To simplify notation we write $I = \mu R^2$. This is identical to Eq. (\ref{eq3.21}). The solutions can be labelled by two quantum numbers $l$ and $m_l$, which in the context of molecular rotation, are usually written as $J$ and $M_J$. 
+
+}
+
+\opage{
+
+\otext
+The eigenfunctions for the rotating diatomic molecule are hence spherical harmonics $Y_{J,M_J}$ and the rotational energy levels are given by:
+
+\aeqn{3.34}{E_{J,M_J} = J(J+1)\frac{\hbar^2}{2I}}
+
+where $J = 0, 1, 2, ...$ and $M_J = 0, \pm 1, \pm 2, ..., \pm J$. Because the energy is independent of $M_J$, each rotational level is $2J + $ times degenerate. 
+
+\vspace*{0.2cm}
+
+\textbf{Example.} What are the reduced mass and moment of inertia of H$^{35}$Cl? The equilibrium internuclear distance $R_e$ is 127.5 pm (1.275 \AA). What are the values of $L, L_z$ and $E$ for the state with $J = 1$? The atomic masses are: $m_\textnormal{H} = 1.673470 \times 10^{-27}$ kg and $m_\textnormal{Cl} = 5.806496 \times 10^{-26}$ kg.\\
+
+\vspace*{0.2cm}
+\textbf{Solution.} First we calculate the reduced mass (Eq. (\ref{eq3.29})):
+
+$$\mu = \frac{m_\textnormal{H}m_{^{35}\textnormal{Cl}}}{m_\textnormal{H} + m_{^{35}\textnormal{Cl}}} = \frac{(1.673470\times 10^{-27}\textnormal{ kg})(5.806496\times 10^{-26}\textnormal{ kg})}{(1.673470\times 10^{-27}\textnormal{ kg}) + (5.806496\times 10^{-26}\textnormal{ kg})}$$
+$$= 1.62665\times 10^{-27}\textnormal{ kg}$$
+
+}
+
+\opage{
+
+\otext
+Next, $I = mr^2$ gives the moment of inertia:
+
+$$I = \mu R_e^2 = (1.626\times 10^{-27}\textnormal{ kg})(127.5\times 10^{-12}\textnormal{ m})^2 = 2.644\times 10^{-47}\textnormal{ kg m}^2$$
+
+$L$ is given by Eq. (\ref{eq3.25}):
+
+$$L = \sqrt{J(J+1)}\hbar = \sqrt{2}\left(1.054\times 10^{-34}\textnormal{ Js}\right) = 1.491\times 10^{-34}\textnormal{ Js}$$
+
+$L_z$ is given by Eq. (\ref{eq3.26}):
+
+$$L_z = -\hbar,0,\hbar\textnormal{ (three possible values)}$$
+
+Energy of the $J = 1$ level is given by Eq. (\ref{eq3.34}) (or Eq. (\ref{eq3.24})):
+
+$$E = \frac{\hbar^2}{2I}J(J+1) = \frac{\hbar^2}{I} = 4.206\times 10^{-22}\textnormal{ J} = 21\textnormal{ cm}^{-1}$$
+
+This rotational spacing can be, for example, observed in gas phase infrared spectrum of HCl.
+
+}

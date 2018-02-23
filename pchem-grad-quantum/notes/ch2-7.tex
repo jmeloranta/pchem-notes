@@ -1,0 +1,38 @@
+\opage{
+\otitle{2.7 The flux density}
+
+\otext
+The \textit{flux density}, which indicates the quantum motion present in a given wavefunction, is defined as (defined about $x$-axis below):
+
+\aeqn{2.10}{J_x = \frac{1}{2m}\left(\Psi^*p_x\Psi + \Psi p_x^*\Psi^*\right) = \frac{\hbar}{2mi}\left(\Psi^*\frac{d}{dx}\Psi - \Psi\frac{d}{dx}\Psi^*\right)}
+
+where, in the position representation, $p_x = \frac{\hbar}{i} d/dx$ and $p_x^* = -\frac{\hbar}{i} d/dx$. If $\Psi$ corresponds to a stationary state (i.e. just a simple phase evolution corresponding to the eigenvalue), we can simplify the above expression as:
+
+\aeqn{2.11}{J_x = \frac{1}{2m}\left(\psi^*p_x\psi + \psi p_x^*\psi^*\right) = \frac{\hbar}{2mi}\left(\psi^*\frac{d}{dx}\psi - \psi\frac{d}{dx}\psi^*\right)}
+
+The general expression in 3-D is given by:
+
+$$\vec{J} = \frac{1}{2mi}\left(\Psi^*\vec{\nabla}\Psi - \Psi\vec{\nabla}\Psi^*\right)$$
+
+If the probability of finding particle in $dxdydz$ is $\left|\Psi(x,y,z)\right|^2dxdydz$ then the probability flux of particle passing from/into this volume element is given by $\vec{J}(x,y,z)$. Note that this has both magnitude and direction.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example 2.1} Calculate the flux density for a system that is described by $\psi(x) = Ae^{ikx}$.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} Evaluate $J_x\psi$ as follows:
+
+$$J_x = \frac{1}{2m}\left\lbrace\left(Ae^{ikx}\right)^*\left(\frac{\hbar}{i}\frac{d}{dx}\right)\left(Ae^{ikx}\right) + \left(Ae^{ikx}\right)\left(\frac{\hbar}{i}\frac{d}{dx}\right)^*\left(Ae^{ikx}\right)^*\right\rbrace$$
+$$= \frac{1}{2m}\left\lbrace\left(A^*e^{-ikx}\right)\left(\frac{\hbar}{i}\frac{d}{dx}\right)\left(Ae^{ikx}\right) - \left(Ae^{ikx}\right)\left(\frac{\hbar}{i}\frac{d}{dx}\right)\left(A^*e^{-ikx}\right)\right\rbrace$$
+$$= \frac{\hbar\left|A\right|^2}{2mi}\left\lbrace\left(e^{-ikx}\right)\left(ik\right)\left(e^{ikx}\right) - \left(e^{ikx}\right)\left(-ik\right)\left(e^{-ikx}\right)\right\rbrace = \frac{k\hbar\left|A\right|^2}{m}$$
+
+\vspace*{0.2cm}
+
+Note that $\pm k\hbar/m$ is the classical velocity of the particle (from $p = mv$), so that the flux density above is the velocity multiplied by the probability density that the particle is in that state.
+
+}

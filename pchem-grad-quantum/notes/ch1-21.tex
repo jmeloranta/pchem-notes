@@ -1,0 +1,77 @@
+\opage{
+\otitle{1.21 The diagonalization of the Hamiltonian}
+
+\otext
+The time-independent Schr\"odinger equation ($H\psi = E\psi$) can be written it matrix form (given a suitable basis set expansion; not eigenfunctions of $H$). Consider first
+
+$$\underline{H\left|\psi\right>} = H\sum\limits_n c_n\left|n\right> = E\sum\limits_nc_n\left|n\right> = \underline{E\left|\psi\right>}$$
+
+If this is multiplied by $\left<m\right|$ side by side, we get:
+
+$$\sum\limits_nc_n\left<m\left|H\right|n\right> = E\sum\limits_nc_n\left<m|n\right>$$
+
+By denoting matrix $H_{mn} = \left<m\left|H\right|n\right>$ and vector $c = c_m$ we have:
+
+\aeqn{1.43}{Hc = Ec\textnormal{ or }\sum\limits_nH_{mn}c_n = Ec_m\textnormal{ for each }m}
+
+This is the matrix form of the Schr\"odinger equation and it is extremely useful when considering a system with only few basis functions or
+numerical solution to Schr\"odinger equation. If one can find a basis set such that $H$ becomes a diagonal matrix then we have:
+
+\aeqn{1.44}{H_{mm}c_m = Ec_m}
+
+This states that each diagonal element $H_{mm}$ is equal to $E$. If this holds for all $m$, then we have all eigenvalues of $H$ arranged on the diagonal of matrix $H$.
+Note that we have used $H$ for both the operator and the matrix which is somewhat confusing.
+
+}
+
+\begin{frame}[fragile]
+
+\otext
+\textbf{Example.} Diagonalizing matrices using the Maxima program (you may also consider wxmaxima, which is graphical user interface to maxima). Consider the following matrix:
+
+\begin{equation}
+\left(\begin{matrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9\\
+\end{matrix}\right)
+\end{equation}
+
+To diagonalize this matrix with maxima, enter the following commands (\%i corresponds to input and \%o to output):
+
+\begin{verbatim}
+(%i1) m:matrix([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+                                  [ 1  2  3 ]
+                                  [         ]
+(%o1)                             [ 4  5  6 ]
+                                  [         ]
+                                  [ 7  8  9 ]
+(%i2) eigenvalues(m);
+                 3 sqrt(33) - 15  3 sqrt(33) + 15
+(%o3)        [[- ---------------, ---------------, 0], [1, 1, 1]]
+                        2                2
+\end{verbatim}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\otext
+The first three numbers are the eigenvalues and the following vector ($\left[1,1,1\right]$) states that the degeneracy factor of each of these eigenvalues is one.
+
+\begin{verbatim}
+(%i4) eigenvectors(m);
+           3 sqrt(33) - 15  3 sqrt(33) + 15
+(%o4) [[[- ---------------, ---------------, 0], [1, 1, 1]], 
+                  2                2
+      3 sqrt(33) - 19    3 sqrt(3) sqrt(11) - 11
+[1, - ---------------, - -----------------------], 
+            16                      8
+    3 sqrt(33) + 19  3 sqrt(3) sqrt(11) + 11
+[1, ---------------, -----------------------], [1, - 2, 1]]
+          16                    8
+\end{verbatim}
+
+The first vector in the output is the eigenvalues followed by the degeneracies (just like with the eigenvalues command). The three vectors after these are the corresponding eigenvectors. These could be converted into a wavefunction by multiplying the vector components by the corresponding basis functions. Also note that in this case Maxima was able to find exact solution rather than approximate one.
+
+\end{frame}

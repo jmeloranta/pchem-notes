@@ -1,0 +1,55 @@
+\opage{
+\otitle{6.16 The effect of an oscillating perturbation}
+
+\otext
+Next we consider an oscillating perturbation that could correspond, for example, to the oscillating electric field from light (e.g., electromagnetic radiation from a light source in a spectrometer or sun light). Once we know how to deal with oscillating perturbations, we will be able to work with all types of perturbations because they can always be expressed as a superposition of the oscillating waves (i.e. Fourier expansion). 
+
+\vspace*{0.2cm}
+
+First we consider transitions between states $\left|i\right>$ and $\left|f\right>$. A perturbation oscillating with an angular frequency $\omega = 2\pi\nu$, which is turned on at $t = 0$, is:
+
+\aeqn{6.66}{H^{(1)}(t) = 2H^{(1)}\cos(\omega t) = H^{(1)}\left(e^{i\omega t} + e^{-i\omega t}\right)\textnormal{ for }t\ge 0}
+
+When this is inserted into Eq. (\ref{eq6.62}) (the 1st order expression for $a_f(t)$), we get:
+
+\beqn{6.67}{a_f(t) = \frac{1}{\hbar i}H_{fi}^{(1)}\int\limits_0^t\left(e^{i\omega t'} + e^{-i\omega t'}\right)e^{i\omega_{fi}t'}dt'}
+{= \frac{1}{i\hbar}H_{fi}^{(1)}\left(\frac{e^{i(\omega_{fi} + \omega)t} - 1}{i(\omega_{fi} + \omega)} + \frac{e^{i(\omega_{fi} - \omega)t} - 1}{i(\omega_{fi} - \omega)}\right)}
+
+}
+
+\opage{
+
+\otext
+To simplify the above expression, we note that in electronic spectroscopy the frequencies $\omega$ and $\omega_{fi}$ are of the order of 10$^{15}$ s$^{-1}$ and in NMR the lowest frequencies are still higher than 10$^6$ s$^{-1}$. The both numerators are close to one (the norm of $\exp(-i...)$ is one), the denominator in the first term is of the order of the frequencies, so we can estimate an upper limit for it as 10$^{-6}$ (and 10$^{-15}$ in electronic spectroscopy), and the denominator in the second term may become close to zero. This implies that the 2nd term dominates and the first term can be approximately ignored. This suggests that it is sufficient to write the original hamiltonian of Eq. (\ref{eq6.66}) as:
+
+$$H^{(1)}(t) = 2H^{(1)}\cos(\omega t) = H^{(1)}e^{-i\omega t}$$
+
+This is called the \textit{rotating wave approximation} (RWA) and it is commonly applied in spectroscopy. By just retaining the 2nd term in Eq. (\ref{eq6.67}) we can write the population of the final state as ($P_f(t) = \left|a_f(t)\right|^2$):
+
+\aeqn{6.68}{P_f(t) = \frac{4\left|H^{(1)}_{fi}\right|^2}{\hbar^2\left(\omega_{fi} - \omega\right)^2}\sin^2\left(\frac{1}{2}\left(\omega_{fi} - \omega\right)t\right)}
+
+Taking the amplitude of the perturbation to be a constant, $\left|H_{12}^{(1)}\right|^2 = \hbar^2\left|V_{fi}\right|^2$ (contains  transition matrix element), gives:
+
+}
+
+\opage{
+
+\otext
+
+\aeqn{6.69}{P_f(t) = \frac{4\left|V_{fi}\right|^2}{\left(\omega_{fi} - \omega\right)^2}\sin^2\left(\frac{1}{2}\left(\omega_{fi} - \omega\right)t\right)}
+
+This expression is essentially the same that was obtained earlier for a two-level system with constant perturbation (cf. Eq. (\ref{eq6.58})). The main difference is that the energy level difference $\omega_{21}$ is now replaced by the difference between the frequncy of the oscillating perturbation and the energy level separation ($\omega_{fi} - \omega$). This can be interpreted as an effective shift in energy caused by the oscillating perturbation.
+
+\vspace*{0.2cm}
+
+According to Eq. (\ref{eq6.69}), the time-dependence of the probability of being in state $\left|f\right>$ depends on the frequency shift $\omega_{fi} - \omega$. When the offset is zero, the field and the system are said to be in \textit{resonance} and the population of state $\left|f\right>$ increases rapidly in time. To obtain a better understanding how this happens, consider Eq. (\ref{eq6.69}) when $\omega \rightarrow \omega_{fi}$. First we note that $\sin$ is linear when $x$ is small:
+
+$$\sin(x) \approx x\textnormal{ when }x\approx 0$$
+
+And then:
+
+\aeqn{6.70}{\lim\limits_{\omega\rightarrow\omega_{fi}}P_f(t) = \left|V_{fi}\right|^2t^2}
+
+This indicates that the final state population increases quadratically with time when on resonance. Note that we must remember that we have implied the first order approximation ($\left|V_{fi}\right|^2t^2 << 1$; as the population transfer must be small).
+
+}

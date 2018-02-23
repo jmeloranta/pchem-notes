@@ -1,0 +1,57 @@
+\opage{
+\otitle{1.3 Representations}
+
+\otext
+The most common representation is the \textit{position representation}. In this representation the position ($x$) and momentum ($p_x$) operators are given by:
+
+\aeqn{1.5}{x\rightarrow x\times\textnormal{ and }p_x \rightarrow \frac{\hbar}{i}\frac{\partial}{\partial x}}
+
+where $\hbar = \frac{h}{2\pi}$. An alternative representation is the \textit{momentum representation}:
+
+\aeqn{1.6}{x\rightarrow -\frac{\hbar}{i}\frac{\partial}{\partial x}\textnormal{ and }p_x\rightarrow p_x\times}
+
+The two representations are related to each other via the Fourier duality (see Quantum Chemistry I lecture notes):
+
+$$\psi(p_x) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}\psi(x)e^{p_xx/\hbar}dx$$
+$$\textnormal{or }\psi(k) = \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}\psi(x)e^{ikx}dx\textnormal{ with }p_x = \hbar k$$
+
+\textbf{Example 1.2a} Derive the position representation form of the operator $p_x$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} We begin by calculating the expectation value of $p_x$:
+
+}
+
+\opage{
+
+$$\left< p_x\right> = \left<\hbar k\right> = \hbar\left<\psi(k)\left|k\right|\psi(k)\right> = \hbar\int\limits_{-\infty}^{\infty}\psi^*(k)k\psi(k)dk$$
+$$ =\frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{-ikx}dx}_\textnormal{integration by parts}dkdx'$$
+$$= -\frac{i\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}\int\limits_{-\infty}^{\infty}\frac{d\psi(x)}{dx}e^{-ikx}dxdkdx'$$
+
+Next we will use the following result for Driac delta measure ($\delta$):
+
+$$\int\limits_{-\infty}^{\infty}e^{ik(x' - x)}dk = 2\pi\delta(x' - x)$$
+
+Recall that $\delta$ is defined as:
+
+$$\delta(x) = \left\lbrace
+\begin{matrix}
+\infty\textnormal{ when }x = 0\\
+0\textnormal{ when }x\ne 0\\
+\end{matrix}\right.\textnormal{ and }\int\limits_{-\infty}^{\infty}\delta(x)dx = 1$$
+
+}
+
+\opage{
+
+Now we can continue working with the expectation value:
+
+$$... = -i\hbar\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}\psi^*(x')\frac{d\psi(x)}{dx}\delta(x' - x)dxdx'$$
+$$ = \int\limits_{-\infty}^{\infty}\psi^*(x)\left(-i\hbar\frac{d}{dx}\right)\psi(x)dx = \int\limits_{-\infty}^{\infty}\psi^*(x)p_x\psi(x)dx$$
+
+This gives us the momentum operator:
+
+$$p_x = -i\hbar\frac{d}{dx}$$
+
+}

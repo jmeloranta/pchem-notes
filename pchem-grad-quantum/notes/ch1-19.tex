@@ -1,0 +1,73 @@
+\opage{
+\otitle{1.19 Time-evolution and conservation laws}
+
+\otext
+In addition to providing information about simultaneous exact measurement of observables, a commutator between two operators also plays an important role in determining the time-evolution of the expectation values. When $H$ is the Hamiltonian operator and operator $\Omega$ corresponding to some observable \textit{does not depend on time}:
+
+\aeqn{1.35}{\frac{d\left<\Omega\right>}{dt} = \frac{i}{\hbar}\left<\left[H,\Omega\right]\right>} 
+
+It is important to notice that when $\left[H,\Omega\right] = 0$, the expectation value does not depend on time.
+
+\vspace*{0.2cm}
+
+\textbf{Proof.} Differentiation of $\Omega$ with respect to time gives:
+
+$$\frac{d\left<\Omega\right>}{dt} = \frac{d}{dt}\left<\Psi\left|\Omega\right|\Psi\right> = \int\left(\frac{\partial\Psi^*}{\partial t}\right)\Omega\Psi d\tau + \int\Psi^*\Omega\left(\frac{\partial\Psi}{\partial t}\right)d\tau$$
+
+Note that $\Omega$ does not depend on time whereas $\Psi$ and $\Psi^*$ do. Next we apply the time-dependent Schr\"odinger equation (Eq. (\ref{eq1.27})):
+
+$$\int\Psi^*\Omega\left(\frac{\partial\Psi}{\partial t}\right)d\tau = \int\Psi^*\Omega\left(\frac{1}{i\hbar}\right)H\Psi d\tau = \frac{1}{i\hbar}\int\Psi^*\Omega H\Psi d\tau$$
+
+}
+
+\opage{
+
+\otext
+For the other therm we have (note that $H$ is hermitiean, see Eq. (\ref{eq1.21})):
+
+$$\int\left(\frac{\partial\Psi^*}{\partial t}\right)\Omega\Psi d\tau = -\int\left(\frac{1}{i\hbar}\right)\left(H\Psi\right)^*\Omega\Psi d\tau = -\frac{1}{i\hbar}\int\Psi^*H\Omega\Psi d\tau$$
+
+By combining these expressions we get the final result:
+
+$$\frac{d\left<\Omega\right>}{dt} = -\frac{1}{i\hbar}\left(\left<H\Omega\right> - \left<\Omega H\right>\right) = \frac{i}{\hbar}\left<\left[H,\Omega\right]\right>$$
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Calculate the expectation value of linear momentum as a function of time for a particle in one-dimensional system. The total Hamiltonian is $H = T + V$.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} The commutator between $H$ and $p_x$ is:
+
+$$\left[H,p_x\right] = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V, \frac{\hbar}{i}\frac{d}{dx}\right] = \frac{\hbar}{i}\left[V,\frac{d}{dx}\right]$$
+
+To work out the remaining commutator, we need to writen the wavefunction that we operate on:
+
+$$\left[H,p_x\right] = \frac{\hbar}{i}\left\lbrace V\frac{d\psi}{dx} - \frac{d(V\psi)}{dx}\right\rbrace = \frac{\hbar}{i}\left\lbrace V\frac{d\psi}{dx} - V\frac{d\psi}{dx} - \frac{dV}{dx}\psi\right\rbrace = -\frac{\hbar}{i}\frac{dV}{dx}\psi$$
+
+}
+
+\opage{
+
+\otext
+This holds for all $\psi$ and hence: 
+
+\aeqn{1.36}{\left[H,p_x\right] = -\frac{\hbar}{i}\frac{dV}{dx}}
+
+\vspace*{0.1cm}
+
+Eq. (\ref{eq1.35}) can now be written as:
+
+\aeqn{1.37}{\frac{d}{dt}\left<p_x\right> = \frac{i}{\hbar}\left<\left[H,p_x\right]\right> = -\left<\frac{dV}{dx}\right>}
+
+Here we note that force is given by $F = -dV/dx$ and we can rewrite the above equation as:
+
+\aeqn{1.38}{\frac{d}{dt}\left<p_x\right> = \left<F\right>}
+
+This states that the rate of change of the expectation value of the linear momentum is equal to the expectation value of the force. In a similar way one can show that:
+
+\aeqn{1.39}{\frac{d}{dt}\left<x\right> = \frac{\left<p_x\right>}{m}}
+
+Eqs. (\ref{eq1.38}) and (\ref{eq1.39}) consitute so called \textit{Ehrenfest's theorem}. This states that classical mechanics deals with expectation values (i.e. quantum mechanical averages).
+
+}

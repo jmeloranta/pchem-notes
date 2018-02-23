@@ -1,0 +1,33 @@
+\opage{
+\otitle{2.8 Wavepackets}
+
+\otext
+A \textit{wavepacket} is a special wavefunction representing a particle that is spatially localized. Note that spatial localization necessarily introduces uncertainty in the momentum. As the name implies, wavepackets are constructed from multiple ``waves'', which here refer to a superposition of momentum eigenfunctions (e.g., $e^{ikx}$ and $e^{-ikx}$). Such a wavepacket can be stationary (i.e., it does not move but may broaden as a function of time; \textit{dispersion}) or it can be given momentum so that it can move in a given direction. In this sense, wavepackets move through space in a similar way as classical particles. A wavepacket can be formed as a superposition of functions $\Psi_k(x,t)$:
+
+\aeqn{2.12}{\Psi_k(x,t) = Ae^{ikx}e^{-iE_kt/\hbar}}
+
+The time dependent phase factor is dictated by the time-dependent Schr\"odinger equation. Instead of summing $\Psi_k(x,t)$, we take a continuum of states and integrate over all momenta to form the wavepacket:
+
+\aeqn{2.13}{\Psi(x,t) = \int\limits_{-\infty}^{\infty}g(k)\Psi_k(x,t)dk}
+
+where $g(k)$ is called the \textit{shape function}. Because of the interference between different $\Psi_k(x,t)$, the overall wavepacket appears localized. The time-dependent part in Eq. (\ref{eq2.12}) makes the wavepacket ``walk''.
+
+}
+
+\opage{
+
+\textbf{Example.} Gaussian wavepacket in harmonic potential.
+
+\begin{center}
+\movie[externalviewer]{Click here to start the movie}{osc4.mpg}
+\end{center}
+
+\vspace*{0.2cm}
+
+\textbf{Example.} Gaussian wavepacket propagation through two slits (``the two slit experiment'').
+
+\begin{center}
+\movie[externalviewer]{Click here to start the movie}{twoslit4.mpg}
+\end{center}
+
+}

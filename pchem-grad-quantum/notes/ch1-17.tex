@@ -1,0 +1,43 @@
+\opage{
+\otitle{1.17 Consequences of the uncertainty principle}
+
+\otext
+It is instructive to see how Eq. (\ref{eq1.33}) applies to position and momentum.
+
+\vspace*{0.2cm}
+
+\textbf{Example 1.8} Consider a particle prepared in a state given by wavefunction $\psi = Ne^{-x^2/2\Gamma}$ (Gaussian function) where $N = \left(\pi\Gamma\right)^{-1/4}$. Evaluate $\Delta x$ and $\Delta p_x$ and confirm that the uncertainty principle is satisfied.
+
+\vspace*{0.1cm}
+
+\textbf{Solution.} We must calculate the following expectation values for Eq. (\ref{eq1.33}): $\left<x\right>$, $\left<x^2\right>$, $\left<p_x\right>$ and $\left<p_x^2\right>$.
+
+\vspace*{-0.2cm}
+
+\begin{enumerate}
+\item \otext
+$\left<x\right> = 0$ because $x$ is an antisymmetric function with respect to origin and the square of the given Gaussian function is symmetric. Product of symmetric and antisymmetric functions is always antisymmetric. Integration of antisymmetric function gives zero.
+\item $\left<p_x\right> = 0$ because differentiation of symmetric function gives antisymmetric function. When this is multilpied by the symmetric wavefunction, the result is antisymmetric function. Hence the integral is zero.
+\item The following integrals from tablebook will be useful for the remaining integrals: $\int\limits_{-\infty}^{\infty}e^{-ax^2}dx = \left(\frac{\pi}{a}\right)^{1/2}$ and $\int\limits_{-\infty}^{\infty}x^2e^{-ax^2}dx = \frac{1}{2a}\left(\frac{\pi}{a}\right)^{1/2}$. For $\left<x^2\right>$ this gives:
+$$\left<x^2\right> = N^2\int\limits_{-\infty}^{\infty}x^2e^{-x^2/\Gamma}dx = \frac{1}{2}\Gamma$$
+
+\end{enumerate}
+
+}
+
+\opage{
+
+\otext
+\begin{enumerate}
+\item[4.] For $\left<p_x^2\right>$ we have:
+$$\left<p_x^2\right> = N^2\int\limits_{-\infty}^{\infty}\exp\left(-\frac{x^2}{2\Gamma}\right)\left(-\hbar^2\frac{d^2}{dx^2}\right)\exp\left(-\frac{x^2}{2\Gamma}\right)dx$$
+$$= \hbar^2N^2\left\lbrace\frac{1}{\Gamma}\int\limits_{-\infty}^{\infty}e^{-x^2/\Gamma}dx - \frac{1}{\Gamma}\int\limits_{-\infty}^{\infty}x^2e^{-x^2/\Gamma}dx\right\rbrace = \frac{\hbar^2}{2\Gamma}$$
+\end{enumerate}
+
+Now it follows that $\Delta x = \sqrt{\left<x^2\right> - \left<x\right>^2} = \sqrt{\Gamma / 2}$ and $\Delta p = \sqrt{\left<p^2\right> - \left<p\right>^2} = \sqrt{\frac{\hbar^2}{2\Gamma}}$. This gives $\Delta x\Delta p = \sqrt{\Gamma / 2} \times \sqrt{\frac{\hbar^2}{2\Gamma}} = \frac{\hbar}{2}$. Thus for this Gaussian wavefunction appears to be ``optimal'' in a sense that it gives the best accuracy for the uncertainty principle.
+
+\vspace*{0.2cm}
+
+This problem can also be solved using the Fourier dualism between the position and momentum spaces. Exercise: Show that by Fourier transforming $\psi(x)$ into $\psi(k)$ one gets another Gaussian. Then take its width as $\Delta p$, the width of the original Gaussian as $\Delta x$, and finally calculate $\Delta x\Delta p$.
+
+}

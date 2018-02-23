@@ -1,0 +1,43 @@
+\opage{
+\otitle{6.5 The second-order correction to the energy}
+
+\otext
+The 2nd order correction can be extracted from Eq. (\ref{eq6.17}) the same way as the first order correction. The 2nd order correction to the wavefunction is written as a linear combination:
+
+\aeqn{6.23}{\psi_0^{(2)} = \sum\limits_n b_n\psi_n^{(0)}}
+
+When this is substituted into the 3rd line in Eq. (\ref{eq6.17}), we get:
+
+$$\sum\limits_nb_n\left(E_n^{(0)} - E_0^{(0)}\right)\left| n\right> = \left(E_0^{(2)} - H^{(2)}\right)\left| 0\right> + \sum\limits_n a_n\left(E_0^{(1)} - H^{(1)}\right)\left| n\right>$$
+
+Multiplication from the left by $\left<0\right|$ gives:
+$$\sum\limits_n b_n\left(E_n^{(0)} - E_0^{(0)}\right)\left<0|n\right> = \left<0\right|\left(E_0^{(2)} - H^{(2)}\right)\left|0\right> + \sum\limits_na_n\left<0\right|\left(E_0^{(1)} - H^{(1)}\right)\left|n\right>$$
+$$ = E_0^{(2)} - \left<0\right|H^{(2)}\left|0\right> + \sum\limits_na_n\left<0\right|\left(E_0^{(1)} - H^{(1)}\right)\left|n\right>$$
+$$ = E_0^{(2)} - \left<0\right|H^{(2)}\left|0\right> + a_0\left(E_0^{(1)} - \left<0\right|H^{(1)}\left|0\right>\right) + \sum\limits_n\textnormal{}'a_n\left<0\right|\left(E_0^{(1)} - H^{(1)}\right)\left|n\right>$$
+
+}
+
+\opage{
+
+\otext
+Again the left hand side above is zero. Also the third term on the right is zero. In the last term on the right, the part $E_0^{(1)}\left<0|n\right>$ is also zero since the summation excludes $n = 0$ (the prime). Therefore we can get:
+
+$$E_0^{(2)} = \left<0\right|H^{(2)}\left|0\right> + \sum\limits_n\textnormal{}'a_n\left<0\right|H^{(1)}\left|n\right>$$
+
+The cofficients from $a_k$ can be obtained from Eq. (\ref{eq6.21}):
+
+\aeqn{6.24}{E_0^{(2)} = H_{00}^{(2)} + \sum\limits_n\textnormal{}'\frac{H_{0n}^{(1)}H_{n0}^{(1)}}{E_0^{(0)} - E_n^{(0)}}}
+
+By hermiticity we have $H_{0n}^{(1)}H_{n0}^{(1)} = H_{0n}^{(1)}H_{0n}^{(1)*} = \left|H_{0n}^{(1)}\right|^2$. If $E_n^{(1)} > E_0^{(1)}$ for all $n$ (i.e. 0 is the ground state), the 2nd order correction lowers the energy. 
+
+\vspace*{0.2cm}
+
+Notes:
+
+\begin{itemize}
+\item This process can be carried out to any order and hence provides a systematic way to improve the approximation. However, it is usually not necessary to go beyond the 2nd order expansion. 
+\item To know the energy correct to order $2n+1$ in the perturbation, it is sufficient to know the wavefunctions only to $n$th order in the perturbation.
+\item The perturbation series is usually just assumed to converge. A more formal requirements for convergence were developed by Rellich and Kato.
+\end{itemize}
+
+}

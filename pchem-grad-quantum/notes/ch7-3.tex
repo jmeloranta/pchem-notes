@@ -1,0 +1,73 @@
+\opage{
+\otitle{7.3 Schr\"odinger equation for ground state helium}
+
+\otext
+
+The Hamiltonian for helium atom (2 electrons and nuclear charge +2) is:
+
+\aeqn{7.5}{\hat{H} = -\frac{\hbar^2}{2m_e}\left(\nabla_1^2 + \nabla_2^2\right) - \frac{2e^2}{4\pi\epsilon_0r_1} - \frac{2e^2}{4\pi\epsilon_0r_2} + \frac{e^2}{4\pi\epsilon_0r_{12}}}
+
+where $r_1$ and $r_2$ are the distances from the nucleus to electrons 1 and 2, respectively, and $r_{12}$ is the distance between
+the two electrons. The Schr\"odinger equation is then:
+
+\aeqn{7.6}{\hat{H}\psi(r_1,r_2) = E\psi(r_1,r_2)}
+
+where $\psi$ is an eigenfunction and $E$ is the corresponding eigenvalue. Note that there are many possible $(\psi, E)$ pairs that
+can satisfy this equation. The overall dimensionality of this problem is 6 (i.e., the $x,y,z$ coordinates for both electrons).
+
+\otext
+
+Egil Hylleraas (Norwegian theoretical physicist; 1898 -- 1965) spent almost his whole life in trying to solve this problem 
+analytically. He got very close but was not able to find the exact solution. Up to this day, no analytical solutions to this 
+equation have been found. In practice, solutions to systems with two or more electrons must be obtained numerically.
+
+}
+
+\opage{
+
+\otext
+
+\underline{Simple perturbation theory approach for ground state helium}
+
+\otext
+
+We partition the Hamiltonian into two hydrogenic terms ($\hat{H}^{(0)}$) plus perturbation ($\hat{H}^{(1)}$):
+
+\ceqn{7.7}{\hat{H} = \hat{H}^{(0)} + \hat{H}^{(1)}}
+{\hat{H}^{(0)} = \hat{H}_1 + \hat{H}_2\textnormal{ with }\hat{H}_i = -\frac{\hbar^2}{2m_e}\nabla_i^2 - \frac{2e^2}{4\pi\epsilon_0r_i}\textnormal{ and }i = 1,2}
+{\hat{H}^{(1)} = \frac{e^2}{4\pi\epsilon_0r_{12}}\textnormal{ (perturbation)}}
+
+Next we recall from the undergraduate quantum chemistry course that when $\hat{H}$ can be expressed as a sum of independent terms,
+the solution will be a product of the eigenfunctions of these terms:
+
+$$\hat{H} = \hat{H}_1 + \hat{H}_2\textnormal{ (independent)} \Rightarrow \psi(r_1,r_2) = \phi_1(r_1) \times \phi_2(r_2)$$
+
+where $\phi_i$ are eigenfunctions of $\hat{H}_i$.
+
+\otext
+
+For helium atom, the eigenfunctions of $\hat{H}^{(0)}$ can be then written as:
+
+\aeqn{7.8}{\psi(r_1,r_2) = \psi_{n_1,l_1,m_{l,1}}(r_1)\times\psi_{n_2,l_2,m_{l,2}}(r_2)}
+
+where the $\psi$'s are hydrogenic orbitals with the specified quantum numbers (Eq. (\ref{eq3.39})).
+
+}
+
+\opage{
+
+\otext
+
+The first order correction to energy (see Eq. (\ref{eq6.20})) is:
+
+\ceqn{7.9}{E^{(1)} = \left<\psi(r_1,r_2)|\hat{H}^{(1)}|\psi(r_1,r_2)\right>}
+{ = \left<\psi_{n_1,l_1,m_{l,1}}(r_1)\psi_{n_2,l_2,m_{l,2}}(r_2)|\hat{H}^{(1)}|\psi_{n_1,l_1,m_{l,1}}(r_1)\psi_{n_2,l_2,m_{l,2}}(r_2)\right>}
+{=\frac{e^2}{4\pi\epsilon_0}\int\left|\psi_{n_1,l_1,m_{l,1}}(r_1)\right|^2\times\frac{1}{r_{12}}\times\left|\psi_{n_2,l_2,m_{l,2}}(r_2)\right|^2dr_1dr_2}
+
+This integral is caled the \textit{Coulomb integral} and is often denoted by symbol $J$.
+
+\ofig{coulomb}{0.5}{}
+
+To get numerical values for the energy of ground state He atom, explicit forms for the wavefunctions $\psi$ would be needed.
+
+}

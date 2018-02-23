@@ -1,0 +1,69 @@
+\opage{
+\otitle{5.11 The reduction of representations}
+
+\otext
+Next we will find out how to determine the irreducible representations that a given set of basis functions span. Most often we are interested in finding the irrep symmetry species (e.g. A$_1$, ...) and the character rather ($\chi$) than the actual irrep matrix representation. We have seen that a representation can be expressed as a direct sum of irreducible representations:
+
+\aeqn{5.20}{D(R) = D^{(\Gamma^{(1)})}(R) \oplus D^{(\Gamma^{(2)})}(R) \oplus ...}
+
+by finding a similarity transformation that \textit{simultaneously} converts the matrix representatives to block-diagonal form. We can use simplified notation for this as:
+
+\aeqn{5.21}{\Gamma = \sum\limits_l a_l\Gamma^{(l)}}
+
+where $a_l$ is the number of times the irreducible representation of symmetry species $\Gamma^{(l)}$ appears in the \textit{direct sum}. For example, the reduction of the previously considered $s$-orbital basis would be written as $\Gamma = 2\textnormal{A}_1 + \textnormal{E}$.
+
+\vspace*{0.2cm}
+
+First we will find the coefficients $a_l$. Since the matrix trace operation is not affected by a similarity transformation, we can relate the overall matrix character to taking characters of the irreps:
+
+\aeqn{5.22}{\chi(R) = \sum\limits_la_l\chi^{(l)}(R)}
+
+}
+
+\opage{
+
+\otext
+Next we multiply Eq. (\ref{eq5.22}) by $\chi^{(l')}(R)^*$ and sum over $R$:
+
+$$\sum\limits_R\chi^{(l')}(R)^*\chi(R) = \sum\limits_R\sum\limits_la_l\chi^{(l')}(R)^*\chi^{(l)}(R) = h\sum\limits_la_l\delta_{ll'} = ha_{l'}$$
+
+where the 2nd last step follows from the little orthogonality theorem (Eq. (\ref{eq5.14})). Thus the coefficients $a_l$ are given by the following relation:
+
+\aeqn{5.23}{a_l = \frac{1}{h}\sum\limits_R\chi^{(l)}(R)^*\chi(R)}
+
+Because characters for operations in the same class are identical, we can simplify the sum to go over the classes:
+
+\aeqn{5.24}{a_l = \frac{1}{h}\sum\limits_cg(c)\chi^{(l)}(c)^*\chi(c)}
+
+Sometimes a simple approach works for finding $a_l$ (Eq. (\ref{eq5.22})). Consider again the $s$-orbital example (NH$_3$). The characters for the three different classes are 4, 1, and 2. By inspecting the $C_{3v}$ character table, we see that A$_1 = (1, 1, 1)$ and E $= (2, -1, 0)$. By taking $2\times\textnormal{A}_1 + \textnormal{E} = 2(1,1,1) + (2,-1,0) = (4,1, 2)$. Thus we can immediately conclude that $\Gamma = 2\textnormal{A}_1 + \textnormal{E}$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} What symmetry species do the four hydrogen $1s$-orbitals of methane span?
+
+\ofig{methane2}{0.15}{}
+
+\textbf{Solution.} Methane belongs to $T_d$ point group (character table given earlier, $h = 24$). The basis is four-dimensional $(H_a, H_b, H_c, H_d)$. We need to use Eq. (\ref{eq5.24}). First we obtain the $g$-factors from $T_d$ character table: $g(E) = 1, g(C_3) = 8, g(C_2) = 3, g(S_4) = 6, g(\sigma_d) = 6$. To get $\chi^{(l)}(c)$'s we use the following method:
+
+\vspace*{0.2cm}
+
+We determine the number ($N$) of members left in their original localtion after the application of each symmetry operation: a 1 occurs in the diagonal of the representative in each case, and so, the character is the sum of 1 taken $N$ times. Note that if the member of the basis moves, a zero appears along the diagonal which makes no contribution to the character. Only one operation from each class need to be considered because the characters are the same for all members of a class.
+
+}
+
+\opage{
+
+\otext
+The number of unchanged basis members for the operations $E, C_3, C_2, S_4, \sigma_d$ are 4, 1, 0, 0, and 2, respectively. For example, for $C_3$ operation only one H atom basis function remains in its original place and hence we have 1. For $E$ nothing moves, so we have trivially all four H atom basis functions that remain in their original places. The characters $\chi(c)$ follow directly from the $T_d$ character table. For example, for A$_1$ we have $E: 1, C_3: 1, C_2: 1, \sigma_d: 1, S_4:1$ and for E we have $E: 2, C_3: -1, C_2:2, \sigma_d:0, S_4:0$. Overall we then get (Eq. (\ref{eq5.24})):
+$$a(\textnormal{A}_1) = \frac{1}{24}\left(1\times (4\times 1) + 8\times (1\times 1) + 3\times (0\times 1) + 6\times (0\times 1) + 6\times (2\times 1)\right) = 1$$
+$$a(\textnormal{A}_2) = \frac{1}{24}\left(1\times (4\times 1) + 8\times (1\times 1) + 3\times (0\times 1) + 6\times (0\times -1) + 6\times (2\times -1)\right) = 0$$
+$$a(\textnormal{E}) = \frac{1}{24}\left(1\times (4\times 2) + 8\times (1\times -1) + 3\times (0\times 2) + 6\times (0\times 0) + 6\times (2\times 0)\right) = 0$$
+$$a(\textnormal{T}_1) = \frac{1}{24}\left(1\times (4\times 3) + 8\times (1\times 0) + 3\times (0\times -1) + 6\times (0\times 1) + 6\times (2\times -1)\right) = 0$$
+$$a(\textnormal{T}_2) = \frac{1}{24}\left(1\times (4\times 3) + 8\times (1\times 0) + 3\times (0\times -1) + 6\times (0\times -1) + 6\times (2\times 1)\right) = 1$$
+
+Hence the four $s$-orbitals span $\Gamma = \textnormal{A}_1 + \textnormal{T}_2$.
+
+}

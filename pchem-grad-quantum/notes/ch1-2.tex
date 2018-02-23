@@ -1,0 +1,70 @@
+\opage{
+\otitle{1.2 Eigenfunctions and eigenvalues}
+
+\otext
+When operators operate on a given function, the outcome is another function. For example, differentiation of $\sin(x)$ gives $\cos(x)$. In some special cases the outcome of an operation is the same function multiplied by a constant. These functions are called eigenfunctions of the given operator $\Omega$. If $f$ is an eigenfunction of $\Omega$, we have:
+
+\aeqn{1.2}{\Omega f = \omega f}
+
+where $\omega$ is a constant and is called the eigenvalue of $\Omega$.
+
+\vspace*{0.2cm}
+
+\textbf{Example 1.2} Is the function $f(x) = \cos(3x + 5)$ an eigenfunction of the operator $\Omega = d^2/dx^2$ and, if so, what is the corresponding eigenvalue?
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} By operating on the function we get:
+
+$$\umark{\frac{d^2}{dx^2}}{=\Omega}\umark{\cos(3x + 5)}{= f} = \frac{d}{dx}\left(-3\sin(3x + 5)\right) = \umark{-9}{=\omega}\umark{\cos(3x + 5)}{= f}$$
+
+Thus this has the right form required in Eq. (\ref{eq1.2}) and $f$ is an eigenfunction of operator $\Omega$. The corresponding eigenvalue is $-9$. Note that eigenfunctions and eigenvalues go together in pairs. There are many possible (eigenfunction, eigenvalue) pairs for a given operator.
+
+}
+
+\opage{
+
+\otext
+Any well behaved function can be expressed as a linear combination of eigenfunctions of an operator ($\Omega f_n = \omega_n f_n$):
+
+\aeqn{1.3}{g = \sum\limits_{i=1}^{\infty}c_n f_n}
+
+where $c_n$ are coefficients that are specific to function $g$. The advantage of this expansion is that we know exactly how $\Omega$ operates on each term:
+
+$$\Omega g = \Omega\sum\limits_{i=1}^{\infty}c_nf_n = \sum\limits_{i=1}^{\infty}c_n\Omega f_n = \sum\limits_{i=1}^{\infty}c_n\omega_nf_n$$
+
+When many functions have the same eigenvalue, these eigenfunctions are said to be \textit{degenerate}. Let $f_1, f_2, ..., f_k$ be all eigenfunctions of $\Omega$ so that they have the same eigenvalue $\omega$, then we have:
+
+\aeqn{1.4}{\Omega f_n = \omega f_n\textnormal{, with }n = 1,2,...,k}
+
+Any linear combination of these functions is also an eigenfunction of $\Omega$. Let $g$ be a linear combination of $f_n$'s, then we have:
+
+$$\Omega g = \Omega\sum\limits_{n=1}^{k}c_nf_n = \sum\limits_{n=1}^{k}c_n\Omega f_n = \sum\limits_{n=1}^{k}c_n\omega f_n = \omega\sum\limits_{n=1}^k c_nf_n = \omega g$$
+
+This has the form of an eigenvalue equation: $\Omega g = \omega g$.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Show that any linear combination of $e^{2ix}$ and $e^{-2ix}$ is an eigenfunction of the operator $d^2/dx^2$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.}
+
+$$\frac{d^2}{dx^2} e^{\pm 2ix} = \pm2i\frac{d}{dx}e^{\pm 2ix} = -4e^{\pm 2ix}$$
+
+Operation on any linear combination gives then:
+
+$$\umark{\frac{d^2}{dx^2}}{=\Omega}\umark{\left(ae^{2ix} + be^{-2ix}\right)}{= g} = \umark{-4}{= \omega}\umark{\left(ae^{2ix} + be^{-2ix}\right)}{=g}$$
+
+A set of functions $g_1, g_2, ..., g_k$ are said to be \textit{linearly independent} if it is not possible to find constants $c_1, c_2, ..., c_k$ such that
+
+$$\sum\limits_{i=1}^k c_ig_i = 0$$
+
+when exlcuding the trivial solution $c_1 = c_2 = ... = c_k = 0$. The dimension of the set, $k$, gives the number of possible linearly independent functions that can be constructed from the functions. For example, from three $2p$ orbitals, it is possible to construct three different linearly independent functions.
+
+}
+

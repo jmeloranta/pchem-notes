@@ -1,0 +1,109 @@
+\opage{
+\otitle{4.8 Spin}
+
+\begin{columns}
+\hspace*{-2cm}
+\begin{column}{5cm}
+\begin{columns}
+\begin{column}{2cm}
+\operson{walter_gerlach}{0.15}{Walter Gerlach (1889 - 1979)}
+\end{column}
+\hspace*{-0.5cm}
+\begin{column}{3cm}
+\operson{otto_stern}{0.265}{Otto Stern (1889 - 1979), Nobel price 1943}
+\end{column}
+\end{columns}
+\operson{ukg}{0.15}{\vspace*{0.1cm}
+L: George Uhlenbeck (1900 - 1988),\\
+M: Hendrik Kramers (1894 - 1952),\\
+\vspace*{-0.1cm}
+R: Samuel Goudsmit (1902 - 1978).}
+\end{column}\hspace*{-1.5cm}\vline
+\hspace*{0.5cm}
+\begin{column}{4cm}
+
+\otext
+\underline{Stern-Gerlach experiment:}\\
+
+\ofig{stern-gerlach-exp}{0.3}{}
+
+\otext
+Note that silver atoms have one unpaired electron.\\
+
+\vspace*{0.3cm}
+ 
+The electron appears to have an intrinsic magnetic moment, which originates from ele
+ctron spin.
+\end{column}
+
+\end{columns}
+
+}
+
+\opage{
+
+\otext
+Based on the Stern-Gerlach experiment it appears that electrons have intrinsic angular momentum, which is called the \textit{spin}. The quantum number for electron spin is $s = 1/2$ and there are two states associated with it $m_s = +1/2$ (often denoted by $\alpha$ or $\uparrow$) and $m_s = -1/2$ (often denoted by $\beta$ or $\downarrow$). Note that spin does not naturally arise from non-relativistic quantum mechanics but requires the relativistic theory developed by Paul Dirac. Fortunately, by using the general laws of angular momentum, it is possible to incorporte it into Schr\"odinger equation.
+
+\vspace*{0.2cm}
+
+If we denote the $\left|\frac{1}{2},+\frac{1}{2}\right>$ by $\alpha$ and $\left|\frac{1}{2},-\frac{1}{2}\right>$ by $\beta$ then we can apply the previously developed general expressions to yield:
+
+\aeqn{4.33}{s_z\alpha = +\frac{1}{2}\hbar\alpha\textnormal{ and }s_z\beta = -\frac{1}{2}\hbar\beta\textnormal{ and }s^2\alpha = \frac{3}{4}\hbar^2\alpha\textnormal{ and }s^2\beta = \frac{3}{4}\hbar^2\beta}
+
+and the effects of the shift operators are:
+
+\aeqn{4.34}{s_+\alpha = 0\textnormal{ and }s_+\beta = \hbar\alpha\textnormal{ and }s_-\alpha = \hbar\beta\textnormal{ and }s_-\beta = 0}
+
+The matrix elements of $s_-$ and $s_+$ are:
+
+\aeqn{4.35}{\left<\alpha\right|s_+\left|\beta\right> = \left<\beta\right|s_-\left|\alpha\right> = \hbar}
+
+These spin eigenfunctions can also be represented as vectors:
+
+\aeqn{4.36}{\alpha = \left(\begin{matrix} 1\\0\\ \end{matrix}\right)\textnormal{ and }\beta = \left(\begin{matrix}0\\ 1\\ \end{matrix}\right)}
+
+}
+
+\opage{
+
+\otext
+The spin operators can then be written as matrices (note that there is a finite number of possible eigenstates). For example, consider the $s_z$ operator:
+
+$$s_z\alpha = +\frac{1}{2}\hbar\left(\begin{matrix}1 & 0\\0 & -1\\ \end{matrix}\right)\left(\begin{matrix}1\\0\\ \end{matrix}\right) = +\frac{1}{2}\hbar\left(\begin{matrix}1\\0\\ \end{matrix}\right) = +\frac{1}{2}\hbar\alpha$$
+
+The same calculation can be carried out for $\beta$. For $s_x$ we can write:
+
+$$s_x\alpha = +\frac{1}{2}\hbar\left(\begin{matrix}0 & 1\\1 & 0\\ \end{matrix}\right)\left(\begin{matrix}1\\0\\ \end{matrix}\right) = +\frac{1}{2}\hbar\left(\begin{matrix}0\\1\\ \end{matrix}\right) = +\frac{1}{2}\hbar\beta$$
+
+All spin $s = \frac{1}{2}$ operators can thus be represented by matrices as follows:
+
+\beqn{4.37}{\sigma_x = \left(\begin{matrix}0 & 1\\1 & 0\\ \end{matrix}\right)\textnormal{ }\sigma_y = \left(\begin{matrix}0 & -i\\i & 0\\ \end{matrix}\right)\textnormal{ }\sigma_z = \left(\begin{matrix}1 & 0\\0 & -1\\ \end{matrix}\right)}
+{\sigma_+ = \left(\begin{matrix}0 & 2\\0 & 0\\ \end{matrix}\right)\textnormal{ }\sigma_- = \left(\begin{matrix}0 & 0\\2 & 0\\ \end{matrix}\right)}
+
+with the following relation:
+
+\aeqn{4.38}{s_q = \frac{1}{2}\hbar\sigma_q\textnormal{ where }q = x,y,z,+,-}
+
+These are called the \textit{Pauli spin matrices}.
+
+}
+
+\opage{
+
+\otext
+\textbf{Example.} Show that the Pauli matrices correctly follow the commutation relation $\left[s_x,s_y\right] = i\hbar s_z$.
+
+\vspace*{0.2cm}
+
+\textbf{Solution.} First we calculate the commutator between $\sigma_x$ and $\sigma_y$:
+
+$$\left[\sigma_x,\sigma_y\right] = \left(\begin{matrix}0 & 1\\1 & 0\\ \end{matrix}\right)\left(\begin{matrix}0 & -i\\ i & 0\\ \end{matrix} \right) - \left(\begin{matrix}0 & -i\\i & 0\\ \end{matrix}\right)\left(\begin{matrix}0 & 1\\ 1 & 0\\ \end{matrix}\right)$$
+$$= \left(\begin{matrix}i & 0\\ 0 & -i\\ \end{matrix} \right) - \left(\begin{matrix}-i & 0\\ 0& i\end{matrix}\right)$$
+$$= 2\left(\begin{matrix}i & 0\\0 & -i\\ \end{matrix}\right) = 2i\left(\begin{matrix}1 & 0\\ 0 & -1\\ \end{matrix}\right) = 2i\sigma_z$$
+
+Eq. (\ref{eq4.38}) now states that:
+
+$$\left[s_x,s_y\right] = \frac{1}{4}\hbar^2\left[\sigma_x,\sigma_y\right] = \frac{1}{4}\hbar^2\left(2i\sigma_z\right) = i\hbar s_z$$
+
+}
