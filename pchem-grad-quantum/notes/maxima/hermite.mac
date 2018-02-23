@@ -1,0 +1,6 @@
+load(orthopoly);
+hermite(0, x);
+hermite(1, x);
+hermite(2, x);
+hermite(3, x);
+/* etc. */
