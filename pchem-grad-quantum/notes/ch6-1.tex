@@ -8,7 +8,7 @@ In \textit{time-independent perturbation theory} we divide the original hamilton
 
 where $H^{(1)}$ is refered to as \textit{peturbation}. Our aim is to approximately generate the wavefunction and energy of the perturbed system by using the solution of the unperturbed system.
 
-\vspace*{0.2cm}
+;5B\vspace*{0.2cm}
 
 First we consider a simple two-level system (only two eigenstates). We assume that these two eigenstates of $H^{(0)}$ are known and we denote them by $\left|1\right>$ ($\psi_1^{(0)}$) and $\left|2\right>$ ($\psi_2^{(0)}$). These states and functions form a complete orthonormal basis. The eigenstates have the corresponding energies $E_1^{(0)}$ and $E_2^{(0)}$. Thus both states fulfill the time-independent Schr\"odinger equation:
 
@@ -88,7 +88,7 @@ To summarize the effect of perturbation:
 
 \begin{enumerate}
 \item When a perturbation is applied, the lower level moves down in energy and the upper level moves up.
-\item The close the unperturbed states are, the greater the effect of a perturbation.
+\item The closer the unperturbed states are, the greater the effect of a perturbation.
 \item The stronger the perturbation, the greater the effect on the energies of the levels.
 \end{enumerate}
 
@@ -121,7 +121,7 @@ To get the wavefunctions (i.e. the coefficients $c_1$ and $c_2$), we need to sub
 
 \aeqn{6.8}{\psi_+ = \psi_1^0\cos(\zeta) + \psi^{(0)}_2\sin(\zeta)\textnormal{ and }\psi_- = -\psi_1^{(0)}\sin(\zeta) + \psi_2^{(0)}\cos(\zeta)}
 
-The normalization requirement and taking $H_{12}^{(1)} = H_{21}^{(1)}$ (they must be real in this case):
+with ($H_{12}^{(1)} = H_{21}^{(1)}$ is taken real here) gives:
 
 \aeqn{6.9}{\tan(2\zeta) = \frac{2\left|H^{(1)}_{12}\right|}{E_1^{(0)} - E_2^{(0)}}}
 
@@ -129,7 +129,7 @@ If the system is degenerate (i.e. $E_1^{(0)} = E_2^{(0)}$) the above gives $\tan
 
 \aeqn{6.10}{\psi_+ = \frac{1}{\sqrt{2}}\left(\psi_1^{(0)} + \psi_2^{(0)}\right)\textnormal{ and }\psi_- = \frac{1}{\sqrt{2}}\left(\psi_2^{(0)} - \psi_1^{(0)}\right)}
 
-This is a 50\%-50\% mixture of the original states. When the perturbation is small (i.e. $\zeta$ is small) compared to the energy level separation, we can assume that $\sin(\zeta) \approx \zeta$ and $\cos(\zeta) \approx 1$. Eqn. (\ref{eq6.8}) can then be written as:
+This is a 50\%-50\% mixture of the original states. When the perturbation is small (i.e., $\zeta$ is small) compared to the energy level separation, we can take $\sin(\zeta) \approx \zeta$, $\cos(\zeta) \approx 1$, and $\tan\left(2\zeta\right) \approx 2\zeta = -\left|H_{12}^{(1)}\right|/\Delta E$. Eqn. (\ref{eq6.8}) can then be written as:
 
 \aeqn{6.11}{\psi_+ \approx \psi_1^{(0)} - \frac{\left|H_{12}^{(1)}\right|}{\Delta E^{(0)}}\psi_2^{(0)}\textnormal{ and }\psi_- \approx \psi_2^{(0)} + \frac{\left|H_{12}^{(1)}\right|}{\Delta E^{(0)}}\psi_1^{(0)}}
 
