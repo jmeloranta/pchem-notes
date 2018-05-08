@@ -61,10 +61,64 @@ The energy of a Slater determinant can be writen in terms of the permutation ope
 
 \aeqn{9.15}{E = \left<\Phi\left|\hat{H}\right|\Phi\right> = \left<\hat{A}\Pi\left|\hat{H}\right|\hat{A}\Pi\right> = \sqrt{n!}\left<\Pi\left|\hat{H}\right|\hat{A}\Pi\right> = \sum_p\left(-1\right)^p\left<\Pi\left|\hat{H}\right|\hat{P}\Pi\right>}
 
-For the one-electron $\hat{h}_1$ ($i = 1$; other indices evaluated the same way) and the leading term of Eq. (\ref{eq9.6}):
+For the one-electron $\hat{h}_1$ ($i = 1$; other indices evaluated the same way) and the above becomes:
 
 \beqn{9.16}{\left<\Pi\left|\hat{h}_1\right|\Phi\right> = \left<\phi_1(1)\phi_1(2)...\phi_n(n)\left|\hat{h}_1\right|\phi_1(1)\phi_2(2)...\phi_n(n)\right>}
 {\left<\phi_1(1)\left|\hat{h}_1\right|\phi_1(1)\right>\left<\phi_2(2)|\phi_2(2)\right>\left<\phi_3(3)|\phi_3(3)\right>...\left<\phi_n(n)|\phi_n(n)\right>}
 
+Note that only the identity operator in the permutation operator of Eq. (\ref{eq9.6}) can give a non-zero contribution. All actual permutation operators
+involve change in the electron indices and therefore they include terms such as $\left<\phi_2(2)|\phi_1(2)\right>$ etc., 
+which are zero based on orthogonality. Consider, for example, the following two-electron permutation operator:
+
+\beqn{9.17}{\left<\Pi\left|\hat{h}_1\right|\hat{P}_{12}\Pi\right> = \left<\phi_1(1)\phi_2(2)...\phi_n(n)\left|\hat{h}_1\right|\phi_2(1)\phi_1(2)...\phi_n(n)\right>}
+{=\left<\phi_1(1)\left|\hat{h}_1\right|\phi_2(1)\right>\left<\phi_2(2)|\phi_1(2)\right>...\left<\phi_n(n)|\phi_n(n)\right>}
+
+}
+
+\opage{
+
+\otext
+
+For the two-electron operator ($g_{ij}$), both the identity and $\hat{P}_{ij}$ operators can give non-zero contributions. However, 
+three and higher permutation operators create at least one overlap integral between two different orbitals (orthogonality) and
+hence these must be zero. The identity operator yields the following contribution (\textit{Coulomb integral}):
+
+\vspace*{-0.25cm}
+
+\ceqn{9.18}{\left<\Pi\left|\hat{g}_{12}\right|\Pi\right> = \left<\phi_1(1)\phi_2(2)...\phi_n(n)\left|\hat{g}_{12}\right|\phi_1(1)\phi_2(2)...\phi_n(n)\right>}
+{= \left<\phi_1(1)\phi_2(2)\left|\hat{g}_{12}\right|\phi_1(1)\phi_2(2)\right>\left<\phi_3(3)|\phi_3(3)\right>...\left<\phi_n(n)|\phi_n(n)\right>}
+{= \left<\phi_1(1)\phi_2(2)\left|\hat{g}_{12}\right|\phi_1(1)\phi_2(2)\right> = J_{12}}
+
+This represents the classical Coulomb interaction between the two electrons on these orbitals. The two-electron permutation operator yields (\textit{Exchange integral}):
+
+\ceqn{9.19}{\left<\Pi\left|\hat{g}_{12}\right|\hat{P}_{12}\Pi\right> = \left<\phi_1(1)\phi_2(2)...\phi_n(n)\left|\hat{g}_{12}\right|\phi_2(1)\phi_1(2)...\phi_n(n)\right>}
+{= \left<\phi_1(1)\phi_2(2)\left|\hat{g}_{12}\right|\phi_2(1)\phi_1(2)\right>\left<\phi_3(3)|\phi_3(3)\right>...\left<\phi_n(n)|\phi_n(n)\right>}
+{= \left<\phi_1(1)\phi_2(2)\left|\hat{g}_{12}\right|\phi_2(1)\phi_1(2)\right> = K_{12}}
+
+The above quantities can be arranged in matrix form (vector $h_i$ \& matrices $J$ and $K$) according to electron indices. The total energy corresponding
+to a given Slater determinant can then be obtained from:
+
+\vspace*{-0.25cm}
+
+\beqn{9.20}{E = \sum_{i=1}^nh_i + \sum_{i=1}^n\sum_{j>i}^n\left(J_{ij} - K_{ij}\right) + V_{nn}}
+{= \sum_{i=1}^nh_i + \frac{1}{2}\sum_{i=1}^n\sum_{j=1}^n\left(J_{ij} - K_{ij}\right) + V_{nn}}
+
+}
+
+\opage{
+
+\otext
+
+Note that the minus sign in front of $K_{ij}$ above originates from the $(-1)^p$ term in Eq. (\ref{eq9.6}). This can also be 
+expressed in terms of Coulomb and Exchange operators:
+
+\aeqn{9.21}{E = \sum_{i=1}^n\left<\phi_i\left|\hat{h}_i\right|\phi_i\right> + \frac{1}{2}\sum_{i,j}^n\left(\left<\phi_j\left|\hat{J}_i\right|\phi_j\right> - \left<\phi_j\left|\hat{K}_i\right|\phi_j\right>\right) + V_{nn}}
+
+The operators $\hat{J}_i$ and $\hat{K}_i$ are defined as:
+
+\beqn{9.22}{\hat{J}_i|\phi_j(2)> = \left<\phi_i(1)\left|\hat{g}_{12}\right|\phi_i(1)\right>|\phi_j(2)>}
+{\hat{K}_i|\phi_j(2)> = \left<\phi_i(1)\left|\hat{g}_{12}\right|\phi_j(1)\right>|\phi_i(2)>}
+
+Given the molecular orbitals, this expression yields the electronic energy for the atom/molecule.
 
 }
