@@ -28,8 +28,8 @@ First we express a given trial solution $\psi_t$ as a linear combination of the 
 Next, consider the following integral (assume that $\psi_t$ is normalized):
 
 \ceqn{X.35}{\int\psi_t^*\left(\hat{H} - E_1\right)\psi_td\tau \overbrace{\textnormal{ = }}^{\textnormal{(\ref{eqX.34})}} \sum_{i,j=1}^{\infty}c_i^*c_j\int\psi_i^*\left(\hat{H} - E_1\right)\psi_jd\tau}
-{= \sum_{i,j=1}^\infty c_i^*c_j\left(E_j - E_1\right)\underbrace{\int\psi_i^*\psi_jd\tau}_\textnormal{orthogonality}
-= \sum_{j = 1}^\infty \underbrace{c_j^*c_j}_{\equiv |c_j|^2\ge 0}\underbrace{\left(E_j - E_1\right)}_{\ge 0}\ge 0}
+{= \sum_{i,j=1}^\infty c_i^*c_j\left(E_j - E_1\right)\underbrace{\int\psi_i^*\psi_jd\tau}_{\textnormal{orthogonality}}
+= \sum_{j = 1}\\infty \underbrace{c_j^*c_j}_{\equiv |c_j|^2\ge 0}\underbrace{\left(E_j - E_1\right)}_{\ge 0}\ge 0}
 {\Rightarrow \int\psi_t^*\left( \hat{H} - E_1\right)\psi_td\tau\ge 0\Rightarrow\int\psi_t^*\hat{H}\psi_td\tau\ge E_1}
 
 \otext
@@ -52,7 +52,7 @@ $$\hat{H} = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\textnormal{ (}0\le x\le a\textno
 Plugging in both the Hamiltonian and $\psi_t$ into \ref{eq10.58} gives:
 
 $$\int_0^a\psi_t^*\hat{H}\psi_td\tau = -\frac{30\hbar^2}{2a^5m}\int_0^a\left( ax - x^2\right)\frac{d^2}{dx^2}\left( ax - x^2\right)dx$$
-$$= \frac{30\hbar^2}{a^5m}\int_0^a\left( ax-x^2\right) dx = \frac{5\hbar^2}{a^2m}\overbrace{\ge}^\textnormal{(\ref{eq9.64})} E_1$$
+$$= \frac{30\hbar^2}{a^5m}\int_0^a\left( ax-x^2\right) dx = \frac{5\hbar^2}{a^2m}\overbrace{\ge}^{\textnormal{(\ref{eq9.64})}} E_1$$
 
 \otext
 As indicated above, this gives an upper limit for the ground state energy $E_1$.

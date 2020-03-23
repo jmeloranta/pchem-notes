@@ -22,7 +22,7 @@ According to classical physics, the \href{http://en.wikipedia.org/wiki/Kinetic_e
 derive the momentum operator in the position representation:
 
 \ceqn{X.13}{\left< \hat{p}_x\right> = \left<\hbar \hat{k}\right> = \hbar\left<\psi(k)\left|\hat{k}\right|\psi(k)\right> = \hbar\int\limits_{-\infty}^{\infty}\psi^*(k)k\psi(k)dk}
-{\overbrace{=}^\textnormal{Eq. (\ref{eqX.4})} \frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{-ikx}dx}_\textnormal{\href{http://en.wikipedia.org/wiki/Integration_by_parts}{\uline{integration by parts}}}dkdx'}
+{\overbrace{=}^{\textnormal{Eq. (\ref{eqX.4})}} \frac{\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}k\underbrace{\int\limits_{-\infty}^{\infty}\psi(x)e^{-ikx}dx}_{\textnormal{\href{http://en.wikipedia.org/wiki/Integration_by_parts}{\uline{integration by parts}}}}dkdx'}
 {= -\frac{i\hbar}{2\pi}\int\limits_{-\infty}^{\infty}\psi^*(x')\int\limits_{-\infty}^{\infty}e^{ikx'}\int\limits_{-\infty}^{\infty}\frac{d\psi(x)}{dx}e^{-ikx}dxdkdx'\textnormal{ }}
 
 }
@@ -222,7 +222,7 @@ This gives the transformation between a point the \href{http://en.wikipedia.org/
 
 \otext
 \ceqn{X.22a}{\int\left|\psi\right|^2d\tau = \int\limits_{r=0}^{\infty}\int\limits_{\theta=0}^{\pi}\int\limits_{\phi=0}^{2\pi}\underbrace{\left(Ne^{-r/a_0}\right)^2}_{=\left|\psi\right|^2}\underbrace{r^2\sin(\theta)drd\theta d\phi}_{=d\tau}}
-{=4\pi N^2\underbrace{\int\limits_{r=0}^{\infty} e^{-2r/a_0}r^2dr}_\textnormal{integration by parts} = a_0^3\pi N^2 = 1\textnormal{ (normalization)}}
+{=4\pi N^2\underbrace{\int\limits_{r=0}^{\infty} e^{-2r/a_0}r^2dr}_{\textnormal{integration by parts}} = a_0^3\pi N^2 = 1\textnormal{ (normalization)}}
 {\Rightarrow N = \frac{1}{\sqrt{\pi a_0^3}} \Rightarrow \psi(r) = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}}
 
 In the case of many particles, the Schr\"odinger equation can be written as ($3n$ dimensions, where $n$ = number of particles):

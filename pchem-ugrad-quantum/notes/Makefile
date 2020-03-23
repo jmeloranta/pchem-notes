@@ -8,7 +8,7 @@ $(TARGET).dvi: *.tex figs/*.eps maxima/*.mac
 
 $(TARGET).pdf: $(TARGET).dvi
 	dvipdf $(TARGET).dvi
-	pdfnup --paper letterpaper --nup 1x2 $(TARGET).pdf --outfile $(TARGET)-handout.pdf
+	pdfjam --nup 2x1 --landscape $(TARGET).pdf --outfile $(TARGET)-handout.pdf
 
 view: $(TARGET).dvi $(TARGET).pdf
 	evince $(TARGET).pdf
