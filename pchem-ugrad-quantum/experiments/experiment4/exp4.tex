@@ -94,12 +94,12 @@ where $\tilde{E}_v$ is the energy in wavenumber units and $c$ is the speed of li
 For an IR allowed transition, the following integral must be non-zero (``the Fermi golden rule'') \cite{ATKINS2}:
 
 \begin{equation}
-I \propto \left|\left<\psi_i\left|H_1\right|\psi_f\right>\right|^2 = \left|\int\psi_i^*H_1\psi_fd\tau\right|^2
+A \propto \left|\left<\psi_i\left|H_1\right|\psi_f\right>\right|^2 = \left|\int\psi_i^*H_1\psi_fd\tau\right|^2
 \label{eq8}
 \end{equation}
 
 \noindent
-where $I$ denotes the IR transition intensity, $\psi_i$ is the wavefunction for the initial state, $\psi_f$ is the wavefunction for the final state and $H_1$ is the transition dipole operator corresponding to the electromagnetic field. For a photon absorption process, the operator $H_1$ is in general either $x$, $y$, or $z$ (i.e., multiplication by the coordinate). However, here we take just one of them (denoted by $r$), which happens to lie along molecular axis (i.e., diatomic molecule assumed). In the present case, thermal energies are only able to populate the lowest level ($\psi_0$) and therefore we only consider only $\psi_i = \psi_0$ as the initial level for transition. As the final state, we consider $\psi_f = \psi_1$ (i.e., the next vibrational level). Since $\psi_0$ is a symmetric function, $r$ is an antisymmetric function, and $\psi_1$ is antisymmetric as well (recall the harmonic oscillator), the function in integral of Eq. (\ref{eq8}) is symmetric and as such may have a non-zero value \cite{ATKINS1,HERZBERG1}. Thus, we conclude that the transition between the two lowest vibrational levels is an IR allowed transition. The energy corresponding to this transition can be obtained from Eq. (\ref{eq6}):
+where $A$ denotes the IR transition absorbance, $\psi_i$ is the wavefunction for the initial state, $\psi_f$ is the wavefunction for the final state and $H_1$ is the transition dipole operator corresponding to the electromagnetic field. For a photon absorption process, the operator $H_1$ is in general either $x$, $y$, or $z$ (i.e., multiplication by the coordinate). However, here we take just one of them (denoted by $r$), which happens to lie along molecular axis (i.e., diatomic molecule assumed). In the present case, thermal energies are only able to populate the lowest level ($\psi_0$) and therefore we only consider only $\psi_i = \psi_0$ as the initial level for transition. As the final state, we consider $\psi_f = \psi_1$ (i.e., the next vibrational level). Since $\psi_0$ is a symmetric function, $r$ is an antisymmetric function, and $\psi_1$ is antisymmetric as well (recall the harmonic oscillator), the function in integral of Eq. (\ref{eq8}) is symmetric and as such may have a non-zero value \cite{ATKINS1,HERZBERG1}. Thus, we conclude that the transition between the two lowest vibrational levels is an IR allowed transition. The energy corresponding to this transition can be obtained from Eq. (\ref{eq6}):
 
 \begin{equation}
 \Delta \tilde{E}_v = \tilde{E}_{v+1} - \tilde{E}_v = \tilde{\nu}\textnormal{ where }v=0,1,2,3,...
@@ -183,13 +183,13 @@ where only the 0 to 1 vibronic transition is considered (i.e., no overtones that
 \end{figure}
 
 The spectrum at the bottom of Fig. \ref{fig2} can be thought of having the vibrational transition at the middle, which has been split by the rotational fine structure. Two branches can be observed, which have been labeled P and R, in the spectrum. The P branch corresponds to transitions where $J$ decreases by one and R to transitions where $J$ increases by one. Note that the transitions, where $J$ does not change, are not allowed here. Only molecules that have an extra source of angular momentum, such the NO radical ($^2\Pi$ term symbol), may display $\Delta J = 0$ transitions (Q branch). Another interesting thing to note is that many
-of the transitions involve rotationally excited states and in order to observe transitions originating from these states, it is necessary to have them thermally populated. As such, their intensity must depend on thermal population of the level. According to the Fermi golden rule, the intensity has the following dependency on $J$ (prime denotes the difference in vibrational states):
+of the transitions involve rotationally excited states and in order to observe transitions originating from these states, it is necessary to have them thermally populated. As such, their intensity must depend on thermal population of the level. According to the Fermi golden rule, the absorbance has the following dependency on $J$ (prime denotes the difference in vibrational states):
 
 \begin{align}
 \label{eq17}
-& I_P(J) \propto \tilde{\nu}N_J^P\left|\left<\psi_J\left|H_1\right|\psi'_{J-1}\right>\right|^2\textnormal{ where }J=1,2,3...\textnormal{ (the initial rotational state)}\\
+& A_P(J) \propto \tilde{\nu}N_J^P\left|\left<\psi_J\left|H_1\right|\psi'_{J-1}\right>\right|^2\textnormal{ where }J=1,2,3...\textnormal{ (the initial rotational state)}\\
 \notag
-& I_R(J) \propto \tilde{\nu}N_J^R\left|\left<\psi_J\left|H_1\right|\psi'_{J+1}\right>\right|^2\textnormal{ where }J=0,1,2...\textnormal{ (the initial rotational state)}
+& A_R(J) \propto \tilde{\nu}N_J^R\left|\left<\psi_J\left|H_1\right|\psi'_{J+1}\right>\right|^2\textnormal{ where }J=0,1,2...\textnormal{ (the initial rotational state)}
 \notag
 \end{align}
 
@@ -198,22 +198,21 @@ where $N_J^P$ and $N_J^R$ are the thermal (Boltzmann) populations of the initial
 
 \begin{align}
 \label{eq18}
-& I_P(J) \propto \tilde{\nu}Je^{-\frac{\tilde{B}hcJ(J+1)}{k_BT}}\textnormal{ where }J=1,2,3...\\
+& A_P(J) \propto \tilde{\nu}Je^{-\frac{\tilde{B}hcJ(J+1)}{k_BT}}\textnormal{ where }J=1,2,3...\\
 \notag
-& I_R(J) \propto \tilde{\nu}(J+1)e^{-\frac{\tilde{B}hcJ(J+1)}{k_BT}}\textnormal{ where }J=0,1,2...
+& A_R(J) \propto \tilde{\nu}(J+1)e^{-\frac{\tilde{B}hcJ(J+1)}{k_BT}}\textnormal{ where }J=0,1,2...
 \end{align}
 
 \noindent
-Note that here $k_B$ denotes the Boltzmann constant. This expression can be used to understand the intensity distribution of both the P and R branches, which follow essentially the thermal populations of the initial states. Note that sometimes the following notation is used for states involved in a transition: $J''$ denotes the initial state and $J'$ the final state (similar notation is also used for the vibrational quantum number $v$). By using Eq. (\ref{eq18}) and the intensity distribution of the rotational lines, the rotational temperature of the molecules can be determined (``molecular thermometer''). In practice near room temperature, it is useful to calculate the ratio between $I_P(1)$ and $I_R(1)$:
+Note that here $k_B$ denotes the Boltzmann constant. This expression can be used to understand the intensity distribution of both the P and R branches, which follow essentially the thermal populations of the initial states. Note that sometimes the following notation is used for states involved in a transition: $J''$ denotes the initial state and $J'$ the final state (similar notation is also used for the vibrational quantum number $v$). By using Eq. (\ref{eq18}) and the intensity distribution of the rotational lines, the rotational temperature of the molecules can be determined (``molecular thermometer''). In practice near room temperature, it is useful to calculate the ratio between $A_P(1)$ and $A_R(1)$:
 
 \begin{equation}
-\frac{I_P(1)}{I_R(0)} = e^{-\frac{2\tilde{B}hc}{k_BT}} \Rightarrow T = -\frac{2\tilde{B}hc}{k_B\ln\left(I_P(1)/I_R(0)\right)}
+\frac{A_P(1)}{A_R(0)} = e^{-\frac{2\tilde{B}hc}{k_BT}} \Rightarrow T = -\frac{2\tilde{B}hc}{k_B\ln\left(A_P(1)/A_R(0)\right)}
 \label{eq18a}
 \end{equation}
 
 \noindent
-Note that at high $T$, it may be difficult to determine the intensities with high accuracy. At toom temperature, the
-ratio $I_P(1) / I_R(0) \approx 0.9$.
+Note that at high $T$, it may be difficult to determine the intensities with high accuracy. At toom temperature, the ratio $A_P(1) / A_R(0) \approx 0.9$.
 
 In many cases Eq. (\ref{eq16}) is not sufficiently accurate because it does not allow for coupling of the vibrational and rotational motion. In other words, the rotational constant may be slightly different for the ground and the excited vibrational states. If the rotational constant for the lowest vibrational level (i.e., $v = 0$) is denoted by $\tilde{B}$ and for the next level ($v = 1$) by $\tilde{B}_1$, the equation corresponding to Eq. (\ref{eq16}) can be written as follows \cite{ATKINS1}:
 
@@ -362,7 +361,7 @@ empties the HCl gas trapped between valves V13 and V14. The HCl gas will now con
 
 \item Make sure that the Raman option (``Use Raman Accessory'') is unchecked in the ``Raman'' menu.
 
-\item Select ``Collect $\rightarrow$ Collect Setup''. Set the number of scans to 20 and resolution to 1 cm$^{-1}$. Leave the other options as they are. Accept the changes by clicking ``OK''.
+\item Select ``Collect $\rightarrow$ Collect Setup''. Set the number of scans to 20 and resolution to 1 cm$^{-1}$. Make sure that the y-axis unit is Absorbance. Leave the other options as they are. Accept the changes by clicking ``OK''.
 
 \item Select ``Collect $\rightarrow$ Optical Bench Setup''. Make sure that the settings are as follows: Sample Compartment: Main, Detector: MCT/A, Source: IR, Beamsplitter: KBr, Aperture: 32, Velocity: 1.9, check the single beam setting box, Gain: Autogain, Spectral range: 2500 -- 3200 cm$^{-1}$. If measuring the first IR sample, click on ``Align Bench'' to adjust the optics inside the spectrometer. Finally, hit ``OK''.
 
