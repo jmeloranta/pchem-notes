@@ -1,0 +1,21 @@
+% Problem 6/1 solution
+\noindent
+\underline{Solution:}\\
+
+\noindent
+We need to calculate the overlap integral ($S$) between the two vibrational wavefunctions that are centered at $R_e$ and $R_e'$:
+$$\psi_g = \left(\frac{1}{\alpha\pi^{3/2}}\right)^{1/2}\exp\left(-y^2/2\right)\textnormal{ and }\psi_e = \left(\frac{1}{\alpha\pi^{3/2}}\right)^{1/2}\exp\left(-y'^2/2\right)$$
+where $y = (R - R_e)/\alpha$, $y' = (R - R_e')/\alpha$, and $\alpha = \left(\hbar^2/(mk)\right)^{1/4}$. Then the overlap integral
+can be written as:
+$$S = \int_{-\infty}^{\infty}\psi_g(R)\psi_e(R)dR = \frac{1}{\pi^{1/2}}\int_{-\infty}^{\infty}\exp\left(-(y^2-y'^2)/2\right)dy$$
+Substituting $\alpha z = R - \frac{1}{2}\left(R_e - R'_e\right)$ this becomes (change of variables):
+$$S = \frac{1}{\pi^{1/2}}\exp\left(R_e-R'_e\right)/(4\alpha^2)\int_{-\infty}^{\infty}\exp\left(-z^2\right)dz$$
+From integral table book we can find that the above integral is equal to $\sqrt{\pi}$ and hence the overalp is:
+$$S = \exp\left(R_e - R'_e\right)^2/(4\alpha^2)$$
+The Franck-Condon factor obtained by squaring the overlap integral:
+$$S^2 = \exp\left(R_e - R'_e\right)^2/(2\alpha^2)$$
+This expression reaches maximum value (one) when $R_e = R'_e$ (equal bond lengths).
+\hrule\vspace{0.5cm}
+
+
+
